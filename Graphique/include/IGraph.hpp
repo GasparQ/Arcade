@@ -5,20 +5,20 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 11:05:46 2016 Victor Gouet
-// Last update Wed Mar  9 11:07:23 2016 Victor Gouet
+// Last update Wed Mar  9 15:18:03 2016 Victor Gouet
 //
 
 #ifndef IGRAPH_HPP_
 # define IGRAPH_HPP_
 
 # include <stack>
-# include "Object.hpp"
+# include "AComponent.hpp"
 
 class	IGraph
 {
 public:
   virtual void eventManagment() = 0;
-  virtual void display(std::stack<Object *> &) = 0;
+  virtual void display(std::stack<AComponent *>) = 0;
   virtual size_t getKey() const = 0;
 };
 
