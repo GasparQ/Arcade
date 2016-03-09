@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 15:29:17 2016 Victor Gouet
-// Last update Wed Mar  9 15:37:48 2016 Victor Gouet
+// Last update Wed Mar  9 15:50:28 2016 Victor Gouet
 //
 
 #ifndef GAMECOMPONENT_HPP_
@@ -22,8 +22,8 @@ private:
   std::string fileSprite2D;
 
 public:
-  GameComponent(void *sprite3D,std::string const &spriteText,
-		std::string const &sprite2D, Vector2 const &pos);
+  GameComponent(Vector2 const &pos, void *sprite3D,std::string const &spriteText,
+		std::string const &sprite2D);
   virtual ~GameComponent();
 
 public:

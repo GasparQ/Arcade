@@ -5,14 +5,13 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 15:31:48 2016 Victor Gouet
-// Last update Wed Mar  9 15:46:10 2016 Victor Gouet
+// Last update Wed Mar  9 15:50:47 2016 Victor Gouet
 //
 
 #include "GameComponent.hpp"
 
-
-GameComponent::GameComponent(void *sprite3D, std::string const &spriteText,
-			     std::string const &sprite2D, Vector2 const &pos)
+GameComponent::GameComponent(Vector2 const &pos, void *sprite3D, std::string const &spriteText,
+			     std::string const &sprite2D)
   : AComponent(pos), sprite3D(sprite3D), spriteText(spriteText), fileSprite2D(sprite2D)
 {
 }

@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 15:38:55 2016 Victor Gouet
-// Last update Wed Mar  9 15:45:02 2016 Victor Gouet
+// Last update Wed Mar  9 15:51:29 2016 Victor Gouet
 //
 
 #ifndef UICOMPONENT_HPP_
@@ -21,7 +21,7 @@ private:
   std::string text;
 
 public:
-  UIComponent(std::string const &, Vector2 const &dim, Vector2 const &pos);
+  UIComponent(Vector2 const &pos, Vector2 const &dim, std::string const &);
   virtual ~UIComponent();
 
 public:

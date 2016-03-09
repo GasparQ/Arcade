@@ -5,12 +5,12 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 15:38:49 2016 Victor Gouet
-// Last update Wed Mar  9 15:45:43 2016 Victor Gouet
+// Last update Wed Mar  9 15:51:10 2016 Victor Gouet
 //
 
 #include "UIComponent.hpp"
 
-UIComponent::UIComponent(std::string const &text, Vector2 const &dim, Vector2 const &pos) :
+UIComponent::UIComponent(Vector2 const &pos, Vector2 const &dim, std::string const &text) :
   AComponent(pos), dim(dim), text(text) 
 {
 
