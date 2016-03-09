@@ -41,7 +41,6 @@ std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string con
     std::vector<std::string>    names;
     DIR                         *directory;
     struct dirent               *pent;
-    regmatch_t                  matches[10];
 
     if ((directory = opendir(dirName.c_str())) == NULL)
         throw std::runtime_error("arcade: cannot open directory '" + dirName + "'");
