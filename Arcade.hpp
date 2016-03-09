@@ -7,11 +7,30 @@
 
 #include <string>
 #include <vector>
+#include <regex.h>
 #include "Graphique/include/IGraph.hpp"
 #include "Game/include/IGame.hpp"
 
 namespace arcade
 {
+    static const size_t         winWidth = 50;
+    static const size_t         winHeight = 30;
+
+    static const int            ArrowLeft = 260;
+    static const int            ArrowRight = 261;
+    static const int            ArrowUp = 259;
+    static const int            ArrowDown = 258;
+    static const int            Space = ' ';
+
+    static const int            PrevGraph = '2';
+    static const int            NextGraph = '3';
+    static const int            PrevGame = '4';
+    static const int            NextGame = '5';
+    static const int            Restart = '8';
+    static const int            Home = '9';
+    static const int            Exit = 27;
+    static const int            Pause = 'P';
+
     class Arcade
     {
     public:

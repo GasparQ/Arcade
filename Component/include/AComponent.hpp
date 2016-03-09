@@ -11,7 +11,7 @@
 #ifndef ACOMPONENT_HPP_
 # define ACOMPONENT_HPP_
 
-# include "Vector2.hpp"
+#include "../../Vector/include/Vector2.hpp"
 
 class	AComponent
 {
@@ -19,7 +19,7 @@ private:
   Vector2	pos;
   
 public:
-  AComponent(size_t x, size_t y);
+  AComponent(int x, int y);
   AComponent(Vector2 const &pos);
   virtual ~AComponent();
 

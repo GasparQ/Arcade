@@ -8,10 +8,11 @@
 // Last update Wed Mar  9 15:50:47 2016 Victor Gouet
 //
 
-#include "GameComponent.hpp"
+
+#include "../include/GameComponent.hpp"
 
 GameComponent::GameComponent(Vector2 const &pos, void *sprite3D, std::string const &spriteText,
-			     std::string const &sprite2D)
+                             std::string const &sprite2D)
   : AComponent(pos), sprite3D(sprite3D), spriteText(spriteText), fileSprite2D(sprite2D)
 {
 }

@@ -12,15 +12,14 @@
 # define IGRAPH_HPP_
 
 # include <stack>
-# include "AComponent.hpp"
+#include "../../Component/include/AComponent.hpp"
 
 class	IGraph
 {
 public:
     virtual ~IGraph() = 0;
-  virtual void eventManagment() = 0;
-  virtual void display(std::stack<AComponent *>) = 0;
-  virtual size_t getKey() const = 0;
+    virtual int eventManagment() = 0;
+    virtual void display(std::stack<AComponent *>) = 0;
 };
 
 #endif

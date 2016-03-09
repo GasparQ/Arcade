@@ -12,13 +12,13 @@
 # define IGAME_HPP_
 
 # include <stack>
-# include "AComponent.hpp"
-# include "IGraph.hpp"
+#include "../../Component/include/AComponent.hpp"
 
 class	IGame
 {
 public:
-  virtual std::stack<AComponent *> compute(IGraph const *) = 0;
+    virtual ~IGame() = 0;
+    virtual std::stack<AComponent *> compute(size_t keycode) = 0;
 };
 
 #endif

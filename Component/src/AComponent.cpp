@@ -8,9 +8,10 @@
 // Last update Wed Mar  9 15:44:39 2016 Victor Gouet
 //
 
-#include "AComponent.hpp"
 
-AComponent::AComponent(size_t x, size_t y) : pos(Vector2(x, y))
+#include "../include/AComponent.hpp"
+
+AComponent::AComponent(int x, int y) : pos(Vector2(x, y))
 {
 }
 
