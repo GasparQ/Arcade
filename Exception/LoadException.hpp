@@ -17,6 +17,7 @@ namespace arcade
 {
   class LoadLibraryException : public std::runtime_error
   {
+  public:
     LoadLibraryException(std::string const &file)
       : std::runtime_error("arcade: can not load " + file)
     {}
@@ -27,6 +28,7 @@ namespace arcade
 
   class IncompleteLibraryException : public std::runtime_error
   {
+  public:
     IncompleteLibraryException(std::string const &file)
       : std::runtime_error("arcade: no implemented function " + file)
     {}
@@ -37,6 +39,7 @@ namespace arcade
 
   class InvalidFileFormatException : public std::invalid_argument
   {
+  public:
     InvalidFileFormatException(std::string const &file)
       : std::invalid_argument("arcade: invalid file format for " + file)
     {}
