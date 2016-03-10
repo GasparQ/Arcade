@@ -5,21 +5,29 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:02 2016 Victor Gouet
-// Last update Wed Mar  9 23:49:41 2016 Victor Gouet
+// Last update Thu Mar 10 14:16:57 2016 Victor Gouet
 //
 
 #include "../include/Window.hpp"
 
-ncr::Window::Window(int height, int width, int x, int y, WINDOW *from)
-  : height(height), width(width), x(x), y(y)
+ncr::Window::Window(int height, int width, int x, int y, WINDOW *from, int id)
+  : height(height), width(width), x(x), y(y), _id(id)
 {
   win = subwin(from, height, width, y, x);
+}
+
+ncr::Window::Window(int height, int width, int x, int y, ncr::Window const &from, int id)
+  : height(height), width(width), x(x), y(y), _id(id)
+{
+  win = subwin(from.getWin(), height, width, y, x);
 }
 
 ncr::Window::~Window()
 {
   if (win)
-    delwin(win);
+    {
+      delwin(win);
+    }
 }
 
 /*
@@ -59,6 +67,16 @@ int		ncr::Window::print(int x, int y, const char *format, ...)
   return (value);
 }
 
+int		ncr::Window::setAttrON(int at)
+{
+  return (wattr_on(win, at, NULL));
+}
+
+int		ncr::Window::setAttrOFF(int at)
+{
+  return (wattr_off(win, at, NULL));
+}
+
 int		ncr::Window::attrON(int at)
 {
   return (wattron(win, at));
@@ -79,9 +97,9 @@ int		ncr::Window::makeBorder(chtype corner, chtype hSide, chtype vSide)
   return (wborder(win, hSide, hSide, vSide, vSide, corner, corner, corner, corner));
 }
 
-int		ncr::Window::setColorPair(chtype colorPair)
+int		ncr::Window::setColorPair(int id)
 {
-  return (wbkgd(win, colorPair));
+  return (wbkgd(win, COLOR_PAIR(id)));
 }
 
 /*
@@ -107,7 +125,12 @@ int		ncr::Window::getX() const
   return (this->x);
 }
 
-int		ncr::Window::gerY() const
+int		ncr::Window::getY() const
 {
   return (this->y);
+}
+
+int		ncr::Window::getId() const
+{
+  return (this->_id);
 }

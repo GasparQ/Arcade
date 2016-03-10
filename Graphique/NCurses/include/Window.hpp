@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:12 2016 Victor Gouet
-// Last update Wed Mar  9 23:49:05 2016 Victor Gouet
+// Last update Thu Mar 10 14:17:00 2016 Victor Gouet
 //
 
 #ifndef WINDOWNCURSE_HPP_
@@ -18,7 +18,8 @@ namespace ncr
   class	Window
   {
   public:
-    Window(int height, int width, int x, int y, WINDOW *from = stdscr);
+    Window(int height, int width, int x, int y, WINDOW *from = stdscr, int id = 0);
+    Window(int height, int width, int x, int y, ncr::Window const &from, int id = 0);
     ~Window();
 
     /*
@@ -33,7 +34,9 @@ namespace ncr
     int		attrOFF(int at);
     int		refresh();
     int		makeBorder(chtype corner, chtype hSide, chtype vSide);
-    int		setColorPair(chtype colorPair);
+    int		setColorPair(int id);
+    int		setAttrON(int at);
+    int		setAttrOFF(int at);
 
     /*
     ** GETTER
@@ -43,7 +46,8 @@ namespace ncr
     int		getHeight() const;
     int		getWidth() const;
     int		getX() const;
-    int		gerY() const;
+    int		getY() const;
+    int	        getId() const;
 
     /*
     ** ATTRIBUTS
@@ -54,6 +58,7 @@ namespace ncr
     int		width;
     int		x;
     int		y;
+    const int	_id;
   };
 };
 

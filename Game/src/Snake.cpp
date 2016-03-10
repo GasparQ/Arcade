@@ -30,7 +30,7 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     output.push(new GameComponent(apple, NULL, "ð", "appel.bmp"));
     return output;
 }
-x
+
 Snake::~Snake()
 {
 
