@@ -55,7 +55,7 @@ typedef struct SDL_Keysym
 /* Function prototypes */
 
 /**
- *  \brief Get the window which currently has keyboard focus.
+ *  \brief Get the m_window which currently has keyboard focus.
  */
 extern DECLSPEC SDL_Window * SDLCALL SDL_GetKeyboardFocus(void);
 
@@ -151,7 +151,7 @@ extern DECLSPEC SDL_Keycode SDLCALL SDL_GetKeyFromName(const char *name);
 
 /**
  *  \brief Start accepting Unicode text input events.
- *         This function will show the on-screen keyboard if supported.
+ *         This function will show the on-m_window keyboard if supported.
  *
  *  \sa SDL_StopTextInput()
  *  \sa SDL_SetTextInputRect()
@@ -169,7 +169,7 @@ extern DECLSPEC SDL_bool SDLCALL SDL_IsTextInputActive(void);
 
 /**
  *  \brief Stop receiving any text input events.
- *         This function will hide the on-screen keyboard if supported.
+ *         This function will hide the on-m_window keyboard if supported.
  *
  *  \sa SDL_StartTextInput()
  *  \sa SDL_HasScreenKeyboardSupport()
@@ -178,29 +178,29 @@ extern DECLSPEC void SDLCALL SDL_StopTextInput(void);
 
 /**
  *  \brief Set the rectangle used to type Unicode text inputs.
- *         This is used as a hint for IME and on-screen keyboard placement.
+ *         This is used as a hint for IME and on-m_window keyboard placement.
  *
  *  \sa SDL_StartTextInput()
  */
 extern DECLSPEC void SDLCALL SDL_SetTextInputRect(SDL_Rect *rect);
 
 /**
- *  \brief Returns whether the platform has some screen keyboard support.
+ *  \brief Returns whether the platform has some m_window keyboard support.
  *
  *  \return SDL_TRUE if some keyboard support is available else SDL_FALSE.
  *
- *  \note Not all screen keyboard functions are supported on all platforms.
+ *  \note Not all m_window keyboard functions are supported on all platforms.
  *
  *  \sa SDL_IsScreenKeyboardShown()
  */
 extern DECLSPEC SDL_bool SDLCALL SDL_HasScreenKeyboardSupport(void);
 
 /**
- *  \brief Returns whether the screen keyboard is shown for given window.
+ *  \brief Returns whether the m_window keyboard is shown for given m_window.
  *
- *  \param window The window for which screen keyboard should be queried.
+ *  \param m_window The m_window for which m_window keyboard should be queried.
  *
- *  \return SDL_TRUE if screen keyboard is shown else SDL_FALSE.
+ *  \return SDL_TRUE if m_window keyboard is shown else SDL_FALSE.
  *
  *  \sa SDL_HasScreenKeyboardSupport()
  */

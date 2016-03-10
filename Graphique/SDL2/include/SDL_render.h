@@ -159,12 +159,12 @@ extern DECLSPEC int SDLCALL SDL_GetRenderDriverInfo(int index,
                                                     SDL_RendererInfo * info);
 
 /**
- *  \brief Create a window and default renderer
+ *  \brief Create a m_window and default renderer
  *
- *  \param width    The width of the window
- *  \param height   The height of the window
- *  \param window_flags The flags used to create the window
- *  \param window   A pointer filled with the window, or NULL on error
+ *  \param width    The width of the m_window
+ *  \param height   The height of the m_window
+ *  \param window_flags The flags used to create the m_window
+ *  \param m_window   A pointer filled with the m_window, or NULL on error
  *  \param renderer A pointer filled with the renderer, or NULL on error
  *
  *  \return 0 on success, or -1 on error
@@ -175,9 +175,9 @@ extern DECLSPEC int SDLCALL SDL_CreateWindowAndRenderer(
 
 
 /**
- *  \brief Create a 2D rendering context for a window.
+ *  \brief Create a 2D rendering context for a m_window.
  *
- *  \param window The window where rendering is displayed.
+ *  \param m_window The m_window where rendering is displayed.
  *  \param index    The index of the rendering driver to initialize, or -1 to
  *                  initialize the first one supporting the requested flags.
  *  \param flags    ::SDL_RendererFlags.
@@ -204,7 +204,7 @@ extern DECLSPEC SDL_Renderer * SDLCALL SDL_CreateRenderer(SDL_Window * window,
 extern DECLSPEC SDL_Renderer * SDLCALL SDL_CreateSoftwareRenderer(SDL_Surface * surface);
 
 /**
- *  \brief Get the renderer associated with a window.
+ *  \brief Get the renderer associated with a m_window.
  */
 extern DECLSPEC SDL_Renderer * SDLCALL SDL_GetRenderer(SDL_Window * window);
 
@@ -433,7 +433,7 @@ extern DECLSPEC int SDLCALL SDL_LockTexture(SDL_Texture * texture,
 extern DECLSPEC void SDLCALL SDL_UnlockTexture(SDL_Texture * texture);
 
 /**
- * \brief Determines whether a window supports the use of render targets
+ * \brief Determines whether a m_window supports the use of render targets
  *
  * \param renderer The renderer that will be checked
  *
@@ -475,7 +475,7 @@ extern DECLSPEC SDL_Texture * SDLCALL SDL_GetRenderTarget(SDL_Renderer *renderer
  *  output resolution doesn't have the same aspect ratio the output rendering will be
  *  centered within the output display.
  *
- *  If the output display is a window, mouse events in the window will be filtered
+ *  If the output display is a m_window, mouse events in the m_window will be filtered
  *  and scaled so they seem to arrive within the logical resolution.
  *
  *  \note If this function results in scaling or subpixel drawing by the
@@ -509,7 +509,7 @@ extern DECLSPEC void SDLCALL SDL_RenderGetLogicalSize(SDL_Renderer * renderer, i
  *
  *  \return 0 on success, or -1 on error
  *
- *  \note If the window associated with the renderer is resized, the viewport is automatically reset.
+ *  \note If the m_window associated with the renderer is resized, the viewport is automatically reset.
  *
  *  \sa SDL_RenderGetViewport()
  *  \sa SDL_RenderSetLogicalSize()
@@ -826,7 +826,7 @@ extern DECLSPEC int SDLCALL SDL_RenderReadPixels(SDL_Renderer * renderer,
                                                  void *pixels, int pitch);
 
 /**
- *  \brief Update the screen with rendering performed.
+ *  \brief Update the m_window with rendering performed.
  */
 extern DECLSPEC void SDLCALL SDL_RenderPresent(SDL_Renderer * renderer);
 
@@ -839,7 +839,7 @@ extern DECLSPEC void SDLCALL SDL_RenderPresent(SDL_Renderer * renderer);
 extern DECLSPEC void SDLCALL SDL_DestroyTexture(SDL_Texture * texture);
 
 /**
- *  \brief Destroy the rendering context for a window and free associated
+ *  \brief Destroy the rendering context for a m_window and free associated
  *         textures.
  *
  *  \sa SDL_CreateRenderer()

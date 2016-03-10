@@ -15,38 +15,46 @@
 
 namespace arcade
 {
-  class LoadLibraryException : public std::runtime_error
-  {
-  public:
-    LoadLibraryException(std::string const &file)
-      : std::runtime_error("arcade: can not load " + file)
-    {}
+    class LoadLibraryException : public std::runtime_error
+    {
+    public:
+        LoadLibraryException(std::string const &file)
+                : std::runtime_error("arcade: can not load " + file)
+        { }
 
-    virtual ~LoadLibraryException() throw()
-    {}
-  };
+        virtual ~LoadLibraryException() throw()
+        { }
+    };
 
-  class IncompleteLibraryException : public std::runtime_error
-  {
-  public:
-    IncompleteLibraryException(std::string const &file)
-      : std::runtime_error("arcade: no implemented function " + file)
-    {}
+    class IncompleteLibraryException : public std::runtime_error
+    {
+    public:
+        IncompleteLibraryException(std::string const &file)
+                : std::runtime_error("arcade: no implemented function " + file)
+        { }
 
-    virtual ~IncompleteLibraryException() throw()
-    {}
-  };
+        virtual ~IncompleteLibraryException() throw()
+        { }
+    };
 
-  class InvalidFileFormatException : public std::invalid_argument
-  {
-  public:
-    InvalidFileFormatException(std::string const &file)
-      : std::invalid_argument("arcade: invalid file format for " + file)
-    {}
+    class InvalidFileFormatException : public std::invalid_argument
+    {
+    public:
+        InvalidFileFormatException(std::string const &file)
+                : std::invalid_argument("arcade: invalid file format for " + file)
+        { }
 
-    virtual ~InvalidFileFormatException() throw()
-    {}
-  };
+        virtual ~InvalidFileFormatException() throw()
+        { }
+    };
+
+    class InitRenderException : public std::runtime_error
+    {
+    public:
+        InitRenderException(std::string const& msg)
+                : std::runtime_error("arcade: failed to init reder for " + msg)
+        { }
+    };
 
 };
 
