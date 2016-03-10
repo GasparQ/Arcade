@@ -18,7 +18,7 @@ class	IGame
 {
 public:
     virtual ~IGame() = 0;
-    virtual std::stack<AComponent *> compute(size_t keycode) = 0;
+    virtual std::stack<AComponent *> compute(int keycode) = 0;
 };
 
 #endif

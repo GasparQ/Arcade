@@ -138,7 +138,7 @@ void Snake::initGame()
 
     plate.clear();
     body.clear();
-    for (size_t x = 0, ; x  < arcade::winWidth; ++x)
+    for (size_t x = 0; x  < arcade::winWidth; ++x)
     {
         for (size_t y = 0; y < arcade::winHeight; ++y)
         {
@@ -150,4 +150,9 @@ void Snake::initGame()
     addBody(Vector2(midW, midH));
     addBody(Vector2(midW - 1, midH));
     score = 0;
+}
+
+extern "C" IGame *loadGame()
+{
+  return (new Snake());
 }

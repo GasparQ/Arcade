@@ -17,7 +17,7 @@
 class	IGraph
 {
 public:
-    virtual ~IGraph() = 0;
+    virtual ~IGraph(){};
     virtual int eventManagment() = 0;
     virtual void display(std::stack<AComponent *>) = 0;
 };

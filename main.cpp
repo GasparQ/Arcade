@@ -1,9 +1,25 @@
 #include <iostream>
+#include <unistd.h>
+#include "Arcade.hpp"
 
-using namespace std;
-
-int main()
+int main(int ac, char **av)
 {
-    cout << "Hello, World!" << endl;
+    arcade::Arcade  *arcade;
+
+    if (ac != 2)
+    {
+        std::cerr << "Not enought args" << std::endl;
+        return (1);
+    }
+    arcade = new arcade::Arcade(av[1]);
+    /*try
+    {
+    }
+    catch (std::exception exception)
+    {
+        std::cerr << exception.what() << std::endl;
+        return 1;
+    }*/
+    arcade->Run();
     return 0;
 }

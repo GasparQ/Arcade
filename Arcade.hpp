@@ -41,6 +41,7 @@ namespace arcade
 
         static const std::string    createLib;
         static const std::string    createGame;
+        void                        Run();
 
         /**
          * Attributes
@@ -48,6 +49,7 @@ namespace arcade
     private:
         IGraph                      *lib;
         std::vector<IGame *>        games;
+        IGame                       *currGame;
         std::vector<std::string>    libsName;
 
         /**

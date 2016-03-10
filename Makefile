@@ -5,10 +5,14 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Wed Mar  9 17:39:39 2016 Quentin Gasparotto
-## Last update Wed Mar  9 17:48:53 2016 Quentin Gasparotto
+## Last update Thu Mar 10 17:12:38 2016 Quentin Gasparotto
 ##
 
 NAME		=	arcade
+
+LIBDIR		=	./lib
+
+GAMESDIR	=	./games
 
 CC		=	g++
 
@@ -19,19 +23,40 @@ SRCS		=	Arcade.cpp \
 
 OBJS		=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Wextra -std=c++11 -I./Component/include/ -I./Vector/include/ -I./Game/include/ -I./Graphique/include/
+CPPFLAGS	=	-W -Wall -Wextra -std=c++11 \
+			-I./Component/include/ \
+			-I./Vector/include/ \
+			-I./Game/include/ \
+			-I./Graphique/include/
 
 LDFLAGS		= -ldl
 
-$(NAME):	$(OBJS)
+$(NAME):	$(OBJS) libs games
+	@echo -e "\e[32m====Arcade====\e[0m"
 	$(CC) -o $(NAME) $(OBJS) $(LDFLAGS)
+
+libs:
+	@echo -e "\e[32m====LIBS====\e[0m"
+	mkdir -p $(LIBDIR)
+	make re -C ./Graphique/NCurses/
+
+games:
+	@echo -e "\e[32m====GAMES====\e[0m"
+	mkdir -p $(GAMESDIR)
+	make re -C ./Game/
 
 all:	$(NAME)
 
 clean:
 	$(RM) $(OBJS)
+	make clean -C ./Game/
+	make clean -C ./Graphique/NCurses/
 
 fclean:	clean
 	$(RM) $(NAME)
+	make fclean -C ./Game/
+	make fclean -C ./Graphique/NCurses/
 
 re:	fclean all
+
+.PHONY:	all clean fclean re games libs

@@ -55,3 +55,8 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       obj.pop();
     }
 }
+
+extern "C" IGraph *loadLib()
+{
+  return new NCursesGraph();
+}
