@@ -15,22 +15,15 @@ std::stack<AComponent *>                Snake::compute(int keycode)
 
     if ((it = keycodex.find(keycode)) != keycodex.end())
         (this->*it->second)();
-    addBody(body.front() + direction);
-    removeBody();
-    if (body.front() == apple)
-    {
-        body.push_back(apple);
-        plate.remove(apple);
-        generateAppelPos();
-    }
+    goAhead();
     for (bod = body.begin(); bod != body.end(); ++bod)
     {
-        output.push(new GameComponent(*bod, NULL, " ", "snake.bmp"));
+        output.push(new GameComponent(*bod, NULL, "*", "snake.bmp"));
     }
     output.push(new GameComponent(apple, NULL, "ð", "appel.bmp"));
     return output;
 }
-x
+
 Snake::~Snake()
 {
 
@@ -42,22 +35,12 @@ Snake::Snake() :
     snakeOri(Snake::LEFT),
     direction(1, 0)
 {
-    int midW = arcade::winWidth / 2;
-    int midH = arcade::winHeight / 2;
-
     keycodex[arcade::ArrowDown] = &Snake::goDown;
     keycodex[arcade::ArrowLeft] = &Snake::goLeft;
     keycodex[arcade::ArrowRight] = &Snake::goRight;
     keycodex[arcade::ArrowUp] = &Snake::goUp;
 
-    for (size_t i = 0, end = arcade::winWidth * arcade::winHeight; i  < end; ++i)
-    {
-        plate.push_back(Vector2(static_cast<int>(i % arcade::winWidth), static_cast<int>(i / arcade::winHeight)));
-    }
-    addBody(Vector2(midW + 2, midH));
-    addBody(Vector2(midW + 1, midH));
-    addBody(Vector2(midW, midH));
-    addBody(Vector2(midW - 1, midH));
+    initGame();
 }
 
 void Snake::goUp()
@@ -121,4 +104,50 @@ void Snake::addBody(Vector2 newPos)
 {
     body.push_front(newPos);
     plate.remove(newPos);
+}
+
+void Snake::goAhead()
+{
+    if (std::find<std::list<Vector2>::iterator, Vector2>(body.begin(), body.end(), body.front() + direction) == body.end())
+        die();
+    else
+        move();
+}
+
+void Snake::move()
+{
+    addBody(body.front() + direction);
+    removeBody();
+    if (body.front() == apple)
+    {
+        body.push_back(apple);
+        plate.remove(apple);
+        generateAppelPos();
+    }
+}
+
+void Snake::die()
+{
+    initGame();
+}
+
+void Snake::initGame()
+{
+    int midW = arcade::winWidth / 2;
+    int midH = arcade::winHeight / 2;
+
+    plate.clear();
+    body.clear();
+    for (size_t x = 0, ; x  < arcade::winWidth; ++x)
+    {
+        for (size_t y = 0; y < arcade::winHeight; ++y)
+        {
+            plate.push_back(Vector2(static_cast<int>(x), static_cast<int>(y)));
+        }
+    }
+    addBody(Vector2(midW + 2, midH));
+    addBody(Vector2(midW + 1, midH));
+    addBody(Vector2(midW, midH));
+    addBody(Vector2(midW - 1, midH));
+    score = 0;
 }

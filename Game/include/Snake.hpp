@@ -40,14 +40,20 @@ private:
     std::map<int, keyfunc>      keycodex;
     std::list<Vector2>          plate;
 
-private:
+public:
     void                        goUp();
     void                        goDown();
     void                        goLeft();
     void                        goRight();
+    void                        goAhead();
+
+private:
     void                        generateAppelPos();
     void                        removeBody();
     void                        addBody(Vector2 newPos);
+    void                        move();
+    void                        die();
+    void                        initGame();
 };
 
 #endif //C_SNAKE_HPP
