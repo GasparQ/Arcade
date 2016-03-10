@@ -133,7 +133,7 @@ SDLTest_CommonState *SDLTest_CommonCreateState(char **argv, Uint32 flags);
 /**
  * \brief Process one common argument.
  *
- * \param state The common state describing the test window to create.
+ * \param state The common state describing the test m_window to create.
  * \param index The index of the argument to process in argv[].
  *
  * \returns The number of arguments processed (i.e. 1 for --fullscreen, 2 for --video [videodriver], or -1 on error.
@@ -143,16 +143,16 @@ int SDLTest_CommonArg(SDLTest_CommonState * state, int index);
 /**
  * \brief Returns common usage information
  *
- * \param state The common state describing the test window to create.
+ * \param state The common state describing the test m_window to create.
  *
  * \returns String with usage information
  */
 const char *SDLTest_CommonUsage(SDLTest_CommonState * state);
 
 /**
- * \brief Open test window.
+ * \brief Open test m_window.
  *
- * \param state The common state describing the test window to create.
+ * \param state The common state describing the test m_window to create.
  *
  * \returns True if initialization succeeded, false otherwise
  */
@@ -161,7 +161,7 @@ SDL_bool SDLTest_CommonInit(SDLTest_CommonState * state);
 /**
  * \brief Common event handler for test windows.
  *
- * \param state The common state used to create test window.
+ * \param state The common state used to create test m_window.
  * \param event The event to handle.
  * \param done Flag indicating we are done.
  *
@@ -169,9 +169,9 @@ SDL_bool SDLTest_CommonInit(SDLTest_CommonState * state);
 void SDLTest_CommonEvent(SDLTest_CommonState * state, SDL_Event * event, int *done);
 
 /**
- * \brief Close test window.
+ * \brief Close test m_window.
  *
- * \param state The common state used to create test window.
+ * \param state The common state used to create test m_window.
  *
  */
 void SDLTest_CommonQuit(SDLTest_CommonState * state);

@@ -87,12 +87,12 @@ typedef struct
 } SDL_MessageBoxColorScheme;
 
 /**
- *  \brief MessageBox structure containing title, text, window, etc.
+ *  \brief MessageBox structure containing title, text, m_window, etc.
  */
 typedef struct
 {
     Uint32 flags;                       /**< ::SDL_MessageBoxFlags */
-    SDL_Window *window;                 /**< Parent window, can be NULL */
+    SDL_Window *window;                 /**< Parent m_window, can be NULL */
     const char *title;                  /**< UTF-8 title */
     const char *message;                /**< UTF-8 message text */
 
@@ -112,7 +112,7 @@ typedef struct
  *          hit or -1 if dialog was closed.
  *
  *  \note This function should be called on the thread that created the parent
- *        window, or on the main thread if the messagebox has no parent.  It will
+ *        m_window, or on the main thread if the messagebox has no parent.  It will
  *        block execution of that thread until the user clicks a button or
  *        closes the messagebox.
  */
@@ -124,7 +124,7 @@ extern DECLSPEC int SDLCALL SDL_ShowMessageBox(const SDL_MessageBoxData *message
  *  \param flags    ::SDL_MessageBoxFlags
  *  \param title    UTF-8 title text
  *  \param message  UTF-8 message text
- *  \param window   The parent window, or NULL for no parent
+ *  \param m_window   The parent m_window, or NULL for no parent
  *
  *  \return 0 on success, -1 on error
  *

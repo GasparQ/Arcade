@@ -48,9 +48,9 @@ extern "C" {
 #endif
 
 /**
- *  \brief  A variable controlling how 3D acceleration is used to accelerate the SDL screen surface.
+ *  \brief  A variable controlling how 3D acceleration is used to accelerate the SDL m_window surface.
  *
- *  SDL can try to accelerate the SDL screen surface by using streaming
+ *  SDL can try to accelerate the SDL m_window surface by using streaming
  *  textures with a 3D rendering engine.  This variable controls whether and
  *  how this is done.
  *
@@ -131,13 +131,13 @@ extern "C" {
 #define SDL_HINT_RENDER_SCALE_QUALITY       "SDL_RENDER_SCALE_QUALITY"
 
 /**
- *  \brief  A variable controlling whether updates to the SDL screen surface should be synchronized with the vertical refresh, to avoid tearing.
+ *  \brief  A variable controlling whether updates to the SDL m_window surface should be synchronized with the vertical refresh, to avoid tearing.
  *
  *  This variable can be set to the following values:
  *    "0"       - Disable vsync
  *    "1"       - Enable vsync
  *
- *  By default SDL does not sync screen surface updates with vertical refresh.
+ *  By default SDL does not sync m_window surface updates with vertical refresh.
  */
 #define SDL_HINT_RENDER_VSYNC               "SDL_RENDER_VSYNC"
 
@@ -181,7 +181,7 @@ extern "C" {
  *    "0"       - Disable XRandR
  *    "1"       - Enable XRandR
  *
- *  By default SDL will not use XRandR because of window manager issues.
+ *  By default SDL will not use XRandR because of m_window manager issues.
  */
 #define SDL_HINT_VIDEO_X11_XRANDR           "SDL_VIDEO_X11_XRANDR"
 
@@ -194,19 +194,19 @@ extern "C" {
  *
  *  By default SDL will use _NET_WM_PING, but for applications that know they
  *  will not always be able to respond to ping requests in a timely manner they can
- *  turn it off to avoid the window manager thinking the app is hung.
+ *  turn it off to avoid the m_window manager thinking the app is hung.
  *  The hint is checked in CreateWindow.
  */
 #define SDL_HINT_VIDEO_X11_NET_WM_PING      "SDL_VIDEO_X11_NET_WM_PING"
 
 /**
- *  \brief  A variable controlling whether the window frame and title bar are interactive when the cursor is hidden 
+ *  \brief  A variable controlling whether the m_window frame and title bar are interactive when the cursor is hidden
  *
  *  This variable can be set to the following values:
- *    "0"       - The window frame is not interactive when the cursor is hidden (no move, resize, etc)
- *    "1"       - The window frame is interactive when the cursor is hidden
+ *    "0"       - The m_window frame is not interactive when the cursor is hidden (no move, resize, etc)
+ *    "1"       - The m_window frame is interactive when the cursor is hidden
  *
- *  By default SDL will allow interaction with the window frame when the cursor is hidden
+ *  By default SDL will allow interaction with the m_window frame when the cursor is hidden
  */
 #define SDL_HINT_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN    "SDL_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN"
 
@@ -214,8 +214,8 @@ extern "C" {
  *  \brief  A variable controlling whether the windows message loop is processed by SDL 
  *
  *  This variable can be set to the following values:
- *    "0"       - The window message loop is not run
- *    "1"       - The window message loop is processed in SDL_PumpEvents()
+ *    "0"       - The m_window message loop is not run
+ *    "1"       - The m_window message loop is processed in SDL_PumpEvents()
  *
  *  By default SDL will process the windows message loop
  */
@@ -252,7 +252,7 @@ extern "C" {
 /**
  *  \brief  A variable controlling whether the idle timer is disabled on iOS.
  *
- *  When an iOS app does not receive touches for some time, the screen is
+ *  When an iOS app does not receive touches for some time, the m_window is
  *  dimmed automatically. For games where the accelerometer is the only input
  *  this is problematic. This functionality can be disabled by setting this
  *  hint.
@@ -412,7 +412,7 @@ extern "C" {
 *  1. Its pixel format will be set to the same pixel format as this SDL_Window.  This is
 *  needed for example when sharing an OpenGL context across multiple windows.
 *
-*  2. The flag SDL_WINDOW_OPENGL will be set on the new window so it can be used for
+*  2. The flag SDL_WINDOW_OPENGL will be set on the new m_window so it can be used for
 *  OpenGL rendering.
 *
 *  This variable can be set to the following values:
@@ -476,7 +476,7 @@ extern "C" {
  *  events as 'Handled', then the OS will invoke its default behavior for
  *  unhandled back-button-press events, which on Windows Phone 8 and 8.1 is to
  *  terminate the app (and attempt to switch to the previous app, or to the
- *  device's home screen).
+ *  device's home m_window).
  *
  *  Setting the SDL_HINT_WINRT_HANDLE_BACK_BUTTON hint to "1" will cause SDL
  *  to mark back-button-press events as Handled, if and when one is sent to
@@ -601,9 +601,9 @@ extern "C" {
  * This hint only applies to the emscripten platform
  *
  * The variable can be one of
- *    "#window"      - The javascript window object (this is the default)
+ *    "#m_window"      - The javascript m_window object (this is the default)
  *    "#document"    - The javascript document object
- *    "#screen"      - the javascript window.screen object
+ *    "#m_window"      - the javascript m_window.m_window object
  *    "#canvas"      - the WebGL canvas element
  *    any other string without a leading # sign applies to the element on the page with that ID.
  */
@@ -622,10 +622,10 @@ extern "C" {
 #define SDL_HINT_NO_SIGNAL_HANDLERS   "SDL_NO_SIGNAL_HANDLERS"
 
 /**
- *  \brief Tell SDL not to generate window-close events for Alt+F4 on Windows.
+ *  \brief Tell SDL not to generate m_window-close events for Alt+F4 on Windows.
  *
  * The variable can be set to the following values:
- *   "0"       - SDL will generate a window-close event when it sees Alt+F4.
+ *   "0"       - SDL will generate a m_window-close event when it sees Alt+F4.
  *   "1"       - SDL will only do normal key handling for Alt+F4.
  */
 #define SDL_HINT_WINDOWS_NO_CLOSE_ON_ALT_F4	"SDL_WINDOWS_NO_CLOSE_ON_ALT_F4"

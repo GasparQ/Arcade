@@ -148,7 +148,7 @@
 /* enable iPhone keyboard support */
 #define SDL_IPHONE_KEYBOARD 1
 
-/* enable iOS extended launch screen */
+/* enable iOS extended launch m_window */
 #define SDL_IPHONE_LAUNCHSCREEN 1
 
 /* Set max recognized G-force from accelerometer

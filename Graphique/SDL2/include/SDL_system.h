@@ -53,7 +53,7 @@ extern DECLSPEC void SDLCALL SDL_SetWindowsMessageHook(SDL_WindowsMessageHook ca
    \brief Returns the D3D9 adapter index that matches the specified display index.
 
    This adapter index can be passed to IDirect3D9::CreateDevice and controls
-   on which monitor a full screen application will appear.
+   on which monitor a full m_window application will appear.
 */
 extern DECLSPEC int SDLCALL SDL_Direct3D9GetAdapterIndex( int displayIndex );
 
@@ -79,8 +79,8 @@ extern DECLSPEC SDL_bool SDLCALL SDL_DXGIGetOutputInfo( int displayIndex, int *a
 /* Platform specific functions for iOS */
 #if defined(__IPHONEOS__) && __IPHONEOS__
 
-#define SDL_iOSSetAnimationCallback(window, interval, callback, callbackParam) SDL_iPhoneSetAnimationCallback(window, interval, callback, callbackParam)
-extern DECLSPEC int SDLCALL SDL_iPhoneSetAnimationCallback(SDL_Window * window, int interval, void (*callback)(void*), void *callbackParam);
+#define SDL_iOSSetAnimationCallback(m_window, interval, callback, callbackParam) SDL_iPhoneSetAnimationCallback(m_window, interval, callback, callbackParam)
+extern DECLSPEC int SDLCALL SDL_iPhoneSetAnimationCallback(SDL_Window * m_window, int interval, void (*callback)(void*), void *callbackParam);
 
 #define SDL_iOSSetEventPump(enabled) SDL_iPhoneSetEventPump(enabled)
 extern DECLSPEC void SDLCALL SDL_iPhoneSetEventPump(SDL_bool enabled);
