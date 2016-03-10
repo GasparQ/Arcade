@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 23:55:45 2016 Victor Gouet
-// Last update Thu Mar 10 00:30:00 2016 Victor Gouet
+// Last update Thu Mar 10 15:38:23 2016 Victor Gouet
 //
 
 # include "../include/NCurses.hpp"
@@ -66,4 +66,9 @@ int    NCurses::echoMode()
 int    NCurses::noEchoMode()
 {
   return (noecho());
+}
+
+int	NCurses::delayOnGetOutput(int delay)
+{
+  return (halfdelay(delay));
 }
