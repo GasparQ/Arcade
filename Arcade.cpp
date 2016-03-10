@@ -109,7 +109,7 @@ bool                    arcade::Arcade::isLibNameValid(const std::string &string
 void        arcade::Arcade::Run()
 {
     int     key;
-    std::chrono::milliseconds chrono(10);
+    std::chrono::milliseconds chrono(100);
 
     while (1)
     {
