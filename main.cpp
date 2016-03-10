@@ -11,15 +11,15 @@ int main(int ac, char **av)
         std::cerr << "Not enought args" << std::endl;
         return (1);
     }
-    arcade = new arcade::Arcade(av[1]);
-    /*try
+    try
     {
+        arcade = new arcade::Arcade(av[1]);
     }
     catch (std::exception exception)
     {
         std::cerr << exception.what() << std::endl;
         return 1;
-    }*/
+    }
     arcade->Run();
     return 0;
 }

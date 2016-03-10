@@ -32,8 +32,6 @@ NCursesGraph::~NCursesGraph()
 #include <unistd.h>
 int	NCursesGraph::eventManagment()
 {
-    std::cout << "COUCOU" << std::endl;
-    usleep(500000);
   return (NCurses::getCarac());
 }
 
@@ -57,15 +55,10 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
 	}
       obj.pop();
     }
+    gameWin->refresh();
 }
 
 extern "C" IGraph *loadLib()
 {
-    IGraph  *toto;
-    toto = new NCursesGraph();
-    std::cout << "toto: " << toto << std::endl;
-    toto->eventManagment();
-    std::cout << "COUCOU" << std::endl;
-    usleep(500000);
-    return toto;
+    return new NCursesGraph();
 }

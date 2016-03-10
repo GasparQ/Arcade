@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include <regex.h>
+#include <map>
 #include "Graphique/include/IGraph.hpp"
 #include "Game/include/IGame.hpp"
 
@@ -47,10 +48,11 @@ namespace arcade
          * Attributes
          */
     private:
-        IGraph                      *lib;
-        std::vector<IGame *>        games;
-        IGame                       *currGame;
-        std::vector<std::string>    libsName;
+        IGraph                          *lib;
+        std::vector<IGame *>            games;
+        IGame                           *currGame;
+        std::vector<std::string>        libsName;
+        std::map<std::string, void *>   dlopenedlibs;
 
         /**
          * Methods
