@@ -19,11 +19,9 @@ Vector2::~Vector2()
 {
 }
 
-Vector2 &Vector2::operator+(const Vector2 &vector2)
+Vector2     Vector2::operator+(const Vector2 &vector2)
 {
-    x += vector2.x;
-    y += vector2.y;
-    return *this;
+    return Vector2(x + vector2.x, y + vector2.y);
 }
 
 bool Vector2::operator==(const Vector2 &vector2)
@@ -31,4 +29,9 @@ bool Vector2::operator==(const Vector2 &vector2)
     if (x == vector2.x && y == vector2.y)
         return true;
     return false;
+}
+
+Vector2 Vector2::invert()
+{
+    return Vector2(-x, -y);
 }

@@ -20,7 +20,7 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     {
         output.push(new GameComponent(*bod, NULL, "*", "snake.bmp"));
     }
-    output.push(new GameComponent(apple, NULL, "ð", "appel.bmp"));
+    output.push(new GameComponent(apple, NULL, "O", "appel.bmp"));
     return output;
 }
 
@@ -33,7 +33,7 @@ Snake::Snake() :
     apple(0, 0),
     score(0),
     snakeOri(Snake::LEFT),
-    direction(1, 0)
+    direction(0, 1)
 {
     keycodex[arcade::ArrowDown] = &Snake::goDown;
     keycodex[arcade::ArrowLeft] = &Snake::goLeft;
@@ -108,7 +108,7 @@ void Snake::addBody(Vector2 newPos)
 
 void Snake::goAhead()
 {
-    if (std::find<std::list<Vector2>::iterator, Vector2>(body.begin(), body.end(), body.front() + direction) == body.end())
+    if (std::find<std::list<Vector2>::iterator, Vector2>(body.begin(), body.end(), body.front() + direction) != body.end())
         die();
     else
         move();
@@ -117,13 +117,10 @@ void Snake::goAhead()
 void Snake::move()
 {
     addBody(body.front() + direction);
-    removeBody();
     if (body.front() == apple)
-    {
-        body.push_back(apple);
-        plate.remove(apple);
         generateAppelPos();
-    }
+    else
+        removeBody();
 }
 
 void Snake::die()
@@ -138,6 +135,8 @@ void Snake::initGame()
 
     plate.clear();
     body.clear();
+    direction.x = 1;
+    direction.y = 0;
     for (size_t x = 0; x  < arcade::winWidth; ++x)
     {
         for (size_t y = 0; y < arcade::winHeight; ++y)
