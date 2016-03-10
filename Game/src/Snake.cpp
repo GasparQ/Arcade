@@ -7,6 +7,8 @@
 #include "../../Arcade.hpp"
 #include "../../Component/include/GameComponent.hpp"
 
+//TODO limits on walls + void play(void)
+
 std::stack<AComponent *>                Snake::compute(int keycode)
 {
     std::stack<AComponent *>            output;
