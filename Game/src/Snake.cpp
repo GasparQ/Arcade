@@ -32,8 +32,8 @@ Snake::~Snake()
 Snake::Snake() :
     apple(0, 0),
     score(0),
-    snakeOri(Snake::LEFT),
-    direction(0, 1)
+    snakeOri(0),
+    direction(0, 0)
 {
     keycodex[arcade::ArrowDown] = &Snake::goDown;
     keycodex[arcade::ArrowLeft] = &Snake::goLeft;
@@ -135,6 +135,7 @@ void Snake::initGame()
 
     plate.clear();
     body.clear();
+    snakeOri = Snake::LEFT;
     direction.x = 1;
     direction.y = 0;
     for (size_t x = 0; x  < arcade::winWidth; ++x)
