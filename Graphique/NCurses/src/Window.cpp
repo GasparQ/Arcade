@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:02 2016 Victor Gouet
-// Last update Thu Mar 10 14:16:57 2016 Victor Gouet
+// Last update Thu Mar 10 19:19:21 2016 Victor Gouet
 //
 
 #include "../include/Window.hpp"
@@ -59,7 +59,7 @@ int		ncr::Window::print(int x, int y, const char *format, ...)
   int		value;
   va_list	args;
 
-  if (moveCursor(x, y) == ERR)
+   if (moveCursor(x, y) == ERR)
     return (ERR);
   va_start(args, format);
   value = vwprintw(win, format, args);
