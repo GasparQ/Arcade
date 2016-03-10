@@ -35,6 +35,7 @@ void Window::SetProjectionMode()
 {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
+    gluPerspective(70, (double)(900 / 600), 1, 1000);
     glEnable(GL_DEPTH_TEST);
 }
 
@@ -43,6 +44,7 @@ void Window::RefreshImage()
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
+    gluLookAt(3, 3, 3, 0, 0, 0, 0, 0, 1);
     // Draw everything here
     DrawSphere();
     glFlush();
@@ -55,8 +57,8 @@ void Window::DrawSphere()
 
     glPushMatrix();
     param = gluNewQuadric();
-    glColor4f(1, 1, 1, 1);
-    gluSphere(param, 10, 30, 30);
+    glColor4f(1, 0, 1, 1);
+    gluSphere(param, 1, 10, 10);
     gluDeleteQuadric(param);
     glPopMatrix();
 }

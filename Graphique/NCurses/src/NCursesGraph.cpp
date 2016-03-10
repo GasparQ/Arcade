@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Thu Mar 10 19:19:59 2016 Victor Gouet
+// Last update Thu Mar 10 19:50:37 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -21,6 +21,10 @@ NCursesGraph::NCursesGraph()
   _board->attrON(A_REVERSE);
   _board->makeBorder(' ', ' ', ' ');
   _board->attrOFF(A_REVERSE);
+  gameWin->attrON(A_REVERSE);
+  gameWin->makeBorder('+', '+', '+');
+  gameWin->attrOFF(A_REVERSE);
+
 }
 
 NCursesGraph::~NCursesGraph()
@@ -42,6 +46,7 @@ void	        NCursesGraph::_gameComponent(GameComponent *gameComponent) const
   gameWin->print(pos.x, pos.y, "%s", gameComponent->getSpriteText().c_str());
 }
 
+// TODO FAIRE un cash qui stock la stack et qui fait des diffs et qui affiche
 void	NCursesGraph::display(std::stack<AComponent *>	obj)
 {
   GameComponent	*gameComponent;
@@ -55,7 +60,7 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
 	}
       obj.pop();
     }
-    gameWin->refresh();
+  gameWin->refresh();
 }
 
 extern "C" IGraph *loadLib()
