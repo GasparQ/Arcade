@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Thu Mar 10 15:34:27 2016 Victor Gouet
+// Last update Thu Mar 10 15:39:22 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -15,6 +15,7 @@ NCursesGraph::NCursesGraph()
   NCurses::init();
   NCurses::noEchoMode();
   NCurses::hide_cursor();
+  NCurses::delayOnGetOutput(3);
   _board = new ncr::Window(31, 51, 0, 0);
   gameWin = new ncr::Window(30, 50, 1, 1, _board->getWin());
   _board->attrON(A_REVERSE);
