@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Wed Mar  9 17:39:39 2016 Quentin Gasparotto
-## Last update Thu Mar 10 17:12:38 2016 Quentin Gasparotto
+## Last update Thu Mar 10 17:35:55 2016 Quentin Gasparotto
 ##
 
 NAME		=	arcade
@@ -27,7 +27,8 @@ CPPFLAGS	=	-W -Wall -Wextra -std=c++11 \
 			-I./Component/include/ \
 			-I./Vector/include/ \
 			-I./Game/include/ \
-			-I./Graphique/include/
+			-I./Graphique/include/ \
+			-g
 
 LDFLAGS		= -ldl
 

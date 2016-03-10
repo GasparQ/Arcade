@@ -67,11 +67,13 @@ void        arcade::Arcade::loadGraph(const std::string &libname)
 
     if (lib)
         delete(lib);
-    if ((newLib = dlopen(libname.c_str(), RTLD_LAZY)) == NULL)
+    if ((newLib = dlopen(libname.c_str(), RTLD_NOW)) == NULL)
         throw LoadLibraryException(libname);
     if ((load_lib = (IGraph *(*)())dlsym(newLib, arcade::Arcade::createLib.c_str())) == NULL)
         throw IncompleteLibraryException(libname);//throw error
+    std::cout << "lib: " << lib << std::endl;
     lib = load_lib();
+    std::cout << "lib: " << lib << std::endl;
     if (dlclose(newLib) != 0)
         throw std::runtime_error("arcade: cannot close '" + libname + "' library");
 }
@@ -93,6 +95,7 @@ void        arcade::Arcade::loadGames(const std::vector<std::string> &libsName)
         if (dlclose(gameLib) != 0)
             throw std::runtime_error("arcade: cannot close '" + libsName[i] + "'");
     }
+    currGame = games.front();
 }
 
 bool                    arcade::Arcade::isLibNameValid(const std::string &string, regex_t &reg) const
@@ -115,6 +118,7 @@ void        arcade::Arcade::Run()
 
         key = lib->eventManagment();
         //TODO check event système
+//        currGame->compute(42);
 //        lib->display(currGame->compute(key));
         //TODO wait
         std::this_thread::sleep_for(chrono);
