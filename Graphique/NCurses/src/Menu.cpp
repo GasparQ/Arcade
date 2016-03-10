@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 10:00:12 2016 Victor Gouet
-// Last update Thu Mar 10 14:43:01 2016 Victor Gouet
+// Last update Thu Mar 10 18:04:23 2016 Victor Gouet
 //
 
 # include "../include/Menu.hpp"
@@ -24,7 +24,7 @@ ncr::Menu::~Menu()
 
 ncr::Window	*ncr::Menu::addSubWin(int height)
 {
-  ncr::Window	* newWin;
+  ncr::Window	*newWin;
 
   if (subWin.empty())
     {

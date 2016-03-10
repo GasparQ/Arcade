@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 23:13:36 2016 Victor Gouet
-// Last update Thu Mar 10 14:22:39 2016 Victor Gouet
+// Last update Thu Mar 10 18:24:37 2016 Victor Gouet
 //
 
 #include "./include/Window.hpp"
@@ -38,7 +38,17 @@ int	main()
   menu.addSubWin(3)->makeBorder(CARAC, CARAC, CARAC);
   menu.addSubWin(3)->makeBorder(CARAC, CARAC, CARAC);
 
+  win->setAttrON(A_REVERSE);
+  int	i = 0;
+
+  i = 0;
+  while (i++ < win->getHeight() * win->getWidth())
+    {
+      
+      win->print("%c", mvwinch(win->getWin(), 0, 0));
+    }
   // menu.getMainWindow()->attrOFF(A_REVERSE);
+  win->setAttrOFF(A_REVERSE);
   menu.refresh();
 
 
