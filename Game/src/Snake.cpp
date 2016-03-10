@@ -48,7 +48,7 @@ void Snake::goUp()
     if (snakeOri == DOWN || snakeOri == UP)
         return;
     snakeOri = UP;
-    direction.y = 1;
+    direction.y = -1;
     direction.x = 0;
 }
 
@@ -57,7 +57,7 @@ void Snake::goDown()
     if (snakeOri == DOWN || snakeOri == UP)
         return;
     snakeOri = DOWN;
-    direction.y = -1;
+    direction.y = 1;
     direction.x = 0;
 }
 
@@ -67,7 +67,7 @@ void Snake::goLeft()
         return;
     snakeOri = LEFT;
     direction.y = 0;
-    direction.x = 1;
+    direction.x = -1;
 }
 
 void Snake::goRight()
@@ -76,7 +76,7 @@ void Snake::goRight()
         return;
     snakeOri = RIGHT;
     direction.y = 0;
-    direction.x = -1;
+    direction.x = 1;
 }
 
 void                                Snake::generateAppelPos()
@@ -145,10 +145,11 @@ void Snake::initGame()
             plate.push_back(Vector2(static_cast<int>(x), static_cast<int>(y)));
         }
     }
-    addBody(Vector2(midW + 2, midH));
-    addBody(Vector2(midW + 1, midH));
-    addBody(Vector2(midW, midH));
     addBody(Vector2(midW - 1, midH));
+    addBody(Vector2(midW, midH));
+    addBody(Vector2(midW + 1, midH));
+    addBody(Vector2(midW + 2, midH));
+    generateAppelPos();
     score = 0;
 }
 
