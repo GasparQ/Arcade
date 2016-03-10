@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Thu Mar 10 15:30:33 2016 Victor Gouet
+// Last update Thu Mar 10 22:27:51 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -28,10 +28,12 @@ public:
 
 private:
   void	        _gameComponent(GameComponent *) const;
+  void		_cacheClear();
 
 private:
-  ncr::Window	*gameWin;
-  ncr::Window	*_board;
+  ncr::Window			*gameWin;
+  ncr::Window			*_board;
+  std::stack<Vector2>		_cacheGame;
 };
 
 #endif

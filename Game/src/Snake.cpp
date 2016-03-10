@@ -34,7 +34,7 @@ Snake::~Snake()
 Snake::Snake() :
     apple(0, 0),
     score(0),
-    snakeOri(0),
+    snakeOri(UP),
     direction(0, 0)
 {
     keycodex[arcade::ArrowDown] = &Snake::goDown;
