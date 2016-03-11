@@ -136,7 +136,8 @@ void		arcade::Arcade::onPrevGame()
 
 void		arcade::Arcade::onRestart()
 {
-
+  currGame->restart();
+  lib->display(std::stack<AComponent *>());
 }
 
 void		arcade::Arcade::onHome()

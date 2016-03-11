@@ -5,13 +5,14 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 15:38:49 2016 Victor Gouet
-// Last update Wed Mar  9 15:51:10 2016 Victor Gouet
+// Last update Fri Mar 11 17:25:08 2016 Victor Gouet
 //
 
 #include "UIComponent.hpp"
 
-UIComponent::UIComponent(Vector2 const &pos, Vector2 const &dim, std::string const &text) :
-  AComponent(pos), dim(dim), text(text) 
+UIComponent::UIComponent(Vector2 const &pos, enum ComponentColor color,
+			 Vector2 const &dim, std::string const &text) :
+  AComponent(pos, color), dim(dim), text(text) 
 {
 
 }

@@ -7,7 +7,7 @@
 #include "../../Arcade.hpp"
 #include "../../Component/include/GameComponent.hpp"
 
-//TODO limits on walls + void play(void)
+//TODO void play(void)
 
 std::stack<AComponent *>                Snake::compute(int keycode)
 {
@@ -20,10 +20,18 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     goAhead();
     for (bod = body.begin(); bod != body.end(); ++bod)
     {
-        output.push(new GameComponent(*bod, NULL, " ", "snake.bmp"));
+      if (bod == body.begin())
+	output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, NULL, " ", "snake.bmp"));
+      else
+	output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, NULL, " ", "snake.bmp"));
     }
-    output.push(new GameComponent(apple, NULL, "O", "appel.bmp"));
+    output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "appel.bmp"));
     return output;
+}
+
+void	Snake::restart()
+{
+  initGame();
 }
 
 Snake::~Snake()
@@ -89,9 +97,6 @@ void                                Snake::generateAppelPos()
     if (plate.empty())
         return;
     index = random() % plate.size();
-    // index = plate.size() - 1 % plate.size();
-    // apparement tu me return parfois la postion y = 30
-    // c'est la merde
     for (size_t i = 0; i < index; ++i, ++it);
     apple = *it;
     plate.erase(it);

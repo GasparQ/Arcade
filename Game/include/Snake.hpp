@@ -19,8 +19,12 @@ class Snake : public IGame
 public:
     Snake();
     virtual ~Snake();
-    virtual std::stack<AComponent *> compute(int keycode);
-    typedef void (Snake::*keyfunc)();
+
+public:
+  virtual std::stack<AComponent *> compute(int keycode);
+  virtual void	restart();
+
+  typedef void (Snake::*keyfunc)();
 
 private:
     typedef enum
