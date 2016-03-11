@@ -32,6 +32,10 @@ namespace arcade
     static const int            Exit = 27;
     static const int            Pause = 'P';
 
+  class Arcade;
+
+  typedef void	(Arcade::*eventSystem)();
+
     class Arcade
     {
     public:
@@ -39,20 +43,30 @@ namespace arcade
         ~Arcade();
         static const std::string    libDir;
         static const std::string    gamesDir;
-
         static const std::string    createLib;
         static const std::string    createGame;
         void                        Run();
+
+    private:
+      void		onPrevGraph();
+      void		onNextGraph();
+      void		onNextGame();
+      void		onPrevGame();
+      void		onRestart();
+      void		onHome();
+      void		onExit();
 
         /**
          * Attributes
          */
     private:
-        IGraph                          *lib;
-        std::vector<IGame *>            games;
-        IGame                           *currGame;
-        std::vector<std::string>        libsName;
-        std::map<std::string, void *>   dlopenedlibs;
+      IGraph                          *lib;
+      std::vector<IGame *>            games;
+      IGame                           *currGame;
+      std::vector<std::string>        libsName;
+      std::map<std::string, void *>   dlopenedlibs;
+      std::map<int, arcade::eventSystem>	eventSystem;
+      bool				isRunning;
 
         /**
          * Methods

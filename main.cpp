@@ -21,5 +21,6 @@ int main(int ac, char **av)
         return 1;
     }
     arcade->Run();
+    delete arcade;
     return 0;
 }

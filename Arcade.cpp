@@ -22,6 +22,14 @@ arcade::Arcade::Arcade(std::string const &libname)
     regex_t                     reg;
     std::vector<std::string>    gameLibs;
 
+    isRunning = true;
+    eventSystem[PrevGame] = &arcade::Arcade::onPrevGame;
+    eventSystem[NextGame] = &arcade::Arcade::onNextGame;
+    eventSystem[NextGraph] = &arcade::Arcade::onNextGraph;
+    eventSystem[PrevGraph] = &arcade::Arcade::onPrevGraph;
+    eventSystem[Restart] = &arcade::Arcade::onRestart;
+    eventSystem[Home] = &arcade::Arcade::onHome;
+    eventSystem[Exit] = &arcade::Arcade::onExit;
     lib = NULL;
     if (regcomp(&reg, "^(.*[\\/])?lib_arcade_[[:alnum:]\\_]+.so$", REG_EXTENDED) != 0)
         throw std::runtime_error("arcade: cannot regcomp");
@@ -106,14 +114,52 @@ bool                    arcade::Arcade::isLibNameValid(const std::string &string
     return true;
 }
 
+void		arcade::Arcade::onPrevGraph()
+{
+  
+}
+
+void		arcade::Arcade::onNextGraph()
+{
+
+}
+
+void		arcade::Arcade::onNextGame()
+{
+
+}
+
+void		arcade::Arcade::onPrevGame()
+{
+
+}
+
+void		arcade::Arcade::onRestart()
+{
+
+}
+
+void		arcade::Arcade::onHome()
+{
+
+}
+
+void		arcade::Arcade::onExit()
+{
+  isRunning = false;
+}
+
 void        arcade::Arcade::Run()
 {
     int     key;
     std::chrono::milliseconds chrono(100);
+    std::map<int, arcade::eventSystem>::iterator	it;
 
-    while (1)
+    while (isRunning)
     {
         key = lib->eventManagment();
+	if ((it = this->eventSystem.find(key)) != eventSystem.end())
+	  (this->*it->second)();
         //TODO check event système
         lib->display(currGame->compute(key));
         //TODO wait

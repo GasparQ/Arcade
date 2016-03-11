@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 11:10:42 2016 Victor Gouet
-// Last update Wed Mar  9 15:20:01 2016 Victor Gouet
+// Last update Fri Mar 11 15:56:28 2016 Victor Gouet
 //
 
 #ifndef IGAME_HPP_
@@ -19,6 +19,7 @@ class	IGame
 public:
     virtual ~IGame() = 0;
     virtual std::stack<AComponent *> compute(int keycode) = 0;
+  virtual void restart();
 };
 
 #endif
