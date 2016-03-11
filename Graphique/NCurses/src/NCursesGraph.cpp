@@ -5,10 +5,11 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Mar 11 11:20:15 2016 Victor Gouet
+// Last update Fri Mar 11 12:54:38 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
+#include "../../../Arcade.hpp"
 
 NCursesGraph::NCursesGraph()
 {
@@ -16,8 +17,8 @@ NCursesGraph::NCursesGraph()
   NCurses::noEchoMode();
   NCurses::hide_cursor();
   NCurses::delayOnGetOutput();
-  _board = new ncr::Window(32, 52, 0, 0);
-  gameWin = new ncr::Window(30, 50, 1, 1, *_board);
+  _board = new ncr::Window(arcade::winHeight + 2, arcade::winWidth + 2, 0, 0);
+  gameWin = new ncr::Window(arcade::winHeight, arcade::winWidth, 1, 1, *_board);
 
   _board->attrON(A_REVERSE);
   _board->makeBorder(' ', ' ', ' ');
@@ -50,13 +51,10 @@ void	        NCursesGraph::_gameComponent(GameComponent *gameComponent) const
 
 void		NCursesGraph::_cacheClear()
 {
-  // Vector2	pos(0, 0);
-
   if (_cacheGame.empty())
     gameWin->clear();
   while (!_cacheGame.empty())
     {
-      // pos = _cacheGame.top()->getPos();
       gameWin->print(_cacheGame.top().x, _cacheGame.top().y, " ");
       _cacheGame.pop();
     }

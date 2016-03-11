@@ -14,8 +14,8 @@
 
 namespace arcade
 {
-    static const size_t         winWidth = 50;
-    static const size_t         winHeight = 30;
+  static const size_t         winWidth = 50; // 50
+  static const size_t         winHeight = 30; // 30
 
     static const int            ArrowLeft = 260;
     static const int            ArrowRight = 261;

@@ -20,7 +20,7 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     goAhead();
     for (bod = body.begin(); bod != body.end(); ++bod)
     {
-        output.push(new GameComponent(*bod, NULL, "*", "snake.bmp"));
+        output.push(new GameComponent(*bod, NULL, " ", "snake.bmp"));
     }
     output.push(new GameComponent(apple, NULL, "O", "appel.bmp"));
     return output;
