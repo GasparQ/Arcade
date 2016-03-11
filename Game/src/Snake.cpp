@@ -111,9 +111,24 @@ void Snake::addBody(Vector2 newPos)
     plate.remove(newPos);
 }
 
+bool	Snake::goOnWall(Vector2 const &vector) const
+{
+  if (vector.x >= static_cast<int>(arcade::winWidth) || vector.x < 0)
+    {
+      return (true);
+    }
+  if (vector.y >= static_cast<int>(arcade::winHeight) || vector.y < 0)
+    {
+      return (true);
+    }
+  return (false);
+}
+
 void Snake::goAhead()
 {
-    if (std::find<std::list<Vector2>::iterator, Vector2>(body.begin(), body.end(), body.front() + direction) != body.end())
+    if (std::find<std::list<Vector2>::iterator, Vector2>(body.begin(), body.end(),
+							 body.front() + direction) != body.end()
+	|| goOnWall(body.front() + direction))
         die();
     else
         move();

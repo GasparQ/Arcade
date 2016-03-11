@@ -54,6 +54,7 @@ private:
     void                        move();
     void                        die();
     void                        initGame();
+  bool goOnWall(Vector2 const &vector) const;
 };
 
 #endif //C_SNAKE_HPP
