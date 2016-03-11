@@ -1,0 +1,4 @@
+<map id="AComponent" name="AComponent">
+<area shape="rect" id="node2" href="$class_game_component.html" title="GameComponent" alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node3" href="$class_u_i_component.html" title="UIComponent" alt="" coords="153,80,255,107"/>
+</map>

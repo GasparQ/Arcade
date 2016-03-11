@@ -1,0 +1,51 @@
+<map id="cpp_arcade/Graphique/SDL2/include/close_code.h" name="cpp_arcade/Graphique/SDL2/include/close_code.h">
+<area shape="rect" id="node2" href="$_s_d_l__platform_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_platform.h" alt="" coords="1369,103,1567,145"/>
+<area shape="rect" id="node3" href="$_s_d_l__atomic_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_atomic.h" alt="" coords="1370,201,1560,242"/>
+<area shape="rect" id="node4" href="$_s_d_l_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL.h" alt="" coords="3361,926,3513,967"/>
+<area shape="rect" id="node5" href="$_s_d_l__test__common_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test\l_common.h" alt="" coords="1640,1016,1803,1072"/>
+<area shape="rect" id="node6" href="$_s_d_l__thread_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_thread.h" alt="" coords="841,382,1028,423"/>
+<area shape="rect" id="node7" href="$_s_d_l__audio_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_audio.h" alt="" coords="975,473,1157,514"/>
+<area shape="rect" id="node8" href="$_s_d_l__stdinc_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_stdinc.h" alt="" coords="2863,103,3049,145"/>
+<area shape="rect" id="node9" href="$_s_d_l__surface_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_surface.h" alt="" coords="1489,473,1684,514"/>
+<area shape="rect" id="node10" href="$_s_d_l__video_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_video.h" alt="" coords="1922,563,2104,605"/>
+<area shape="rect" id="node11" href="$_s_d_l__events_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_events.h" alt="" coords="2459,835,2649,877"/>
+<area shape="rect" id="node12" href="$_s_d_l__keyboard_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_keyboard.h" alt="" coords="2211,654,2416,695"/>
+<area shape="rect" id="node13" href="$_s_d_l__system_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_system.h" alt="" coords="1893,745,2088,786"/>
+<area shape="rect" id="node14" href="$_s_d_l__mouse_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_mouse.h" alt="" coords="1995,654,2185,695"/>
+<area shape="rect" id="node15" href="$_s_d_l__gesture_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_gesture.h" alt="" coords="2635,745,2829,786"/>
+<area shape="rect" id="node16" href="$_s_d_l__touch_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_touch.h" alt="" coords="2845,654,3029,695"/>
+<area shape="rect" id="node17" href="$_s_d_l__messagebox_8h_source.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_messagebox.h" alt="" coords="3475,654,3701,695"/>
+<area shape="rect" id="node18" href="$_s_d_l__render_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_render.h" alt="" coords="1419,654,1607,695"/>
+<area shape="rect" id="node19" href="$_s_d_l__shape_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_shape.h" alt="" coords="1632,654,1819,695"/>
+<area shape="rect" id="node20" href="$_s_d_l__syswm_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_syswm.h" alt="" coords="3205,654,3400,695"/>
+<area shape="rect" id="node21" href="$_s_d_l__pixels_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_pixels.h" alt="" coords="1820,291,2007,333"/>
+<area shape="rect" id="node22" href="$_s_d_l__rect_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_rect.h" alt="" coords="1625,382,1799,423"/>
+<area shape="rect" id="node23" href="$_s_d_l__error_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_error.h" alt="" coords="2183,201,2361,242"/>
+<area shape="rect" id="node24" href="$_s_d_l__rwops_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_rwops.h" alt="" coords="1508,291,1695,333"/>
+<area shape="rect" id="node25" href="$_s_d_l__gamecontroller_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_gamecontroller.h" alt="" coords="2179,382,2415,423"/>
+<area shape="rect" id="node26" href="$_s_d_l__mutex_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_mutex.h" alt="" coords="890,291,1077,333"/>
+<area shape="rect" id="node27" href="$_s_d_l__joystick_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_joystick.h" alt="" coords="3044,291,3241,333"/>
+<area shape="rect" id="node28" href="$_s_d_l__haptic_8h.html" title="The SDL Haptic subsystem allows you to control haptic (force feedback) devices. " alt="" coords="3308,382,3495,423"/>
+<area shape="rect" id="node29" href="$_s_d_l__loadso_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_loadso.h" alt="" coords="3621,291,3811,333"/>
+<area shape="rect" id="node30" href="$_s_d_l__timer_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_timer.h" alt="" coords="3836,291,4017,333"/>
+<area shape="rect" id="node31" href="$_s_d_l__main_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_main.h" alt="" coords="3653,201,3832,242"/>
+<area shape="rect" id="node32" href="$_s_d_l__endian_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_endian.h" alt="" coords="1105,382,1295,423"/>
+<area shape="rect" id="node33" href="$_s_d_l__clipboard_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_clipboard.h" alt="" coords="4106,201,4309,242"/>
+<area shape="rect" id="node34" href="$_s_d_l__cpuinfo_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_cpuinfo.h" alt="" coords="4385,201,4580,242"/>
+<area shape="rect" id="node35" href="$_s_d_l__filesystem_8h.html" title="Include file for filesystem SDL API functions. " alt="" coords="4654,201,4865,242"/>
+<area shape="rect" id="node36" href="$_s_d_l__hints_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_hints.h" alt="" coords="4890,201,5069,242"/>
+<area shape="rect" id="node37" href="$_s_d_l__log_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_log.h" alt="" coords="5094,201,5263,242"/>
+<area shape="rect" id="node38" href="$_s_d_l__power_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_power.h" alt="" coords="5339,201,5525,242"/>
+<area shape="rect" id="node39" href="$_s_d_l__version_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_version.h" alt="" coords="3924,563,4119,605"/>
+<area shape="rect" id="node40" href="$_s_d_l__bits_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_bits.h" alt="" coords="3857,201,4031,242"/>
+<area shape="rect" id="node41" href="$_s_d_l__blendmode_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_blendmode.h" alt="" coords="449,382,663,423"/>
+<area shape="rect" id="node42" href="$_s_d_l__assert_8h_source.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_assert.h" alt="" coords="5321,835,5508,877"/>
+<area shape="rect" id="node43" href="$_s_d_l__test__font_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test\l_font.h" alt="" coords="5491,96,5653,152"/>
+<area shape="rect" id="node44" href="$_s_d_l__test__random_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test\l_random.h" alt="" coords="5677,96,5840,152"/>
+<area shape="rect" id="node45" href="$_s_d_l__test__fuzzer_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test\l_fuzzer.h" alt="" coords="5864,96,6027,152"/>
+<area shape="rect" id="node46" href="$_s_d_l__test__crc32_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test\l_crc32.h" alt="" coords="6051,96,6213,152"/>
+<area shape="rect" id="node47" href="$_s_d_l__test__md5_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test_md5.h" alt="" coords="6238,103,6444,145"/>
+<area shape="rect" id="node48" href="$_s_d_l__test__log_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test_log.h" alt="" coords="6469,103,6667,145"/>
+<area shape="rect" id="node49" href="$_s_d_l__test__assert_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test\l_assert.h" alt="" coords="6692,96,6855,152"/>
+<area shape="rect" id="node50" href="$_s_d_l__test__harness_8h.html" title="cpp_arcade/Graphique\l/SDL2/include/SDL_test\l_harness.h" alt="" coords="6879,96,7041,152"/>
+</map>

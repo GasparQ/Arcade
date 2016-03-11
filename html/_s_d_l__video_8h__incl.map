@@ -1,0 +1,13 @@
+<map id="cpp_arcade/Graphique/SDL2/include/SDL_video.h" name="cpp_arcade/Graphique/SDL2/include/SDL_video.h">
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="1139,395,1240,421"/>
+<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="209,619,308,645"/>
+<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1708,619,1807,645"/>
+<area shape="rect" id="node19" href="$_s_d_l__pixels_8h.html" title="SDL_pixels.h" alt="" coords="1463,320,1563,347"/>
+<area shape="rect" id="node20" href="$_s_d_l__rect_8h.html" title="SDL_rect.h" alt="" coords="1244,171,1332,197"/>
+<area shape="rect" id="node23" href="$_s_d_l__surface_8h.html" title="SDL_surface.h" alt="" coords="1363,96,1472,123"/>
+<area shape="rect" id="node3" href="$_s_d_l__config_8h_source.html" title="SDL_config.h" alt="" coords="629,469,731,496"/>
+<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="623,544,736,571"/>
+<area shape="rect" id="node21" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="1143,320,1235,347"/>
+<area shape="rect" id="node22" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="1063,245,1164,272"/>
+<area shape="rect" id="node24" href="$_s_d_l__blendmode_8h.html" title="SDL_blendmode.h" alt="" coords="347,544,476,571"/>
+</map>
