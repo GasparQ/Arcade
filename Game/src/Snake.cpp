@@ -89,6 +89,9 @@ void                                Snake::generateAppelPos()
     if (plate.empty())
         return;
     index = random() % plate.size();
+    // index = plate.size() - 1 % plate.size();
+    // apparement tu me return parfois la postion y = 30
+    // c'est la merde
     for (size_t i = 0; i < index; ++i, ++it);
     apple = *it;
     plate.erase(it);
