@@ -37,7 +37,7 @@ private:
     void DrawSphere(double posX = 0, double posY = 0, double posZ = 0,
                     double red = 255, double green = 255, double blue = 255) const;
 
-    void DrawCube(Vector2 pos, AComponent::ComponentColor color) const;
+    void DrawCube(Vector2 pos, AComponent::ComponentColor color, double posY = 0) const;
 
     void DrawTerrain(int sizeX, int sizeY) const;
 
@@ -47,14 +47,14 @@ private:
     SDL_Window *m_window = NULL;
     SDL_GLContext m_glContext = NULL;
     // RGBA
-    SDL_Color colors[10] = {{0, 0, 0, 0},
-                            {255, 0, 0, 255},
-                            {0, 255, 0, 255},
-                            {255, 0, 255, 255},
-                            {0, 0, 255, 255},
-                            {255, 255, 0, 255},
-                            {255, 0, 255, 255},
-                            {255, 255, 255, 255}};
+    SDL_Color colors[10] = {{0, 0, 0, 0}, // Black
+                            {255, 0, 0, 255}, // red
+                            {0, 255, 0, 255}, // green
+                            {255, 255, 0, 255}, // yellow
+                            {0, 0, 255, 255}, // blue
+                            {255, 0, 255, 255}, // magenta
+                            {0, 255, 255, 255}, // cyan
+                            {255, 255, 255, 255}}; // white
 };
 
 

@@ -82,9 +82,11 @@ void OpenGlGraph::DrawBackground()
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-    gluLookAt(0, 10, -70, 0, 0, 0, 0, 1, 0);
-    DrawTerrain(100, 100);
-    DrawSphere();
+    // We set the eye to see 3/4 view, the center on Vector.zero and y as up axis
+    gluLookAt(0, 15, -48, 0, 0, 0, 0, 1, 0);
+    // then we translate to center
+    glTranslated(arcade::winWidth / 2.0, 0, 0);
+    DrawTerrain(arcade::winWidth, arcade::winHeight);
 }
 
 void OpenGlGraph::DrawSphere(double posX, double posY, double posZ,
@@ -101,10 +103,10 @@ void OpenGlGraph::DrawSphere(double posX, double posY, double posZ,
     glPopMatrix();
 }
 
-void OpenGlGraph::DrawCube(Vector2 pos, AComponent::ComponentColor color) const
+void OpenGlGraph::DrawCube(Vector2 pos, AComponent::ComponentColor color, double posY) const
 {
     glPushMatrix();
-    glTranslated(-pos.x, 0, -pos.y);
+    glTranslated(-pos.x, -posY, -pos.y);
 
     glBegin(GL_QUADS);
 
@@ -143,14 +145,17 @@ void OpenGlGraph::DrawCube(Vector2 pos, AComponent::ComponentColor color) const
     glPopMatrix();
 }
 
-// TODO: implement
 void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
 {
-    for (double i = -(sizeX / 2.0); i < sizeX; ++i)
+    for (int i = -1; i <= sizeX; ++i)
     {
-        for (double j = -(sizeY / 2.0); j < sizeY; ++j)
+        for (int j = -1; j <= sizeY; ++j)
         {
-            //DrawCube(Vector2(i, j), AComponent::COLOR_BLUE);
+            if (i == -1 || j == -1 || i == sizeX || j == sizeY)
+            {
+                DrawCube(Vector2(i, j), AComponent::COLOR_YELLOW);
+            }
+            DrawCube(Vector2(i, j), AComponent::COLOR_BLUE, 1);
         }
     }
 }
