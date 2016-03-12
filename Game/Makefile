@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Thu Mar 10 16:28:26 2016 Quentin Gasparotto
-## Last update Thu Mar 10 18:25:26 2016 Quentin Gasparotto
+## Last update Sat Mar 12 14:40:47 2016 Victor Gouet
 ##
 
 CC	=	g++
@@ -26,10 +26,11 @@ SNAKESRCS	=	$(COMMON) \
 
 SNAKEOBJS	=	$(SNAKESRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Wextra -fPIC \
+CPPFLAGS	=	-W -Wall -Wextra -fPIC --std=c++11 \
 			-I ./include/ \
 			-I ../Vector/include \
 			-I ../Component/include/
+
 
 LDFLAGS		=	-shared
 
