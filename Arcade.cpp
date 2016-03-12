@@ -108,7 +108,7 @@ void        arcade::Arcade::loadGraph()
     if ((dllib = dlopen(currLibName->c_str(), RTLD_LAZY)) == NULL)
         throw LoadLibraryException(*currLibName);
     if ((load_lib = (IGraph *(*)()) dlsym(dllib, arcade::Arcade::createLib.c_str())) == NULL)
-        throw IncompleteLibraryException(*currLibName);//throw error
+        throw IncompleteLibraryException(*currLibName);
     lib = load_lib();
 }
 
@@ -138,16 +138,10 @@ bool                    arcade::Arcade::isLibNameValid(const std::string &string
 
 void        arcade::Arcade::onPrevGraph()
 {
-    /*if (currLibName == libsName.begin())
+    if (currLibName == libsName.begin())
         currLibName = libsName.end();
     --currLibName;
-     *currLibName
-     */
-    ++currLibName;
-    if (currLibName == libsName.end())
-        currLibName = libsName.begin();
     loadGraph();
-//    loadGraph("toto");
 }
 
 void        arcade::Arcade::onNextGraph()
