@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "Window.hpp"
+#include "OpenGlGraph.hpp"
 
 int main(int ac, char **av)
 {

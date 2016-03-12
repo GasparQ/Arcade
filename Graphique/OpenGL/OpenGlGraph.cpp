@@ -2,8 +2,11 @@
 // Created by veyrie_f on 3/10/16.
 //
 
-#include "Window.hpp"
+#include <bits/unique_ptr.h>
+#include "OpenGlGraph.hpp"
 #include "../../Arcade.hpp"
+#include "../../Component/include/UIComponent.hpp"
+#include "../../Component/include/GameComponent.hpp"
 
 // Ctor:
 // Initializes Projection mode and Lighting
@@ -165,5 +168,20 @@ int OpenGlGraph::eventManagment()
 // Handles data display
 void OpenGlGraph::display(std::stack<AComponent *> stack)
 {
+    GameComponent *gc;
+    UIComponent *uic;
 
+    while (!stack.empty())
+    {
+        if ((gc = dynamic_cast<GameComponent*>(stack.top())) != nullptr)
+        {
+
+        }
+        else if ((uic = dynamic_cast<UIComponent*>(stack.top())) != nullptr)
+        {
+
+        }
+
+        stack.pop();
+    }
 }
