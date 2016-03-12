@@ -11,15 +11,20 @@
 #include "../SDL2/include/SDL.h"
 #include "../../Exception/LoadException.hpp"
 #include "../SDL2/include/SDL_opengl.h"
+#include "../include/IGraph.hpp"
 
-class Window
+class OpenGlGraph : public IGraph
 {
 public:
-    Window(int width = 900, int height = 600, const char *name = "OpenGL Win");
+    OpenGlGraph(const char *name = "OpenGL Win");
 
-    virtual ~Window();
+    virtual ~OpenGlGraph();
 
     void RefreshImage();
+
+public:
+    virtual int eventManagment();
+    virtual void display(std::stack<AComponent*>);
 
 private:
     void SetProjectionMode();

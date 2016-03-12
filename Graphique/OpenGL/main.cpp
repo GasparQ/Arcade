@@ -7,7 +7,7 @@
 
 int main(int ac, char **av)
 {
-    Window w;
+    OpenGlGraph w;
     SDL_Event event;
     bool _continue = true;
 
