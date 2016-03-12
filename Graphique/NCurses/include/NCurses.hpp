@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 23:53:22 2016 Victor Gouet
-// Last update Thu Mar 10 19:19:46 2016 Victor Gouet
+// Last update Sat Mar 12 18:02:33 2016 Victor Gouet
 //
 
 #ifndef ARCADENCURSES_HPP_
@@ -26,6 +26,7 @@ public:
   static int    echoMode();
   static int	noEchoMode();
   static int	delayOnGetOutput();
+  static int	getMaxXY(int &x, int &y);
 };
 
 #endif

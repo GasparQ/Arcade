@@ -158,10 +158,17 @@ void        arcade::Arcade::Run()
 
     while (isRunning)
     {
-        key = lib->eventManagment();
+      try
+	{
+	  key = lib->eventManagment();
+	}
+      catch (std::exception exception)
+	{
+	  std::cerr << exception.what() << std::endl;
+	  return ;
+	}
 	if ((it = this->eventSystem.find(key)) != eventSystem.end())
-	  (this->*it->second)();
-        //TODO check event système
+	  (this->*it->second)(); // on gere les event system ici
         lib->display(currGame->compute(key));
         //TODO wait
         std::this_thread::sleep_for(chrono);
