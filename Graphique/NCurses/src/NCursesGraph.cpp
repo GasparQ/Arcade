@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Sat Mar 12 17:43:49 2016 Victor Gouet
+// Last update Sat Mar 12 19:11:31 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -13,21 +13,39 @@
 
 NCursesGraph::NCursesGraph()
 {
-  NCurses::init();
-  NCurses::noEchoMode();
-  NCurses::hide_cursor();
-  NCurses::delayOnGetOutput();
+  _board = NULL;
+  gameWin = NULL;
+  UIWin = NULL;
+  if (NCurses::init() == NULL)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::noEchoMode() == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::hide_cursor() == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::delayOnGetOutput() == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  
+  if (!isResizeGood())
+    NCurses::destroy(), throw ResizeFailed();//throw exeption 
+
   _board = new ncr::Window(arcade::winHeight + 2, arcade::winWidth + 2, 0, 0);
   gameWin = new ncr::Window(arcade::winHeight, arcade::winWidth, 1, 1, *_board);
   UIWin = new ncr::Window(3, arcade::winWidth - 1, 2, arcade::winHeight + 3);
 
-  NCurses::initPair(1, COLOR_RED, COLOR_BLACK);
-  NCurses::initPair(2, COLOR_GREEN, COLOR_BLACK);
-  NCurses::initPair(3, COLOR_YELLOW, COLOR_BLACK);
-  NCurses::initPair(4, COLOR_BLUE, COLOR_BLACK);
-  NCurses::initPair(5, COLOR_MAGENTA, COLOR_BLACK);
-  NCurses::initPair(6, COLOR_CYAN, COLOR_BLACK);
-  NCurses::initPair(7, COLOR_WHITE, COLOR_BLACK);
+  if (NCurses::initPair(1, COLOR_RED, COLOR_BLACK) == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::initPair(2, COLOR_GREEN, COLOR_BLACK) == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::initPair(3, COLOR_YELLOW, COLOR_BLACK) == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::initPair(4, COLOR_BLUE, COLOR_BLACK) == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::initPair(5, COLOR_MAGENTA, COLOR_BLACK) == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::initPair(6, COLOR_CYAN, COLOR_BLACK) == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
+  if (NCurses::initPair(7, COLOR_WHITE, COLOR_BLACK) == ERR)
+    NCurses::destroy(), throw NCursesSystemFailed();//throw exeption 
 
   _board->attrON(A_REVERSE | COLOR_PAIR(4));
   _board->makeBorder(' ', ' ', ' ');
@@ -49,9 +67,28 @@ NCursesGraph::~NCursesGraph()
   NCurses::destroy();
 }
 
+bool			NCursesGraph::isResizeGood() const
+{
+  int	x;
+  int	y;
+
+  if (NCurses::getMaxXY(x, y) == ERR)
+    return (false);
+  if (static_cast<unsigned int>(x) < arcade::winWidth + 2)
+    return (false);
+  if (static_cast<unsigned int>(y) < arcade::winHeight + 2)
+    return (false);
+  return (true);
+}
+
 int	NCursesGraph::eventManagment()
 {
-  return (NCurses::getCarac());
+  int	keycode;
+
+  keycode = NCurses::getCarac();
+  if (keycode == KEY_RESIZE && !isResizeGood())
+    throw ResizeFailed();//throw execption
+  return (keycode);
 }
 
 void	        NCursesGraph::_displayComponent(GameComponent *gameComponent) const
@@ -101,7 +138,7 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
   	  _cacheGame.push(s_cache(gameComponent->getPos(),
 				  gameComponent->getSpriteText(), gameWin));
   	}
-      if ((uiComponent = dynamic_cast<UIComponent *>(obj.top())) != NULL)
+      else if ((uiComponent = dynamic_cast<UIComponent *>(obj.top())) != NULL)
   	{
   	  _displayComponent(uiComponent);
   	  _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), UIWin));

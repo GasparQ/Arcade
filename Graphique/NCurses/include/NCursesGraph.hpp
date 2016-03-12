@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Sat Mar 12 17:42:00 2016 Victor Gouet
+// Last update Sat Mar 12 18:57:33 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -17,6 +17,7 @@
 # include "NCurses.hpp"
 # include "../../../Component/include/GameComponent.hpp"
 # include "../../../Component/include/UIComponent.hpp"
+# include "../../Exception/NCursesException.hpp"
 
 typedef struct	s_cache
 {
@@ -45,6 +46,8 @@ private:
   void			_displayComponent(GameComponent *) const;
   void			_displayComponent(UIComponent *) const;
   void			_cacheClear();
+  bool			isResizeGood() const;
+
 
 private:
   ncr::Window			*gameWin;

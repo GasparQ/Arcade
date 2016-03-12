@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 23:55:45 2016 Victor Gouet
-// Last update Thu Mar 10 19:19:37 2016 Victor Gouet
+// Last update Sat Mar 12 18:02:35 2016 Victor Gouet
 //
 
 # include "../include/NCurses.hpp"
@@ -71,4 +71,9 @@ int    NCurses::noEchoMode()
 int	NCurses::delayOnGetOutput()
 {
   return (nodelay(stdscr, true));
+}
+
+int	NCurses::getMaxXY(int &x, int &y)
+{
+  return (getmaxyx(stdscr, y, x));
 }
