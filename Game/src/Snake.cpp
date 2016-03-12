@@ -6,6 +6,7 @@
 #include "../include/Snake.hpp"
 #include "../../Arcade.hpp"
 #include "../../Component/include/GameComponent.hpp"
+#include "../../Component/include/UIComponent.hpp"
 
 //TODO void play(void)
 
@@ -26,6 +27,11 @@ std::stack<AComponent *>                Snake::compute(int keycode)
 	output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, NULL, " ", "snake.bmp"));
     }
     output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "appel.bmp"));
+
+    output.push(new UIComponent(Vector2((arcade::winWidth -
+					 std::string("score : " + std::to_string(score)).size()) / 2, 1),
+				AComponent::COLOR_WHITE,
+				Vector2(0, 0), "score : " + std::to_string(score)));
     return output;
 }
 
@@ -143,7 +149,10 @@ void Snake::move()
 {
     addBody(body.front() + direction);
     if (body.front() == apple)
+      {
+	score += 10;
         generateAppelPos();
+      }
     else
         removeBody();
 }
@@ -160,7 +169,7 @@ void Snake::initGame()
 
     plate.clear();
     body.clear();
-    snakeOri = Snake::LEFT;
+    snakeOri = Snake::RIGHT;
     direction.x = 1;
     direction.y = 0;
     for (size_t x = 0; x  < arcade::winWidth; ++x)
