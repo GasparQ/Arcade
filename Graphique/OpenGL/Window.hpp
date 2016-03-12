@@ -15,13 +15,20 @@
 class Window
 {
 public:
-    Window(int width = 900, int height = 600, const char* name = "OpenGL Win");
+    Window(int width = 900, int height = 600, const char *name = "OpenGL Win");
+
     virtual ~Window();
+
     void RefreshImage();
 
 private:
     void SetProjectionMode();
-    void DrawSphere();
+
+    void DrawSphere(double posX = 0, double posY = 0, double posZ = 0,
+                    double red = 255, double green = 255, double blue = 255) const;
+
+    void DrawCube(double posX = 0, double posY = 0, double posZ = 0,
+                  double red = 255, double green = 255, double blue = 255) const;
 
 private:
     SDL_Window *m_window = NULL;
