@@ -81,7 +81,6 @@ void OpenGlGraph::RefreshImage()
     DrawTerrain(10, 10);
 
     DrawSphere();
-    DrawCube(0, 0, 0);
     //DrawCube(1, 0, 0);
     glFlush();
     SDL_GL_SwapWindow(m_window);
@@ -101,12 +100,11 @@ void OpenGlGraph::DrawSphere(double posX, double posY, double posZ,
     glPopMatrix();
 }
 
-void OpenGlGraph::DrawCube(double posX, double posY, double posZ,
-                      double red, double green, double blue) const
+void OpenGlGraph::DrawCube(Vector2 pos, AComponent::ComponentColor color) const
 {
     glPushMatrix();
-    //glLoadIdentity();
-    glTranslated(-posX, -posY, -posZ);
+    glTranslated(-pos.x, -pos.y, 0);
+    char red = 1, green = 1, blue = 1;
 
     glBegin(GL_QUADS);
 
@@ -151,7 +149,7 @@ void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
     {
         for (double j = -(sizeY / 2.0); j < sizeY; ++j)
         {
-            DrawCube(i, 0, j);
+            //DrawCube(i, 0, j);
         }
     }
 }
@@ -175,13 +173,20 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
     {
         if ((gc = dynamic_cast<GameComponent*>(stack.top())) != nullptr)
         {
-
+            //TODO: fix for different shapes
+            DrawSphere();
+            DrawCube(gc->getPos(), gc->getColor());
         }
         else if ((uic = dynamic_cast<UIComponent*>(stack.top())) != nullptr)
         {
-
+            // TODO: implement UI
         }
 
         stack.pop();
     }
+}
+
+extern "C" IGraph *loadLib()
+{
+    return new OpenGlGraph();
 }

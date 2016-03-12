@@ -34,8 +34,7 @@ private:
     void DrawSphere(double posX = 0, double posY = 0, double posZ = 0,
                     double red = 255, double green = 255, double blue = 255) const;
 
-    void DrawCube(double posX = 0, double posY = 0, double posZ = 0,
-                  double red = 1, double green = 1, double blue = 1) const;
+    void DrawCube(Vector2 pos, AComponent::ComponentColor color) const;
 
     void DrawTerrain(int sizeX, int sizeY) const;
 
