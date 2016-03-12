@@ -79,6 +79,7 @@ namespace arcade
         std::vector<std::string> libsName;
         std::vector<std::string>::iterator  currLibName;
         std::map<std::string, void *> dlopenedlibs;
+        void *dllib;
         std::map<int, arcade::eventSystem> eventSystem;
         bool isRunning;
 
@@ -88,7 +89,8 @@ namespace arcade
     private:
         bool isLibNameValid(std::string const &, regex_t &) const;
 
-        void loadGraph(std::string const &);
+        void loadGraph();
+        void findCurrLib(std::string const &libname);
 
         std::vector<std::string> loadFilesFromDir(std::string const &dirName, regex_t &nameRestric);
 

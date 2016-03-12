@@ -12,7 +12,7 @@ int SDLGraph::eventManagment()
     return -1;
 }
 
-void SDLGraph::display(std::stacgk<AComponent *> stack)
+void SDLGraph::display(std::stack<AComponent *> stack)
 {
 
 }

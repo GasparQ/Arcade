@@ -39,7 +39,24 @@ arcade::Arcade::Arcade(std::string const &libname)
     loadGames(gameLibs);
     if (!isLibNameValid(libname, reg))
         throw arcade::InvalidFileFormatException(libname);
-    loadGraph(libname);
+    findCurrLib(libname);
+    loadGraph();
+}
+
+void arcade::Arcade::findCurrLib(std::string const &libname)
+{
+    std::vector<std::string>::iterator  it;
+
+    for (it = libsName.begin(); it != libsName.end(); ++it)
+    {
+        if (it->find(libname) != std::string::npos)
+        {
+            currLibName = it;
+            break;
+        }
+    }
+    if (it == libsName.end())
+        libsName.push_back(libname);
 }
 
 arcade::Arcade::~Arcade()
@@ -54,6 +71,7 @@ arcade::Arcade::~Arcade()
         if (it->second && dlclose(it->second) != 0)
             throw std::runtime_error("arcade: cannot close '" + it->first + "' library");
     }
+    dlclose(dllib);
     dlopenedlibs.clear();
 }
 
@@ -78,18 +96,20 @@ std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string con
     return names;
 }
 
-void        arcade::Arcade::loadGraph(const std::string &libname)
+void        arcade::Arcade::loadGraph()
 {
     IGraph *(*load_lib)();
 
     if (lib)
+    {
         delete (lib);
-    if ((dlopenedlibs[libname] = dlopen(libname.c_str(), RTLD_LAZY)) == NULL)
-        throw LoadLibraryException(libname);
-    if ((load_lib = (IGraph *(*)()) dlsym(dlopenedlibs[libname], arcade::Arcade::createLib.c_str())) == NULL)
-        throw IncompleteLibraryException(libname);//throw error
+        dlclose(dllib);
+    }
+    if ((dllib = dlopen(currLibName->c_str(), RTLD_LAZY)) == NULL)
+        throw LoadLibraryException(*currLibName);
+    if ((load_lib = (IGraph *(*)()) dlsym(dllib, arcade::Arcade::createLib.c_str())) == NULL)
+        throw IncompleteLibraryException(*currLibName);//throw error
     lib = load_lib();
-    currLibName = std::find<std::vector<std::string>::iterator, std::string>(libsName.begin(), libsName.end(), libname);
 }
 
 void        arcade::Arcade::loadGames(const std::vector<std::string> &libsName)
@@ -118,9 +138,16 @@ bool                    arcade::Arcade::isLibNameValid(const std::string &string
 
 void        arcade::Arcade::onPrevGraph()
 {
-    if (currLibName == libsName.begin())
+    /*if (currLibName == libsName.begin())
         currLibName = libsName.end();
-    loadGraph(*(--currLibName));
+    --currLibName;
+     *currLibName
+     */
+    ++currLibName;
+    if (currLibName == libsName.end())
+        currLibName = libsName.begin();
+    loadGraph();
+//    loadGraph("toto");
 }
 
 void        arcade::Arcade::onNextGraph()
@@ -128,7 +155,8 @@ void        arcade::Arcade::onNextGraph()
     ++currLibName;
     if (currLibName == libsName.end())
         currLibName = libsName.begin();
-    loadGraph(*currLibName);
+    loadGraph();
+
 }
 
 void        arcade::Arcade::onNextGame()
