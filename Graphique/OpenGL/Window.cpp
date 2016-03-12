@@ -2,8 +2,6 @@
 // Created by veyrie_f on 3/10/16.
 //
 
-#include <ostream>
-#include <iostream>
 #include "Window.hpp"
 
 Window::Window(int width, int height, const char *name)
@@ -39,21 +37,29 @@ void Window::SetProjectionMode()
     glLoadIdentity();
     gluPerspective(70, (double) (900.0 / 600.0), 1, 1000);
     glEnable(GL_DEPTH_TEST);
+
+    glClearColor (0.0, 0.0, 0.0, 0.0);
+    glShadeModel (GL_SMOOTH);
+    glEnable(GL_CULL_FACE);
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    InitLighting();
 }
 
 // Vetical axis is (0, 1, 0)
 void Window::RefreshImage()
 {
-    static double i = 0;
-    static double z = 0;
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
+
     gluLookAt(0, 3, -5, 0, 0, 0, 0, 1, 0);
     // Draw everything here
-    //DrawSphere();
-    DrawCube(0, 1, 0);
+    DrawTerrain(10, 10);
+
+    DrawSphere();
     DrawCube(0, 0, 0);
+    //DrawCube(1, 0, 0);
     glFlush();
     SDL_GL_SwapWindow(m_window);
 }
@@ -64,10 +70,10 @@ void Window::DrawSphere(double posX, double posY, double posZ,
     GLUquadric *param;
 
     glPushMatrix();
-    glTranslated(posX, posY, posZ);
+    glTranslated(-posX, -posY, -posZ);
     param = gluNewQuadric();
-    glColor4f(1, 0, 1, 1);
-    gluSphere(param, 1, 10, 10);
+    glColor4d(red, green, blue, 1);
+    gluSphere(param, 0.5, 10, 10);
     gluDeleteQuadric(param);
     glPopMatrix();
 }
@@ -77,7 +83,7 @@ void Window::DrawCube(double posX, double posY, double posZ,
 {
     glPushMatrix();
     //glLoadIdentity();
-    glTranslated(posX, posY, posZ);
+    glTranslated(-posX, -posY, -posZ);
 
     glBegin(GL_QUADS);
 
@@ -114,4 +120,29 @@ void Window::DrawCube(double posX, double posY, double posZ,
 
     glEnd();
     glPopMatrix();
+}
+
+// Handles lighting in the scene
+void Window::InitLighting() const
+{
+    GLfloat lightAmbient[] = { 0.0, 0.0, 0.0, 1.0 };
+    GLfloat lightDiffuse[] = { 1.0, 1.0, 1.0, 1.0 };
+    GLfloat lightSpecular[] = { 1.0, 1.0, 1.0, 1.0 };
+    GLfloat lightPosition[] = { 1.0, 1.0, 1.0, 0.0 };
+
+    glLightfv(GL_LIGHT0, GL_AMBIENT, lightAmbient);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, lightDiffuse);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, lightSpecular);
+    glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
+}
+
+void Window::DrawTerrain(int sizeX, int sizeY) const
+{
+    for (double i = -(sizeX / 2.0); i < sizeX; ++i)
+    {
+        for (double j = -(sizeY / 2.0); j < sizeY; ++j)
+        {
+            DrawCube(i, 0, j);
+        }
+    }
 }
