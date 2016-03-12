@@ -1,40 +1,42 @@
 ##
-## Makefile for  in /home/veyrie_f/rendu/CPE_2014_lemin/OpenLemin
+## Makefile for ncurses overload in /home/gaspar_q/rendu/semestre4/C++/cpp_arcade/Graphique/NCurses
 ##
-## Made by fernand veyrier
-## Login   <veyrie_f@epitech.net>
+## Made by Quentin Gasparotto
+## Login   <gaspar_q@epitech.net>
 ##
-## Started on  Thu Apr 23 15:21:49 2015 fernand veyrier
-## Last update Thu Mar 10 18:32:09 2016 Fernand Veyrier
+## Started on  Thu Mar 10 15:53:59 2016 Quentin Gasparotto
+## Last update Thu Mar 10 16:09:54 2016 Quentin Gasparotto
 ##
 
-CC		= g++
+NAME		=	../../lib/lib_arcade_opengl.so
 
-RM		= rm -f
+RM		=	rm -f
 
-NAME		= OpenArcade
+CC		=	g++
 
-SRCS		= main.cpp \
-              Window.cpp
+SRCS		=	OpenGlGraph.cpp \
+			    ../../Vector/src/Vector2.cpp \
+			    ../../Component/src/AComponent.cpp \
+			    ../../Component/src/GameComponent.cpp \
+			    ../../Component/src/UIComponent.cpp
 
-OBJS		= $(SRCS:.cpp=.o)
+OBJS		=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	= -I./include -I./lib -Wall -Wextra -W -std=c++11
+CPPFLAGS	=	-std=c++11 -W -Wall -Wextra -I ./include -I ../include -I ../../Vector/include -I ../../Component/include -fPIC
 
-LDFLAGS		= -lGL -lGLU -L../SDL2/build/.libs/ -lSDL2 # -lSDL -lSDL_sound -lSDL_mixer
+LDFLAGS		=	-lGL -lGLU -L../SDL2/build/.libs/ -lSDL2 -shared
 
 $(NAME):	$(OBJS)
-
 		$(CC) -o $(NAME) $(OBJS) $(LDFLAGS)
 
-all:		$(NAME)
+all:	$(NAME)
 
 clean:
-		$(RM) $(OBJS)
+	$(RM) $(OBJS)
 
-fclean:		clean
-		$(RM) $(NAME)
+fclean:	clean
+	$(RM) $(NAME)
 
-re:		fclean all
+re:	fclean all
 
-.PHONY:		all clean fclean re
+.PHONY:	all clean fclean re

@@ -3,11 +3,11 @@
 //
 
 #include <iostream>
-#include "Window.hpp"
+#include "OpenGlGraph.hpp"
 
 int main(int ac, char **av)
 {
-    Window w;
+    OpenGlGraph w;
     SDL_Event event;
     bool _continue = true;
 
