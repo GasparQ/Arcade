@@ -14,68 +14,85 @@
 
 namespace arcade
 {
-  static const size_t         winWidth = 50; // 50
-  static const size_t         winHeight = 30; // 30
+    static const size_t winWidth = 50; // 50
+    static const size_t winHeight = 30; // 30
 
-    static const int            ArrowLeft = 'q';//113;
-    static const int            ArrowRight = 'd';//261;
-    static const int            ArrowUp = 'z';//259;
-    static const int            ArrowDown = 's';//258;
-    static const int            Space = ' ';
+    static const int ArrowLeft = 'q';
+    //113;
+    static const int ArrowRight = 'd';
+    //261;
+    static const int ArrowUp = 'z';
+    //259;
+    static const int ArrowDown = 's';
+    //258;
+    static const int Space = ' ';
 
-    static const int            PrevGraph = '2';
-    static const int            NextGraph = '3';
-    static const int            PrevGame = '4';
-    static const int            NextGame = '5';
-    static const int            Restart = '8';
-    static const int            Home = '9';
-    static const int            Exit = 27;
-    static const int            Pause = 'P';
+    static const int PrevGraph = '2';
+    static const int NextGraph = '3';
+    static const int PrevGame = '4';
+    static const int NextGame = '5';
+    static const int Restart = '8';
+    static const int Home = '9';
+    static const int Exit = 27;
+    static const int Pause = 'P';
 
-  class Arcade;
+    class Arcade;
 
-  typedef void	(Arcade::*eventSystem)();
+    typedef void    (Arcade::*eventSystem)();
 
     class Arcade
     {
     public:
         Arcade(std::string const &);
+
         ~Arcade();
-        static const std::string    libDir;
-        static const std::string    gamesDir;
-        static const std::string    createLib;
-        static const std::string    createGame;
-        void                        Run();
+
+        static const std::string libDir;
+        static const std::string gamesDir;
+        static const std::string createLib;
+        static const std::string createGame;
+
+        void Run();
 
     private:
-      void		onPrevGraph();
-      void		onNextGraph();
-      void		onNextGame();
-      void		onPrevGame();
-      void		onRestart();
-      void		onHome();
-      void		onExit();
+        void onPrevGraph();
+
+        void onNextGraph();
+
+        void onNextGame();
+
+        void onPrevGame();
+
+        void onRestart();
+
+        void onHome();
+
+        void onExit();
 
         /**
          * Attributes
          */
     private:
-      IGraph                          *lib;
-      std::vector<IGame *>            games;
-      IGame                           *currGame;
-      std::vector<std::string>        libsName;
-      std::map<std::string, void *>   dlopenedlibs;
-      std::map<int, arcade::eventSystem>	eventSystem;
-      bool				isRunning;
+        IGraph *lib;
+        std::vector<IGame *> games;
+        std::vector<IGame *>::iterator currGame;
+        std::vector<std::string> libsName;
+        std::vector<std::string>::iterator  currLibName;
+        std::map<std::string, void *> dlopenedlibs;
+        std::map<int, arcade::eventSystem> eventSystem;
+        bool isRunning;
 
         /**
          * Methods
          */
     private:
-        bool                        isLibNameValid(std::string const &, regex_t &) const;
-        void                        loadGraph(std::string const &);
-        std::vector<std::string>    loadFilesFromDir(std::string const &dirName, regex_t &nameRestric);
-        void                        loadGames(std::vector<std::string> const &);
+        bool isLibNameValid(std::string const &, regex_t &) const;
+
+        void loadGraph(std::string const &);
+
+        std::vector<std::string> loadFilesFromDir(std::string const &dirName, regex_t &nameRestric);
+
+        void loadGames(std::vector<std::string> const &);
     };
 }
 

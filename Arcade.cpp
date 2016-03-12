@@ -9,6 +9,7 @@
 #include <chrono>
 #include <thread>
 #include <iostream>
+#include <algorithm>
 #include "Arcade.hpp"
 #include "Exception/LoadException.hpp"
 
@@ -19,8 +20,8 @@ const std::string    arcade::Arcade::createGame = "loadGame";
 
 arcade::Arcade::Arcade(std::string const &libname)
 {
-    regex_t                     reg;
-    std::vector<std::string>    gameLibs;
+    regex_t reg;
+    std::vector<std::string> gameLibs;
 
     isRunning = true;
     eventSystem[PrevGame] = &arcade::Arcade::onPrevGame;
@@ -47,7 +48,7 @@ arcade::Arcade::~Arcade()
     std::map<std::string, void *>::iterator end;
 
     if (lib)
-        delete(lib);
+        delete (lib);
     for (it = dlopenedlibs.begin(), end = dlopenedlibs.end(); it != end; ++it)
     {
         if (it->second && dlclose(it->second) != 0)
@@ -58,9 +59,9 @@ arcade::Arcade::~Arcade()
 
 std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string const &dirName, regex_t &nameRestric)
 {
-    std::vector<std::string>    names;
-    DIR                         *directory;
-    struct dirent               *pent;
+    std::vector<std::string> names;
+    DIR *directory;
+    struct dirent *pent;
 
     if ((directory = opendir(dirName.c_str())) == NULL)
         throw std::runtime_error("arcade: cannot open directory '" + dirName + "'");
@@ -79,97 +80,107 @@ std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string con
 
 void        arcade::Arcade::loadGraph(const std::string &libname)
 {
-    IGraph  *(*load_lib)();
+    IGraph *(*load_lib)();
 
     if (lib)
-        delete(lib);
+        delete (lib);
     if ((dlopenedlibs[libname] = dlopen(libname.c_str(), RTLD_LAZY)) == NULL)
         throw LoadLibraryException(libname);
-    if ((load_lib = (IGraph *(*)())dlsym(dlopenedlibs[libname], arcade::Arcade::createLib.c_str())) == NULL)
+    if ((load_lib = (IGraph *(*)()) dlsym(dlopenedlibs[libname], arcade::Arcade::createLib.c_str())) == NULL)
         throw IncompleteLibraryException(libname);//throw error
     lib = load_lib();
+    currLibName = std::find<std::vector<std::string>::iterator, std::string>(libsName.begin(), libsName.end(), libname);
 }
 
 void        arcade::Arcade::loadGames(const std::vector<std::string> &libsName)
 {
-    IGame   *(*load_game)();
+    IGame *(*load_game)();
 
     for (size_t i = 0, len = libsName.size(); i < len; ++i)
     {
         if ((dlopenedlibs[libsName[i]] = dlopen(libsName[i].c_str(), RTLD_LAZY)) == NULL)
             throw LoadLibraryException(libsName[i]);
-        if ((load_game = (IGame *(*)())dlsym(dlopenedlibs[libsName[i]], arcade::Arcade::createGame.c_str())) == NULL)
+        if ((load_game = (IGame *(*)()) dlsym(dlopenedlibs[libsName[i]], arcade::Arcade::createGame.c_str())) == NULL)
             throw IncompleteLibraryException(libsName[i]);
         games.push_back(load_game());
     }
-    currGame = games.front();
+    currGame = games.begin();
 }
 
 bool                    arcade::Arcade::isLibNameValid(const std::string &string, regex_t &reg) const
 {
-    static regmatch_t   matches[10];
+    static regmatch_t matches[10];
 
     if (regexec(&reg, string.c_str(), 10, matches, 0) == REG_NOMATCH)
         return false;
     return true;
 }
 
-void		arcade::Arcade::onPrevGraph()
+void        arcade::Arcade::onPrevGraph()
 {
-  
+    if (currLibName == libsName.begin())
+        currLibName = libsName.end();
+    loadGraph(*(--currLibName));
 }
 
-void		arcade::Arcade::onNextGraph()
+void        arcade::Arcade::onNextGraph()
+{
+    ++currLibName;
+    if (currLibName == libsName.end())
+        currLibName = libsName.begin();
+    loadGraph(*currLibName);
+}
+
+void        arcade::Arcade::onNextGame()
+{
+    ++currGame;
+    if (currGame == games.end())
+        currGame = games.begin();
+}
+
+void        arcade::Arcade::onPrevGame()
+{
+    if (currGame == games.begin())
+        currGame = games.end();
+    --currGame;
+}
+
+void        arcade::Arcade::onRestart()
+{
+    (*currGame)->restart();
+    lib->display(std::stack<AComponent *>());
+}
+
+void        arcade::Arcade::onHome()
 {
 
 }
 
-void		arcade::Arcade::onNextGame()
+void        arcade::Arcade::onExit()
 {
-
-}
-
-void		arcade::Arcade::onPrevGame()
-{
-
-}
-
-void		arcade::Arcade::onRestart()
-{
-  currGame->restart();
-  lib->display(std::stack<AComponent *>());
-}
-
-void		arcade::Arcade::onHome()
-{
-
-}
-
-void		arcade::Arcade::onExit()
-{
-  isRunning = false;
+    isRunning = false;
 }
 
 void        arcade::Arcade::Run()
 {
-    int     key;
+    int key;
     std::chrono::milliseconds chrono(100);
-    std::map<int, arcade::eventSystem>::iterator	it;
+    std::map<int, arcade::eventSystem>::iterator it;
 
     while (isRunning)
     {
-      try
-	{
-	  key = lib->eventManagment();
-	}
-      catch (std::exception exception)
-	{
-	  std::cerr << exception.what() << std::endl;
-	  return ;
-	}
-	if ((it = this->eventSystem.find(key)) != eventSystem.end())
-	  (this->*it->second)(); // on gere les event system ici
-        lib->display(currGame->compute(key));
+        try
+        {
+            key = lib->eventManagment();
+        }
+        catch (std::exception exception)
+        {
+            std::cerr << exception.what() << std::endl;
+            return;
+        }
+        if ((it = this->eventSystem.find(key)) != eventSystem.end())
+            (this->*it->second)(); // on gere les event system ici
+        lib->display((*currGame)->compute(key));
         //TODO wait
         std::this_thread::sleep_for(chrono);
     }

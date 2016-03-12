@@ -15,7 +15,7 @@ int main(int ac, char **av)
     {
         arcade = new arcade::Arcade(av[1]);
     }
-    catch (std::exception exception)
+    catch (std::runtime_error exception)
     {
         std::cerr << exception.what() << std::endl;
         return 1;
