@@ -10,21 +10,21 @@
 
 // Ctor:
 // Initializes Projection mode and Lighting
-OpenGlGraph::OpenGlGraph(const char *name)
+OpenGlGraph::OpenGlGraph(int width, int height, const char *name)
 {
     if (SDL_Init(SDL_INIT_EVERYTHING) == -1)
     {
         throw arcade::InitRenderException("OpenGL / SDL");
     }
-    m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, arcade::winWidth,
-                                arcade::winHeight, SDL_WINDOW_OPENGL);
+    m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width,
+                                height, SDL_WINDOW_OPENGL);
     m_glContext = SDL_GL_CreateContext(m_window);
     if (m_window == NULL || m_glContext == NULL)
     {
         throw arcade::InitRenderException("OpenGL - Screen");
     }
     SetProjectionMode();
-    InitLighting();
+    //InitLighting();
 }
 
 // Dtor :
@@ -72,18 +72,19 @@ void OpenGlGraph::InitLighting() const
 // Vetical axis is (0, 1, 0)
 void OpenGlGraph::RefreshImage()
 {
+    glFlush();
+    SDL_GL_SwapWindow(m_window);
+}
+
+void OpenGlGraph::DrawBackground()
+{
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-    gluLookAt(0, 3, -5, 0, 0, 0, 0, 1, 0);
-    // Draw everything here
-    DrawTerrain(10, 10);
-
+    gluLookAt(0, 10, -70, 0, 0, 0, 0, 1, 0);
+    DrawTerrain(100, 100);
     DrawSphere();
-    //DrawCube(1, 0, 0);
-    glFlush();
-    SDL_GL_SwapWindow(m_window);
 }
 
 void OpenGlGraph::DrawSphere(double posX, double posY, double posZ,
@@ -103,37 +104,36 @@ void OpenGlGraph::DrawSphere(double posX, double posY, double posZ,
 void OpenGlGraph::DrawCube(Vector2 pos, AComponent::ComponentColor color) const
 {
     glPushMatrix();
-    glTranslated(-pos.x, -pos.y, 0);
-    char red = 1, green = 1, blue = 1;
+    glTranslated(-pos.x, 0, -pos.y);
 
     glBegin(GL_QUADS);
 
-    glColor3ub(red, green, blue); //face 1
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 1
     glVertex3d(0.5, 0.5, 0.5);
     glVertex3d(0.5, 0.5, -0.5);
     glVertex3d(-0.5, 0.5, -0.5);
     glVertex3d(-0.5, 0.5, 0.5);
-    glColor3ub(red, green, blue); //face 2
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 2
     glVertex3d(0.5, -0.5, 0.5);
     glVertex3d(0.5, -0.5, -0.5);
     glVertex3d(0.5, 0.5, -0.5);
     glVertex3d(0.5, 0.5, 0.5);
-    glColor3ub(red, green, blue); //face 3
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 3
     glVertex3d(-0.5, -0.5, 0.5);
     glVertex3d(-0.5, -0.5, -0.5);
     glVertex3d(0.5, -0.5, -0.5);
     glVertex3d(0.5, -0.5, 0.5);
-    glColor3ub(red, green, blue); //face 4
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 4
     glVertex3d(-0.5, 0.5, 0.5);
     glVertex3d(-0.5, 0.5, -0.5);
     glVertex3d(-0.5, -0.5, -0.5);
     glVertex3d(-0.5, -0.5, 0.5);
-    glColor3ub(red, green, blue); //face 5
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 5
     glVertex3d(0.5, 0.5, -0.5);
     glVertex3d(0.5, -0.5, -0.5);
     glVertex3d(-0.5, -0.5, -0.5);
     glVertex3d(-0.5, 0.5, -0.5);
-    glColor3ub(red, green, blue); //face 6
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 6
     glVertex3d(0.5, -0.5, 0.5);
     glVertex3d(0.5, 0.5, 0.5);
     glVertex3d(-0.5, 0.5, 0.5);
@@ -143,13 +143,14 @@ void OpenGlGraph::DrawCube(Vector2 pos, AComponent::ComponentColor color) const
     glPopMatrix();
 }
 
+// TODO: implement
 void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
 {
     for (double i = -(sizeX / 2.0); i < sizeX; ++i)
     {
         for (double j = -(sizeY / 2.0); j < sizeY; ++j)
         {
-            //DrawCube(i, 0, j);
+            //DrawCube(Vector2(i, j), AComponent::COLOR_BLUE);
         }
     }
 }
@@ -160,7 +161,7 @@ int OpenGlGraph::eventManagment()
     SDL_Event event;
 
     SDL_PollEvent(&event);
-    return event.type;
+    return event.key.keysym.sym;
 }
 
 // Handles data display
@@ -169,12 +170,12 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
     GameComponent *gc;
     UIComponent *uic;
 
+    DrawBackground();
     while (!stack.empty())
     {
         if ((gc = dynamic_cast<GameComponent*>(stack.top())) != nullptr)
         {
             //TODO: fix for different shapes
-            DrawSphere();
             DrawCube(gc->getPos(), gc->getColor());
         }
         else if ((uic = dynamic_cast<UIComponent*>(stack.top())) != nullptr)
@@ -184,6 +185,7 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
 
         stack.pop();
     }
+    RefreshImage();
 }
 
 extern "C" IGraph *loadLib()

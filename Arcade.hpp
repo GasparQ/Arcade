@@ -17,10 +17,10 @@ namespace arcade
   static const size_t         winWidth = 50; // 50
   static const size_t         winHeight = 30; // 30
 
-    static const int            ArrowLeft = 260;
-    static const int            ArrowRight = 261;
-    static const int            ArrowUp = 259;
-    static const int            ArrowDown = 258;
+    static const int            ArrowLeft = 'q';//113;
+    static const int            ArrowRight = 'd';//261;
+    static const int            ArrowUp = 'z';//259;
+    static const int            ArrowDown = 's';//258;
     static const int            Space = ' ';
 
     static const int            PrevGraph = '2';

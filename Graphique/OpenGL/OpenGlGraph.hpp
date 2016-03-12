@@ -18,15 +18,18 @@
 class OpenGlGraph : public IGraph
 {
 public:
-    OpenGlGraph(const char *name = "OpenGL Win");
+    OpenGlGraph(int width = 900, int height = 800, const char *name = "OpenGL Win");
 
     virtual ~OpenGlGraph();
+
+    void DrawBackground();
 
     void RefreshImage();
 
 public:
     virtual int eventManagment();
-    virtual void display(std::stack<AComponent*>);
+
+    virtual void display(std::stack<AComponent *>);
 
 private:
     void SetProjectionMode();
@@ -43,6 +46,15 @@ private:
 private:
     SDL_Window *m_window = NULL;
     SDL_GLContext m_glContext = NULL;
+    // RGBA
+    SDL_Color colors[10] = {{0, 0, 0, 0},
+                            {255, 0, 0, 255},
+                            {0, 255, 0, 255},
+                            {255, 0, 255, 255},
+                            {0, 0, 255, 255},
+                            {255, 255, 0, 255},
+                            {255, 0, 255, 255},
+                            {255, 255, 255, 255}};
 };
 
 
