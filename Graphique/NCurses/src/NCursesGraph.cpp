@@ -5,11 +5,11 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Sun Mar 13 12:30:53 2016 Victor Gouet
+// Last update Sun Mar 13 18:30:42 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
-#include "../../../Arcade.hpp"
+#include "../../../Commons/include/ArcadeSystem.hpp"
 
 NCursesGraph::NCursesGraph()
 {
@@ -28,9 +28,9 @@ NCursesGraph::NCursesGraph()
   if (!isResizeGood())
     NCurses::destroy(), throw ResizeFailed();
 
-  _board = new ncr::Window(arcade::winHeight + 2, arcade::winWidth + 2, 0, 0);
-  gameWin = new ncr::Window(arcade::winHeight, arcade::winWidth, 1, 1, *_board);
-  UIWin = new ncr::Window(3, arcade::winWidth - 1, 2, arcade::winHeight + 3);
+  _board = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 0, 0);
+  gameWin = new ncr::Window(ArcadeSystem::winHeight, ArcadeSystem::winWidth, 1, 1, *_board);
+  UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
 
   if (NCurses::initPair(1, COLOR_RED, COLOR_BLACK) == ERR)
     NCurses::destroy(), throw NCursesSystemFailed();
@@ -55,7 +55,22 @@ NCursesGraph::NCursesGraph()
   UIWin->makeBorder(' ', ' ', ' ');
   UIWin->attrOFF(A_REVERSE);
 
-  // TODO init les keycode de keycodeMap avec la SDL
+  keycodeMap[260] = ArcadeSystem::ArrowLeft;
+  keycodeMap[261] = ArcadeSystem::ArrowRight;
+  keycodeMap[259] = ArcadeSystem::ArrowUp;
+  keycodeMap[258] = ArcadeSystem::ArrowDown;
+
+  keycodeMap[32] = ArcadeSystem::Space;
+
+  keycodeMap[50] = ArcadeSystem::PrevGraph;
+  keycodeMap[51] = ArcadeSystem::NextGraph;
+  keycodeMap[52] = ArcadeSystem::PrevGame;
+  keycodeMap[53] = ArcadeSystem::NextGame;
+
+  keycodeMap[56] = ArcadeSystem::Restart;
+  keycodeMap[57] = ArcadeSystem::Home;
+  keycodeMap[27] = ArcadeSystem::Exit;
+  keycodeMap[112] = ArcadeSystem::Pause;
 }
 
 NCursesGraph::~NCursesGraph()
@@ -76,9 +91,9 @@ bool			NCursesGraph::isResizeGood() const
 
   if (NCurses::getMaxXY(x, y) == ERR)
     return (false);
-  if (static_cast<unsigned int>(x) < arcade::winWidth + 2)
+  if (static_cast<unsigned int>(x) < ArcadeSystem::winWidth + 2)
     return (false);
-  if (static_cast<unsigned int>(y) < arcade::winHeight + 2)
+  if (static_cast<unsigned int>(y) < ArcadeSystem::winHeight + 2)
     return (false);
   return (true);
 }
@@ -91,9 +106,8 @@ int	NCursesGraph::eventManagment()
   keycode = NCurses::getCarac();
   if (keycode == KEY_RESIZE && !isResizeGood())
     throw ResizeFailed();
-  // TODO Recuperer les keycode de la SDL pour se caler avec
-  // if ((it = keycodeMap.find(keycode)) != keycodeMap.end())
-  //   return (it->second);
+  if ((it = keycodeMap.find(keycode)) != keycodeMap.end())
+    return (it->second);
   return (keycode);
 }
 
