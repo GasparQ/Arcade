@@ -16,7 +16,7 @@ class   SDLGraph : public IGraph
 public:
     SDLGraph();
     ~SDLGraph();
-    static const size_t scale = 50;
+    static const size_t scale = 25;
 
 public:
     virtual int eventManagment();

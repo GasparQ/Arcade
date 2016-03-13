@@ -7,7 +7,7 @@
 
 int SDLGraph::eventManagment()
 {
-    if (SDL_WaitEventTimeout(&event, 0) == 0)
+    if (SDL_PollEvent(&event) == 1)
         return event.key.keysym.sym;
     return -1;
 }
@@ -16,12 +16,14 @@ void SDLGraph::display(std::stack<AComponent *> stack)
 {
     GameComponent   *gameComponent;
 
+    SDL_RenderClear(render);
     while (!stack.empty())
     {
         if ((gameComponent = dynamic_cast<GameComponent *>(stack.top())))
             drawGameComponent(gameComponent);
         stack.pop();
     }
+    SDL_RenderPresent(render);
 }
 
 SDLGraph::SDLGraph()
