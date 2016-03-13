@@ -12,6 +12,7 @@
 #include <algorithm>
 #include "Arcade.hpp"
 #include "Exception/LoadException.hpp"
+#include "Commons/include/ArcadeSystem.hpp"
 
 const std::string    arcade::Arcade::libDir = "./lib/";
 const std::string    arcade::Arcade::gamesDir = "./games/";
@@ -24,13 +25,13 @@ arcade::Arcade::Arcade(std::string const &libname)
     std::vector<std::string> gameLibs;
 
     isRunning = true;
-    eventSystem[PrevGame] = &arcade::Arcade::onPrevGame;
-    eventSystem[NextGame] = &arcade::Arcade::onNextGame;
-    eventSystem[NextGraph] = &arcade::Arcade::onNextGraph;
-    eventSystem[PrevGraph] = &arcade::Arcade::onPrevGraph;
-    eventSystem[Restart] = &arcade::Arcade::onRestart;
-    eventSystem[Home] = &arcade::Arcade::onHome;
-    eventSystem[Exit] = &arcade::Arcade::onExit;
+    eventSystem[ArcadeSystem::PrevGame] = &arcade::Arcade::onPrevGame;
+    eventSystem[ArcadeSystem::NextGame] = &arcade::Arcade::onNextGame;
+    eventSystem[ArcadeSystem::NextGraph] = &arcade::Arcade::onNextGraph;
+    eventSystem[ArcadeSystem::PrevGraph] = &arcade::Arcade::onPrevGraph;
+    eventSystem[ArcadeSystem::Restart] = &arcade::Arcade::onRestart;
+    eventSystem[ArcadeSystem::Home] = &arcade::Arcade::onHome;
+    eventSystem[ArcadeSystem::Exit] = &arcade::Arcade::onExit;
     lib = NULL;
     if (regcomp(&reg, "^(.*[\\/])?lib_arcade_[[:alnum:]\\_]+.so$", REG_EXTENDED) != 0)
         throw std::runtime_error("arcade: cannot regcomp");

@@ -23,9 +23,10 @@ public:
     virtual void display(std::stack<AComponent *>);
 
 private:
-    SDL_Event       event;
-    SDL_Window      *win;
-    SDL_Renderer    *render;
+    SDL_Event           event;
+    SDL_Window          *win;
+    SDL_Renderer        *render;
+    std::map<int, int>  keyCodeAssociation;
     std::map<std::string, SDL_Texture*> spriteCache;
 
 private:

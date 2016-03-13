@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Wed Mar  9 17:39:39 2016 Quentin Gasparotto
-## Last update Sun Mar 13 16:58:43 2016 Quentin Gasparotto
+## Last update Sun Mar 13 17:47:09 2016 Quentin Gasparotto
 ##
 
 NAME		=	arcade
@@ -39,6 +39,7 @@ $(NAME):	$(OBJS) libs games
 libs:
 	@echo -e "\e[32m====LIBS====\e[0m"
 	mkdir -p $(LIBDIR)
+	make re -C ./Commons/
 	make re -C ./Graphique/NCurses/
 	make re -C ./Graphique/OpenGL/
 	make re -C ./Graphique/SDL2/
@@ -52,6 +53,7 @@ all:	$(NAME)
 
 clean:
 	$(RM) $(OBJS)
+	make clean -C ./Commons/
 	make clean -C ./Game/
 	make clean -C ./Graphique/NCurses/
 	make clean -C ./Graphique/OpenGL/
@@ -60,6 +62,7 @@ clean:
 fclean:	clean
 	$(RM) $(NAME)
 	make fclean -C ./Game/
+	make fclean -C ./Commons/
 	make fclean -C ./Graphique/NCurses/
 	make fclean -C ./Graphique/OpenGL
 	make fclean -C ./Graphique/SDL2/

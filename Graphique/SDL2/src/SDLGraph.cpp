@@ -3,12 +3,14 @@
 //
 
 #include "SDLGraph.hpp"
-#include "../../../Arcade.hpp"
+#include "../../../Commons/include/ArcadeSystem.hpp"
 
 int SDLGraph::eventManagment()
 {
-    if (SDL_PollEvent(&event) == 1)
-        return event.key.keysym.sym;
+    std::map<int, int>::const_iterator  it;
+
+    if (SDL_PollEvent(&event) == 1 && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+        return it->second;
     return -1;
 }
 
@@ -29,9 +31,22 @@ void SDLGraph::display(std::stack<AComponent *> stack)
 SDLGraph::SDLGraph()
 {
     if (SDL_Init(0) != 0 ||
-        (win = SDL_CreateWindow("Arcade", 0, 0, arcade::winWidth * SDLGraph::scale, arcade::winHeight * SDLGraph::scale, SDL_WINDOW_SHOWN)) == NULL ||
+        (win = SDL_CreateWindow("Arcade", 0, 0, ArcadeSystem::winWidth * SDLGraph::scale, ArcadeSystem::winHeight * SDLGraph::scale, SDL_WINDOW_SHOWN)) == NULL ||
         (render = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED)) == NULL)
         throw std::runtime_error(SDL_GetError());
+    keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;
+    keyCodeAssociation[SDL_SCANCODE_RIGHT] = ArcadeSystem::ArrowRight;
+    keyCodeAssociation[SDL_SCANCODE_UP] = ArcadeSystem::ArrowUp;
+    keyCodeAssociation[SDL_SCANCODE_DOWN] = ArcadeSystem::ArrowDown;
+    keyCodeAssociation[SDL_SCANCODE_SPACE] = ArcadeSystem::Space;
+    keyCodeAssociation[SDL_SCANCODE_2] = ArcadeSystem::PrevGraph;
+    keyCodeAssociation[SDL_SCANCODE_3] = ArcadeSystem::NextGraph;
+    keyCodeAssociation[SDL_SCANCODE_4] = ArcadeSystem::PrevGame;
+    keyCodeAssociation[SDL_SCANCODE_5] = ArcadeSystem::NextGame;
+    keyCodeAssociation[SDL_SCANCODE_8] = ArcadeSystem::Restart;
+    keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
+    keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
+    keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
 }
 
 SDLGraph::~SDLGraph()
