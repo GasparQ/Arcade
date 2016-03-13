@@ -5,13 +5,14 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Sat Mar 12 18:57:33 2016 Victor Gouet
+// Last update Sun Mar 13 12:02:19 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
 # define NCURSESGRAP_HPP_
 
 # include <string>
+# include <map>
 # include "../../include/IGraph.hpp"
 # include "Window.hpp"
 # include "NCurses.hpp"
@@ -54,7 +55,7 @@ private:
   ncr::Window			*_board;
   std::stack<t_cache>		_cacheGame;
   ncr::Window			*UIWin;
-
+  std::map<int, int>		keycodeMap;
 };
 
 #endif
