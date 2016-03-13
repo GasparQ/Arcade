@@ -22,11 +22,11 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     for (bod = body.begin(); bod != body.end(); ++bod)
     {
       if (bod == body.begin())
-	output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, NULL, " ", "snake.bmp"));
+	output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, NULL, " ", "/home/gaspar_q/Desktop/snake.bmp"));
       else
-	output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, NULL, " ", "snake.bmp"));
+	output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, NULL, " ", "/home/gaspar_q/Desktop/snake.bmp"));
     }
-    output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "appel.bmp"));
+    output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "/home/gaspar_q/Desktop/apple.bmp"));
 
     output.push(new UIComponent(Vector2((arcade::winWidth -
 					 std::string("score : " + std::to_string(score)).size()) / 2, 1),
