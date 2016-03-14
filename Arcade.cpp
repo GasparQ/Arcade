@@ -97,6 +97,10 @@ std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string con
     return names;
 }
 
+
+#include <stdio.h>
+#include <errno.h>
+
 void        arcade::Arcade::loadGraph()
 {
     IGraph *(*load_lib)();
@@ -107,7 +111,9 @@ void        arcade::Arcade::loadGraph()
         dlclose(dllib);
     }
     if ((dllib = dlopen(currLibName->c_str(), RTLD_LAZY)) == NULL)
-        throw LoadLibraryException(*currLibName);
+      {
+        throw LoadLibraryException(dlerror());
+      }
     if ((load_lib = (IGraph *(*)()) dlsym(dllib, arcade::Arcade::createLib.c_str())) == NULL)
         throw IncompleteLibraryException(*currLibName);
     lib = load_lib();

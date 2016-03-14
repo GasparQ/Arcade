@@ -5,13 +5,13 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:12 2016 Victor Gouet
-// Last update Thu Mar 10 14:17:00 2016 Victor Gouet
+// Last update Mon Mar 14 15:02:40 2016 Victor Gouet
 //
 
 #ifndef WINDOWNCURSE_HPP_
 # define WINDOWNCURSE_HPP_
 
-# include <ncurses.h>
+# include "../lib/include/curses.h"
 
 namespace ncr
 {

@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Thu Mar 10 15:53:59 2016 Quentin Gasparotto
-## Last update Thu Mar 10 16:09:54 2016 Quentin Gasparotto
+## Last update Mon Mar 14 15:22:21 2016 Victor Gouet
 ##
 
 NAME		=	../../lib/lib_arcade_ncurses.so
@@ -25,9 +25,9 @@ SRCS		=	src/Menu.cpp \
 
 OBJS		=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Werror -I ./include -I ../include -I ../../Vector/include -I ../../Component/include -fPIC
+CPPFLAGS	=	-W -Wall -Werror -I ./include -I ../include -I ../../Vector/include -I ../../Component/include -fPIC -I ./lib/include/
 
-LDFLAGS		=	-lncurses -shared
+LDFLAGS		=	-shared -L./lib -lncurses++ -lform -lform_g -lmenu -lmenu_g -lncurses -lncurses_g -lncurses++_g -lpanel -lpanel_g
 
 $(NAME):	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS) $(LDFLAGS)
