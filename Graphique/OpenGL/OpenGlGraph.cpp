@@ -71,7 +71,7 @@ void OpenGlGraph::InitLighting() const
     glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
     glEnable(GL_COLOR_MATERIAL);
 
-    glClearColor(0.5, 0.0, 0.0, 0.0);
+    glClearColor(0.0, 0.0, 0.0, 0.0);
     glShadeModel(GL_SMOOTH);
     glEnable(GL_CULL_FACE);
     glEnable(GL_LIGHTING);
@@ -204,6 +204,7 @@ void OpenGlGraph::Set2DMode()
 
     glDisable(GL_DEPTH_TEST);
     glDisable(GL_LIGHTING);
+    glDisable(GL_LIGHT0);
 
     m_render_mode = ORTHOGRAPHIC;
 }
@@ -222,6 +223,7 @@ void OpenGlGraph::Set3DMode()
     glDepthFunc(GL_LEQUAL);
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
 
     m_render_mode = PERSPECTIVE;
 }
@@ -229,10 +231,9 @@ void OpenGlGraph::Set3DMode()
 // Drw text on viewport
 void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent::ComponentColor const& color)
 {
-    int i;
-
     glRasterPos2f(pos.x, pos.y + 24);
-    glColor3b(colors[color].r, colors[color].g, colors[color].b);
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b);
+    //std::cout << "r = " << (int)colors[color].r << " g = " << (int)colors[color].g << " b = " << (int)colors[color].b << std::endl;
     for (unsigned int i = 0; i < text.length(); i++)
     {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
