@@ -5,13 +5,14 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 23:53:22 2016 Victor Gouet
-// Last update Sat Mar 12 18:02:33 2016 Victor Gouet
+// Last update Mon Mar 14 15:02:23 2016 Victor Gouet
 //
 
 #ifndef ARCADENCURSES_HPP_
 # define ARCADENCURSES_HPP_
 
-# include <ncurses.h>
+//# include <ncurses.h>
+# include "../lib/include/curses.h"
 
 class	NCurses
 {
