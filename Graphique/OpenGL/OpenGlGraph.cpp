@@ -65,7 +65,7 @@ void OpenGlGraph::InitLighting() const
     GLfloat lightAmbient[] = {0.0, 0.0, 0.0, 1.0};
     GLfloat lightDiffuse[] = {1.0, 1.0, 1.0, 1.0};
     GLfloat lightSpecular[] = {1.0, 1.0, 1.0, 1.0};
-    GLfloat lightPosition[] = {10.0, 100.0, 1.0, 0.0};
+    GLfloat lightPosition[] = {50.0, 100.0, 1.0, 0.0};
 
     // Enables material to be impacted by light
     glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
