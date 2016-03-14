@@ -9,8 +9,11 @@ int SDLGraph::eventManagment()
 {
     std::map<int, int>::const_iterator  it;
 
-    if (SDL_PollEvent(&event) == 1 && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
-        return it->second;
+    while (SDL_PollEvent(&event) == 1)
+    {
+        if (event.type == SDL_KEYDOWN && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+            return it->second;
+    }
     return -1;
 }
 
