@@ -5,6 +5,7 @@
 #ifndef CPP_ARCADE_WINDOW_HPP
 #define CPP_ARCADE_WINDOW_HPP
 
+#include <map>
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include "../SDL2/include/SDL_surface.h"
@@ -46,7 +47,9 @@ private:
 private:
     SDL_Window *m_window = NULL;
     SDL_GLContext m_glContext = NULL;
+    SDL_Event event;
     Vector2<double> m_win;
+    std::map<int, int>  keyCodeAssociation;
     // RGBA
     SDL_Color colors[10] = {{0, 0, 0, 0}, // Black
                             {255, 0, 0, 255}, // red

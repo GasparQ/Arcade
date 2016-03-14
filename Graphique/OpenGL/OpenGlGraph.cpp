@@ -7,6 +7,7 @@
 #include "../../Arcade.hpp"
 #include "../../Component/include/UIComponent.hpp"
 #include "../../Component/include/GameComponent.hpp"
+#include "../../Commons/include/ArcadeSystem.hpp"
 
 // Ctor:
 // Initializes Projection mode and Lighting
@@ -24,8 +25,19 @@ m_win(width, height)
     {
         throw arcade::InitRenderException("OpenGL - Screen");
     }
-    m_win.x = width;
-    m_win.y = height;
+    keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;
+    keyCodeAssociation[SDL_SCANCODE_RIGHT] = ArcadeSystem::ArrowRight;
+    keyCodeAssociation[SDL_SCANCODE_UP] = ArcadeSystem::ArrowUp;
+    keyCodeAssociation[SDL_SCANCODE_DOWN] = ArcadeSystem::ArrowDown;
+    keyCodeAssociation[SDL_SCANCODE_SPACE] = ArcadeSystem::Space;
+    keyCodeAssociation[SDL_SCANCODE_2] = ArcadeSystem::PrevGraph;
+    keyCodeAssociation[SDL_SCANCODE_3] = ArcadeSystem::NextGraph;
+    keyCodeAssociation[SDL_SCANCODE_4] = ArcadeSystem::PrevGame;
+    keyCodeAssociation[SDL_SCANCODE_5] = ArcadeSystem::NextGame;
+    keyCodeAssociation[SDL_SCANCODE_8] = ArcadeSystem::Restart;
+    keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
+    keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
+    keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
     SetProjectionMode();
     //InitLighting();
 }
@@ -44,19 +56,22 @@ OpenGlGraph::~OpenGlGraph()
     }
 }
 
+// Sets perspective for non hud elements by default
+// can set orthographic mode for HUD objects on demand
 void OpenGlGraph::SetProjectionMode(bool bIsHUD)
 {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     if (!bIsHUD)
     {
-        gluPerspective(70, (double) (900.0 / 600.0), 1, 1000);
+        gluPerspective(70, (m_win.x / m_win.y), 1, 1000);
+        glEnable(GL_DEPTH_TEST);
     }
     else
     {
-        glOrtho(0, m_win.x, m_win.y, 0, -1, 1);
+        //glOrtho(0, m_win.x, m_win.y, 0, -1, 1);
+        //glDisable(GL_DEPTH_TEST);
     }
-    glEnable(GL_DEPTH_TEST);
 }
 
 // Handles lighting in the scene
@@ -173,10 +188,11 @@ void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
 // Returns key pressed
 int OpenGlGraph::eventManagment()
 {
-    SDL_Event event;
+    std::map<int, int>::const_iterator  it;
 
-    SDL_PollEvent(&event);
-    return event.key.keysym.sym;
+    if (SDL_PollEvent(&event) == 1 && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+        return it->second;
+    return -1;
 }
 
 // Handles data display
@@ -191,10 +207,12 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
         if ((gc = dynamic_cast<GameComponent*>(stack.top())) != nullptr)
         {
             //TODO: fix for different shapes
+            //SetProjectionMode();
             DrawCube(gc->getPos(), gc->getColor());
         }
         else if ((uic = dynamic_cast<UIComponent*>(stack.top())) != nullptr)
         {
+            //SetProjectionMode(true);
             // TODO: implement UI
         }
 
