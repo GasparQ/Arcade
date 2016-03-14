@@ -14,6 +14,9 @@
 OpenGlGraph::OpenGlGraph(int width, int height, const char *name) :
 m_win(width, height)
 {
+    int ac = 1;
+    char *av[1] = {"./arcade"};
+    glutInit(&ac, av);
     if (SDL_Init(SDL_INIT_EVERYTHING) == -1)
     {
         throw arcade::InitRenderException("OpenGL / SDL");
@@ -39,7 +42,7 @@ m_win(width, height)
     keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
     keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
     SetProjectionMode();
-    //InitLighting();
+    InitLighting();
 }
 
 // Dtor :
@@ -66,6 +69,8 @@ void OpenGlGraph::SetProjectionMode(bool bIsHUD)
     {
         gluPerspective(70, (m_win.x / m_win.y), 1, 1000);
         glEnable(GL_DEPTH_TEST);
+        glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
+        glEnable(GL_COLOR_MATERIAL);
     }
     else
     {
@@ -80,7 +85,7 @@ void OpenGlGraph::InitLighting() const
     GLfloat lightAmbient[] = {0.0, 0.0, 0.0, 1.0};
     GLfloat lightDiffuse[] = {1.0, 1.0, 1.0, 1.0};
     GLfloat lightSpecular[] = {1.0, 1.0, 1.0, 1.0};
-    GLfloat lightPosition[] = {1.0, 1.0, 1.0, 0.0};
+    GLfloat lightPosition[] = {10.0, 100.0, 1.0, 0.0};
 
     glClearColor(0.0, 0.0, 0.0, 0.0);
     glShadeModel(GL_SMOOTH);
@@ -108,7 +113,7 @@ void OpenGlGraph::DrawBackground()
     glLoadIdentity();
 
     // We set the eye to see 3/4 view, the center on Vector.zero and y as up axis
-    gluLookAt(0, 15, -48, 0, 0, 0, 0, 1, 0);
+    gluLookAt(0, 34, -48, 0, 0, 0, 0, 1, 0);
     // then we translate to center
     glTranslated(arcade::winWidth / 2.0, 0, 0);
     DrawTerrain(arcade::winWidth, arcade::winHeight);
@@ -133,40 +138,11 @@ void OpenGlGraph::DrawCube(Vector2<int> pos, AComponent::ComponentColor color, d
     glPushMatrix();
     glTranslated(-pos.x, -posY, -pos.y);
 
-    glBegin(GL_QUADS);
+    // Byte color
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b);
 
-    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 1
-    glVertex3d(0.5, 0.5, 0.5);
-    glVertex3d(0.5, 0.5, -0.5);
-    glVertex3d(-0.5, 0.5, -0.5);
-    glVertex3d(-0.5, 0.5, 0.5);
-    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 2
-    glVertex3d(0.5, -0.5, 0.5);
-    glVertex3d(0.5, -0.5, -0.5);
-    glVertex3d(0.5, 0.5, -0.5);
-    glVertex3d(0.5, 0.5, 0.5);
-    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 3
-    glVertex3d(-0.5, -0.5, 0.5);
-    glVertex3d(-0.5, -0.5, -0.5);
-    glVertex3d(0.5, -0.5, -0.5);
-    glVertex3d(0.5, -0.5, 0.5);
-    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 4
-    glVertex3d(-0.5, 0.5, 0.5);
-    glVertex3d(-0.5, 0.5, -0.5);
-    glVertex3d(-0.5, -0.5, -0.5);
-    glVertex3d(-0.5, -0.5, 0.5);
-    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 5
-    glVertex3d(0.5, 0.5, -0.5);
-    glVertex3d(0.5, -0.5, -0.5);
-    glVertex3d(-0.5, -0.5, -0.5);
-    glVertex3d(-0.5, 0.5, -0.5);
-    glColor3ub(colors[color].r, colors[color].g, colors[color].b); //face 6
-    glVertex3d(0.5, -0.5, 0.5);
-    glVertex3d(0.5, 0.5, 0.5);
-    glVertex3d(-0.5, 0.5, 0.5);
-    glVertex3d(-0.5, -0.5, 0.5);
+    glutSolidCube(1);
 
-    glEnd();
     glPopMatrix();
 }
 

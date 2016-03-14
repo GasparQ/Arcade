@@ -8,6 +8,7 @@
 #include <map>
 #include <GL/gl.h>
 #include <GL/glu.h>
+#include "./include/glut.h"
 #include "../SDL2/include/SDL_surface.h"
 #include "../SDL2/include/SDL.h"
 #include "../../Exception/LoadException.hpp"

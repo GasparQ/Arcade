@@ -12,7 +12,7 @@ NAME		=	../../lib/lib_arcade_opengl.so
 
 RM		=	rm -f
 
-CC		=	g++
+CC		=	g++ -g
 
 SRCS		=	OpenGlGraph.cpp \
 			    ../../Vector/src/Vector2.cpp \
@@ -24,7 +24,7 @@ OBJS		=	$(SRCS:.cpp=.o)
 
 CPPFLAGS	=	-std=c++11 -W -Wall -Wextra -I ./include -I ../include -I ../../Vector/include -I ../../Component/include -fPIC
 
-LDFLAGS		=	-lGL -lGLU -L../SDL2/build/.libs/ -lSDL2 -shared
+LDFLAGS		=	-lGL -lGLU -L../SDL2/build/.libs/ -lSDL2 -shared -L ./ -lglut
 
 $(NAME):	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS) $(LDFLAGS)
