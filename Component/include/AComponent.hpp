@@ -25,16 +25,16 @@ public:
 		       COLOR_WHITE = 7};
 
 private:
-  Vector2		pos;
+  Vector2<int>		pos;
   enum ComponentColor	_color;
   
 public:
   AComponent(int x, int y, enum ComponentColor color);
-  AComponent(Vector2 const &pos, enum ComponentColor color);
+  AComponent(Vector2<int> const &pos, enum ComponentColor color);
   virtual ~AComponent();
 
 public:
-  Vector2 const &getPos() const;
+  Vector2<int> const &getPos() const;
   enum ComponentColor	getColor() const;
 };
 

@@ -13,11 +13,11 @@
 
 AComponent::AComponent(int x, int y,
 		       enum AComponent::ComponentColor color)
-  : pos(Vector2(x, y)), _color(color)
+  : pos(Vector2<int>(x, y)), _color(color)
 {
 }
 
-AComponent::AComponent(Vector2 const &pos,
+AComponent::AComponent(Vector2<int> const &pos,
 		       enum AComponent::ComponentColor color)
   : pos(pos), _color(color)
 {
@@ -27,7 +27,7 @@ AComponent::~AComponent()
 {
 }
 
-Vector2 const &AComponent::getPos() const
+Vector2<int> const &AComponent::getPos() const
 {
   return (this->pos);
 }

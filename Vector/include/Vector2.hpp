@@ -13,14 +13,15 @@
 
 # include <cstdlib>
 
+template <class T>
 class	Vector2
 {
 public:
-    int 	x;
-    int     y;
+    T 	x;
+    T     y;
 
 public:
-    Vector2(int x, int y);
+    Vector2(T x, T y);
     ~Vector2();
     Vector2     operator+(Vector2 const &);
     bool        operator==(Vector2 const &);

@@ -11,7 +11,7 @@
 
 #include "../include/GameComponent.hpp"
 
-GameComponent::GameComponent(Vector2 const &pos,
+GameComponent::GameComponent(Vector2<int> const &pos,
 			     AComponent::ComponentColor color,
 			     void *sprite3D,
 			     std::string const &spriteText,

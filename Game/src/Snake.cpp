@@ -14,7 +14,7 @@ std::stack<AComponent *>                Snake::compute(int keycode)
 {
     std::stack<AComponent *> output;
     std::map<int, keyfunc>::iterator it;
-    std::list<Vector2>::iterator bod;
+    std::list<Vector2<int> >::iterator bod;
 
     if ((it = keycodex.find(keycode)) != keycodex.end())
         (this->*it->second)();
@@ -29,9 +29,9 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "./sprites/apple.bmp"));
 
     output.push(new UIComponent(
-            Vector2((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
+            Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
             AComponent::COLOR_WHITE,
-            Vector2(0, 0), "score : " + std::to_string(score))
+            Vector2<int>(0, 0), "score : " + std::to_string(score))
     );
     return output;
 }
@@ -99,7 +99,7 @@ void Snake::goRight()
 void                                Snake::generateAppelPos()
 {
     size_t index;
-    std::list<Vector2>::iterator it = plate.begin();
+    std::list<Vector2<int> >::iterator it = plate.begin();
 
     if (plate.empty())
         return;
@@ -111,19 +111,19 @@ void                                Snake::generateAppelPos()
 
 void Snake::removeBody()
 {
-    Vector2 pos = body.back();
+    Vector2<int> pos = body.back();
 
     body.pop_back();
     plate.push_back(pos);
 }
 
-void Snake::addBody(Vector2 newPos)
+void Snake::addBody(Vector2<int> newPos)
 {
     body.push_front(newPos);
     plate.remove(newPos);
 }
 
-bool    Snake::goOnWall(Vector2 const &vector) const
+bool    Snake::goOnWall(Vector2<int> const &vector) const
 {
     if (vector.x >= static_cast<int>(ArcadeSystem::winWidth) || vector.x < 0)
     {
@@ -138,7 +138,7 @@ bool    Snake::goOnWall(Vector2 const &vector) const
 
 void Snake::goAhead()
 {
-    if (std::find<std::list<Vector2>::iterator, Vector2>(body.begin(), body.end(),
+    if (std::find<std::list<Vector2<int> >::iterator, Vector2<int> >(body.begin(), body.end(),
                                                          body.front() + direction) != body.end()
         || goOnWall(body.front() + direction))
         die();
@@ -177,13 +177,13 @@ void Snake::initGame()
     {
         for (size_t y = 0; y < ArcadeSystem::winHeight; ++y)
         {
-            plate.push_back(Vector2(static_cast<int>(x), static_cast<int>(y)));
+            plate.push_back(Vector2<int>(static_cast<int>(x), static_cast<int>(y)));
         }
     }
-    addBody(Vector2(midW - 1, midH));
-    addBody(Vector2(midW, midH));
-    addBody(Vector2(midW + 1, midH));
-    addBody(Vector2(midW + 2, midH));
+    addBody(Vector2<int>(midW - 1, midH));
+    addBody(Vector2<int>(midW, midH));
+    addBody(Vector2<int>(midW + 1, midH));
+    addBody(Vector2<int>(midW + 2, midH));
     generateAppelPos();
     score = 0;
 }

@@ -113,7 +113,7 @@ int	NCursesGraph::eventManagment()
 
 void	        NCursesGraph::_displayComponent(GameComponent *gameComponent) const
 {
-  Vector2	pos = gameComponent->getPos();
+  Vector2<int>	pos = gameComponent->getPos();
 
   gameWin->attrON(A_REVERSE | COLOR_PAIR(gameComponent->getColor()));
   gameWin->print(pos.x, pos.y, "%s", gameComponent->getSpriteText().c_str());
@@ -122,7 +122,7 @@ void	        NCursesGraph::_displayComponent(GameComponent *gameComponent) const
 
 void	        NCursesGraph::_displayComponent(UIComponent *uiComponent) const
 {
-  Vector2	pos = uiComponent->getPos();
+  Vector2<int>	pos = uiComponent->getPos();
 
   UIWin->attrON(COLOR_PAIR(uiComponent->getColor()) | A_BOLD);
   UIWin->print(pos.x, pos.y, "%s", uiComponent->getText().c_str());

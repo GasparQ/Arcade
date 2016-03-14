@@ -22,7 +22,7 @@ private:
   std::string fileSprite2D;
 
 public:
-  GameComponent(Vector2 const &pos, AComponent::ComponentColor color,
+  GameComponent(Vector2<int> const &pos, AComponent::ComponentColor color,
 		void *sprite3D,std::string const &spriteText,
 		std::string const &sprite2D);
   virtual ~GameComponent();

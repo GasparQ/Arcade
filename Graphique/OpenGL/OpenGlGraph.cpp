@@ -10,7 +10,8 @@
 
 // Ctor:
 // Initializes Projection mode and Lighting
-OpenGlGraph::OpenGlGraph(int width, int height, const char *name)
+OpenGlGraph::OpenGlGraph(int width, int height, const char *name) :
+m_win(width, height)
 {
     if (SDL_Init(SDL_INIT_EVERYTHING) == -1)
     {
@@ -23,6 +24,8 @@ OpenGlGraph::OpenGlGraph(int width, int height, const char *name)
     {
         throw arcade::InitRenderException("OpenGL - Screen");
     }
+    m_win.x = width;
+    m_win.y = height;
     SetProjectionMode();
     //InitLighting();
 }
@@ -41,11 +44,18 @@ OpenGlGraph::~OpenGlGraph()
     }
 }
 
-void OpenGlGraph::SetProjectionMode()
+void OpenGlGraph::SetProjectionMode(bool bIsHUD)
 {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(70, (double) (900.0 / 600.0), 1, 1000);
+    if (!bIsHUD)
+    {
+        gluPerspective(70, (double) (900.0 / 600.0), 1, 1000);
+    }
+    else
+    {
+        glOrtho(0, m_win.x, m_win.y, 0, -1, 1);
+    }
     glEnable(GL_DEPTH_TEST);
 }
 
@@ -103,7 +113,7 @@ void OpenGlGraph::DrawSphere(double posX, double posY, double posZ,
     glPopMatrix();
 }
 
-void OpenGlGraph::DrawCube(Vector2 pos, AComponent::ComponentColor color, double posY) const
+void OpenGlGraph::DrawCube(Vector2<int> pos, AComponent::ComponentColor color, double posY) const
 {
     glPushMatrix();
     glTranslated(-pos.x, -posY, -pos.y);
@@ -153,9 +163,9 @@ void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
         {
             if (i == -1 || j == -1 || i == sizeX || j == sizeY)
             {
-                DrawCube(Vector2(i, j), AComponent::COLOR_YELLOW);
+                DrawCube(Vector2<int>(i, j), AComponent::COLOR_YELLOW);
             }
-            DrawCube(Vector2(i, j), AComponent::COLOR_BLUE, 1);
+            DrawCube(Vector2<int>(i, j), AComponent::COLOR_BLUE, 1);
         }
     }
 }

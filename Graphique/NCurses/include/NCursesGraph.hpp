@@ -23,12 +23,12 @@
 typedef struct	s_cache
 {
 public:
-  Vector2	const	vector;
+  Vector2<int>	const	vector;
   std::string   const	str;
   ncr::Window		*win;
 
 public:
-  s_cache(Vector2 const vector, std::string const str, ncr::Window *win)
+  s_cache(Vector2<int> const vector, std::string const str, ncr::Window *win)
     : vector(vector), str(str), win(win)
   {}
 }		t_cache;

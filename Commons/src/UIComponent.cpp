@@ -10,8 +10,8 @@
 
 #include "UIComponent.hpp"
 
-UIComponent::UIComponent(Vector2 const &pos, enum ComponentColor color,
-			 Vector2 const &dim, std::string const &text) :
+UIComponent::UIComponent(Vector2<int> const &pos, enum ComponentColor color,
+			 Vector2<int> const &dim, std::string const &text) :
   AComponent(pos, color), dim(dim), text(text) 
 {
 
@@ -22,7 +22,7 @@ UIComponent::~UIComponent()
 
 }
 
-Vector2 const &UIComponent::getDim() const
+Vector2<int> const &UIComponent::getDim() const
 {
   return (this->dim);
 }

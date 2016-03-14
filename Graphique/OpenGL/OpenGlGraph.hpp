@@ -32,12 +32,12 @@ public:
     virtual void display(std::stack<AComponent *>);
 
 private:
-    void SetProjectionMode();
+    void SetProjectionMode(bool bIsHUD = false);
 
     void DrawSphere(double posX = 0, double posY = 0, double posZ = 0,
                     double red = 255, double green = 255, double blue = 255) const;
 
-    void DrawCube(Vector2 pos, AComponent::ComponentColor color, double posY = 0) const;
+    void DrawCube(Vector2<int> pos, AComponent::ComponentColor color, double posY = 0) const;
 
     void DrawTerrain(int sizeX, int sizeY) const;
 
@@ -46,6 +46,7 @@ private:
 private:
     SDL_Window *m_window = NULL;
     SDL_GLContext m_glContext = NULL;
+    Vector2<double> m_win;
     // RGBA
     SDL_Color colors[10] = {{0, 0, 0, 0}, // Black
                             {255, 0, 0, 255}, // red
