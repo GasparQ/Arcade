@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Mon Mar 14 18:04:40 2016 Victor Gouet
-// Last update Mon Mar 14 23:40:39 2016 Victor Gouet
+// Last update Mon Mar 14 23:45:28 2016 Victor Gouet
 //
 
 #include "../include/LoadHighScore.hpp"
@@ -24,6 +24,7 @@ LoadHighScore::LoadHighScore(std::string const &fileName) : fileName(fileName)
       fd.seekg(0, fd.end);
       lenght = fd.tellg();
       fd.seekg(0, fd.beg);
+      std::memset(&header, 0, sizeof(t_header));
       fd.read(reinterpret_cast<char *>(&header), sizeof(t_header));
       if (header.magicNbr != MAGICNBR)
 	throw std::out_of_range("LoadHighScore: Bad Magic Number");
