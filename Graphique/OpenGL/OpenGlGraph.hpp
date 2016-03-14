@@ -20,7 +20,7 @@
 class OpenGlGraph : public IGraph
 {
 public:
-    OpenGlGraph(int width = 900, int height = 800, const char *name = "OpenGL Win");
+    OpenGlGraph(int width = 1280, int height = 720, const char *name = "OpenGL Win");
 
     virtual ~OpenGlGraph();
 
@@ -30,8 +30,6 @@ public:
     virtual void display(std::stack<AComponent *>);
 
 private:
-    void SetProjectionMode(bool bIsHUD = false) const ;
-
     void DrawSphere(double posX = 0, double posY = 0, double posZ = 0,
                     double red = 255, double green = 255, double blue = 255) const;
 
@@ -45,14 +43,25 @@ private:
 
     void RefreshImage() const;
 
-    void Set2DMode() const;
+    void Set2DMode();
 
-    void Set3DMode() const;
+    void Set3DMode();
+
+    void DrawText(Vector2<int> pos, std::string const& text, AComponent::ComponentColor const& color);
+
+private:
+    enum RenderMode
+    {
+        PERSPECTIVE = 1,
+        ORTHOGRAPHIC = 2
+    };
 
 private:
     SDL_Window *m_window = NULL;
     SDL_GLContext m_glContext = NULL;
     SDL_Event event;
+    // Stores the coeff to resize
+    double m_size_coeff;
     Vector2<double> m_win;
     std::map<int, int>  keyCodeAssociation;
     // RGBA
@@ -64,6 +73,7 @@ private:
                             {255, 0, 255, 255}, // magenta
                             {0, 255, 255, 255}, // cyan
                             {255, 255, 255, 255}}; // white
+    RenderMode m_render_mode = PERSPECTIVE;
 };
 
 

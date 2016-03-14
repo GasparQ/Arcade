@@ -10,9 +10,10 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 
 // Ctor:
-// Initializes Projection mode and Lighting
-OpenGlGraph::OpenGlGraph(int width, int height, const char *name) :
-m_win(width, height)
+// Initializes Projection mode (3D by default) and Lighting
+OpenGlGraph::OpenGlGraph(int width, int , const char *name) :
+m_size_coeff(width / arcade::winWidth),
+m_win(arcade::winWidth * m_size_coeff, arcade::winHeight * m_size_coeff)
 {
     int ac = 1;
     glutInit(&ac, NULL);
@@ -20,8 +21,8 @@ m_win(width, height)
     {
         throw arcade::InitRenderException("OpenGL / SDL");
     }
-    m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width,
-                                height, SDL_WINDOW_OPENGL);
+    m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, (int)m_win.x,
+                                (int)m_win.y, SDL_WINDOW_OPENGL);
     m_glContext = SDL_GL_CreateContext(m_window);
     if (m_window == NULL || m_glContext == NULL)
     {
@@ -40,7 +41,8 @@ m_win(width, height)
     keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
     keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
     keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
-    SetProjectionMode();
+
+    Set3DMode();
     InitLighting();
 }
 
@@ -58,33 +60,17 @@ OpenGlGraph::~OpenGlGraph()
     }
 }
 
-// Sets perspective for non hud elements by default
-// can set orthographic mode for HUD objects on demand
-void OpenGlGraph::SetProjectionMode(bool bIsHUD) const
-{
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    if (!bIsHUD)
-    {
-        gluPerspective(70, (m_win.x / m_win.y), 1, 1000);
-        glEnable(GL_DEPTH_TEST);
-        glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
-        glEnable(GL_COLOR_MATERIAL);
-    }
-    else
-    {
-        //glOrtho(0, m_win.x, m_win.y, 0, -1, 1);
-        //glDisable(GL_DEPTH_TEST);
-    }
-}
-
 // Handles lighting in the scene
 void OpenGlGraph::InitLighting() const
 {
     GLfloat lightAmbient[] = {0.0, 0.0, 0.0, 1.0};
     GLfloat lightDiffuse[] = {1.0, 1.0, 1.0, 1.0};
     GLfloat lightSpecular[] = {1.0, 1.0, 1.0, 1.0};
-    GLfloat lightPosition[] = {10.0, 100.0, 1.0, 0.0};
+    GLfloat lightPosition[] = {50.0, 100.0, 50.0, 0.0};
+
+    // Enables material to be impacted by light
+    glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
+    glEnable(GL_COLOR_MATERIAL);
 
     glClearColor(0.0, 0.0, 0.0, 0.0);
     glShadeModel(GL_SMOOTH);
@@ -112,7 +98,9 @@ void OpenGlGraph::DrawBackground() const
     glLoadIdentity();
 
     // We set the eye to see 3/4 view, the center on Vector.zero and y as up axis
-    gluLookAt(0, 34, -48, 0, 0, 0, 0, 1, 0);
+    //static float i = 0;
+    //gluLookAt(0, 34, -48, 0, 0, 0, 0, 1, 0);
+    gluLookAt(0, 34, -28, 0, 0, -15, 0, 1, 0);
     // then we translate to center
     glTranslated(arcade::winWidth / 2.0, 0, 0);
     DrawTerrain(arcade::winWidth, arcade::winHeight);
@@ -165,8 +153,11 @@ int OpenGlGraph::eventManagment()
 {
     std::map<int, int>::const_iterator  it;
 
-    if (SDL_PollEvent(&event) == 1 && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
-        return it->second;
+    while (SDL_PollEvent(&event) == 1)
+    {
+        if (event.type == SDL_KEYDOWN && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+            return it->second;
+    }
     return -1;
 }
 
@@ -176,21 +167,27 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
     GameComponent *gc;
     UIComponent *uic;
 
+    Set3DMode();
     DrawBackground();
     while (!stack.empty())
     {
         if ((gc = dynamic_cast<GameComponent*>(stack.top())) != nullptr)
         {
             //TODO: fix for different shapes
-            //SetProjectionMode();
+            if (m_render_mode == ORTHOGRAPHIC)
+            {
+                Set3DMode();
+            }
             DrawCube(gc->getPos(), gc->getColor());
         }
         else if ((uic = dynamic_cast<UIComponent*>(stack.top())) != nullptr)
         {
-            //SetProjectionMode(true);
-            // TODO: implement UI
+            if (m_render_mode == PERSPECTIVE)
+            {
+                Set2DMode();
+            }
+            DrawText(uic->getPos(), uic->getText(), uic->getColor());
         }
-
         stack.pop();
     }
     RefreshImage();
@@ -201,7 +198,7 @@ extern "C" IGraph *loadLib()
     return new OpenGlGraph();
 }
 
-void OpenGlGraph::Set2DMode() const
+void OpenGlGraph::Set2DMode()
 {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
@@ -210,12 +207,15 @@ void OpenGlGraph::Set2DMode() const
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    glTranslatef(0.375, 0.375, 0.0);
 
     glDisable(GL_DEPTH_TEST);
+    glDisable(GL_LIGHTING);
+    glDisable(GL_LIGHT0);
+
+    m_render_mode = ORTHOGRAPHIC;
 }
 
-void OpenGlGraph::Set3DMode() const
+void OpenGlGraph::Set3DMode()
 {
     glViewport(0, 0, (int)m_win.x, (int)m_win.y);
     glMatrixMode(GL_PROJECTION);
@@ -228,4 +228,21 @@ void OpenGlGraph::Set3DMode() const
 
     glDepthFunc(GL_LEQUAL);
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+
+    m_render_mode = PERSPECTIVE;
+}
+
+// Drw text on viewport
+void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent::ComponentColor const& color)
+{
+    // IMPORTANT : change the color before rasterizing !!
+    glColor3ub(colors[color].r, colors[color].g, colors[color].b);
+
+    glRasterPos2d(pos.x * m_size_coeff + (7 * (text.size())), (pos.y) * m_size_coeff);
+    for (unsigned int i = 0; i < text.length(); i++)
+    {
+        glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
+    }
 }
