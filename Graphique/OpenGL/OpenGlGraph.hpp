@@ -20,7 +20,7 @@
 class OpenGlGraph : public IGraph
 {
 public:
-    OpenGlGraph(int width = 900, int height = 800, const char *name = "OpenGL Win");
+    OpenGlGraph(int width = 1280, int height = 720, const char *name = "OpenGL Win");
 
     virtual ~OpenGlGraph();
 
@@ -60,9 +60,9 @@ private:
     SDL_Window *m_window = NULL;
     SDL_GLContext m_glContext = NULL;
     SDL_Event event;
-    Vector2<double> m_win;
     // Stores the coeff to resize
     double m_size_coeff;
+    Vector2<double> m_win;
     std::map<int, int>  keyCodeAssociation;
     // RGBA
     SDL_Color colors[10] = {{0, 0, 0, 0}, // Black
