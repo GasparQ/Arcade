@@ -237,8 +237,10 @@ void OpenGlGraph::Set3DMode()
 // Drw text on viewport
 void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent::ComponentColor const& color)
 {
-    glRasterPos2d(pos.x * m_size_coeff + (7 * (text.size())), (pos.y) * m_size_coeff);
+    // IMPORTANT : change the color before rasterizing !!
     glColor3ub(colors[color].r, colors[color].g, colors[color].b);
+
+    glRasterPos2d(pos.x * m_size_coeff + (7 * (text.size())), (pos.y) * m_size_coeff);
     for (unsigned int i = 0; i < text.length(); i++)
     {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
