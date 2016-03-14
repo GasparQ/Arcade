@@ -15,8 +15,7 @@ OpenGlGraph::OpenGlGraph(int width, int height, const char *name) :
 m_win(width, height)
 {
     int ac = 1;
-    char *av[1] = {"./arcade"};
-    glutInit(&ac, av);
+    glutInit(&ac, NULL);
     if (SDL_Init(SDL_INIT_EVERYTHING) == -1)
     {
         throw arcade::InitRenderException("OpenGL / SDL");
@@ -61,7 +60,7 @@ OpenGlGraph::~OpenGlGraph()
 
 // Sets perspective for non hud elements by default
 // can set orthographic mode for HUD objects on demand
-void OpenGlGraph::SetProjectionMode(bool bIsHUD)
+void OpenGlGraph::SetProjectionMode(bool bIsHUD) const
 {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
@@ -100,13 +99,13 @@ void OpenGlGraph::InitLighting() const
 }
 
 // Vetical axis is (0, 1, 0)
-void OpenGlGraph::RefreshImage()
+void OpenGlGraph::RefreshImage() const
 {
     glFlush();
     SDL_GL_SwapWindow(m_window);
 }
 
-void OpenGlGraph::DrawBackground()
+void OpenGlGraph::DrawBackground() const
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
@@ -200,4 +199,33 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
 extern "C" IGraph *loadLib()
 {
     return new OpenGlGraph();
+}
+
+void OpenGlGraph::Set2DMode() const
+{
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+
+    gluOrtho2D(0.0f, m_win.x, m_win.y, 0.0f);
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glTranslatef(0.375, 0.375, 0.0);
+
+    glDisable(GL_DEPTH_TEST);
+}
+
+void OpenGlGraph::Set3DMode() const
+{
+    glViewport(0, 0, (int)m_win.x, (int)m_win.y);
+    glMatrixMode(GL_PROJECTION);
+
+    glLoadIdentity();
+    gluPerspective(70, m_win.x / m_win.y, 1, 1000.0);
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    glDepthFunc(GL_LEQUAL);
+    glEnable(GL_DEPTH_TEST);
 }

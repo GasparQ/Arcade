@@ -24,17 +24,13 @@ public:
 
     virtual ~OpenGlGraph();
 
-    void DrawBackground();
-
-    void RefreshImage();
-
 public:
     virtual int eventManagment();
 
     virtual void display(std::stack<AComponent *>);
 
 private:
-    void SetProjectionMode(bool bIsHUD = false);
+    void SetProjectionMode(bool bIsHUD = false) const ;
 
     void DrawSphere(double posX = 0, double posY = 0, double posZ = 0,
                     double red = 255, double green = 255, double blue = 255) const;
@@ -44,6 +40,14 @@ private:
     void DrawTerrain(int sizeX, int sizeY) const;
 
     void InitLighting() const;
+
+    void DrawBackground() const ;
+
+    void RefreshImage() const;
+
+    void Set2DMode() const;
+
+    void Set3DMode() const;
 
 private:
     SDL_Window *m_window = NULL;
