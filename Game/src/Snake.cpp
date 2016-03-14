@@ -19,6 +19,10 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     if ((it = keycodex.find(keycode)) != keycodex.end())
         (this->*it->second)();
     goAhead();
+    output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
+				AComponent::COLOR_WHITE,
+				Vector2<int>(0, 0), "score : " + std::to_string(score)));
+
     for (bod = body.begin(); bod != body.end(); ++bod)
     {
         if (bod == body.begin())
@@ -28,11 +32,10 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     }
     output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "./sprites/apple.bmp"));
 
-    output.push(new UIComponent(
-            Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
-            AComponent::COLOR_WHITE,
-            Vector2<int>(0, 0), "score : " + std::to_string(score))
-    );
+    // output.push(new UIComponent(
+    //         Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
+    //         AComponent::COLOR_WHITE,
+    //         Vector2<int>(0, 0), "score : " + std::to_string(score)));
     return output;
 }
 
