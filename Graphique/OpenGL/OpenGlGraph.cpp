@@ -66,7 +66,7 @@ void OpenGlGraph::InitLighting() const
     GLfloat lightAmbient[] = {0.0, 0.0, 0.0, 1.0};
     GLfloat lightDiffuse[] = {1.0, 1.0, 1.0, 1.0};
     GLfloat lightSpecular[] = {1.0, 1.0, 1.0, 1.0};
-    GLfloat lightPosition[] = {50.0, 100.0, 1.0, 0.0};
+    GLfloat lightPosition[] = {50.0, 100.0, 50.0, 0.0};
 
     // Enables material to be impacted by light
     glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
@@ -98,7 +98,9 @@ void OpenGlGraph::DrawBackground() const
     glLoadIdentity();
 
     // We set the eye to see 3/4 view, the center on Vector.zero and y as up axis
-    gluLookAt(0, 34, -48, 0, 0, 0, 0, 1, 0);
+    //static float i = 0;
+    //gluLookAt(0, 34, -48, 0, 0, 0, 0, 1, 0);
+    gluLookAt(0, 34, -28, 0, 0, -15, 0, 1, 0);
     // then we translate to center
     glTranslated(arcade::winWidth / 2.0, 0, 0);
     DrawTerrain(arcade::winWidth, arcade::winHeight);
