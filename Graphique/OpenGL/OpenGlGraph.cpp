@@ -10,7 +10,7 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 
 // Ctor:
-// Initializes Projection mode and Lighting
+// Initializes Projection mode (3D by default) and Lighting
 OpenGlGraph::OpenGlGraph(int width, int height, const char *name) :
 m_win(width, height)
 {
@@ -40,7 +40,8 @@ m_win(width, height)
     keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
     keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
     keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
-    SetProjectionMode();
+
+    Set3DMode();
     InitLighting();
 }
 
@@ -58,26 +59,6 @@ OpenGlGraph::~OpenGlGraph()
     }
 }
 
-// Sets perspective for non hud elements by default
-// can set orthographic mode for HUD objects on demand
-void OpenGlGraph::SetProjectionMode(bool bIsHUD) const
-{
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    if (!bIsHUD)
-    {
-        gluPerspective(70, (m_win.x / m_win.y), 1, 1000);
-        glEnable(GL_DEPTH_TEST);
-        glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
-        glEnable(GL_COLOR_MATERIAL);
-    }
-    else
-    {
-        //glOrtho(0, m_win.x, m_win.y, 0, -1, 1);
-        //glDisable(GL_DEPTH_TEST);
-    }
-}
-
 // Handles lighting in the scene
 void OpenGlGraph::InitLighting() const
 {
@@ -86,7 +67,11 @@ void OpenGlGraph::InitLighting() const
     GLfloat lightSpecular[] = {1.0, 1.0, 1.0, 1.0};
     GLfloat lightPosition[] = {10.0, 100.0, 1.0, 0.0};
 
-    glClearColor(0.0, 0.0, 0.0, 0.0);
+    // Enables material to be impacted by light
+    glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
+    glEnable(GL_COLOR_MATERIAL);
+
+    glClearColor(0.5, 0.0, 0.0, 0.0);
     glShadeModel(GL_SMOOTH);
     glEnable(GL_CULL_FACE);
     glEnable(GL_LIGHTING);
@@ -176,21 +161,27 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
     GameComponent *gc;
     UIComponent *uic;
 
+    Set3DMode();
     DrawBackground();
     while (!stack.empty())
     {
         if ((gc = dynamic_cast<GameComponent*>(stack.top())) != nullptr)
         {
             //TODO: fix for different shapes
-            //SetProjectionMode();
+            if (m_render_mode == ORTHOGRAPHIC)
+            {
+                Set3DMode();
+            }
             DrawCube(gc->getPos(), gc->getColor());
         }
         else if ((uic = dynamic_cast<UIComponent*>(stack.top())) != nullptr)
         {
-            //SetProjectionMode(true);
-            // TODO: implement UI
+            if (m_render_mode == PERSPECTIVE)
+            {
+                Set2DMode();
+            }
+            DrawText(uic->getPos(), uic->getText(), uic->getColor());
         }
-
         stack.pop();
     }
     RefreshImage();
@@ -201,7 +192,7 @@ extern "C" IGraph *loadLib()
     return new OpenGlGraph();
 }
 
-void OpenGlGraph::Set2DMode() const
+void OpenGlGraph::Set2DMode()
 {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
@@ -210,12 +201,14 @@ void OpenGlGraph::Set2DMode() const
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    glTranslatef(0.375, 0.375, 0.0);
 
     glDisable(GL_DEPTH_TEST);
+    glDisable(GL_LIGHTING);
+
+    m_render_mode = ORTHOGRAPHIC;
 }
 
-void OpenGlGraph::Set3DMode() const
+void OpenGlGraph::Set3DMode()
 {
     glViewport(0, 0, (int)m_win.x, (int)m_win.y);
     glMatrixMode(GL_PROJECTION);
@@ -228,4 +221,20 @@ void OpenGlGraph::Set3DMode() const
 
     glDepthFunc(GL_LEQUAL);
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_LIGHTING);
+
+    m_render_mode = PERSPECTIVE;
+}
+
+// Drw text on viewport
+void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent::ComponentColor const& color)
+{
+    int i;
+
+    glRasterPos2f(pos.x, pos.y + 24);
+    glColor3b(colors[color].r, colors[color].g, colors[color].b);
+    for (unsigned int i = 0; i < text.length(); i++)
+    {
+        glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
+    }
 }
