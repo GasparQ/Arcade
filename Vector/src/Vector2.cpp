@@ -10,31 +10,3 @@
 
 
 #include "../include/Vector2.hpp"
-
-template <class T>
-Vector2<T>::Vector2(T x, T y) : x(x), y(y)
-{
-}
-
-template <class T>
-Vector2<T>::~Vector2()
-{
-}
-
-template <class T>
-Vector2<T>     Vector2<T>::operator+(const Vector2<T> &vector2)
-{
-    return Vector2<T>(x + vector2.x, y + vector2.y);
-}
-
-template <class T>
-bool Vector2<T>::operator==(const Vector2<T> &vector2)
-{
-    return x == vector2.x && y == vector2.y;
-}
-
-template <class T>
-Vector2<T> Vector2<T>::invert()
-{
-    return Vector2<T>(-x, -y);
-}

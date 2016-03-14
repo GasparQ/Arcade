@@ -21,11 +21,22 @@ public:
     T     y;
 
 public:
-    Vector2(T x, T y);
-    ~Vector2();
-    Vector2     operator+(Vector2 const &);
-    bool        operator==(Vector2 const &);
-    Vector2     invert();
+    Vector2(T x, T y) : x(x), y(y)
+    {}
+    ~Vector2()
+    {}
+    Vector2     operator+(Vector2 const &vector2)
+    {
+        return Vector2<T>(x + vector2.x, y + vector2.y);
+    }
+    bool        operator==(Vector2 const &vector2)
+    {
+        return x == vector2.x && y == vector2.y;
+    }
+    Vector2     invert()
+    {
+        return Vector2<T>(-x, -y);
+    }
 };
 
 #endif
