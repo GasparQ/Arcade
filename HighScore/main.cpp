@@ -5,10 +5,10 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Mon Mar 14 19:57:11 2016 Victor Gouet
-// Last update Mon Mar 14 23:32:15 2016 Victor Gouet
+// Last update Mon Mar 14 23:42:15 2016 Victor Gouet
 //
 
-#include "include/LoadHightScore.hpp"
+#include "include/LoadHighScore.hpp"
 
 int	main(int ac, char **av)
 {
@@ -19,12 +19,12 @@ int	main(int ac, char **av)
     }
 
   try {
-    LoadHightScore	load("snake");
+    LoadHighScore	load("snake");
 
-    t_hightScore		*score1 = new s_hightScore(atoi(av[1]), av[2]);		
-    load.setHightScore(score1);
-    t_hightScore		*score2 = new s_hightScore(atoi(av[3]), av[4]);		
-    load.setHightScore(score2);
+    t_highScore		*score1 = new s_highScore(atoi(av[1]), av[2]);		
+    load.setHighScore(score1);
+    t_highScore		*score2 = new s_highScore(atoi(av[3]), av[4]);		
+    load.setHighScore(score2);
     load.flush();
     std::cout << load << std::endl;
   }

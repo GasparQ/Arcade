@@ -1,15 +1,15 @@
 //
-// HightScore.hpp for HightScore in /home/gouet_v/Rendu/semester4/CPP/cpp_arcade/HightScore
+// HighScore.hpp for HighScore in /home/gouet_v/Rendu/semester4/CPP/cpp_arcade/HighScore
 // 
 // Made by Victor Gouet
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Mon Mar 14 17:40:43 2016 Victor Gouet
-// Last update Mon Mar 14 23:01:41 2016 Victor Gouet
+// Last update Mon Mar 14 23:41:23 2016 Victor Gouet
 //
 
-#ifndef HIGHTSCORE_HPP_
-# define HIGHTSCORE_HPP_
+#ifndef HIGHSCORE_HPP_
+# define HIGHSCORE_HPP_
 
 # define MAGICNBR	1996
 
@@ -21,17 +21,17 @@ typedef struct	s_header
   int		magicNbr;
   int		headerSize;
   int		fileSize;
-  int		nbrHightScore;
+  int		nbrHighScore;
 
-  s_header(int headerSize, int fileSize, int nbrHightScore)
-    : magicNbr(MAGICNBR), headerSize(headerSize), fileSize(fileSize), nbrHightScore(nbrHightScore)
+  s_header(int headerSize, int fileSize, int nbrHighScore)
+    : magicNbr(MAGICNBR), headerSize(headerSize), fileSize(fileSize), nbrHighScore(nbrHighScore)
   {
   }
 
   s_header(){}
 }		t_header;
 
-typedef struct	s_hightScore
+typedef struct	s_highScore
 {
 private:
   char		name[20];
@@ -65,7 +65,7 @@ public:
     return (std::string(name));
   }
 
-  s_hightScore(unsigned int newScore, std::string const &newName)
+  s_highScore(unsigned int newScore, std::string const &newName)
   {
     score = 0;
     std::memset(name, 0, sizeof(name));
@@ -73,11 +73,11 @@ public:
     setScore(newScore);
   }
 
-  s_hightScore()
+  s_highScore()
   {
     score = 0;
     std::memset(name, 0, sizeof(name));
   }
-}		t_hightScore;
+}		t_highScore;
 
 #endif
