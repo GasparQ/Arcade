@@ -11,8 +11,9 @@
 
 // Ctor:
 // Initializes Projection mode (3D by default) and Lighting
-OpenGlGraph::OpenGlGraph(int width, int height, const char *name) :
-m_win(width, height)
+OpenGlGraph::OpenGlGraph(int width, int , const char *name) :
+m_size_coeff(width / arcade::winWidth),
+m_win(arcade::winWidth * m_size_coeff, arcade::winHeight * m_size_coeff)
 {
     int ac = 1;
     glutInit(&ac, NULL);
@@ -20,8 +21,8 @@ m_win(width, height)
     {
         throw arcade::InitRenderException("OpenGL / SDL");
     }
-    m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width,
-                                height, SDL_WINDOW_OPENGL);
+    m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, (int)m_win.x,
+                                (int)m_win.y, SDL_WINDOW_OPENGL);
     m_glContext = SDL_GL_CreateContext(m_window);
     if (m_window == NULL || m_glContext == NULL)
     {
@@ -65,7 +66,7 @@ void OpenGlGraph::InitLighting() const
     GLfloat lightAmbient[] = {0.0, 0.0, 0.0, 1.0};
     GLfloat lightDiffuse[] = {1.0, 1.0, 1.0, 1.0};
     GLfloat lightSpecular[] = {1.0, 1.0, 1.0, 1.0};
-    GLfloat lightPosition[] = {10.0, 100.0, 1.0, 0.0};
+    GLfloat lightPosition[] = {50.0, 100.0, 1.0, 0.0};
 
     // Enables material to be impacted by light
     glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
@@ -150,8 +151,11 @@ int OpenGlGraph::eventManagment()
 {
     std::map<int, int>::const_iterator  it;
 
-    if (SDL_PollEvent(&event) == 1 && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
-        return it->second;
+    while (SDL_PollEvent(&event) == 1)
+    {
+        if (event.type == SDL_KEYDOWN && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+            return it->second;
+    }
     return -1;
 }
 
@@ -231,9 +235,8 @@ void OpenGlGraph::Set3DMode()
 // Drw text on viewport
 void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent::ComponentColor const& color)
 {
-    glRasterPos2f(pos.x, pos.y + 24);
+    glRasterPos2d(pos.x * m_size_coeff + (7 * (text.size())), (pos.y) * m_size_coeff);
     glColor3ub(colors[color].r, colors[color].g, colors[color].b);
-    //std::cout << "r = " << (int)colors[color].r << " g = " << (int)colors[color].g << " b = " << (int)colors[color].b << std::endl;
     for (unsigned int i = 0; i < text.length(); i++)
     {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
