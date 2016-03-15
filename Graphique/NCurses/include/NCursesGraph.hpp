@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Tue Mar 15 18:32:57 2016 Victor Gouet
+// Last update Tue Mar 15 18:52:42 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -45,19 +45,18 @@ public:
   virtual void display(std::stack<AComponent *>);
 
 private:
-  void			_displayComponent(GameComponent const *);
-  void			_displayComponent(HighScoreComponent const *);
-  void			_displayComponent(UIComponent const *);
-  void			_cacheClear();
-  bool			isResizeGood() const;
-
-
-private:
   ncr::Window			*gameWin;
   ncr::Window			*_board;
   std::stack<t_cache>		_cacheGame;
   ncr::Window			*UIWin;
   std::map<int, int>		keycodeMap;
+
+private:
+  void			_displayComponent(GameComponent const *, ncr::Window *win);
+  void			_displayComponent(HighScoreComponent const *, ncr::Window *win);
+  void			_displayComponent(UIComponent const *, ncr::Window *win);
+  void			_cacheClear();
+  bool			isResizeGood() const;
 };
 
 #endif

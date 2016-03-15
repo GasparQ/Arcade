@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Tue Mar 15 18:35:07 2016 Victor Gouet
+// Last update Tue Mar 15 18:53:26 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -113,34 +113,38 @@ int	NCursesGraph::eventManagment()
   return (keycode);
 }
 
-void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent)
+void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
+						ncr::Window *win)
 {
   Vector2<int>	pos = gameComponent->getPos();
 
-  gameWin->attrON(A_REVERSE | COLOR_PAIR(gameComponent->getColor()));
-  gameWin->print(pos.x, pos.y, "%s", gameComponent->getSpriteText().c_str());
-  gameWin->attrOFF(A_REVERSE);
+  // gameWin
+  win->attrON(A_REVERSE | COLOR_PAIR(gameComponent->getColor()));
+  win->print(pos.x, pos.y, "%s", gameComponent->getSpriteText().c_str());
+  win->attrOFF(A_REVERSE);
   _cacheGame.push(s_cache(gameComponent->getPos(),
 			  gameComponent->getSpriteText(), gameWin));
 }
 
-void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent)
+void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr::Window *win)
 {
   Vector2<int>	pos = uiComponent->getPos();
 
-  UIWin->attrON(COLOR_PAIR(uiComponent->getColor()) | A_BOLD);
-  UIWin->print(pos.x, pos.y, "%s", uiComponent->getText().c_str());
-  _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), UIWin));
+  //UIWin
+  win->attrON(COLOR_PAIR(uiComponent->getColor()) | A_BOLD);
+  win->print(pos.x, pos.y, "%s", uiComponent->getText().c_str());
+  _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), win));
 }
 
-void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreComponent)
+void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreComponent,
+						ncr::Window *win)
 {
   int			i = 0;
   const UIComponent *const *arrayComponent = hightScoreComponent->getComponentsToDisplay();
   
   while (arrayComponent[i] != NULL)
     {
-      _displayComponent(arrayComponent[i]);
+      _displayComponent(arrayComponent[i], win);
       ++i;
     }
 }
@@ -173,15 +177,15 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
     {
       if ((gameComponent = dynamic_cast<GameComponent *>(obj.top())) != NULL)
       	{
-      	  _displayComponent(gameComponent);
+      	  _displayComponent(gameComponent, gameWin);
       	}
       else if ((uiComponent = dynamic_cast<UIComponent *>(obj.top())) != NULL)
       	{
-  	  _displayComponent(uiComponent);
+  	  _displayComponent(uiComponent, UIWin);
   	}
       else if ((highScore = dynamic_cast<HighScoreComponent *>(obj.top())) != NULL)
 	{
-	  _displayComponent(highScore);
+	  _displayComponent(highScore, gameWin);
 	}
       delete obj.top();
       obj.pop();
