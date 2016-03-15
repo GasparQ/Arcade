@@ -2,9 +2,10 @@
 // Created by veyrie_f on 3/15/16.
 //
 
-#include "PacmanGame.hpp"
+#include "../include/PacmanGame.hpp"
 #include "../Commons/include/ArcadeSystem.hpp"
 #include "../Commons/include/UIComponent.hpp"
+#include "../Commons/include/GameComponent.hpp"
 
 PacmanGame::PacmanGame()
 {
@@ -40,6 +41,10 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     std::stack<AComponent *> output;
     std::map<int, keyfunc>::iterator it;
 
+    output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(m_score)).size()) / 2), 1),
+                                AComponent::COLOR_WHITE,
+                                Vector2<int>(5, 1), "score : " + std::to_string(m_score)));
+
     if ((it = keycodes.find(keycode)) != keycodes.end())
     {
         (m_pacman.*it->second)();
@@ -47,9 +52,8 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 
     MoveEntities();
 
-    output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(m_score)).size()) / 2), 1),
-                                AComponent::COLOR_WHITE,
-                                Vector2<int>(5, 1), "score : " + std::to_string(m_score)));
+    output.push(new GameComponent(m_pacman.getPosition(), AComponent::ComponentColor::COLOR_YELLOW, GameComponent::Shapes::SPHERE, "O", ""));
+
     return output;
 }
 

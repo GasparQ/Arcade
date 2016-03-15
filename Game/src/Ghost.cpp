@@ -2,7 +2,7 @@
 // Created by veyrie_f on 3/15/16.
 //
 
-#include "Ghost.hpp"
+#include "../include/Ghost.hpp"
 
 Ghost::Ghost() : PacmanCharacter(Vector2<int>(25, 15))
 {
