@@ -59,7 +59,6 @@ private:
     void                        move();
     void                        die();
     void                        initGame();
-    void showScore();
   bool goOnWall(Vector2<int> const &vector) const;
 };
 

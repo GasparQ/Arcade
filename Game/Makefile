@@ -33,7 +33,7 @@ CPPFLAGS	=	-W -Wall -Wextra -fPIC -shared --std=c++11 \
 			-Wl,--no-undefined
 
 
-LDFLAGS		=	-shared -Wl,--no-undefined
+LDFLAGS		=	-shared -Wl,--no-undefined -L ../Commons/ -l_arcade_commons
 
 $(SNAKE):	$(SNAKEOBJS)
 	$(CC) -o $(SNAKE) $(SNAKEOBJS) $(LDFLAGS)

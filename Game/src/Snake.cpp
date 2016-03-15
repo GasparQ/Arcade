@@ -7,6 +7,7 @@
 #include "../../Component/include/GameComponent.hpp"
 #include "../../Component/include/UIComponent.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
+#include "../../Commons/HighScore/include/LoadHighScore.hpp"
 
 //TODO void play(void)
 
@@ -26,11 +27,11 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     for (bod = body.begin(); bod != body.end(); ++bod)
     {
         if (bod == body.begin())
-            output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, NULL, " ", "./sprites/snake_head.bmp"));
+            output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, GameComponent::Shapes::CUBE , " ", "./sprites/snake_head.bmp"));
         else
-            output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, NULL, " ", "./sprites/snake.bmp"));
+            output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, GameComponent::Shapes::CUBE , " ", "./sprites/snake.bmp"));
     }
-    output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "./sprites/apple.bmp"));
+    output.push(new GameComponent(apple, AComponent::COLOR_RED, GameComponent::Shapes::SPHERE , " ", "./sprites/apple.bmp"));
 
     // output.push(new UIComponent(
     //         Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),

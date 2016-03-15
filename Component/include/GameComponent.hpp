@@ -14,23 +14,33 @@
 # include <iostream>
 # include "AComponent.hpp"
 
-class	GameComponent : public AComponent
+class GameComponent : public AComponent
 {
+public:
+    enum Shapes
+    {
+        CUBE = 1,
+        SPHERE = 2
+    };
+
 private:
-  void *sprite3D;
-  std::string spriteText;
-  std::string fileSprite2D;
+    Shapes sprite3D;
+    std::string spriteText;
+    std::string fileSprite2D;
 
 public:
-  GameComponent(Vector2<int> const &pos, AComponent::ComponentColor color,
-		void *sprite3D,std::string const &spriteText,
-		std::string const &sprite2D);
-  virtual ~GameComponent();
+    GameComponent(Vector2<int> const &pos, AComponent::ComponentColor color,
+                  Shapes sprite3D, std::string const &spriteText,
+                  std::string const &sprite2D);
+
+    virtual ~GameComponent();
 
 public:
-  std::string const	&getSpriteText() const;
-  std::string const	&getSprite2D() const;
-  void			*getSprite3D() const; 
+    std::string const &getSpriteText() const;
+
+    std::string const &getSprite2D() const;
+
+    Shapes getSprite3D() const;
 };
 
 #endif

@@ -106,16 +106,15 @@ void OpenGlGraph::DrawBackground() const
     DrawTerrain(arcade::winWidth, arcade::winHeight);
 }
 
-void OpenGlGraph::DrawSphere(double posX, double posY, double posZ,
-                        double red, double green, double blue) const
+void OpenGlGraph::DrawSphere(Vector2<int> pos, AComponent::ComponentColor color) const
 {
     GLUquadric *param;
 
     glPushMatrix();
-    glTranslated(-posX, -posY, -posZ);
+    glTranslated(-pos.x, 0, -pos.y);
     param = gluNewQuadric();
-    glColor4d(red, green, blue, 1);
-    gluSphere(param, 0.5, 10, 10);
+    glColor4d(colors[color].r, colors[color].g, colors[color].b, 1);
+    gluSphere(param, 0.5, 20, 20);
     gluDeleteQuadric(param);
     glPopMatrix();
 }
@@ -173,12 +172,19 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
     {
         if ((gc = dynamic_cast<GameComponent*>(stack.top())) != nullptr)
         {
-            //TODO: fix for different shapes
             if (m_render_mode == ORTHOGRAPHIC)
             {
                 Set3DMode();
             }
-            DrawCube(gc->getPos(), gc->getColor());
+            switch (gc->getSprite3D())
+            {
+                case GameComponent::Shapes::SPHERE:
+                    DrawSphere(gc->getPos(), gc->getColor());
+                    break;
+                case GameComponent::Shapes::CUBE:
+                    DrawCube(gc->getPos(), gc->getColor());
+                    break;
+            }
         }
         else if ((uic = dynamic_cast<UIComponent*>(stack.top())) != nullptr)
         {

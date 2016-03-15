@@ -13,7 +13,7 @@
 
 GameComponent::GameComponent(Vector2<int> const &pos,
 			     AComponent::ComponentColor color,
-			     void *sprite3D,
+			     Shapes sprite3D,
 			     std::string const &spriteText,
                              std::string const &sprite2D)
   : AComponent(pos, color), sprite3D(sprite3D),
@@ -36,7 +36,7 @@ std::string const	&GameComponent::getSprite2D() const
   return (this->fileSprite2D);
 }
 
-void			*GameComponent::getSprite3D() const
+GameComponent::Shapes GameComponent::getSprite3D() const
 {
   return (this->sprite3D);
 }
