@@ -210,7 +210,6 @@ void        arcade::Arcade::Run()
         if ((it = this->eventSystem.find(key)) != eventSystem.end())
             (this->*it->second)(); // on gere les event system ici
         lib->display((*currGame)->compute(key));
-        //TODO wait
         std::this_thread::sleep_for(chrono);
     }
 }

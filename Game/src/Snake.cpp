@@ -21,7 +21,7 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     goAhead();
     output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
 				AComponent::COLOR_WHITE,
-				Vector2<int>(0, 0), "score : " + std::to_string(score)));
+				Vector2<int>(5, 1), "score : " + std::to_string(score)));
 
     for (bod = body.begin(); bod != body.end(); ++bod)
     {

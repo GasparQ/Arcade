@@ -2,8 +2,13 @@
 // Created by gaspar_q on 3/11/16.
 //
 
+#include <unistd.h>
+#include <errno.h>
 #include "SDLGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
+#include "../../../Component/include/UIComponent.hpp"
+
+const std::string SDLGraph::fontName = "./fonts/Minecraft.ttf"; //Snake_in_the_Boot
 
 int SDLGraph::eventManagment()
 {
@@ -20,12 +25,15 @@ int SDLGraph::eventManagment()
 void SDLGraph::display(std::stack<AComponent *> stack)
 {
     GameComponent   *gameComponent;
+    UIComponent     *uiComponent;
 
     SDL_RenderClear(render);
     while (!stack.empty())
     {
         if ((gameComponent = dynamic_cast<GameComponent *>(stack.top())))
             drawGameComponent(gameComponent);
+        else if ((uiComponent = dynamic_cast<UIComponent *>(stack.top())))
+            drawUIComponent(uiComponent);
         stack.pop();
     }
     SDL_RenderPresent(render);
@@ -35,8 +43,12 @@ SDLGraph::SDLGraph()
 {
     if (SDL_Init(0) != 0 ||
         (win = SDL_CreateWindow("Arcade", 0, 0, ArcadeSystem::winWidth * SDLGraph::scale, ArcadeSystem::winHeight * SDLGraph::scale, SDL_WINDOW_SHOWN)) == NULL ||
-        (render = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED)) == NULL)
+        (render = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED)) == NULL ||
+        TTF_Init() != 0 || (uifont = TTF_OpenFont(SDLGraph::fontName.c_str(), 24)) == NULL)
         throw std::runtime_error(SDL_GetError());
+    uicolor.r = 255;
+    uicolor.g = 255;
+    uicolor.b = 255;
     keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;
     keyCodeAssociation[SDL_SCANCODE_RIGHT] = ArcadeSystem::ArrowRight;
     keyCodeAssociation[SDL_SCANCODE_UP] = ArcadeSystem::ArrowUp;
@@ -76,18 +88,34 @@ SDL_Texture     *SDLGraph::loadSprite(const std::string &file) throw(std::runtim
     return tex;
 }
 
-void *SDLGraph::drawGameComponent(GameComponent *component) throw(std::runtime_error)
+void SDLGraph::displaySurface(AComponent *component, SDL_Texture *texture, Vector2<int> dim) throw(std::runtime_error)
 {
-    SDL_Texture *texture = loadSprite(component->getSprite2D());
     SDL_Rect    pos;
 
     pos.x = static_cast<int>(component->getPos().x * SDLGraph::scale);
     pos.y = static_cast<int>(component->getPos().y * SDLGraph::scale);
-    pos.w = SDLGraph::scale;
-    pos.h = SDLGraph::scale;
+    pos.w = dim.x * static_cast<int>(SDLGraph::scale);
+    pos.h = dim.y * static_cast<int>(SDLGraph::scale);
     if (SDL_RenderCopy(render, texture, NULL, &pos) != 0)
         throw std::runtime_error(SDL_GetError());
-    return nullptr;
+}
+
+void SDLGraph::drawGameComponent(GameComponent *component) throw(std::runtime_error)
+{
+    SDL_Texture *texture = loadSprite(component->getSprite2D());
+
+    displaySurface(component, texture);
+}
+
+void SDLGraph::drawUIComponent(UIComponent *component) throw(std::runtime_error)
+{
+    SDL_Surface *text;
+    SDL_Texture *texture;
+
+    if ((text = TTF_RenderText_Solid(uifont, component->getText().c_str(), uicolor)) == NULL ||
+        (texture = SDL_CreateTextureFromSurface(render, text)) == NULL)
+        throw std::runtime_error(SDL_GetError());
+    displaySurface(component, texture, component->getDim());
 }
 
 extern "C" IGraph *loadLib()
