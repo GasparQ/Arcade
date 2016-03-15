@@ -3,12 +3,10 @@
 //
 
 #include <unistd.h>
-#include <errno.h>
 #include "SDLGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
-#include "../../../Commons/include/UIComponent.hpp"
 
-const std::string SDLGraph::fontName = "./fonts/Minecraft.ttf"; //Snake_in_the_Boot
+const std::string SDLGraph::fontName = "./fonts/Minecraft.ttf";
 
 int SDLGraph::eventManagment()
 {
@@ -29,8 +27,9 @@ int SDLGraph::eventManagment()
 
 void SDLGraph::display(std::stack<AComponent *> stack)
 {
-    GameComponent   *gameComponent;
-    UIComponent     *uiComponent;
+    GameComponent       *gameComponent;
+    UIComponent         *uiComponent;
+    HighScoreComponent  *highScoreComponent;
 
     SDL_RenderClear(render);
     while (!stack.empty())
@@ -39,6 +38,8 @@ void SDLGraph::display(std::stack<AComponent *> stack)
             drawGameComponent(gameComponent);
         else if ((uiComponent = dynamic_cast<UIComponent *>(stack.top())))
             drawUIComponent(uiComponent);
+        else if ((highScoreComponent = dynamic_cast<HighScoreComponent *>(stack.top())))
+
         stack.pop();
     }
     SDL_RenderPresent(render);
@@ -112,6 +113,19 @@ void SDLGraph::drawGameComponent(GameComponent *component) throw(std::runtime_er
     SDL_Texture *texture = loadSprite(component->getSprite2D());
 
     displaySurface(component, texture);
+}
+
+void SDLGraph::drawHighScoreComponent(HighScoreComponent *component) throw(std::runtime_error)
+{
+    SDL_Surface *surface;
+
+    if ((surface = SDL_CreateRGBSurface(
+            0,
+            static_cast<int>(HighScoreComponent::highscoreDim.x * SDLGraph::scale),
+            static_cast<int>(HighScoreComponent::highscoreDim.y * SDLGraph::scale),
+            32, 0, 0, 0, 0
+    )) == NULL)
+        throw std::runtime_error(SDL_GetError());
 }
 
 void SDLGraph::drawUIComponent(UIComponent *component) throw(std::runtime_error)

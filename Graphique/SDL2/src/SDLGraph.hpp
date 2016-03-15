@@ -12,6 +12,7 @@
 #include "../../include/IGraph.hpp"
 #include "../../../Commons/include/GameComponent.hpp"
 #include "../../../Commons/include/UIComponent.hpp"
+#include "../../../Commons/include/HighScoreComponent.hpp"
 
 class   SDLGraph : public IGraph
 {
@@ -38,6 +39,7 @@ private:
     SDL_Texture *loadSprite(std::string const &) throw(std::runtime_error);
     void        drawGameComponent(GameComponent *) throw(std::runtime_error);
     void        drawUIComponent(UIComponent *) throw(std::runtime_error);
+    void        drawHighScoreComponent(HighScoreComponent *) throw(std::runtime_error);
     void        displaySurface(AComponent *, SDL_Texture *, Vector2<int> dim = Vector2<int>(1, 1)) throw(std::runtime_error);
 };
 

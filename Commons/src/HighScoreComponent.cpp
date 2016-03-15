@@ -85,7 +85,7 @@ void HighScoreComponent::UpdatePseudo(const int key)
         if (!pseudo.empty() && pseudo != HighScoreComponent::pseudoPlaceholder)
             pseudo = pseudo.substr(0, pseudo.length() - 1);
     }
-    else if (key >= ' ' && key <= '~')
+    else if (key >= ' ' && key <= '~' && pseudo.length() < 20)
     {
         if (pseudo == HighScoreComponent::pseudoPlaceholder)
             pseudo.clear();
