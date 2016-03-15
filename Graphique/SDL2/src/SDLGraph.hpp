@@ -37,10 +37,10 @@ private:
 
 private:
     SDL_Texture *loadSprite(std::string const &) throw(std::runtime_error);
-    void        drawGameComponent(GameComponent *) throw(std::runtime_error);
-    void        drawUIComponent(UIComponent *) throw(std::runtime_error);
-    void        drawHighScoreComponent(HighScoreComponent *) throw(std::runtime_error);
-    void        displaySurface(AComponent *, SDL_Texture *, Vector2<int> dim = Vector2<int>(1, 1)) throw(std::runtime_error);
+    void        drawGameComponent(GameComponent const *) throw(std::runtime_error);
+    void        drawUIComponent(UIComponent const *) throw(std::runtime_error);
+    void        drawHighScoreComponent(HighScoreComponent const *) throw(std::runtime_error);
+    void        displaySurface(AComponent const *, SDL_Texture *, Vector2<int> dim = Vector2<int>(1, 1)) throw(std::runtime_error);
 };
 
 #endif //C_SDLGRAPH_HPP

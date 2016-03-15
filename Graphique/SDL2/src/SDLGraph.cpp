@@ -39,7 +39,7 @@ void SDLGraph::display(std::stack<AComponent *> stack)
         else if ((uiComponent = dynamic_cast<UIComponent *>(stack.top())))
             drawUIComponent(uiComponent);
         else if ((highScoreComponent = dynamic_cast<HighScoreComponent *>(stack.top())))
-
+            drawHighScoreComponent(highScoreComponent);
         stack.pop();
     }
     SDL_RenderPresent(render);
@@ -74,6 +74,14 @@ SDLGraph::SDLGraph()
 
 SDLGraph::~SDLGraph()
 {
+    std::map<std::string, SDL_Texture*>::iterator   it;
+
+    for (it = spriteCache.begin(); it != spriteCache.end(); ++it)
+    {
+        SDL_DestroyTexture(it->second);
+    }
+    TTF_CloseFont(uifont);
+    TTF_Quit();
     SDL_DestroyRenderer(render);
     SDL_DestroyWindow(win);
     SDL_Quit();
@@ -93,10 +101,11 @@ SDL_Texture     *SDLGraph::loadSprite(const std::string &file) throw(std::runtim
         (tex = SDL_CreateTextureFromSurface(render, surface)) == NULL)
         throw std::runtime_error(SDL_GetError());
     spriteCache[file] = tex;
+    SDL_FreeSurface(surface);
     return tex;
 }
 
-void SDLGraph::displaySurface(AComponent *component, SDL_Texture *texture, Vector2<int> dim) throw(std::runtime_error)
+void SDLGraph::displaySurface(AComponent const *component, SDL_Texture *texture, Vector2<int> dim) throw(std::runtime_error)
 {
     SDL_Rect    pos;
 
@@ -108,27 +117,44 @@ void SDLGraph::displaySurface(AComponent *component, SDL_Texture *texture, Vecto
         throw std::runtime_error(SDL_GetError());
 }
 
-void SDLGraph::drawGameComponent(GameComponent *component) throw(std::runtime_error)
+void SDLGraph::drawGameComponent(GameComponent const *component) throw(std::runtime_error)
 {
     SDL_Texture *texture = loadSprite(component->getSprite2D());
 
     displaySurface(component, texture);
 }
 
-void SDLGraph::drawHighScoreComponent(HighScoreComponent *component) throw(std::runtime_error)
+void                            SDLGraph::drawHighScoreComponent(HighScoreComponent const *component) throw(std::runtime_error)
 {
-    SDL_Surface *surface;
+    SDL_Surface                 *surface;
+    SDL_Texture                 *texture;
+    SDL_Rect                    dim;
+    UIComponent const * const   *components;
 
-    if ((surface = SDL_CreateRGBSurface(
+    dim.x = component->getPos().x * static_cast<int>(SDLGraph::scale);
+    dim.y = component->getPos().y * static_cast<int>(SDLGraph::scale);
+    dim.w = HighScoreComponent::highscoreDim.x * static_cast<int>(SDLGraph::scale);
+    dim.h = HighScoreComponent::highscoreDim.y * static_cast<int>(SDLGraph::scale);
+    surface = SDL_CreateRGBSurface(
             0,
             static_cast<int>(HighScoreComponent::highscoreDim.x * SDLGraph::scale),
             static_cast<int>(HighScoreComponent::highscoreDim.y * SDLGraph::scale),
             32, 0, 0, 0, 0
-    )) == NULL)
+    );
+    if (surface == NULL ||
+        (texture = SDL_CreateTextureFromSurface(render, surface)) == NULL ||
+        SDL_RenderCopy(render, texture, NULL, &dim) != 0)
         throw std::runtime_error(SDL_GetError());
+    components = component->getComponentsToDisplay();
+    for (size_t i = 0; components[i] != NULL; ++i)
+    {
+        drawUIComponent(components[i]);
+    }
+    SDL_FreeSurface(surface);
+    SDL_DestroyTexture(texture);
 }
 
-void SDLGraph::drawUIComponent(UIComponent *component) throw(std::runtime_error)
+void SDLGraph::drawUIComponent(UIComponent const *component) throw(std::runtime_error)
 {
     SDL_Surface *text;
     SDL_Texture *texture;
