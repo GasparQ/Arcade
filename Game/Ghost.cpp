@@ -3,3 +3,18 @@
 //
 
 #include "Ghost.hpp"
+
+Ghost::Ghost() : PacmanCharacter(Vector2<int>(25, 15))
+{
+
+}
+
+Ghost::~Ghost()
+{
+
+}
+
+Vector2<int> const& Ghost::Move(char map[31][51])
+{
+    return m_pos;
+}

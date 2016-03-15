@@ -6,20 +6,19 @@
 #include "../Commons/include/ArcadeSystem.hpp"
 #include "../Commons/include/UIComponent.hpp"
 
-PacmanGame::PacmanGame() :
-m_pacPos (25, 29)
+PacmanGame::PacmanGame()
 {
     // Spawns 4 ghosts
-    m_ghostPos.push_back(Vector2<int>(25, 15));
-    m_ghostPos.push_back(Vector2<int>(25, 15));
-    m_ghostPos.push_back(Vector2<int>(25, 15));
-    m_ghostPos.push_back(Vector2<int>(25, 15));
+    m_ghosts.push_back(Ghost());
+    m_ghosts.push_back(Ghost());
+    m_ghosts.push_back(Ghost());
+    m_ghosts.push_back(Ghost());
 
     // Sets keycodes
-    keycodes[ArcadeSystem::ArrowDown] = &PacmanGame::goDown;
-    keycodes[ArcadeSystem::ArrowLeft] = &PacmanGame::goLeft;
-    keycodes[ArcadeSystem::ArrowRight] = &PacmanGame::goRight;
-    keycodes[ArcadeSystem::ArrowUp] = &PacmanGame::goUp;
+    keycodes[ArcadeSystem::ArrowDown] = &PacmanCharacter::goDown;
+    keycodes[ArcadeSystem::ArrowLeft] = &PacmanCharacter::goLeft;
+    keycodes[ArcadeSystem::ArrowRight] = &PacmanCharacter::goRight;
+    keycodes[ArcadeSystem::ArrowUp] = &PacmanCharacter::goUp;
 
     // Store all the gums
     for (int y = 0; m_map[y]; ++y)
@@ -43,10 +42,10 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 
     if ((it = keycodes.find(keycode)) != keycodes.end())
     {
-        (this->*it->second)();
+        (m_pacman.*it->second)();
     }
-    MoveGhost();
-    MovePacman();
+
+    MoveEntities();
 
     output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(m_score)).size()) / 2), 1),
                                 AComponent::COLOR_WHITE,
@@ -61,11 +60,11 @@ void PacmanGame::restart()
 
 void PacmanGame::InitGame()
 {
-    for (std::vector<Vector2<int> >::iterator it = m_ghostPos.begin(); it != m_ghostPos.end(); ++it)
+    for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
     {
-        it->x = 25;
-        it->y = 15;
+        it->ResetPosition();
     }
+    m_pacman.ResetPosition();
 }
 
 extern "C" IGame *loadGame()
@@ -73,60 +72,20 @@ extern "C" IGame *loadGame()
     return (new PacmanGame());
 }
 
-inline void PacmanGame::goUp()
+void PacmanGame::MoveEntities()
 {
-    m_pacDir = UP;
-}
+    Vector2<int> newPacPos = m_pacman.Move(m_map);
 
-inline void PacmanGame::goDown()
-{
-    m_pacDir = DOWN;
-}
-
-inline void PacmanGame::goLeft()
-{
-    m_pacDir = LEFT;
-}
-
-inline void PacmanGame::goRight()
-{
-    m_pacDir = RIGHT;
-}
-
-void PacmanGame::MovePacman()
-{
-    Vector2<int> nextPos = m_pacPos;
-
-    switch (m_pacDir)
+    for (auto var : m_ghosts)
     {
-        case UP:
-            if (m_map[m_pacPos.y - 1][m_pacPos.x] != 'X')
-            {
-                --m_pacPos.y;
-            }
-            break;
-        case DOWN:
-            if (m_map[m_pacPos.y + 1][m_pacPos.x] != 'X')
-            {
-                ++m_pacPos.y;
-            }
-            break;
-        case LEFT:
-            if (m_map[m_pacPos.y][m_pacPos.x - 1] != 'X')
-            {
-                --m_pacPos.x;
-            }
-            break;
-        case RIGHT:
-            if (m_map[m_pacPos.y][m_pacPos.x + 1] != 'X')
-            {
-                ++m_pacPos.x;
-            }
-            break;
+        if (var.Move(m_map) == newPacPos)
+        {
+            Die();
+        }
     }
 }
 
-void PacmanGame::MoveGhost()
+void PacmanGame::Die()
 {
-
+    InitGame();
 }

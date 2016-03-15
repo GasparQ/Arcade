@@ -9,6 +9,8 @@
 #include <map>
 #include <list>
 #include "include/IGame.hpp"
+#include "Pacman.hpp"
+#include "Ghost.hpp"
 
 class PacmanGame : public IGame
 {
@@ -22,22 +24,14 @@ public:
 
     virtual void restart();
 
-    typedef void (PacmanGame::*keyfunc)();
+    typedef void (PacmanCharacter::*keyfunc)();
 
 private:
     void InitGame();
 
-    inline void goUp();
+    void MoveEntities();
 
-    inline void goDown();
-
-    inline void goLeft();
-
-    inline void goRight();
-
-    void MovePacman();
-
-    void MoveGhost();
+    void Die();
 
 private:
     // 50x30
@@ -73,10 +67,8 @@ private:
                           "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"};
 
 private:
-
-
-    Vector2<int> m_pacPos;
-    std::vector<Vector2<int> > m_ghostPos;
+    Pacman m_pacman;
+    std::vector<Ghost> m_ghosts;
     std::list<Vector2<int> > m_gumPos;
     std::map<int, keyfunc> keycodes;
     int m_score = 0;

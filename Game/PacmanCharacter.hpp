@@ -5,12 +5,38 @@
 #ifndef CPP_ARCADE_PACMANCHARACTER_HPP
 #define CPP_ARCADE_PACMANCHARACTER_HPP
 
+#include "../Commons/include/Vector2.hpp"
 
 class PacmanCharacter
 {
 public:
-    PacmanCharacter();
+    PacmanCharacter(Vector2<int> pos);
     virtual ~PacmanCharacter();
+
+public:
+    virtual Vector2<int> const& Move(char map[31][51]) = 0;
+    virtual void ResetPosition();
+    
+    inline void goUp()
+    {
+        m_dir = UP;
+    }
+
+    inline void goDown()
+    {
+        m_dir = DOWN;
+    }
+
+    inline void goLeft()
+    {
+        m_dir = LEFT;
+    }
+
+    inline void goRight()
+    {
+        m_dir = RIGHT;
+    }
+
 
 protected:
     enum Direction
@@ -22,7 +48,8 @@ protected:
     };
 
     Direction m_dir = LEFT;
-    int m_pos;
+    Vector2<int> m_pos;
+    Vector2<int> m_initPos;
 };
 
 

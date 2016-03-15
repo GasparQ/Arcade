@@ -9,7 +9,12 @@
 
 class Ghost : public PacmanCharacter
 {
+public:
+    Ghost();
+    virtual ~Ghost();
 
+public:
+    virtual Vector2<int> const& Move(char map[31][51]);
 };
 
 

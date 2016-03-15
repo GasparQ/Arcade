@@ -33,7 +33,7 @@ public:
     {
         return Vector2<T>(x - vector2.x, y - vector2.y);
     }
-    bool        operator==(Vector2 const &vector2)
+    bool        operator==(Vector2 const &vector2) const
     {
         return x == vector2.x && y == vector2.y;
     }
