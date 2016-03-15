@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Tue Mar 15 18:05:59 2016 Victor Gouet
+// Last update Tue Mar 15 18:35:07 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -113,21 +113,36 @@ int	NCursesGraph::eventManagment()
   return (keycode);
 }
 
-void	        NCursesGraph::_displayComponent(GameComponent *gameComponent) const
+void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent)
 {
   Vector2<int>	pos = gameComponent->getPos();
 
   gameWin->attrON(A_REVERSE | COLOR_PAIR(gameComponent->getColor()));
   gameWin->print(pos.x, pos.y, "%s", gameComponent->getSpriteText().c_str());
   gameWin->attrOFF(A_REVERSE);
+  _cacheGame.push(s_cache(gameComponent->getPos(),
+			  gameComponent->getSpriteText(), gameWin));
 }
 
-void	        NCursesGraph::_displayComponent(UIComponent *uiComponent) const
+void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent)
 {
   Vector2<int>	pos = uiComponent->getPos();
 
   UIWin->attrON(COLOR_PAIR(uiComponent->getColor()) | A_BOLD);
   UIWin->print(pos.x, pos.y, "%s", uiComponent->getText().c_str());
+  _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), UIWin));
+}
+
+void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreComponent)
+{
+  int			i = 0;
+  const UIComponent *const *arrayComponent = hightScoreComponent->getComponentsToDisplay();
+  
+  while (arrayComponent[i] != NULL)
+    {
+      _displayComponent(arrayComponent[i]);
+      ++i;
+    }
 }
 
 void		NCursesGraph::_cacheClear()
@@ -149,8 +164,9 @@ void		NCursesGraph::_cacheClear()
 
 void	NCursesGraph::display(std::stack<AComponent *>	obj)
 {
-  GameComponent	*gameComponent;
-  UIComponent	*uiComponent;
+  GameComponent		*gameComponent;
+  UIComponent		*uiComponent;
+  HighScoreComponent	*highScore;
 
   _cacheClear();
   while (!obj.empty())
@@ -158,14 +174,15 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       if ((gameComponent = dynamic_cast<GameComponent *>(obj.top())) != NULL)
       	{
       	  _displayComponent(gameComponent);
-      	  _cacheGame.push(s_cache(gameComponent->getPos(),
-      				  gameComponent->getSpriteText(), gameWin));
       	}
       else if ((uiComponent = dynamic_cast<UIComponent *>(obj.top())) != NULL)
       	{
   	  _displayComponent(uiComponent);
-  	  _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), UIWin));
   	}
+      else if ((highScore = dynamic_cast<HighScoreComponent *>(obj.top())) != NULL)
+	{
+	  _displayComponent(highScore);
+	}
       delete obj.top();
       obj.pop();
     }
