@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:02 2016 Victor Gouet
-// Last update Thu Mar 10 22:53:04 2016 Victor Gouet
+// Last update Tue Mar 15 15:54:17 2016 Victor Gouet
 //
 
 #include "../include/Window.hpp"
@@ -65,6 +65,16 @@ int		ncr::Window::print(int x, int y, const char *format, ...)
   value = vwprintw(win, format, args);
   va_end(args);
   return (value);
+}
+
+int		ncr::Window::write(int value, int flags)
+{
+  return (waddch(this->win, value | flags));
+}
+
+int		ncr::Window::write(int x, int y, int value, int flags)
+{
+  return (mvwaddch(this->win, y, x, value | flags));
 }
 
 int		ncr::Window::setAttrON(int at)

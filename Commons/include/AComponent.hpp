@@ -11,7 +11,7 @@
 #ifndef ACOMPONENT_HPP_
 # define ACOMPONENT_HPP_
 
-#include "../../Vector/include/Vector2.hpp"
+#include "Vector2.hpp"
 
 class	AComponent
 {

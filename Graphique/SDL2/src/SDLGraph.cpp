@@ -6,20 +6,25 @@
 #include <errno.h>
 #include "SDLGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
-#include "../../../Component/include/UIComponent.hpp"
+#include "../../../Commons/include/UIComponent.hpp"
 
 const std::string SDLGraph::fontName = "./fonts/Minecraft.ttf"; //Snake_in_the_Boot
 
 int SDLGraph::eventManagment()
 {
     std::map<int, int>::const_iterator  it;
+    int                                 key = -1;
 
     while (SDL_PollEvent(&event) == 1)
     {
-        if (event.type == SDL_KEYDOWN && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
-            return it->second;
+        if (event.type == SDL_KEYDOWN)
+        {
+            key = event.key.keysym.sym;
+            if ((it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+                return it->second;
+        }
     }
-    return -1;
+    return key;
 }
 
 void SDLGraph::display(std::stack<AComponent *> stack)
@@ -62,6 +67,8 @@ SDLGraph::SDLGraph()
     keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
     keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
     keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
+    keyCodeAssociation[SDL_SCANCODE_RETURN] = ArcadeSystem::Enter;
+    keyCodeAssociation[SDL_SCANCODE_BACKSPACE] = ArcadeSystem::Backspace;
 }
 
 SDLGraph::~SDLGraph()

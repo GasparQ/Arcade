@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:12 2016 Victor Gouet
-// Last update Mon Mar 14 15:02:40 2016 Victor Gouet
+// Last update Tue Mar 15 15:54:26 2016 Victor Gouet
 //
 
 #ifndef WINDOWNCURSE_HPP_
@@ -37,6 +37,8 @@ namespace ncr
     int		setColorPair(int id);
     int		setAttrON(int at);
     int		setAttrOFF(int at);
+    int		write(int value, int flags);
+    int		write(int x, int y, int value, int flags);
 
     /*
     ** GETTER

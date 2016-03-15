@@ -15,10 +15,10 @@ CC	=	g++
 RM	=	rm -f
 
 SRCS	=	src/AComponent.cpp	\
-		src/GameComponent.cpp	\
-		src/UIComponent.cpp	\
-		src/Vector2.cpp \
-		HighScore/src/LoadHighScore.cpp
+		    src/GameComponent.cpp	\
+		    src/UIComponent.cpp	\
+		    src/HighScoreComponent.cpp \
+		    src/LoadHighScore.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 

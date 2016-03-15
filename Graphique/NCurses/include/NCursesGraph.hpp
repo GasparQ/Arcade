@@ -16,8 +16,8 @@
 # include "../../include/IGraph.hpp"
 # include "Window.hpp"
 # include "NCurses.hpp"
-# include "../../../Component/include/GameComponent.hpp"
-# include "../../../Component/include/UIComponent.hpp"
+# include "../../../Commons/include/GameComponent.hpp"
+# include "../../../Commons/include/UIComponent.hpp"
 # include "../../Exception/NCursesException.hpp"
 
 typedef struct	s_cache

@@ -14,24 +14,16 @@ RM	=	rm -f
 
 PREFIX	=	../games/lib_arcade_
 
-COMMON	=	../Vector/src/Vector2.cpp \
-		../Component/src/AComponent.cpp \
-		../Component/src/GameComponent.cpp \
-		../Component/src/UIComponent.cpp \
-
 SNAKE	=	$(PREFIX)snake.so
 
-SNAKESRCS	=	$(COMMON) \
-			src/Snake.cpp
+SNAKESRCS	=	src/Snake.cpp
 
 SNAKEOBJS	=	$(SNAKESRCS:.cpp=.o)
 
 CPPFLAGS	=	-W -Wall -Wextra -fPIC -shared --std=c++11 \
 			-I ./include/ \
-			-I ../Vector/include \
-			-I ../Component/include/ \
+			-I ../../Commons/include \
 			-Wl,--no-undefined
-
 
 LDFLAGS		=	-shared -Wl,--no-undefined -L ../Commons/ -l_arcade_commons
 

@@ -5,8 +5,8 @@
 #include <bits/unique_ptr.h>
 #include "OpenGlGraph.hpp"
 #include "../../Arcade.hpp"
-#include "../../Component/include/UIComponent.hpp"
-#include "../../Component/include/GameComponent.hpp"
+#include "../../Commons/include/UIComponent.hpp"
+#include "../../Commons/include/GameComponent.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
 
 // Ctor:

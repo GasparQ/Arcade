@@ -14,8 +14,8 @@
 #include "../../Exception/LoadException.hpp"
 #include "../SDL2/include/SDL_opengl.h"
 #include "../include/IGraph.hpp"
-#include "../../Component/include/GameComponent.hpp"
-#include "../../Component/include/UIComponent.hpp"
+#include "../../Commons/include/GameComponent.hpp"
+#include "../../Commons/include/UIComponent.hpp"
 
 class OpenGlGraph : public IGraph
 {
