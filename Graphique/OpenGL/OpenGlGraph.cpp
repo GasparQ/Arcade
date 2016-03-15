@@ -8,6 +8,7 @@
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/GameComponent.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
+#include "../../Commons/include/HighScoreComponent.hpp"
 
 // Ctor:
 // Initializes Projection mode (3D by default) and Lighting
@@ -166,6 +167,7 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
 {
     GameComponent *gc;
     UIComponent *uic;
+    HighScoreComponent *hsc;
 
     Set3DMode();
     DrawBackground();
@@ -194,6 +196,18 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
                 Set2DMode();
             }
             DrawText(uic->getPos(), uic->getText(), uic->getColor());
+        }
+        else if ((hsc = dynamic_cast<HighScoreComponent *>(stack.top())) != nullptr)
+        {
+            if (m_render_mode == PERSPECTIVE)
+            {
+                Set2DMode();
+            }
+            const UIComponent *const *var = hsc->getComponentsToDisplay();
+            for (int i = 0; var && var[i]; i++)
+            {
+                DrawText(var[i]->getPos(), var[i]->getText(), var[i]->getColor());
+            }
         }
         stack.pop();
     }
