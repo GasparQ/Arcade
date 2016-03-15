@@ -2,7 +2,7 @@
 // Created by veyrie_f on 3/15/16.
 //
 
-#include "Pacman.hpp"
+#include "../include/Pacman.hpp"
 
 Vector2<int> const&Pacman::Move(char m_map[31][51])
 {

@@ -5,7 +5,7 @@
 #ifndef CPP_ARCADE_PACMANCHARACTER_HPP
 #define CPP_ARCADE_PACMANCHARACTER_HPP
 
-#include "../Commons/include/Vector2.hpp"
+#include "../../Commons/include/Vector2.hpp"
 
 class PacmanCharacter
 {
@@ -16,6 +16,7 @@ public:
 public:
     virtual Vector2<int> const& Move(char map[31][51]) = 0;
     virtual void ResetPosition();
+    Vector2<int> const& getPosition() const;
     
     inline void goUp()
     {

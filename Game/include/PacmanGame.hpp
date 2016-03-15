@@ -8,9 +8,10 @@
 #include <vector>
 #include <map>
 #include <list>
-#include "include/IGame.hpp"
+#include "IGame.hpp"
 #include "Pacman.hpp"
 #include "Ghost.hpp"
+#include "../../Commons/include/AComponent.hpp"
 
 class PacmanGame : public IGame
 {
