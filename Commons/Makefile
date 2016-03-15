@@ -15,9 +15,9 @@ CC	=	g++
 RM	=	rm -f
 
 SRCS	=	src/AComponent.cpp	\
-		src/GameComponent.cpp	\
-		src/UIComponent.cpp	\
-		src/Vector2.cpp
+		    src/GameComponent.cpp	\
+		    src/UIComponent.cpp	\
+		    src/HighScoreComponent.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 

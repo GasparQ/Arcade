@@ -12,10 +12,9 @@
 
 #include "../../Component/include/AComponent.hpp"
 #include "../../Graphique/include/IGraph.hpp"
-#include "IGame.hpp"
-#include "../../Vector/include/Vector2.hpp"
+#include "AGame.hpp"
 
-class Snake : public IGame
+class Snake : public AGame
 {
 public:
     Snake();
@@ -53,14 +52,14 @@ public:
     void                        goAhead();
 
 private:
+    void                        live();
     void                        generateAppelPos();
     void                        removeBody();
     void                        addBody(Vector2<int> newPos);
     void                        move();
     void                        die();
     void                        initGame();
-    void showScore();
-  bool goOnWall(Vector2<int> const &vector) const;
+    bool                        goOnWall(Vector2<int> const &vector) const;
 };
 
 #endif //C_SNAKE_HPP

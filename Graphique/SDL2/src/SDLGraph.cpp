@@ -13,13 +13,18 @@ const std::string SDLGraph::fontName = "./fonts/Minecraft.ttf"; //Snake_in_the_B
 int SDLGraph::eventManagment()
 {
     std::map<int, int>::const_iterator  it;
+    int                                 key = -1;
 
     while (SDL_PollEvent(&event) == 1)
     {
-        if (event.type == SDL_KEYDOWN && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
-            return it->second;
+        if (event.type == SDL_KEYDOWN)
+        {
+            key = event.key.keysym.sym;
+            if ((it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+                return it->second;
+        }
     }
-    return -1;
+    return key;
 }
 
 void SDLGraph::display(std::stack<AComponent *> stack)

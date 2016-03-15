@@ -7,47 +7,9 @@
 #include "../../Component/include/GameComponent.hpp"
 #include "../../Component/include/UIComponent.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
+#include "../../Commons/include/HighScoreComponent.hpp"
 
 //TODO void play(void)
-
-std::stack<AComponent *>                Snake::compute(int keycode)
-{
-    std::stack<AComponent *> output;
-    std::map<int, keyfunc>::iterator it;
-    std::list<Vector2<int> >::iterator bod;
-
-    if ((it = keycodex.find(keycode)) != keycodex.end())
-        (this->*it->second)();
-    goAhead();
-    output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
-				AComponent::COLOR_WHITE,
-				Vector2<int>(5, 1), "score : " + std::to_string(score)));
-
-    for (bod = body.begin(); bod != body.end(); ++bod)
-    {
-        if (bod == body.begin())
-            output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, NULL, " ", "./sprites/snake_head.bmp"));
-        else
-            output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, NULL, " ", "./sprites/snake.bmp"));
-    }
-    output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "./sprites/apple.bmp"));
-
-    // output.push(new UIComponent(
-    //         Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
-    //         AComponent::COLOR_WHITE,
-    //         Vector2<int>(0, 0), "score : " + std::to_string(score)));
-    return output;
-}
-
-void    Snake::restart()
-{
-    initGame();
-}
-
-Snake::~Snake()
-{
-
-}
 
 Snake::Snake() :
         apple(0, 0),
@@ -59,7 +21,56 @@ Snake::Snake() :
     keycodex[ArcadeSystem::ArrowLeft] = &Snake::goLeft;
     keycodex[ArcadeSystem::ArrowRight] = &Snake::goRight;
     keycodex[ArcadeSystem::ArrowUp] = &Snake::goUp;
+    initGame();
+}
 
+Snake::~Snake()
+{
+
+}
+
+std::stack<AComponent *>                Snake::compute(int keycode)
+{
+    std::stack<AComponent *>            output;
+    std::map<int, keyfunc>::iterator    it;
+    std::list<Vector2<int> >::iterator  bod;
+    HighScoreComponent                  *highScoreComponent;
+
+    if (state == AGame::GameState::DEAD)
+    {
+        highScoreComponent = new HighScoreComponent("Snake", score);
+        highScoreComponent->UpdatePseudo(keycode);
+        if (keycode == '\n')
+        {
+            highScoreComponent->submit();
+            state = AGame::GameState::ALIVE;
+            delete(highScoreComponent);
+        }
+        else
+            output.push(highScoreComponent);
+    }
+    else if (state == AGame::GameState::ALIVE)
+    {
+        if ((it = keycodex.find(keycode)) != keycodex.end())
+            (this->*it->second)();
+        goAhead();
+        output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
+                                    AComponent::COLOR_WHITE,
+                                    Vector2<int>(5, 1), "score : " + std::to_string(score)));
+    }
+    for (bod = body.begin(); bod != body.end(); ++bod)
+    {
+        if (bod == body.begin())
+            output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, NULL, " ", "./sprites/snake_head.bmp"));
+        else
+            output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, NULL, " ", "./sprites/snake.bmp"));
+    }
+    output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "./sprites/apple.bmp"));
+    return output;
+}
+
+void    Snake::restart()
+{
     initGame();
 }
 
@@ -163,7 +174,8 @@ void Snake::move()
 
 void Snake::die()
 {
-    initGame();
+//    initGame();
+    state = AGame::GameState::DEAD;
 }
 
 void Snake::initGame()
@@ -199,4 +211,9 @@ extern "C" IGame *loadGame()
 extern "C" void Play(void)
 {
     std::cout << "J'appelle play" << std::endl;
+}
+
+void Snake::live()
+{
+
 }
