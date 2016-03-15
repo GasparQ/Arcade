@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 23:55:45 2016 Victor Gouet
-// Last update Sun Mar 13 12:31:54 2016 Victor Gouet
+// Last update Tue Mar 15 16:23:55 2016 Victor Gouet
 //
 
 # include "../include/NCurses.hpp"
@@ -16,6 +16,7 @@ WINDOW *NCurses::init()
 
   if (win)
     {
+      raw();
       start_color();
       keypad(stdscr, true);
       set_escdelay(0);
@@ -42,6 +43,9 @@ int	NCurses::show_cursor()
 {
   return (curs_set(1));
 }
+
+#include <unistd.h>
+#include <iostream>
 
 int	NCurses::getCarac()
 {

@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Mon Mar 14 17:08:33 2016 Victor Gouet
+// Last update Tue Mar 15 18:05:59 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -71,6 +71,8 @@ NCursesGraph::NCursesGraph()
   keycodeMap[57] = ArcadeSystem::Home;
   keycodeMap[27] = ArcadeSystem::Exit;
   keycodeMap[112] = ArcadeSystem::Pause;
+  keycodeMap[10] = ArcadeSystem::Enter;
+  keycodeMap[263] = ArcadeSystem::Backspace;
 }
 
 NCursesGraph::~NCursesGraph()
