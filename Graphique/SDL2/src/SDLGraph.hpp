@@ -8,8 +8,10 @@
 #include <string>
 #include <map>
 #include "../include/SDL.h"
+#include "../include/SDL_ttf.h"
 #include "../../include/IGraph.hpp"
 #include "../../../Component/include/GameComponent.hpp"
+#include "../../../Component/include/UIComponent.hpp"
 
 class   SDLGraph : public IGraph
 {
@@ -17,6 +19,7 @@ public:
     SDLGraph();
     ~SDLGraph();
     static const size_t scale = 25;
+    static const std::string fontName;
 
 public:
     virtual int eventManagment();
@@ -28,10 +31,14 @@ private:
     SDL_Renderer        *render;
     std::map<int, int>  keyCodeAssociation;
     std::map<std::string, SDL_Texture*> spriteCache;
+    TTF_Font            *uifont;
+    SDL_Color           uicolor;
 
 private:
     SDL_Texture *loadSprite(std::string const &) throw(std::runtime_error);
-    void        *drawGameComponent(GameComponent *) throw(std::runtime_error);
+    void        drawGameComponent(GameComponent *) throw(std::runtime_error);
+    void        drawUIComponent(UIComponent *) throw(std::runtime_error);
+    void        displaySurface(AComponent *, SDL_Texture *, Vector2<int> dim = Vector2<int>(1, 1)) throw(std::runtime_error);
 };
 
 #endif //C_SDLGRAPH_HPP
