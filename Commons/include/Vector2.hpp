@@ -29,6 +29,10 @@ public:
     {
         return Vector2<T>(x + vector2.x, y + vector2.y);
     }
+    Vector2     operator-(Vector2 const &vector2)
+    {
+        return Vector2<T>(x - vector2.x, y - vector2.y);
+    }
     bool        operator==(Vector2 const &vector2)
     {
         return x == vector2.x && y == vector2.y;
