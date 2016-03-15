@@ -29,6 +29,8 @@ OpenGlGraph::OpenGlGraph(int width, int, const char *name) :
     {
         throw arcade::InitRenderException("OpenGL - Screen");
     }
+
+    // Key binds
     keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;
     keyCodeAssociation[SDL_SCANCODE_RIGHT] = ArcadeSystem::ArrowRight;
     keyCodeAssociation[SDL_SCANCODE_UP] = ArcadeSystem::ArrowUp;
@@ -42,6 +44,8 @@ OpenGlGraph::OpenGlGraph(int width, int, const char *name) :
     keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
     keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
     keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
+    keyCodeAssociation[SDL_SCANCODE_RETURN] = ArcadeSystem::Enter;
+    keyCodeAssociation[SDL_SCANCODE_BACKSPACE] = ArcadeSystem::Backspace;
 
     Set3DMode();
     InitLighting();
@@ -151,15 +155,19 @@ void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
 // Returns key pressed
 int OpenGlGraph::eventManagment()
 {
-    std::map<int, int>::const_iterator it;
+    std::map<int, int>::const_iterator  it;
+    int                                 key = -1;
 
     while (SDL_PollEvent(&event) == 1)
     {
-        if (event.type == SDL_KEYDOWN &&
-            (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
-            return it->second;
+        if (event.type == SDL_KEYDOWN)
+        {
+            key = event.key.keysym.sym;
+            if ((it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+                return it->second;
+        }
     }
-    return -1;
+    return key;
 }
 
 // Handles data display
