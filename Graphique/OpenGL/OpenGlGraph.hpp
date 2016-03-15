@@ -14,8 +14,8 @@
 #include "../../Exception/LoadException.hpp"
 #include "../SDL2/include/SDL_opengl.h"
 #include "../include/IGraph.hpp"
-#include "../../Component/include/GameComponent.hpp"
-#include "../../Component/include/UIComponent.hpp"
+#include "../../Commons/include/GameComponent.hpp"
+#include "../../Commons/include/UIComponent.hpp"
 
 class OpenGlGraph : public IGraph
 {
@@ -30,8 +30,7 @@ public:
     virtual void display(std::stack<AComponent *>);
 
 private:
-    void DrawSphere(double posX = 0, double posY = 0, double posZ = 0,
-                    double red = 255, double green = 255, double blue = 255) const;
+    void DrawSphere(Vector2<int> pos, AComponent::ComponentColor color) const;
 
     void DrawCube(Vector2<int> pos, AComponent::ComponentColor color, double posY = 0) const;
 

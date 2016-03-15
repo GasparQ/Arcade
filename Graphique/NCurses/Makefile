@@ -17,17 +17,13 @@ CC		=	g++
 SRCS		=	src/Menu.cpp \
 			src/NCurses.cpp \
 			src/NCursesGraph.cpp \
-			src/Window.cpp \
-			../../Vector/src/Vector2.cpp \
-			../../Component/src/AComponent.cpp \
-			../../Component/src/GameComponent.cpp \
-			../../Component/src/UIComponent.cpp
+			src/Window.cpp
 
 OBJS		=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Werror -I ./include -I ../include -I ../../Vector/include -I ../../Component/include -fPIC -I ./lib/include/
+CPPFLAGS	=	-W -Wall -Werror -I ./include -I ../include -I ../../Commons/include -fPIC -I ./lib/include/
 
-LDFLAGS		=	-shared -L./lib -lncurses++ -lform -lform_g -lmenu -lmenu_g -lncurses -lncurses_g -lncurses++_g -lpanel -lpanel_g
+LDFLAGS		=	-shared -L./lib -lncurses++ -lform -lform_g -lmenu -lmenu_g -lncurses -lncurses_g -lncurses++_g -lpanel -lpanel_g -L ../../Commons/ -l_arcade_commons
 
 $(NAME):	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS) $(LDFLAGS)

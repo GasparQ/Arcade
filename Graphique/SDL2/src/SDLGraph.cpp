@@ -6,7 +6,7 @@
 #include <errno.h>
 #include "SDLGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
-#include "../../../Component/include/UIComponent.hpp"
+#include "../../../Commons/include/UIComponent.hpp"
 
 const std::string SDLGraph::fontName = "./fonts/Minecraft.ttf"; //Snake_in_the_Boot
 
@@ -67,6 +67,8 @@ SDLGraph::SDLGraph()
     keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
     keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
     keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
+    keyCodeAssociation[SDL_SCANCODE_RETURN] = ArcadeSystem::Enter;
+    keyCodeAssociation[SDL_SCANCODE_BACKSPACE] = ArcadeSystem::Backspace;
 }
 
 SDLGraph::~SDLGraph()

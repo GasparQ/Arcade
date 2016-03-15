@@ -10,7 +10,7 @@
 #include <map>
 #include <string>
 
-#include "../../Component/include/AComponent.hpp"
+#include "../../Commons/include/AComponent.hpp"
 #include "../../Graphique/include/IGraph.hpp"
 #include "AGame.hpp"
 

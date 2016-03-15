@@ -10,8 +10,8 @@
 #include "../include/SDL.h"
 #include "../include/SDL_ttf.h"
 #include "../../include/IGraph.hpp"
-#include "../../../Component/include/GameComponent.hpp"
-#include "../../../Component/include/UIComponent.hpp"
+#include "../../../Commons/include/GameComponent.hpp"
+#include "../../../Commons/include/UIComponent.hpp"
 
 class   SDLGraph : public IGraph
 {

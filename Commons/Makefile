@@ -17,11 +17,12 @@ RM	=	rm -f
 SRCS	=	src/AComponent.cpp	\
 		    src/GameComponent.cpp	\
 		    src/UIComponent.cpp	\
-		    src/HighScoreComponent.cpp
+		    src/HighScoreComponent.cpp \
+		    src/LoadHighScore.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Wextra -std=c++11 -I ./include -fPIC
+CPPFLAGS	=	-W -Wall -Wextra -std=c++11 -I ./include -fPIC -I ./HighScore/include/
 
 $(NAME):	$(OBJS)
 	ar rc $(NAME) $(OBJS)

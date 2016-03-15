@@ -30,12 +30,12 @@ public:
 public:
     void                                UpdatePseudo(const int key);
     UIComponent const * const           *getComponentsToDisplay() const;
-    void                                submit() const;
+    bool                                submit();
 
 private:
     const std::string   gameName;
-    std::string         name;
     LoadHighScore       highScores;
+    size_t              score;
     UIComponent         *components[componentNb];
 };
 

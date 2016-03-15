@@ -20,7 +20,7 @@ OBJ		=	$(SRC:.cpp=.o)
 
 CPPFLAGS	=	-W -Wall -Wextra $(HEADER) -std=c++11 -fPIC
 
-HEADER		=	-I./include -I../../Component/include -I../../Vector/include
+HEADER		=	-I./include -I ../../Commons/include
 
 LDFLAGS		=	-L ./build/.libs/ -lSDL2 -lSDL2_ttf -shared -L ../../Commons -l_arcade_commons
 

@@ -12,7 +12,7 @@
 # define IGAME_HPP_
 
 # include <stack>
-#include "../../Component/include/AComponent.hpp"
+# include "../../Commons/include/AComponent.hpp"
 
 class	IGame
 {

@@ -4,8 +4,8 @@
 
 #include <algorithm>
 #include "../include/Snake.hpp"
-#include "../../Component/include/GameComponent.hpp"
-#include "../../Component/include/UIComponent.hpp"
+#include "../../Commons/include/GameComponent.hpp"
+#include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
 
@@ -40,11 +40,11 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     {
         highScoreComponent = new HighScoreComponent("Snake", score);
         highScoreComponent->UpdatePseudo(keycode);
-        if (keycode == '\n')
+        if (keycode == ArcadeSystem::Enter && highScoreComponent->submit())
         {
-            highScoreComponent->submit();
             state = AGame::GameState::ALIVE;
             delete(highScoreComponent);
+            initGame();
         }
         else
             output.push(highScoreComponent);
@@ -61,11 +61,11 @@ std::stack<AComponent *>                Snake::compute(int keycode)
     for (bod = body.begin(); bod != body.end(); ++bod)
     {
         if (bod == body.begin())
-            output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, NULL, " ", "./sprites/snake_head.bmp"));
+            output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, GameComponent::Shapes::CUBE , " ", "./sprites/snake_head.bmp"));
         else
-            output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, NULL, " ", "./sprites/snake.bmp"));
+            output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, GameComponent::Shapes::CUBE , " ", "./sprites/snake.bmp"));
     }
-    output.push(new GameComponent(apple, AComponent::COLOR_RED, NULL, " ", "./sprites/apple.bmp"));
+    output.push(new GameComponent(apple, AComponent::COLOR_RED, GameComponent::Shapes::SPHERE , " ", "./sprites/apple.bmp"));
     return output;
 }
 

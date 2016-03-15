@@ -14,17 +14,13 @@ RM		=	rm -f
 
 CC		=	g++
 
-SRCS		=	OpenGlGraph.cpp \
-			    ../../Vector/src/Vector2.cpp \
-			    ../../Component/src/AComponent.cpp \
-			    ../../Component/src/GameComponent.cpp \
-			    ../../Component/src/UIComponent.cpp
+SRCS		=	OpenGlGraph.cpp
 
 OBJS		=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-std=c++11 -W -Wall -Wextra -I ./include -I ../include -I ../../Vector/include -I ../../Component/include -fPIC
+CPPFLAGS	=	-std=c++11 -W -Wall -Wextra -I ./include -I ../include -I ../../Commons/include -fPIC
 
-LDFLAGS		=	-lGL -lGLU -L../SDL2/build/.libs/ -lSDL2 -shared -L ./libs/ -lglut
+LDFLAGS		=	-lGL -lGLU -L../SDL2/build/.libs/ -lSDL2 -shared -L ./libs/ -lglut -L ../../Commons -l_arcade_commons
 
 $(NAME):	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS) $(LDFLAGS)
