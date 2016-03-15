@@ -195,3 +195,8 @@ extern "C" IGame *loadGame()
 {
     return (new Snake());
 }
+
+extern "C" void Play(void)
+{
+    std::cout << "J'appelle play" << std::endl;
+}

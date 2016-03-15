@@ -97,10 +97,6 @@ std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string con
     return names;
 }
 
-
-#include <stdio.h>
-#include <errno.h>
-
 void        arcade::Arcade::loadGraph()
 {
     IGraph *(*load_lib)();
@@ -110,7 +106,7 @@ void        arcade::Arcade::loadGraph()
         delete (lib);
         dlclose(dllib);
     }
-    if ((dllib = dlopen(currLibName->c_str(), RTLD_LAZY)) == NULL)
+    if ((dllib = dlopen(currLibName->c_str(), RTLD_NOW)) == NULL)
       {
         throw LoadLibraryException(dlerror());
       }
@@ -125,8 +121,8 @@ void        arcade::Arcade::loadGames(const std::vector<std::string> &libsName)
 
     for (size_t i = 0, len = libsName.size(); i < len; ++i)
     {
-        if ((dlopenedlibs[libsName[i]] = dlopen(libsName[i].c_str(), RTLD_LAZY)) == NULL)
-            throw LoadLibraryException(libsName[i]);
+        if ((dlopenedlibs[libsName[i]] = dlopen(libsName[i].c_str(), RTLD_NOW)) == NULL)
+            throw LoadLibraryException(libsName[i] + dlerror());
         if ((load_game = (IGame *(*)()) dlsym(dlopenedlibs[libsName[i]], arcade::Arcade::createGame.c_str())) == NULL)
             throw IncompleteLibraryException(libsName[i]);
         games.push_back(load_game());

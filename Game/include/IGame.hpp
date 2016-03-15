@@ -17,7 +17,7 @@
 class	IGame
 {
 public:
-    virtual ~IGame() = 0;
+    virtual ~IGame() {};
     virtual std::stack<AComponent *> compute(int keycode) = 0;
   virtual void restart() = 0;
 };
