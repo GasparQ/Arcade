@@ -11,9 +11,9 @@
 
 // Ctor:
 // Initializes Projection mode (3D by default) and Lighting
-OpenGlGraph::OpenGlGraph(int width, int , const char *name) :
-m_size_coeff(width / arcade::winWidth),
-m_win(arcade::winWidth * m_size_coeff, arcade::winHeight * m_size_coeff)
+OpenGlGraph::OpenGlGraph(int width, int, const char *name) :
+        m_size_coeff(width / arcade::winWidth),
+        m_win(arcade::winWidth * m_size_coeff, arcade::winHeight * m_size_coeff)
 {
     int ac = 1;
     glutInit(&ac, NULL);
@@ -21,8 +21,8 @@ m_win(arcade::winWidth * m_size_coeff, arcade::winHeight * m_size_coeff)
     {
         throw arcade::InitRenderException("OpenGL / SDL");
     }
-    m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, (int)m_win.x,
-                                (int)m_win.y, SDL_WINDOW_OPENGL);
+    m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, (int) m_win.x,
+                                (int) m_win.y, SDL_WINDOW_OPENGL);
     m_glContext = SDL_GL_CreateContext(m_window);
     if (m_window == NULL || m_glContext == NULL)
     {
@@ -150,11 +150,12 @@ void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
 // Returns key pressed
 int OpenGlGraph::eventManagment()
 {
-    std::map<int, int>::const_iterator  it;
+    std::map<int, int>::const_iterator it;
 
     while (SDL_PollEvent(&event) == 1)
     {
-        if (event.type == SDL_KEYDOWN && (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
+        if (event.type == SDL_KEYDOWN &&
+            (it = keyCodeAssociation.find(event.key.keysym.scancode)) != keyCodeAssociation.end())
             return it->second;
     }
     return -1;
@@ -170,7 +171,7 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
     DrawBackground();
     while (!stack.empty())
     {
-        if ((gc = dynamic_cast<GameComponent*>(stack.top())) != nullptr)
+        if ((gc = dynamic_cast<GameComponent *>(stack.top())) != nullptr)
         {
             if (m_render_mode == ORTHOGRAPHIC)
             {
@@ -186,7 +187,7 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
                     break;
             }
         }
-        else if ((uic = dynamic_cast<UIComponent*>(stack.top())) != nullptr)
+        else if ((uic = dynamic_cast<UIComponent *>(stack.top())) != nullptr)
         {
             if (m_render_mode == PERSPECTIVE)
             {
@@ -223,7 +224,7 @@ void OpenGlGraph::Set2DMode()
 
 void OpenGlGraph::Set3DMode()
 {
-    glViewport(0, 0, (int)m_win.x, (int)m_win.y);
+    glViewport(0, 0, (int) m_win.x, (int) m_win.y);
     glMatrixMode(GL_PROJECTION);
 
     glLoadIdentity();
@@ -241,7 +242,7 @@ void OpenGlGraph::Set3DMode()
 }
 
 // Drw text on viewport
-void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent::ComponentColor const& color)
+void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent::ComponentColor const &color)
 {
     // IMPORTANT : change the color before rasterizing !!
     glColor3ub(colors[color].r, colors[color].g, colors[color].b);

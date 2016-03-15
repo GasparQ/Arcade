@@ -5,29 +5,12 @@
 #ifndef CPP_ARCADE_PACMAN_HPP
 #define CPP_ARCADE_PACMAN_HPP
 
-#include "include/IGame.hpp"
 
-class Pacman : public IGame
+#include "PacmanCharacter.hpp"
+
+class Pacman : public PacmanCharacter
 {
-public:
-    Pacman();
 
-    virtual ~Pacman();
-
-public:
-    virtual std::stack<AComponent *> compute(int keycode);
-
-    virtual void restart();
-
-    typedef void (Pacman::*keyfunc)();
-
-private:
-    void InitGame();
-
-private:
-    char map[3][10] = {"XXXXXXXXXX",
-                       "XooooooooX",
-                       "XXXXXXXXXX"};
 };
 
 
