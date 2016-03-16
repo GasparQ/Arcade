@@ -3,11 +3,13 @@
 //
 
 #include <algorithm>
+#include <unistd.h>
 #include "../include/Snake.hpp"
 #include "../../Commons/include/GameComponent.hpp"
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
+#include "../include/Protocol.hpp"
 
 //TODO void play(void)
 
@@ -203,17 +205,106 @@ void Snake::initGame()
     score = 0;
 }
 
+const Vector2<int> &Snake::getApple() const
+{
+    return apple;
+}
+
+std::list<Vector2<int>> const &Snake::getSnake() const
+{
+    return body;
+}
+
+
 extern "C" IGame *loadGame()
 {
     return (new Snake());
 }
 
-extern "C" void Play(void)
+void                            updateMap(struct arcade::GetMap *map, Snake const &snake)
 {
-    std::cout << "J'appelle play" << std::endl;
+    Vector2<int>                apple(0, 0);
+    std::list<Vector2<int>>     snakeBody = snake.getSnake();
+
+    //Reinit la map
+    for (size_t i = 0, len = ArcadeSystem::winHeight * ArcadeSystem::winWidth; i < len; ++i)
+    {
+        map->tile[i] = arcade::TileType::EMPTY;
+    }
+    //Set appel pos
+    apple = snake.getApple();
+    map->tile[apple.y * ArcadeSystem::winWidth + apple.x] = arcade::TileType::POWERUP;
+    //Set snake pos
+    for (std::list<Vector2<int>>::iterator it = snakeBody.begin(), end = snakeBody.end(); it != end; ++it)
+    {
+        map->tile[it->y * ArcadeSystem::winWidth + it->x] = arcade::TileType::BLOCK;
+    }
 }
 
-void Snake::live()
+void    whereAmI(Snake const &snake)
 {
+    struct arcade::WhereAmI *pos;
+    std::list<Vector2<int>> snakeBody = snake.getSnake();
+    size_t                  posSize = sizeof(*pos) + snakeBody.size() * sizeof(arcade::Position);
+    size_t                  i = 0;
 
+    if ((pos = (struct arcade::WhereAmI *)(malloc(posSize))) == NULL)
+        throw std::bad_alloc();
+    pos->type = arcade::CommandType::WHERE_AM_I;
+    pos->lenght = static_cast<uint16_t>(snakeBody.size());
+    for (std::list<Vector2<int>>::iterator it = snakeBody.begin(), end = snakeBody.end(); it != end; ++it, ++i)
+    {
+        pos->position[i].x = static_cast<uint16_t>(it->x);
+        pos->position[i].y = static_cast<uint16_t>(it->y);
+    }
+    write(1, pos, posSize);
+    free(pos);
+}
+
+extern "C" void Play(void)
+{
+    char                    c;
+    Snake                   snake;
+    struct arcade::GetMap   *map;
+    size_t                  mapSize = sizeof(*map) + (ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t));
+
+    if ((map = (struct arcade::GetMap   *)(malloc(mapSize))) == NULL)
+        throw std::bad_alloc();
+    map->type = arcade::CommandType::GET_MAP;
+    map->width = ArcadeSystem::winWidth;
+    map->height = ArcadeSystem::winHeight;
+    while (std::cin.read(&c, 1))
+    {
+        switch (static_cast<arcade::CommandType>(c))
+        {
+            case arcade::CommandType::WHERE_AM_I:
+                whereAmI(snake);
+                break;
+            case arcade::CommandType::GET_MAP:
+                updateMap(map, snake);
+                write(1, map, mapSize);
+                break;
+            case arcade::CommandType::GO_UP:
+                snake.goUp();
+                break;
+            case arcade::CommandType::GO_DOWN:
+                snake.goDown();
+                break;
+            case arcade::CommandType::GO_LEFT:
+                snake.goLeft();
+                break;
+            case arcade::CommandType::GO_RIGHT:
+                snake.goRight();
+                break;
+            case arcade::CommandType::GO_FORWARD:
+                snake.goAhead();
+                break;
+            case arcade::CommandType::PLAY:
+                snake.compute(-1);
+                break;
+            default:
+                break;
+        }
+    }
+    free(map);
 }

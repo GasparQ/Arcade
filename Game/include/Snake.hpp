@@ -36,23 +36,24 @@ private:
     } Orientation;
 
 private:
-    std::list<Vector2<int> >          body;
-    Vector2<int>                     apple;
-    size_t                      score;
-    Orientation                 snakeOri;
-    Vector2<int>                     direction;
-    std::map<int, keyfunc>      keycodex;
-    std::list<Vector2<int> >          plate;
+    std::list<Vector2<int> >        body;
+    Vector2<int>                    apple;
+    size_t                          score;
+    Orientation                     snakeOri;
+    Vector2<int>                    direction;
+    std::map<int, keyfunc>          keycodex;
+    std::list<Vector2<int> >        plate;
 
 public:
-    void                        goUp();
-    void                        goDown();
-    void                        goLeft();
-    void                        goRight();
-    void                        goAhead();
+    void                            goUp();
+    void                            goDown();
+    void                            goLeft();
+    void                            goRight();
+    void                            goAhead();
+    Vector2<int> const              &getApple() const;
+    std::list<Vector2<int>> const   &getSnake() const;
 
 private:
-    void                        live();
     void                        generateAppelPos();
     void                        removeBody();
     void                        addBody(Vector2<int> newPos);
