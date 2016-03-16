@@ -39,14 +39,14 @@ HighScoreComponent::HighScoreComponent(std::string const &gameName, size_t score
     );
     //Enter you pseudo
     components[ComponentsPos::PSEUDO] = new UIComponent(
-            Vector2<int>(mid - static_cast<int>(pseudoPlaceholder.length()) / 2, 6),
+            Vector2<int>(mid - static_cast<int>(pseudoPlaceholder.length()) / 2, 5),
             AComponent::ComponentColor::COLOR_YELLOW,
             Vector2<int>(static_cast<int>(pseudoPlaceholder.length()), 2),
             HighScoreComponent::pseudoPlaceholder
     );
     //Highscores label
     components[ComponentsPos::LABEL] = new UIComponent(
-            Vector2<int>(mid - static_cast<int>(HighScoreComponent::labelHighscores.length()) / 2, 9),
+            Vector2<int>(mid - static_cast<int>(HighScoreComponent::labelHighscores.length()) / 2, 8),
             AComponent::ComponentColor::COLOR_WHITE,
             Vector2<int>(static_cast<int>(HighScoreComponent::labelHighscores.length()), 2),
             HighScoreComponent::labelHighscores
@@ -60,7 +60,7 @@ HighScoreComponent::HighScoreComponent(std::string const &gameName, size_t score
 
             displayed << scores[i]->getName() << " " << scores[i]->getScore();
             components[i + 3] = new UIComponent(
-                    Vector2<int>(mid - static_cast<int>(displayed.str().length()) / 2, (i * 2) + 11),
+                    Vector2<int>(mid - static_cast<int>(displayed.str().length()) / 2, (i * 2) + 10),
                     AComponent::ComponentColor::COLOR_WHITE,
                     Vector2<int>(static_cast<int>(displayed.str().length()), 2),
                     displayed.str()
@@ -69,6 +69,7 @@ HighScoreComponent::HighScoreComponent(std::string const &gameName, size_t score
         else
             components[i + 3] = NULL;
     }
+    components[13] = NULL;
 }
 
 HighScoreComponent::~HighScoreComponent()
@@ -97,7 +98,7 @@ void HighScoreComponent::UpdatePseudo(const int key)
         pseudo = HighScoreComponent::pseudoPlaceholder;
     delete(components[HighScoreComponent::ComponentsPos::PSEUDO]);
     components[HighScoreComponent::ComponentsPos::PSEUDO] = new UIComponent(
-            Vector2<int>(static_cast<int>(ArcadeSystem::winWidth) / 2 - static_cast<int>(pseudo.length()) / 2, 6),
+            Vector2<int>(static_cast<int>(ArcadeSystem::winWidth) / 2 - static_cast<int>(pseudo.length()) / 2, 5),
             AComponent::ComponentColor::COLOR_WHITE,
             Vector2<int>(static_cast<int>(pseudo.length()), 2),
             pseudo
