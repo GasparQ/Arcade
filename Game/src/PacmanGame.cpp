@@ -3,9 +3,9 @@
 //
 
 #include "../include/PacmanGame.hpp"
-#include "../Commons/include/ArcadeSystem.hpp"
-#include "../Commons/include/UIComponent.hpp"
-#include "../Commons/include/GameComponent.hpp"
+#include "../../Commons/include/ArcadeSystem.hpp"
+#include "../../Commons/include/UIComponent.hpp"
+#include "../../Commons/include/GameComponent.hpp"
 
 PacmanGame::PacmanGame()
 {
@@ -22,9 +22,9 @@ PacmanGame::PacmanGame()
     keycodes[ArcadeSystem::ArrowUp] = &PacmanCharacter::goUp;
 
     // Store all the gums
-    for (int y = 0; m_map[y]; ++y)
+    for (int y = 0; y < 30; ++y)
     {
-        for (int x = 0; m_map[y][x]; ++x)
+        for (int x = 0; x < 50; ++x)
         {
             m_gumPos.push_back(Vector2<int>(x, y));
         }
@@ -52,7 +52,13 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 
     MoveEntities();
 
-    output.push(new GameComponent(m_pacman.getPosition(), AComponent::ComponentColor::COLOR_YELLOW, GameComponent::Shapes::SPHERE, "O", ""));
+    // Pacman
+    output.push(new GameComponent(m_pacman.getPosition(), m_pacman.getColor(), m_pacman.getShape3D(), m_pacman.getShapeCurses(), m_pacman.getShape2D()));
+    //Ghosts
+    for (auto var : m_ghosts)
+    {
+        output.push(new GameComponent(var.getPosition(), var.getColor(), var.getShape3D(), var.getShapeCurses(), var.getShape2D()));
+    }
 
     return output;
 }
