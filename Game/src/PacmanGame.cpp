@@ -77,7 +77,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     }
     for (auto var : m_gumPos)
     {
-        output.push(new GameComponent(var, AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::SPHERE, "*", ""));
+        output.push(new GameComponent(var, AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::SPHERE_SMALL, "*", ""));
     }
     return output;
 }
@@ -94,6 +94,17 @@ void PacmanGame::InitGame()
         it->ResetPosition();
     }
     m_pacman.ResetPosition();
+    m_gumPos.clear();
+    for (int y = 0; y < 30; ++y)
+    {
+        for (int x = 0; x < 50; ++x)
+        {
+            if (m_map[y][x] == '.')
+            {
+                m_gumPos.push_back(Vector2<int>(x, y));
+            }
+        }
+    }
 }
 
 extern "C" IGame *loadGame()

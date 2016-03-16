@@ -30,9 +30,11 @@ public:
     virtual void display(std::stack<AComponent *>);
 
 private:
-    void DrawSphere(Vector2<int> pos, AComponent::ComponentColor color) const;
+    void DrawSphere(Vector2<int> pos, AComponent::ComponentColor color, double size) const;
 
     void DrawCube(Vector2<int> pos, AComponent::ComponentColor color, double posY = 0) const;
+
+    void DrawCube(Vector2<int> pos, GLbyte r, GLbyte g, GLbyte b, double posY = 0) const;
 
     void DrawTerrain(int sizeX, int sizeY) const;
 

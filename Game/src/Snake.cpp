@@ -67,7 +67,7 @@ std::stack<AComponent *>                Snake::compute(int keycode)
         else
             output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, GameComponent::Shapes::CUBE , " ", "./sprites/snake.bmp"));
     }
-    output.push(new GameComponent(apple, AComponent::COLOR_RED, GameComponent::Shapes::SPHERE , " ", "./sprites/apple.bmp"));
+    output.push(new GameComponent(apple, AComponent::COLOR_RED, GameComponent::Shapes::SPHERE_LARGE, " ", "./sprites/apple.bmp"));
     return output;
 }
 

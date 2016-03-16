@@ -20,7 +20,9 @@ public:
     enum Shapes
     {
         CUBE = 1,
-        SPHERE = 2
+        SPHERE_LARGE = 2,
+        SPHERE_MEDIUM = 3,
+        SPHERE_SMALL = 4
     };
 
 private:

@@ -111,7 +111,7 @@ void OpenGlGraph::DrawBackground() const
     DrawTerrain(arcade::winWidth, arcade::winHeight);
 }
 
-void OpenGlGraph::DrawSphere(Vector2<int> pos, AComponent::ComponentColor color) const
+void OpenGlGraph::DrawSphere(Vector2<int> pos, AComponent::ComponentColor color, double size) const
 {
     GLUquadric *param;
 
@@ -119,7 +119,7 @@ void OpenGlGraph::DrawSphere(Vector2<int> pos, AComponent::ComponentColor color)
     glTranslated(-pos.x, 0, -pos.y);
     param = gluNewQuadric();
     glColor4d(colors[color].r, colors[color].g, colors[color].b, 1);
-    gluSphere(param, 0.5, 20, 20);
+    gluSphere(param, size, 20, 20);
     gluDeleteQuadric(param);
     glPopMatrix();
 }
@@ -137,6 +137,19 @@ void OpenGlGraph::DrawCube(Vector2<int> pos, AComponent::ComponentColor color, d
     glPopMatrix();
 }
 
+void OpenGlGraph::DrawCube(Vector2<int> pos, GLbyte r, GLbyte g, GLbyte b, double posY) const
+{
+    glPushMatrix();
+    glTranslated(-pos.x, -posY, -pos.y);
+
+    // Byte color
+    glColor3ub(r, g, b);
+
+    glutSolidCube(1);
+
+    glPopMatrix();
+}
+
 void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
 {
     for (int i = -1; i <= sizeX; ++i)
@@ -147,7 +160,7 @@ void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
             {
                 DrawCube(Vector2<int>(i, j), AComponent::COLOR_YELLOW);
             }
-            DrawCube(Vector2<int>(i, j), AComponent::COLOR_BLUE, 1);
+            DrawCube(Vector2<int>(i, j), 152, 152, 152, 1);
         }
     }
 }
@@ -189,8 +202,14 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
             }
             switch (gc->getSprite3D())
             {
-                case GameComponent::Shapes::SPHERE:
-                    DrawSphere(gc->getPos(), gc->getColor());
+                case GameComponent::Shapes::SPHERE_LARGE:
+                    DrawSphere(gc->getPos(), gc->getColor(), 0.5);
+                    break;
+                case GameComponent::Shapes::SPHERE_MEDIUM:
+                    DrawSphere(gc->getPos(), gc->getColor(), 0.30);
+                    break;
+                case GameComponent::Shapes::SPHERE_SMALL:
+                    DrawSphere(gc->getPos(), gc->getColor(), 0.20);
                     break;
                 case GameComponent::Shapes::CUBE:
                     DrawCube(gc->getPos(), gc->getColor());
@@ -275,3 +294,4 @@ void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
     }
 }
+
