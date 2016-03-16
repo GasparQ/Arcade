@@ -52,7 +52,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 
     if ((it = keycodes.find(keycode)) != keycodes.end())
     {
-        (m_pacman.*it->second)();
+        (m_pacman.*it->second)(this->m_map);
     }
 
     MoveEntities();

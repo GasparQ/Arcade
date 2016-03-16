@@ -32,23 +32,35 @@ public:
 
     std::string const &getShapeCurses() const;
 
-    inline void goUp()
+    inline void goUp(char map[31][51])
     {
+      if (m_pos.y - 1 < 0)
+	return ;
+      if (map[m_pos.y - 1][m_pos.x] != 'X')
         m_dir = UP;
     }
 
-    inline void goDown()
+    inline void goDown(char map[31][51])
     {
+       if (m_pos.y + 1 >= 31)
+	return ;
+      if (map[m_pos.y + 1][m_pos.x] != 'X')
         m_dir = DOWN;
     }
 
-    inline void goLeft()
+    inline void goLeft(char map[31][51])
     {
+        if (m_pos.x - 1 < 0)
+	return ;
+      if (map[m_pos.y][m_pos.x - 1] != 'X')
         m_dir = LEFT;
     }
 
-    inline void goRight()
+    inline void goRight(char map[31][51])
     {
+      if (m_pos.x + 1 >= 51)
+	return ;
+      if (map[m_pos.y][m_pos.x + 1] != 'X')
         m_dir = RIGHT;
     }
 

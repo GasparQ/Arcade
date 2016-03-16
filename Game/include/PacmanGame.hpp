@@ -25,7 +25,7 @@ public:
 
     virtual void restart();
 
-    typedef void (PacmanCharacter::*keyfunc)();
+    typedef void (PacmanCharacter::*keyfunc)(char [31][51]);
 
 private:
     void InitGame();
