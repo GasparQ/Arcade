@@ -8,6 +8,7 @@
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/GameComponent.hpp"
 
+// TODO: lives
 PacmanGame::PacmanGame()
 {
     // Spawns 4 ghosts
@@ -27,7 +28,10 @@ PacmanGame::PacmanGame()
     {
         for (int x = 0; x < 50; ++x)
         {
-            m_gumPos.push_back(Vector2<int>(x, y));
+            if (m_map[y][x] == '.')
+            {
+                m_gumPos.push_back(Vector2<int>(x, y));
+            }
         }
     }
 }
