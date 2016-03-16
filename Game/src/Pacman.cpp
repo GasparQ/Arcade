@@ -38,7 +38,7 @@ Vector2<int> const &Pacman::Move(char m_map[31][51])
     return m_pos;
 }
 
-Pacman::Pacman() : PacmanCharacter(Vector2<int>(25, 29), AComponent::ComponentColor::COLOR_YELLOW, "", " ",
+Pacman::Pacman() : PacmanCharacter(Vector2<int>(25, 28), AComponent::ComponentColor::COLOR_YELLOW, "", " ",
                                    GameComponent::Shapes::SPHERE)
 {
 

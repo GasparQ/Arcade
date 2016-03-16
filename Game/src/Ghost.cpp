@@ -4,7 +4,7 @@
 
 #include "../include/Ghost.hpp"
 
-Ghost::Ghost() : PacmanCharacter(Vector2<int>(25, 15), AComponent::ComponentColor::COLOR_GREEN, "", " ",
+Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<int>(25, 15), color, "", " ",
                                  GameComponent::Shapes::CUBE)
 {
 

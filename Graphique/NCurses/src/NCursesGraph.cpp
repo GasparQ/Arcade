@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Tue Mar 15 18:53:26 2016 Victor Gouet
+// Last update Wed Mar 16 13:38:20 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -118,8 +118,10 @@ void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
 {
   Vector2<int>	pos = gameComponent->getPos();
 
-  // gameWin
-  win->attrON(A_REVERSE | COLOR_PAIR(gameComponent->getColor()));
+  if (gameComponent->getSpriteText() != " ")
+    win->attrON(COLOR_PAIR(gameComponent->getColor()));
+  else
+    win->attrON(A_REVERSE | COLOR_PAIR(gameComponent->getColor()));
   win->print(pos.x, pos.y, "%s", gameComponent->getSpriteText().c_str());
   win->attrOFF(A_REVERSE);
   _cacheGame.push(s_cache(gameComponent->getPos(),
@@ -130,7 +132,6 @@ void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr
 {
   Vector2<int>	pos = uiComponent->getPos();
 
-  //UIWin
   win->attrON(COLOR_PAIR(uiComponent->getColor()) | A_BOLD);
   win->print(pos.x, pos.y, "%s", uiComponent->getText().c_str());
   _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), win));
@@ -144,7 +145,12 @@ void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreCompon
   
   while (arrayComponent[i] != NULL)
     {
+      // if (i == 1)
+      // 	win->attrON(A_UNDERLINE);
+      // if (i == 2)
+      // 	win->attrON(A_BLINK);
       _displayComponent(arrayComponent[i], win);
+      // win->attrOFF(A_BLINK | A_UNDERLINE);
       ++i;
     }
 }

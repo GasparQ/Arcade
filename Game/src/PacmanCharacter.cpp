@@ -33,7 +33,7 @@ Vector2<int> const &PacmanCharacter::getPosition() const
 
 AComponent::ComponentColor PacmanCharacter::getColor() const
 {
-    return AComponent::ComponentColor::COLOR_GREEN;
+    return m_color;
 }
 
 GameComponent::Shapes PacmanCharacter::getShape3D() const

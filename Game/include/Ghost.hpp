@@ -10,7 +10,7 @@
 class Ghost : public PacmanCharacter
 {
 public:
-    Ghost();
+    Ghost(AComponent::ComponentColor color);
     virtual ~Ghost();
 
 public:
