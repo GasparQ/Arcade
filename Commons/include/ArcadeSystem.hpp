@@ -20,7 +20,7 @@ namespace ArcadeSystem
     //259;'z'
     static const int ArrowDown = -5;
     //258;'s'
-    static const int Space = -6;//' '
+    static const int Space = ' ';//' '
 
     static const int PrevGraph = -7; // '2'
     static const int NextGraph = -8; //'3'
@@ -29,7 +29,7 @@ namespace ArcadeSystem
     static const int Restart = -11; //'8'
     static const int Home = -12; //'9'
     static const int Exit = -13; //27
-    static const int Pause = -14; //'P'
+    static const int Pause = 'p'; //'P'
     static const int Enter = -15;
     static const int Backspace = -16;
 };
