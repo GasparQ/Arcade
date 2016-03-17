@@ -57,7 +57,6 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     }
 
     MoveEntities();
-    std::cout << "3. Ghost x = " << m_ghosts[0].getPosition().x << std::endl;
 
     // Pacman
     output.push(new GameComponent(m_pacman.getPosition(), m_pacman.getColor(), m_pacman.getShape3D(), m_pacman.getShapeCurses(), m_pacman.getShape2D()));
@@ -127,7 +126,7 @@ void PacmanGame::MoveEntities()
 
     while (itGhost != m_ghosts.end())
     {
-        if ((*itGhost).Move(m_map) == newPacPos)
+        if ((*itGhost).Move(m_map, newPacPos) == newPacPos)
         {
             Die();
         }

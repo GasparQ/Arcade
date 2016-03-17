@@ -18,7 +18,7 @@ public:
     virtual ~PacmanCharacter();
 
 public:
-    virtual Vector2<int> const &Move(char map[31][51]) = 0;
+    virtual Vector2<int> const &Move(char map[31][51], Vector2<int> pacmanPos = Vector2<int>(0, 0)) = 0;
 
     virtual void ResetPosition();
 

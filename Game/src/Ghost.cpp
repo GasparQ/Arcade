@@ -16,10 +16,10 @@ Ghost::~Ghost()
 
 }
 
-Vector2<int> const& Ghost::Move(char map[31][51])
+Vector2<int> const& Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
 {
     Astar as(map);
-    std::string dir = as.pathFind(m_pos.x, m_pos.y, 1, 28);
+    std::string dir = as.pathFind(m_pos.x, m_pos.y, pacmanPos.x, pacmanPos.y);
 
     if (dir == "")
     {

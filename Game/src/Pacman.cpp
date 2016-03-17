@@ -4,7 +4,7 @@
 
 #include "../include/Pacman.hpp"
 
-Vector2<int> const &Pacman::Move(char m_map[31][51])
+Vector2<int> const &Pacman::Move(char m_map[31][51], Vector2<int>)
 {
     if (m_pos.x == 0)
     {

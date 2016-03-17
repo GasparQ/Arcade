@@ -14,7 +14,7 @@ public:
     virtual ~Ghost();
 
 public:
-    virtual Vector2<int> const& Move(char map[31][51]);
+    virtual Vector2<int> const& Move(char map[31][51], Vector2<int> pacmanPos);
 
     virtual void goUp(char map[31][51]);
     virtual void goDown(char map[31][51]);
