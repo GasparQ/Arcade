@@ -31,6 +31,8 @@ private:
     void InitGame();
 
     void MoveEntities();
+  void  onReplaceGhostByWall(char newMap[31][51]) const;
+
 
     void Die();
 

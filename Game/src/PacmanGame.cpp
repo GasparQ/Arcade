@@ -16,7 +16,7 @@ PacmanGame::PacmanGame()
     m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_GREEN));
     m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_CYAN));
     m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_RED));
-    m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_BLUE));
+    m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_MAGENTA));
 
     // Sets keycodes
     keycodes[ArcadeSystem::ArrowDown] = &PacmanCharacter::goDown;
@@ -119,6 +119,30 @@ extern "C" IGame *loadGame()
     return (new PacmanGame());
 }
 
+void	PacmanGame::onReplaceGhostByWall(char newMap[31][51]) const
+{
+  int	y;
+  int	x;
+
+  y = 0;
+  while (y < 31)
+    {
+      x = 0;
+      while (x < 51)
+	{
+	  newMap[y][x] = m_map[y][x];
+	  ++x;
+	}
+      ++y;
+    }  
+  std::vector<Ghost>::const_iterator itGhost = m_ghosts.begin();
+  while (itGhost != m_ghosts.end())
+    {
+      newMap[(*itGhost).getPosition().y][(*itGhost).getPosition().x] = 'X';
+      ++itGhost;
+    }
+}
+
 void PacmanGame::MoveEntities()
 {
     Vector2<int> newPacPos = m_pacman.Move(m_map);
@@ -126,7 +150,9 @@ void PacmanGame::MoveEntities()
 
     while (itGhost != m_ghosts.end())
     {
-        if ((*itGhost).Move(m_map, newPacPos) == newPacPos)
+      char newMap[31][51];
+      onReplaceGhostByWall(newMap);
+        if ((*itGhost).Move(newMap, newPacPos) == newPacPos)
         {
             Die();
         }
