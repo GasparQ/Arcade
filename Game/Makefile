@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Thu Mar 10 16:28:26 2016 Quentin Gasparotto
-## Last update Wed Mar 16 11:17:43 2016 Fernand Veyrier
+## Last update Thu Mar 17 20:32:49 2016 Victor Gouet
 ##
 
 CC	=	g++ -g
@@ -36,13 +36,13 @@ CPPFLAGS	=	-W -Wall -Wextra -fPIC -shared --std=c++11 \
 
 LDFLAGS		=	-shared -Wl,--no-undefined -L ../Commons/ -l_arcade_commons
 
+all:	$(SNAKE) $(PACMAN)
+
 $(SNAKE):	$(SNAKEOBJS)
 	$(CC) -o $(SNAKE) $(SNAKEOBJS) $(LDFLAGS)
 
 $(PACMAN):	$(PACMANOBJS)
 	$(CC) -o $(PACMAN) $(PACMANOBJS) $(LDFLAGS)
-
-all:	$(SNAKE) $(PACMAN)
 
 clean:
 	$(RM) $(SNAKEOBJS)
