@@ -101,7 +101,7 @@ public:
         {
             for (int x = 0; x < 51; x++)
             {
-                map[y][x] = _map[y][x];
+                map[x][y] = _map[y][x];
             }
         }
     }
@@ -180,7 +180,7 @@ public:
             {
                 xdx=x+dx[i]; ydy=y+dy[i];
 
-                if(!(xdx<0 || xdx>n-1 || ydy<0 || ydy>m-1 || map[xdx][ydy]==1
+                if(!(xdx<0 || xdx>n-1 || ydy<0 || ydy>m-1 || map[xdx][ydy]=='X'// 1
                      || closed_nodes_map[xdx][ydy]==1))
                 {
                     // generate a child node
@@ -235,12 +235,12 @@ public:
     }
 
 private:
-    const int n = 31; // Horizontal
-    const int m = 51; // Vertical
-    char map[31][51];
-    int closed_nodes_map[31][51];
-    int open_nodes_map[31][51];
-    int dir_map[31][51];
+    const int n = 51; // Horizontal
+    const int m = 31; // Vertical
+    char map[51][31];
+    int closed_nodes_map[51][31];
+    int open_nodes_map[51][31];
+    int dir_map[51][31];
     const int dir = 4;
     int dx[4] = {1, 0, -1, 0};
     int dy[4] = {0, 1, 0, -1};

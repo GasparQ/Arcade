@@ -19,8 +19,8 @@ Ghost::~Ghost()
 Vector2<int> const& Ghost::Move(char map[31][51])
 {
     Astar as(map);
-    std::string dir = as.pathFind(m_pos.x, m_pos.y, 1, 30);
-    
+    std::string dir = as.pathFind(m_pos.x, m_pos.y, 1, 28);
+
     if (dir == "")
     {
         return m_pos;

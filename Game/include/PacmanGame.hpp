@@ -48,7 +48,7 @@ private:
                           "XXXXXXXXXX.X  XXXXXXXX.X  X.XXXXXXXX  X.XXXXXXXXXX",
                           "       XXX.X  XXXXXXXX.XXXX.XXXXXXXX  X.XXX       ",
                           "       XXX.X  X....................X  X.XXX       ",
-                          "       XXX.X  X.XXXXX.XXXXXXX.XXXX.X  X.XXX       ",
+                          "       XXX.X  X.XXXXX.XXX XXX.XXXX.X  X.XXX       ",
                           "XXXXXXXXXX.XXXX.X   X.X     X.X  X.XXXX.XXXXXXXXXX",
                           "          ......X   X.X     X.X  X......          ",
                           "XXXXXXXXXX.XXXX.X   X.X     X.X  X.XXXX.XXXXXXXXXX",
