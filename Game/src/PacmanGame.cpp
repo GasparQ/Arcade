@@ -6,9 +6,10 @@
 #include "../include/PacmanGame.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/UIComponent.hpp"
-#include "../../Commons/include/GameComponent.hpp"
 
 // TODO: lives
+// Ghost spawn after 10 seconds
+// Super pac gums
 PacmanGame::PacmanGame()
 {
     // Spawns 4 ghosts
@@ -56,6 +57,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     }
 
     MoveEntities();
+    std::cout << "3. Ghost x = " << m_ghosts[0].getPosition().x << std::endl;
 
     // Pacman
     output.push(new GameComponent(m_pacman.getPosition(), m_pacman.getColor(), m_pacman.getShape3D(), m_pacman.getShapeCurses(), m_pacman.getShape2D()));
@@ -64,6 +66,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     {
         output.push(new GameComponent(var.getPosition(), var.getColor(), var.getShape3D(), var.getShapeCurses(), var.getShape2D()));
     }
+    // Terrain
     for (int y = 0; y < 30; ++y)
     {
         for (int x = 0; x < 50; ++x)
@@ -79,6 +82,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
             }
         }
     }
+    // Gums
     for (auto var : m_gumPos)
     {
         output.push(new GameComponent(var, AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::SPHERE_SMALL, "*", ""));
@@ -119,23 +123,25 @@ extern "C" IGame *loadGame()
 void PacmanGame::MoveEntities()
 {
     Vector2<int> newPacPos = m_pacman.Move(m_map);
+    std::vector<Ghost>::iterator itGhost = m_ghosts.begin();
 
-    if (m_gumPos.empty())
+    while (itGhost != m_ghosts.end())
     {
-        InitGame();
-    }
-    for (auto var : m_ghosts)
-    {
-        if (var.Move(m_map) == newPacPos)
+        if ((*itGhost).Move(m_map) == newPacPos)
         {
             Die();
         }
+        ++itGhost;
     }
     auto it = std::find_if(std::begin(m_gumPos), std::end(m_gumPos), [&](const Vector2<int> v){ return newPacPos == v; });
     if (it != std::end(m_gumPos))
     {
         m_score += 10;
         m_gumPos.remove(*it);
+    }
+    if (m_gumPos.empty())
+    {
+        InitGame();
     }
 }
 

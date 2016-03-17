@@ -15,6 +15,11 @@ public:
 
 public:
     virtual Vector2<int> const& Move(char map[31][51]);
+
+    virtual void goUp(char map[31][51]);
+    virtual void goDown(char map[31][51]);
+    virtual void goLeft(char map[31][51]);
+    virtual void goRight(char map[31][51]);
 };
 
 
