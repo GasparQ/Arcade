@@ -37,7 +37,7 @@ private:
 private:
     // 50x30
     char m_map[31][51] = {"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-                          "X......................XXXX......................X",
+                          "Xo.....................XXXX.....................oX",
                           "X.XXXXXXXX.XXXXXXXXXXX.XXXX.XXXXXXXXXXX.XXXXXXXX.X",
                           "X.X      X.X         X.XXXX.X         X.X      X.X",
                           "X.XXXXXXXX.XXXXXXXXXXX.XXXX.XXXXXXXXXXX.XXXXXXXX.X",
@@ -48,14 +48,14 @@ private:
                           "XXXXXXXXXX.X  XXXXXXXX.X  X.XXXXXXXX  X.XXXXXXXXXX",
                           "       XXX.X  XXXXXXXX.XXXX.XXXXXXXX  X.XXX       ",
                           "       XXX.X  X....................X  X.XXX       ",
-                          "       XXX.X  X.XXXXXXXXXXXXXXXXXX.X  X.XXX       ",
-                          "XXXXXXXXXX.XXXX.X                X.XXXX.XXXXXXXXXX",
-                          "          ......X                X......          ",
-                          "XXXXXXXXXX.XXXX.X                X.XXXX.XXXXXXXXXX",
-                          "       XXX.X  X.XXXXXXXXXXXXXXXXXX.X  X.XXX       ",
+                          "       XXX.X  X.XXXXX.XXXXXXX.XXXX.X  X.XXX       ",
+                          "XXXXXXXXXX.XXXX.X   X.X     X.X  X.XXXX.XXXXXXXXXX",
+                          "          ......X   X.X     X.X  X......          ",
+                          "XXXXXXXXXX.XXXX.X   X.X     X.X  X.XXXX.XXXXXXXXXX",
+                          "       XXX.X  X.X   X.X     X.X  X.X  X.XXX       ",
+                          "       XXX.X  X.XXXXX.XXXXXXX.XXXX.X  X.XXX       ",
                           "       XXX.X  X....................X  X.XXX       ",
-                          "       XXX.X  X.XXXXXXXXXXXXXXXXXX.X  X.XXX       ",
-                          "XXXXXXXXXX.XXXX.XXXXXXXX  XXXXXXXX.XXXX.XXXXXXXXXX",
+                          "XXXXXXXXXX.XXXX.XXXXXXXXXXXXXXXXXX.XXXX.XXXXXXXXXX",
                           "X......................X  X......................X",
                           "X.XXXXXXXX.XXXXXXXXXXX.X  X.XXXXXXXXXXX.XXXXXXXX.X",
                           "X.XXXX   X.XXXXXXXXXXX.XXXX.XXXXXXXXXXX.X   XXXX.X",
@@ -64,7 +64,7 @@ private:
                           "XXXX.XXXXX.X  X.XXXXXXXX  XXXXXXXX.X  X.XXXXX.XXXX",
                           "X..........X  X........X  X........X  X..........X",
                           "X.XXXXXXXXXXXXXXXXXXXX.XXXX.XXXXXXXXXXXXXXXXXXXX.X",
-                          "X................................................X",
+                          "Xo..............................................oX",
                           "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"};
 
 private:

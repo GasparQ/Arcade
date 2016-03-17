@@ -59,7 +59,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 
     // Pacman
     output.push(new GameComponent(m_pacman.getPosition(), m_pacman.getColor(), m_pacman.getShape3D(), m_pacman.getShapeCurses(), m_pacman.getShape2D()));
-    //Ghosts
+    // Ghosts
     for (auto var : m_ghosts)
     {
         output.push(new GameComponent(var.getPosition(), var.getColor(), var.getShape3D(), var.getShapeCurses(), var.getShape2D()));
@@ -72,6 +72,10 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
             {
                 output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_BLUE,
                                               GameComponent::Shapes::CUBE, " ", ""));
+            }
+            else if (m_map[y][x] == 'o')
+            {
+                output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::SPHERE_MEDIUM, "o", ""));
             }
         }
     }

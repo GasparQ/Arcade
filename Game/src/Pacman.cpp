@@ -6,8 +6,14 @@
 
 Vector2<int> const &Pacman::Move(char m_map[31][51])
 {
-    Vector2<int> nextPos = m_pos;
-
+    if (m_pos.x == 0)
+    {
+        m_pos.x = 50;
+    }
+    else if (m_pos.x == 50)
+    {
+        m_pos.x = 0;
+    }
     switch (m_dir)
     {
         case UP:
@@ -38,7 +44,7 @@ Vector2<int> const &Pacman::Move(char m_map[31][51])
     return m_pos;
 }
 
-Pacman::Pacman() : PacmanCharacter(Vector2<int>(25, 28), AComponent::ComponentColor::COLOR_YELLOW, "", " ",
+Pacman::Pacman() : PacmanCharacter(Vector2<int>(25, 18), AComponent::ComponentColor::COLOR_YELLOW, "", " ",
                                    GameComponent::Shapes::SPHERE_LARGE)
 {
 
