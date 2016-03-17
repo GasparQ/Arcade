@@ -64,9 +64,6 @@ public:
             m_dir = RIGHT;
     }
 
-private:
-  void  onReplaceGhostByWall(char newMap[31][51]) const;
-
 protected:
     enum Direction
     {
