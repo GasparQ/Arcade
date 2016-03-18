@@ -14,6 +14,7 @@
 #include "Exception/LoadException.hpp"
 #include "Commons/include/ArcadeSystem.hpp"
 #include "Commons/include/AnimationComponent.hpp"
+#include "Commons/include/GameComponent.hpp"
 
 const std::string    arcade::Arcade::libDir = "./lib/";
 const std::string    arcade::Arcade::gamesDir = "./games/";
@@ -197,7 +198,6 @@ void        arcade::Arcade::Run()
     int key;
     std::chrono::milliseconds chrono(100);
     std::map<int, arcade::eventSystem>::iterator it;
-    std::stack<AComponent *>        components;
 
     // TODO FAIRE LE MENU 
     // ET DONC C'EST PAS Arcade::Game mais Arcade::Menu
@@ -206,6 +206,8 @@ void        arcade::Arcade::Run()
 
     while (isRunning)
     {
+        std::stack<AComponent *>    components;
+
         try
         {
             key = lib->eventManagment();
@@ -219,7 +221,13 @@ void        arcade::Arcade::Run()
             (this->*it->second)(); // on gere les event system ici
         if (_status == Arcade::Menu)
         {
-            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, "./Animation/NcursesAnimation0"));
+//            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, "./Animation/NcursesAnimation0"));
+            components.push(new GameComponent(Vector2<int>(0, 0), AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::CUBE, "test", "./sprites/pacman.bmp"));
+            /*
+ * Vector2<int> const &pos, AComponent::ComponentColor color,
+                  Shapes sprite3D, std::string const &spriteText,
+                  std::string const &sprite2D
+ */
         }
         if (_status == Arcade::Game)
         {

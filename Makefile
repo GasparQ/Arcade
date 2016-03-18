@@ -28,6 +28,7 @@ CPPFLAGS	=	-W -Wall -Wextra -std=c++11 \
 			-I./Vector/include/ \
 			-I./Game/include/ \
 			-I./Graphique/include/ \
+			-I./Commons/include/ \
 			-g
 
 LDFLAGS		= -ldl -L ./Commons -l_arcade_commons

@@ -40,6 +40,7 @@ void SDLGraph::display(std::stack<AComponent *> stack)
             drawUIComponent(uiComponent);
         else if ((highScoreComponent = dynamic_cast<HighScoreComponent *>(stack.top())))
             drawHighScoreComponent(highScoreComponent);
+        delete (stack.top());
         stack.pop();
     }
     SDL_RenderPresent(render);
