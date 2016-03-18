@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Mar 18 14:47:21 2016 Victor Gouet
+// Last update Fri Mar 18 15:00:11 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -223,13 +223,13 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *animation,
 {
   std::ofstream					fd;
   std::stringstream				buffer;
-  std::map<std::string, std::string>::iterator	it;
+  // std::map<std::string, std::string>::iterator	it;
 
-  if ((it = _fileCache.find(animation->getFileName())) != _fileCache.end())
-    {
-      _displayFile(animation->getPos().x, animation->getPos().y, (*it).second, win);
-      return ;
-    }
+  // if ((it = _fileCache.find(animation->getFileName())) != _fileCache.end())
+  //   {
+  //     _displayFile(animation->getPos().x, animation->getPos().y, (*it).second, win);
+  //     return ;
+  //   }
   fd.open(animation->getFileName().c_str());
   if (fd.is_open())
     {
