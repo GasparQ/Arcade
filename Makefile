@@ -30,7 +30,7 @@ CPPFLAGS	=	-W -Wall -Wextra -std=c++11 \
 			-I./Graphique/include/ \
 			-g
 
-LDFLAGS		= -ldl
+LDFLAGS		= -ldl -L ./Commons -l_arcade_commons
 
 $(NAME):	$(OBJS) libs games
 	@echo -e "\e[32m====Arcade====\e[0m"

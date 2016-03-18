@@ -43,7 +43,7 @@ namespace arcade
     class Arcade
     {
     public:
-        Arcade(std::string const &);
+        Arcade();
 
         ~Arcade();
 
@@ -56,7 +56,7 @@ namespace arcade
 	Game,
 	Menu
       }		Status;
-
+        void Init(std::string const &libname);
         void Run();
 
     private:
@@ -88,6 +88,7 @@ namespace arcade
         std::map<int, arcade::eventSystem> eventSystem;
         bool isRunning;
       Status	_status;
+        regex_t lib_names;
 
         /**
          * Methods

@@ -4,7 +4,7 @@
 
 int main(int ac, char **av)
 {
-    arcade::Arcade  *arcade;
+    arcade::Arcade  arcade;
 
     if (ac != 2)
     {
@@ -13,14 +13,13 @@ int main(int ac, char **av)
     }
     try
     {
-        arcade = new arcade::Arcade(av[1]);
+        arcade.Init(av[1]);
     }
     catch (std::runtime_error exception)
     {
         std::cerr << exception.what() << std::endl;
         return 1;
     }
-    arcade->Run();
-    delete arcade;
+    arcade.Run();
     return 0;
 }

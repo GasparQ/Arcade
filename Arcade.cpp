@@ -13,17 +13,15 @@
 #include "Arcade.hpp"
 #include "Exception/LoadException.hpp"
 #include "Commons/include/ArcadeSystem.hpp"
+#include "Commons/include/AnimationComponent.hpp"
 
 const std::string    arcade::Arcade::libDir = "./lib/";
 const std::string    arcade::Arcade::gamesDir = "./games/";
 const std::string    arcade::Arcade::createLib = "loadLib";
 const std::string    arcade::Arcade::createGame = "loadGame";
 
-arcade::Arcade::Arcade(std::string const &libname)
+arcade::Arcade::Arcade()
 {
-    regex_t reg;
-    std::vector<std::string> gameLibs;
-
     _status = Arcade::Menu;
     isRunning = true;
     eventSystem[ArcadeSystem::PrevGame] = &arcade::Arcade::onPrevGame;
@@ -34,31 +32,12 @@ arcade::Arcade::Arcade(std::string const &libname)
     eventSystem[ArcadeSystem::Home] = &arcade::Arcade::onHome;
     eventSystem[ArcadeSystem::Exit] = &arcade::Arcade::onExit;
     lib = NULL;
-    if (regcomp(&reg, "^(.*[\\/])?lib_arcade_[[:alnum:]\\_]+.so$", REG_EXTENDED) != 0)
+    dllib = NULL;
+    currGame = games.end();
+    if (regcomp(&lib_names, "^(.*[\\/])?lib_arcade_[[:alnum:]\\_]+.so$", REG_EXTENDED) != 0)
         throw std::runtime_error("arcade: cannot regcomp");
-    libsName = loadFilesFromDir(arcade::Arcade::libDir, reg);
-    gameLibs = loadFilesFromDir(arcade::Arcade::gamesDir, reg);
-    loadGames(gameLibs);
-    if (!isLibNameValid(libname, reg))
-        throw arcade::InvalidFileFormatException(libname);
-    findCurrLib(libname);
-    loadGraph();
-}
-
-void arcade::Arcade::findCurrLib(std::string const &libname)
-{
-    std::vector<std::string>::iterator  it;
-
-    for (it = libsName.begin(); it != libsName.end(); ++it)
-    {
-        if (it->find(libname) != std::string::npos)
-        {
-            currLibName = it;
-            break;
-        }
-    }
-    if (it == libsName.end())
-        libsName.push_back(libname);
+    libsName = loadFilesFromDir(arcade::Arcade::libDir, lib_names);
+    currLibName = libsName.end();
 }
 
 arcade::Arcade::~Arcade()
@@ -75,6 +54,35 @@ arcade::Arcade::~Arcade()
     }
     dlclose(dllib);
     dlopenedlibs.clear();
+    regfree(&lib_names);
+}
+
+void arcade::Arcade::Init(std::string const &libname)
+{
+    std::vector<std::string> gameLibs;
+
+    gameLibs = loadFilesFromDir(arcade::Arcade::gamesDir, lib_names);
+    loadGames(gameLibs);
+    if (!isLibNameValid(libname, lib_names))
+        throw arcade::InvalidFileFormatException(libname);
+    findCurrLib(libname);
+    loadGraph();
+}
+
+void arcade::Arcade::findCurrLib(std::string const &libname)
+{
+    std::vector<std::string>::iterator it;
+
+    for (it = libsName.begin(); it != libsName.end(); ++it)
+    {
+        if (it->find(libname) != std::string::npos)
+        {
+            currLibName = it;
+            break;
+        }
+    }
+    if (it == libsName.end())
+        libsName.push_back(libname);
 }
 
 std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string const &dirName, regex_t &nameRestric)
@@ -87,10 +95,8 @@ std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string con
         throw std::runtime_error("arcade: cannot open directory '" + dirName + "'");
     while ((pent = readdir(directory)) != NULL)
     {
-        if (pent->d_name[0] == '.')
+        if (pent->d_name[0] == '.' || !isLibNameValid(pent->d_name, nameRestric))
             continue;
-        if (!isLibNameValid(pent->d_name, nameRestric))
-            throw InvalidFileFormatException(pent->d_name);
         names.push_back(dirName + pent->d_name);
     }
     if (closedir(directory) == -1)
@@ -108,9 +114,9 @@ void        arcade::Arcade::loadGraph()
         dlclose(dllib);
     }
     if ((dllib = dlopen(currLibName->c_str(), RTLD_NOW)) == NULL)
-      {
+    {
         throw LoadLibraryException(dlerror());
-      }
+    }
     if ((load_lib = (IGraph *(*)()) dlsym(dllib, arcade::Arcade::createLib.c_str())) == NULL)
         throw IncompleteLibraryException(*currLibName);
     lib = load_lib();
@@ -178,7 +184,7 @@ void        arcade::Arcade::onRestart()
 
 void        arcade::Arcade::onHome()
 {
-  _status = Arcade::Menu;
+    _status = Arcade::Menu;
 }
 
 void        arcade::Arcade::onExit()
@@ -191,33 +197,35 @@ void        arcade::Arcade::Run()
     int key;
     std::chrono::milliseconds chrono(100);
     std::map<int, arcade::eventSystem>::iterator it;
+    std::stack<AComponent *>        components;
 
     // TODO FAIRE LE MENU 
     // ET DONC C'EST PAS Arcade::Game mais Arcade::Menu
-    _status = Arcade::Game;
+//    _status = Arcade::Game;
     // A ENLEVER POUR APRES
 
     while (isRunning)
     {
-      try
-	{
-	  key = lib->eventManagment();
-	}
-      catch (std::exception exception)
-	{
-	  std::cerr << exception.what() << std::endl;
-	  return;
-	}
-      if ((it = this->eventSystem.find(key)) != eventSystem.end())
-	(this->*it->second)(); // on gere les event system ici
-      if (_status == Arcade::Menu)
-	{
-	  
-	}
-      if (_status == Arcade::Game)
-	{
-	  lib->display((*currGame)->compute(key));
-	}
-      std::this_thread::sleep_for(chrono);
+        try
+        {
+            key = lib->eventManagment();
+        }
+        catch (std::exception exception)
+        {
+            std::cerr << exception.what() << std::endl;
+            return;
+        }
+        if ((it = this->eventSystem.find(key)) != eventSystem.end())
+            (this->*it->second)(); // on gere les event system ici
+        if (_status == Arcade::Menu)
+        {
+            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, "./Animation/NcursesAnimation0"));
+        }
+        if (_status == Arcade::Game)
+        {
+            components = (*currGame)->compute(key);
+        }
+        lib->display(components);
+        std::this_thread::sleep_for(chrono);
     }
 }

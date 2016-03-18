@@ -263,12 +263,13 @@ void    whereAmI(Snake const &snake)
 
 extern "C" void Play(void)
 {
-    char                    c;
-    Snake                   snake;
-    struct arcade::GetMap   *map;
-    size_t                  mapSize = sizeof(*map) + (ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t));
+    char                        c;
+    Snake                       snake;
+    struct arcade::GetMap       *map;
+    size_t                      mapSize = sizeof(*map) + (ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t));
+    std::stack<AComponent *>    components;
 
-    if ((map = (struct arcade::GetMap   *)(malloc(mapSize))) == NULL)
+    if ((map = (struct arcade::GetMap *)(malloc(mapSize))) == NULL)
         throw std::bad_alloc();
     map->type = arcade::CommandType::GET_MAP;
     map->width = ArcadeSystem::winWidth;
@@ -300,7 +301,12 @@ extern "C" void Play(void)
                 snake.goAhead();
                 break;
             case arcade::CommandType::PLAY:
-                snake.compute(-1);
+                components = snake.compute(-1);
+                while (!components.empty())
+                {
+                    delete (components.top());
+                    components.pop();
+                }
                 break;
             default:
                 break;
