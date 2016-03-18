@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Mar 18 14:42:58 2016 Victor Gouet
+// Last update Fri Mar 18 14:47:21 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -188,7 +188,8 @@ void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreCompon
     }
 }
 
-void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu) const
+void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
+					   ncr::Window *win) const
 {
   unsigned int	i;
   int		newX;
@@ -201,7 +202,7 @@ void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu) const
     {
       if (contenu[i] == '$')
 	{
-	  _stdscr->write(newX, newY, ' ', A_REVERSE | COLOR_PAIR(3));
+	  win->write(newX, newY, ' ', A_REVERSE | COLOR_PAIR(3));
 	}
       else if (contenu[i] == '\n')
 	{
@@ -210,7 +211,7 @@ void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu) const
 	}
       else
 	{
-	  _stdscr->write(newX, newY, contenu[i], A_REVERSE | COLOR_PAIR(3));
+	  win->write(newX, newY, contenu[i], A_REVERSE | COLOR_PAIR(3));
 	}
       ++newX;
       ++i;
@@ -226,14 +227,14 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *animation,
 
   if ((it = _fileCache.find(animation->getFileName())) != _fileCache.end())
     {
-      _displayFile(animation->getPos().x, animation->getPos().y, (*it).second);
+      _displayFile(animation->getPos().x, animation->getPos().y, (*it).second, win);
       return ;
     }
   fd.open(animation->getFileName().c_str());
   if (fd.is_open())
     {
       buffer << fd.rdbuf();
-      _displayFile(animation->getPos().x, animation->getPos().y, buffer.str());
+      _displayFile(animation->getPos().x, animation->getPos().y, buffer.str(), win);
       fd.close();
     }
 }

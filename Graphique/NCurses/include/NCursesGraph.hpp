@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Fri Mar 18 14:34:57 2016 Victor Gouet
+// Last update Fri Mar 18 14:47:31 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -65,7 +65,7 @@ private:
   bool			isResizeGood() const;
   ncr::Window		*onCreateBoard();
   ncr::Window		*onCreateUI();
-  void			_displayFile(int x, int y, std::string const &contenu) const;
+  void			_displayFile(int x, int y, std::string const &contenu, ncr::Window *) const;
 };
 
 #endif
