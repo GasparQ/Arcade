@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Sun Mar 13 17:06:59 2016 Quentin Gasparotto
-## Last update Sun Mar 13 17:52:21 2016 Quentin Gasparotto
+## Last update Fri Mar 18 14:06:31 2016 Victor Gouet
 ##
 
 NAME	=	lib_arcade_commons.a
@@ -14,11 +14,12 @@ CC	=	g++
 
 RM	=	rm -f
 
-SRCS	=	src/AComponent.cpp	\
-		    src/GameComponent.cpp	\
-		    src/UIComponent.cpp	\
-		    src/HighScoreComponent.cpp \
-		    src/LoadHighScore.cpp
+SRCS	=	src/AComponent.cpp		\
+		src/AnimationComponent.cpp	\
+		src/GameComponent.cpp		\
+		src/UIComponent.cpp		\
+		src/HighScoreComponent.cpp	\
+		src/LoadHighScore.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 
