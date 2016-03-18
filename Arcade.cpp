@@ -198,10 +198,12 @@ void        arcade::Arcade::Run()
     int key;
     std::chrono::milliseconds chrono(100);
     std::map<int, arcade::eventSystem>::iterator it;
+    char i = '0';
+    std::string filename("./Animation/NcursesAnimation");
 
     // TODO FAIRE LE MENU 
     // ET DONC C'EST PAS Arcade::Game mais Arcade::Menu
-//    _status = Arcade::Game;
+    // _status = Arcade::Game;
     // A ENLEVER POUR APRES
 
     while (isRunning)
@@ -221,7 +223,10 @@ void        arcade::Arcade::Run()
             (this->*it->second)(); // on gere les event system ici
         if (_status == Arcade::Menu)
         {
-            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, "./Animation/NcursesAnimation0"));
+            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, filename + i));
+            ++i;
+            if (i == '4')
+                i = '0';
 	    }
         if (_status == Arcade::Game)
         {
