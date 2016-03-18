@@ -15,6 +15,7 @@
 #include "Commons/include/ArcadeSystem.hpp"
 #include "Commons/include/AnimationComponent.hpp"
 #include "Commons/include/GameComponent.hpp"
+#include "ArcadeMenu.hpp"
 
 const std::string    arcade::Arcade::libDir = "./lib/";
 const std::string    arcade::Arcade::gamesDir = "./games/";
@@ -198,9 +199,10 @@ void        arcade::Arcade::Run()
     int key;
     std::chrono::milliseconds chrono(100);
     std::map<int, arcade::eventSystem>::iterator it;
-    char i = '0';
-    std::string filename("./Animation/NcursesAnimation");
+    ArcadeMenu  menu;
 
+    menu.setFrames("text", "./Animation/NcursesAnimation", 4);
+    menu.setMode("text");
     // TODO FAIRE LE MENU 
     // ET DONC C'EST PAS Arcade::Game mais Arcade::Menu
     // _status = Arcade::Game;
@@ -223,10 +225,7 @@ void        arcade::Arcade::Run()
             (this->*it->second)(); // on gere les event system ici
         if (_status == Arcade::Menu)
         {
-            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, filename + i));
-            ++i;
-            if (i == '4')
-                i = '0';
+            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, menu.getNextFrame()));
 	    }
         if (_status == Arcade::Game)
         {

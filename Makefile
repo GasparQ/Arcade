@@ -19,7 +19,8 @@ CC		=	g++
 RM		=	rm -f
 
 SRCS		=	Arcade.cpp \
-			main.cpp
+                ArcadeMenu.cpp \
+			    main.cpp
 
 OBJS		=	$(SRCS:.cpp=.o)
 
