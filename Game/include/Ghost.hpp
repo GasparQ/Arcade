@@ -36,6 +36,7 @@ public:
 
 private:
     GhostState m_state = DEAD;
+    AComponent::ComponentColor m_color_original;
 };
 
 

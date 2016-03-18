@@ -8,7 +8,7 @@
 Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<int>(25, 15), color, "", " ",
                                  GameComponent::Shapes::CUBE)
 {
-
+    m_color_original = m_color;
 }
 
 Ghost::~Ghost()
@@ -71,16 +71,16 @@ void Ghost::SetState(GhostState state)
     m_state = state;
     if (m_state == DEAD)
     {
-        m_shapeCurses = "¨";
+        m_shapeCurses = "\"";
     }
     else if (m_state == SCARED)
     {
         m_color = AComponent::ComponentColor::COLOR_BLUE;
     }
-    // TODO: save real color before being scared
     else
     {
         m_shapeCurses = " ";
+        m_color = m_color_original;
     }
 }
 

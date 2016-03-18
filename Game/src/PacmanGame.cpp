@@ -102,6 +102,7 @@ void PacmanGame::restart()
 
 void PacmanGame::InitGame()
 {
+    m_score = 0;
     for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
     {
         it->ResetPosition();
