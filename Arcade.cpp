@@ -220,7 +220,7 @@ void        arcade::Arcade::Run()
         if (_status == Arcade::Menu)
         {
             components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, "./Animation/NcursesAnimation0"));
-        }
+	}
         if (_status == Arcade::Game)
         {
             components = (*currGame)->compute(key);
