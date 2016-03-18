@@ -14,7 +14,19 @@ public:
     virtual ~Pacman();
 
 public:
+    enum PacmanState
+    {
+        MORTAL = 1,
+        IMMORTAL = 2
+    };
+    void UpdateState(PacmanState state);
+    PacmanState GetState() const;
+
+public:
     virtual Vector2<int> const& Move(char map[31][51], Vector2<int> pacmanPos = Vector2<int>(0, 0));
+
+private:
+    PacmanState m_state = IMMORTAL;
 };
 
 

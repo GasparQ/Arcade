@@ -20,6 +20,22 @@ public:
     virtual void goDown(char map[31][51]);
     virtual void goLeft(char map[31][51]);
     virtual void goRight(char map[31][51]);
+
+public:
+    // Dead = goes to base
+    // Hunting : looks for pacman
+    // Scared : flees pacman
+    enum GhostState
+    {
+        DEAD = 1,
+        HUNTING = 2,
+        SCARED = 3
+    };
+    void SetState(GhostState state);
+    GhostState GetState() const ;
+
+private:
+    GhostState m_state = DEAD;
 };
 
 

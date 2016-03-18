@@ -19,12 +19,8 @@ Ghost::~Ghost()
 Vector2<int> const& Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
 {
     Astar as(map);
-    std::string dir = as.pathFind(m_pos.x, m_pos.y, pacmanPos.x, pacmanPos.y);
+    std::string dir = as.pathFind(m_pos.x, m_pos.y, (m_state == HUNTING) ? pacmanPos.x : 25, (m_state == HUNTING) ? pacmanPos.y : 15);
 
-    if (dir == "")
-    {
-        return m_pos;
-    }
     if (dir[0] == '0')
     {
         ++m_pos.x;
@@ -40,6 +36,12 @@ Vector2<int> const& Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
     else if (dir[0] == '3')
     {
         --m_pos.y;
+    }
+
+    // If the ghost is back to base, he can hunt again
+    if (m_pos.x >= 24 && m_pos.x <= 28 && m_pos.y >= 13 && m_pos.y <= 16)
+    {
+        SetState(HUNTING);
     }
     return m_pos;
 }
@@ -62,4 +64,27 @@ void Ghost::goLeft(char (*map)[51])
 void Ghost::goRight(char (*map)[51])
 {
     //PacmanCharacter::goRight(map);
+}
+
+void Ghost::SetState(GhostState state)
+{
+    m_state = state;
+    if (m_state == DEAD)
+    {
+        m_shapeCurses = "¨";
+    }
+    else if (m_state == SCARED)
+    {
+        m_color = AComponent::ComponentColor::COLOR_BLUE;
+    }
+    // TODO: save real color before being scared
+    else
+    {
+        m_shapeCurses = " ";
+    }
+}
+
+Ghost::GhostState Ghost::GetState() const
+{
+    return m_state;
 }

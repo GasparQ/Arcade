@@ -77,7 +77,7 @@ protected:
     Vector2<int> m_pos;
     Vector2<int> m_initPos;
 
-private:
+protected:
     AComponent::ComponentColor m_color;
     std::string m_shape2D;
     std::string m_shapeCurses;

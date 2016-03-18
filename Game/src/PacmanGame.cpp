@@ -11,7 +11,7 @@
 // Ghost spawn after 10 seconds
 // Super pac gums
 PacmanGame::PacmanGame() :
-    AGame("Pacman")
+        AGame("Pacman")
 {
     // Spawns 4 ghosts
     m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_GREEN));
@@ -48,7 +48,8 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     std::stack<AComponent *> output;
     std::map<int, keyfunc>::iterator it;
 
-    output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(m_score)).size()) / 2), 1),
+    output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string(
+                                        "score : " + std::to_string(m_score)).size()) / 2), 1),
                                 AComponent::COLOR_WHITE,
                                 Vector2<int>(5, 1), "score : " + std::to_string(m_score)));
 
@@ -60,11 +61,13 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     MoveEntities();
 
     // Pacman
-    output.push(new GameComponent(m_pacman.getPosition(), m_pacman.getColor(), m_pacman.getShape3D(), m_pacman.getShapeCurses(), m_pacman.getShape2D()));
+    output.push(new GameComponent(m_pacman.getPosition(), m_pacman.getColor(), m_pacman.getShape3D(),
+                                  m_pacman.getShapeCurses(), m_pacman.getShape2D()));
     // Ghosts
     for (auto var : m_ghosts)
     {
-        output.push(new GameComponent(var.getPosition(), var.getColor(), var.getShape3D(), var.getShapeCurses(), var.getShape2D()));
+        output.push(new GameComponent(var.getPosition(), var.getColor(), var.getShape3D(), var.getShapeCurses(),
+                                      var.getShape2D()));
     }
     // Terrain
     for (int y = 0; y < 30; ++y)
@@ -78,14 +81,16 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
             }
             else if (m_map[y][x] == 'o')
             {
-                output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::SPHERE_MEDIUM, "o", ""));
+                output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_WHITE,
+                                              GameComponent::Shapes::SPHERE_MEDIUM, "o", ""));
             }
         }
     }
     // Gums
     for (auto var : m_gumPos)
     {
-        output.push(new GameComponent(var, AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::SPHERE_SMALL, "*", ""));
+        output.push(new GameComponent(var, AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::SPHERE_SMALL,
+                                      "*", ""));
     }
     return output;
 }
@@ -120,27 +125,31 @@ extern "C" IGame *loadGame()
     return (new PacmanGame());
 }
 
-void	PacmanGame::onReplaceGhostByWall(char newMap[31][51]) const
+void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState state) const
 {
-  int	y;
-  int	x;
+    int y;
+    int x;
 
-  y = 0;
-  while (y < 31)
+    y = 0;
+    while (y < 31)
     {
-      x = 0;
-      while (x < 51)
-	{
-	  newMap[y][x] = m_map[y][x];
-	  ++x;
-	}
-      ++y;
-    }  
-  std::vector<Ghost>::const_iterator itGhost = m_ghosts.begin();
-  while (itGhost != m_ghosts.end())
+        x = 0;
+        while (x < 51)
+        {
+            newMap[y][x] = m_map[y][x];
+            ++x;
+        }
+        ++y;
+    }
+    // If the ghost is alive other ghosts are obstacles
+    if (state != Ghost::DEAD)
     {
-      newMap[(*itGhost).getPosition().y][(*itGhost).getPosition().x] = 'X';
-      ++itGhost;
+        std::vector<Ghost>::const_iterator itGhost = m_ghosts.begin();
+        while (itGhost != m_ghosts.end())
+        {
+            newMap[(*itGhost).getPosition().y][(*itGhost).getPosition().x] = 'X';
+            ++itGhost;
+        }
     }
 }
 
@@ -151,15 +160,24 @@ void PacmanGame::MoveEntities()
 
     while (itGhost != m_ghosts.end())
     {
-      char newMap[31][51];
-      onReplaceGhostByWall(newMap);
+        char newMap[31][51];
+
+        onReplaceGhostByWall(newMap, (*itGhost).GetState());
         if ((*itGhost).Move(newMap, newPacPos) == newPacPos)
         {
-            Die();
+            if (m_pacman.GetState() == Pacman::MORTAL)
+            {
+                Die();
+            }
+            else if (m_pacman.GetState() == Pacman::IMMORTAL)
+            {
+                (*itGhost).SetState(Ghost::DEAD);
+            }
         }
         ++itGhost;
     }
-    auto it = std::find_if(std::begin(m_gumPos), std::end(m_gumPos), [&](const Vector2<int> v){ return newPacPos == v; });
+    auto it = std::find_if(std::begin(m_gumPos), std::end(m_gumPos), [&](const Vector2<int> v)
+    { return newPacPos == v; });
     if (it != std::end(m_gumPos))
     {
         m_score += 10;

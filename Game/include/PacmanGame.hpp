@@ -32,7 +32,7 @@ private:
     void InitGame();
 
     void MoveEntities();
-  void  onReplaceGhostByWall(char newMap[31][51]) const;
+  void  onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState state) const;
 
 
     void Die();
