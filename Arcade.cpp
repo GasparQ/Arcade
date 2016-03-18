@@ -221,14 +221,8 @@ void        arcade::Arcade::Run()
             (this->*it->second)(); // on gere les event system ici
         if (_status == Arcade::Menu)
         {
-//            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, "./Animation/NcursesAnimation0"));
-            components.push(new GameComponent(Vector2<int>(0, 0), AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::CUBE, "test", "./sprites/pacman.bmp"));
-            /*
- * Vector2<int> const &pos, AComponent::ComponentColor color,
-                  Shapes sprite3D, std::string const &spriteText,
-                  std::string const &sprite2D
- */
-        }
+            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, "./Animation/NcursesAnimation0"));
+	    }
         if (_status == Arcade::Game)
         {
             components = (*currGame)->compute(key);
