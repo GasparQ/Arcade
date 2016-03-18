@@ -6,14 +6,45 @@
 #include "Commons/include/AnimationComponent.hpp"
 #include "Commons/include/ArcadeSystem.hpp"
 
-ArcadeMenu::ArcadeMenu()
+ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
+    arcade1(arcade1)
 {
     mode = frames.end();
     frameIdx = 0;
-    menuComponents.push_back(ActionComponent(Vector2<int>(1, 5), AComponent::ComponentColor::COLOR_WHITE, Vector2<int>(20, 3), "Graphic"));
-    menuComponents.push_back(ActionComponent(Vector2<int>(1, 8), AComponent::ComponentColor::COLOR_WHITE, Vector2<int>(20, 3), "Game"));
-    menuComponents.push_back(ActionComponent(Vector2<int>(1, 11), AComponent::ComponentColor::COLOR_WHITE, Vector2<int>(20, 3), "Play"));
+    menuComponents.push_back(
+            ActionComponent<arcade::eventSystem >(
+                    Vector2<int>(1, 5),
+                    AComponent::ComponentColor::COLOR_WHITE,
+                    Vector2<int>(20, 3),
+                    "Graphic",
+                    &arcade::Arcade::onPrevGraph,
+                    &arcade::Arcade::onNextGraph
+            )
+    );
+    menuComponents.push_back(
+            ActionComponent<arcade::eventSystem >(
+                    Vector2<int>(1, 9),
+                    AComponent::ComponentColor::COLOR_WHITE,
+                    Vector2<int>(20, 3),
+                    "Game",
+                    &arcade::Arcade::onPrevGame,
+                    &arcade::Arcade::onNextGame
+            )
+    );
+    menuComponents.push_back(
+            ActionComponent<arcade::eventSystem >(
+                    Vector2<int>(1, 13),
+                    AComponent::ComponentColor::COLOR_WHITE,
+                    Vector2<int>(20, 3),
+                    "Play"
+            )
+    );
     currComponent = menuComponents.begin();
+    sysEvents[ArcadeSystem::ArrowDown] = &ArcadeMenu::goDown;
+    sysEvents[ArcadeSystem::ArrowUp] = &ArcadeMenu::goUp;
+    sysEvents[ArcadeSystem::ArrowLeft] = &ArcadeMenu::prevAction;
+    sysEvents[ArcadeSystem::ArrowRight] = &ArcadeMenu::nextAction;
+    sysEvents[ArcadeSystem::Enter] = &ArcadeMenu::onEnter;
 }
 
 ArcadeMenu::~ArcadeMenu()
@@ -50,45 +81,70 @@ std::string ArcadeMenu::getNextFrame() const
     return framename;
 }
 
-void ArcadeMenu::eventManager(int key, std::string const &currGame, std::string const &currLib)
+std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
 {
-    switch (key)
+    std::stack<AComponent *>    components;
+    std::map<int, ArcadeMenu::events>::iterator   it;
+
+    if ((it = sysEvents.find(key)) != sysEvents.end())
+        (this->*(it->second))();
+    components.push(new AnimationComponent(1, 1, AComponent::ComponentColor::COLOR_WHITE, getNextFrame()));
+    components.push(new ActionComponent<arcade::eventSystem >(menuComponents[ArcadeMenu::GRAPHIC]));
+    components.push(new ActionComponent<arcade::eventSystem >(menuComponents[ArcadeMenu::GAME]));
+    components.push(new ActionComponent<arcade::eventSystem >(menuComponents[ArcadeMenu::PLAY]));
+    return components;
+}
+
+void ArcadeMenu::nextAction()
+{
+    const arcade::eventSystem eventSystem = (*currComponent).getAction2();
+
+    if (eventSystem != NULL)
     {
-        case ArcadeSystem::ArrowDown:
-            currComponent->unselect();
-            ++currComponent;
-            if (currComponent == menuComponents.end())
-                menuComponents.begin();
-            currComponent->select();
-            break;
-        case ArcadeSystem::ArrowUp:
-            currComponent->unselect();
-            if (currComponent == menuComponents.begin())
-                currComponent = menuComponents.end();
-            --currComponent;
-            currComponent->select();
-            break;
-        case ArcadeSystem::ArrowLeft:
-            menuComponents[ArcadeMenu::GRAPHIC].setSubTitle(currLib);
-            menuComponents[ArcadeMenu::GAME].setSubTitle(currGame);
-            break;
-        case ArcadeSystem::ArrowRight:
-            menuComponents[ArcadeMenu::GRAPHIC].setSubTitle(currLib);
-            menuComponents[ArcadeMenu::GAME].setSubTitle(currGame);
-            break;
-        default:
-            break;
+        (arcade1.*eventSystem)();
+        updateTexts();
     }
 }
 
-std::stack<AComponent *>        ArcadeMenu::updateMenu(int key, std::string const &currGame, std::string const &currLib)
+void ArcadeMenu::prevAction()
 {
-    std::stack<AComponent *>    components;
+    const arcade::eventSystem eventSystem = (*currComponent).getAction1();
 
-    eventManager(key, currGame, currLib);
-    components.push(new AnimationComponent(1, 1, AComponent::ComponentColor::COLOR_WHITE, getNextFrame()));
-    components.push(new ActionComponent(menuComponents[ArcadeMenu::GRAPHIC]));
-    components.push(new ActionComponent(menuComponents[ArcadeMenu::GAME]));
-    components.push(new ActionComponent(menuComponents[ArcadeMenu::PLAY]));
-    return components;
+    if (eventSystem != NULL)
+    {
+        (arcade1.*eventSystem)();
+        updateTexts();
+    }
+}
+
+void ArcadeMenu::goDown()
+{
+    (*currComponent).unselect();
+    ++currComponent;
+    if (currComponent == menuComponents.end())
+        currComponent = menuComponents.begin();
+    (*currComponent).select();
+}
+
+void ArcadeMenu::goUp()
+{
+    (*currComponent).unselect();
+    if (currComponent == menuComponents.begin())
+        currComponent = menuComponents.end();
+    --currComponent;
+    (*currComponent).select();
+}
+
+void ArcadeMenu::onEnter()
+{
+    if (menuComponents[ArcadeMenu::PLAY].isSelected())
+        arcade1.setStatus(arcade::Arcade::Game);
+    else
+        arcade1.setStatus(arcade::Arcade::Menu);
+}
+
+void ArcadeMenu::updateTexts()
+{
+    menuComponents[ArcadeMenu::GRAPHIC].setSubTitle(arcade1.getCurrentLibName());
+    menuComponents[ArcadeMenu::GAME].setSubTitle(arcade1.getCurrentGameName());
 }

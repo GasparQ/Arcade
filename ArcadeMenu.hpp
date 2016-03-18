@@ -12,6 +12,7 @@
 #include <stack>
 #include "Commons/include/AComponent.hpp"
 #include "Commons/include/ActionComponent.hpp"
+#include "Arcade.hpp"
 
 class ArcadeMenu
 {
@@ -22,24 +23,34 @@ public:
         GAME,
         PLAY
     };
-    ArcadeMenu();
+    ArcadeMenu(arcade::Arcade &);
     ~ArcadeMenu();
 
 public:
     void setFrames(std::string const &, std::string const &, int );
     void setMode(std::string const &);
     std::string getNextFrame() const;
-    std::stack<AComponent *>    updateMenu(int key, std::string const &currGame, std::string const &currLib);
+    std::stack<AComponent *>    updateMenu(int key);
 
 private:
-    void eventManager(int key, std::string const &currGame, std::string const &currLib);
+    typedef void (ArcadeMenu::*events)();
+    void nextAction();
+    void prevAction();
+    void goDown();
+    void goUp();
+    void onEnter();
+    void updateTexts();
 
 private:
+    arcade::Arcade                                              &arcade1;
     std::map<std::string, std::vector<std::string>>             frames;
     mutable size_t                                              frameIdx;
     std::map<std::string, std::vector<std::string>>::iterator   mode;
-    std::vector<ActionComponent>                                menuComponents;
-    std::vector<ActionComponent>::iterator                      currComponent;
+    std::vector<ActionComponent<arcade::eventSystem > >                                menuComponents;
+    std::vector<ActionComponent<arcade::eventSystem > >::iterator                      currComponent;
+
+private:
+    std::map<int, events >                                      sysEvents;
 };
 
 #endif //C_ARCADEMENU_HPP

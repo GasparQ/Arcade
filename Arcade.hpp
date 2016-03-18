@@ -59,7 +59,7 @@ namespace arcade
         void Init(std::string const &libname);
         void Run();
 
-    private:
+    public:
         void onPrevGraph();
 
         void onNextGraph();
@@ -74,23 +74,26 @@ namespace arcade
 
         void onExit();
 
+        std::string const   &getCurrentLibName() const;
+        std::string const   &getCurrentGameName() const;
+
+        void                setStatus(Status);
+
         /**
          * Attributes
          */
     private:
-        IGraph *lib;
-        std::vector<IGame *> games;
-        std::vector<IGame *>::iterator currGame;
-        std::vector<std::string> gameLibs;
-        std::vector<std::string>::iterator currGameName;
-        std::vector<std::string> libsName;
+        IGraph                              *lib;
+        std::vector<IGame *>                games;
+        std::vector<IGame *>::iterator      currGame;
+        std::vector<std::string>            libsName;
         std::vector<std::string>::iterator  currLibName;
-        std::map<std::string, void *> dlopenedlibs;
-        void *dllib;
-        std::map<int, arcade::eventSystem> eventSystem;
-        bool isRunning;
-      Status	_status;
-        regex_t lib_names;
+        std::map<std::string, void *>       dlopenedlibs;
+        void                                *dllib;
+        std::map<int, arcade::eventSystem>  eventSystem;
+        bool                                isRunning;
+        Status	                            _status;
+        regex_t                             lib_names;
 
         /**
          * Methods

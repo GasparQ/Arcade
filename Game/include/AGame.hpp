@@ -15,16 +15,21 @@ public:
         ALIVE,
         DEAD
     } GameState;
-    AGame()
+    AGame(std::string const &name) : name(name)
     {
         state = ALIVE;
     }
     virtual ~AGame()
     {
     }
+    virtual std::string const &getName() const
+    {
+        return name;
+    }
 
 protected:
     GameState           state;
+    const std::string   name;
 };
 
 #endif //C_AGAME_HPP

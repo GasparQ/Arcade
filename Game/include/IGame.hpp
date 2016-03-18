@@ -20,6 +20,7 @@ public:
     virtual ~IGame() {};
     virtual std::stack<AComponent *> compute(int keycode) = 0;
   virtual void restart() = 0;
+    virtual std::string const &getName() const = 0;
 };
 
 #endif

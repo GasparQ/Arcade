@@ -13,8 +13,6 @@
 #include "Arcade.hpp"
 #include "Exception/LoadException.hpp"
 #include "Commons/include/ArcadeSystem.hpp"
-#include "Commons/include/AnimationComponent.hpp"
-#include "Commons/include/GameComponent.hpp"
 #include "ArcadeMenu.hpp"
 
 const std::string    arcade::Arcade::libDir = "./lib/";
@@ -61,8 +59,9 @@ arcade::Arcade::~Arcade()
 
 void arcade::Arcade::Init(std::string const &libname)
 {
+    std::vector<std::string>            gameLibs;
+
     gameLibs = loadFilesFromDir(arcade::Arcade::gamesDir, lib_names);
-    currGameName = gameLibs.begin();
     loadGames(gameLibs);
     if (!isLibNameValid(libname, lib_names))
         throw arcade::InvalidFileFormatException(libname);
@@ -166,23 +165,15 @@ void        arcade::Arcade::onNextGraph()
 void        arcade::Arcade::onNextGame()
 {
     ++currGame;
-    ++currGameName;
     if (currGame == games.end())
-    {
         currGame = games.begin();
-        currGameName = gameLibs.begin();
-    }
 }
 
 void        arcade::Arcade::onPrevGame()
 {
     if (currGame == games.begin())
-    {
         currGame = games.end();
-        currGameName = gameLibs.end();
-    }
     --currGame;
-    --currGameName;
 }
 
 void        arcade::Arcade::onRestart()
@@ -207,7 +198,7 @@ void        arcade::Arcade::Run()
     std::chrono::milliseconds chronoMenu(130);
     std::chrono::milliseconds chronoGame(100);
     std::map<int, arcade::eventSystem>::iterator it;
-    ArcadeMenu  menu;
+    ArcadeMenu  menu(*this);
 
     menu.setFrames("text", "./Animation/NcursesAnimation", 4);
     menu.setMode("text");
@@ -233,7 +224,7 @@ void        arcade::Arcade::Run()
             (this->*it->second)(); // on gere les event system ici
         if (_status == Arcade::Menu)
         {
-            components = menu.updateMenu(key, *currGameName, *currLibName);
+            components = menu.updateMenu(key);
 	    }
         if (_status == Arcade::Game)
         {
@@ -242,4 +233,19 @@ void        arcade::Arcade::Run()
         lib->display(components);
         std::this_thread::sleep_for(_status == Arcade::Game ? chronoGame : chronoMenu);
     }
+}
+
+const std::string &arcade::Arcade::getCurrentLibName() const
+{
+    return *currLibName;
+}
+
+std::string const &arcade::Arcade::getCurrentGameName() const
+{
+    return (*currGame)->getName();
+}
+
+void arcade::Arcade::setStatus(arcade::Arcade::Status status)
+{
+    _status = status;
 }

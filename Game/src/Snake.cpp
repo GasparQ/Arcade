@@ -14,6 +14,7 @@
 //TODO void play(void)
 
 Snake::Snake() :
+        AGame("Snake"),
         apple(0, 0),
         score(0),
         snakeOri(UP),

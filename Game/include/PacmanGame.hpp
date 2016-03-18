@@ -12,8 +12,9 @@
 #include "Pacman.hpp"
 #include "Ghost.hpp"
 #include "../../Commons/include/AComponent.hpp"
+#include "AGame.hpp"
 
-class PacmanGame : public IGame
+class PacmanGame : public AGame
 {
 public:
     PacmanGame();

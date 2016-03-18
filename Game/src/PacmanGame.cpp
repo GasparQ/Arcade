@@ -10,7 +10,8 @@
 // TODO: lives
 // Ghost spawn after 10 seconds
 // Super pac gums
-PacmanGame::PacmanGame()
+PacmanGame::PacmanGame() :
+    AGame("Pacman")
 {
     // Spawns 4 ghosts
     m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_GREEN));
