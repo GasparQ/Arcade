@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Mar 18 15:00:11 2016 Victor Gouet
+// Last update Fri Mar 18 15:02:08 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -230,13 +230,15 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *animation,
   //     _displayFile(animation->getPos().x, animation->getPos().y, (*it).second, win);
   //     return ;
   //   }
-  fd.open(animation->getFileName().c_str());
-  if (fd.is_open())
-    {
-      buffer << fd.rdbuf();
-      _displayFile(animation->getPos().x, animation->getPos().y, buffer.str(), win);
-      fd.close();
-    }
+  (void)animation;
+  (void)win;
+  // fd.open(animation->getFileName().c_str());
+  // if (fd.is_open())
+  //   {
+  //     buffer << fd.rdbuf();
+  //     _displayFile(animation->getPos().x, animation->getPos().y, buffer.str(), win);
+  //     fd.close();
+  //   }
 }
 
 void		NCursesGraph::_cacheClear()
