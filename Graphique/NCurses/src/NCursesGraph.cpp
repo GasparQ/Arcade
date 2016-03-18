@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Mar 18 15:50:00 2016 Victor Gouet
+// Last update Fri Mar 18 16:10:46 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -76,7 +76,7 @@ NCursesGraph::NCursesGraph()
   keycodeMap[10] = ArcadeSystem::Enter;
   keycodeMap[263] = ArcadeSystem::Backspace;
 
-  _stdscr = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 0, 0);
+  _stdscr = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 20, 0, 0);
 }
 
 NCursesGraph::~NCursesGraph()
@@ -189,7 +189,7 @@ void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreCompon
 }
 
 void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
-					   ncr::Window *win) const
+					   ncr::Window *win)
 {
   unsigned int	i;
   int		newX;
@@ -202,16 +202,18 @@ void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
     {
       if (contenu[i] == '$')
 	{
-	  win->write(newX, newY, ' ', A_REVERSE | COLOR_PAIR(3));
+	  win->write(newX, newY, ' ', A_REVERSE | COLOR_PAIR(6));
+	  _cacheGame.push(s_cache(Vector2<int>(newX, newY), " ", win));
 	}
       else if (contenu[i] == '\n')
 	{
 	  ++newY;
-	  newX = 0;
+	  newX = x - 1;
 	}
       else
 	{
 	  win->write(newX, newY, contenu[i], 0);
+	  _cacheGame.push(s_cache(Vector2<int>(newX, newY), " ", win));
 	}
       ++newX;
       ++i;
@@ -225,8 +227,6 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *animation,
   std::stringstream				buffer;
   std::map<std::string, std::string>::iterator	it;
 
-  // std::cout << "LOL" << std::endl;
-  // sleep(1);
   if ((it = _fileCache.find(animation->getFileName())) != _fileCache.end())
     {
       _displayFile(animation->getPos().x, animation->getPos().y, (*it).second, win);
@@ -244,10 +244,11 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *animation,
 
 void		NCursesGraph::_cacheClear()
 {
-  if (gameWin == NULL)
-    return ;
   if (_cacheGame.empty())
-    gameWin->clear();
+    {
+      if (gameWin)
+	gameWin->clear();
+    }
   while (!_cacheGame.empty())
     {
       std::string space(_cacheGame.top().str);
