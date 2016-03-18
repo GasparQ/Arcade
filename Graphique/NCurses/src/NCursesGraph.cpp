@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Mar 18 15:33:13 2016 Victor Gouet
+// Last update Fri Mar 18 15:50:00 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -211,7 +211,7 @@ void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
 	}
       else
 	{
-	  win->write(newX, newY, contenu[i], A_REVERSE | COLOR_PAIR(3));
+	  win->write(newX, newY, contenu[i], 0);
 	}
       ++newX;
       ++i;
@@ -221,7 +221,7 @@ void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
 void		NCursesGraph::_displayComponent(AnimationComponent const *animation,
 						ncr::Window *win)
 {
-  std::ofstream					fd;
+  std::ifstream					fd;
   std::stringstream				buffer;
   std::map<std::string, std::string>::iterator	it;
 
@@ -232,13 +232,12 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *animation,
       _displayFile(animation->getPos().x, animation->getPos().y, (*it).second, win);
       return ;
     }
-  // (void)animation;
-  // (void)win;
   fd.open(animation->getFileName().c_str());
   if (fd.is_open())
     {
       buffer << fd.rdbuf();
       _displayFile(animation->getPos().x, animation->getPos().y, buffer.str(), win);
+      _fileCache[animation->getFileName()] = buffer.str();
       fd.close();
     }
 }
@@ -295,6 +294,8 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
     gameWin->refresh();
   if (UIWin)
     UIWin->refresh();
+  if (_stdscr)
+    _stdscr->refresh();
 }
 
 extern "C" IGraph *loadLib()
