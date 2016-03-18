@@ -81,6 +81,8 @@ namespace arcade
         IGraph *lib;
         std::vector<IGame *> games;
         std::vector<IGame *>::iterator currGame;
+        std::vector<std::string> gameLibs;
+        std::vector<std::string>::iterator currGameName;
         std::vector<std::string> libsName;
         std::vector<std::string>::iterator  currLibName;
         std::map<std::string, void *> dlopenedlibs;

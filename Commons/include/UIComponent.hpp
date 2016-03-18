@@ -21,13 +21,13 @@ private:
   std::string text;
 
 public:
-  UIComponent(Vector2<int> const &pos, enum ComponentColor color,
-	      Vector2<int> const &dim, std::string const &);
-  virtual ~UIComponent();
+UIComponent(Vector2<int> const &pos, enum ComponentColor color,
+		Vector2<int> const &dim, std::string const &);
+virtual ~UIComponent();
 
 public:
-  Vector2<int> const &getDim() const;
-  std::string const &getText() const;
+Vector2<int> const &getDim() const;
+std::string const &getText() const;
 };
 
 #endif

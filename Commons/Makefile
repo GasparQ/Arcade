@@ -19,7 +19,8 @@ SRCS	=	src/AComponent.cpp		\
 		src/GameComponent.cpp		\
 		src/UIComponent.cpp		\
 		src/HighScoreComponent.cpp	\
-		src/LoadHighScore.cpp
+		src/LoadHighScore.cpp \
+		src/ActionComponent.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 

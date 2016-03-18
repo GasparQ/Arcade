@@ -61,9 +61,8 @@ arcade::Arcade::~Arcade()
 
 void arcade::Arcade::Init(std::string const &libname)
 {
-    std::vector<std::string> gameLibs;
-
     gameLibs = loadFilesFromDir(arcade::Arcade::gamesDir, lib_names);
+    currGameName = gameLibs.begin();
     loadGames(gameLibs);
     if (!isLibNameValid(libname, lib_names))
         throw arcade::InvalidFileFormatException(libname);
@@ -167,15 +166,23 @@ void        arcade::Arcade::onNextGraph()
 void        arcade::Arcade::onNextGame()
 {
     ++currGame;
+    ++currGameName;
     if (currGame == games.end())
+    {
         currGame = games.begin();
+        currGameName = gameLibs.begin();
+    }
 }
 
 void        arcade::Arcade::onPrevGame()
 {
     if (currGame == games.begin())
+    {
         currGame = games.end();
+        currGameName = gameLibs.end();
+    }
     --currGame;
+    --currGameName;
 }
 
 void        arcade::Arcade::onRestart()
@@ -197,7 +204,8 @@ void        arcade::Arcade::onExit()
 void        arcade::Arcade::Run()
 {
     int key;
-    std::chrono::milliseconds chrono(100);
+    std::chrono::milliseconds chronoMenu(130);
+    std::chrono::milliseconds chronoGame(100);
     std::map<int, arcade::eventSystem>::iterator it;
     ArcadeMenu  menu;
 
@@ -225,13 +233,13 @@ void        arcade::Arcade::Run()
             (this->*it->second)(); // on gere les event system ici
         if (_status == Arcade::Menu)
         {
-            components.push(new AnimationComponent(5, 1, AComponent::ComponentColor::COLOR_WHITE, menu.getNextFrame()));
+            components = menu.updateMenu(key, *currGameName, *currLibName);
 	    }
         if (_status == Arcade::Game)
         {
             components = (*currGame)->compute(key);
         }
         lib->display(components);
-        std::this_thread::sleep_for(chrono);
+        std::this_thread::sleep_for(_status == Arcade::Game ? chronoGame : chronoMenu);
     }
 }
