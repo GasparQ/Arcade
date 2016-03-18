@@ -52,6 +52,11 @@ namespace arcade
         static const std::string createLib;
         static const std::string createGame;
 
+      typedef enum {
+	Game,
+	Menu
+      }		Status;
+
         void Run();
 
     private:
@@ -82,6 +87,7 @@ namespace arcade
         void *dllib;
         std::map<int, arcade::eventSystem> eventSystem;
         bool isRunning;
+      Status	_status;
 
         /**
          * Methods

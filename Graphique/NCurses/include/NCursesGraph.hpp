@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Tue Mar 15 18:52:42 2016 Victor Gouet
+// Last update Fri Mar 18 11:33:25 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -57,6 +57,8 @@ private:
   void			_displayComponent(UIComponent const *, ncr::Window *win);
   void			_cacheClear();
   bool			isResizeGood() const;
+  ncr::Window		*onCreateBoard();
+  ncr::Window		*onCreateUI();
 };
 
 #endif

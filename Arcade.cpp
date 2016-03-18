@@ -24,6 +24,7 @@ arcade::Arcade::Arcade(std::string const &libname)
     regex_t reg;
     std::vector<std::string> gameLibs;
 
+    _status = Arcade::Menu;
     isRunning = true;
     eventSystem[ArcadeSystem::PrevGame] = &arcade::Arcade::onPrevGame;
     eventSystem[ArcadeSystem::NextGame] = &arcade::Arcade::onNextGame;
@@ -153,7 +154,6 @@ void        arcade::Arcade::onNextGraph()
     if (currLibName == libsName.end())
         currLibName = libsName.begin();
     loadGraph();
-
 }
 
 void        arcade::Arcade::onNextGame()
@@ -178,7 +178,7 @@ void        arcade::Arcade::onRestart()
 
 void        arcade::Arcade::onHome()
 {
-
+  _status = Arcade::Menu;
 }
 
 void        arcade::Arcade::onExit()
@@ -192,20 +192,32 @@ void        arcade::Arcade::Run()
     std::chrono::milliseconds chrono(100);
     std::map<int, arcade::eventSystem>::iterator it;
 
+    // TODO FAIRE LE MENU 
+    // ET DONC C'EST PAS Arcade::Game mais Arcade::Menu
+    _status = Arcade::Game;
+    // A ENLEVER POUR APRES
+
     while (isRunning)
     {
-        try
-        {
-            key = lib->eventManagment();
-        }
-        catch (std::exception exception)
-        {
-            std::cerr << exception.what() << std::endl;
-            return;
-        }
-        if ((it = this->eventSystem.find(key)) != eventSystem.end())
-            (this->*it->second)(); // on gere les event system ici
-        lib->display((*currGame)->compute(key));
-        std::this_thread::sleep_for(chrono);
+      try
+	{
+	  key = lib->eventManagment();
+	}
+      catch (std::exception exception)
+	{
+	  std::cerr << exception.what() << std::endl;
+	  return;
+	}
+      if ((it = this->eventSystem.find(key)) != eventSystem.end())
+	(this->*it->second)(); // on gere les event system ici
+      if (_status == Arcade::Menu)
+	{
+	  
+	}
+      if (_status == Arcade::Game)
+	{
+	  lib->display((*currGame)->compute(key));
+	}
+      std::this_thread::sleep_for(chrono);
     }
 }

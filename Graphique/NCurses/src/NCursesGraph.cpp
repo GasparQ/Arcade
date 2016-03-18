@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Wed Mar 16 13:38:20 2016 Victor Gouet
+// Last update Fri Mar 18 11:41:42 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -28,9 +28,9 @@ NCursesGraph::NCursesGraph()
   if (!isResizeGood())
     NCurses::destroy(), throw ResizeFailed();
 
-  _board = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 0, 0);
-  gameWin = new ncr::Window(ArcadeSystem::winHeight, ArcadeSystem::winWidth, 1, 1, *_board);
-  UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
+  // _board = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 0, 0);
+  // gameWin = new ncr::Window(ArcadeSystem::winHeight, ArcadeSystem::winWidth, 1, 1, *_board);
+  // UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
 
   if (NCurses::initPair(1, COLOR_RED, COLOR_BLACK) == ERR)
     NCurses::destroy(), throw NCursesSystemFailed();
@@ -47,13 +47,13 @@ NCursesGraph::NCursesGraph()
   if (NCurses::initPair(7, COLOR_WHITE, COLOR_BLACK) == ERR)
     NCurses::destroy(), throw NCursesSystemFailed();
 
-  _board->attrON(A_REVERSE | COLOR_PAIR(4));
-  _board->makeBorder(' ', ' ', ' ');
-  _board->attrOFF(A_REVERSE);
+  // _board->attrON(A_REVERSE | COLOR_PAIR(4));
+  // _board->makeBorder(' ', ' ', ' ');
+  // _board->attrOFF(A_REVERSE);
 
-  UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
-  UIWin->makeBorder(' ', ' ', ' ');
-  UIWin->attrOFF(A_REVERSE);
+  // UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
+  // UIWin->makeBorder(' ', ' ', ' ');
+  // UIWin->attrOFF(A_REVERSE);
 
   keycodeMap[260] = ArcadeSystem::ArrowLeft;
   keycodeMap[261] = ArcadeSystem::ArrowRight;
@@ -113,11 +113,40 @@ int	NCursesGraph::eventManagment()
   return (keycode);
 }
 
+ncr::Window		*NCursesGraph::onCreateBoard()
+{
+  if (_board == NULL)
+    {
+      _board = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 0, 0);
+      gameWin = new ncr::Window(ArcadeSystem::winHeight, ArcadeSystem::winWidth, 1, 1, *_board);
+      _board->attrON(A_REVERSE | COLOR_PAIR(4));
+      _board->makeBorder(' ', ' ', ' ');
+      _board->attrOFF(A_REVERSE);
+      _board->refresh();
+    }
+  return (gameWin);
+}
+
+ncr::Window		*NCursesGraph::onCreateUI()
+{
+  if (UIWin == NULL)
+    {
+      UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
+      UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
+      UIWin->makeBorder(' ', ' ', ' ');
+      UIWin->attrOFF(A_REVERSE);
+    }
+  return (UIWin);
+}
+
 void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
 						ncr::Window *win)
 {
   Vector2<int>	pos = gameComponent->getPos();
 
+  onCreateBoard();
+  if (!win)
+    return ;
   if (gameComponent->getSpriteText() != " ")
     win->attrON(COLOR_PAIR(gameComponent->getColor()));
   else
@@ -132,6 +161,9 @@ void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr
 {
   Vector2<int>	pos = uiComponent->getPos();
 
+  onCreateUI();
+  if (!win)
+    return ;
   win->attrON(COLOR_PAIR(uiComponent->getColor()) | A_BOLD);
   win->print(pos.x, pos.y, "%s", uiComponent->getText().c_str());
   _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), win));
@@ -145,18 +177,15 @@ void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreCompon
   
   while (arrayComponent[i] != NULL)
     {
-      // if (i == 1)
-      // 	win->attrON(A_UNDERLINE);
-      // if (i == 2)
-      // 	win->attrON(A_BLINK);
       _displayComponent(arrayComponent[i], win);
-      // win->attrOFF(A_BLINK | A_UNDERLINE);
       ++i;
     }
 }
 
 void		NCursesGraph::_cacheClear()
 {
+  if (gameWin == NULL)
+    return ;
   if (_cacheGame.empty())
     gameWin->clear();
   while (!_cacheGame.empty())
@@ -196,8 +225,10 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       delete obj.top();
       obj.pop();
     }
-  gameWin->refresh();
-  UIWin->refresh();
+  if (gameWin)
+    gameWin->refresh();
+  if (UIWin)
+    UIWin->refresh();
 }
 
 extern "C" IGraph *loadLib()
