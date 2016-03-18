@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Fri Mar 18 11:33:25 2016 Victor Gouet
+// Last update Fri Mar 18 14:34:57 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -13,12 +13,15 @@
 
 # include <string>
 # include <map>
+# include <fstream>
+
 # include "../../include/IGraph.hpp"
 # include "Window.hpp"
 # include "NCurses.hpp"
 # include "../../../Commons/include/GameComponent.hpp"
 # include "../../../Commons/include/UIComponent.hpp"
 # include "../../../Commons/include/HighScoreComponent.hpp"
+# include "../../../Commons/include/AnimationComponent.hpp"
 # include "../../Exception/NCursesException.hpp"
 
 typedef struct	s_cache
@@ -50,15 +53,19 @@ private:
   std::stack<t_cache>		_cacheGame;
   ncr::Window			*UIWin;
   std::map<int, int>		keycodeMap;
+  ncr::Window			*_stdscr;
+  std::map<std::string, std::string>	_fileCache;
 
 private:
   void			_displayComponent(GameComponent const *, ncr::Window *win);
   void			_displayComponent(HighScoreComponent const *, ncr::Window *win);
   void			_displayComponent(UIComponent const *, ncr::Window *win);
+  void			_displayComponent(AnimationComponent const *, ncr::Window *win);
   void			_cacheClear();
   bool			isResizeGood() const;
   ncr::Window		*onCreateBoard();
   ncr::Window		*onCreateUI();
+  void			_displayFile(int x, int y, std::string const &contenu) const;
 };
 
 #endif

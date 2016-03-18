@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Mar 18 11:41:42 2016 Victor Gouet
+// Last update Fri Mar 18 14:42:58 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -16,6 +16,8 @@ NCursesGraph::NCursesGraph()
   _board = NULL;
   gameWin = NULL;
   UIWin = NULL;
+  _stdscr = NULL;
+
   if (NCurses::init() == NULL)
     NCurses::destroy(), throw NCursesSystemFailed();
   if (NCurses::noEchoMode() == ERR)
@@ -73,6 +75,8 @@ NCursesGraph::NCursesGraph()
   keycodeMap[112] = ArcadeSystem::Pause;
   keycodeMap[10] = ArcadeSystem::Enter;
   keycodeMap[263] = ArcadeSystem::Backspace;
+
+  _stdscr = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 0, 0);
 }
 
 NCursesGraph::~NCursesGraph()
@@ -83,6 +87,8 @@ NCursesGraph::~NCursesGraph()
     delete UIWin;
   if (_board)
     delete _board;
+  if (_stdscr)
+    delete _stdscr;
   NCurses::destroy();
 }
 
@@ -182,6 +188,56 @@ void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreCompon
     }
 }
 
+void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu) const
+{
+  unsigned int	i;
+  int		newX;
+  int		newY;
+
+  i = 0;
+  newX = x;
+  newY = y;
+  while (i < contenu.size())
+    {
+      if (contenu[i] == '$')
+	{
+	  _stdscr->write(newX, newY, ' ', A_REVERSE | COLOR_PAIR(3));
+	}
+      else if (contenu[i] == '\n')
+	{
+	  ++newY;
+	  newX = 0;
+	}
+      else
+	{
+	  _stdscr->write(newX, newY, contenu[i], A_REVERSE | COLOR_PAIR(3));
+	}
+      ++newX;
+      ++i;
+    }
+}
+
+void		NCursesGraph::_displayComponent(AnimationComponent const *animation,
+						ncr::Window *win)
+{
+  std::ofstream					fd;
+  std::stringstream				buffer;
+  std::map<std::string, std::string>::iterator	it;
+
+  if ((it = _fileCache.find(animation->getFileName())) != _fileCache.end())
+    {
+      _displayFile(animation->getPos().x, animation->getPos().y, (*it).second);
+      return ;
+    }
+  fd.open(animation->getFileName().c_str());
+  if (fd.is_open())
+    {
+      buffer << fd.rdbuf();
+      _displayFile(animation->getPos().x, animation->getPos().y, buffer.str());
+      fd.close();
+    }
+}
+
 void		NCursesGraph::_cacheClear()
 {
   if (gameWin == NULL)
@@ -206,6 +262,7 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
   GameComponent		*gameComponent;
   UIComponent		*uiComponent;
   HighScoreComponent	*highScore;
+  AnimationComponent	*animation;
 
   _cacheClear();
   while (!obj.empty())
@@ -221,6 +278,10 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       else if ((highScore = dynamic_cast<HighScoreComponent *>(obj.top())) != NULL)
 	{
 	  _displayComponent(highScore, gameWin);
+	}
+      else if ((animation = dynamic_cast<AnimationComponent *>(obj.top())) != NULL)
+	{
+	  _displayComponent(animation, _stdscr);
 	}
       delete obj.top();
       obj.pop();
