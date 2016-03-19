@@ -140,6 +140,15 @@ extern "C" IGame *loadGame()
     return (new PacmanGame());
 }
 
+extern "C" void Play(void)
+{
+
+}
+
+void    whereAmI(PacmanGame const &pacman)
+{
+}
+
 void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState state) const
 {
     int y;
