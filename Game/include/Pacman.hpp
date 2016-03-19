@@ -19,7 +19,6 @@ public:
         MORTAL = 1,
         IMMORTAL = 2
     };
-    void UpdateState(PacmanState state);
     PacmanState GetState() const;
     void SetState(PacmanState state);
 
