@@ -19,7 +19,20 @@ Ghost::~Ghost()
 Vector2<int> const& Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
 {
     Astar as(map);
-    std::string dir = as.pathFind(m_pos.x, m_pos.y, (m_state == HUNTING) ? pacmanPos.x : 25, (m_state == HUNTING) ? pacmanPos.y : 15);
+    std::string dir;
+
+    switch (m_state)
+    {
+        case HUNTING:
+            dir = as.pathFind(m_pos.x, m_pos.y, pacmanPos.x, pacmanPos.y);
+            break;
+        case SCARED:
+            dir = as.pathFind(m_pos.x, m_pos.y, 25, 15);
+            break;
+        case DEAD:
+            dir = as.pathFind(m_pos.x, m_pos.y, 25, 16);
+            break;
+    }
 
     if (dir[0] == '0')
     {

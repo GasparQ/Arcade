@@ -176,7 +176,15 @@ void PacmanGame::MoveEntities()
         // If it's a special pacgum
         if ((*it).bIsSpecial())
         {
+            // Pacman becomes immortal
             m_pacman.SetState(Pacman::PacmanState::IMMORTAL);
+            // And all the ghosts are scared
+            itGhost = m_ghosts.begin();
+            while (itGhost != m_ghosts.end())
+            {
+                (*itGhost).SetState(Ghost::SCARED);
+                ++itGhost;
+            }
         }
         m_score += 10;
         m_gums.remove(*it);

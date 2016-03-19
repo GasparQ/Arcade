@@ -77,6 +77,10 @@ void OpenGlGraph::InitLighting() const
     glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
     glEnable(GL_COLOR_MATERIAL);
 
+    // activates alpha channel
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
     glClearColor(0.0, 0.0, 0.0, 0.0);
     glShadeModel(GL_SMOOTH);
     glEnable(GL_CULL_FACE);
@@ -143,7 +147,8 @@ void OpenGlGraph::DrawCube(Vector2<int> pos, GLbyte r, GLbyte g, GLbyte b, doubl
     glTranslated(-pos.x, -posY, -pos.y);
 
     // Byte color
-    glColor3ub(r, g, b);
+    //glColor3ub(r, g, b);
+    glColor4ub(r, g, b, 255);
 
     glutSolidCube(1);
 
