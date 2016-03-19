@@ -15,10 +15,10 @@ public:
                     Vector2<int> const &dim, std::string const &string,
                     action1Type f_action = (action1Type)0, action2Type s_action = (action2Type)0) :
             UIComponent(pos, color, dim, string),
-            action1(f_action),
-            action2(s_action),
             subTitle(""),
-            selected(false)
+            selected(false),
+            action1(f_action),
+            action2(s_action)
     {
     }
     ~ActionComponent()
@@ -27,10 +27,10 @@ public:
     }
     ActionComponent(ActionComponent const &component) :
             UIComponent(component.getPos(), component.getColor(), component.getDim(), component.getText()),
-            action1(component.action1),
-            action2(component.action2),
             subTitle(component.subTitle),
-            selected(component.selected)
+            selected(component.selected),
+            action1(component.action1),
+            action2(component.action2)
     {
     }
 
@@ -65,10 +65,11 @@ public:
     }
 
 private:
-    action1Type     action1;
-    action2Type     action2;
     std::string     subTitle;
     bool            selected;
+    action1Type     action1;
+    action2Type     action2;
+
 };
 
 #endif //C_ACTIONCOMPONENT_HPP
