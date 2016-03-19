@@ -20,7 +20,7 @@ Vector2<int> const &Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
 {
     Astar as(map);
     std::string dir;
-    Vector2<int> target(0, 0);
+    Vector2<int> target;
 
     if (m_state == HUNTING)
     {
@@ -34,8 +34,7 @@ Vector2<int> const &Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
     }
     else if (m_state == DEAD)
     {
-        // TODO: FIXME !!
-        dir = as.pathFind(m_pos.x, m_pos.y, 25, 17);
+        dir = as.pathFind(m_pos.x, m_pos.y, 25, 16);
     }
 
     /*switch (m_state)
