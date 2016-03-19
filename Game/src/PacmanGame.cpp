@@ -8,7 +8,7 @@
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
 
-// TODO: lives
+// TODO:
 // Ghost spawn after 10 seconds
 // score reset on level change ?
 PacmanGame::PacmanGame() :
@@ -30,6 +30,8 @@ PacmanGame::PacmanGame() :
     StorePacgums();
 
     m_score = 0;
+
+    m_lives = 3;
 }
 
 PacmanGame::~PacmanGame()
@@ -49,7 +51,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
                                             "score : " + std::to_string(m_score)).size()) / 2), 1),
                                     AComponent::COLOR_WHITE,
                                     Vector2<int>(5, 1), "score : " + std::to_string(m_score)));
-        output.push(new UIComponent(Vector2<int>(0, 1),
+        output.push(new UIComponent(Vector2<int>(1, 1),
                                     AComponent::COLOR_WHITE,
                                     Vector2<int>(5, 1), "lives : " + std::to_string(m_lives)));
 
@@ -117,6 +119,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 
 void PacmanGame::restart()
 {
+    m_score = 0;
     InitGame();
 }
 
@@ -129,7 +132,6 @@ void PacmanGame::InitGame()
     m_pacman.ResetPosition();
     m_pacman.SetState(Pacman::MORTAL);
     m_gums.clear();
-    m_lives = 3;
     StorePacgums();
 }
 
