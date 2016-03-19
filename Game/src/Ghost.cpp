@@ -6,7 +6,7 @@
 #include "../../Commons/Astar.hpp"
 
 Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<int>(25, 15), color, "", " ",
-                                 GameComponent::Shapes::CUBE)
+                                                                 GameComponent::Shapes::CUBE)
 {
     m_color_original = m_color;
 }
@@ -16,21 +16,29 @@ Ghost::~Ghost()
 
 }
 
-Vector2<int> const& Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
+Vector2<int> const &Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
 {
     Astar as(map);
     std::string dir;
 
     switch (m_state)
     {
+        // The ghost follows pacman
         case HUNTING:
             dir = as.pathFind(m_pos.x, m_pos.y, pacmanPos.x, pacmanPos.y);
             break;
+            // The ghost flees pacman
         case SCARED:
-            dir = as.pathFind(m_pos.x, m_pos.y, 25, 15);
+            dir = as.pathFind(m_pos.x, m_pos.y, pacmanPos.x, pacmanPos.y);
+
+            dir[0] = (map[m_pos.y][m_pos.x - 1] != 'X' && dir[0] != '2') ? '2' :
+                     (map[m_pos.y][m_pos.x + 1] != 'X' && dir[0] != '0') ? '0' :
+                     (map[m_pos.y - 1][m_pos.x] != 'X' && dir[0] != '3') ? '3' :
+                     (map[m_pos.y + 1][m_pos.x] != 'X' && dir[0] != '1') ? '1' : dir[0];
             break;
+            // The ghost goes to the spawn
         case DEAD:
-            dir = as.pathFind(m_pos.x, m_pos.y, 25, 16);
+            dir = as.pathFind(m_pos.x, m_pos.y, 25, 17);
             break;
     }
 
@@ -59,22 +67,22 @@ Vector2<int> const& Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
     return m_pos;
 }
 
-void Ghost::goUp(char map[31][51])
+void Ghost::goUp(char [31][51])
 {
     //PacmanCharacter::goUp(map);
 }
 
-void Ghost::goDown(char (*map)[51])
+void Ghost::goDown(char (*)[51])
 {
     //PacmanCharacter::goDown(map);
 }
 
-void Ghost::goLeft(char (*map)[51])
+void Ghost::goLeft(char (*)[51])
 {
     //PacmanCharacter::goLeft(map);
 }
 
-void Ghost::goRight(char (*map)[51])
+void Ghost::goRight(char (*)[51])
 {
     //PacmanCharacter::goRight(map);
 }

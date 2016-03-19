@@ -141,7 +141,7 @@ void OpenGlGraph::DrawCube(Vector2<int> pos, AComponent::ComponentColor color, d
     glPopMatrix();
 }
 
-void OpenGlGraph::DrawCube(Vector2<int> pos, GLbyte r, GLbyte g, GLbyte b, double posY) const
+void OpenGlGraph::DrawCube(Vector2<int> pos, GLubyte r, GLubyte g, GLubyte b, double posY) const
 {
     glPushMatrix();
     glTranslated(-pos.x, -posY, -pos.y);

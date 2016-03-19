@@ -102,6 +102,7 @@ void PacmanGame::InitGame()
         it->ResetPosition();
     }
     m_pacman.ResetPosition();
+    m_pacman.SetState(Pacman::MORTAL);
     m_gums.clear();
     StorePacgums();
 }

@@ -34,7 +34,7 @@ private:
 
     void DrawCube(Vector2<int> pos, AComponent::ComponentColor color, double posY = 0) const;
 
-    void DrawCube(Vector2<int> pos, GLbyte r, GLbyte g, GLbyte b, double posY = 0) const;
+    void DrawCube(Vector2<int> pos, GLubyte r, GLubyte g, GLubyte b, double posY = 0) const;
 
     void DrawTerrain(int sizeX, int sizeY) const;
 
