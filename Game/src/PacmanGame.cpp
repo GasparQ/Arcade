@@ -15,9 +15,9 @@ PacmanGame::PacmanGame() :
 {
     // Spawns 4 ghosts
     m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_GREEN));
-    m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_CYAN));
+    /*m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_CYAN));
     m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_RED));
-    m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_MAGENTA));
+    m_ghosts.push_back(Ghost(AComponent::ComponentColor::COLOR_MAGENTA));*/
 
     // Sets keycodes
     keycodes[ArcadeSystem::ArrowDown] = &PacmanCharacter::goDown;
@@ -183,7 +183,10 @@ void PacmanGame::MoveEntities()
             itGhost = m_ghosts.begin();
             while (itGhost != m_ghosts.end())
             {
-                (*itGhost).SetState(Ghost::SCARED);
+                if ((*itGhost).GetState() == Ghost::HUNTING)
+                {
+                    (*itGhost).SetState(Ghost::SCARED);
+                }
                 ++itGhost;
             }
         }

@@ -123,7 +123,7 @@ void OpenGlGraph::DrawSphere(Vector2<int> pos, AComponent::ComponentColor color,
     glTranslated(-pos.x, 0, -pos.y);
     param = gluNewQuadric();
     glColor4d(colors[color].r, colors[color].g, colors[color].b, 1);
-    gluSphere(param, size, 20, 20);
+    gluSphere(param, size, 20, (size >= 1) ? 20 : (size >= 0.5) ? 10 : 5);
     gluDeleteQuadric(param);
     glPopMatrix();
 }
