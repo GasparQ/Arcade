@@ -64,3 +64,8 @@ Pacman::PacmanState Pacman::GetState() const
 {
     return m_state;
 }
+
+void Pacman::SetState(Pacman::PacmanState state)
+{
+    m_state = state;
+}

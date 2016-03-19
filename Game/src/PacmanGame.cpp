@@ -9,7 +9,7 @@
 
 // TODO: lives
 // Ghost spawn after 10 seconds
-// Super pac gums
+// score reset on level change ?
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
@@ -32,7 +32,11 @@ PacmanGame::PacmanGame() :
         {
             if (m_map[y][x] == '.')
             {
-                m_gumPos.push_back(Vector2<int>(x, y));
+                m_gums.push_back(Gums(Vector2<int>(x, y), false));
+            }
+            else if (m_map[y][x] == 'o')
+            {
+                m_gums.push_back(Gums(Vector2<int>(x, y), true));
             }
         }
     }
@@ -79,18 +83,21 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
                 output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_BLUE,
                                               GameComponent::Shapes::CUBE, " ", ""));
             }
-            else if (m_map[y][x] == 'o')
-            {
-                output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_WHITE,
-                                              GameComponent::Shapes::SPHERE_MEDIUM, "o", ""));
-            }
         }
     }
     // Gums
-    for (auto var : m_gumPos)
+    for (auto var : m_gums)
     {
-        output.push(new GameComponent(var, AComponent::ComponentColor::COLOR_WHITE, GameComponent::Shapes::SPHERE_SMALL,
-                                      "*", ""));
+        if (!var.bIsSpecial())
+        {
+            output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
+                                          GameComponent::Shapes::SPHERE_SMALL, "*", ""));
+        }
+        else
+        {
+            output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
+                                          GameComponent::Shapes::SPHERE_MEDIUM, "o", ""));
+        }
     }
     return output;
 }
@@ -108,14 +115,18 @@ void PacmanGame::InitGame()
         it->ResetPosition();
     }
     m_pacman.ResetPosition();
-    m_gumPos.clear();
+    m_gums.clear();
     for (int y = 0; y < 30; ++y)
     {
         for (int x = 0; x < 50; ++x)
         {
             if (m_map[y][x] == '.')
             {
-                m_gumPos.push_back(Vector2<int>(x, y));
+                m_gums.push_back(Gums(Vector2<int>(x, y), false));
+            }
+            else if (m_map[y][x] == 'o')
+            {
+                m_gums.push_back(Gums(Vector2<int>(x, y), true));
             }
         }
     }
@@ -177,14 +188,19 @@ void PacmanGame::MoveEntities()
         }
         ++itGhost;
     }
-    auto it = std::find_if(std::begin(m_gumPos), std::end(m_gumPos), [&](const Vector2<int> v)
-    { return newPacPos == v; });
-    if (it != std::end(m_gumPos))
+    auto it = std::find_if(std::begin(m_gums), std::end(m_gums), [&](const Gums v)
+    { return newPacPos == v.getPos(); });
+    if (it != std::end(m_gums))
     {
+        // If it's a special pacgum
+        if ((*it).bIsSpecial())
+        {
+            m_pacman.SetState(Pacman::PacmanState::IMMORTAL);
+        }
         m_score += 10;
-        m_gumPos.remove(*it);
+        m_gums.remove(*it);
     }
-    if (m_gumPos.empty())
+    if (m_gums.empty())
     {
         InitGame();
     }

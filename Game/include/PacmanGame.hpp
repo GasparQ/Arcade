@@ -71,9 +71,33 @@ private:
                           "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"};
 
 private:
+    class Gums
+    {
+    public:
+        Gums(Vector2<int> pos, bool bIsSpecialGum) : m_pos(pos), m_bIsSpecialGum(bIsSpecialGum)
+        {}
+        ~Gums()
+        {}
+
+        Vector2<int> getPos() const
+        { return m_pos; }
+
+        bool bIsSpecial() const
+        { return m_bIsSpecialGum; }
+
+    public:
+        bool operator==(Gums const& other) const
+        { return m_pos == other.m_pos; }
+
+    private:
+        Vector2<int> m_pos;
+        bool m_bIsSpecialGum;
+    };
+
+private:
     Pacman m_pacman;
     std::vector<Ghost> m_ghosts;
-    std::list<Vector2<int> > m_gumPos;
+    std::list<Gums> m_gums;
     std::map<int, keyfunc> keycodes;
     int m_score = 0;
 };
