@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Sat Mar 19 12:30:46 2016 Victor Gouet
+// Last update Sat Mar 19 19:39:02 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -278,7 +278,7 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
   UIComponent		*uiComponent;
   HighScoreComponent	*highScore;
   AnimationComponent	*animation;
-  ActionComponent<>	*action;
+  // ActionComponent<>	*action;
 
   _cacheClear();
   while (!obj.empty())
@@ -287,10 +287,10 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       	{
       	  _displayComponent(gameComponent, gameWin);
       	}
-      else if ((action = reinterpret_cast<ActionComponent<> *>(obj.top())) != NULL)
-      	{
-      	  _displayComponent(action, _stdscr);
-      	}
+      // else if ((action = reinterpret_cast<ActionComponent<> *>(obj.top())) != NULL)
+      // 	{
+      // 	  _displayComponent(action, _stdscr);
+      // 	}
       else if ((uiComponent = dynamic_cast<UIComponent *>(obj.top())) != NULL)
       	{
   	  _displayComponent(uiComponent, UIWin);
