@@ -34,7 +34,11 @@ PacmanGame::PacmanGame() :
 
     m_lives = 3;
 
-    m_chronos.emplace_back(new Chrono<Pacman, Pacman::PacmanState (Pacman::*)()>(60));
+    //Chrono<Pacman, void (Pacman::*)()> *c = new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition);
+    //c->SetEvent(m_pacman, &Pacman::ResetPosition);
+    //c->SetEvent(this, void (PacmanGame::*InitGame)());
+    //m_chronos.push_back(std::unique_ptr<AChrono>(c));
+    m_chronos.emplace_back(new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition));
 }
 
 PacmanGame::~PacmanGame()
@@ -150,7 +154,7 @@ extern "C" void Play(void)
 
 }
 
-void    whereAmI(PacmanGame const &pacman)
+void whereAmI(PacmanGame const &pacman)
 {
 }
 
@@ -281,10 +285,9 @@ void PacmanGame::UpdateChrono()
     for (auto it = m_chronos.begin(); it != m_chronos.end(); ++it)
     {
         (*it).get()->Update();
-        //std::cout << "Remaining time = " << (*it).get()->GetRemainingTime() << std::endl;
+        if ((*it).get()->GetRemainingTime() <= 0)
+        {
+            (*it).get()->TriggerEvent();
+        }
     }
-    /*if (c.GetRemainingTime() <= 0)
-    {
-        c.TriggerEvent();
-    }*/
 }
