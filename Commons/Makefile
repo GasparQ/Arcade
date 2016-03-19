@@ -19,11 +19,13 @@ SRCS	=	src/AComponent.cpp		\
 		src/GameComponent.cpp		\
 		src/UIComponent.cpp		\
 		src/HighScoreComponent.cpp	\
-		src/LoadHighScore.cpp
+		src/LoadHighScore.cpp \
+		Astar.cpp \
+		Chrono.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Wextra -std=c++11 -I ./include -fPIC -I ./HighScore/include/
+CPPFLAGS	=	-W -Wall -Wextra -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./
 
 $(NAME):	$(OBJS)
 	ar rc $(NAME) $(OBJS)

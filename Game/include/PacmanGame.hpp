@@ -8,11 +8,14 @@
 #include <vector>
 #include <map>
 #include <list>
+#include <chrono>
+#include <memory>
 #include "IGame.hpp"
 #include "Pacman.hpp"
 #include "Ghost.hpp"
 #include "../../Commons/include/AComponent.hpp"
 #include "AGame.hpp"
+#include "../../Commons/Chrono.hpp"
 
 class PacmanGame : public AGame
 {
@@ -38,6 +41,8 @@ private:
     void StorePacgums();
 
     void Die();
+
+    void UpdateChrono();
 
 private:
     // 50x30
@@ -104,7 +109,7 @@ private:
     std::map<int, keyfunc> keycodes;
     size_t m_score = 0;
     int m_lives = 3;
+    std::vector<std::unique_ptr<AChrono> > m_chronos;
 };
-
 
 #endif //CPP_ARCADE_PACMAN_HPP

@@ -7,6 +7,7 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
+#include "../../Commons/Chrono.hpp"
 
 // TODO:
 // Ghost spawn after 10 seconds
@@ -32,6 +33,8 @@ PacmanGame::PacmanGame() :
     m_score = 0;
 
     m_lives = 3;
+
+    m_chronos.emplace_back(new Chrono<Pacman, Pacman::PacmanState (Pacman::*)()>(60));
 }
 
 PacmanGame::~PacmanGame()
@@ -97,6 +100,8 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
                                               GameComponent::Shapes::SPHERE_MEDIUM, "o", "sprites/apple.bmp"));
             }
         }
+        // Update chrono
+        UpdateChrono();
     }
     else if (state == AGame::DEAD)
     {
@@ -267,4 +272,19 @@ void PacmanGame::StorePacgums()
             }
         }
     }
+}
+
+void PacmanGame::UpdateChrono()
+{
+    //Chrono <Pacman, Pacman::PacmanState (Pacman::*)()> c(60);
+
+    for (auto it = m_chronos.begin(); it != m_chronos.end(); ++it)
+    {
+        (*it).get()->Update();
+        //std::cout << "Remaining time = " << (*it).get()->GetRemainingTime() << std::endl;
+    }
+    /*if (c.GetRemainingTime() <= 0)
+    {
+        c.TriggerEvent();
+    }*/
 }
