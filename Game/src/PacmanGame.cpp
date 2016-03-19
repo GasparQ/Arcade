@@ -129,12 +129,12 @@ void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState 
         ++y;
     }
     // If the ghost is alive other ghosts are obstacles
-    if (state != Ghost::DEAD)
+    if (state == Ghost::HUNTING)
     {
         std::vector<Ghost>::const_iterator itGhost = m_ghosts.begin();
         while (itGhost != m_ghosts.end())
         {
-            if ((*itGhost).GetState() != Ghost::DEAD)
+            if ((*itGhost).GetState() == Ghost::HUNTING)
             {
                 newMap[(*itGhost).getPosition().y][(*itGhost).getPosition().x] = 'X';
             }

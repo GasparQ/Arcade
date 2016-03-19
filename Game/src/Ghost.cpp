@@ -29,14 +29,20 @@ Vector2<int> const &Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
             break;
             // The ghost flees pacman
         case SCARED:
-            dir = as.pathFind(m_pos.x, m_pos.y, pacmanPos.x, pacmanPos.y);
+        {
+            // We target the farthet corner from pacman
+            Vector2<int> target;
+            target.x = (pacmanPos.x < 25) ? 48 : 1;
+            target.y = (pacmanPos.y < 15) ? 28 : 1;
+            dir = as.pathFind(m_pos.x, m_pos.y, target.x, target.y);
 
-            dir[0] = (map[m_pos.y][m_pos.x - 1] != 'X' && dir[0] != '2') ? '2' :
+            /*dir[0] = (map[m_pos.y][m_pos.x - 1] != 'X' && dir[0] != '2') ? '2' :
                      (map[m_pos.y][m_pos.x + 1] != 'X' && dir[0] != '0') ? '0' :
                      (map[m_pos.y - 1][m_pos.x] != 'X' && dir[0] != '3') ? '3' :
-                     (map[m_pos.y + 1][m_pos.x] != 'X' && dir[0] != '1') ? '1' : dir[0];
+                     (map[m_pos.y + 1][m_pos.x] != 'X' && dir[0] != '1') ? '1' : dir[0];*/
             break;
             // The ghost goes to the spawn
+        }
         case DEAD:
             dir = as.pathFind(m_pos.x, m_pos.y, 25, 17);
             break;
