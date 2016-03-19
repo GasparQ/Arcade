@@ -32,8 +32,10 @@ private:
     void InitGame();
 
     void MoveEntities();
-  void  onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState state) const;
 
+    void onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState state) const;
+
+    void StorePacgums();
 
     void Die();
 
@@ -75,9 +77,10 @@ private:
     {
     public:
         Gums(Vector2<int> pos, bool bIsSpecialGum) : m_pos(pos), m_bIsSpecialGum(bIsSpecialGum)
-        {}
+        { }
+
         ~Gums()
-        {}
+        { }
 
         Vector2<int> getPos() const
         { return m_pos; }
@@ -86,7 +89,7 @@ private:
         { return m_bIsSpecialGum; }
 
     public:
-        bool operator==(Gums const& other) const
+        bool operator==(Gums const &other) const
         { return m_pos == other.m_pos; }
 
     private:

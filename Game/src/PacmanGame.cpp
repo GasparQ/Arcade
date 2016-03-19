@@ -26,20 +26,7 @@ PacmanGame::PacmanGame() :
     keycodes[ArcadeSystem::ArrowUp] = &PacmanCharacter::goUp;
 
     // Store all the gums
-    for (int y = 0; y < 30; ++y)
-    {
-        for (int x = 0; x < 50; ++x)
-        {
-            if (m_map[y][x] == '.')
-            {
-                m_gums.push_back(Gums(Vector2<int>(x, y), false));
-            }
-            else if (m_map[y][x] == 'o')
-            {
-                m_gums.push_back(Gums(Vector2<int>(x, y), true));
-            }
-        }
-    }
+    StorePacgums();
 }
 
 PacmanGame::~PacmanGame()
@@ -116,20 +103,7 @@ void PacmanGame::InitGame()
     }
     m_pacman.ResetPosition();
     m_gums.clear();
-    for (int y = 0; y < 30; ++y)
-    {
-        for (int x = 0; x < 50; ++x)
-        {
-            if (m_map[y][x] == '.')
-            {
-                m_gums.push_back(Gums(Vector2<int>(x, y), false));
-            }
-            else if (m_map[y][x] == 'o')
-            {
-                m_gums.push_back(Gums(Vector2<int>(x, y), true));
-            }
-        }
-    }
+    StorePacgums();
 }
 
 extern "C" IGame *loadGame()
@@ -159,12 +133,16 @@ void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState 
         std::vector<Ghost>::const_iterator itGhost = m_ghosts.begin();
         while (itGhost != m_ghosts.end())
         {
-            newMap[(*itGhost).getPosition().y][(*itGhost).getPosition().x] = 'X';
+            if ((*itGhost).GetState() != Ghost::DEAD)
+            {
+                newMap[(*itGhost).getPosition().y][(*itGhost).getPosition().x] = 'X';
+            }
             ++itGhost;
         }
     }
 }
 
+// Updates the positions of pacman and all the ghosts
 void PacmanGame::MoveEntities()
 {
     Vector2<int> newPacPos = m_pacman.Move(m_map);
@@ -175,6 +153,7 @@ void PacmanGame::MoveEntities()
         char newMap[31][51];
 
         onReplaceGhostByWall(newMap, (*itGhost).GetState());
+        // If pacman is immortal, it kills the ghost, otherwise it dies
         if ((*itGhost).Move(newMap, newPacPos) == newPacPos)
         {
             if (m_pacman.GetState() == Pacman::MORTAL)
@@ -184,10 +163,12 @@ void PacmanGame::MoveEntities()
             else if (m_pacman.GetState() == Pacman::IMMORTAL)
             {
                 (*itGhost).SetState(Ghost::DEAD);
+                m_score += 100;
             }
         }
         ++itGhost;
     }
+    // Looks if pacman is eating a gum
     auto it = std::find_if(std::begin(m_gums), std::end(m_gums), [&](const Gums v)
     { return newPacPos == v.getPos(); });
     if (it != std::end(m_gums))
@@ -200,6 +181,7 @@ void PacmanGame::MoveEntities()
         m_score += 10;
         m_gums.remove(*it);
     }
+    // If we ate the gums we restart the level
     if (m_gums.empty())
     {
         InitGame();
@@ -209,4 +191,22 @@ void PacmanGame::MoveEntities()
 void PacmanGame::Die()
 {
     InitGame();
+}
+
+void PacmanGame::StorePacgums()
+{
+    for (int y = 0; y < 30; ++y)
+    {
+        for (int x = 0; x < 50; ++x)
+        {
+            if (m_map[y][x] == '.')
+            {
+                m_gums.push_back(Gums(Vector2<int>(x, y), false));
+            }
+            else if (m_map[y][x] == 'o')
+            {
+                m_gums.push_back(Gums(Vector2<int>(x, y), true));
+            }
+        }
+    }
 }
