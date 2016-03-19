@@ -44,7 +44,7 @@ Vector2<int> const &Pacman::Move(char m_map[31][51], Vector2<int>)
     return m_pos;
 }
 
-Pacman::Pacman() : PacmanCharacter(Vector2<int>(25, 18), AComponent::ComponentColor::COLOR_YELLOW, "", " ",
+Pacman::Pacman() : PacmanCharacter(Vector2<int>(25, 18), AComponent::ComponentColor::COLOR_YELLOW, "sprites/apple.bmp", " ",
                                    GameComponent::Shapes::SPHERE_LARGE)
 {
 

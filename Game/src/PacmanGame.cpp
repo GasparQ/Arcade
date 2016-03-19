@@ -77,7 +77,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
                 if (m_map[y][x] == 'X')
                 {
                     output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_BLUE,
-                                                  GameComponent::Shapes::CUBE, " ", ""));
+                                                  GameComponent::Shapes::CUBE, " ", "sprites/apple.bmp"));
                 }
             }
         }
@@ -87,12 +87,12 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
             if (!var.bIsSpecial())
             {
                 output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
-                                              GameComponent::Shapes::SPHERE_SMALL, "*", ""));
+                                              GameComponent::Shapes::SPHERE_SMALL, "*", "sprites/apple.bmp"));
             }
             else
             {
                 output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
-                                              GameComponent::Shapes::SPHERE_MEDIUM, "o", ""));
+                                              GameComponent::Shapes::SPHERE_MEDIUM, "o", "sprites/apple.bmp"));
             }
         }
     }

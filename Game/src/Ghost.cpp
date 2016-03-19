@@ -5,7 +5,7 @@
 #include "../include/Ghost.hpp"
 #include "../../Commons/Astar.hpp"
 
-Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<int>(25, 15), color, "", " ",
+Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<int>(25, 15), color, "sprites/apple.bmp", " ",
                                                                  GameComponent::Shapes::CUBE)
 {
     m_color_original = m_color;
