@@ -6,6 +6,7 @@
 #include "../include/PacmanGame.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/UIComponent.hpp"
+#include "../../Commons/include/HighScoreComponent.hpp"
 
 // TODO: lives
 // Ghost spawn after 10 seconds
@@ -27,6 +28,8 @@ PacmanGame::PacmanGame() :
 
     // Store all the gums
     StorePacgums();
+
+    m_score = 0;
 }
 
 PacmanGame::~PacmanGame()
@@ -38,54 +41,77 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 {
     std::stack<AComponent *> output;
     std::map<int, keyfunc>::iterator it;
+    HighScoreComponent *highScoreComponent;
 
-    output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string(
-                                        "score : " + std::to_string(m_score)).size()) / 2), 1),
-                                AComponent::COLOR_WHITE,
-                                Vector2<int>(5, 1), "score : " + std::to_string(m_score)));
-
-    if ((it = keycodes.find(keycode)) != keycodes.end())
+    if (state == AGame::ALIVE)
     {
-        (m_pacman.*it->second)(this->m_map);
-    }
+        output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string(
+                                            "score : " + std::to_string(m_score)).size()) / 2), 1),
+                                    AComponent::COLOR_WHITE,
+                                    Vector2<int>(5, 1), "score : " + std::to_string(m_score)));
+        output.push(new UIComponent(Vector2<int>(0, 1),
+                                    AComponent::COLOR_WHITE,
+                                    Vector2<int>(5, 1), "lives : " + std::to_string(m_lives)));
 
-    MoveEntities();
-
-    // Pacman
-    output.push(new GameComponent(m_pacman.getPosition(), m_pacman.getColor(), m_pacman.getShape3D(),
-                                  m_pacman.getShapeCurses(), m_pacman.getShape2D()));
-    // Ghosts
-    for (auto var : m_ghosts)
-    {
-        output.push(new GameComponent(var.getPosition(), var.getColor(), var.getShape3D(), var.getShapeCurses(),
-                                      var.getShape2D()));
-    }
-    // Terrain
-    for (int y = 0; y < 30; ++y)
-    {
-        for (int x = 0; x < 50; ++x)
+        if ((it = keycodes.find(keycode)) != keycodes.end())
         {
-            if (m_map[y][x] == 'X')
+            (m_pacman.*it->second)(this->m_map);
+        }
+
+        MoveEntities();
+
+        // Pacman
+        output.push(new GameComponent(m_pacman.getPosition(), m_pacman.getColor(), m_pacman.getShape3D(),
+                                      m_pacman.getShapeCurses(), m_pacman.getShape2D()));
+        // Ghosts
+        for (auto var : m_ghosts)
+        {
+            output.push(new GameComponent(var.getPosition(), var.getColor(), var.getShape3D(), var.getShapeCurses(),
+                                          var.getShape2D()));
+        }
+        // Terrain
+        for (int y = 0; y < 30; ++y)
+        {
+            for (int x = 0; x < 50; ++x)
             {
-                output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_BLUE,
-                                              GameComponent::Shapes::CUBE, " ", ""));
+                if (m_map[y][x] == 'X')
+                {
+                    output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_BLUE,
+                                                  GameComponent::Shapes::CUBE, " ", ""));
+                }
+            }
+        }
+        // Gums
+        for (auto var : m_gums)
+        {
+            if (!var.bIsSpecial())
+            {
+                output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
+                                              GameComponent::Shapes::SPHERE_SMALL, "*", ""));
+            }
+            else
+            {
+                output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
+                                              GameComponent::Shapes::SPHERE_MEDIUM, "o", ""));
             }
         }
     }
-    // Gums
-    for (auto var : m_gums)
+    else if (state == AGame::DEAD)
     {
-        if (!var.bIsSpecial())
+        highScoreComponent = new HighScoreComponent("Snake", m_score);
+        highScoreComponent->UpdatePseudo(keycode);
+        if (keycode == ArcadeSystem::Enter && highScoreComponent->submit())
         {
-            output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
-                                          GameComponent::Shapes::SPHERE_SMALL, "*", ""));
+            state = AGame::GameState::ALIVE;
+            delete (highScoreComponent);
+            InitGame();
         }
         else
         {
-            output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
-                                          GameComponent::Shapes::SPHERE_MEDIUM, "o", ""));
+            output.push(highScoreComponent);
         }
     }
+
     return output;
 }
 
@@ -96,7 +122,6 @@ void PacmanGame::restart()
 
 void PacmanGame::InitGame()
 {
-    m_score = 0;
     for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
     {
         it->ResetPosition();
@@ -104,6 +129,7 @@ void PacmanGame::InitGame()
     m_pacman.ResetPosition();
     m_pacman.SetState(Pacman::MORTAL);
     m_gums.clear();
+    m_lives = 3;
     StorePacgums();
 }
 
@@ -202,7 +228,16 @@ void PacmanGame::MoveEntities()
 
 void PacmanGame::Die()
 {
-    InitGame();
+    --m_lives;
+    if (m_lives <= 0)
+    {
+        // Set game state to game over
+        state = AGame::DEAD;
+    }
+    else
+    {
+        InitGame();
+    }
 }
 
 void PacmanGame::StorePacgums()

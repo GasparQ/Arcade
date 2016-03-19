@@ -102,7 +102,8 @@ private:
     std::vector<Ghost> m_ghosts;
     std::list<Gums> m_gums;
     std::map<int, keyfunc> keycodes;
-    int m_score = 0;
+    size_t m_score = 0;
+    int m_lives = 3;
 };
 
 
