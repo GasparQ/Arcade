@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Fri Mar 18 16:09:36 2016 Victor Gouet
+// Last update Sat Mar 19 12:17:13 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -23,6 +23,7 @@
 # include "../../../Commons/include/HighScoreComponent.hpp"
 # include "../../../Commons/include/AnimationComponent.hpp"
 # include "../../Exception/NCursesException.hpp"
+# include "../../../Commons/include/ActionComponent.hpp"
 
 typedef struct	s_cache
 {
@@ -61,6 +62,7 @@ private:
   void			_displayComponent(HighScoreComponent const *, ncr::Window *win);
   void			_displayComponent(UIComponent const *, ncr::Window *win);
   void			_displayComponent(AnimationComponent const *, ncr::Window *win);
+  void			_displayComponent(ActionComponent<> const *, ncr::Window *win);
   void			_cacheClear();
   bool			isResizeGood() const;
   ncr::Window		*onCreateBoard();
