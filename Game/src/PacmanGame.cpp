@@ -255,13 +255,17 @@ void PacmanGame::MoveEntities()
                                    [&](std::unique_ptr<IChrono>& c)
                                    { return *c.get() == std::string("Pacgum"); });
 
-            // We prevent the first power to cancel the new one
+            // If the powerup is already active, we reset it
             if (chronoDup != m_chronos.end())
             {
-                m_chronos.erase(chronoDup);
+                (*chronoDup).get()->ResetChrono();
             }
-
-            m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::PacmanPowerUpEnd, "Pacgum"));
+            else
+            {
+                m_chronos.emplace_back(
+                        new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::PacmanPowerUpEnd,
+                                                                       "Pacgum"));
+            }
         }
         m_score += 10;
         m_gums.remove(*it);

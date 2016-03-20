@@ -18,6 +18,7 @@ public:
     virtual void Update() = 0;
     virtual double GetRemainingTime() const = 0;
     virtual void TriggerEvent() = 0;
+    virtual void ResetChrono() = 0;
 
     virtual bool operator==(std::string const& name) const
     {
@@ -38,7 +39,8 @@ public:
     Chrono(double time, T & object, U method, std::string const& name) :
             m_remaining_time(time),
             m_object(object),
-            m_method(method)
+            m_method(method),
+            m_start_time(m_remaining_time)
     {
         m_last_clock = std::chrono::steady_clock::now();
         m_chronoName = name;
@@ -67,6 +69,11 @@ public:
         (m_object.*m_method)();
     }
 
+    virtual void ResetChrono()
+    {
+        m_remaining_time = m_start_time;
+    }
+
 public:
     virtual bool operator==(Chrono<T, U> const& other) const
     {
@@ -76,6 +83,7 @@ public:
 private:
     std::chrono::steady_clock::time_point m_last_clock;
     double m_remaining_time = 0;
+    double m_start_time = 0;
     T & m_object;
     U m_method;
 };
