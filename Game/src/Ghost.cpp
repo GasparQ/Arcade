@@ -129,3 +129,9 @@ Ghost::GhostState Ghost::GetState() const
 {
     return m_state;
 }
+
+void Ghost::ResetPosition()
+{
+    m_state = FREEZE;
+    PacmanCharacter::ResetPosition();
+}

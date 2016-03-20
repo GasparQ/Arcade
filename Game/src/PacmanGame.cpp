@@ -143,6 +143,8 @@ void PacmanGame::InitGame()
     m_pacman.SetState(Pacman::MORTAL);
     m_gums.clear();
     StorePacgums();
+    m_chronos.clear();
+    m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts));
 }
 
 extern "C" IGame *loadGame()
@@ -236,6 +238,7 @@ void PacmanGame::MoveEntities()
                 }
                 ++itGhost;
             }
+            m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(4, *this, &PacmanGame::PacmanPowerUpEnd));
         }
         m_score += 10;
         m_gums.remove(*it);
@@ -257,6 +260,7 @@ void PacmanGame::Die()
     }
     else
     {
+        m_score = 0;
         InitGame();
     }
 }
@@ -279,6 +283,7 @@ void PacmanGame::StorePacgums()
     }
 }
 
+// Update all the timers currently active
 void PacmanGame::UpdateChrono()
 {
     //Chrono <Pacman, Pacman::PacmanState (Pacman::*)()> c(60);
@@ -306,6 +311,15 @@ void PacmanGame::FreeGhosts()
 {
     for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
     {
-        (*it).SetState(Ghost::HUNTING);
+        if ((*it).GetState() == Ghost::FREEZE || (*it).GetState() == Ghost::SCARED)
+        {
+            (*it).SetState(Ghost::HUNTING);
+        }
     }
+}
+
+void PacmanGame::PacmanPowerUpEnd()
+{
+    m_pacman.SetState(Pacman::MORTAL);
+    FreeGhosts();
 }
