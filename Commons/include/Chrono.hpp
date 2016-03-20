@@ -38,9 +38,9 @@ class Chrono : public IChrono
 public:
     Chrono(double time, T & object, U method, std::string const& name) :
             m_remaining_time(time),
+            m_start_time(m_remaining_time),
             m_object(object),
-            m_method(method),
-            m_start_time(m_remaining_time)
+            m_method(method)
     {
         m_last_clock = std::chrono::steady_clock::now();
         m_chronoName = name;

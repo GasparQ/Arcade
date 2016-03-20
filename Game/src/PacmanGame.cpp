@@ -31,19 +31,13 @@ PacmanGame::PacmanGame() :
     keycodes[ArcadeSystem::ArrowRight] = &PacmanCharacter::goRight;
     keycodes[ArcadeSystem::ArrowUp] = &PacmanCharacter::goUp;
 
-    // Store all the gums
-    StorePacgums();
-
-    m_score = 0;
-
-    m_lives = 3;
-
+    InitGame();
     //Chrono<Pacman, void (Pacman::*)()> *c = new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition);
     //c->SetEvent(m_pacman, &Pacman::ResetPosition);
     //c->SetEvent(this, void (PacmanGame::*InitGame)());
     //m_chronos.push_back(std::unique_ptr<IChrono>(c));
     //m_chronos.emplace_back(new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition));
-    m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts, "Start"));
+    //m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts, "Start"));
 }
 
 PacmanGame::~PacmanGame()
