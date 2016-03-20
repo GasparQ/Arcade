@@ -1,0 +1,6 @@
+<map id="ArcadeMenu::ArcadeMenu" name="ArcadeMenu::ArcadeMenu">
+<area shape="rect" id="node2" href="$classarcade_1_1_arcade.html#aa4c1c8ff55122722f89b735429f62a22" title="arcade::Arcade::onPrevGraph" alt="" coords="229,5,424,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_arcade.html#aeedde13827bf680250fc039b4b860b9f" title="arcade::Arcade::onNextGraph" alt="" coords="229,56,424,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_arcade.html#a64946d51be23ad1c7e1d0856445d88a5" title="arcade::Arcade::onPrevGame" alt="" coords="229,107,424,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_arcade.html#ac4f0996cbf00d763719b671a7e0f16a1" title="arcade::Arcade::onNextGame" alt="" coords="229,157,424,184"/>
+</map>

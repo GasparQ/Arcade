@@ -1,0 +1,7 @@
+<map id="Snake::compute" name="Snake::compute">
+<area shape="rect" id="node2" href="$class_high_score_component.html#a68a9a13345949f7eb3e48bcf7a38d446" title="HighScoreComponent\l::UpdatePseudo" alt="" coords="171,5,322,46"/>
+<area shape="rect" id="node3" href="$class_high_score_component.html#a7f753ddb2c0bc1b891437599c7aaca4a" title="HighScoreComponent\l::submit" alt="" coords="171,70,322,111"/>
+<area shape="rect" id="node6" href="$class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5" title="Snake::goAhead" alt="" coords="187,136,306,163"/>
+<area shape="rect" id="node4" href="$class_load_high_score.html#a23f8e0823e3d81c22925028c386fa8db" title="LoadHighScore::setHighScore" alt="" coords="371,52,570,79"/>
+<area shape="rect" id="node5" href="$class_load_high_score.html#abe988bee8c025745dc8dd7c9ea73a63a" title="LoadHighScore::flush" alt="" coords="397,103,544,129"/>
+</map>

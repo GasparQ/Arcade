@@ -1,0 +1,6 @@
+<map id="OpenGlGraph::OpenGlGraph" name="OpenGlGraph::OpenGlGraph">
+<area shape="rect" id="node2" href="$freeglut__std_8h.html#abc547c43592e2ce465a58abed544f282" title="glutInit" alt="" coords="295,5,356,32"/>
+<area shape="rect" id="node3" href="$_s_d_l_8h.html#a8fc8d35348d7c74bad8392d776c937b8" title="SDL_Init" alt="" coords="289,56,362,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__video_8h.html#a42565088bdb739a5353fd67abbe235d2" title="Create a m_window with the specified position, dimensions, and flags. " alt="" coords="255,107,396,133"/>
+<area shape="rect" id="node5" href="$_s_d_l__video_8h.html#a0e14c935cf304133278893bf6c1d2691" title="Create an OpenGL context for use with an OpenGL m_window, and make it current. " alt="" coords="243,157,407,184"/>
+</map>

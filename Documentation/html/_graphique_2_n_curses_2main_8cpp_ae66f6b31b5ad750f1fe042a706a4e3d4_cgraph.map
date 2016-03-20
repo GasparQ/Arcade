@@ -1,0 +1,18 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_n_curses.html#af7702747ff02e2c52149a2848c2e69d4" title="NCurses::init" alt="" coords="145,5,244,32"/>
+<area shape="rect" id="node3" href="$class_n_curses.html#a25c0e004ef9752bb1a18716b230b830a" title="NCurses::hide_cursor" alt="" coords="120,56,269,83"/>
+<area shape="rect" id="node4" href="$class_n_curses.html#a65190a08e5badd23e047002a76296562" title="NCurses::noEchoMode" alt="" coords="115,107,274,133"/>
+<area shape="rect" id="node5" href="$classncr_1_1_menu.html#a4b156a97535a96fca71d6478cc1e64f8" title="ncr::Menu::getMainWindow" alt="" coords="104,157,285,184"/>
+<area shape="rect" id="node6" href="$classncr_1_1_window.html#a3712f314fff14b12c1bff101ed06efef" title="ncr::Window::makeBorder" alt="" coords="108,208,281,235"/>
+<area shape="rect" id="node7" href="$classncr_1_1_menu.html#aa6d2c6f0720fc79cdfddaa8aa11efa6e" title="ncr::Menu::addSubWin" alt="" coords="117,259,272,285"/>
+<area shape="rect" id="node8" href="$classncr_1_1_window.html#a9b669ddb5eb60c2436bb2ce808efa92f" title="ncr::Window::setAttrON" alt="" coords="113,309,276,336"/>
+<area shape="rect" id="node9" href="$classncr_1_1_window.html#ab419990d32284464f7b10867bff2261c" title="ncr::Window::getHeight" alt="" coords="115,360,274,387"/>
+<area shape="rect" id="node10" href="$classncr_1_1_window.html#af9b5d3248b9cea9fca4673873d551516" title="ncr::Window::getWidth" alt="" coords="117,411,272,437"/>
+<area shape="rect" id="node11" href="$classncr_1_1_window.html#aa7b963c2955ae03cbcb26f21577709b6" title="ncr::Window::print" alt="" coords="131,461,259,488"/>
+<area shape="rect" id="node12" href="$classncr_1_1_window.html#adcfe4ca7b01cd661db50fb737fb46d70" title="ncr::Window::getWin" alt="" coords="123,512,267,539"/>
+<area shape="rect" id="node13" href="$classncr_1_1_window.html#ac8e197fd4b8ee6deba90d2ae50f10391" title="ncr::Window::setAttrOFF" alt="" coords="111,563,279,589"/>
+<area shape="rect" id="node14" href="$classncr_1_1_menu.html#af5e08905803f6c420cde7b7fea5c398d" title="ncr::Menu::refresh" alt="" coords="131,613,259,640"/>
+<area shape="rect" id="node15" href="$class_n_curses.html#abe3e1afc017bb3ce3445154959d7a759" title="NCurses::getCarac" alt="" coords="127,664,262,691"/>
+<area shape="rect" id="node16" href="$classncr_1_1_menu.html#ab9588d039f1c6b6adc2b27bd82d04210" title="ncr::Menu::selectWindow" alt="" coords="109,715,280,741"/>
+<area shape="rect" id="node17" href="$class_n_curses.html#af414bd8a510fd0199d99113860acea4d" title="NCurses::destroy" alt="" coords="132,765,257,792"/>
+</map>

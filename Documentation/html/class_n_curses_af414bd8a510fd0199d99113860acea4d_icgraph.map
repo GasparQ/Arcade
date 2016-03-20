@@ -1,0 +1,5 @@
+<map id="NCurses::destroy" name="NCurses::destroy">
+<area shape="rect" id="node2" href="$_graphique_2_n_curses_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="260,5,311,32"/>
+<area shape="rect" id="node3" href="$class_n_curses_graph.html#a81664d75c7c63a468d67428af8e387c4" title="NCursesGraph::NCursesGraph" alt="" coords="183,56,387,83"/>
+<area shape="rect" id="node4" href="$class_n_curses_graph.html#a6839a71d0d2c0abdb98b0f9215a4d824" title="NCursesGraph::~NCursesGraph" alt="" coords="179,107,391,133"/>
+</map>

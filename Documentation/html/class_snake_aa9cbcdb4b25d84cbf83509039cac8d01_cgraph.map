@@ -1,0 +1,6 @@
+<map id="Snake::Snake" name="Snake::Snake">
+<area shape="rect" id="node2" href="$class_snake.html#a3e75465f8982e67b5f156432c0a0868b" title="Snake::goDown" alt="" coords="157,5,272,32"/>
+<area shape="rect" id="node3" href="$class_snake.html#a8e8fdb0a694a05d267671bfd3ef67054" title="Snake::goLeft" alt="" coords="163,56,266,83"/>
+<area shape="rect" id="node4" href="$class_snake.html#a1850bb9cf00539a2bf2462ce4dfb69e3" title="Snake::goRight" alt="" coords="159,107,271,133"/>
+<area shape="rect" id="node5" href="$class_snake.html#a79b58cff227bab98162e179b7fff1e65" title="Snake::goUp" alt="" coords="165,157,264,184"/>
+</map>

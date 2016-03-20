@@ -1,0 +1,8 @@
+<map id="SDLGraph::SDLGraph" name="SDLGraph::SDLGraph">
+<area shape="rect" id="node2" href="$_s_d_l_8h.html#a8fc8d35348d7c74bad8392d776c937b8" title="SDL_Init" alt="" coords="242,5,315,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__video_8h.html#a42565088bdb739a5353fd67abbe235d2" title="Create a m_window with the specified position, dimensions, and flags. " alt="" coords="208,56,349,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__render_8h.html#a8db1ba55c15a3477d71f6a793cee54f1" title="Create a 2D rendering context for a m_window. " alt="" coords="205,107,352,133"/>
+<area shape="rect" id="node5" href="$_s_d_l__ttf_8h.html#a766731737c2ca9121924bcef57889128" title="TTF_Init" alt="" coords="243,157,314,184"/>
+<area shape="rect" id="node6" href="$_s_d_l__ttf_8h.html#a01ed378e8b62a669981dc4cf569763b2" title="TTF_OpenFont" alt="" coords="223,208,334,235"/>
+<area shape="rect" id="node7" href="$_s_d_l__error_8h.html#ac88e1aa404a8f94aaee4ad6b94547647" title="SDL_GetError" alt="" coords="227,259,331,285"/>
+</map>

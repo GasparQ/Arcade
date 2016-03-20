@@ -1,0 +1,4 @@
+<map id="SDLGraph::display" name="SDLGraph::display">
+<area shape="rect" id="node2" href="$_s_d_l__render_8h.html#a473b4abbb29c60e98876eb68ad850f79" title="Clear the current rendering target with the drawing color. " alt="" coords="195,5,323,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__render_8h.html#a48fa9d24395f3610746988ecca2aae86" title="Update the m_window with rendering performed. " alt="" coords="187,56,330,83"/>
+</map>

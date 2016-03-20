@@ -1,0 +1,8 @@
+<map id="NCursesGraph::NCursesGraph" name="NCursesGraph::NCursesGraph">
+<area shape="rect" id="node2" href="$class_n_curses.html#af7702747ff02e2c52149a2848c2e69d4" title="NCurses::init" alt="" coords="305,5,404,32"/>
+<area shape="rect" id="node3" href="$class_n_curses.html#af414bd8a510fd0199d99113860acea4d" title="NCurses::destroy" alt="" coords="292,56,417,83"/>
+<area shape="rect" id="node4" href="$class_n_curses.html#a65190a08e5badd23e047002a76296562" title="NCurses::noEchoMode" alt="" coords="275,107,434,133"/>
+<area shape="rect" id="node5" href="$class_n_curses.html#a25c0e004ef9752bb1a18716b230b830a" title="NCurses::hide_cursor" alt="" coords="280,157,429,184"/>
+<area shape="rect" id="node6" href="$class_n_curses.html#ab62751ae39c5d440378ed51aafdbeb00" title="NCurses::delayOnGetOutput" alt="" coords="259,208,450,235"/>
+<area shape="rect" id="node7" href="$class_n_curses.html#a9e103fed2afe794ecbb4d3f852e76492" title="NCurses::initPair" alt="" coords="293,259,416,285"/>
+</map>

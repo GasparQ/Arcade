@@ -1,0 +1,12 @@
+<map id="Commons/include/LoadHighScore.hpp" name="Commons/include/LoadHighScore.hpp">
+<area shape="rect" id="node2" href="$_high_score_component_8hpp.html" title="Commons/include/HighScore\lComponent.hpp" alt="" coords="576,97,768,138"/>
+<area shape="rect" id="node11" href="$src_2_load_high_score_8cpp.html" title="Commons/src/LoadHighScore.cpp" alt="" coords="793,104,1015,131"/>
+<area shape="rect" id="node3" href="$_high_score_component_8cpp.html" title="Commons/src/HighScoreComponent.cpp" alt="" coords="5,195,265,221"/>
+<area shape="rect" id="node4" href="$_pacman_game_8cpp.html" title="Game/src/PacmanGame.cpp" alt="" coords="291,195,481,221"/>
+<area shape="rect" id="node5" href="$_snake_8cpp.html" title="Game/src/Snake.cpp" alt="" coords="506,195,651,221"/>
+<area shape="rect" id="node6" href="$_n_curses_graph_8hpp.html" title="Graphique/NCurses/include\l/NCursesGraph.hpp" alt="" coords="675,187,857,229"/>
+<area shape="rect" id="node8" href="$_open_gl_graph_8cpp.html" title="Graphique/OpenGL/OpenGlGraph.cpp" alt="" coords="882,195,1123,221"/>
+<area shape="rect" id="node9" href="$_s_d_l_graph_8hpp.html" title="Graphique/SDL2/src\l/SDLGraph.hpp" alt="" coords="1147,187,1287,229"/>
+<area shape="rect" id="node7" href="$_n_curses_graph_8cpp.html" title="Graphique/NCurses/src\l/NCursesGraph.cpp" alt="" coords="687,278,845,319"/>
+<area shape="rect" id="node10" href="$_s_d_l_graph_8cpp.html" title="Graphique/SDL2/src\l/SDLGraph.cpp" alt="" coords="1147,278,1287,319"/>
+</map>

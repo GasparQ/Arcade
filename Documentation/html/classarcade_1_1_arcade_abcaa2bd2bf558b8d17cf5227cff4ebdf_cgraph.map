@@ -1,0 +1,9 @@
+<map id="arcade::Arcade::Arcade" name="arcade::Arcade::Arcade">
+<area shape="rect" id="node2" href="$classarcade_1_1_arcade.html#a64946d51be23ad1c7e1d0856445d88a5" title="arcade::Arcade::onPrevGame" alt="" coords="213,5,408,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_arcade.html#ac4f0996cbf00d763719b671a7e0f16a1" title="arcade::Arcade::onNextGame" alt="" coords="213,56,408,83"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_arcade.html#aeedde13827bf680250fc039b4b860b9f" title="arcade::Arcade::onNextGraph" alt="" coords="213,107,408,133"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_arcade.html#aa4c1c8ff55122722f89b735429f62a22" title="arcade::Arcade::onPrevGraph" alt="" coords="213,157,408,184"/>
+<area shape="rect" id="node6" href="$classarcade_1_1_arcade.html#af10784e446064ccfaba744acfb163898" title="arcade::Arcade::onRestart" alt="" coords="223,208,398,235"/>
+<area shape="rect" id="node7" href="$classarcade_1_1_arcade.html#ad9f82174236c83214fdf893605259f4f" title="arcade::Arcade::onHome" alt="" coords="227,259,394,285"/>
+<area shape="rect" id="node8" href="$classarcade_1_1_arcade.html#a0a23fe04f72ef8ab6cf30222a312f4b7" title="arcade::Arcade::onExit" alt="" coords="233,309,388,336"/>
+</map>

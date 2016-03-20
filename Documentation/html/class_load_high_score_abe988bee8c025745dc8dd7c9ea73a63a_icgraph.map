@@ -1,0 +1,7 @@
+<map id="LoadHighScore::flush" name="LoadHighScore::flush">
+<area shape="rect" id="node2" href="$_commons_2_high_score_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="main" alt="" coords="251,5,301,32"/>
+<area shape="rect" id="node3" href="$class_high_score_component.html#a7f753ddb2c0bc1b891437599c7aaca4a" title="HighScoreComponent\l::submit" alt="" coords="201,57,351,98"/>
+<area shape="rect" id="node4" href="$class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="400,39,563,65"/>
+<area shape="rect" id="node5" href="$class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="423,89,540,116"/>
+<area shape="rect" id="node6" href="$_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="611,89,659,116"/>
+</map>

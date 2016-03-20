@@ -1,0 +1,6 @@
+<map id="arcade::Arcade::Run" name="arcade::Arcade::Run">
+<area shape="rect" id="node2" href="$class_arcade_menu.html#a758b552f633bad38fbb2a422a8918dd9" title="ArcadeMenu::setFrames" alt="" coords="203,5,368,32"/>
+<area shape="rect" id="node3" href="$class_arcade_menu.html#a86054d211c6f4f287da30410b84b8b9e" title="ArcadeMenu::setMode" alt="" coords="209,56,362,83"/>
+<area shape="rect" id="node4" href="$class_arcade_menu.html#aa3e7e813a1bba4fd54a8add002161330" title="ArcadeMenu::updateMenu" alt="" coords="198,107,373,133"/>
+<area shape="rect" id="node5" href="$class_arcade_menu.html#ade3e677ead50faaee1384a2228e2bcb5" title="ArcadeMenu::getNextFrame" alt="" coords="421,107,608,133"/>
+</map>

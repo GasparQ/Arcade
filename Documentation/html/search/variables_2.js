@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['b',['b',['../struct_s_d_l___message_box_color.html#ad1215a42167cb5b190ff8f19dbd42066',1,'SDL_MessageBoxColor::b()'],['../struct_s_d_l___color.html#a3b79a27e0414049559aa5bcf241dedd3',1,'SDL_Color::b()']]],
+  ['back',['back',['../structfieldnode.html#a5d04199018862a603df49a2f4766ea97',1,'fieldnode::back()'],['../structtag_m_e_n_u.html#a4549ddc3763f7a50e84c155f0a97e033',1,'tagMENU::back()']]],
+  ['ball',['ball',['../struct_s_d_l___joy_ball_event.html#add4eb0daeaf95ae56e8c7cfcec560242',1,'SDL_JoyBallEvent']]],
+  ['base',['base',['../struct_s_d_l___r_wops.html#af9b489d7342296ce197b911cfa93b2ab',1,'SDL_RWops']]],
+  ['begincol',['begincol',['../structformnode.html#a2d700a0373c863c8604e143580aa9f46',1,'formnode']]],
+  ['below',['below',['../structpanel.html#ad77c09de0fe74a2ebeee07cdb5125f03',1,'panel']]],
+  ['binarizationcutoff',['binarizationCutoff',['../union_s_d_l___window_shape_params.html#a534c40b09588a8075c0a70227753dc56',1,'SDL_WindowShapeParams']]],
+  ['bindtype',['bindType',['../struct_s_d_l___game_controller_button_bind.html#a032fd941b0e8e5e2cdf52b7597f559b9',1,'SDL_GameControllerButtonBind']]],
+  ['bitsperpixel',['BitsPerPixel',['../struct_s_d_l___pixel_format.html#aac533fae3043ef44df01108248e111d8',1,'SDL_PixelFormat']]],
+  ['bloss',['Bloss',['../struct_s_d_l___pixel_format.html#a337072c1bc8b41efdd2da4e95b8c2ff7',1,'SDL_PixelFormat']]],
+  ['bmask',['Bmask',['../struct_s_d_l___pixel_format.html#ad366812df3ae62edb9ae6cb89234fddb',1,'SDL_PixelFormat']]],
+  ['bool',['bool',['../curses_8h.html#a002004ba5d663f149f6c38064926abac',1,'bool():&#160;curses.h'],['../form_8h.html#a7752a2f77b459e7a851ed0254645356f',1,'bool():&#160;form.h'],['../menu_8h.html#adb1c6e8f15ee9687c0d487f78d980014',1,'bool():&#160;menu.h'],['../term__entry_8h.html#af6a258d8f3ee5206d682d799316314b1',1,'bool():&#160;term_entry.h']]],
+  ['booleans',['Booleans',['../structtermtype.html#a7515e412f4d66432269df69e140e38ac',1,'termtype']]],
+  ['bottom_5fpanel',['bottom_panel',['../structpanelhook.html#a7035b957e21b3eaf750290edfaf634d7',1,'panelhook']]],
+  ['bshift',['Bshift',['../struct_s_d_l___pixel_format.html#a4212574b67529628d8822ed4eb109754',1,'SDL_PixelFormat']]],
+  ['bstate',['bstate',['../struct_m_e_v_e_n_t.html#af9cbb432b2527c3a5659b0667682f1ea',1,'MEVENT']]],
+  ['buf',['buf',['../structfieldnode.html#aed524168c441728746dff0e2c15f9225',1,'fieldnode::buf()'],['../struct_s_d_l___audio_c_v_t.html#a080db27b929efa983c5161360ffce310',1,'SDL_AudioCVT::buf()'],['../struct_s_d_l_test___md5_context.html#a061f0cead7ec49ac4c5baf0bbd9c13a7',1,'SDLTest_Md5Context::buf()']]],
+  ['button',['button',['../struct_s_d_l___mouse_button_event.html#a1a4680e19ae06d02d2093f0bcba1b24c',1,'SDL_MouseButtonEvent::button()'],['../struct_s_d_l___joy_button_event.html#a73ebe4261cf80564052af9c1af737a4d',1,'SDL_JoyButtonEvent::button()'],['../struct_s_d_l___controller_button_event.html#a039da6cd31c3c62e62a3ae17cc64d0db',1,'SDL_ControllerButtonEvent::button()'],['../union_s_d_l___event.html#ab6da2fa2687e5f849f270adecc64785f',1,'SDL_Event::button()'],['../struct_s_d_l___game_controller_button_bind.html#a2657029cfc39aa91b5b5342d4a037d95',1,'SDL_GameControllerButtonBind::button()'],['../struct_s_d_l___haptic_constant.html#aa65321f1b002adaab6e629d5bed556e9',1,'SDL_HapticConstant::button()'],['../struct_s_d_l___haptic_periodic.html#a9e0177354f4a285b8c98e4a31cd31752',1,'SDL_HapticPeriodic::button()'],['../struct_s_d_l___haptic_condition.html#acd35a9d432ad122bf7824b16974eac7a',1,'SDL_HapticCondition::button()'],['../struct_s_d_l___haptic_ramp.html#a2027c6fd88f1ebe652c90c71410ee0bf',1,'SDL_HapticRamp::button()'],['../struct_s_d_l___haptic_custom.html#aa4fbaf7220f3197aa6631b3e64ad6562',1,'SDL_HapticCustom::button()']]],
+  ['buttonid',['buttonid',['../struct_s_d_l___message_box_button_data.html#a22938886a6b13792006cc5c91fa38e92',1,'SDL_MessageBoxButtonData']]],
+  ['buttons',['buttons',['../struct_s_d_l___message_box_data.html#a265e47aab749e384661ae91d3e11e0db',1,'SDL_MessageBoxData']]],
+  ['bytes_5fper_5fpixel',['bytes_per_pixel',['../struct_s_d_l_test___surface_image__s.html#a2daf91bab3d79fb9dfa25e8ade43e606',1,'SDLTest_SurfaceImage_s']]],
+  ['bytesperpixel',['BytesPerPixel',['../struct_s_d_l___pixel_format.html#a6fec9e1809cc3da458d58b8cccd058f2',1,'SDL_PixelFormat']]]
+];

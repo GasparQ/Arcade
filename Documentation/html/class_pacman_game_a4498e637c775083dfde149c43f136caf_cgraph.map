@@ -1,0 +1,6 @@
+<map id="PacmanGame::PacmanGame" name="PacmanGame::PacmanGame">
+<area shape="rect" id="node2" href="$class_pacman_character.html#ace53916f713cc2809c4f77c3061905ce" title="PacmanCharacter::goDown" alt="" coords="251,5,434,32"/>
+<area shape="rect" id="node3" href="$class_pacman_character.html#a545f97ff2e992bc1a8317415c822e586" title="PacmanCharacter::goLeft" alt="" coords="257,56,428,83"/>
+<area shape="rect" id="node4" href="$class_pacman_character.html#a7f4e7627f197aa2d1d2a821a5c9cdfce" title="PacmanCharacter::goRight" alt="" coords="253,107,433,133"/>
+<area shape="rect" id="node5" href="$class_pacman_character.html#ac527b4ae3a7131273d685f629c3efc61" title="PacmanCharacter::goUp" alt="" coords="259,157,426,184"/>
+</map>

@@ -1,0 +1,25 @@
+var classncr_1_1_window =
+[
+    [ "Window", "classncr_1_1_window.html#a3d81c5396516ea3eaad86fd6abc6bd8f", null ],
+    [ "Window", "classncr_1_1_window.html#ae3614779bd663736817859e3a688aa44", null ],
+    [ "~Window", "classncr_1_1_window.html#abb8c14269f5d436fbac7b3afe7d38e46", null ],
+    [ "attrOFF", "classncr_1_1_window.html#a0966566a75d0774c8901d4d21aa6a680", null ],
+    [ "attrON", "classncr_1_1_window.html#ab68071badc6abcc1faf415cdc7daea81", null ],
+    [ "clear", "classncr_1_1_window.html#a23a5f4f4f76921d3c972164f5e93f657", null ],
+    [ "getHeight", "classncr_1_1_window.html#ab419990d32284464f7b10867bff2261c", null ],
+    [ "getId", "classncr_1_1_window.html#a7513ad9795199a32c9e10e1a69f784f2", null ],
+    [ "getWidth", "classncr_1_1_window.html#af9b5d3248b9cea9fca4673873d551516", null ],
+    [ "getWin", "classncr_1_1_window.html#adcfe4ca7b01cd661db50fb737fb46d70", null ],
+    [ "getX", "classncr_1_1_window.html#a393c5c59797a6f2f39a446dafd84b55f", null ],
+    [ "getY", "classncr_1_1_window.html#a162a07abff08ff0c21c9e7e1fbbbb3cd", null ],
+    [ "makeBorder", "classncr_1_1_window.html#a3712f314fff14b12c1bff101ed06efef", null ],
+    [ "moveCursor", "classncr_1_1_window.html#a841de18b9bf6964185002b4ad0c56b10", null ],
+    [ "print", "classncr_1_1_window.html#aa7b963c2955ae03cbcb26f21577709b6", null ],
+    [ "print", "classncr_1_1_window.html#a224b26ede76d91ee8d1fe55341a31fe3", null ],
+    [ "refresh", "classncr_1_1_window.html#ac2642af30cf4a7e6945fa0c4a1765858", null ],
+    [ "setAttrOFF", "classncr_1_1_window.html#ac8e197fd4b8ee6deba90d2ae50f10391", null ],
+    [ "setAttrON", "classncr_1_1_window.html#a9b669ddb5eb60c2436bb2ce808efa92f", null ],
+    [ "setColorPair", "classncr_1_1_window.html#aa7c5dbb3cb6892bce0f18f72229f472e", null ],
+    [ "write", "classncr_1_1_window.html#a235a2e6963fc14b1310594246a96f12d", null ],
+    [ "write", "classncr_1_1_window.html#af9600d586685dccd91be9b63ac4ce88b", null ]
+];

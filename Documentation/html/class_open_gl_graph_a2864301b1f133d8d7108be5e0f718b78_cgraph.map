@@ -1,0 +1,9 @@
+<map id="OpenGlGraph::display" name="OpenGlGraph::display">
+<area shape="rect" id="node2" href="$class_game_component.html#a6d06ed89f961c3373ff56fed5cb3c2f9" title="GameComponent::getSprite3D" alt="" coords="206,5,407,32"/>
+<area shape="rect" id="node3" href="$class_a_component.html#a10bd94cfe7abe3821ccca1696b0045ac" title="AComponent::getPos" alt="" coords="233,56,380,83"/>
+<area shape="rect" id="node4" href="$class_a_component.html#a7da7e1744242875a3ec0e38c06f0656a" title="AComponent::getColor" alt="" coords="229,107,384,133"/>
+<area shape="rect" id="node5" href="$class_u_i_component.html#a9a55d81c4034d3f693fb5366b0bff1dd" title="UIComponent::getText" alt="" coords="229,157,384,184"/>
+<area shape="rect" id="node6" href="$class_dual_text_component.html#a5107cda759d441f7fcbcfe9ee227f125" title="DualTextComponent::\lgetSubPos" alt="" coords="231,209,382,250"/>
+<area shape="rect" id="node7" href="$class_dual_text_component.html#a086f047f888876a571a0b9a75ab78b36" title="DualTextComponent::\lgetSubTitle" alt="" coords="231,274,382,315"/>
+<area shape="rect" id="node8" href="$class_high_score_component.html#a8a8864796feb4129d42b5aba476a0267" title="HighScoreComponent\l::getComponentsToDisplay" alt="" coords="216,339,397,381"/>
+</map>
