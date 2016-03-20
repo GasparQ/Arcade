@@ -46,6 +46,8 @@ private:
 
     void FreeGhosts();
 
+    void PacmanPowerUpEnd();
+
 private:
     // 50x30
     char m_map[31][51] = {"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",

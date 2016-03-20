@@ -21,6 +21,8 @@ public:
     virtual void goLeft(char map[31][51]);
     virtual void goRight(char map[31][51]);
 
+    virtual void ResetPosition();
+
 public:
     // Dead = goes to base
     // Hunting : looks for pacman
