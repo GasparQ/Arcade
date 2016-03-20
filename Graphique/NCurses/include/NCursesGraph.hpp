@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Sat Mar 19 12:17:13 2016 Victor Gouet
+// Last update Sun Mar 20 12:01:22 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -62,7 +62,6 @@ private:
   void			_displayComponent(HighScoreComponent const *, ncr::Window *win);
   void			_displayComponent(UIComponent const *, ncr::Window *win);
   void			_displayComponent(AnimationComponent const *, ncr::Window *win);
-  void			_displayComponent(DualTextComponent const *, ncr::Window *win);
   void			_cacheClear();
   bool			isResizeGood() const;
   ncr::Window		*onCreateBoard();

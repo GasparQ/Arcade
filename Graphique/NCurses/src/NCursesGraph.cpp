@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Sat Mar 19 19:39:02 2016 Victor Gouet
+// Last update Sun Mar 20 12:13:36 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -123,25 +123,25 @@ ncr::Window		*NCursesGraph::onCreateBoard()
 {
   if (_board == NULL)
     {
-      _board = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 0, 0);
-      gameWin = new ncr::Window(ArcadeSystem::winHeight, ArcadeSystem::winWidth, 1, 1, *_board);
-      _board->attrON(A_REVERSE | COLOR_PAIR(4));
-      _board->makeBorder(' ', ' ', ' ');
-      _board->attrOFF(A_REVERSE);
-      _board->refresh();
+      _board = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 1, 2);
+      gameWin = new ncr::Window(ArcadeSystem::winHeight, ArcadeSystem::winWidth, 1, 2, *_board);
+      // _board->attrON(A_REVERSE | COLOR_PAIR(4));
+      // _board->makeBorder(' ', ' ', ' ');
+      // _board->attrOFF(A_REVERSE);
+      // _board->refresh();
     }
   return (gameWin);
 }
 
 ncr::Window		*NCursesGraph::onCreateUI()
 {
-  if (UIWin == NULL)
-    {
-      UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
-      UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
-      UIWin->makeBorder(' ', ' ', ' ');
-      UIWin->attrOFF(A_REVERSE);
-    }
+  // if (UIWin == NULL)
+  //   {
+  //     UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
+  //     UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
+  //     UIWin->makeBorder(' ', ' ', ' ');
+  //     UIWin->attrOFF(A_REVERSE);
+  //   }
   return (UIWin);
 }
 
@@ -166,13 +166,24 @@ void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
 void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr::Window *win)
 {
   Vector2<int>	pos = uiComponent->getPos();
+  DualTextComponent const   *dualTextComponent =
+    dynamic_cast<DualTextComponent const *>(uiComponent);
 
-  onCreateUI();
+
+  // onCreateUI();
   if (!win)
     return ;
   win->attrON(COLOR_PAIR(uiComponent->getColor()) | A_BOLD);
   win->print(pos.x, pos.y, "%s", uiComponent->getText().c_str());
   _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), win));
+  if (dualTextComponent)
+    {
+      Vector2<int>	newPos = dualTextComponent->getSubPos();
+      win->attrON(COLOR_PAIR(dualTextComponent->getColor()) | A_BOLD);
+      win->print(pos.x, newPos.y, "%s", dualTextComponent->getSubTitle().c_str());
+      _cacheGame.push(s_cache(Vector2<int>(pos.x, newPos.y),
+			      dualTextComponent->getSubTitle(), win));
+    }
 }
 
 void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreComponent,
@@ -262,23 +273,12 @@ void		NCursesGraph::_cacheClear()
     }
 }
 
-#include <unistd.h>
-void		NCursesGraph::_displayComponent(DualTextComponent const *animation,
-						ncr::Window *win)
-{
-  // std::cout << "TEST" << std::endl;
-  // sleep(10);
-  (void)animation;
-  (void)win;
-}
-
 void	NCursesGraph::display(std::stack<AComponent *>	obj)
 {
   GameComponent		*gameComponent;
   UIComponent		*uiComponent;
   HighScoreComponent	*highScore;
   AnimationComponent	*animation;
-  // DualTextComponent	*action;
 
   _cacheClear();
   while (!obj.empty())
@@ -287,13 +287,9 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       	{
       	  _displayComponent(gameComponent, gameWin);
       	}
-      // else if ((action = reinterpret_cast<DualTextComponent *>(obj.top())) != NULL)
-      // 	{
-      // 	  _displayComponent(action, _stdscr);
-      // 	}
       else if ((uiComponent = dynamic_cast<UIComponent *>(obj.top())) != NULL)
       	{
-  	  _displayComponent(uiComponent, UIWin);
+  	  _displayComponent(uiComponent, _stdscr);
   	}
       else if ((highScore = dynamic_cast<HighScoreComponent *>(obj.top())) != NULL)
 	{
