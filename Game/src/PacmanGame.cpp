@@ -107,7 +107,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     }
     else if (state == AGame::DEAD)
     {
-        highScoreComponent = new HighScoreComponent("Snake", m_score);
+        highScoreComponent = new HighScoreComponent("Pacman", m_score);
         highScoreComponent->UpdatePseudo(keycode);
         if (keycode == ArcadeSystem::Enter && highScoreComponent->submit())
         {
