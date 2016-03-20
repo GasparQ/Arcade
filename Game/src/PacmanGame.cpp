@@ -7,7 +7,7 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
-#include "../../Commons/Chrono.hpp"
+#include "../../Commons/include/Chrono.hpp"
 
 // TODO:
 // bug with respawn and gums ?

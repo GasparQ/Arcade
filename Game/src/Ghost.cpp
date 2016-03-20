@@ -3,7 +3,7 @@
 //
 
 #include "../include/Ghost.hpp"
-#include "../../Commons/Astar.hpp"
+#include "../../Commons/include/Astar.hpp"
 
 Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<int>(25, 15), color, "sprites/red_ghost.bmp", " ",
                                                                  GameComponent::Shapes::CUBE)

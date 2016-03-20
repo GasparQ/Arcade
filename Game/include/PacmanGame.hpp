@@ -15,7 +15,7 @@
 #include "Ghost.hpp"
 #include "../../Commons/include/AComponent.hpp"
 #include "AGame.hpp"
-#include "../../Commons/Chrono.hpp"
+#include "../../Commons/include/Chrono.hpp"
 
 class PacmanGame : public AGame
 {
