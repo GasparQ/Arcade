@@ -6,16 +6,17 @@
 #define C_ACTIONCOMPONENT_HPP
 
 #include "UIComponent.hpp"
+#include "DualTextComponent.hpp"
 
-template <typename action1Type = void *, typename action2Type = action1Type>
-class   ActionComponent : public UIComponent
+/**
+ * Class used to associate an element to 2 actions
+ */
+template <typename linkedElemType, typename action1Type = void *, typename action2Type = action1Type>
+class   ActionComponent
 {
 public:
-    ActionComponent(Vector2<int> const &pos, enum ComponentColor color,
-                    Vector2<int> const &dim, std::string const &string,
-                    action1Type f_action = (action1Type)0, action2Type s_action = (action2Type)0) :
-            UIComponent(pos, color, dim, string),
-            subTitle(""),
+    ActionComponent(linkedElemType linkedElem, action1Type f_action = (action1Type)0, action2Type s_action = (action2Type)0) :
+            linkedElem(linkedElem),
             selected(false),
             action1(f_action),
             action2(s_action)
@@ -26,8 +27,7 @@ public:
 
     }
     ActionComponent(ActionComponent const &component) :
-            UIComponent(component.getPos(), component.getColor(), component.getDim(), component.getText()),
-            subTitle(component.subTitle),
+            linkedElem(component.linkedElem),
             selected(component.selected),
             action1(component.action1),
             action2(component.action2)
@@ -35,14 +35,6 @@ public:
     }
 
 public:
-    void                setSubTitle(std::string const &string)
-    {
-        subTitle = string;
-    }
-    std::string const   &getSubTitle() const
-    {
-        return subTitle;
-    }
     bool                isSelected() const
     {
         return selected;
@@ -55,17 +47,27 @@ public:
     {
         selected = false;
     }
-    const action1Type   getAction1() const
+    const action1Type   &getAction1() const
     {
         return action1;
     }
-    const action2Type   getAction2() const
+    const action2Type   &getAction2() const
     {
         return action2;
     }
 
+public:
+    linkedElemType  *operator->()
+    {
+        return &linkedElem;
+    }
+    linkedElemType  &operator*()
+    {
+        return linkedElem;
+    }
+
 private:
-    std::string     subTitle;
+    linkedElemType  linkedElem;
     bool            selected;
     action1Type     action1;
     action2Type     action2;

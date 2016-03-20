@@ -263,7 +263,7 @@ void		NCursesGraph::_cacheClear()
 }
 
 #include <unistd.h>
-void		NCursesGraph::_displayComponent(ActionComponent<> const *animation,
+void		NCursesGraph::_displayComponent(DualTextComponent const *animation,
 						ncr::Window *win)
 {
   // std::cout << "TEST" << std::endl;
@@ -278,7 +278,7 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
   UIComponent		*uiComponent;
   HighScoreComponent	*highScore;
   AnimationComponent	*animation;
-  // ActionComponent<>	*action;
+  // DualTextComponent	*action;
 
   _cacheClear();
   while (!obj.empty())
@@ -287,7 +287,7 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       	{
       	  _displayComponent(gameComponent, gameWin);
       	}
-      // else if ((action = reinterpret_cast<ActionComponent<> *>(obj.top())) != NULL)
+      // else if ((action = reinterpret_cast<DualTextComponent *>(obj.top())) != NULL)
       // 	{
       // 	  _displayComponent(action, _stdscr);
       // 	}

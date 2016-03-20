@@ -12,31 +12,39 @@ ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     mode = frames.end();
     frameIdx = 0;
     menuComponents.push_back(
-            ActionComponent<arcade::eventSystem >(
-                    Vector2<int>(1, 5),
-                    AComponent::ComponentColor::COLOR_WHITE,
-                    Vector2<int>(20, 3),
-                    "Graphic",
+            ActionComponent<DualTextComponent, arcade::eventSystem >(
+                    DualTextComponent(Vector2<int>(1, 5),
+                                      AComponent::ComponentColor::COLOR_WHITE,
+                                      Vector2<int>(20, 3),
+                                      "Graphic",
+                                      ""
+                    ),
                     &arcade::Arcade::onPrevGraph,
                     &arcade::Arcade::onNextGraph
             )
     );
     menuComponents.push_back(
-            ActionComponent<arcade::eventSystem >(
-                    Vector2<int>(1, 9),
-                    AComponent::ComponentColor::COLOR_WHITE,
-                    Vector2<int>(20, 3),
-                    "Game",
+            ActionComponent<DualTextComponent, arcade::eventSystem >(
+                    DualTextComponent(
+                            Vector2<int>(1, 9),
+                            AComponent::ComponentColor::COLOR_WHITE,
+                            Vector2<int>(20, 3),
+                            "Game",
+                            ""
+                    ),
                     &arcade::Arcade::onPrevGame,
                     &arcade::Arcade::onNextGame
             )
     );
     menuComponents.push_back(
-            ActionComponent<arcade::eventSystem >(
-                    Vector2<int>(1, 13),
-                    AComponent::ComponentColor::COLOR_WHITE,
-                    Vector2<int>(20, 3),
-                    "Play"
+            ActionComponent<DualTextComponent, arcade::eventSystem >(
+                    DualTextComponent(
+                            Vector2<int>(1, 13),
+                            AComponent::ComponentColor::COLOR_WHITE,
+                            Vector2<int>(20, 3),
+                            "Play",
+                            ""
+                    )
             )
     );
     currComponent = menuComponents.begin();
@@ -84,14 +92,14 @@ std::string ArcadeMenu::getNextFrame() const
 std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
 {
     std::stack<AComponent *>    components;
-    std::map<int, ArcadeMenu::events>::iterator   it;
+    std::map<int, ArcadeMenu::menuEvents>::iterator   it;
 
     if ((it = sysEvents.find(key)) != sysEvents.end())
         (this->*(it->second))();
     components.push(new AnimationComponent(1, 1, AComponent::ComponentColor::COLOR_WHITE, getNextFrame()));
-    components.push(new ActionComponent<arcade::eventSystem >(menuComponents[ArcadeMenu::GRAPHIC]));
-    components.push(new ActionComponent<arcade::eventSystem >(menuComponents[ArcadeMenu::GAME]));
-    components.push(new ActionComponent<arcade::eventSystem >(menuComponents[ArcadeMenu::PLAY]));
+    components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GRAPHIC]));
+    components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GAME]));
+    components.push(new DualTextComponent(*menuComponents[ArcadeMenu::PLAY]));
     return components;
 }
 
@@ -145,6 +153,6 @@ void ArcadeMenu::onEnter()
 
 void ArcadeMenu::updateTexts()
 {
-    menuComponents[ArcadeMenu::GRAPHIC].setSubTitle(arcade1.getCurrentLibName());
-    menuComponents[ArcadeMenu::GAME].setSubTitle(arcade1.getCurrentGameName());
+    menuComponents[ArcadeMenu::GRAPHIC]->setSubTitle(arcade1.getCurrentLibName());
+    menuComponents[ArcadeMenu::GAME]->setSubTitle(arcade1.getCurrentGameName());
 }

@@ -14,6 +14,9 @@
 #include "Commons/include/ActionComponent.hpp"
 #include "Arcade.hpp"
 
+/**
+ * Class used for the Arcade menu management
+ */
 class ArcadeMenu
 {
 public:
@@ -27,13 +30,13 @@ public:
     ~ArcadeMenu();
 
 public:
-    void setFrames(std::string const &, std::string const &, int );
-    void setMode(std::string const &);
-    std::string getNextFrame() const;
+    void                        setFrames(std::string const &, std::string const &, int );
+    void                        setMode(std::string const &);
+    std::string                 getNextFrame() const;
     std::stack<AComponent *>    updateMenu(int key);
 
 private:
-    typedef void (ArcadeMenu::*events)();
+    typedef void (ArcadeMenu::*menuEvents)();
     void nextAction();
     void prevAction();
     void goDown();
@@ -42,15 +45,13 @@ private:
     void updateTexts();
 
 private:
-    arcade::Arcade                                              &arcade1;
-    std::map<std::string, std::vector<std::string>>             frames;
-    mutable size_t                                              frameIdx;
-    std::map<std::string, std::vector<std::string>>::iterator   mode;
-    std::vector<ActionComponent<arcade::eventSystem > >                                menuComponents;
-    std::vector<ActionComponent<arcade::eventSystem > >::iterator                      currComponent;
-
-private:
-    std::map<int, events >                                      sysEvents;
+    arcade::Arcade                                                                      &arcade1;
+    std::map<std::string, std::vector<std::string>>                                     frames;
+    mutable size_t                                                                      frameIdx;
+    std::map<std::string, std::vector<std::string>>::iterator                           mode;
+    std::vector<ActionComponent<DualTextComponent, arcade::eventSystem > >              menuComponents;
+    std::vector<ActionComponent<DualTextComponent, arcade::eventSystem > >::iterator    currComponent;
+    std::map<int, menuEvents >                                                          sysEvents;
 };
 
 #endif //C_ARCADEMENU_HPP
