@@ -23,7 +23,6 @@ PacmanCharacter::~PacmanCharacter()
 
 void PacmanCharacter::ResetPosition()
 {
-    std::cout << "Moving to " << m_initPos.x << " " << m_initPos.y << std::endl;
     m_pos = m_initPos;
 }
 

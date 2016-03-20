@@ -29,13 +29,14 @@ public:
     {
         DEAD = 1,
         HUNTING = 2,
-        SCARED = 3
+        SCARED = 3,
+        FREEZE = 4
     };
     void SetState(GhostState state);
     GhostState GetState() const ;
 
 private:
-    GhostState m_state = DEAD;
+    GhostState m_state = FREEZE;
     AComponent::ComponentColor m_color_original;
 };
 

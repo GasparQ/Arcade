@@ -22,6 +22,10 @@ Vector2<int> const &Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
     std::string dir;
     Vector2<int> target;
 
+    if (m_state == FREEZE)
+    {
+        return m_pos;
+    }
     if (m_state == HUNTING)
     {
         dir = as.pathFind(m_pos.x, m_pos.y, pacmanPos.x, pacmanPos.y);
