@@ -89,7 +89,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
                 if (m_map[y][x] == 'X')
                 {
                     output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_BLUE,
-                                                  GameComponent::Shapes::CUBE, " ", "sprites/apple.bmp"));
+                                                  GameComponent::Shapes::CUBE, " ", "sprites/pacwall.bmp"));
                 }
             }
         }
@@ -99,12 +99,12 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
             if (!var.bIsSpecial())
             {
                 output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
-                                              GameComponent::Shapes::SPHERE_SMALL, "*", "sprites/apple.bmp"));
+                                              GameComponent::Shapes::SPHERE_SMALL, "*", "sprites/pac_gum.bmp"));
             }
             else
             {
                 output.push(new GameComponent(var.getPos(), AComponent::ComponentColor::COLOR_WHITE,
-                                              GameComponent::Shapes::SPHERE_MEDIUM, "o", "sprites/apple.bmp"));
+                                              GameComponent::Shapes::SPHERE_MEDIUM, "o", "sprites/pac_bonus.bmp"));
             }
         }
         // Update chrono

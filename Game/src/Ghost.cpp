@@ -113,15 +113,18 @@ void Ghost::SetState(GhostState state)
     if (m_state == DEAD)
     {
         m_shapeCurses = "\"";
+        m_shape2D = "sprites/ghost_eyes.bmp";
     }
     else if (m_state == SCARED)
     {
         m_color = AComponent::ComponentColor::COLOR_BLUE;
+        m_shape2D = "sprites/feared_ghost.bmp";
     }
     else
     {
         m_shapeCurses = " ";
         m_color = m_color_original;
+        m_shape2D = "sprites/red_ghost.bmp";
     }
 }
 
