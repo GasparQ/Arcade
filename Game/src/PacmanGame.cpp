@@ -240,7 +240,7 @@ void PacmanGame::MoveEntities()
                 }
                 ++itGhost;
             }
-            m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(4, *this, &PacmanGame::PacmanPowerUpEnd));
+            m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::PacmanPowerUpEnd));
         }
         m_score += 10;
         m_gums.remove(*it);
