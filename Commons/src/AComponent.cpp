@@ -36,3 +36,8 @@ enum AComponent::ComponentColor	AComponent::getColor() const
 {
   return (this->_color);
 }
+
+void AComponent::setColor(AComponent::ComponentColor color)
+{
+    _color = color;
+}

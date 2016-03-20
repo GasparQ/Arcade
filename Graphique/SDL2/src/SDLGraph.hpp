@@ -27,20 +27,22 @@ public:
     virtual void display(std::stack<AComponent *>);
 
 private:
-    SDL_Event           event;
-    SDL_Window          *win;
-    SDL_Renderer        *render;
-    std::map<int, int>  keyCodeAssociation;
+    SDL_Event                           event;
+    SDL_Window                          *win;
+    SDL_Renderer                        *render;
+    std::map<int, int>                  keyCodeAssociation;
     std::map<std::string, SDL_Texture*> spriteCache;
-    TTF_Font            *uifont;
-    SDL_Color           uicolor;
+    TTF_Font                            *uifont;
+    std::map<AComponent::ComponentColor, SDL_Color> colors;
 
 private:
-    SDL_Texture *loadSprite(std::string const &) throw(std::runtime_error);
-    void        drawGameComponent(GameComponent const *) throw(std::runtime_error);
-    void        drawUIComponent(UIComponent const *) throw(std::runtime_error);
-    void        drawHighScoreComponent(HighScoreComponent const *) throw(std::runtime_error);
-    void        displaySurface(AComponent const *, SDL_Texture *, Vector2<int> dim = Vector2<int>(1, 1)) throw(std::runtime_error);
+    SDL_Texture *loadSprite(std::string const &)                                                            throw(std::runtime_error);
+    void        drawGameComponent(GameComponent const *)                                                    throw(std::runtime_error);
+    void        drawUIComponent(UIComponent const *)                                                        throw(std::runtime_error);
+    void        drawHighScoreComponent(HighScoreComponent const *)                                          throw(std::runtime_error);
+    void        displaySurface(SDL_Texture *, Vector2<int> pos, Vector2<int> dim = Vector2<int>(1, 1))    throw(std::runtime_error);
+    void        drawText(std::string const&, Vector2<int> pos, Vector2<int> dim = Vector2<int>(1, 1), AComponent::ComponentColor color = AComponent::ComponentColor::COLOR_WHITE);
+    void        addColor(AComponent::ComponentColor index, Uint8 r, Uint8 g, Uint8 b, Uint8 a = 0);
 };
 
 #endif //C_SDLGRAPH_HPP

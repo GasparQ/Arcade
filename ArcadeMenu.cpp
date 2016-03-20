@@ -13,11 +13,10 @@ ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     frameIdx = 0;
     menuComponents.push_back(
             ActionComponent<DualTextComponent, arcade::eventSystem >(
-                    DualTextComponent(Vector2<int>(1, 5),
+                    DualTextComponent(Vector2<int>(ArcadeSystem::winWidth / 2 - 10, 5),
                                       AComponent::ComponentColor::COLOR_WHITE,
                                       Vector2<int>(20, 3),
-                                      "Graphic",
-                                      ""
+                                      "Graphic"
                     ),
                     &arcade::Arcade::onPrevGraph,
                     &arcade::Arcade::onNextGraph
@@ -26,11 +25,10 @@ ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     menuComponents.push_back(
             ActionComponent<DualTextComponent, arcade::eventSystem >(
                     DualTextComponent(
-                            Vector2<int>(1, 9),
+                            Vector2<int>(ArcadeSystem::winWidth / 2 - 10, 11),
                             AComponent::ComponentColor::COLOR_WHITE,
                             Vector2<int>(20, 3),
-                            "Game",
-                            ""
+                            "Game"
                     ),
                     &arcade::Arcade::onPrevGame,
                     &arcade::Arcade::onNextGame
@@ -39,20 +37,22 @@ ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     menuComponents.push_back(
             ActionComponent<DualTextComponent, arcade::eventSystem >(
                     DualTextComponent(
-                            Vector2<int>(1, 13),
+                            Vector2<int>(ArcadeSystem::winWidth / 2 - 10, 17),
                             AComponent::ComponentColor::COLOR_WHITE,
                             Vector2<int>(20, 3),
-                            "Play",
-                            ""
+                            "Play"
                     )
             )
     );
     currComponent = menuComponents.begin();
+    (*currComponent).select();
+    (*currComponent)->setColor(AComponent::ComponentColor::COLOR_RED);
     sysEvents[ArcadeSystem::ArrowDown] = &ArcadeMenu::goDown;
     sysEvents[ArcadeSystem::ArrowUp] = &ArcadeMenu::goUp;
     sysEvents[ArcadeSystem::ArrowLeft] = &ArcadeMenu::prevAction;
     sysEvents[ArcadeSystem::ArrowRight] = &ArcadeMenu::nextAction;
     sysEvents[ArcadeSystem::Enter] = &ArcadeMenu::onEnter;
+    updateTexts();
 }
 
 ArcadeMenu::~ArcadeMenu()
@@ -99,7 +99,7 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
     components.push(new AnimationComponent(1, 1, AComponent::ComponentColor::COLOR_WHITE, getNextFrame()));
     components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GRAPHIC]));
     components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GAME]));
-    components.push(new DualTextComponent(*menuComponents[ArcadeMenu::PLAY]));
+    components.push(new UIComponent(*menuComponents[ArcadeMenu::PLAY]));
     return components;
 }
 
@@ -128,19 +128,23 @@ void ArcadeMenu::prevAction()
 void ArcadeMenu::goDown()
 {
     (*currComponent).unselect();
+    (*currComponent)->setColor(AComponent::ComponentColor::COLOR_WHITE);
     ++currComponent;
     if (currComponent == menuComponents.end())
         currComponent = menuComponents.begin();
     (*currComponent).select();
+    (*currComponent)->setColor(AComponent::ComponentColor::COLOR_RED);
 }
 
 void ArcadeMenu::goUp()
 {
     (*currComponent).unselect();
+    (*currComponent)->setColor(AComponent::ComponentColor::COLOR_WHITE);
     if (currComponent == menuComponents.begin())
         currComponent = menuComponents.end();
     --currComponent;
     (*currComponent).select();
+    (*currComponent)->setColor(AComponent::ComponentColor::COLOR_RED);
 }
 
 void ArcadeMenu::onEnter()

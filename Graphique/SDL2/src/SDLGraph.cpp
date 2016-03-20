@@ -5,8 +5,66 @@
 #include <unistd.h>
 #include "SDLGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
+#include "../../../Commons/include/DualTextComponent.hpp"
 
 const std::string SDLGraph::fontName = "./fonts/Minecraft.ttf";
+
+SDLGraph::SDLGraph()
+{
+    if (SDL_Init(0) != 0 ||
+        (win = SDL_CreateWindow("Arcade", 0, 0, ArcadeSystem::winWidth * SDLGraph::scale, ArcadeSystem::winHeight * SDLGraph::scale, SDL_WINDOW_SHOWN)) == NULL ||
+        (render = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED)) == NULL ||
+        TTF_Init() != 0 || (uifont = TTF_OpenFont(SDLGraph::fontName.c_str(), 24)) == NULL)
+        throw std::runtime_error(SDL_GetError());
+    addColor(AComponent::ComponentColor::COLOR_RED, 174, 10, 15);
+    addColor(AComponent::ComponentColor::COLOR_WHITE, 241, 241, 241);
+    addColor(AComponent::ComponentColor::COLOR_BLUE, 60, 119, 222);
+    addColor(AComponent::ComponentColor::COLOR_CYAN, 0, 193, 177);
+    addColor(AComponent::ComponentColor::COLOR_GREEN, 53, 196, 107);
+    addColor(AComponent::ComponentColor::COLOR_MAGENTA, 205, 22, 134);
+    addColor(AComponent::ComponentColor::COLOR_YELLOW, 225, 207, 10);
+    keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;
+    keyCodeAssociation[SDL_SCANCODE_RIGHT] = ArcadeSystem::ArrowRight;
+    keyCodeAssociation[SDL_SCANCODE_UP] = ArcadeSystem::ArrowUp;
+    keyCodeAssociation[SDL_SCANCODE_DOWN] = ArcadeSystem::ArrowDown;
+    keyCodeAssociation[SDL_SCANCODE_SPACE] = ArcadeSystem::Space;
+    keyCodeAssociation[SDL_SCANCODE_2] = ArcadeSystem::PrevGraph;
+    keyCodeAssociation[SDL_SCANCODE_3] = ArcadeSystem::NextGraph;
+    keyCodeAssociation[SDL_SCANCODE_4] = ArcadeSystem::PrevGame;
+    keyCodeAssociation[SDL_SCANCODE_5] = ArcadeSystem::NextGame;
+    keyCodeAssociation[SDL_SCANCODE_8] = ArcadeSystem::Restart;
+    keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
+    keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
+    keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
+    keyCodeAssociation[SDL_SCANCODE_RETURN] = ArcadeSystem::Enter;
+    keyCodeAssociation[SDL_SCANCODE_BACKSPACE] = ArcadeSystem::Backspace;
+}
+
+SDLGraph::~SDLGraph()
+{
+    std::map<std::string, SDL_Texture*>::iterator   it;
+
+    for (it = spriteCache.begin(); it != spriteCache.end(); ++it)
+    {
+        SDL_DestroyTexture(it->second);
+    }
+    TTF_CloseFont(uifont);
+    TTF_Quit();
+    SDL_DestroyRenderer(render);
+    SDL_DestroyWindow(win);
+    SDL_Quit();
+}
+
+void SDLGraph::addColor(AComponent::ComponentColor index, Uint8 r, Uint8 g, Uint8 b, Uint8 a)
+{
+    SDL_Color   color;
+
+    color.a = a;
+    color.r = r;
+    color.g = g;
+    color.b = b;
+    colors[index] = color;
+}
 
 int SDLGraph::eventManagment()
 {
@@ -46,48 +104,6 @@ void SDLGraph::display(std::stack<AComponent *> stack)
     SDL_RenderPresent(render);
 }
 
-SDLGraph::SDLGraph()
-{
-    if (SDL_Init(0) != 0 ||
-        (win = SDL_CreateWindow("Arcade", 0, 0, ArcadeSystem::winWidth * SDLGraph::scale, ArcadeSystem::winHeight * SDLGraph::scale, SDL_WINDOW_SHOWN)) == NULL ||
-        (render = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED)) == NULL ||
-        TTF_Init() != 0 || (uifont = TTF_OpenFont(SDLGraph::fontName.c_str(), 24)) == NULL)
-        throw std::runtime_error(SDL_GetError());
-    uicolor.r = 255;
-    uicolor.g = 255;
-    uicolor.b = 255;
-    keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;
-    keyCodeAssociation[SDL_SCANCODE_RIGHT] = ArcadeSystem::ArrowRight;
-    keyCodeAssociation[SDL_SCANCODE_UP] = ArcadeSystem::ArrowUp;
-    keyCodeAssociation[SDL_SCANCODE_DOWN] = ArcadeSystem::ArrowDown;
-    keyCodeAssociation[SDL_SCANCODE_SPACE] = ArcadeSystem::Space;
-    keyCodeAssociation[SDL_SCANCODE_2] = ArcadeSystem::PrevGraph;
-    keyCodeAssociation[SDL_SCANCODE_3] = ArcadeSystem::NextGraph;
-    keyCodeAssociation[SDL_SCANCODE_4] = ArcadeSystem::PrevGame;
-    keyCodeAssociation[SDL_SCANCODE_5] = ArcadeSystem::NextGame;
-    keyCodeAssociation[SDL_SCANCODE_8] = ArcadeSystem::Restart;
-    keyCodeAssociation[SDL_SCANCODE_9] = ArcadeSystem::Home;
-    keyCodeAssociation[SDL_SCANCODE_ESCAPE] = ArcadeSystem::Exit;
-    keyCodeAssociation[SDL_SCANCODE_P] = ArcadeSystem::Pause;
-    keyCodeAssociation[SDL_SCANCODE_RETURN] = ArcadeSystem::Enter;
-    keyCodeAssociation[SDL_SCANCODE_BACKSPACE] = ArcadeSystem::Backspace;
-}
-
-SDLGraph::~SDLGraph()
-{
-    std::map<std::string, SDL_Texture*>::iterator   it;
-
-    for (it = spriteCache.begin(); it != spriteCache.end(); ++it)
-    {
-        SDL_DestroyTexture(it->second);
-    }
-    TTF_CloseFont(uifont);
-    TTF_Quit();
-    SDL_DestroyRenderer(render);
-    SDL_DestroyWindow(win);
-    SDL_Quit();
-}
-
 SDL_Texture     *SDLGraph::loadSprite(const std::string &file) throw(std::runtime_error)
 {
     std::map<std::string, SDL_Texture*>::iterator   it;
@@ -106,15 +122,15 @@ SDL_Texture     *SDLGraph::loadSprite(const std::string &file) throw(std::runtim
     return tex;
 }
 
-void SDLGraph::displaySurface(AComponent const *component, SDL_Texture *texture, Vector2<int> dim) throw(std::runtime_error)
+void SDLGraph::displaySurface(SDL_Texture *texture, Vector2<int> pos, Vector2<int> dim) throw(std::runtime_error)
 {
-    SDL_Rect    pos;
+    SDL_Rect    sdlRect;
 
-    pos.x = static_cast<int>(component->getPos().x * SDLGraph::scale);
-    pos.y = static_cast<int>(component->getPos().y * SDLGraph::scale);
-    pos.w = dim.x * static_cast<int>(SDLGraph::scale);
-    pos.h = dim.y * static_cast<int>(SDLGraph::scale);
-    if (SDL_RenderCopy(render, texture, NULL, &pos) != 0)
+    sdlRect.x = static_cast<int>(pos.x * SDLGraph::scale);
+    sdlRect.y = static_cast<int>(pos.y * SDLGraph::scale);
+    sdlRect.w = dim.x * static_cast<int>(SDLGraph::scale);
+    sdlRect.h = dim.y * static_cast<int>(SDLGraph::scale);
+    if (SDL_RenderCopy(render, texture, NULL, &sdlRect) != 0)
         throw std::runtime_error(SDL_GetError());
 }
 
@@ -122,7 +138,7 @@ void SDLGraph::drawGameComponent(GameComponent const *component) throw(std::runt
 {
     SDL_Texture *texture = loadSprite(component->getSprite2D());
 
-    displaySurface(component, texture);
+    displaySurface(texture, component->getPos());
 }
 
 void                            SDLGraph::drawHighScoreComponent(HighScoreComponent const *component) throw(std::runtime_error)
@@ -155,15 +171,24 @@ void                            SDLGraph::drawHighScoreComponent(HighScoreCompon
     SDL_DestroyTexture(texture);
 }
 
-void SDLGraph::drawUIComponent(UIComponent const *component) throw(std::runtime_error)
+void SDLGraph::drawText(const std::string &string, Vector2<int> pos, Vector2<int> dim, AComponent::ComponentColor color)
 {
     SDL_Surface *text;
     SDL_Texture *texture;
 
-    if ((text = TTF_RenderText_Solid(uifont, component->getText().c_str(), uicolor)) == NULL ||
+    if ((text = TTF_RenderText_Solid(uifont, string.c_str(), colors[color])) == NULL ||
         (texture = SDL_CreateTextureFromSurface(render, text)) == NULL)
         throw std::runtime_error(SDL_GetError());
-    displaySurface(component, texture, component->getDim());
+    displaySurface(texture, pos, dim);
+}
+
+void SDLGraph::drawUIComponent(UIComponent const *component) throw(std::runtime_error)
+{
+    DualTextComponent const   *dualTextComponent = dynamic_cast<DualTextComponent const *>(component);
+
+    drawText(component->getText(), component->getPos(), component->getDim(), component->getColor());
+    if (dualTextComponent != NULL)
+        drawText(dualTextComponent->getSubTitle(), dualTextComponent->getSubPos(), dualTextComponent->getSubDim());
 }
 
 extern "C" IGraph *loadLib()
