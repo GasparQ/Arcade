@@ -14,6 +14,8 @@
 // Sprites for sdl
 // alpha for opengl
 // Where Am I, Play
+// -> ghost qui trouve pas de route
+// -> touches remanentes
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
@@ -41,7 +43,7 @@ PacmanGame::PacmanGame() :
     //c->SetEvent(this, void (PacmanGame::*InitGame)());
     //m_chronos.push_back(std::unique_ptr<IChrono>(c));
     //m_chronos.emplace_back(new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition));
-    m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts));
+    m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts, "Start"));
 }
 
 PacmanGame::~PacmanGame()
@@ -131,11 +133,13 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 
 void PacmanGame::restart()
 {
-    m_score = 0;
     InitGame();
 }
 
-void PacmanGame::InitGame()
+///
+/// @param : is it a restart or a level change ?
+///
+void PacmanGame::InitGame(bool bIsRestart)
 {
     for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
     {
@@ -146,7 +150,12 @@ void PacmanGame::InitGame()
     m_gums.clear();
     StorePacgums();
     m_chronos.clear();
-    m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts));
+    m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts, "Start"));
+    if (bIsRestart)
+    {
+        m_score = 0;
+        m_lives = 3;
+    }
 }
 
 extern "C" IGame *loadGame()
@@ -211,6 +220,7 @@ void PacmanGame::MoveEntities()
             if (m_pacman.GetState() == Pacman::MORTAL)
             {
                 Die();
+                break;
             }
             else if (m_pacman.GetState() == Pacman::IMMORTAL)
             {
@@ -240,7 +250,18 @@ void PacmanGame::MoveEntities()
                 }
                 ++itGhost;
             }
-            m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::PacmanPowerUpEnd));
+
+            auto chronoDup = std::find_if(std::begin(m_chronos), std::end(m_chronos),
+                                   [&](std::unique_ptr<IChrono>& c)
+                                   { return *c.get() == std::string("Pacgum"); });
+
+            // We prevent the first power to cancel the new one
+            if (chronoDup != m_chronos.end())
+            {
+                m_chronos.erase(chronoDup);
+            }
+
+            m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::PacmanPowerUpEnd, "Pacgum"));
         }
         m_score += 10;
         m_gums.remove(*it);
@@ -248,7 +269,7 @@ void PacmanGame::MoveEntities()
     // If we ate the gums we restart the level
     if (m_gums.empty())
     {
-        InitGame();
+        InitGame(false);
     }
 }
 
@@ -262,8 +283,7 @@ void PacmanGame::Die()
     }
     else
     {
-        m_score = 0;
-        InitGame();
+        InitGame(false);
     }
 }
 

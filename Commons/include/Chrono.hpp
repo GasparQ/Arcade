@@ -18,18 +18,30 @@ public:
     virtual void Update() = 0;
     virtual double GetRemainingTime() const = 0;
     virtual void TriggerEvent() = 0;
+
+    virtual bool operator==(std::string const& name) const
+    {
+        return m_chronoName == name;
+    }
+
+protected:
+    std::string m_chronoName;
 };
 
-// <summary>
-// This class holds a chronometer and can trigger events
-// </summary>
+/// <summary>
+/// This class holds a chronometer and can trigger events
+/// </summary>
 template <class T, class U>
 class Chrono : public IChrono
 {
 public:
-    Chrono(double time, T & object, U method) : m_remaining_time(time), m_object(object), m_method(method)
+    Chrono(double time, T & object, U method, std::string const& name) :
+            m_remaining_time(time),
+            m_object(object),
+            m_method(method)
     {
         m_last_clock = std::chrono::steady_clock::now();
+        m_chronoName = name;
     }
     virtual ~Chrono()
     {}
@@ -53,6 +65,12 @@ public:
     void TriggerEvent()
     {
         (m_object.*m_method)();
+    }
+
+public:
+    virtual bool operator==(Chrono<T, U> const& other) const
+    {
+        return m_chronoName == other.m_chronoName;
     }
 
 private:

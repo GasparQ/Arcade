@@ -64,3 +64,9 @@ void Pacman::SetState(Pacman::PacmanState state)
 {
     m_state = state;
 }
+
+void Pacman::ResetPosition()
+{
+    m_state = MORTAL;
+    PacmanCharacter::ResetPosition();
+}

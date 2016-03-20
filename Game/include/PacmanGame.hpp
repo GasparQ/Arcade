@@ -32,7 +32,7 @@ public:
     typedef void (PacmanCharacter::*keyfunc)(char [31][51]);
 
 private:
-    void InitGame();
+    void InitGame(bool bIsRestart = true);
 
     void MoveEntities();
 
