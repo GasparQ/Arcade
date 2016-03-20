@@ -15,7 +15,6 @@
 // alpha for opengl
 // Where Am I, Play
 // -> ghost qui trouve pas de route
-// -> quand on meurt ca reset toujours le terrain et pas les pouvoirs
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
@@ -133,7 +132,7 @@ void PacmanGame::restart()
 ///
 /// @param : is it a restart or a level change ?
 ///
-void PacmanGame::InitGame(bool bIsRestart)
+void PacmanGame::InitGame(bool bIsRestart, bool bIsNextLevel)
 {
     for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
     {
@@ -141,14 +140,17 @@ void PacmanGame::InitGame(bool bIsRestart)
     }
     m_pacman.ResetPosition();
     m_pacman.SetState(Pacman::MORTAL);
-    m_gums.clear();
-    StorePacgums();
     m_chronos.clear();
     m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts, "Start"));
     if (bIsRestart)
     {
-        m_score = 0;
-        m_lives = 3;
+        if (!bIsNextLevel)
+        {
+            m_score = 0;
+            m_lives = 3;
+        }
+        m_gums.clear();
+        StorePacgums();
     }
 }
 
@@ -214,7 +216,7 @@ void PacmanGame::MoveEntities()
             if (m_pacman.GetState() == Pacman::MORTAL)
             {
                 Die();
-                break;
+                return;
             }
             else if (m_pacman.GetState() == Pacman::IMMORTAL)
             {
@@ -267,7 +269,7 @@ void PacmanGame::MoveEntities()
     // If we ate the gums we restart the level
     if (m_gums.empty())
     {
-        InitGame(false);
+        InitGame(true, true);
     }
 }
 
