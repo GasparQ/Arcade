@@ -15,7 +15,7 @@
 // alpha for opengl
 // Where Am I, Play
 // -> ghost qui trouve pas de route
-// -> touches remanentes
+// -> quand on meurt ca reset toujours le terrain et pas les pouvoirs
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {

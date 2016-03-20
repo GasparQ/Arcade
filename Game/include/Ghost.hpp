@@ -24,9 +24,9 @@ public:
     virtual void ResetPosition();
 
 public:
-    // Dead = goes to base
-    // Hunting : looks for pacman
-    // Scared : flees pacman
+    /// Dead = goes to base
+    /// Hunting : looks for pacman
+    /// Scared : flees pacman
     enum GhostState
     {
         DEAD = 1,
