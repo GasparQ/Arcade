@@ -9,6 +9,7 @@
 #include "../../Commons/include/GameComponent.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
+#include "../../Commons/include/DualTextComponent.hpp"
 
 // Ctor:
 // Initializes Projection mode (3D by default) and Lighting
@@ -227,7 +228,16 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
             {
                 Set2DMode();
             }
-            DrawText(uic->getPos(), uic->getText(), uic->getColor());
+            DualTextComponent *dtc;
+            if ((dtc = dynamic_cast<DualTextComponent*>(stack.top())) != nullptr)
+            {
+                DrawText(dtc->getPos(), dtc->getText(), dtc->getColor());
+                DrawText(dtc->getSubPos(), dtc->getSubTitle(), dtc->getColor());
+            }
+            else
+            {
+                DrawText(uic->getPos(), uic->getText(), uic->getColor());
+            }
         }
         else if ((hsc = dynamic_cast<HighScoreComponent *>(stack.top())) != nullptr)
         {
@@ -293,7 +303,7 @@ void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent
     // IMPORTANT : change the color before rasterizing !!
     glColor3ub(colors[color].r, colors[color].g, colors[color].b);
 
-    glRasterPos2d(pos.x * m_size_coeff + (7 * (text.size())), (pos.y) * m_size_coeff);
+    glRasterPos2d(pos.x * m_size_coeff /*+ (7 * (text.size()))*/, (pos.y) * m_size_coeff);
     for (unsigned int i = 0; i < text.length(); i++)
     {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);

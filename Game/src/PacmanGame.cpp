@@ -10,8 +10,10 @@
 #include "../../Commons/Chrono.hpp"
 
 // TODO:
-// Ghost spawn after 10 seconds
-// score reset on level change ?
+// bug with respawn and gums ?
+// Sprites for sdl
+// alpha for opengl
+// Where Am I, Play
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
