@@ -37,8 +37,9 @@ PacmanGame::PacmanGame() :
     //Chrono<Pacman, void (Pacman::*)()> *c = new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition);
     //c->SetEvent(m_pacman, &Pacman::ResetPosition);
     //c->SetEvent(this, void (PacmanGame::*InitGame)());
-    //m_chronos.push_back(std::unique_ptr<AChrono>(c));
-    m_chronos.emplace_back(new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition));
+    //m_chronos.push_back(std::unique_ptr<IChrono>(c));
+    //m_chronos.emplace_back(new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition));
+    m_chronos.emplace_back(new Chrono<PacmanGame, void (PacmanGame::*)()>(10, *this, &PacmanGame::FreeGhosts));
 }
 
 PacmanGame::~PacmanGame()
@@ -282,12 +283,29 @@ void PacmanGame::UpdateChrono()
 {
     //Chrono <Pacman, Pacman::PacmanState (Pacman::*)()> c(60);
 
-    for (auto it = m_chronos.begin(); it != m_chronos.end(); ++it)
+    std::vector<std::unique_ptr<IChrono>>::iterator it = m_chronos.begin();
+
+    while (it != m_chronos.end())
     {
         (*it).get()->Update();
         if ((*it).get()->GetRemainingTime() <= 0)
         {
             (*it).get()->TriggerEvent();
+            m_chronos.erase(it);
+            it = m_chronos.begin();
         }
+        else
+        {
+            ++it;
+        }
+    }
+}
+
+// Free the ghosts !!
+void PacmanGame::FreeGhosts()
+{
+    for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
+    {
+        (*it).SetState(Ghost::HUNTING);
     }
 }

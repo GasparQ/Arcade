@@ -44,6 +44,8 @@ private:
 
     void UpdateChrono();
 
+    void FreeGhosts();
+
 private:
     // 50x30
     char m_map[31][51] = {"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -109,7 +111,7 @@ private:
     std::map<int, keyfunc> keycodes;
     size_t m_score = 0;
     int m_lives = 3;
-    std::vector<std::unique_ptr<AChrono> > m_chronos;
+    std::vector<std::unique_ptr<IChrono> > m_chronos;
 };
 
 #endif //CPP_ARCADE_PACMAN_HPP

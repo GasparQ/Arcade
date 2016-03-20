@@ -10,9 +10,11 @@
 #include <ostream>
 #include <iostream>
 
-class AChrono
+class IChrono
 {
 public:
+    virtual ~IChrono()
+    {}
     virtual void Update() = 0;
     virtual double GetRemainingTime() const = 0;
     virtual void TriggerEvent() = 0;
@@ -22,7 +24,7 @@ public:
 // This class holds a chronometer and can trigger events
 // </summary>
 template <class T, class U>
-class Chrono : public AChrono
+class Chrono : public IChrono
 {
 public:
     Chrono(double time, T & object, U method) : m_remaining_time(time), m_object(object), m_method(method)

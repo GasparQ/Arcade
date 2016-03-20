@@ -25,7 +25,7 @@ SRCS	=	src/AComponent.cpp		\
 
 OBJS	=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Wextra -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./
+CPPFLAGS	=	-W -Wall -Wextra -Wnon-virtual-dtor -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./
 
 $(NAME):	$(OBJS)
 	ar rc $(NAME) $(OBJS)
