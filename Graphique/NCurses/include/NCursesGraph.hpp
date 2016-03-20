@@ -62,7 +62,7 @@ private:
   void			_displayComponent(HighScoreComponent const *, ncr::Window *win);
   void			_displayComponent(UIComponent const *, ncr::Window *win);
   void			_displayComponent(AnimationComponent const *, ncr::Window *win);
-  void			_displayComponent(ActionComponent<> const *, ncr::Window *win);
+  void			_displayComponent(DualTextComponent const *, ncr::Window *win);
   void			_cacheClear();
   bool			isResizeGood() const;
   ncr::Window		*onCreateBoard();

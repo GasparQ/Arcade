@@ -20,6 +20,7 @@ SRCS	=	src/AComponent.cpp		\
 		src/UIComponent.cpp		\
 		src/HighScoreComponent.cpp	\
 		src/LoadHighScore.cpp \
+		src/DualTextComponent.cpp \
 		Astar.cpp \
 		Chrono.cpp
 
