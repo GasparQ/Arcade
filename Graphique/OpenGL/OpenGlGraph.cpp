@@ -116,7 +116,7 @@ void OpenGlGraph::DrawBackground() const
     DrawTerrain(arcade::winWidth, arcade::winHeight);
 }
 
-void OpenGlGraph::DrawSphere(Vector2<int> pos, AComponent::ComponentColor color, double size) const
+void OpenGlGraph::DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size) const
 {
     GLUquadric *param;
 
@@ -129,7 +129,7 @@ void OpenGlGraph::DrawSphere(Vector2<int> pos, AComponent::ComponentColor color,
     glPopMatrix();
 }
 
-void OpenGlGraph::DrawCube(Vector2<int> pos, AComponent::ComponentColor color, double posY) const
+void OpenGlGraph::DrawCube(Vector2<double> pos, AComponent::ComponentColor color, double posY) const
 {
     glPushMatrix();
     glTranslated(-pos.x, -posY, -pos.y);
@@ -142,7 +142,7 @@ void OpenGlGraph::DrawCube(Vector2<int> pos, AComponent::ComponentColor color, d
     glPopMatrix();
 }
 
-void OpenGlGraph::DrawCube(Vector2<int> pos, GLubyte r, GLubyte g, GLubyte b, double posY) const
+void OpenGlGraph::DrawCube(Vector2<double> pos, GLubyte r, GLubyte g, GLubyte b, double posY) const
 {
     glPushMatrix();
     glTranslated(-pos.x, -posY, -pos.y);
@@ -164,9 +164,9 @@ void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
         {
             if (i == -1 || j == -1 || i == sizeX || j == sizeY)
             {
-                DrawCube(Vector2<int>(i, j), AComponent::COLOR_YELLOW);
+                DrawCube(Vector2<double>(i, j), AComponent::COLOR_YELLOW);
             }
-            DrawCube(Vector2<int>(i, j), 152, 152, 152, 1);
+            DrawCube(Vector2<double>(i, j), 152, 152, 152, 1);
         }
     }
 }
@@ -298,7 +298,7 @@ void OpenGlGraph::Set3DMode()
 }
 
 // Drw text on viewport
-void OpenGlGraph::DrawText(Vector2<int> pos, std::string const &text, AComponent::ComponentColor const &color)
+void OpenGlGraph::DrawText(Vector2<double> pos, std::string const &text, AComponent::ComponentColor const &color)
 {
     // IMPORTANT : change the color before rasterizing !!
     glColor3ub(colors[color].r, colors[color].g, colors[color].b);

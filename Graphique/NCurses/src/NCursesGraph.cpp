@@ -148,7 +148,7 @@ ncr::Window		*NCursesGraph::onCreateUI()
 void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
 						ncr::Window *win)
 {
-  Vector2<int>	pos = gameComponent->getPos();
+  Vector2<double>	pos = gameComponent->getPos();
 
   onCreateBoard();
   if (!win)
@@ -165,7 +165,7 @@ void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
 
 void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr::Window *win)
 {
-  Vector2<int>	pos = uiComponent->getPos();
+  Vector2<double>	pos = uiComponent->getPos();
   DualTextComponent const   *dualTextComponent =
     dynamic_cast<DualTextComponent const *>(uiComponent);
 
@@ -178,10 +178,10 @@ void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr
   _cacheGame.push(s_cache(uiComponent->getPos(), uiComponent->getText(), win));
   if (dualTextComponent)
     {
-      Vector2<int>	newPos = dualTextComponent->getSubPos();
+      Vector2<double>	newPos = dualTextComponent->getSubPos();
       win->attrON(COLOR_PAIR(dualTextComponent->getColor()) | A_BOLD);
       win->print(pos.x, newPos.y, "%s", dualTextComponent->getSubTitle().c_str());
-      _cacheGame.push(s_cache(Vector2<int>(pos.x, newPos.y),
+      _cacheGame.push(s_cache(Vector2<double>(pos.x, newPos.y),
 			      dualTextComponent->getSubTitle(), win));
     }
 }
@@ -214,7 +214,7 @@ void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
       if (contenu[i] == '$')
 	{
 	  win->write(newX, newY, ' ', A_REVERSE | COLOR_PAIR(6));
-	  _cacheGame.push(s_cache(Vector2<int>(newX, newY), " ", win));
+	  _cacheGame.push(s_cache(Vector2<double>(newX, newY), " ", win));
 	}
       else if (contenu[i] == '\n')
 	{
@@ -224,7 +224,7 @@ void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
       else
 	{
 	  win->write(newX, newY, contenu[i], 0);
-	  _cacheGame.push(s_cache(Vector2<int>(newX, newY), " ", win));
+	  _cacheGame.push(s_cache(Vector2<double>(newX, newY), " ", win));
 	}
       ++newX;
       ++i;

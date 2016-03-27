@@ -5,7 +5,7 @@
 #include "../include/Ghost.hpp"
 #include "../../Commons/include/Astar.hpp"
 
-Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<int>(25, 15), color, "sprites/red_ghost.bmp", " ",
+Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<double>(25, 15), color, "sprites/red_ghost.bmp", " ",
                                                                  GameComponent::Shapes::CUBE)
 {
     m_color_original = m_color;
@@ -16,11 +16,11 @@ Ghost::~Ghost()
 
 }
 
-Vector2<int> const &Ghost::Move(char map[31][51], Vector2<int> pacmanPos)
+Vector2<double> const &Ghost::Move(char map[31][51], Vector2<double> pacmanPos)
 {
     Astar as(map);
     std::string dir;
-    Vector2<int> target;
+    Vector2<double> target;
 
     if (m_state == FREEZE)
     {

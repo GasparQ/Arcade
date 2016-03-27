@@ -4,7 +4,7 @@
 
 #include "../include/PacmanCharacter.hpp"
 
-PacmanCharacter::PacmanCharacter(Vector2<int> pos, AComponent::ComponentColor color, std::string const& shape2D,
+PacmanCharacter::PacmanCharacter(Vector2<double > pos, AComponent::ComponentColor color, std::string const& shape2D,
                                  std::string const& shapeCurses, GameComponent::Shapes shape3D) :
         m_pos(pos),
         m_initPos(pos),
@@ -26,7 +26,7 @@ void PacmanCharacter::ResetPosition()
     m_pos = m_initPos;
 }
 
-Vector2<int> const &PacmanCharacter::getPosition() const
+Vector2<double> const &PacmanCharacter::getPosition() const
 {
     return m_pos;
 }

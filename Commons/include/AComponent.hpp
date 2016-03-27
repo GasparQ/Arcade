@@ -28,18 +28,18 @@ public:
     };
 
 private:
-    Vector2<int> pos;
+    Vector2<double> pos;
     enum ComponentColor _color;
 
 public:
     AComponent(int x, int y, enum ComponentColor color);
 
-    AComponent(Vector2<int> const &pos, enum ComponentColor color);
+    AComponent(Vector2<double> const &pos, enum ComponentColor color);
 
     virtual ~AComponent();
 
 public:
-    Vector2<int> const &getPos() const;
+    Vector2<double> const &getPos() const;
 
     enum ComponentColor getColor() const;
 

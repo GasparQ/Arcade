@@ -124,7 +124,8 @@ public:
         int y;
         int xdx, ydy;
         char c;
-        pqi=0;
+
+        pqi = 0;
 
         // reset the node maps
         for (y = 0; y < m; y++)
@@ -140,7 +141,8 @@ public:
         n0 = new node(xStart, yStart, 0, 0);
         n0->updatePriority(xFinish, yFinish);
         pq[pqi].push(*n0);
-        open_nodes_map[x][y] = n0->getPriority(); // mark it on the open nodes map
+        // Used to be x and y (oob)
+        open_nodes_map[xStart][yStart] = n0->getPriority(); // mark it on the open nodes map
 
         // A* search
         while (!pq[pqi].empty())

@@ -7,8 +7,8 @@
 
 const std::string   HighScoreComponent::pseudoPlaceholder("Enter your pseudo");
 const std::string   HighScoreComponent::labelHighscores("Highscores");
-const Vector2<int>  HighScoreComponent::highscoreDim(15, 20);
-const Vector2<int>  HighScoreComponent::highscorePos(7, 5);
+const Vector2<double>  HighScoreComponent::highscoreDim(15, 20);
+const Vector2<double>  HighScoreComponent::highscorePos(7, 5);
 
 static std::string  pseudo(HighScoreComponent::pseudoPlaceholder);
 
@@ -25,30 +25,30 @@ HighScoreComponent::HighScoreComponent(std::string const &gameName, size_t score
     scoreStr << "score : " << score;
     //Nom du jeu
     components[ComponentsPos::GAMENAME] = new UIComponent(
-            Vector2<int>(mid - static_cast<int>(gameName.length()) / 2, 1),
+            Vector2<double>(mid - static_cast<int>(gameName.length()) / 2, 1),
             AComponent::ComponentColor::COLOR_WHITE,
-            Vector2<int>(static_cast<int>(gameName.length()), 2),
+            Vector2<double>(static_cast<int>(gameName.length()), 2),
             gameName
     );
     //Score
     components[HighScoreComponent::ComponentsPos::SCORE] = new UIComponent(
-            Vector2<int>(static_cast<int>(ArcadeSystem::winWidth) / 2 - static_cast<int>(scoreStr.str().length()) / 2, 3),
+            Vector2<double>(static_cast<int>(ArcadeSystem::winWidth) / 2 - static_cast<int>(scoreStr.str().length()) / 2, 3),
             AComponent::ComponentColor::COLOR_WHITE,
-            Vector2<int>(static_cast<int>(scoreStr.str().length()), 2),
+            Vector2<double>(static_cast<int>(scoreStr.str().length()), 2),
             scoreStr.str()
     );
     //Enter you pseudo
     components[ComponentsPos::PSEUDO] = new UIComponent(
-            Vector2<int>(mid - static_cast<int>(pseudoPlaceholder.length()) / 2, 5),
+            Vector2<double>(mid - static_cast<int>(pseudoPlaceholder.length()) / 2, 5),
             AComponent::ComponentColor::COLOR_YELLOW,
-            Vector2<int>(static_cast<int>(pseudoPlaceholder.length()), 2),
+            Vector2<double>(static_cast<int>(pseudoPlaceholder.length()), 2),
             HighScoreComponent::pseudoPlaceholder
     );
     //Highscores label
     components[ComponentsPos::LABEL] = new UIComponent(
-            Vector2<int>(mid - static_cast<int>(HighScoreComponent::labelHighscores.length()) / 2, 8),
+            Vector2<double>(mid - static_cast<int>(HighScoreComponent::labelHighscores.length()) / 2, 8),
             AComponent::ComponentColor::COLOR_WHITE,
-            Vector2<int>(static_cast<int>(HighScoreComponent::labelHighscores.length()), 2),
+            Vector2<double>(static_cast<int>(HighScoreComponent::labelHighscores.length()), 2),
             HighScoreComponent::labelHighscores
     );
     // All scores
@@ -60,9 +60,9 @@ HighScoreComponent::HighScoreComponent(std::string const &gameName, size_t score
 
             displayed << scores[i]->getName() << " " << scores[i]->getScore();
             components[i + 3] = new UIComponent(
-                    Vector2<int>(mid - static_cast<int>(displayed.str().length()) / 2, (i * 2) + 10),
+                    Vector2<double>(mid - static_cast<int>(displayed.str().length()) / 2, (i * 2) + 10),
                     AComponent::ComponentColor::COLOR_WHITE,
-                    Vector2<int>(static_cast<int>(displayed.str().length()), 2),
+                    Vector2<double>(static_cast<int>(displayed.str().length()), 2),
                     displayed.str()
             );
         }
@@ -98,9 +98,9 @@ void HighScoreComponent::UpdatePseudo(const int key)
         pseudo = HighScoreComponent::pseudoPlaceholder;
     delete(components[HighScoreComponent::ComponentsPos::PSEUDO]);
     components[HighScoreComponent::ComponentsPos::PSEUDO] = new UIComponent(
-            Vector2<int>(static_cast<int>(ArcadeSystem::winWidth) / 2 - static_cast<int>(pseudo.length()) / 2, 5),
+            Vector2<double>(static_cast<int>(ArcadeSystem::winWidth) / 2 - static_cast<int>(pseudo.length()) / 2, 5),
             AComponent::ComponentColor::COLOR_WHITE,
-            Vector2<int>(static_cast<int>(pseudo.length()), 2),
+            Vector2<double>(static_cast<int>(pseudo.length()), 2),
             pseudo
     );
 }

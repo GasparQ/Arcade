@@ -14,9 +14,9 @@ class   DualTextComponent : public UIComponent
 {
 public:
     DualTextComponent(
-            Vector2<int> const &pos,
+            Vector2<double> const &pos,
             enum ComponentColor color,
-            Vector2<int> const &dim,
+            Vector2<double> const &dim,
             std::string const &title,
             std::string const &subTitle = ""
     );
@@ -26,13 +26,13 @@ public:
 public:
     void                setSubTitle(std::string const &string);
     std::string const   &getSubTitle() const;
-    Vector2<int> const  &getSubPos() const;
-    Vector2<int> const  &getSubDim() const;
+    Vector2<double> const  &getSubPos() const;
+    Vector2<double> const  &getSubDim() const;
 
 private:
     std::string     subTitle;
-    Vector2<int>    subPos;
-    Vector2<int>    subDim;
+    Vector2<double>    subPos;
+    Vector2<double>    subDim;
 };
 
 #endif //C_DUALTEXTCOMPONENT_HPP

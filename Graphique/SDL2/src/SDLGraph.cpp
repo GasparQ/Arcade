@@ -122,7 +122,7 @@ SDL_Texture     *SDLGraph::loadSprite(const std::string &file) throw(std::runtim
     return tex;
 }
 
-void SDLGraph::displaySurface(SDL_Texture *texture, Vector2<int> pos, Vector2<int> dim) throw(std::runtime_error)
+void SDLGraph::displaySurface(SDL_Texture *texture, Vector2<double> pos, Vector2<double> dim) throw(std::runtime_error)
 {
     SDL_Rect    sdlRect;
 
@@ -171,7 +171,7 @@ void                            SDLGraph::drawHighScoreComponent(HighScoreCompon
     SDL_DestroyTexture(texture);
 }
 
-void SDLGraph::drawText(const std::string &string, Vector2<int> pos, Vector2<int> dim, AComponent::ComponentColor color)
+void SDLGraph::drawText(const std::string &string, Vector2<double> pos, Vector2<double> dim, AComponent::ComponentColor color)
 {
     SDL_Surface *text;
     SDL_Texture *texture;

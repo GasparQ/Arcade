@@ -17,16 +17,16 @@
 class	UIComponent : public AComponent
 {
 private:
-  Vector2<int> dim;
+  Vector2<double> dim;
   std::string text;
 
 public:
-UIComponent(Vector2<int> const &pos, enum ComponentColor color,
-		Vector2<int> const &dim, std::string const &);
+UIComponent(Vector2<double> const &pos, enum ComponentColor color,
+		Vector2<double> const &dim, std::string const &);
 virtual ~UIComponent();
 
 public:
-Vector2<int> const &getDim() const;
+Vector2<double> const &getDim() const;
 std::string const &getText() const;
 };
 

@@ -12,17 +12,17 @@
 class PacmanCharacter
 {
 public:
-    PacmanCharacter(Vector2<int> pos, AComponent::ComponentColor color, std::string const &shape2D,
+    PacmanCharacter(Vector2<double > pos, AComponent::ComponentColor color, std::string const &shape2D,
                     std::string const &shapeCurses, GameComponent::Shapes shape3D);
 
     virtual ~PacmanCharacter();
 
 public:
-    virtual Vector2<int> const &Move(char map[31][51], Vector2<int> pacmanPos = Vector2<int>(0, 0)) = 0;
+    virtual Vector2<double> const &Move(char map[31][51], Vector2<double> pacmanPos = Vector2<double>(0, 0)) = 0;
 
     virtual void ResetPosition();
 
-    Vector2<int> const &getPosition() const;
+    Vector2<double> const &getPosition() const;
 
     AComponent::ComponentColor getColor() const;
 
@@ -36,7 +36,7 @@ public:
     {
         if (m_pos.y - 1 < 0)
             return;
-        if (map[m_pos.y - 1][m_pos.x] != 'X')
+        if (map[(int)m_pos.y - 1][(int)m_pos.x] != 'X')
             m_dir = UP;
     }
 
@@ -44,7 +44,7 @@ public:
     {
         if (m_pos.y + 1 >= 31)
             return;
-        if (map[m_pos.y + 1][m_pos.x] != 'X')
+        if (map[(int)m_pos.y + 1][(int)m_pos.x] != 'X')
             m_dir = DOWN;
     }
 
@@ -52,7 +52,7 @@ public:
     {
         if (m_pos.x - 1 < 0)
             return;
-        if (map[m_pos.y][m_pos.x - 1] != 'X')
+        if (map[(int)m_pos.y][(int)m_pos.x - 1] != 'X')
             m_dir = LEFT;
     }
 
@@ -60,7 +60,7 @@ public:
     {
         if (m_pos.x + 1 >= 51)
             return;
-        if (map[m_pos.y][m_pos.x + 1] != 'X')
+        if (map[(int)m_pos.y][(int)m_pos.x + 1] != 'X')
             m_dir = RIGHT;
     }
 
@@ -74,8 +74,8 @@ protected:
     };
 
     Direction m_dir = LEFT;
-    Vector2<int> m_pos;
-    Vector2<int> m_initPos;
+    Vector2<double> m_pos;
+    Vector2<double> m_initPos;
 
 protected:
     AComponent::ComponentColor m_color;

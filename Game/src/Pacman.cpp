@@ -4,7 +4,7 @@
 
 #include "../include/Pacman.hpp"
 
-Vector2<int> const &Pacman::Move(char m_map[31][51], Vector2<int>)
+Vector2<double> const &Pacman::Move(char m_map[31][51], Vector2<double>)
 {
     /// Side teleporters
     if (m_pos.x == 0)
@@ -19,22 +19,22 @@ Vector2<int> const &Pacman::Move(char m_map[31][51], Vector2<int>)
     /// We check if we can pop the last input we saved
     if (!m_dir_stack.empty())
     {
-        if (m_map[m_pos.y - 1][m_pos.x] != 'X' && m_dir_stack.top() == UP)
+        if (m_map[(int)m_pos.y - 1][(int)m_pos.x] != 'X' && m_dir_stack.top() == UP)
         {
             m_dir = m_dir_stack.top();
             m_dir_stack.pop();
         }
-        else if (m_map[m_pos.y + 1][m_pos.x] != 'X' && m_dir_stack.top() == DOWN)
+        else if (m_map[(int)m_pos.y + 1][(int)m_pos.x] != 'X' && m_dir_stack.top() == DOWN)
         {
             m_dir = m_dir_stack.top();
             m_dir_stack.pop();
         }
-        else if (m_map[m_pos.y][m_pos.x - 1] != 'X' && m_dir_stack.top() == LEFT)
+        else if (m_map[(int)m_pos.y][(int)m_pos.x - 1] != 'X' && m_dir_stack.top() == LEFT)
         {
             m_dir = m_dir_stack.top();
             m_dir_stack.pop();
         }
-        else if (m_map[m_pos.y][m_pos.x + 1] != 'X' && m_dir_stack.top() == RIGHT)
+        else if (m_map[(int)m_pos.y][(int)m_pos.x + 1] != 'X' && m_dir_stack.top() == RIGHT)
         {
             m_dir = m_dir_stack.top();
             m_dir_stack.pop();
@@ -45,25 +45,25 @@ Vector2<int> const &Pacman::Move(char m_map[31][51], Vector2<int>)
     switch (m_dir)
     {
         case UP:
-            if (m_map[m_pos.y - 1][m_pos.x] != 'X')
+            if (m_map[(int)m_pos.y - 1][(int)m_pos.x] != 'X')
             {
                 --m_pos.y;
             }
             break;
         case DOWN:
-            if (m_map[m_pos.y + 1][m_pos.x] != 'X')
+            if (m_map[(int)m_pos.y + 1][(int)m_pos.x] != 'X')
             {
                 ++m_pos.y;
             }
             break;
         case LEFT:
-            if (m_map[m_pos.y][m_pos.x - 1] != 'X')
+            if (m_map[(int)m_pos.y][(int)m_pos.x - 1] != 'X')
             {
                 --m_pos.x;
             }
             break;
         case RIGHT:
-            if (m_map[m_pos.y][m_pos.x + 1] != 'X')
+            if (m_map[(int)m_pos.y][(int)m_pos.x + 1] != 'X')
             {
                 ++m_pos.x;
             }
@@ -72,7 +72,7 @@ Vector2<int> const &Pacman::Move(char m_map[31][51], Vector2<int>)
     return m_pos;
 }
 
-Pacman::Pacman() : PacmanCharacter(Vector2<int>(25, 18), AComponent::ComponentColor::COLOR_YELLOW, "sprites/pacman.bmp", " ",
+Pacman::Pacman() : PacmanCharacter(Vector2<double >(25, 18), AComponent::ComponentColor::COLOR_YELLOW, "sprites/pacman.bmp", " ",
                                    GameComponent::Shapes::SPHERE_LARGE)
 {
 }

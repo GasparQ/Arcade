@@ -85,13 +85,13 @@ private:
     class Gums
     {
     public:
-        Gums(Vector2<int> pos, bool bIsSpecialGum) : m_pos(pos), m_bIsSpecialGum(bIsSpecialGum)
+        Gums(Vector2<double> pos, bool bIsSpecialGum) : m_pos(pos), m_bIsSpecialGum(bIsSpecialGum)
         { }
 
         ~Gums()
         { }
 
-        Vector2<int> getPos() const
+        Vector2<double> getPos() const
         { return m_pos; }
 
         bool bIsSpecial() const
@@ -102,7 +102,7 @@ private:
         { return m_pos == other.m_pos; }
 
     private:
-        Vector2<int> m_pos;
+        Vector2<double> m_pos;
         bool m_bIsSpecialGum;
     };
 

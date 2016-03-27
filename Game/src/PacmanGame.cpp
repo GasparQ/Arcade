@@ -8,6 +8,7 @@
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../../Commons/include/Chrono.hpp"
+#include "../include/Protocol.hpp"
 
 // TODO:
 // bug with respawn and gums ?
@@ -15,6 +16,7 @@
 // alpha for opengl
 // Where Am I, Play
 // -> ghost qui trouve pas de route
+// deplacements en floats
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
@@ -52,13 +54,13 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
 
     if (state == AGame::ALIVE)
     {
-        output.push(new UIComponent(Vector2<int>((static_cast<int>(ArcadeSystem::winWidth - std::string(
+        output.push(new UIComponent(Vector2<double>((static_cast<int>(ArcadeSystem::winWidth - std::string(
                                             "score : " + std::to_string(m_score)).size()) / 2), 1),
                                     AComponent::COLOR_WHITE,
-                                    Vector2<int>(5, 1), "score : " + std::to_string(m_score)));
-        output.push(new UIComponent(Vector2<int>(1, 1),
+                                    Vector2<double>(5, 1), "score : " + std::to_string(m_score)));
+        output.push(new UIComponent(Vector2<double>(1, 1),
                                     AComponent::COLOR_WHITE,
-                                    Vector2<int>(5, 1), "lives : " + std::to_string(m_lives)));
+                                    Vector2<double>(5, 1), "lives : " + std::to_string(m_lives)));
 
         if ((it = keycodes.find(keycode)) != keycodes.end())
         {
@@ -83,7 +85,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
             {
                 if (m_map[y][x] == 'X')
                 {
-                    output.push(new GameComponent(Vector2<int>(x, y), AComponent::ComponentColor::COLOR_BLUE,
+                    output.push(new GameComponent(Vector2<double>(x, y), AComponent::ComponentColor::COLOR_BLUE,
                                                   GameComponent::Shapes::CUBE, " ", "sprites/pacwall.bmp"));
                 }
             }
@@ -192,7 +194,7 @@ void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState 
         {
             if ((*itGhost).GetState() == Ghost::HUNTING)
             {
-                newMap[(*itGhost).getPosition().y][(*itGhost).getPosition().x] = 'X';
+                newMap[(int)(*itGhost).getPosition().y][(int)(*itGhost).getPosition().x] = 'X';
             }
             ++itGhost;
         }
@@ -202,7 +204,7 @@ void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState 
 // Updates the positions of pacman and all the ghosts
 void PacmanGame::MoveEntities()
 {
-    Vector2<int> newPacPos = m_pacman.Move(m_map);
+    Vector2<double> newPacPos = m_pacman.Move(m_map);
     std::vector<Ghost>::iterator itGhost = m_ghosts.begin();
 
     while (itGhost != m_ghosts.end())
@@ -295,11 +297,11 @@ void PacmanGame::StorePacgums()
         {
             if (m_map[y][x] == '.')
             {
-                m_gums.push_back(Gums(Vector2<int>(x, y), false));
+                m_gums.push_back(Gums(Vector2<double>(x, y), false));
             }
             else if (m_map[y][x] == 'o')
             {
-                m_gums.push_back(Gums(Vector2<int>(x, y), true));
+                m_gums.push_back(Gums(Vector2<double>(x, y), true));
             }
         }
     }

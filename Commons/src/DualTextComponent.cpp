@@ -11,8 +11,8 @@
  * @param string which corresponds to the title of the UIComponent
  * @param subTitle which is the subtitle of this component
  */
-DualTextComponent::DualTextComponent(Vector2<int> const &pos, AComponent::ComponentColor color,
-                                     Vector2<int> const &dim, std::string const &string, std::string const &subTitle) :
+DualTextComponent::DualTextComponent(Vector2<double> const &pos, AComponent::ComponentColor color,
+                                     Vector2<double> const &dim, std::string const &string, std::string const &subTitle) :
     UIComponent(pos, color, dim, string)
 {
     setSubTitle(subTitle);
@@ -34,8 +34,8 @@ DualTextComponent::~DualTextComponent()
 void DualTextComponent::setSubTitle(std::string const &string)
 {
     subTitle = string;
-    subDim = Vector2<int>(static_cast<int>(string.length()), getDim().y / 3);
-    subPos = Vector2<int>(getDim().x / 2 - subDim.x / 2 + getPos().x, getPos().y + getDim().y);
+    subDim = Vector2<double>(static_cast<int>(string.length()), getDim().y / 3);
+    subPos = Vector2<double>(getDim().x / 2 - subDim.x / 2 + getPos().x, getPos().y + getDim().y);
 }
 
 /**
@@ -46,12 +46,12 @@ std::string const &DualTextComponent::getSubTitle() const
     return subTitle;
 }
 
-Vector2<int> const &DualTextComponent::getSubPos() const
+Vector2<double> const &DualTextComponent::getSubPos() const
 {
     return subPos;
 }
 
-Vector2<int> const &DualTextComponent::getSubDim() const
+Vector2<double> const &DualTextComponent::getSubDim() const
 {
     return subDim;
 }

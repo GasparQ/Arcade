@@ -30,11 +30,11 @@ public:
     virtual void display(std::stack<AComponent *>);
 
 private:
-    void DrawSphere(Vector2<int> pos, AComponent::ComponentColor color, double size) const;
+    void DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size) const;
 
-    void DrawCube(Vector2<int> pos, AComponent::ComponentColor color, double posY = 0) const;
+    void DrawCube(Vector2<double> pos, AComponent::ComponentColor color, double posY = 0) const;
 
-    void DrawCube(Vector2<int> pos, GLubyte r, GLubyte g, GLubyte b, double posY = 0) const;
+    void DrawCube(Vector2<double> pos, GLubyte r, GLubyte g, GLubyte b, double posY = 0) const;
 
     void DrawTerrain(int sizeX, int sizeY) const;
 
@@ -48,7 +48,7 @@ private:
 
     void Set3DMode();
 
-    void DrawText(Vector2<int> pos, std::string const& text, AComponent::ComponentColor const& color);
+    void DrawText(Vector2<double> pos, std::string const& text, AComponent::ComponentColor const& color);
 
 private:
     enum RenderMode

@@ -40,8 +40,8 @@ private:
     void        drawGameComponent(GameComponent const *)                                                    throw(std::runtime_error);
     void        drawUIComponent(UIComponent const *)                                                        throw(std::runtime_error);
     void        drawHighScoreComponent(HighScoreComponent const *)                                          throw(std::runtime_error);
-    void        displaySurface(SDL_Texture *, Vector2<int> pos, Vector2<int> dim = Vector2<int>(1, 1))    throw(std::runtime_error);
-    void        drawText(std::string const&, Vector2<int> pos, Vector2<int> dim = Vector2<int>(1, 1), AComponent::ComponentColor color = AComponent::ComponentColor::COLOR_WHITE);
+    void        displaySurface(SDL_Texture *, Vector2<double> pos, Vector2<double> dim = Vector2<double>(1, 1))    throw(std::runtime_error);
+    void        drawText(std::string const&, Vector2<double> pos, Vector2<double> dim = Vector2<double>(1, 1), AComponent::ComponentColor color = AComponent::ComponentColor::COLOR_WHITE);
     void        addColor(AComponent::ComponentColor index, Uint8 r, Uint8 g, Uint8 b, Uint8 a = 0);
 };
 

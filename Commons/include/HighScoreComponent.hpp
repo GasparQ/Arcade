@@ -17,8 +17,8 @@ public:
     static const std::string    pseudoPlaceholder;
     static const std::string    labelHighscores;
     static const size_t         componentNb = 14;
-    static const Vector2<int>   highscoreDim;
-    static const Vector2<int>   highscorePos;
+    static const Vector2<double>   highscoreDim;
+    static const Vector2<double>   highscorePos;
     typedef enum
     {
         GAMENAME,

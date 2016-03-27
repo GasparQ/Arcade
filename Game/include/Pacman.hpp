@@ -33,7 +33,7 @@ public:
     virtual void goRight(char map[31][51]);
 
 public:
-    virtual Vector2<int> const& Move(char map[31][51], Vector2<int> pacmanPos = Vector2<int>(0, 0));
+    virtual Vector2<double> const& Move(char map[31][51], Vector2<double> pacmanPos = Vector2<double>(0, 0));
 
 private:
     PacmanState m_state = MORTAL;

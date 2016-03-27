@@ -36,13 +36,13 @@ private:
     } Orientation;
 
 private:
-    std::list<Vector2<int> >        body;
-    Vector2<int>                    apple;
+    std::list<Vector2<double> >        body;
+    Vector2<double>                    apple;
     size_t                          score;
     Orientation                     snakeOri;
-    Vector2<int>                    direction;
+    Vector2<double>                    direction;
     std::map<int, keyfunc>          keycodex;
-    std::list<Vector2<int> >        plate;
+    std::list<Vector2<double> >        plate;
 
 public:
     void                            goUp();
@@ -50,17 +50,17 @@ public:
     void                            goLeft();
     void                            goRight();
     void                            goAhead();
-    Vector2<int> const              &getApple() const;
-    std::list<Vector2<int>> const   &getSnake() const;
+    Vector2<double> const              &getApple() const;
+    std::list<Vector2<double>> const   &getSnake() const;
 
 private:
     void                        generateAppelPos();
     void                        removeBody();
-    void                        addBody(Vector2<int> newPos);
+    void                        addBody(Vector2<double> newPos);
     void                        move();
     void                        die();
     void                        initGame();
-    bool                        goOnWall(Vector2<int> const &vector) const;
+    bool                        goOnWall(Vector2<double> const &vector) const;
 };
 
 #endif //C_SNAKE_HPP

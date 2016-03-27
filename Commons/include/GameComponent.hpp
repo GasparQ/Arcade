@@ -31,7 +31,7 @@ private:
     std::string fileSprite2D;
 
 public:
-    GameComponent(Vector2<int> const &pos, AComponent::ComponentColor color,
+    GameComponent(Vector2<double> const &pos, AComponent::ComponentColor color,
                   Shapes sprite3D, std::string const &spriteText,
                   std::string const &sprite2D);
 
