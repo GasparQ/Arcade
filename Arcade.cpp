@@ -196,7 +196,8 @@ void        arcade::Arcade::Run()
 {
     int key;
     std::chrono::milliseconds chronoMenu(130);
-    std::chrono::milliseconds chronoGame(100);
+    // used to be 100
+    std::chrono::milliseconds chronoGame(10);
     std::map<int, arcade::eventSystem>::iterator it;
     ArcadeMenu  menu(*this);
 

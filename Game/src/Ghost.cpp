@@ -28,17 +28,17 @@ Vector2<double> const &Ghost::Move(char map[31][51], Vector2<double> pacmanPos)
     }
     if (m_state == HUNTING)
     {
-        dir = as.pathFind(m_pos.x, m_pos.y, pacmanPos.x, pacmanPos.y);
+        dir = as.pathFind((int)m_pos.x, (int)m_pos.y, (int)pacmanPos.x, (int)pacmanPos.y);
     }
     else if (m_state == SCARED)
     {
         target.x = (pacmanPos.x < 25) ? 48 : 1;
         target.y = (pacmanPos.y < 15) ? 28 : 1;
-        dir = as.pathFind(m_pos.x, m_pos.y, target.x, target.y);
+        dir = as.pathFind((int)m_pos.x, (int)m_pos.y, (int)target.x, (int)target.y);
     }
     else if (m_state == DEAD)
     {
-        dir = as.pathFind(m_pos.x, m_pos.y, 25, 16);
+        dir = as.pathFind((int)m_pos.x, (int)m_pos.y, 25, 16);
     }
 
     /*switch (m_state)
@@ -64,19 +64,23 @@ Vector2<double> const &Ghost::Move(char map[31][51], Vector2<double> pacmanPos)
 
     if (dir[0] == '0')
     {
-        ++m_pos.x;
+        //++m_pos.x;
+        m_pos.x += velocity;
     }
     else if (dir[0] == '1')
     {
-        ++m_pos.y;
+        //++m_pos.y;
+        m_pos.y += velocity;
     }
     else if (dir[0] == '2')
     {
-        --m_pos.x;
+        //--m_pos.x;
+        m_pos.x -= velocity;
     }
     else if (dir[0] == '3')
     {
-        --m_pos.y;
+        //--m_pos.y;
+        m_pos.y -= velocity;
     }
 
     // If the ghost is back to base, he can hunt again

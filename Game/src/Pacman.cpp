@@ -19,22 +19,22 @@ Vector2<double> const &Pacman::Move(char m_map[31][51], Vector2<double>)
     /// We check if we can pop the last input we saved
     if (!m_dir_stack.empty())
     {
-        if (m_map[(int)m_pos.y - 1][(int)m_pos.x] != 'X' && m_dir_stack.top() == UP)
+        if (m_map[(int)floor(m_pos.y - velocity)][(int)round(m_pos.x)] != 'X' && m_dir_stack.top() == UP)
         {
             m_dir = m_dir_stack.top();
             m_dir_stack.pop();
         }
-        else if (m_map[(int)m_pos.y + 1][(int)m_pos.x] != 'X' && m_dir_stack.top() == DOWN)
+        else if (m_map[(int)ceil(m_pos.y + velocity)][(int)round(m_pos.x)] != 'X' && m_dir_stack.top() == DOWN)
         {
             m_dir = m_dir_stack.top();
             m_dir_stack.pop();
         }
-        else if (m_map[(int)m_pos.y][(int)m_pos.x - 1] != 'X' && m_dir_stack.top() == LEFT)
+        else if (m_map[(int)round(m_pos.y)][(int)floor(m_pos.x - velocity)] != 'X' && m_dir_stack.top() == LEFT)
         {
             m_dir = m_dir_stack.top();
             m_dir_stack.pop();
         }
-        else if (m_map[(int)m_pos.y][(int)m_pos.x + 1] != 'X' && m_dir_stack.top() == RIGHT)
+        else if (m_map[(int)round(m_pos.y)][(int)ceil(m_pos.x + velocity)] != 'X' && m_dir_stack.top() == RIGHT)
         {
             m_dir = m_dir_stack.top();
             m_dir_stack.pop();
@@ -45,27 +45,36 @@ Vector2<double> const &Pacman::Move(char m_map[31][51], Vector2<double>)
     switch (m_dir)
     {
         case UP:
-            if (m_map[(int)m_pos.y - 1][(int)m_pos.x] != 'X')
+            if (m_map[(int)floor(m_pos.y - velocity)][(int)round(m_pos.x)] != 'X')
             {
-                --m_pos.y;
+                //--m_pos.y;
+                m_pos.y -= velocity;
+                m_pos.x = round(m_pos.x);
             }
             break;
         case DOWN:
-            if (m_map[(int)m_pos.y + 1][(int)m_pos.x] != 'X')
+            if (m_map[(int)ceil(m_pos.y + velocity)][(int)round(m_pos.x)] != 'X')
             {
-                ++m_pos.y;
+                //++m_pos.y;
+                m_pos.y += velocity;
+                m_pos.x = round(m_pos.x);
             }
             break;
         case LEFT:
-            if (m_map[(int)m_pos.y][(int)m_pos.x - 1] != 'X')
+            if (m_map[(int)round(m_pos.y)][(int)floor(m_pos.x - velocity)] != 'X')
             {
-                --m_pos.x;
+                //--m_pos.x;
+                m_pos.x -= velocity;
+                m_pos.y = round(m_pos.y);
             }
             break;
         case RIGHT:
-            if (m_map[(int)m_pos.y][(int)m_pos.x + 1] != 'X')
+            if (m_map[(int)round(m_pos.y)][(int)ceil(m_pos.x + velocity)] != 'X')
             {
-                ++m_pos.x;
+                //++m_pos.x;
+                m_pos.x += velocity;
+                m_pos.y = round(m_pos.y);
+
             }
             break;
     }

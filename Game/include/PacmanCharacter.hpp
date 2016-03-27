@@ -5,6 +5,7 @@
 #ifndef CPP_ARCADE_PACMANCHARACTER_HPP
 #define CPP_ARCADE_PACMANCHARACTER_HPP
 
+#include <cmath>
 #include "../../Commons/include/Vector2.hpp"
 #include "../../Commons/include/AComponent.hpp"
 #include "../../Commons/include/GameComponent.hpp"
@@ -82,6 +83,7 @@ protected:
     std::string m_shape2D;
     std::string m_shapeCurses;
     GameComponent::Shapes m_shape3D;
+    double velocity = 0.2500000000;
 };
 
 
