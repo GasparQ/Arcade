@@ -16,28 +16,32 @@ Vector2<double> const &Pacman::Move(char m_map[31][51], Vector2<double>)
         m_pos.x = 0;
     }
 
-    /// We check if we can pop the last input we saved
-    if (!m_dir_stack.empty())
+    /// We try to change direction if we are perfectly on the center of a square pos
+    if (static_cast<int>(m_pos.x * 10.0) % 10 == 0 && static_cast<int>(m_pos.y * 10.0) % 10 == 0)
     {
-        if (m_map[(int)floor(m_pos.y - velocity)][(int)round(m_pos.x)] != 'X' && m_dir_stack.top() == UP)
+        /// We check if we can pop the last input we saved
+        if (!m_dir_stack.empty())
         {
-            m_dir = m_dir_stack.top();
-            m_dir_stack.pop();
-        }
-        else if (m_map[(int)ceil(m_pos.y + velocity)][(int)round(m_pos.x)] != 'X' && m_dir_stack.top() == DOWN)
-        {
-            m_dir = m_dir_stack.top();
-            m_dir_stack.pop();
-        }
-        else if (m_map[(int)round(m_pos.y)][(int)floor(m_pos.x - velocity)] != 'X' && m_dir_stack.top() == LEFT)
-        {
-            m_dir = m_dir_stack.top();
-            m_dir_stack.pop();
-        }
-        else if (m_map[(int)round(m_pos.y)][(int)ceil(m_pos.x + velocity)] != 'X' && m_dir_stack.top() == RIGHT)
-        {
-            m_dir = m_dir_stack.top();
-            m_dir_stack.pop();
+            if (m_map[(int) floor(m_pos.y - velocity)][(int) round(m_pos.x)] != 'X' && m_dir_stack.top() == UP)
+            {
+                m_dir = m_dir_stack.top();
+                m_dir_stack.pop();
+            }
+            else if (m_map[(int) ceil(m_pos.y + velocity)][(int) round(m_pos.x)] != 'X' && m_dir_stack.top() == DOWN)
+            {
+                m_dir = m_dir_stack.top();
+                m_dir_stack.pop();
+            }
+            else if (m_map[(int) round(m_pos.y)][(int) floor(m_pos.x - velocity)] != 'X' && m_dir_stack.top() == LEFT)
+            {
+                m_dir = m_dir_stack.top();
+                m_dir_stack.pop();
+            }
+            else if (m_map[(int) round(m_pos.y)][(int) ceil(m_pos.x + velocity)] != 'X' && m_dir_stack.top() == RIGHT)
+            {
+                m_dir = m_dir_stack.top();
+                m_dir_stack.pop();
+            }
         }
     }
 
@@ -78,6 +82,7 @@ Vector2<double> const &Pacman::Move(char m_map[31][51], Vector2<double>)
             }
             break;
     }
+
     return m_pos;
 }
 

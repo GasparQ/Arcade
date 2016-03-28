@@ -12,6 +12,7 @@
 # define VECTOR2_HPP_
 
 # include <cstdlib>
+#include <iostream>
 
 template <class T>
 class	Vector2
@@ -44,5 +45,11 @@ public:
         return Vector2<T>(-x, -y);
     }
 };
+
+template <class T>
+std::ostream & operator<<(std::ostream & stream, Vector2<T> const& v)
+{
+    return stream << "{" << v.x << ", " << v.y << "}" << std::endl;
+}
 
 #endif
