@@ -11,9 +11,8 @@
 #include "../../Commons/include/Chrono.hpp"
 #include "../include/Protocol.hpp"
 
-// TODO:
-// Ghost stay in spawn for 10 seconds
-// reparer la sortie de terrain
+//TODO:
+// Ghost can kill pacman if they went back to spawn
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {

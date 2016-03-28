@@ -8,7 +8,7 @@
 ## Last update Thu Mar 17 20:32:49 2016 Victor Gouet
 ##
 
-CC	=	g++ -g
+CC	=	g++
 
 RM	=	rm -f
 
