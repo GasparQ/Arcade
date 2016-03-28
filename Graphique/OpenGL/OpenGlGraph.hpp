@@ -32,7 +32,7 @@ public:
 private:
     void DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size) const;
 
-    void DrawCube(Vector2<double> pos, AComponent::ComponentColor color, double posY = 0) const;
+    void DrawCube(Vector2<double> pos, AComponent::ComponentColor color, double size = 1, double posY = 0) const;
 
     void DrawCube(Vector2<double> pos, GLubyte r, GLubyte g, GLubyte b, double posY = 0) const;
 

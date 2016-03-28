@@ -7,7 +7,7 @@
 
 Ghost::Ghost(AComponent::ComponentColor color, std::string const& shape2D) : PacmanCharacter(Vector2<double>(25, 15), color,
                                                                  shape2D, " ",
-                                                                 GameComponent::Shapes::CUBE)
+                                                                 GameComponent::Shapes::CUBE_LARGE)
 {
     m_color_original = m_color;
     m_default_sprite = shape2D;
@@ -135,6 +135,7 @@ void Ghost::SetState(GhostState state)
         m_shapeCurses = "\"";
         m_shape2D = "sprites/ghost_eyes.bmp";
         velocity = 0.250000000;
+        m_shape3D = GameComponent::Shapes::CUBE_MEDIUM;
         if (static_cast<int>(m_pos.x * 100.0) % 25 != 0)
         {
             m_pos.x = round(m_pos.x);
@@ -149,6 +150,8 @@ void Ghost::SetState(GhostState state)
         m_color = AComponent::ComponentColor::COLOR_BLUE;
         m_shape2D = "sprites/feared_ghost.bmp";
         velocity = 0.100000;
+        m_shape3D = GameComponent::Shapes::CUBE_LARGE;
+
         if (static_cast<int>(m_pos.x * 100.0) % 10 != 0)
         {
             m_pos.x = round(m_pos.x);
@@ -164,6 +167,7 @@ void Ghost::SetState(GhostState state)
         m_color = m_color_original;
         m_shape2D = m_default_sprite;
         velocity = 0.250000000;
+        m_shape3D = GameComponent::Shapes::CUBE_LARGE;
         if (static_cast<int>(m_pos.x * 100.0) % 25 != 0)
         {
             m_pos.x = round(m_pos.x);

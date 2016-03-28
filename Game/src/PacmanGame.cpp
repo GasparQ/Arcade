@@ -12,9 +12,9 @@
 #include "../include/Protocol.hpp"
 
 // TODO:
-// Sprites for sdl
 // alpha for opengl
-// Where Am I, Play
+// Ghost stay in spawn for 10 seconds
+// reparer la sortie de terrain
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
@@ -84,7 +84,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
                 if (m_map[y][x] == 'X')
                 {
                     output.push(new GameComponent(Vector2<double>(x, y), AComponent::ComponentColor::COLOR_BLUE,
-                                                  GameComponent::Shapes::CUBE, " ", "sprites/pacwall.bmp"));
+                                                  GameComponent::Shapes::CUBE_LARGE, " ", "sprites/pacwall.bmp"));
                 }
             }
         }

@@ -129,7 +129,7 @@ void OpenGlGraph::DrawSphere(Vector2<double> pos, AComponent::ComponentColor col
     glPopMatrix();
 }
 
-void OpenGlGraph::DrawCube(Vector2<double> pos, AComponent::ComponentColor color, double posY) const
+void OpenGlGraph::DrawCube(Vector2<double> pos, AComponent::ComponentColor color, double size, double posY) const
 {
     glPushMatrix();
     glTranslated(-pos.x, -posY, -pos.y);
@@ -137,7 +137,7 @@ void OpenGlGraph::DrawCube(Vector2<double> pos, AComponent::ComponentColor color
     // Byte color
     glColor3ub(colors[color].r, colors[color].g, colors[color].b);
 
-    glutSolidCube(1);
+    glutSolidCube(size);
 
     glPopMatrix();
 }
@@ -217,8 +217,14 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
                 case GameComponent::Shapes::SPHERE_SMALL:
                     DrawSphere(gc->getPos(), gc->getColor(), 0.20);
                     break;
-                case GameComponent::Shapes::CUBE:
-                    DrawCube(gc->getPos(), gc->getColor());
+                case GameComponent::Shapes::CUBE_LARGE:
+                    DrawCube(gc->getPos(), gc->getColor(), 1);
+                    break;
+                case GameComponent::Shapes::CUBE_MEDIUM:
+                    DrawCube(gc->getPos(), gc->getColor(), 0.5);
+                    break;
+                case GameComponent::Shapes::CUBE_SMALL:
+                    DrawCube(gc->getPos(), gc->getColor(), 0.25);
                     break;
             }
         }

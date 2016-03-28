@@ -19,10 +19,12 @@ class GameComponent : public AComponent
 public:
     enum Shapes
     {
-        CUBE = 1,
-        SPHERE_LARGE = 2,
-        SPHERE_MEDIUM = 3,
-        SPHERE_SMALL = 4
+        CUBE_LARGE,
+        CUBE_MEDIUM,
+        CUBE_SMALL,
+        SPHERE_LARGE,
+        SPHERE_MEDIUM,
+        SPHERE_SMALL
     };
 
 private:

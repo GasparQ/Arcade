@@ -62,19 +62,19 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
     for (bod = body.begin(); bod != body.end(); ++bod)
     {
         if (bod == body.begin())
-            output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, GameComponent::Shapes::CUBE , " ", "./sprites/snake_head.bmp"));
+            output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, GameComponent::Shapes::CUBE_LARGE, " ", "./sprites/snake_head.bmp"));
         else
-            output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, GameComponent::Shapes::CUBE , " ", "./sprites/snake.bmp"));
+            output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, GameComponent::Shapes::CUBE_LARGE, " ", "./sprites/snake.bmp"));
     }
     for (size_t i = 0; i < ArcadeSystem::winWidth; ++i)
     {
-        output.push(new GameComponent(Vector2<double>(i, 0), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE, "#", "./sprites/bric.bmp"));
-        output.push(new GameComponent(Vector2<double>(i, ArcadeSystem::winHeight - 1), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE, "#", "./sprites/bric.bmp"));
+        output.push(new GameComponent(Vector2<double>(i, 0), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE_LARGE, "#", "./sprites/bric.bmp"));
+        output.push(new GameComponent(Vector2<double>(i, ArcadeSystem::winHeight - 1), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE_LARGE, "#", "./sprites/bric.bmp"));
     }
     for (size_t i = 1; i < ArcadeSystem::winHeight - 1; ++i)
     {
-        output.push(new GameComponent(Vector2<double>(0, i), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE, "#", "./sprites/bric.bmp"));
-        output.push(new GameComponent(Vector2<double>(ArcadeSystem::winWidth - 1, i), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE, "#", "./sprites/bric.bmp"));
+        output.push(new GameComponent(Vector2<double>(0, i), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE_LARGE, "#", "./sprites/bric.bmp"));
+        output.push(new GameComponent(Vector2<double>(ArcadeSystem::winWidth - 1, i), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE_LARGE, "#", "./sprites/bric.bmp"));
     }
     output.push(new GameComponent(apple, AComponent::COLOR_RED, GameComponent::Shapes::SPHERE_LARGE, " ", "./sprites/apple.bmp"));
     return output;
