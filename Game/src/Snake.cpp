@@ -11,8 +11,6 @@
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../include/Protocol.hpp"
 
-//TODO void play(void)
-
 Snake::Snake() :
         AGame("Snake"),
         apple(0, 0),
@@ -67,6 +65,16 @@ std::stack<AComponent *>                Snake::compute(int keycode)
             output.push(new GameComponent(*bod, AComponent::COLOR_GREEN, GameComponent::Shapes::CUBE , " ", "./sprites/snake_head.bmp"));
         else
             output.push(new GameComponent(*bod, AComponent::COLOR_CYAN, GameComponent::Shapes::CUBE , " ", "./sprites/snake.bmp"));
+    }
+    for (size_t i = 0; i < ArcadeSystem::winWidth; ++i)
+    {
+        output.push(new GameComponent(Vector2<double>(i, 0), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE, "#", "./sprites/bric.bmp"));
+        output.push(new GameComponent(Vector2<double>(i, ArcadeSystem::winHeight - 1), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE, "#", "./sprites/bric.bmp"));
+    }
+    for (size_t i = 1; i < ArcadeSystem::winHeight - 1; ++i)
+    {
+        output.push(new GameComponent(Vector2<double>(0, i), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE, "#", "./sprites/bric.bmp"));
+        output.push(new GameComponent(Vector2<double>(ArcadeSystem::winWidth - 1, i), AComponent::COLOR_BLUE, GameComponent::Shapes::CUBE, "#", "./sprites/bric.bmp"));
     }
     output.push(new GameComponent(apple, AComponent::COLOR_RED, GameComponent::Shapes::SPHERE_LARGE, " ", "./sprites/apple.bmp"));
     return output;
@@ -142,11 +150,11 @@ void Snake::addBody(Vector2<double> newPos)
 
 bool    Snake::goOnWall(Vector2<double> const &vector) const
 {
-    if (vector.x >= static_cast<int>(ArcadeSystem::winWidth) || vector.x < 0)
+    if (vector.x >= static_cast<int>(ArcadeSystem::winWidth) - 1 || vector.x <= 0)
     {
         return (true);
     }
-    if (vector.y >= static_cast<int>(ArcadeSystem::winHeight) || vector.y < 0)
+    if (vector.y >= static_cast<int>(ArcadeSystem::winHeight) - 1 || vector.y <= 0)
     {
         return (true);
     }
@@ -240,6 +248,16 @@ void                            updateMap(struct arcade::GetMap *map, Snake cons
     {
         map->tile[(int)it->y * ArcadeSystem::winWidth + (int)it->x] = arcade::TileType::BLOCK;
     }
+    for (size_t i = 0; i < ArcadeSystem::winWidth; ++i)
+    {
+        map->tile[i] = arcade::TileType::BLOCK;
+        map->tile[i + ArcadeSystem::winWidth * (ArcadeSystem::winHeight - 1)] = arcade::TileType::BLOCK;
+    }
+    for (size_t i = 1; i < ArcadeSystem::winHeight - 1; ++i)
+    {
+        map->tile[ArcadeSystem::winWidth * i] = arcade::TileType::BLOCK;
+        map->tile[ArcadeSystem::winWidth * i + ArcadeSystem::winWidth - 1] = arcade::TileType::BLOCK;
+    }
 }
 
 void    whereAmI(Snake const &snake)
@@ -262,6 +280,7 @@ void    whereAmI(Snake const &snake)
     free(pos);
 }
 
+//TODO fix
 extern "C" void Play(void)
 {
     char                        c;
