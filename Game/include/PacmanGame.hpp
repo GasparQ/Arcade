@@ -31,6 +31,9 @@ public:
 
     typedef void (PacmanCharacter::*keyfunc)(char [31][51]);
 
+    std::vector<std::string>    getMap(void) const;
+    const Pacman                &getPacman(void) const;
+
 private:
     void InitGame(bool bIsRestart = true, bool bIsNextLevel = false);
 

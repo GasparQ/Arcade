@@ -248,6 +248,7 @@ void                            updateMap(struct arcade::GetMap *map, Snake cons
     {
         map->tile[(int)it->y * ArcadeSystem::winWidth + (int)it->x] = arcade::TileType::BLOCK;
     }
+    //Set walls pos
     for (size_t i = 0; i < ArcadeSystem::winWidth; ++i)
     {
         map->tile[i] = arcade::TileType::BLOCK;

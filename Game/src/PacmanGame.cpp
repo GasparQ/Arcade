@@ -162,42 +162,47 @@ extern "C" IGame *loadGame()
     return (new PacmanGame());
 }
 
-/*void                            updateMap(struct arcade::GetMap *map, Pacman const &snake)
+void                                    updateMap(struct arcade::GetMap *map, PacmanGame const &pacman)
 {
-    Vector2<double>                apple(0, 0);
-    std::list<Vector2<double>>     snakeBody = snake.getSnake();
+    std::vector<std::string>            pacMap = pacman.getMap();
 
     //Reinit la map
     for (size_t i = 0, len = ArcadeSystem::winHeight * ArcadeSystem::winWidth; i < len; ++i)
     {
         map->tile[i] = arcade::TileType::EMPTY;
     }
-    //Set appel pos
-    apple = snake.getApple();
-    map->tile[(int)apple.y * ArcadeSystem::winWidth + (int)apple.x] = arcade::TileType::POWERUP;
-    //Set snake pos
-    for (std::list<Vector2<double>>::iterator it = snakeBody.begin(), end = snakeBody.end(); it != end; ++it)
+    //Write map
+    for (size_t i = 0, len = ArcadeSystem::winWidth * ArcadeSystem::winHeight; i < len; ++i)
     {
-        map->tile[(int)it->y * ArcadeSystem::winWidth + (int)it->x] = arcade::TileType::BLOCK;
+        switch (pacMap[i / ArcadeSystem::winWidth][i % ArcadeSystem::winWidth])
+        {
+            case 'X':
+                map->tile[i] = arcade::TileType::BLOCK;
+                break;
+            case 'o':
+                map->tile[i] = arcade::TileType::POWERUP;
+                break;
+            case '.':
+                map->tile[i] = arcade::TileType::POWERUP;
+                break;
+            default:
+                break;
+        }
     }
 }
 
-void    whereAmI(Pacman const &snake)
+void    whereAmI(PacmanGame const &pacman)
 {
     struct arcade::WhereAmI *pos;
-    std::list<Vector2<double>> snakeBody = snake.getSnake();
-    size_t                  posSize = sizeof(*pos) + snakeBody.size() * sizeof(arcade::Position);
-    size_t                  i = 0;
+    Vector2<double>         pacpos = pacman.getPacman().getPosition();
+    size_t                  posSize = sizeof(*pos) + sizeof(arcade::Position);
 
     if ((pos = (struct arcade::WhereAmI *)(malloc(posSize))) == NULL)
         throw std::bad_alloc();
     pos->type = arcade::CommandType::WHERE_AM_I;
-    pos->lenght = static_cast<uint16_t>(snakeBody.size());
-    for (std::list<Vector2<double>>::iterator it = snakeBody.begin(), end = snakeBody.end(); it != end; ++it, ++i)
-    {
-        pos->position[i].x = static_cast<uint16_t>(it->x);
-        pos->position[i].y = static_cast<uint16_t>(it->y);
-    }
+    pos->lenght = 1;
+    pos->position[0].x = static_cast<uint16_t >(pacpos.x);
+    pos->position[0].y = static_cast<uint16_t >(pacpos.y);
     write(1, pos, posSize);
     free(pos);
 }
@@ -205,7 +210,7 @@ void    whereAmI(Pacman const &snake)
 extern "C" void Play(void)
 {
     char                        c;
-    Pacman                      pacman;
+    PacmanGame                  pacman;
     struct arcade::GetMap       *map;
     size_t                      mapSize = sizeof(*map) + (ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t));
     std::stack<AComponent *>    components;
@@ -227,19 +232,16 @@ extern "C" void Play(void)
                 write(1, map, mapSize);
                 break;
             case arcade::CommandType::GO_UP:
-                pacman.goUp();
+                const_cast<Pacman *>(&pacman.getPacman())->goUp(NULL);
                 break;
             case arcade::CommandType::GO_DOWN:
-                pacman.goDown();
+                const_cast<Pacman *>(&pacman.getPacman())->goDown(NULL);
                 break;
             case arcade::CommandType::GO_LEFT:
-                pacman.goLeft();
+                const_cast<Pacman *>(&pacman.getPacman())->goLeft(NULL);
                 break;
             case arcade::CommandType::GO_RIGHT:
-                pacman.goRight();
-                break;
-            case arcade::CommandType::GO_FORWARD:
-                pacman.goAhead();
+                const_cast<Pacman *>(&pacman.getPacman())->goRight(NULL);
                 break;
             case arcade::CommandType::PLAY:
                 components = pacman.compute(-1);
@@ -254,10 +256,6 @@ extern "C" void Play(void)
         }
     }
     free(map);
-}*/
-
-void whereAmI(PacmanGame const &pacman)
-{
 }
 
 void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState state) const
@@ -436,4 +434,20 @@ void PacmanGame::PacmanPowerUpEnd()
 {
     m_pacman.SetState(Pacman::MORTAL);
     FreeGhosts();
+}
+
+std::vector<std::string>    PacmanGame::getMap(void) const
+{
+    std::vector<std::string>    map;
+
+    for (size_t i = 0, len = ArcadeSystem::winHeight; i < len; ++i)
+    {
+        map.push_back(m_map[i]);
+    }
+    return map;
+}
+
+const Pacman &PacmanGame::getPacman(void) const
+{
+    return m_pacman;
 }
