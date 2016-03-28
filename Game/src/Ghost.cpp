@@ -10,6 +10,7 @@ Ghost::Ghost(AComponent::ComponentColor color, std::string const& shape2D) : Pac
                                                                  GameComponent::Shapes::CUBE)
 {
     m_color_original = m_color;
+    m_default_sprite = shape2D;
 }
 
 Ghost::~Ghost()
@@ -161,7 +162,7 @@ void Ghost::SetState(GhostState state)
     {
         m_shapeCurses = " ";
         m_color = m_color_original;
-        m_shape2D = "sprites/red_ghost.bmp";
+        m_shape2D = m_default_sprite;
         velocity = 0.250000000;
         if (static_cast<int>(m_pos.x * 100.0) % 25 != 0)
         {

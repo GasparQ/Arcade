@@ -15,7 +15,6 @@
 // Sprites for sdl
 // alpha for opengl
 // Where Am I, Play
-// -> ghost qui trouve pas de route
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
