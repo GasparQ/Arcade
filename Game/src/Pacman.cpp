@@ -7,13 +7,13 @@
 Vector2<double> const &Pacman::Move(char m_map[31][51], Vector2<double>)
 {
     /// Side teleporters
-    if (m_pos.x == 0)
+    if (m_pos.x < 0 + velocity)
     {
-        m_pos.x = 50;
+        m_pos.x = 49;
     }
-    else if (m_pos.x == 50)
+    else if (m_pos.x > 49 + velocity)
     {
-        m_pos.x = 0;
+        m_pos.x = 1;
     }
 
     /// We try to change direction if we are perfectly on the center of a square pos

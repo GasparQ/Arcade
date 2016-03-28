@@ -12,7 +12,6 @@
 #include "../include/Protocol.hpp"
 
 // TODO:
-// alpha for opengl
 // Ghost stay in spawn for 10 seconds
 // reparer la sortie de terrain
 PacmanGame::PacmanGame() :
