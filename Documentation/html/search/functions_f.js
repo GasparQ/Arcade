@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_5fcache',['s_cache',['../structs__cache.html#a2ef5369c162930c95c1f41c25718923c',1,'s_cache']]],
+  ['s_5fcache',['s_cache',['../structs__cache.html#a0740e85e553483db32671dfdcdfcc5b5',1,'s_cache']]],
   ['s_5fheader',['s_header',['../structs__header.html#a2d2864a0667df226e7fa0359d3e502e4',1,'s_header::s_header(int headerSize, int fileSize, int nbrHighScore)'],['../structs__header.html#af5a92b4233ff0bd66175e59524884e6c',1,'s_header::s_header()'],['../structs__header.html#a2d2864a0667df226e7fa0359d3e502e4',1,'s_header::s_header(int headerSize, int fileSize, int nbrHighScore)'],['../structs__header.html#af5a92b4233ff0bd66175e59524884e6c',1,'s_header::s_header()']]],
   ['s_5fhighscore',['s_highScore',['../structs__high_score.html#ac7428d09ab8182122d0f2612e8c0bfb3',1,'s_highScore::s_highScore(unsigned int newScore, std::string const &amp;newName)'],['../structs__high_score.html#ab66103fd2ea1d55773fd33efd082ba1b',1,'s_highScore::s_highScore()'],['../structs__high_score.html#ac7428d09ab8182122d0f2612e8c0bfb3',1,'s_highScore::s_highScore(unsigned int newScore, std::string const &amp;newName)'],['../structs__high_score.html#ab66103fd2ea1d55773fd33efd082ba1b',1,'s_highScore::s_highScore()']]],
   ['sdl_5fabs',['SDL_abs',['../_s_d_l__stdinc_8h.html#abc2986a4608bc9fd73df173d7619c096',1,'SDL_stdinc.h']]],

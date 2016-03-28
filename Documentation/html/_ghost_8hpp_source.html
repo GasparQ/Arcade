@@ -4,17 +4,10 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Arcade: Game/include/Ghost.hpp Source File</title>
+<title>Arcade: /home/veyrie_f/Documents/cpp_arcade/Game/include/Ghost.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -74,21 +67,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('_ghost_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,6 +81,11 @@ $(document).ready(function(){initNavTree('_ghost_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ca1671c8df01ec6432d3874544813973.html">Game</a></li><li class="navelem"><a class="el" href="dir_53e744c9542092d6db10d1c55d023cc4.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Ghost.hpp</div>  </div>
@@ -120,11 +103,11 @@ $(document).ready(function(){initNavTree('_ghost_8hpp_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_ghost.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ghost.html">Ghost</a> : <span class="keyword">public</span> <a class="code" href="class_pacman_character.html">PacmanCharacter</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_ghost.html#a944894596f91333ca85ccfb96db8add5">Ghost</a>(<a class="code" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> <a class="code" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_ghost.html#acc517ca9ee98f5e94433eadff96f83fb">Ghost</a>(<a class="code" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> <a class="code" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>, <a class="code" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <span class="keyword">const</span>&amp; shape2D);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_ghost.html#a063ed19c1b6f5c07b9109020c6198319">~Ghost</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> <span class="keyword">const</span>&amp; <a class="code" href="class_ghost.html#a4d3d8f34627006b272b61ba73eceb754">Move</a>(<span class="keywordtype">char</span> map[31][51], <a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> pacmanPos);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> <span class="keyword">const</span>&amp; <a class="code" href="class_ghost.html#abf1e5ac53266547052b36dd4cb9fe6d7">Move</a>(<span class="keywordtype">char</span> map[31][51], <a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> pacmanPos);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_ghost.html#a48afc8b31b108396c2c128afafb49b4c">goUp</a>(<span class="keywordtype">char</span> map[31][51]);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_ghost.html#a59d1caa3a13ba81c5174520bd87a4af1">goDown</a>(<span class="keywordtype">char</span> map[31][51]);</div>
@@ -134,9 +117,6 @@ $(document).ready(function(){initNavTree('_ghost_8hpp_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_ghost.html#a2973c0b4dc43b9158ff3ca93b342d765">ResetPosition</a>();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Dead = goes to base</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Hunting : looks for pacman</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Scared : flees pacman</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5b">   30</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5b">GhostState</a></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5bad5c32d4a28c2c6ee7f8af591db387863">   32</a></span>&#160;        <a class="code" href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5bad5c32d4a28c2c6ee7f8af591db387863">DEAD</a> = 1,</div>
@@ -150,41 +130,40 @@ $(document).ready(function(){initNavTree('_ghost_8hpp_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5b">GhostState</a> m_state = <a class="code" href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5ba591a3028d855d68c273ab5d6afcd6a54">FREEZE</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> m_color_original;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif //CPP_ARCADE_GHOST_HPP</span></div>
-<div class="ttc" id="class_ghost_html_a4d3d8f34627006b272b61ba73eceb754"><div class="ttname"><a href="class_ghost.html#a4d3d8f34627006b272b61ba73eceb754">Ghost::Move</a></div><div class="ttdeci">virtual Vector2&lt; int &gt; const &amp; Move(char map[31][51], Vector2&lt; int &gt; pacmanPos)</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:19</div></div>
-<div class="ttc" id="class_ghost_html_a133cb7fa03fd60120bb071fb12fb2beb"><div class="ttname"><a href="class_ghost.html#a133cb7fa03fd60120bb071fb12fb2beb">Ghost::SetState</a></div><div class="ttdeci">void SetState(GhostState state)</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:110</div></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">char</span> m_curr_dir = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> m_default_sprite;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif //CPP_ARCADE_GHOST_HPP</span></div>
+<div class="ttc" id="class_ghost_html_a133cb7fa03fd60120bb071fb12fb2beb"><div class="ttname"><a href="class_ghost.html#a133cb7fa03fd60120bb071fb12fb2beb">Ghost::SetState</a></div><div class="ttdeci">void SetState(GhostState state)</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:130</div></div>
 <div class="ttc" id="_pacman_character_8hpp_html"><div class="ttname"><a href="_pacman_character_8hpp.html">PacmanCharacter.hpp</a></div></div>
-<div class="ttc" id="class_ghost_html_a063ed19c1b6f5c07b9109020c6198319"><div class="ttname"><a href="class_ghost.html#a063ed19c1b6f5c07b9109020c6198319">Ghost::~Ghost</a></div><div class="ttdeci">virtual ~Ghost()</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:14</div></div>
-<div class="ttc" id="class_ghost_html_a6d4c6904e91bb06dea5a9b10fce48d34"><div class="ttname"><a href="class_ghost.html#a6d4c6904e91bb06dea5a9b10fce48d34">Ghost::goLeft</a></div><div class="ttdeci">virtual void goLeft(char map[31][51])</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:100</div></div>
+<div class="ttc" id="class_ghost_html_a063ed19c1b6f5c07b9109020c6198319"><div class="ttname"><a href="class_ghost.html#a063ed19c1b6f5c07b9109020c6198319">Ghost::~Ghost</a></div><div class="ttdeci">virtual ~Ghost()</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:16</div></div>
+<div class="ttc" id="class_ghost_html_a6d4c6904e91bb06dea5a9b10fce48d34"><div class="ttname"><a href="class_ghost.html#a6d4c6904e91bb06dea5a9b10fce48d34">Ghost::goLeft</a></div><div class="ttdeci">virtual void goLeft(char map[31][51])</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:120</div></div>
+<div class="ttc" id="_s_d_l__opengl__glext_8h_html_ae84541b4f3d8e1ea24ec0f466a8c568b"><div class="ttname"><a href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">string</a></div><div class="ttdeci">GLsizei const GLchar *const * string</div><div class="ttdef"><b>Definition:</b> SDL_opengl_glext.h:688</div></div>
 <div class="ttc" id="class_ghost_html_acc75a78854c248d653ba1f68c057dc5b"><div class="ttname"><a href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5b">Ghost::GhostState</a></div><div class="ttdeci">GhostState</div><div class="ttdef"><b>Definition:</b> Ghost.hpp:30</div></div>
-<div class="ttc" id="class_ghost_html_a59d1caa3a13ba81c5174520bd87a4af1"><div class="ttname"><a href="class_ghost.html#a59d1caa3a13ba81c5174520bd87a4af1">Ghost::goDown</a></div><div class="ttdeci">virtual void goDown(char map[31][51])</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:95</div></div>
+<div class="ttc" id="class_ghost_html_a59d1caa3a13ba81c5174520bd87a4af1"><div class="ttname"><a href="class_ghost.html#a59d1caa3a13ba81c5174520bd87a4af1">Ghost::goDown</a></div><div class="ttdeci">virtual void goDown(char map[31][51])</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:115</div></div>
 <div class="ttc" id="class_a_component_html_a76ed8540d67007fd0ab5a74c6b425b87"><div class="ttname"><a href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a></div><div class="ttdeci">ComponentColor</div><div class="ttdef"><b>Definition:</b> AComponent.hpp:19</div></div>
-<div class="ttc" id="class_ghost_html_a2973c0b4dc43b9158ff3ca93b342d765"><div class="ttname"><a href="class_ghost.html#a2973c0b4dc43b9158ff3ca93b342d765">Ghost::ResetPosition</a></div><div class="ttdeci">virtual void ResetPosition()</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:136</div></div>
-<div class="ttc" id="class_ghost_html_a6e8899bafbed8759c63e5c8c0b5eca75"><div class="ttname"><a href="class_ghost.html#a6e8899bafbed8759c63e5c8c0b5eca75">Ghost::goRight</a></div><div class="ttdeci">virtual void goRight(char map[31][51])</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:105</div></div>
+<div class="ttc" id="class_ghost_html_a2973c0b4dc43b9158ff3ca93b342d765"><div class="ttname"><a href="class_ghost.html#a2973c0b4dc43b9158ff3ca93b342d765">Ghost::ResetPosition</a></div><div class="ttdeci">virtual void ResetPosition()</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:187</div></div>
+<div class="ttc" id="class_ghost_html_a6e8899bafbed8759c63e5c8c0b5eca75"><div class="ttname"><a href="class_ghost.html#a6e8899bafbed8759c63e5c8c0b5eca75">Ghost::goRight</a></div><div class="ttdeci">virtual void goRight(char map[31][51])</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:125</div></div>
 <div class="ttc" id="class_ghost_html_acc75a78854c248d653ba1f68c057dc5ba591a3028d855d68c273ab5d6afcd6a54"><div class="ttname"><a href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5ba591a3028d855d68c273ab5d6afcd6a54">Ghost::FREEZE</a></div><div class="ttdef"><b>Definition:</b> Ghost.hpp:35</div></div>
 <div class="ttc" id="class_ghost_html_acc75a78854c248d653ba1f68c057dc5ba7cb38b540f17e59aa0f7937ad4b98b28"><div class="ttname"><a href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5ba7cb38b540f17e59aa0f7937ad4b98b28">Ghost::HUNTING</a></div><div class="ttdef"><b>Definition:</b> Ghost.hpp:33</div></div>
-<div class="ttc" id="class_ghost_html_a944894596f91333ca85ccfb96db8add5"><div class="ttname"><a href="class_ghost.html#a944894596f91333ca85ccfb96db8add5">Ghost::Ghost</a></div><div class="ttdeci">Ghost(AComponent::ComponentColor color)</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:8</div></div>
 <div class="ttc" id="class_ghost_html_acc75a78854c248d653ba1f68c057dc5bad5c32d4a28c2c6ee7f8af591db387863"><div class="ttname"><a href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5bad5c32d4a28c2c6ee7f8af591db387863">Ghost::DEAD</a></div><div class="ttdef"><b>Definition:</b> Ghost.hpp:32</div></div>
-<div class="ttc" id="class_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2&lt; int &gt;</a></div></div>
-<div class="ttc" id="class_ghost_html_a48afc8b31b108396c2c128afafb49b4c"><div class="ttname"><a href="class_ghost.html#a48afc8b31b108396c2c128afafb49b4c">Ghost::goUp</a></div><div class="ttdeci">virtual void goUp(char map[31][51])</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:90</div></div>
+<div class="ttc" id="class_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2&lt; double &gt;</a></div></div>
+<div class="ttc" id="class_ghost_html_a48afc8b31b108396c2c128afafb49b4c"><div class="ttname"><a href="class_ghost.html#a48afc8b31b108396c2c128afafb49b4c">Ghost::goUp</a></div><div class="ttdeci">virtual void goUp(char map[31][51])</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:110</div></div>
 <div class="ttc" id="class_ghost_html"><div class="ttname"><a href="class_ghost.html">Ghost</a></div><div class="ttdef"><b>Definition:</b> Ghost.hpp:10</div></div>
 <div class="ttc" id="class_ghost_html_acc75a78854c248d653ba1f68c057dc5ba7dce33ce6ea03ea71cbc5915ac276329"><div class="ttname"><a href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5ba7dce33ce6ea03ea71cbc5915ac276329">Ghost::SCARED</a></div><div class="ttdef"><b>Definition:</b> Ghost.hpp:34</div></div>
-<div class="ttc" id="class_ghost_html_afff0366e463cd44f2507b0bc70bd6723"><div class="ttname"><a href="class_ghost.html#afff0366e463cd44f2507b0bc70bd6723">Ghost::GetState</a></div><div class="ttdeci">GhostState GetState() const </div><div class="ttdef"><b>Definition:</b> Ghost.cpp:131</div></div>
-<div class="ttc" id="class_pacman_character_html"><div class="ttname"><a href="class_pacman_character.html">PacmanCharacter</a></div><div class="ttdef"><b>Definition:</b> PacmanCharacter.hpp:12</div></div>
+<div class="ttc" id="class_ghost_html_acc517ca9ee98f5e94433eadff96f83fb"><div class="ttname"><a href="class_ghost.html#acc517ca9ee98f5e94433eadff96f83fb">Ghost::Ghost</a></div><div class="ttdeci">Ghost(AComponent::ComponentColor color, std::string const &amp;shape2D)</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:8</div></div>
+<div class="ttc" id="class_ghost_html_afff0366e463cd44f2507b0bc70bd6723"><div class="ttname"><a href="class_ghost.html#afff0366e463cd44f2507b0bc70bd6723">Ghost::GetState</a></div><div class="ttdeci">GhostState GetState() const </div><div class="ttdef"><b>Definition:</b> Ghost.cpp:182</div></div>
+<div class="ttc" id="class_ghost_html_abf1e5ac53266547052b36dd4cb9fe6d7"><div class="ttname"><a href="class_ghost.html#abf1e5ac53266547052b36dd4cb9fe6d7">Ghost::Move</a></div><div class="ttdeci">virtual Vector2&lt; double &gt; const &amp; Move(char map[31][51], Vector2&lt; double &gt; pacmanPos)</div><div class="ttdef"><b>Definition:</b> Ghost.cpp:21</div></div>
+<div class="ttc" id="class_pacman_character_html"><div class="ttname"><a href="class_pacman_character.html">PacmanCharacter</a></div><div class="ttdef"><b>Definition:</b> PacmanCharacter.hpp:13</div></div>
 <div class="ttc" id="_s_d_l__opengl__glext_8h_html_a3ea846f998d64f079b86052b6c4193a8"><div class="ttname"><a href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a></div><div class="ttdeci">GLuint color</div><div class="ttdef"><b>Definition:</b> SDL_opengl_glext.h:1148</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_ca1671c8df01ec6432d3874544813973.html">Game</a></li><li class="navelem"><a class="el" href="dir_53e744c9542092d6db10d1c55d023cc4.html">include</a></li><li class="navelem"><a class="el" href="_ghost_8hpp.html">Ghost.hpp</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:28 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:03 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

@@ -1,0 +1,4 @@
+<map id="PacmanGame::getMap" name="PacmanGame::getMap">
+<area shape="rect" id="node2" href="$_pacman_game_8cpp.html#a23980b3375c54f30fb8401e0a9f04252" title="updateMap" alt="" coords="211,5,298,32"/>
+<area shape="rect" id="node3" href="$_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="347,5,395,32"/>
+</map>

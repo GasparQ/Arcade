@@ -8,13 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_i_chrono.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,9 +83,11 @@ $(document).ready(function(){initNavTree('class_i_chrono.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_i_chrono-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IChrono Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -120,8 +100,8 @@ Inheritance diagram for IChrono:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_chrono__inherit__graph.png" border="0" usemap="#_i_chrono_inherit__map" alt="Inheritance graph"/></div>
 <map name="_i_chrono_inherit__map" id="_i_chrono_inherit__map">
-<area shape="rect" id="node2" href="class_chrono.html" title="Chrono\&lt; T, U \&gt;" alt="" coords="5,80,120,107"/></map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<area shape="rect" id="node2" href="class_chrono.html" title="This class holds a chronometer and can trigger events " alt="" coords="5,80,120,107"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -133,6 +113,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4a2e95bb018ccab44b7ec6a6cc97a616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a891f07829be2b13bf347c9f5b15fe9c1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_chrono.html#a891f07829be2b13bf347c9f5b15fe9c1">TriggerEvent</a> ()=0</td></tr>
 <tr class="separator:a891f07829be2b13bf347c9f5b15fe9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54eb72deb280414a216520e15fdd6d77"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_chrono.html#a54eb72deb280414a216520e15fdd6d77">ResetChrono</a> ()=0</td></tr>
+<tr class="separator:a54eb72deb280414a216520e15fdd6d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785e2cfc2170c803846288e69052f810"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="term__entry_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_chrono.html#a785e2cfc2170c803846288e69052f810">operator==</a> (<a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;<a class="el" href="_s_d_l__opengl__glext_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>) <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="separator:a785e2cfc2170c803846288e69052f810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad30c81a922cd8495f531011c679a3923"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_chrono.html#ad30c81a922cd8495f531011c679a3923">m_chronoName</a></td></tr>
+<tr class="separator:ad30c81a922cd8495f531011c679a3923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a67e431ab790dc6301b81119415dffaea"></a>
@@ -181,6 +170,55 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_chrono.html#a2d50a064126abb1e59cc73bebf8f09c1">Chrono&lt; T, U &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a785e2cfc2170c803846288e69052f810"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="term__entry_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> IChrono::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54eb72deb280414a216520e15fdd6d77"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a> IChrono::ResetChrono </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_chrono.html#ae8fe3d878e8fab65a7d2c4015372016f">Chrono&lt; T, U &gt;</a>.</p>
 
 </div>
 </div>
@@ -234,19 +272,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ad30c81a922cd8495f531011c679a3923"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> IChrono::m_chronoName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Commons/include/<a class="el" href="_chrono_8hpp_source.html">Chrono.hpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Commons/include/<a class="el" href="_chrono_8hpp_source.html">Chrono.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_i_chrono.html">IChrono</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:30 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

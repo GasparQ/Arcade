@@ -1,9 +1,10 @@
 var searchData=
 [
+  ['m_5fchrononame',['m_chronoName',['../class_i_chrono.html#ad30c81a922cd8495f531011c679a3923',1,'IChrono']]],
   ['m_5fcolor',['m_color',['../class_pacman_character.html#a81b235aadd8ef0e98526e285d849a45b',1,'PacmanCharacter']]],
   ['m_5fdir',['m_dir',['../class_pacman_character.html#a234defe33e311a028b0ff0c6b52d59c4',1,'PacmanCharacter']]],
-  ['m_5finitpos',['m_initPos',['../class_pacman_character.html#ac79aef1cfb279f2a71736653b845cdb4',1,'PacmanCharacter']]],
-  ['m_5fpos',['m_pos',['../class_pacman_character.html#ae77f7ac9d530be4b9eb4237422290d40',1,'PacmanCharacter']]],
+  ['m_5finitpos',['m_initPos',['../class_pacman_character.html#a79491bd93ccbdd291552328dea282ca2',1,'PacmanCharacter']]],
+  ['m_5fpos',['m_pos',['../class_pacman_character.html#ab8ee40b843ac98ba6cc91c0eed37cea4',1,'PacmanCharacter']]],
   ['m_5fshape2d',['m_shape2D',['../class_pacman_character.html#a1dbb32291f4e12be26042a771139d84d',1,'PacmanCharacter']]],
   ['m_5fshape3d',['m_shape3D',['../class_pacman_character.html#a73e181862f419d8ac1c8ecf1d6eaa341',1,'PacmanCharacter']]],
   ['m_5fshapecurses',['m_shapeCurses',['../class_pacman_character.html#a3ee3c43a14b42396f16066d401e21568',1,'PacmanCharacter']]],

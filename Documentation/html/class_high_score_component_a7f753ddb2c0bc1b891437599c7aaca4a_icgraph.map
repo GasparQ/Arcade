@@ -1,5 +1,6 @@
 <map id="HighScoreComponent::submit" name="HighScoreComponent::submit">
 <area shape="rect" id="node2" href="$class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="205,5,368,32"/>
-<area shape="rect" id="node3" href="$class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="228,56,345,83"/>
-<area shape="rect" id="node4" href="$_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,56,464,83"/>
+<area shape="rect" id="node4" href="$class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="228,56,345,83"/>
+<area shape="rect" id="node3" href="$_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,5,464,32"/>
+<area shape="rect" id="node5" href="$_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,56,464,83"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="PacmanCharacter::getPosition" name="PacmanCharacter::getPosition">
+<area shape="rect" id="node2" href="$class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="253,5,416,32"/>
+<area shape="rect" id="node4" href="$_pacman_game_8cpp.html#ae9bc047b6831d671147629741660839e" title="whereAmI" alt="" coords="294,56,375,83"/>
+<area shape="rect" id="node3" href="$_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="464,31,512,57"/>
+</map>

@@ -8,5 +8,6 @@ var searchData=
   ['int',['int',['../struct_s_d_l___r_wops.html#ab303bcbb0f6742a141ba8b2998923f47',1,'SDL_RWops::int()'],['../_s_d_l__events_8h.html#aba621c3f88c60e9734e9d1ebae08609a',1,'int(SDLCALL *SDL_EventFilter)(void *userdata:&#160;SDL_events.h'],['../_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e',1,'int(SDLCALL *SDL_ThreadFunction)(void *data):&#160;SDL_thread.h']]],
   ['invalidfileformatexception',['InvalidFileFormatException',['../classarcade_1_1_invalid_file_format_exception.html#a82af61936a5ad500da209d2672ab40a2',1,'arcade::InvalidFileFormatException']]],
   ['invert',['invert',['../class_vector2.html#a8c1b804ad56baac281243d4d527bcc00',1,'Vector2']]],
+  ['isequal',['isEqual',['../class_vector2.html#a8365d49c42551f3a1d7028837f1c420f',1,'Vector2']]],
   ['isselected',['isSelected',['../class_action_component.html#a1bfaba91c50d3b1007ee8cd61917c019',1,'ActionComponent']]]
 ];

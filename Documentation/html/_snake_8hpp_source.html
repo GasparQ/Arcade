@@ -4,17 +4,10 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Arcade: Game/include/Snake.hpp Source File</title>
+<title>Arcade: /home/veyrie_f/Documents/cpp_arcade/Game/include/Snake.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -74,21 +67,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('_snake_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,6 +81,11 @@ $(document).ready(function(){initNavTree('_snake_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ca1671c8df01ec6432d3874544813973.html">Game</a></li><li class="navelem"><a class="el" href="dir_53e744c9542092d6db10d1c55d023cc4.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Snake.hpp</div>  </div>
@@ -146,13 +129,13 @@ $(document).ready(function(){initNavTree('_snake_8hpp_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    } Orientation;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::list&lt;Vector2&lt;int&gt; &gt;        body;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a>                    apple;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::list&lt;Vector2&lt;double&gt; &gt;        body;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a>                    apple;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">size_t</span>                          score;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Orientation                     snakeOri;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a>                    direction;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a>                    direction;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::map&lt;int, keyfunc&gt;          keycodex;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::list&lt;Vector2&lt;int&gt; &gt;        plate;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::list&lt;Vector2&lt;double&gt; &gt;        plate;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span>                            <a class="code" href="class_snake.html#a79b58cff227bab98162e179b7fff1e65">goUp</a>();</div>
@@ -160,47 +143,43 @@ $(document).ready(function(){initNavTree('_snake_8hpp_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span>                            <a class="code" href="class_snake.html#a8e8fdb0a694a05d267671bfd3ef67054">goLeft</a>();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span>                            <a class="code" href="class_snake.html#a1850bb9cf00539a2bf2462ce4dfb69e3">goRight</a>();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span>                            <a class="code" href="class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5">goAhead</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> <span class="keyword">const</span>              &amp;<a class="code" href="class_snake.html#a11bc8665cbfea6dd4255cb5ad065ea9d">getApple</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::list&lt;Vector2&lt;int&gt;&gt; <span class="keyword">const</span>   &amp;<a class="code" href="class_snake.html#a2e120de36db096ca5a1d19aaad4d3f04">getSnake</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> <span class="keyword">const</span>              &amp;<a class="code" href="class_snake.html#afa29ce4710253ce1d74c15a718e06bc5">getApple</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::list&lt;Vector2&lt;double&gt;&gt; <span class="keyword">const</span>   &amp;<a class="code" href="class_snake.html#a3b2d2fe401cbeb3c25de01c980e8880c">getSnake</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span>                        generateAppelPos();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span>                        removeBody();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span>                        addBody(<a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> newPos);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span>                        addBody(<a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> newPos);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span>                        move();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span>                        die();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span>                        initGame();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span>                        goOnWall(<a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> <span class="keyword">const</span> &amp;vector) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span>                        goOnWall(<a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> <span class="keyword">const</span> &amp;vector) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif //C_SNAKE_HPP</span></div>
-<div class="ttc" id="class_snake_html_ad674de9bd10d7af6f7b249b478745565"><div class="ttname"><a href="class_snake.html#ad674de9bd10d7af6f7b249b478745565">Snake::restart</a></div><div class="ttdeci">virtual void restart()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:75</div></div>
-<div class="ttc" id="class_snake_html_aa9cbcdb4b25d84cbf83509039cac8d01"><div class="ttname"><a href="class_snake.html#aa9cbcdb4b25d84cbf83509039cac8d01">Snake::Snake</a></div><div class="ttdeci">Snake()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:16</div></div>
-<div class="ttc" id="class_snake_html_a11bc8665cbfea6dd4255cb5ad065ea9d"><div class="ttname"><a href="class_snake.html#a11bc8665cbfea6dd4255cb5ad065ea9d">Snake::getApple</a></div><div class="ttdeci">Vector2&lt; int &gt; const &amp; getApple() const </div><div class="ttdef"><b>Definition:</b> Snake.cpp:209</div></div>
-<div class="ttc" id="class_snake_html_a941fbaad96ee33ca3a7c30c28ca44ef8"><div class="ttname"><a href="class_snake.html#a941fbaad96ee33ca3a7c30c28ca44ef8">Snake::~Snake</a></div><div class="ttdeci">virtual ~Snake()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:30</div></div>
+<div class="ttc" id="class_snake_html_a3b2d2fe401cbeb3c25de01c980e8880c"><div class="ttname"><a href="class_snake.html#a3b2d2fe401cbeb3c25de01c980e8880c">Snake::getSnake</a></div><div class="ttdeci">std::list&lt; Vector2&lt; double &gt; &gt; const &amp; getSnake() const </div><div class="ttdef"><b>Definition:</b> Snake.cpp:222</div></div>
+<div class="ttc" id="class_snake_html_ad674de9bd10d7af6f7b249b478745565"><div class="ttname"><a href="class_snake.html#ad674de9bd10d7af6f7b249b478745565">Snake::restart</a></div><div class="ttdeci">virtual void restart()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:83</div></div>
+<div class="ttc" id="class_snake_html_aa9cbcdb4b25d84cbf83509039cac8d01"><div class="ttname"><a href="class_snake.html#aa9cbcdb4b25d84cbf83509039cac8d01">Snake::Snake</a></div><div class="ttdeci">Snake()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:14</div></div>
+<div class="ttc" id="class_snake_html_a941fbaad96ee33ca3a7c30c28ca44ef8"><div class="ttname"><a href="class_snake.html#a941fbaad96ee33ca3a7c30c28ca44ef8">Snake::~Snake</a></div><div class="ttdeci">virtual ~Snake()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:28</div></div>
 <div class="ttc" id="_s_d_l__audio_8h_html_a52835ae37c4bb905b903cbaf5d04b05f"><div class="ttname"><a href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a></div><div class="ttdeci">typedef void(SDLCALL *SDL_AudioCallback)(void *userdata</div></div>
 <div class="ttc" id="class_snake_html_a951caca23cb4d02ecc4f246ea6cfb431"><div class="ttname"><a href="class_snake.html#a951caca23cb4d02ecc4f246ea6cfb431">Snake::keyfunc</a></div><div class="ttdeci">void(Snake::* keyfunc)()</div><div class="ttdef"><b>Definition:</b> Snake.hpp:27</div></div>
-<div class="ttc" id="class_snake_html_aa1c341c5a4720f8aaf477c1f9e90ebcb"><div class="ttname"><a href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb">Snake::compute</a></div><div class="ttdeci">virtual std::stack&lt; AComponent * &gt; compute(int keycode)</div><div class="ttdef"><b>Definition:</b> Snake.cpp:35</div></div>
+<div class="ttc" id="class_snake_html_aa1c341c5a4720f8aaf477c1f9e90ebcb"><div class="ttname"><a href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb">Snake::compute</a></div><div class="ttdeci">virtual std::stack&lt; AComponent * &gt; compute(int keycode)</div><div class="ttdef"><b>Definition:</b> Snake.cpp:33</div></div>
 <div class="ttc" id="_a_game_8hpp_html"><div class="ttname"><a href="_a_game_8hpp.html">AGame.hpp</a></div></div>
-<div class="ttc" id="class_snake_html_a4c6815bbc4ee21e93970c741f92dd1f5"><div class="ttname"><a href="class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5">Snake::goAhead</a></div><div class="ttdeci">void goAhead()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:156</div></div>
+<div class="ttc" id="class_snake_html_a4c6815bbc4ee21e93970c741f92dd1f5"><div class="ttname"><a href="class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5">Snake::goAhead</a></div><div class="ttdeci">void goAhead()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:164</div></div>
 <div class="ttc" id="class_a_game_html"><div class="ttname"><a href="class_a_game.html">AGame</a></div><div class="ttdef"><b>Definition:</b> AGame.hpp:10</div></div>
-<div class="ttc" id="class_snake_html_a79b58cff227bab98162e179b7fff1e65"><div class="ttname"><a href="class_snake.html#a79b58cff227bab98162e179b7fff1e65">Snake::goUp</a></div><div class="ttdeci">void goUp()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:80</div></div>
-<div class="ttc" id="class_snake_html_a2e120de36db096ca5a1d19aaad4d3f04"><div class="ttname"><a href="class_snake.html#a2e120de36db096ca5a1d19aaad4d3f04">Snake::getSnake</a></div><div class="ttdeci">std::list&lt; Vector2&lt; int &gt; &gt; const &amp; getSnake() const </div><div class="ttdef"><b>Definition:</b> Snake.cpp:214</div></div>
-<div class="ttc" id="class_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2&lt; int &gt;</a></div></div>
-<div class="ttc" id="class_snake_html_a8e8fdb0a694a05d267671bfd3ef67054"><div class="ttname"><a href="class_snake.html#a8e8fdb0a694a05d267671bfd3ef67054">Snake::goLeft</a></div><div class="ttdeci">void goLeft()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:98</div></div>
-<div class="ttc" id="class_snake_html_a3e75465f8982e67b5f156432c0a0868b"><div class="ttname"><a href="class_snake.html#a3e75465f8982e67b5f156432c0a0868b">Snake::goDown</a></div><div class="ttdeci">void goDown()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:89</div></div>
-<div class="ttc" id="class_snake_html_a1850bb9cf00539a2bf2462ce4dfb69e3"><div class="ttname"><a href="class_snake.html#a1850bb9cf00539a2bf2462ce4dfb69e3">Snake::goRight</a></div><div class="ttdeci">void goRight()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:107</div></div>
+<div class="ttc" id="class_snake_html_a79b58cff227bab98162e179b7fff1e65"><div class="ttname"><a href="class_snake.html#a79b58cff227bab98162e179b7fff1e65">Snake::goUp</a></div><div class="ttdeci">void goUp()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:88</div></div>
+<div class="ttc" id="class_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2&lt; double &gt;</a></div></div>
+<div class="ttc" id="class_snake_html_a8e8fdb0a694a05d267671bfd3ef67054"><div class="ttname"><a href="class_snake.html#a8e8fdb0a694a05d267671bfd3ef67054">Snake::goLeft</a></div><div class="ttdeci">void goLeft()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:106</div></div>
+<div class="ttc" id="class_snake_html_a3e75465f8982e67b5f156432c0a0868b"><div class="ttname"><a href="class_snake.html#a3e75465f8982e67b5f156432c0a0868b">Snake::goDown</a></div><div class="ttdeci">void goDown()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:97</div></div>
+<div class="ttc" id="class_snake_html_a1850bb9cf00539a2bf2462ce4dfb69e3"><div class="ttname"><a href="class_snake.html#a1850bb9cf00539a2bf2462ce4dfb69e3">Snake::goRight</a></div><div class="ttdeci">void goRight()</div><div class="ttdef"><b>Definition:</b> Snake.cpp:115</div></div>
 <div class="ttc" id="class_snake_html"><div class="ttname"><a href="class_snake.html">Snake</a></div><div class="ttdef"><b>Definition:</b> Snake.hpp:17</div></div>
+<div class="ttc" id="class_snake_html_afa29ce4710253ce1d74c15a718e06bc5"><div class="ttname"><a href="class_snake.html#afa29ce4710253ce1d74c15a718e06bc5">Snake::getApple</a></div><div class="ttdeci">Vector2&lt; double &gt; const &amp; getApple() const </div><div class="ttdef"><b>Definition:</b> Snake.cpp:217</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_ca1671c8df01ec6432d3874544813973.html">Game</a></li><li class="navelem"><a class="el" href="dir_53e744c9542092d6db10d1c55d023cc4.html">include</a></li><li class="navelem"><a class="el" href="_snake_8hpp.html">Snake.hpp</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:28 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:03 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

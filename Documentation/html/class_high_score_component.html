@@ -8,13 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_high_score_component.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,7 @@ $(document).ready(function(){initNavTree('class_high_score_component.html','');}
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -123,14 +102,14 @@ Inheritance diagram for HighScoreComponent:</div>
 <div class="center"><img src="class_high_score_component__inherit__graph.png" border="0" usemap="#_high_score_component_inherit__map" alt="Inheritance graph"/></div>
 <map name="_high_score_component_inherit__map" id="_high_score_component_inherit__map">
 <area shape="rect" id="node2" href="class_a_component.html" title="AComponent" alt="" coords="31,5,129,32"/></map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for HighScoreComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_high_score_component__coll__graph.png" border="0" usemap="#_high_score_component_coll__map" alt="Collaboration graph"/></div>
 <map name="_high_score_component_coll__map" id="_high_score_component_coll__map">
-<area shape="rect" id="node2" href="class_a_component.html" title="AComponent" alt="" coords="5,5,104,32"/><area shape="rect" id="node3" href="class_vector2.html" title="Vector2\&lt; int \&gt;" alt="" coords="129,5,233,32"/></map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<area shape="rect" id="node2" href="class_a_component.html" title="AComponent" alt="" coords="5,5,104,32"/><area shape="rect" id="node3" href="class_vector2.html" title="Vector2\&lt; double \&gt;" alt="" coords="129,5,257,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -169,12 +148,12 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_class_a_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_component.html">AComponent</a></td></tr>
 <tr class="memitem:a42f018755d7fccdde7f90070c812e048 inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#a42f018755d7fccdde7f90070c812e048">AComponent</a> (<a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_s_d_l__opengl_8h.html#ad0e63d0edcdbd3d79554076bf309fd47">x</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_s_d_l__opengl_8h.html#a1675d9d7bb68e1657ff028643b4037e3">y</a>, enum <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>)</td></tr>
 <tr class="separator:a42f018755d7fccdde7f90070c812e048 inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e2c2b20c6d8ccefc0fe84cadf86280 inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#a08e2c2b20c6d8ccefc0fe84cadf86280">AComponent</a> (<a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;pos, enum <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>)</td></tr>
-<tr class="separator:a08e2c2b20c6d8ccefc0fe84cadf86280 inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66b34f4c82089a9f824be0f55193d30 inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#ad66b34f4c82089a9f824be0f55193d30">AComponent</a> (<a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;pos, enum <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>)</td></tr>
+<tr class="separator:ad66b34f4c82089a9f824be0f55193d30 inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6781bba3bde97c1ceef275a14a346eb5 inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#a6781bba3bde97c1ceef275a14a346eb5">~AComponent</a> ()</td></tr>
 <tr class="separator:a6781bba3bde97c1ceef275a14a346eb5 inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10bd94cfe7abe3821ccca1696b0045ac inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#a10bd94cfe7abe3821ccca1696b0045ac">getPos</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
-<tr class="separator:a10bd94cfe7abe3821ccca1696b0045ac inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4575869d086fd815ed433dcbf57c3b96 inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#a4575869d086fd815ed433dcbf57c3b96">getPos</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="separator:a4575869d086fd815ed433dcbf57c3b96 inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da7e1744242875a3ec0e38c06f0656a inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#a7da7e1744242875a3ec0e38c06f0656a">getColor</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
 <tr class="separator:a7da7e1744242875a3ec0e38c06f0656a inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa612b3ac138e06242617068a0e61c19d inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#aa612b3ac138e06242617068a0e61c19d">setColor</a> (<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>)</td></tr>
@@ -188,10 +167,10 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a7130cb1808836c75a0580e708d8f24d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dda79a092cb435b977345a6b1cdf7ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__config__windows_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a2dda79a092cb435b977345a6b1cdf7ed">componentNb</a> = 14</td></tr>
 <tr class="separator:a2dda79a092cb435b977345a6b1cdf7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af175afeb7d6331f3c7af160dee041de2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#af175afeb7d6331f3c7af160dee041de2">highscoreDim</a></td></tr>
-<tr class="separator:af175afeb7d6331f3c7af160dee041de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace4726cdfd30a6cc6aa9cdbc3eacf77b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#ace4726cdfd30a6cc6aa9cdbc3eacf77b">highscorePos</a></td></tr>
-<tr class="separator:ace4726cdfd30a6cc6aa9cdbc3eacf77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316d59b18e14dc83aaab2423615b7166"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a316d59b18e14dc83aaab2423615b7166">highscoreDim</a></td></tr>
+<tr class="separator:a316d59b18e14dc83aaab2423615b7166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709f9dab53bf232bbb7673f9a8b4b778"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a709f9dab53bf232bbb7673f9a8b4b778">highscorePos</a></td></tr>
+<tr class="separator:a709f9dab53bf232bbb7673f9a8b4b778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a1032f25b694200af9771532f06cd25af"></a>
@@ -327,7 +306,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_high_score_component_a7f753ddb2c0bc1b891437599c7aaca4a_icgraph.png" border="0" usemap="#class_high_score_component_a7f753ddb2c0bc1b891437599c7aaca4a_icgraph" alt=""/></div>
 <map name="class_high_score_component_a7f753ddb2c0bc1b891437599c7aaca4a_icgraph" id="class_high_score_component_a7f753ddb2c0bc1b891437599c7aaca4a_icgraph">
-<area shape="rect" id="node2" href="class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="205,5,368,32"/><area shape="rect" id="node3" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="228,56,345,83"/><area shape="rect" id="node4" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,56,464,83"/></map>
+<area shape="rect" id="node2" href="class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="205,5,368,32"/><area shape="rect" id="node4" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="228,56,345,83"/><area shape="rect" id="node3" href="_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,5,464,32"/><area shape="rect" id="node5" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,56,464,83"/></map>
 </div>
 </p>
 
@@ -352,7 +331,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_high_score_component_a68a9a13345949f7eb3e48bcf7a38d446_icgraph.png" border="0" usemap="#class_high_score_component_a68a9a13345949f7eb3e48bcf7a38d446_icgraph" alt=""/></div>
 <map name="class_high_score_component_a68a9a13345949f7eb3e48bcf7a38d446_icgraph" id="class_high_score_component_a68a9a13345949f7eb3e48bcf7a38d446_icgraph">
-<area shape="rect" id="node2" href="class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="205,5,368,32"/><area shape="rect" id="node3" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="228,56,345,83"/><area shape="rect" id="node4" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,56,464,83"/></map>
+<area shape="rect" id="node2" href="class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="205,5,368,32"/><area shape="rect" id="node4" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="228,56,345,83"/><area shape="rect" id="node3" href="_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,5,464,32"/><area shape="rect" id="node5" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,56,464,83"/></map>
 </div>
 </p>
 
@@ -379,7 +358,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="af175afeb7d6331f3c7af160dee041de2"></a>
+<a class="anchor" id="a316d59b18e14dc83aaab2423615b7166"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -387,7 +366,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; HighScoreComponent::highscoreDim</td>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; HighScoreComponent::highscoreDim</td>
         </tr>
       </table>
   </td>
@@ -399,7 +378,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ace4726cdfd30a6cc6aa9cdbc3eacf77b"></a>
+<a class="anchor" id="a709f9dab53bf232bbb7673f9a8b4b778"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -407,7 +386,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; HighScoreComponent::highscorePos</td>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; HighScoreComponent::highscorePos</td>
         </tr>
       </table>
   </td>
@@ -460,19 +439,15 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Commons/include/<a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a></li>
-<li>Commons/src/<a class="el" href="_high_score_component_8cpp.html">HighScoreComponent.cpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Commons/include/<a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Commons/src/<a class="el" href="_high_score_component_8cpp.html">HighScoreComponent.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_high_score_component.html">HighScoreComponent</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:30 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

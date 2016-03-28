@@ -8,13 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -119,20 +112,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_g.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -162,7 +141,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_arcade_menu.html#a7c89c41284323acf7afe14404bbbb3d3af05a7bf3214ea47608821baf927c402c">ArcadeMenu</a>
 </li>
 <li>GameComponent()
-: <a class="el" href="class_game_component.html#a3d62a2e959617fe3a0052d31c6a74bb0">GameComponent</a>
+: <a class="el" href="class_game_component.html#a03eb9ea838f18015371c14c5f6d5787a">GameComponent</a>
 </li>
 <li>GAMENAME
 : <a class="el" href="class_high_score_component.html#a1032f25b694200af9771532f06cd25afafe1c5da896799551d4568503b971d1ef">HighScoreComponent</a>
@@ -192,7 +171,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_load_high_score.html#a34573298c79f1b0569f769fb667ca20e">LoadHighScore</a>
 </li>
 <li>getApple()
-: <a class="el" href="class_snake.html#a11bc8665cbfea6dd4255cb5ad065ea9d">Snake</a>
+: <a class="el" href="class_snake.html#afa29ce4710253ce1d74c15a718e06bc5">Snake</a>
 </li>
 <li>getCarac()
 : <a class="el" href="class_n_curses.html#abe3e1afc017bb3ce3445154959d7a759">NCurses</a>
@@ -211,7 +190,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classarcade_1_1_arcade.html#a75d9f19ce0706bbc2992c2cf66e0284a">arcade::Arcade</a>
 </li>
 <li>getDim()
-: <a class="el" href="class_u_i_component.html#acfaf4a3d783dfd92eb98e752169579c4">UIComponent</a>
+: <a class="el" href="class_u_i_component.html#acd2a80727cf82b76e3c879f809f4bd66">UIComponent</a>
 </li>
 <li>getFileName()
 : <a class="el" href="class_animation_component.html#a727895c2e08838f8ceda5e743de5c5f3">AnimationComponent</a>
@@ -226,6 +205,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getMainWindow()
 : <a class="el" href="classncr_1_1_menu.html#a4b156a97535a96fca71d6478cc1e64f8">ncr::Menu</a>
 </li>
+<li>getMap()
+: <a class="el" href="class_pacman_game.html#ae240e3504dba77335b4656a3a75811af">PacmanGame</a>
+</li>
 <li>getMaxXY()
 : <a class="el" href="class_n_curses.html#a13b728d7d35c95b382d2862952143eb6">NCurses</a>
 </li>
@@ -237,11 +219,14 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getNextFrame()
 : <a class="el" href="class_arcade_menu.html#ade3e677ead50faaee1384a2228e2bcb5">ArcadeMenu</a>
 </li>
+<li>getPacman()
+: <a class="el" href="class_pacman_game.html#a69ed36953cd38268a58ede73795bbdb5">PacmanGame</a>
+</li>
 <li>getPos()
-: <a class="el" href="class_a_component.html#a10bd94cfe7abe3821ccca1696b0045ac">AComponent</a>
+: <a class="el" href="class_a_component.html#a4575869d086fd815ed433dcbf57c3b96">AComponent</a>
 </li>
 <li>getPosition()
-: <a class="el" href="class_pacman_character.html#a6423f4ee719f95330c6be870cd0f798c">PacmanCharacter</a>
+: <a class="el" href="class_pacman_character.html#a78cebe0c13ce2f401691fdf7d222129f">PacmanCharacter</a>
 </li>
 <li>GetRemainingTime()
 : <a class="el" href="class_chrono.html#a2d50a064126abb1e59cc73bebf8f09c1">Chrono&lt; T, U &gt;</a>
@@ -260,7 +245,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_pacman_character.html#a02116ffb057d98945a113f350bb3d79e">PacmanCharacter</a>
 </li>
 <li>getSnake()
-: <a class="el" href="class_snake.html#a2e120de36db096ca5a1d19aaad4d3f04">Snake</a>
+: <a class="el" href="class_snake.html#a3b2d2fe401cbeb3c25de01c980e8880c">Snake</a>
 </li>
 <li>getSprite2D()
 : <a class="el" href="class_game_component.html#a5375a72cc30b54fdfdaf7a2656ad7d22">GameComponent</a>
@@ -279,10 +264,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_n_curses.html#afc954aa2469beb3fc48788e10574eac5">NCurses</a>
 </li>
 <li>getSubDim()
-: <a class="el" href="class_dual_text_component.html#addb54edaf53e24915609a6ca1a08a322">DualTextComponent</a>
+: <a class="el" href="class_dual_text_component.html#a8b7d75a0be1579cf492c0b72d2333241">DualTextComponent</a>
 </li>
 <li>getSubPos()
-: <a class="el" href="class_dual_text_component.html#a5107cda759d441f7fcbcfe9ee227f125">DualTextComponent</a>
+: <a class="el" href="class_dual_text_component.html#ade0408d3478768943e8e7683457c8ffa">DualTextComponent</a>
 </li>
 <li>getSubTitle()
 : <a class="el" href="class_dual_text_component.html#a086f047f888876a571a0b9a75ab78b36">DualTextComponent</a>
@@ -306,7 +291,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="structtypenode.html#af57060786b5fcd57c6a17d33482c0599">typenode</a>
 </li>
 <li>Ghost()
-: <a class="el" href="class_ghost.html#a944894596f91333ca85ccfb96db8add5">Ghost</a>
+: <a class="el" href="class_ghost.html#acc517ca9ee98f5e94433eadff96f83fb">Ghost</a>
 </li>
 <li>GhostState
 : <a class="el" href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5b">Ghost</a>
@@ -388,21 +373,25 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>goDown()
 : <a class="el" href="class_ghost.html#a59d1caa3a13ba81c5174520bd87a4af1">Ghost</a>
+, <a class="el" href="class_pacman.html#a9cb656221c6e4cdf4d56a969e85521a8">Pacman</a>
 , <a class="el" href="class_pacman_character.html#ace53916f713cc2809c4f77c3061905ce">PacmanCharacter</a>
 , <a class="el" href="class_snake.html#a3e75465f8982e67b5f156432c0a0868b">Snake</a>
 </li>
 <li>goLeft()
 : <a class="el" href="class_ghost.html#a6d4c6904e91bb06dea5a9b10fce48d34">Ghost</a>
+, <a class="el" href="class_pacman.html#af796509852a70fba1b9bc43fb4d225b5">Pacman</a>
 , <a class="el" href="class_pacman_character.html#a545f97ff2e992bc1a8317415c822e586">PacmanCharacter</a>
 , <a class="el" href="class_snake.html#a8e8fdb0a694a05d267671bfd3ef67054">Snake</a>
 </li>
 <li>goRight()
 : <a class="el" href="class_ghost.html#a6e8899bafbed8759c63e5c8c0b5eca75">Ghost</a>
+, <a class="el" href="class_pacman.html#a754ea3625954aaa5230e34b7a37d6637">Pacman</a>
 , <a class="el" href="class_pacman_character.html#a7f4e7627f197aa2d1d2a821a5c9cdfce">PacmanCharacter</a>
 , <a class="el" href="class_snake.html#a1850bb9cf00539a2bf2462ce4dfb69e3">Snake</a>
 </li>
 <li>goUp()
 : <a class="el" href="class_ghost.html#a48afc8b31b108396c2c128afafb49b4c">Ghost</a>
+, <a class="el" href="class_pacman.html#a186ce31835cc83ba91f5c2c6dc25251e">Pacman</a>
 , <a class="el" href="class_pacman_character.html#ac527b4ae3a7131273d685f629c3efc61">PacmanCharacter</a>
 , <a class="el" href="class_snake.html#a79b58cff227bab98162e179b7fff1e65">Snake</a>
 </li>
@@ -423,14 +412,11 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:30 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

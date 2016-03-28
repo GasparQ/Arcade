@@ -1,20 +1,20 @@
-<map id="Commons/include/UIComponent.hpp" name="Commons/include/UIComponent.hpp">
-<area shape="rect" id="node2" href="$_action_component_8hpp.html" title="Commons/include/ActionComponent.hpp" alt="" coords="49,179,308,205"/>
-<area shape="rect" id="node6" href="$_n_curses_graph_8hpp.html" title="Graphique/NCurses/include\l/NCursesGraph.hpp" alt="" coords="5,262,187,303"/>
-<area shape="rect" id="node8" href="$_dual_text_component_8hpp.html" title="Commons/include/DualText\lComponent.hpp" alt="" coords="532,81,716,122"/>
-<area shape="rect" id="node10" href="$_open_gl_graph_8cpp.html" title="Graphique/OpenGL/OpenGlGraph.cpp" alt="" coords="662,179,903,205"/>
-<area shape="rect" id="node12" href="$_high_score_component_8hpp.html" title="Commons/include/HighScore\lComponent.hpp" alt="" coords="1168,81,1360,122"/>
-<area shape="rect" id="node14" href="$_pacman_game_8cpp.html" title="Game/src/PacmanGame.cpp" alt="" coords="1645,179,1835,205"/>
-<area shape="rect" id="node15" href="$_snake_8cpp.html" title="Game/src/Snake.cpp" alt="" coords="1859,179,2004,205"/>
-<area shape="rect" id="node16" href="$_s_d_l_graph_8hpp.html" title="Graphique/SDL2/src\l/SDLGraph.hpp" alt="" coords="1194,171,1333,213"/>
-<area shape="rect" id="node17" href="$_u_i_component_8cpp.html" title="Commons/src/UIComponent.cpp" alt="" coords="1486,88,1700,115"/>
-<area shape="rect" id="node18" href="$_open_gl_graph_8hpp.html" title="Graphique/OpenGL/OpenGlGraph.hpp" alt="" coords="851,88,1092,115"/>
-<area shape="rect" id="node3" href="$_arcade_menu_8hpp.html" title="ArcadeMenu.hpp" alt="" coords="212,269,332,296"/>
-<area shape="rect" id="node4" href="$_arcade_8cpp.html" title="Arcade.cpp" alt="" coords="213,360,301,387"/>
-<area shape="rect" id="node5" href="$_arcade_menu_8cpp.html" title="ArcadeMenu.cpp" alt="" coords="325,360,445,387"/>
-<area shape="rect" id="node7" href="$_n_curses_graph_8cpp.html" title="Graphique/NCurses/src\l/NCursesGraph.cpp" alt="" coords="17,353,175,394"/>
-<area shape="rect" id="node9" href="$_dual_text_component_8cpp.html" title="Commons/src/DualTextComponent.cpp" alt="" coords="333,179,587,205"/>
-<area shape="rect" id="node11" href="$_s_d_l_graph_8cpp.html" title="Graphique/SDL2/src\l/SDLGraph.cpp" alt="" coords="874,262,1013,303"/>
-<area shape="rect" id="node13" href="$_high_score_component_8cpp.html" title="Commons/src/HighScoreComponent.cpp" alt="" coords="1359,179,1619,205"/>
-<area shape="rect" id="node19" href="$_graphique_2_open_g_l_2main_8cpp.html" title="Graphique/OpenGL/main.cpp" alt="" coords="927,179,1117,205"/>
+<map id="/home/veyrie_f/Documents/cpp_arcade/Commons/include/UIComponent.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Commons/include/UIComponent.hpp">
+<area shape="rect" id="node2" href="$_action_component_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Commons/include\l/ActionComponent.hpp" alt="" coords="71,213,273,269"/>
+<area shape="rect" id="node6" href="$_n_curses_graph_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/NCurses\l/include/NCursesGraph.hpp" alt="" coords="5,317,216,373"/>
+<area shape="rect" id="node8" href="$_dual_text_component_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Commons/include\l/DualTextComponent.hpp" alt="" coords="412,109,615,165"/>
+<area shape="rect" id="node10" href="$_open_gl_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/OpenGlGraph.cpp" alt="" coords="551,213,759,269"/>
+<area shape="rect" id="node12" href="$_high_score_component_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Commons/include\l/HighScoreComponent.hpp" alt="" coords="1061,109,1264,165"/>
+<area shape="rect" id="node14" href="$_pacman_game_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/PacmanGame.cpp" alt="" coords="1487,221,1753,262"/>
+<area shape="rect" id="node15" href="$_snake_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/Snake.cpp" alt="" coords="1778,221,1997,262"/>
+<area shape="rect" id="node16" href="$_s_d_l_graph_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/src/SDLGraph.hpp" alt="" coords="1066,213,1259,269"/>
+<area shape="rect" id="node17" href="$_u_i_component_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Commons/src\l/UIComponent.cpp" alt="" coords="1389,109,1568,165"/>
+<area shape="rect" id="node18" href="$_open_gl_graph_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/OpenGlGraph.hpp" alt="" coords="779,109,987,165"/>
+<area shape="rect" id="node3" href="$_arcade_menu_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.hpp" alt="" coords="241,325,436,366"/>
+<area shape="rect" id="node4" href="$_arcade_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Arcade.cpp" alt="" coords="245,429,424,470"/>
+<area shape="rect" id="node5" href="$_arcade_menu_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.cpp" alt="" coords="448,429,643,470"/>
+<area shape="rect" id="node7" href="$_n_curses_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/NCurses\l/src/NCursesGraph.cpp" alt="" coords="5,421,216,477"/>
+<area shape="rect" id="node9" href="$_dual_text_component_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Commons/src\l/DualTextComponent.cpp" alt="" coords="297,213,476,269"/>
+<area shape="rect" id="node11" href="$_s_d_l_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/src/SDLGraph.cpp" alt="" coords="477,317,669,373"/>
+<area shape="rect" id="node13" href="$_high_score_component_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Commons/src\l/HighScoreComponent.cpp" alt="" coords="1284,213,1463,269"/>
+<area shape="rect" id="node19" href="$_graphique_2_open_g_l_2main_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/main.cpp" alt="" coords="783,213,991,269"/>
 </map>

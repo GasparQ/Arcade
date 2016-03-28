@@ -8,13 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_pacman.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,7 @@ $(document).ready(function(){initNavTree('class_pacman.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Pacman Member List</div>  </div>
@@ -116,44 +95,42 @@ $(document).ready(function(){initNavTree('class_pacman.html','');});
   <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#ac000ceede24318d93173843e3de6d049">Direction</a> enum name</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman_character.html#ac000ceede24318d93173843e3de6d049a93d7cd721bec9b7cd80f04f6a9746c15">DOWN</a> enum value</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#ad63157e68541ebe49fb622ffe700899b">getColor</a>() const </td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_pacman_character.html#a6423f4ee719f95330c6be870cd0f798c">getPosition</a>() const </td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_pacman_character.html#a78cebe0c13ce2f401691fdf7d222129f">getPosition</a>() const </td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#abd09fd1601b5b6a3e66a12bf8e49c486">getShape2D</a>() const </td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman_character.html#a8c79eec0729b657e7232da51bfc73d0e">getShape3D</a>() const </td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#a02116ffb057d98945a113f350bb3d79e">getShapeCurses</a>() const </td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman.html#a68f7e60390c31c3b9667cdc95381107b">GetState</a>() const </td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#ace53916f713cc2809c4f77c3061905ce">goDown</a>(char map[31][51])</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_pacman_character.html#a545f97ff2e992bc1a8317415c822e586">goLeft</a>(char map[31][51])</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#a7f4e7627f197aa2d1d2a821a5c9cdfce">goRight</a>(char map[31][51])</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_pacman_character.html#ac527b4ae3a7131273d685f629c3efc61">goUp</a>(char map[31][51])</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_pacman.html#a9cb656221c6e4cdf4d56a969e85521a8">goDown</a>(char map[31][51])</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_pacman.html#af796509852a70fba1b9bc43fb4d225b5">goLeft</a>(char map[31][51])</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_pacman.html#a754ea3625954aaa5230e34b7a37d6637">goRight</a>(char map[31][51])</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_pacman.html#a186ce31835cc83ba91f5c2c6dc25251e">goUp</a>(char map[31][51])</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_pacman.html#a6443872e9448e7cd9a0d03582add0919aa0f3e1811df34c3d2b9d152d00591642">IMMORTAL</a> enum value</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman_character.html#ac000ceede24318d93173843e3de6d049ac6831308ce14a6c01e8522d12aac5571">LEFT</a> enum value</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#a81b235aadd8ef0e98526e285d849a45b">m_color</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman_character.html#a234defe33e311a028b0ff0c6b52d59c4">m_dir</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#ac79aef1cfb279f2a71736653b845cdb4">m_initPos</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_pacman_character.html#ae77f7ac9d530be4b9eb4237422290d40">m_pos</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#a79491bd93ccbdd291552328dea282ca2">m_initPos</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_pacman_character.html#ab8ee40b843ac98ba6cc91c0eed37cea4">m_pos</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#a1dbb32291f4e12be26042a771139d84d">m_shape2D</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman_character.html#a73e181862f419d8ac1c8ecf1d6eaa341">m_shape3D</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#a3ee3c43a14b42396f16066d401e21568">m_shapeCurses</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman.html#a6443872e9448e7cd9a0d03582add0919a4e2a2d8d2d56baaf3f80684ec66f61f4">MORTAL</a> enum value</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_pacman.html#a9739e4adb4f74e00ae4242eed7f5daef">Move</a>(char map[31][51], Vector2&lt; int &gt; pacmanPos=Vector2&lt; int &gt;(0, 0))</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_pacman.html#a95c363ba9bfe57178cf98bf30d5a013a">Move</a>(char map[31][51], Vector2&lt; double &gt; pacmanPos=Vector2&lt; double &gt;(0, 0))</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman.html#a499408baab38f119ebd4f41e90fbe3fe">Pacman</a>()</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#af5123f6820d61aa82bd0c3a03d3b8a37">PacmanCharacter</a>(Vector2&lt; int &gt; pos, AComponent::ComponentColor color, std::string const &amp;shape2D, std::string const &amp;shapeCurses, GameComponent::Shapes shape3D)</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#af342554908eb831a854c0ec279946f48">PacmanCharacter</a>(Vector2&lt; double &gt; pos, AComponent::ComponentColor color, std::string const &amp;shape2D, std::string const &amp;shapeCurses, GameComponent::Shapes shape3D)</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman.html#a6443872e9448e7cd9a0d03582add0919">PacmanState</a> enum name</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#a15c787e89ac948e820846ac9cc6f7dbb">ResetPosition</a>()</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_pacman.html#a1e535e027f5564ab0444d13da849903d">ResetPosition</a>()</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman_character.html#ac000ceede24318d93173843e3de6d049a17f1ebdf333343e37df038bbb54d1799">RIGHT</a> enum value</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_pacman.html#aa9521efafa7ed7662a1620e751b16315">SetState</a>(PacmanState state)</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_pacman_character.html#ac000ceede24318d93173843e3de6d049a94a7c8c253f097728d2ad25156b3663f">UP</a> enum value</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_pacman.html#aeeb4fea54918576dbdf20a1f325410bf">~Pacman</a>()</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_pacman_character.html#af0ce56a6184336909eb4ca35bdf2e3bf">~PacmanCharacter</a>()</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#a83fabeae0da68e2dbdce48a407272912">velocity</a></td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_pacman.html#aeeb4fea54918576dbdf20a1f325410bf">~Pacman</a>()</td><td class="entry"><a class="el" href="class_pacman.html">Pacman</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_pacman_character.html#af0ce56a6184336909eb4ca35bdf2e3bf">~PacmanCharacter</a>()</td><td class="entry"><a class="el" href="class_pacman_character.html">PacmanCharacter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:30 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

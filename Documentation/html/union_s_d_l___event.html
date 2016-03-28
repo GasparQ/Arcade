@@ -8,13 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('union_s_d_l___event.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,7 @@ $(document).ready(function(){initNavTree('union_s_d_l___event.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -124,7 +103,7 @@ Collaboration diagram for SDL_Event:</div>
 <div class="center"><img src="union_s_d_l___event__coll__graph.png" border="0" usemap="#_s_d_l___event_coll__map" alt="Collaboration graph"/></div>
 <map name="_s_d_l___event_coll__map" id="_s_d_l___event_coll__map">
 <area shape="rect" id="node2" href="struct_s_d_l___joy_device_event.html" title="Joystick device event structure (event.jdevice.*) " alt="" coords="445,5,595,32"/><area shape="rect" id="node3" href="struct_s_d_l___joy_hat_event.html" title="Joystick hat position change event structure (event.jhat.*) " alt="" coords="455,56,585,83"/><area shape="rect" id="node4" href="struct_s_d_l___text_editing_event.html" title="Keyboard text editing event structure (event.edit.*) " alt="" coords="443,107,597,133"/><area shape="rect" id="node5" href="struct_s_d_l___multi_gesture_event.html" title="Multiple Finger Gesture Event (event.mgesture.*) " alt="" coords="439,157,601,184"/><area shape="rect" id="node6" href="struct_s_d_l___user_event.html" title="A user&#45;defined event type (event.user.*) " alt="" coords="461,208,579,235"/><area shape="rect" id="node7" href="struct_s_d_l___common_event.html" title="Fields shared by every event. " alt="" coords="449,259,591,285"/><area shape="rect" id="node8" href="struct_s_d_l___mouse_motion_event.html" title="Mouse motion event structure (event.motion.*) " alt="" coords="437,309,603,336"/><area shape="rect" id="node9" href="struct_s_d_l___text_input_event.html" title="Keyboard text input event structure (event.text.*) " alt="" coords="448,360,592,387"/><area shape="rect" id="node10" href="struct_s_d_l___keyboard_event.html" title="Keyboard button event structure (event.key.*) " alt="" coords="448,411,592,437"/><area shape="rect" id="node11" href="struct_s_d_l___keysym.html" title="The SDL keysym structure, used in key events. " alt="" coords="213,411,315,437"/><area shape="rect" id="node12" href="struct_s_d_l___joy_button_event.html" title="Joystick button event structure (event.jbutton.*) " alt="" coords="446,461,594,488"/><area shape="rect" id="node13" href="struct_s_d_l___sys_w_m_event.html" title="A video driver dependent system event (event.syswm.*) This event is disabled by default, you can enable it with SDL_EventState() " alt="" coords="452,512,588,539"/><area shape="rect" id="node14" href="struct_s_d_l___sys_w_mmsg.html" title="SDL_SysWMmsg" alt="" coords="201,512,327,539"/><area shape="rect" id="node15" href="struct_s_d_l__version.html" title="Information the version of SDL in use. " alt="" coords="6,512,103,539"/><area shape="rect" id="node16" href="struct_s_d_l___quit_event.html" title="The &quot;quit requested&quot; event. " alt="" coords="463,563,577,589"/><area shape="rect" id="node17" href="struct_s_d_l___audio_device_event.html" title="Audio device event structure (event.adevice.*) " alt="" coords="439,613,601,640"/><area shape="rect" id="node18" href="struct_s_d_l___controller_device_event.html" title="Controller device event structure (event.cdevice.*) " alt="" coords="427,664,613,691"/><area shape="rect" id="node19" href="struct_s_d_l___joy_ball_event.html" title="Joystick trackball motion event structure (event.jball.*) " alt="" coords="454,715,586,741"/><area shape="rect" id="node20" href="struct_s_d_l___mouse_wheel_event.html" title="Mouse wheel event structure (event.wheel.*) " alt="" coords="437,765,603,792"/><area shape="rect" id="node21" href="struct_s_d_l___dollar_gesture_event.html" title="Dollar Gesture Event (event.dgesture.*) " alt="" coords="435,816,605,843"/><area shape="rect" id="node22" href="struct_s_d_l___touch_finger_event.html" title="Touch finger event structure (event.tfinger.*) " alt="" coords="439,867,601,893"/><area shape="rect" id="node23" href="struct_s_d_l___controller_button_event.html" title="Game controller button event structure (event.cbutton.*) " alt="" coords="429,917,611,944"/><area shape="rect" id="node24" href="struct_s_d_l___mouse_button_event.html" title="Mouse button event structure (event.button.*) " alt="" coords="437,968,603,995"/><area shape="rect" id="node25" href="struct_s_d_l___window_event.html" title="Window state change event data (event.m_window.*) " alt="" coords="452,1019,588,1045"/><area shape="rect" id="node26" href="struct_s_d_l___controller_axis_event.html" title="Game controller axis motion event structure (event.caxis.*) " alt="" coords="435,1069,605,1096"/><area shape="rect" id="node27" href="struct_s_d_l___joy_axis_event.html" title="Joystick axis motion event structure (event.jaxis.*) " alt="" coords="452,1120,588,1147"/><area shape="rect" id="node28" href="struct_s_d_l___drop_event.html" title="An event used to request a file open by the system (event.drop.*) This event is enabled by default..." alt="" coords="461,1171,579,1197"/></map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -522,18 +501,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this union was generated from the following file:<ul>
-<li>Graphique/SDL2/include/<a class="el" href="_s_d_l__events_8h_source.html">SDL_events.h</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/<a class="el" href="_s_d_l__events_8h_source.html">SDL_events.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="union_s_d_l___event.html">SDL_Event</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:30 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

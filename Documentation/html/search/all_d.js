@@ -1,10 +1,11 @@
 var searchData=
 [
   ['m',['m',['../_s_d_l__opengl__glext_8h.html#af593500c283bf1a787a6f947f503a5c2',1,'SDL_opengl_glext.h']]],
+  ['m_5fchrononame',['m_chronoName',['../class_i_chrono.html#ad30c81a922cd8495f531011c679a3923',1,'IChrono']]],
   ['m_5fcolor',['m_color',['../class_pacman_character.html#a81b235aadd8ef0e98526e285d849a45b',1,'PacmanCharacter']]],
   ['m_5fdir',['m_dir',['../class_pacman_character.html#a234defe33e311a028b0ff0c6b52d59c4',1,'PacmanCharacter']]],
-  ['m_5finitpos',['m_initPos',['../class_pacman_character.html#ac79aef1cfb279f2a71736653b845cdb4',1,'PacmanCharacter']]],
-  ['m_5fpos',['m_pos',['../class_pacman_character.html#ae77f7ac9d530be4b9eb4237422290d40',1,'PacmanCharacter']]],
+  ['m_5finitpos',['m_initPos',['../class_pacman_character.html#a79491bd93ccbdd291552328dea282ca2',1,'PacmanCharacter']]],
+  ['m_5fpos',['m_pos',['../class_pacman_character.html#ab8ee40b843ac98ba6cc91c0eed37cea4',1,'PacmanCharacter']]],
   ['m_5fshape2d',['m_shape2D',['../class_pacman_character.html#a1dbb32291f4e12be26042a771139d84d',1,'PacmanCharacter']]],
   ['m_5fshape3d',['m_shape3D',['../class_pacman_character.html#a73e181862f419d8ac1c8ecf1d6eaa341',1,'PacmanCharacter']]],
   ['m_5fshapecurses',['m_shapeCurses',['../class_pacman_character.html#a3ee3c43a14b42396f16066d401e21568',1,'PacmanCharacter']]],
@@ -113,7 +114,7 @@ var searchData=
   ['motion',['motion',['../union_s_d_l___event.html#ac3c89e190faacbe84280cd539453bab6',1,'SDL_Event']]],
   ['mouse_5finfo',['mouse_info',['../term_8h.html#a30ae60e478f9559fbc3ca426634a6ac0',1,'term.h']]],
   ['mouse_5ftrafo',['mouse_trafo',['../curses_8h.html#a4858121ba5846fefc02cbebadab74253',1,'curses.h']]],
-  ['move',['Move',['../class_ghost.html#a4d3d8f34627006b272b61ba73eceb754',1,'Ghost::Move()'],['../class_pacman.html#a9739e4adb4f74e00ae4242eed7f5daef',1,'Pacman::Move()'],['../class_pacman_character.html#a4960043a4c55d8f3715497176281f42e',1,'PacmanCharacter::Move()'],['../curses_8h.html#a24cb4202a916583a0823086f3f29708b',1,'move():&#160;curses.h']]],
+  ['move',['Move',['../class_ghost.html#abf1e5ac53266547052b36dd4cb9fe6d7',1,'Ghost::Move()'],['../class_pacman.html#a95c363ba9bfe57178cf98bf30d5a013a',1,'Pacman::Move()'],['../class_pacman_character.html#ad4068a902ffddf6513193b01be2116aa',1,'PacmanCharacter::Move()'],['../curses_8h.html#a24cb4202a916583a0823086f3f29708b',1,'move():&#160;curses.h']]],
   ['move_5finsert_5fmode',['move_insert_mode',['../term_8h.html#afc51ec068f5d33da0b5118ff4ab5220a',1,'term.h']]],
   ['move_5fstandout_5fmode',['move_standout_mode',['../term_8h.html#a881a42749c047e8dd68925db93723b42',1,'term.h']]],
   ['movecursor',['moveCursor',['../classncr_1_1_window.html#a841de18b9bf6964185002b4ad0c56b10',1,'ncr::Window']]],

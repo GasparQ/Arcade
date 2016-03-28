@@ -4,17 +4,10 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Arcade: Graphique/SDL2/src/SDLGraph.hpp Source File</title>
+<title>Arcade: /home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/src/SDLGraph.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -74,21 +67,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('_s_d_l_graph_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,6 +81,11 @@ $(document).ready(function(){initNavTree('_s_d_l_graph_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_dde311cc8b876bed52d1f0cd2461c063.html">Graphique</a></li><li class="navelem"><a class="el" href="dir_1db7c34d81d23c1bc41e61afd194d98f.html">SDL2</a></li><li class="navelem"><a class="el" href="dir_955a448d0a0780dedf36a200db8023af.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">SDLGraph.hpp</div>  </div>
@@ -150,8 +133,8 @@ $(document).ready(function(){initNavTree('_s_d_l_graph_8hpp_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span>        drawGameComponent(<a class="code" href="class_game_component.html">GameComponent</a> <a class="code" href="term_8h.html#a23c3c97f2c4aee08ef2be5d31422646f">const</a> *)                                                    throw(std::runtime_error);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span>        drawUIComponent(<a class="code" href="class_u_i_component.html">UIComponent</a> <a class="code" href="term_8h.html#a23c3c97f2c4aee08ef2be5d31422646f">const</a> *)                                                        throw(std::runtime_error);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span>        drawHighScoreComponent(<a class="code" href="class_high_score_component.html">HighScoreComponent</a> <a class="code" href="term_8h.html#a23c3c97f2c4aee08ef2be5d31422646f">const</a> *)                                          throw(std::runtime_error);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span>        displaySurface(<a class="code" href="_s_d_l__render_8h.html#a17850d7f1f5de457727cb3cf66b3a7f5">SDL_Texture</a> *, <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">int</span>&gt; pos, <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">int</span>&gt; dim = <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">int</span>&gt;(1, 1))    throw(std::runtime_error);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span>        drawText(std::<span class="keywordtype">string</span> <a class="code" href="term_8h.html#a23c3c97f2c4aee08ef2be5d31422646f">const</a>&amp;, <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">int</span>&gt; pos, <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">int</span>&gt; dim = <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">int</span>&gt;(1, 1), <a class="code" href="class_a_component.html">AComponent</a>::ComponentColor <a class="code" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a> = <a class="code" href="class_a_component.html">AComponent</a>::ComponentColor::<a class="code" href="curses_8h.html#a9b44987ffdc2af19b635206b94334b69">COLOR_WHITE</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span>        displaySurface(<a class="code" href="_s_d_l__render_8h.html#a17850d7f1f5de457727cb3cf66b3a7f5">SDL_Texture</a> *, <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">double</span>&gt; pos, <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">double</span>&gt; dim = <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">double</span>&gt;(1, 1))    throw(std::runtime_error);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span>        drawText(std::<span class="keywordtype">string</span> <a class="code" href="term_8h.html#a23c3c97f2c4aee08ef2be5d31422646f">const</a>&amp;, <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">double</span>&gt; pos, <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">double</span>&gt; dim = <a class="code" href="class_vector2.html">Vector2</a>&lt;<span class="keywordtype">double</span>&gt;(1, 1), <a class="code" href="class_a_component.html">AComponent</a>::ComponentColor <a class="code" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a> = <a class="code" href="class_a_component.html">AComponent</a>::ComponentColor::<a class="code" href="curses_8h.html#a9b44987ffdc2af19b635206b94334b69">COLOR_WHITE</a>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span>        addColor(<a class="code" href="class_a_component.html">AComponent</a>::ComponentColor <a class="code" href="_s_d_l__opengl__glext_8h.html#a57f14e05b1900f16a2da82ade47d0c6d">index</a>, <a class="code" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> <a class="code" href="_s_d_l__opengl_8h.html#a42ce7cdc612e53abee15043f80220d97">r</a>, <a class="code" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> <a class="code" href="_s_d_l__opengl__glext_8h.html#acaceb3a655ff28b75259860bcb868f9f">g</a>, <a class="code" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> <a class="code" href="_s_d_l__opengl__glext_8h.html#a0f71581a41fd2264c8944126dabbd010">b</a>, <a class="code" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> <a class="code" href="_s_d_l__opengl__glext_8h.html#a3309789fc188587d666cda5ece79cf82">a</a> = 0);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
@@ -165,7 +148,7 @@ $(document).ready(function(){initNavTree('_s_d_l_graph_8hpp_source.html','');});
 <div class="ttc" id="curses_8h_html_a9b44987ffdc2af19b635206b94334b69"><div class="ttname"><a href="curses_8h.html#a9b44987ffdc2af19b635206b94334b69">COLOR_WHITE</a></div><div class="ttdeci">#define COLOR_WHITE</div><div class="ttdef"><b>Definition:</b> curses.h:266</div></div>
 <div class="ttc" id="class_s_d_l_graph_html_ae525445d44873efad1fa5a176986e9d3"><div class="ttname"><a href="class_s_d_l_graph.html#ae525445d44873efad1fa5a176986e9d3">SDLGraph::fontName</a></div><div class="ttdeci">static const std::string fontName</div><div class="ttdef"><b>Definition:</b> SDLGraph.hpp:23</div></div>
 <div class="ttc" id="_s_d_l__render_8h_html_aaf0bf7d020754fc614fe06552ea4d5d4"><div class="ttname"><a href="_s_d_l__render_8h.html#aaf0bf7d020754fc614fe06552ea4d5d4">SDL_Renderer</a></div><div class="ttdeci">struct SDL_Renderer SDL_Renderer</div><div class="ttdef"><b>Definition:</b> SDL_render.h:122</div></div>
-<div class="ttc" id="class_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> Vector2.hpp:17</div></div>
+<div class="ttc" id="class_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> Vector2.hpp:18</div></div>
 <div class="ttc" id="_s_d_l__render_8h_html_a17850d7f1f5de457727cb3cf66b3a7f5"><div class="ttname"><a href="_s_d_l__render_8h.html#a17850d7f1f5de457727cb3cf66b3a7f5">SDL_Texture</a></div><div class="ttdeci">struct SDL_Texture SDL_Texture</div><div class="ttdef"><b>Definition:</b> SDL_render.h:128</div></div>
 <div class="ttc" id="_s_d_l__opengl__glext_8h_html_a57f14e05b1900f16a2da82ade47d0c6d"><div class="ttname"><a href="_s_d_l__opengl__glext_8h.html#a57f14e05b1900f16a2da82ade47d0c6d">index</a></div><div class="ttdeci">GLuint index</div><div class="ttdef"><b>Definition:</b> SDL_opengl_glext.h:660</div></div>
 <div class="ttc" id="class_s_d_l_graph_html_af0d0395d5b8b135feeefe65374476068"><div class="ttname"><a href="class_s_d_l_graph.html#af0d0395d5b8b135feeefe65374476068">SDLGraph::~SDLGraph</a></div><div class="ttdeci">~SDLGraph()</div><div class="ttdef"><b>Definition:</b> SDLGraph.cpp:43</div></div>
@@ -185,15 +168,11 @@ $(document).ready(function(){initNavTree('_s_d_l_graph_8hpp_source.html','');});
 <div class="ttc" id="class_s_d_l_graph_html_a0de9c17b48b65fdc049a0bb8ec4483a1"><div class="ttname"><a href="class_s_d_l_graph.html#a0de9c17b48b65fdc049a0bb8ec4483a1">SDLGraph::display</a></div><div class="ttdeci">virtual void display(std::stack&lt; AComponent * &gt;)</div><div class="ttdef"><b>Definition:</b> SDLGraph.cpp:86</div></div>
 <div class="ttc" id="_s_d_l__ttf_8h_html_ac3b14e1c2946c0cf19776fe568d9abcf"><div class="ttname"><a href="_s_d_l__ttf_8h.html#ac3b14e1c2946c0cf19776fe568d9abcf">TTF_Font</a></div><div class="ttdeci">struct _TTF_Font TTF_Font</div><div class="ttdef"><b>Definition:</b> SDL_ttf.h:86</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_dde311cc8b876bed52d1f0cd2461c063.html">Graphique</a></li><li class="navelem"><a class="el" href="dir_1db7c34d81d23c1bc41e61afd194d98f.html">SDL2</a></li><li class="navelem"><a class="el" href="dir_955a448d0a0780dedf36a200db8023af.html">src</a></li><li class="navelem"><a class="el" href="_s_d_l_graph_8hpp.html">SDLGraph.hpp</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:29 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:03 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

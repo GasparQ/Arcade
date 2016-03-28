@@ -1,11 +1,11 @@
-<map id="Game/include/PacmanGame.hpp" name="Game/include/PacmanGame.hpp">
-<area shape="rect" id="node7" href="$_i_game_8hpp.html" title="IGame.hpp" alt="" coords="382,171,468,197"/>
-<area shape="rect" id="node9" href="$_a_component_8hpp.html" title="../../Commons/include\l/AComponent.hpp" alt="" coords="427,337,577,378"/>
-<area shape="rect" id="node12" href="$_pacman_8hpp.html" title="Pacman.hpp" alt="" coords="639,88,733,115"/>
-<area shape="rect" id="node16" href="$_ghost_8hpp.html" title="Ghost.hpp" alt="" coords="532,88,613,115"/>
-<area shape="rect" id="node17" href="$_a_game_8hpp.html" title="AGame.hpp" alt="" coords="367,88,457,115"/>
-<area shape="rect" id="node18" href="$_chrono_8hpp.html" title="../../Commons/include\l/Chrono.hpp" alt="" coords="810,81,960,122"/>
-<area shape="rect" id="node10" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="571,427,663,453"/>
-<area shape="rect" id="node13" href="$_pacman_character_8hpp.html" title="PacmanCharacter.hpp" alt="" coords="541,171,693,197"/>
-<area shape="rect" id="node14" href="$_game_component_8hpp.html" title="../../Commons/include\l/GameComponent.hpp" alt="" coords="541,246,693,287"/>
+<map id="/home/veyrie_f/Documents/cpp_arcade/Game/include/PacmanGame.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Game/include/PacmanGame.hpp">
+<area shape="rect" id="node7" href="$_i_game_8hpp.html" title="IGame.hpp" alt="" coords="491,200,577,227"/>
+<area shape="rect" id="node9" href="$_a_component_8hpp.html" title="../../Commons/include\l/AComponent.hpp" alt="" coords="603,366,753,407"/>
+<area shape="rect" id="node13" href="$_pacman_8hpp.html" title="Pacman.hpp" alt="" coords="666,117,760,144"/>
+<area shape="rect" id="node17" href="$_ghost_8hpp.html" title="Ghost.hpp" alt="" coords="785,117,867,144"/>
+<area shape="rect" id="node18" href="$_a_game_8hpp.html" title="AGame.hpp" alt="" coords="500,117,591,144"/>
+<area shape="rect" id="node19" href="$_chrono_8hpp.html" title="../../Commons/include\l/Chrono.hpp" alt="" coords="274,110,424,151"/>
+<area shape="rect" id="node10" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="833,456,924,483"/>
+<area shape="rect" id="node14" href="$_pacman_character_8hpp.html" title="PacmanCharacter.hpp" alt="" coords="751,200,903,227"/>
+<area shape="rect" id="node16" href="$_game_component_8hpp.html" title="../../Commons/include\l/GameComponent.hpp" alt="" coords="717,275,869,317"/>
 </map>

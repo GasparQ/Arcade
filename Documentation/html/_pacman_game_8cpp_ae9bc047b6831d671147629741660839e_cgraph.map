@@ -1,0 +1,4 @@
+<map id="whereAmI" name="whereAmI">
+<area shape="rect" id="node2" href="$class_pacman_game.html#a69ed36953cd38268a58ede73795bbdb5" title="PacmanGame::getPacman" alt="" coords="147,5,325,32"/>
+<area shape="rect" id="node3" href="$class_pacman_character.html#a78cebe0c13ce2f401691fdf7d222129f" title="PacmanCharacter::getPosition" alt="" coords="136,56,336,83"/>
+</map>

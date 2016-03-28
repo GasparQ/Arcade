@@ -2,7 +2,7 @@ var searchData=
 [
   ['u1',['u1',['../_s_d_l__opengl__glext_8h.html#ab296853c9d55bfdc62cda6c50d1b4781',1,'SDL_opengl_glext.h']]],
   ['u2',['u2',['../_s_d_l__opengl__glext_8h.html#a1c6bf6fa786a04b729b30e56d68474ef',1,'SDL_opengl_glext.h']]],
-  ['uicomponent',['UIComponent',['../class_u_i_component.html',1,'UIComponent'],['../class_u_i_component.html#aed7f71b6f0c22c57c2b5df8bdc68892b',1,'UIComponent::UIComponent()']]],
+  ['uicomponent',['UIComponent',['../class_u_i_component.html',1,'UIComponent'],['../class_u_i_component.html#a721bec5035d93bfa77861f07372a39e1',1,'UIComponent::UIComponent()']]],
   ['uicomponent_2ecpp',['UIComponent.cpp',['../_u_i_component_8cpp.html',1,'']]],
   ['uicomponent_2ehpp',['UIComponent.hpp',['../_u_i_component_8hpp.html',1,'']]],
   ['uint16',['Uint16',['../_s_d_l__stdinc_8h.html#a31fcc0a076c9068668173ee26d33e42b',1,'SDL_stdinc.h']]],
@@ -36,7 +36,7 @@ var searchData=
   ['up',['UP',['../class_pacman_character.html#ac000ceede24318d93173843e3de6d049a94a7c8c253f097728d2ad25156b3663f',1,'PacmanCharacter::UP()'],['../structtag_i_t_e_m.html#ad8e2b7fdaa33c3b6b2ed728656e33757',1,'tagITEM::up()']]],
   ['up_5fhalf_5fline',['up_half_line',['../term_8h.html#a4220e27ed48a97e36439eb8c02a3960d',1,'term.h']]],
   ['update',['Update',['../class_i_chrono.html#aff1787f1a710e0d456b8b13d6f900ce8',1,'IChrono::Update()'],['../class_chrono.html#a1b4d3d5ed31af8c7f68f9e4f950aaab5',1,'Chrono::Update()']]],
-  ['updatemap',['updateMap',['../_snake_8cpp.html#a20ad0db93a03e6ebe30ec59738214db8',1,'Snake.cpp']]],
+  ['updatemap',['updateMap',['../_pacman_game_8cpp.html#a23980b3375c54f30fb8401e0a9f04252',1,'updateMap(struct arcade::GetMap *map, PacmanGame const &amp;pacman):&#160;PacmanGame.cpp'],['../_snake_8cpp.html#a20ad0db93a03e6ebe30ec59738214db8',1,'updateMap(struct arcade::GetMap *map, Snake const &amp;snake):&#160;Snake.cpp']]],
   ['updatemenu',['updateMenu',['../class_arcade_menu.html#aa3e7e813a1bba4fd54a8add002161330',1,'ArcadeMenu']]],
   ['updatepseudo',['UpdatePseudo',['../class_high_score_component.html#a68a9a13345949f7eb3e48bcf7a38d446',1,'HighScoreComponent']]],
   ['usage',['usage',['../_s_d_l__opengl__glext_8h.html#afb85c5d9b1bce96aa3b530d581194d1a',1,'SDL_opengl_glext.h']]],

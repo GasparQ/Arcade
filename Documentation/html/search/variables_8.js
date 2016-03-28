@@ -8,6 +8,6 @@ var searchData=
   ['height',['height',['../structarcade_1_1_get_map.html#ae83569f92aa2a5cc6f50355162c62eb3',1,'arcade::GetMap::height()'],['../structtag_m_e_n_u.html#a18e66f7e825dd9e3624407a6b9578e3a',1,'tagMENU::height()'],['../struct_s_d_l_test___surface_image__s.html#a310092874695556e4b7f1f63aec24213',1,'SDLTest_SurfaceImage_s::height()'],['../_game_2include_2_protocol_8hpp.html#a81c9f8d0b8c3b49d770be14dbe9f0d37',1,'height():&#160;Protocol.hpp'],['../_protocol_8hpp.html#a81c9f8d0b8c3b49d770be14dbe9f0d37',1,'height():&#160;Protocol.hpp']]],
   ['here',['here',['../struct_s_d_l___r_wops.html#a6fc84601c17e347c6ef24c63a79deb57',1,'SDL_RWops']]],
   ['hidden',['hidden',['../struct_s_d_l___r_wops.html#a362df87898893bd29a05434308f78c4d',1,'SDL_RWops']]],
-  ['highscoredim',['highscoreDim',['../class_high_score_component.html#af175afeb7d6331f3c7af160dee041de2',1,'HighScoreComponent']]],
-  ['highscorepos',['highscorePos',['../class_high_score_component.html#ace4726cdfd30a6cc6aa9cdbc3eacf77b',1,'HighScoreComponent']]]
+  ['highscoredim',['highscoreDim',['../class_high_score_component.html#a316d59b18e14dc83aaab2423615b7166',1,'HighScoreComponent']]],
+  ['highscorepos',['highscorePos',['../class_high_score_component.html#a709f9dab53bf232bbb7673f9a8b4b778',1,'HighScoreComponent']]]
 ];

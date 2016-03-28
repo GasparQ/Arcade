@@ -269,8 +269,8 @@ var searchData=
   ['highscorecomponent',['HighScoreComponent',['../class_high_score_component.html',1,'HighScoreComponent'],['../class_high_score_component.html#adaab9cf4c8ea4b5c18b680b4bd8a4ca9',1,'HighScoreComponent::HighScoreComponent()']]],
   ['highscorecomponent_2ecpp',['HighScoreComponent.cpp',['../_high_score_component_8cpp.html',1,'']]],
   ['highscorecomponent_2ehpp',['HighScoreComponent.hpp',['../_high_score_component_8hpp.html',1,'']]],
-  ['highscoredim',['highscoreDim',['../class_high_score_component.html#af175afeb7d6331f3c7af160dee041de2',1,'HighScoreComponent']]],
-  ['highscorepos',['highscorePos',['../class_high_score_component.html#ace4726cdfd30a6cc6aa9cdbc3eacf77b',1,'HighScoreComponent']]],
+  ['highscoredim',['highscoreDim',['../class_high_score_component.html#a316d59b18e14dc83aaab2423615b7166',1,'HighScoreComponent']]],
+  ['highscorepos',['highscorePos',['../class_high_score_component.html#a709f9dab53bf232bbb7673f9a8b4b778',1,'HighScoreComponent']]],
   ['hline',['hline',['../curses_8h.html#a91d5fa35c02901b152a0fbaae6812c5a',1,'curses.h']]],
   ['hue_5flightness_5fsaturation',['hue_lightness_saturation',['../term_8h.html#a6b8589261310396064c279a26387422a',1,'term.h']]],
   ['hunting',['HUNTING',['../class_ghost.html#acc75a78854c248d653ba1f68c057dc5ba7cb38b540f17e59aa0f7937ad4b98b28',1,'Ghost']]]

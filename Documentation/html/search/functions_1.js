@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['acomponent',['AComponent',['../class_a_component.html#a42f018755d7fccdde7f90070c812e048',1,'AComponent::AComponent(int x, int y, enum ComponentColor color)'],['../class_a_component.html#a08e2c2b20c6d8ccefc0fe84cadf86280',1,'AComponent::AComponent(Vector2&lt; int &gt; const &amp;pos, enum ComponentColor color)']]],
+  ['acomponent',['AComponent',['../class_a_component.html#a42f018755d7fccdde7f90070c812e048',1,'AComponent::AComponent(int x, int y, enum ComponentColor color)'],['../class_a_component.html#ad66b34f4c82089a9f824be0f55193d30',1,'AComponent::AComponent(Vector2&lt; double &gt; const &amp;pos, enum ComponentColor color)']]],
   ['actioncomponent',['ActionComponent',['../class_action_component.html#a81728e25f872db26f2cee185a19b6f3c',1,'ActionComponent::ActionComponent(linkedElemType linkedElem, action1Type f_action=(action1Type) 0, action2Type s_action=(action2Type) 0)'],['../class_action_component.html#acdad220531dcf04fa44ce316b4f44c23',1,'ActionComponent::ActionComponent(ActionComponent const &amp;component)']]],
   ['addsubwin',['addSubWin',['../classncr_1_1_menu.html#aa6d2c6f0720fc79cdfddaa8aa11efa6e',1,'ncr::Menu']]],
   ['agame',['AGame',['../class_a_game.html#ae6562b250ccadd13c0557dd9ca27d49e',1,'AGame']]],

@@ -1,9 +1,9 @@
-<map id="Graphique/SDL2/include/SDL_haptic.h" name="Graphique/SDL2/include/SDL_haptic.h">
-<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="845,245,947,272"/>
-<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="57,469,156,496"/>
-<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1455,469,1553,496"/>
-<area shape="rect" id="node19" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="850,171,941,197"/>
-<area shape="rect" id="node20" href="$_s_d_l__joystick_8h.html" title="SDL_joystick.h" alt="" coords="931,96,1041,123"/>
-<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1315,320,1416,347"/>
-<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1302,395,1415,421"/>
+<map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_haptic.h" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_haptic.h">
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="845,259,947,285"/>
+<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="57,483,156,509"/>
+<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1455,483,1553,509"/>
+<area shape="rect" id="node19" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="850,184,941,211"/>
+<area shape="rect" id="node20" href="$_s_d_l__joystick_8h.html" title="SDL_joystick.h" alt="" coords="931,109,1041,136"/>
+<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1315,333,1416,360"/>
+<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1302,408,1415,435"/>
 </map>

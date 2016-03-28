@@ -1,10 +1,10 @@
-<map id="Graphique/SDL2/include/SDL_rect.h" name="Graphique/SDL2/include/SDL_rect.h">
-<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="836,245,937,272"/>
-<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="83,469,181,496"/>
-<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1531,469,1629,496"/>
-<area shape="rect" id="node19" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="882,171,973,197"/>
-<area shape="rect" id="node20" href="$_s_d_l__pixels_8h.html" title="SDL_pixels.h" alt="" coords="1363,171,1463,197"/>
-<area shape="rect" id="node21" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="961,96,1063,123"/>
-<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1315,320,1416,347"/>
-<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1309,395,1421,421"/>
+<map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_rect.h" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_rect.h">
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="836,259,937,285"/>
+<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="83,483,181,509"/>
+<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1531,483,1629,509"/>
+<area shape="rect" id="node19" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="882,184,973,211"/>
+<area shape="rect" id="node20" href="$_s_d_l__pixels_8h.html" title="SDL_pixels.h" alt="" coords="1363,184,1463,211"/>
+<area shape="rect" id="node21" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="961,109,1063,136"/>
+<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1315,333,1416,360"/>
+<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1309,408,1421,435"/>
 </map>

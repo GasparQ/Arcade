@@ -8,13 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_ghost.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,7 @@ $(document).ready(function(){initNavTree('class_ghost.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -122,14 +101,14 @@ Inheritance diagram for Ghost:</div>
 <div class="center"><img src="class_ghost__inherit__graph.png" border="0" usemap="#_ghost_inherit__map" alt="Inheritance graph"/></div>
 <map name="_ghost_inherit__map" id="_ghost_inherit__map">
 <area shape="rect" id="node2" href="class_pacman_character.html" title="PacmanCharacter" alt="" coords="5,5,131,32"/></map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Ghost:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_ghost__coll__graph.png" border="0" usemap="#_ghost_coll__map" alt="Collaboration graph"/></div>
 <map name="_ghost_coll__map" id="_ghost_coll__map">
-<area shape="rect" id="node2" href="class_pacman_character.html" title="PacmanCharacter" alt="" coords="5,109,131,136"/><area shape="rect" id="node3" href="class_vector2.html" title="Vector2\&lt; int \&gt;" alt="" coords="15,5,120,32"/></map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<area shape="rect" id="node2" href="class_pacman_character.html" title="PacmanCharacter" alt="" coords="6,109,132,136"/><area shape="rect" id="node3" href="class_vector2.html" title="Vector2\&lt; double \&gt;" alt="" coords="5,5,133,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -142,12 +121,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a944894596f91333ca85ccfb96db8add5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#a944894596f91333ca85ccfb96db8add5">Ghost</a> (<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>)</td></tr>
-<tr class="separator:a944894596f91333ca85ccfb96db8add5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc517ca9ee98f5e94433eadff96f83fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#acc517ca9ee98f5e94433eadff96f83fb">Ghost</a> (<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>, <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;shape2D)</td></tr>
+<tr class="separator:acc517ca9ee98f5e94433eadff96f83fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a063ed19c1b6f5c07b9109020c6198319"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#a063ed19c1b6f5c07b9109020c6198319">~Ghost</a> ()</td></tr>
 <tr class="separator:a063ed19c1b6f5c07b9109020c6198319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3d8f34627006b272b61ba73eceb754"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#a4d3d8f34627006b272b61ba73eceb754">Move</a> (char map[31][51], <a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; pacmanPos)</td></tr>
-<tr class="separator:a4d3d8f34627006b272b61ba73eceb754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1e5ac53266547052b36dd4cb9fe6d7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#abf1e5ac53266547052b36dd4cb9fe6d7">Move</a> (char map[31][51], <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; pacmanPos)</td></tr>
+<tr class="separator:abf1e5ac53266547052b36dd4cb9fe6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48afc8b31b108396c2c128afafb49b4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#a48afc8b31b108396c2c128afafb49b4c">goUp</a> (char map[31][51])</td></tr>
 <tr class="separator:a48afc8b31b108396c2c128afafb49b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d1caa3a13ba81c5174520bd87a4af1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#a59d1caa3a13ba81c5174520bd87a4af1">goDown</a> (char map[31][51])</td></tr>
@@ -163,12 +142,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afff0366e463cd44f2507b0bc70bd6723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ghost.html#acc75a78854c248d653ba1f68c057dc5b">GhostState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#afff0366e463cd44f2507b0bc70bd6723">GetState</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
 <tr class="separator:afff0366e463cd44f2507b0bc70bd6723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_pacman_character"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_pacman_character')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_pacman_character.html">PacmanCharacter</a></td></tr>
-<tr class="memitem:af5123f6820d61aa82bd0c3a03d3b8a37 inherit pub_methods_class_pacman_character"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#af5123f6820d61aa82bd0c3a03d3b8a37">PacmanCharacter</a> (<a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; pos, <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>, <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;shape2D, <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;shapeCurses, <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a> shape3D)</td></tr>
-<tr class="separator:af5123f6820d61aa82bd0c3a03d3b8a37 inherit pub_methods_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af342554908eb831a854c0ec279946f48 inherit pub_methods_class_pacman_character"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#af342554908eb831a854c0ec279946f48">PacmanCharacter</a> (<a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; pos, <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>, <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;shape2D, <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;shapeCurses, <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a> shape3D)</td></tr>
+<tr class="separator:af342554908eb831a854c0ec279946f48 inherit pub_methods_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0ce56a6184336909eb4ca35bdf2e3bf inherit pub_methods_class_pacman_character"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#af0ce56a6184336909eb4ca35bdf2e3bf">~PacmanCharacter</a> ()</td></tr>
 <tr class="separator:af0ce56a6184336909eb4ca35bdf2e3bf inherit pub_methods_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6423f4ee719f95330c6be870cd0f798c inherit pub_methods_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a6423f4ee719f95330c6be870cd0f798c">getPosition</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
-<tr class="separator:a6423f4ee719f95330c6be870cd0f798c inherit pub_methods_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78cebe0c13ce2f401691fdf7d222129f inherit pub_methods_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a78cebe0c13ce2f401691fdf7d222129f">getPosition</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="separator:a78cebe0c13ce2f401691fdf7d222129f inherit pub_methods_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad63157e68541ebe49fb622ffe700899b inherit pub_methods_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#ad63157e68541ebe49fb622ffe700899b">getColor</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
 <tr class="separator:ad63157e68541ebe49fb622ffe700899b inherit pub_methods_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c79eec0729b657e7232da51bfc73d0e inherit pub_methods_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a8c79eec0729b657e7232da51bfc73d0e">getShape3D</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
@@ -190,10 +169,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_pacman_character"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_pacman_character')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_pacman_character.html">PacmanCharacter</a></td></tr>
 <tr class="memitem:a234defe33e311a028b0ff0c6b52d59c4 inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pacman_character.html#ac000ceede24318d93173843e3de6d049">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a234defe33e311a028b0ff0c6b52d59c4">m_dir</a> = <a class="el" href="class_pacman_character.html#ac000ceede24318d93173843e3de6d049ac6831308ce14a6c01e8522d12aac5571">LEFT</a></td></tr>
 <tr class="separator:a234defe33e311a028b0ff0c6b52d59c4 inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae77f7ac9d530be4b9eb4237422290d40 inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#ae77f7ac9d530be4b9eb4237422290d40">m_pos</a></td></tr>
-<tr class="separator:ae77f7ac9d530be4b9eb4237422290d40 inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac79aef1cfb279f2a71736653b845cdb4 inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#ac79aef1cfb279f2a71736653b845cdb4">m_initPos</a></td></tr>
-<tr class="separator:ac79aef1cfb279f2a71736653b845cdb4 inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ee40b843ac98ba6cc91c0eed37cea4 inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#ab8ee40b843ac98ba6cc91c0eed37cea4">m_pos</a></td></tr>
+<tr class="separator:ab8ee40b843ac98ba6cc91c0eed37cea4 inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79491bd93ccbdd291552328dea282ca2 inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a79491bd93ccbdd291552328dea282ca2">m_initPos</a></td></tr>
+<tr class="separator:a79491bd93ccbdd291552328dea282ca2 inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81b235aadd8ef0e98526e285d849a45b inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a81b235aadd8ef0e98526e285d849a45b">m_color</a></td></tr>
 <tr class="separator:a81b235aadd8ef0e98526e285d849a45b inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dbb32291f4e12be26042a771139d84d inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a1dbb32291f4e12be26042a771139d84d">m_shape2D</a></td></tr>
@@ -202,6 +181,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3ee3c43a14b42396f16066d401e21568 inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73e181862f419d8ac1c8ecf1d6eaa341 inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a73e181862f419d8ac1c8ecf1d6eaa341">m_shape3D</a></td></tr>
 <tr class="separator:a73e181862f419d8ac1c8ecf1d6eaa341 inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fabeae0da68e2dbdce48a407272912 inherit pro_attribs_class_pacman_character"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pacman_character.html#a83fabeae0da68e2dbdce48a407272912">velocity</a> = 0.2500000000</td></tr>
+<tr class="separator:a83fabeae0da68e2dbdce48a407272912 inherit pro_attribs_class_pacman_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="acc75a78854c248d653ba1f68c057dc5b"></a>
@@ -213,6 +194,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Dead = goes to base Hunting : looks for pacman Scared : flees pacman </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="acc75a78854c248d653ba1f68c057dc5bad5c32d4a28c2c6ee7f8af591db387863"></a>DEAD</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -227,7 +209,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a944894596f91333ca85ccfb96db8add5"></a>
+<a class="anchor" id="acc517ca9ee98f5e94433eadff96f83fb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -235,8 +217,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">Ghost::Ghost </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a>&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td>
+          <td class="paramname"><em>shape2D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -386,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4d3d8f34627006b272b61ba73eceb754"></a>
+<a class="anchor" id="abf1e5ac53266547052b36dd4cb9fe6d7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -394,7 +386,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp; Ghost::Move </td>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp; Ghost::Move </td>
           <td>(</td>
           <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>map</em>[31][51], </td>
@@ -402,7 +394,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a>&lt; <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt;&#160;</td>
           <td class="paramname"><em>pacmanPos</em>&#160;</td>
         </tr>
         <tr>
@@ -418,13 +410,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_pacman_character.html#a4960043a4c55d8f3715497176281f42e">PacmanCharacter</a>.</p>
+<p>Implements <a class="el" href="class_pacman_character.html#ad4068a902ffddf6513193b01be2116aa">PacmanCharacter</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_ghost_a4d3d8f34627006b272b61ba73eceb754_cgraph.png" border="0" usemap="#class_ghost_a4d3d8f34627006b272b61ba73eceb754_cgraph" alt=""/></div>
-<map name="class_ghost_a4d3d8f34627006b272b61ba73eceb754_cgraph" id="class_ghost_a4d3d8f34627006b272b61ba73eceb754_cgraph">
+<div class="center"><img src="class_ghost_abf1e5ac53266547052b36dd4cb9fe6d7_cgraph.png" border="0" usemap="#class_ghost_abf1e5ac53266547052b36dd4cb9fe6d7_cgraph" alt=""/></div>
+<map name="class_ghost_abf1e5ac53266547052b36dd4cb9fe6d7_cgraph" id="class_ghost_abf1e5ac53266547052b36dd4cb9fe6d7_cgraph">
 <area shape="rect" id="node2" href="class_astar.html#a723162debd653bc9f7bdf0b03de7ccbc" title="Astar::pathFind" alt="" coords="155,5,266,32"/><area shape="rect" id="node3" href="class_ghost.html#a133cb7fa03fd60120bb071fb12fb2beb" title="Ghost::SetState" alt="" coords="153,56,269,83"/></map>
 </div>
 </p>
@@ -484,26 +476,22 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_ghost_a133cb7fa03fd60120bb071fb12fb2beb_icgraph.png" border="0" usemap="#class_ghost_a133cb7fa03fd60120bb071fb12fb2beb_icgraph" alt=""/></div>
 <map name="class_ghost_a133cb7fa03fd60120bb071fb12fb2beb_icgraph" id="class_ghost_a133cb7fa03fd60120bb071fb12fb2beb_icgraph">
-<area shape="rect" id="node2" href="class_ghost.html#a4d3d8f34627006b272b61ba73eceb754" title="Ghost::Move" alt="" coords="171,5,269,32"/></map>
+<area shape="rect" id="node2" href="class_ghost.html#abf1e5ac53266547052b36dd4cb9fe6d7" title="Ghost::Move" alt="" coords="171,5,269,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Game/include/<a class="el" href="_ghost_8hpp_source.html">Ghost.hpp</a></li>
-<li>Game/src/<a class="el" href="_ghost_8cpp.html">Ghost.cpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Game/include/<a class="el" href="_ghost_8hpp_source.html">Ghost.hpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Game/src/<a class="el" href="_ghost_8cpp.html">Ghost.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_ghost.html">Ghost</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:30 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <map id="PacmanGame::compute" name="PacmanGame::compute">
-<area shape="rect" id="node2" href="$class_pacman_character.html#a6423f4ee719f95330c6be870cd0f798c" title="PacmanCharacter::getPosition" alt="" coords="220,5,420,32"/>
+<area shape="rect" id="node2" href="$class_pacman_character.html#a78cebe0c13ce2f401691fdf7d222129f" title="PacmanCharacter::getPosition" alt="" coords="220,5,420,32"/>
 <area shape="rect" id="node3" href="$class_pacman_character.html#ad63157e68541ebe49fb622ffe700899b" title="PacmanCharacter::getColor" alt="" coords="228,56,412,83"/>
 <area shape="rect" id="node4" href="$class_pacman_character.html#a8c79eec0729b657e7232da51bfc73d0e" title="PacmanCharacter::getShape3D" alt="" coords="217,107,423,133"/>
 <area shape="rect" id="node5" href="$class_pacman_character.html#a02116ffb057d98945a113f350bb3d79e" title="PacmanCharacter::getShape\lCurses" alt="" coords="225,158,415,199"/>

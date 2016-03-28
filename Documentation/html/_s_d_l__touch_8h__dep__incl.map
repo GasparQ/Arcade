@@ -1,15 +1,15 @@
-<map id="Graphique/SDL2/include/SDL_touch.h" name="Graphique/SDL2/include/SDL_touch.h">
-<area shape="rect" id="node2" href="$_s_d_l__gesture_8h.html" title="Graphique/SDL2/include\l/SDL_gesture.h" alt="" coords="664,97,827,138"/>
-<area shape="rect" id="node3" href="$_s_d_l__events_8h.html" title="Graphique/SDL2/include\l/SDL_events.h" alt="" coords="723,187,885,229"/>
-<area shape="rect" id="node4" href="$_s_d_l_8h.html" title="Graphique/SDL2/include\l/SDL.h" alt="" coords="723,278,885,319"/>
-<area shape="rect" id="node5" href="$_open_gl_graph_8hpp.html" title="Graphique/OpenGL/OpenGlGraph.hpp" alt="" coords="219,376,460,403"/>
-<area shape="rect" id="node8" href="$_s_d_l__test_8h.html" title="Graphique/SDL2/include\l/SDL_test.h" alt="" coords="571,550,733,591"/>
-<area shape="rect" id="node9" href="$_s_d_l__test__common_8h.html" title="Graphique/SDL2/include\l/SDL_test_common.h" alt="" coords="536,369,699,410"/>
-<area shape="rect" id="node10" href="$_s_d_l__test__images_8h.html" title="Graphique/SDL2/include\l/SDL_test_images.h" alt="" coords="723,369,885,410"/>
-<area shape="rect" id="node11" href="$_s_d_l__test__compare_8h.html" title="Graphique/SDL2/include\l/SDL_test_compare.h" alt="" coords="723,459,885,501"/>
-<area shape="rect" id="node12" href="$_s_d_l__ttf_8h.html" title="Graphique/SDL2/include\l/SDL_ttf.h" alt="" coords="960,369,1123,410"/>
-<area shape="rect" id="node13" href="$_s_d_l_graph_8hpp.html" title="Graphique/SDL2/src\l/SDLGraph.hpp" alt="" coords="1030,459,1169,501"/>
-<area shape="rect" id="node6" href="$_graphique_2_open_g_l_2main_8cpp.html" title="Graphique/OpenGL/main.cpp" alt="" coords="5,467,195,493"/>
-<area shape="rect" id="node7" href="$_open_gl_graph_8cpp.html" title="Graphique/OpenGL/OpenGlGraph.cpp" alt="" coords="219,467,460,493"/>
-<area shape="rect" id="node14" href="$_s_d_l_graph_8cpp.html" title="Graphique/SDL2/src\l/SDLGraph.cpp" alt="" coords="1030,550,1169,591"/>
+<map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_touch.h" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_touch.h">
+<area shape="rect" id="node2" href="$_s_d_l__gesture_8h.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/include/SDL_gesture.h" alt="" coords="673,109,865,165"/>
+<area shape="rect" id="node3" href="$_s_d_l__events_8h.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/include/SDL_events.h" alt="" coords="739,213,932,269"/>
+<area shape="rect" id="node4" href="$_s_d_l_8h.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/include/SDL.h" alt="" coords="739,317,932,373"/>
+<area shape="rect" id="node5" href="$_open_gl_graph_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/OpenGlGraph.hpp" alt="" coords="237,421,445,477"/>
+<area shape="rect" id="node8" href="$_s_d_l__test_8h.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/include/SDL_test.h" alt="" coords="563,629,756,685"/>
+<area shape="rect" id="node9" href="$_s_d_l__test__common_8h.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/include/SDL_test_common.h" alt="" coords="520,421,715,477"/>
+<area shape="rect" id="node10" href="$_s_d_l__test__images_8h.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/include/SDL_test_images.h" alt="" coords="739,421,932,477"/>
+<area shape="rect" id="node11" href="$_s_d_l__test__compare_8h.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/include/SDL_test_compare.h" alt="" coords="739,525,933,581"/>
+<area shape="rect" id="node12" href="$_s_d_l__ttf_8h.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/include/SDL_ttf.h" alt="" coords="1009,421,1201,477"/>
+<area shape="rect" id="node13" href="$_s_d_l_graph_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/src/SDLGraph.hpp" alt="" coords="1075,525,1268,581"/>
+<area shape="rect" id="node6" href="$_graphique_2_open_g_l_2main_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/main.cpp" alt="" coords="5,525,213,581"/>
+<area shape="rect" id="node7" href="$_open_gl_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/OpenGlGraph.cpp" alt="" coords="237,525,445,581"/>
+<area shape="rect" id="node14" href="$_s_d_l_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/SDL2\l/src/SDLGraph.cpp" alt="" coords="1075,629,1268,685"/>
 </map>

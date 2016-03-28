@@ -4,17 +4,10 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Arcade: Commons/include/UIComponent.hpp Source File</title>
+<title>Arcade: /home/veyrie_f/Documents/cpp_arcade/Commons/include/UIComponent.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -74,21 +67,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('_u_i_component_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,6 +81,11 @@ $(document).ready(function(){initNavTree('_u_i_component_8hpp_source.html','');}
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ece5b2b64eab7c4f193cf6994137cfa6.html">Commons</a></li><li class="navelem"><a class="el" href="dir_c7819e3b7cb3fabb829a73bcf6986d70.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">UIComponent.hpp</div>  </div>
@@ -127,16 +110,16 @@ $(document).ready(function(){initNavTree('_u_i_component_8hpp_source.html','');}
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_u_i_component.html">   17</a></span>&#160;<span class="keyword">class   </span><a class="code" href="class_u_i_component.html">UIComponent</a> : <span class="keyword">public</span> <a class="code" href="class_a_component.html">AComponent</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> dim;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> dim;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> text;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="class_u_i_component.html#aed7f71b6f0c22c57c2b5df8bdc68892b">UIComponent</a>(<a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> <span class="keyword">const</span> &amp;pos, <span class="keyword">enum</span> <a class="code" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> <a class="code" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> <span class="keyword">const</span> &amp;dim, <a class="code" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <span class="keyword">const</span> &amp;);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="class_u_i_component.html#a721bec5035d93bfa77861f07372a39e1">UIComponent</a>(<a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> <span class="keyword">const</span> &amp;pos, <span class="keyword">enum</span> <a class="code" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> <a class="code" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> <span class="keyword">const</span> &amp;dim, <a class="code" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <span class="keyword">const</span> &amp;);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">virtual</span> <a class="code" href="class_u_i_component.html#a6c874869efe5ab6a94f6ed5c2bc26ed0">~UIComponent</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="class_vector2.html">Vector2&lt;int&gt;</a> <span class="keyword">const</span> &amp;<a class="code" href="class_u_i_component.html#acfaf4a3d783dfd92eb98e752169579c4">getDim</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="class_vector2.html">Vector2&lt;double&gt;</a> <span class="keyword">const</span> &amp;<a class="code" href="class_u_i_component.html#acd2a80727cf82b76e3c879f809f4bd66">getDim</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <span class="keyword">const</span> &amp;<a class="code" href="class_u_i_component.html#a9a55d81c4034d3f693fb5366b0bff1dd">getText</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
@@ -145,23 +128,19 @@ $(document).ready(function(){initNavTree('_u_i_component_8hpp_source.html','');}
 <div class="ttc" id="_a_component_8hpp_html"><div class="ttname"><a href="_a_component_8hpp.html">AComponent.hpp</a></div></div>
 <div class="ttc" id="_s_d_l__opengl__glext_8h_html_ae84541b4f3d8e1ea24ec0f466a8c568b"><div class="ttname"><a href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">string</a></div><div class="ttdeci">GLsizei const GLchar *const * string</div><div class="ttdef"><b>Definition:</b> SDL_opengl_glext.h:688</div></div>
 <div class="ttc" id="class_a_component_html_a76ed8540d67007fd0ab5a74c6b425b87"><div class="ttname"><a href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a></div><div class="ttdeci">ComponentColor</div><div class="ttdef"><b>Definition:</b> AComponent.hpp:19</div></div>
-<div class="ttc" id="class_u_i_component_html_acfaf4a3d783dfd92eb98e752169579c4"><div class="ttname"><a href="class_u_i_component.html#acfaf4a3d783dfd92eb98e752169579c4">UIComponent::getDim</a></div><div class="ttdeci">Vector2&lt; int &gt; const &amp; getDim() const </div><div class="ttdef"><b>Definition:</b> UIComponent.cpp:25</div></div>
 <div class="ttc" id="class_u_i_component_html_a6c874869efe5ab6a94f6ed5c2bc26ed0"><div class="ttname"><a href="class_u_i_component.html#a6c874869efe5ab6a94f6ed5c2bc26ed0">UIComponent::~UIComponent</a></div><div class="ttdeci">virtual ~UIComponent()</div><div class="ttdef"><b>Definition:</b> UIComponent.cpp:20</div></div>
-<div class="ttc" id="class_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2&lt; int &gt;</a></div></div>
+<div class="ttc" id="class_u_i_component_html_a721bec5035d93bfa77861f07372a39e1"><div class="ttname"><a href="class_u_i_component.html#a721bec5035d93bfa77861f07372a39e1">UIComponent::UIComponent</a></div><div class="ttdeci">UIComponent(Vector2&lt; double &gt; const &amp;pos, enum ComponentColor color, Vector2&lt; double &gt; const &amp;dim, std::string const &amp;)</div><div class="ttdef"><b>Definition:</b> UIComponent.cpp:13</div></div>
+<div class="ttc" id="class_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2&lt; double &gt;</a></div></div>
 <div class="ttc" id="class_u_i_component_html"><div class="ttname"><a href="class_u_i_component.html">UIComponent</a></div><div class="ttdef"><b>Definition:</b> UIComponent.hpp:17</div></div>
 <div class="ttc" id="class_u_i_component_html_a9a55d81c4034d3f693fb5366b0bff1dd"><div class="ttname"><a href="class_u_i_component.html#a9a55d81c4034d3f693fb5366b0bff1dd">UIComponent::getText</a></div><div class="ttdeci">std::string const &amp; getText() const </div><div class="ttdef"><b>Definition:</b> UIComponent.cpp:30</div></div>
-<div class="ttc" id="class_u_i_component_html_aed7f71b6f0c22c57c2b5df8bdc68892b"><div class="ttname"><a href="class_u_i_component.html#aed7f71b6f0c22c57c2b5df8bdc68892b">UIComponent::UIComponent</a></div><div class="ttdeci">UIComponent(Vector2&lt; int &gt; const &amp;pos, enum ComponentColor color, Vector2&lt; int &gt; const &amp;dim, std::string const &amp;)</div><div class="ttdef"><b>Definition:</b> UIComponent.cpp:13</div></div>
 <div class="ttc" id="_s_d_l__opengl__glext_8h_html_a3ea846f998d64f079b86052b6c4193a8"><div class="ttname"><a href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a></div><div class="ttdeci">GLuint color</div><div class="ttdef"><b>Definition:</b> SDL_opengl_glext.h:1148</div></div>
+<div class="ttc" id="class_u_i_component_html_acd2a80727cf82b76e3c879f809f4bd66"><div class="ttname"><a href="class_u_i_component.html#acd2a80727cf82b76e3c879f809f4bd66">UIComponent::getDim</a></div><div class="ttdeci">Vector2&lt; double &gt; const &amp; getDim() const </div><div class="ttdef"><b>Definition:</b> UIComponent.cpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_ece5b2b64eab7c4f193cf6994137cfa6.html">Commons</a></li><li class="navelem"><a class="el" href="dir_c7819e3b7cb3fabb829a73bcf6986d70.html">include</a></li><li class="navelem"><a class="el" href="_u_i_component_8hpp.html">UIComponent.hpp</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:28 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:03 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

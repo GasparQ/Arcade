@@ -1,4 +1,4 @@
 <map id="updateMap" name="updateMap">
-<area shape="rect" id="node2" href="$class_snake.html#a2e120de36db096ca5a1d19aaad4d3f04" title="Snake::getSnake" alt="" coords="141,5,264,32"/>
-<area shape="rect" id="node3" href="$class_snake.html#a11bc8665cbfea6dd4255cb5ad065ea9d" title="Snake::getApple" alt="" coords="143,56,262,83"/>
+<area shape="rect" id="node2" href="$class_snake.html#a3b2d2fe401cbeb3c25de01c980e8880c" title="Snake::getSnake" alt="" coords="141,5,264,32"/>
+<area shape="rect" id="node3" href="$class_snake.html#afa29ce4710253ce1d74c15a718e06bc5" title="Snake::getApple" alt="" coords="143,56,262,83"/>
 </map>

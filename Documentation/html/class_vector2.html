@@ -8,13 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -30,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech</div>
+   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_vector2.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,7 @@ $(document).ready(function(){initNavTree('class_vector2.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -122,7 +101,7 @@ Collaboration diagram for Vector2&lt; T &gt;:</div>
 <div class="center"><img src="class_vector2__coll__graph.png" border="0" usemap="#_vector2_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="_vector2_3_01_t_01_4_coll__map" id="_vector2_3_01_t_01_4_coll__map">
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf11f992550c1bea5511578032e4f57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c1b804ad56baac281243d4d527bcc00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector2.html#a8c1b804ad56baac281243d4d527bcc00">invert</a> ()</td></tr>
 <tr class="separator:a8c1b804ad56baac281243d4d527bcc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8365d49c42551f3a1d7028837f1c420f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="term__entry_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector2.html#a8365d49c42551f3a1d7028837f1c420f">isEqual</a> (<a class="el" href="class_vector2.html">Vector2</a>&lt; T &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;other, double delta) <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="memdesc:a8365d49c42551f3a1d7028837f1c420f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to the == operator but can also take a range in account.  <a href="#a8365d49c42551f3a1d7028837f1c420f">More...</a><br/></td></tr>
+<tr class="separator:a8365d49c42551f3a1d7028837f1c420f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -261,6 +243,44 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a8365d49c42551f3a1d7028837f1c420f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; T &gt;::isEqual </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a>&lt; T &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Equivalent to the == operator but can also take a range in account. </p>
+
+</div>
+</div>
 <a class="anchor" id="a3f29d8635f3cc9b30db7df2ad814141b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -369,19 +389,15 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Commons/include/<a class="el" href="_vector2_8hpp_source.html">Vector2.hpp</a></li>
-<li>Commons/src/<a class="el" href="_vector2_8cpp.html">Vector2.cpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Commons/include/<a class="el" href="_vector2_8hpp_source.html">Vector2.hpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Commons/src/<a class="el" href="_vector2_8cpp.html">Vector2.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_vector2.html">Vector2</a></li>
-    <li class="footer">Generated on Sun Mar 20 2016 10:18:30 for Arcade by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

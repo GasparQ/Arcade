@@ -80,6 +80,7 @@ var searchData=
   ['is_5fsyncok',['is_syncok',['../curses_8h.html#a3f162a70ef64c131d73a60d1a155b9b0',1,'curses.h']]],
   ['is_5ftic_5fmagic',['IS_TIC_MAGIC',['../tic_8h.html#a2848b8369117e3f403e4eac052fb0b17',1,'tic.h']]],
   ['iscapture',['iscapture',['../struct_s_d_l___audio_device_event.html#a1482dcd50b47046ef8e9bfa7cc7457d9',1,'SDL_AudioDeviceEvent']]],
+  ['isequal',['isEqual',['../class_vector2.html#a8365d49c42551f3a1d7028837f1c420f',1,'Vector2']]],
   ['isselected',['isSelected',['../class_action_component.html#a1bfaba91c50d3b1007ee8cd61917c019',1,'ActionComponent']]],
   ['item',['item',['../menu_8h.html#a7f5d2cbd2c89d612d5fe45189bf16f18',1,'item():&#160;menu.h'],['../menu_8h.html#a3023a2df9b0060e04b00624c6d1c1641',1,'ITEM():&#160;menu.h']]],
   ['item_5foptions',['Item_Options',['../menu_8h.html#add95b910e39f240941923713898db237',1,'menu.h']]],

@@ -28,7 +28,7 @@ var searchData=
   ['absent_5fnumeric',['ABSENT_NUMERIC',['../tic_8h.html#a9804c9c4acb35e6c45d3e298bb32127e',1,'tic.h']]],
   ['absent_5fstring',['ABSENT_STRING',['../tic_8h.html#a4802737c5f7a52cf03d7a1360726b9a0',1,'tic.h']]],
   ['access',['access',['../_s_d_l__opengl__glext_8h.html#a9fb81ef401f3cb865f7b2f1bb059f7d7',1,'SDL_opengl_glext.h']]],
-  ['acomponent',['AComponent',['../class_a_component.html',1,'AComponent'],['../class_a_component.html#a42f018755d7fccdde7f90070c812e048',1,'AComponent::AComponent(int x, int y, enum ComponentColor color)'],['../class_a_component.html#a08e2c2b20c6d8ccefc0fe84cadf86280',1,'AComponent::AComponent(Vector2&lt; int &gt; const &amp;pos, enum ComponentColor color)']]],
+  ['acomponent',['AComponent',['../class_a_component.html',1,'AComponent'],['../class_a_component.html#a42f018755d7fccdde7f90070c812e048',1,'AComponent::AComponent(int x, int y, enum ComponentColor color)'],['../class_a_component.html#ad66b34f4c82089a9f824be0f55193d30',1,'AComponent::AComponent(Vector2&lt; double &gt; const &amp;pos, enum ComponentColor color)']]],
   ['acomponent_2ecpp',['AComponent.cpp',['../_a_component_8cpp.html',1,'']]],
   ['acomponent_2ehpp',['AComponent.hpp',['../_a_component_8hpp.html',1,'']]],
   ['acs_5fbbss',['ACS_BBSS',['../curses_8h.html#ad23f5577d4afbee2b21c2fbbaddee8fb',1,'curses.h']]],

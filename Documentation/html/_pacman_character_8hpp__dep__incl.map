@@ -1,9 +1,9 @@
-<map id="Game/include/PacmanCharacter.hpp" name="Game/include/PacmanCharacter.hpp">
-<area shape="rect" id="node2" href="$_ghost_8hpp.html" title="Game/include/Ghost.hpp" alt="" coords="97,80,263,107"/>
-<area shape="rect" id="node6" href="$_pacman_8hpp.html" title="Game/include/Pacman.hpp" alt="" coords="288,80,467,107"/>
-<area shape="rect" id="node8" href="$_pacman_character_8cpp.html" title="Game/src/PacmanCharacter.cpp" alt="" coords="491,80,704,107"/>
-<area shape="rect" id="node3" href="$_pacman_game_8hpp.html" title="Game/include/PacmanGame.hpp" alt="" coords="171,155,385,181"/>
-<area shape="rect" id="node5" href="$_ghost_8cpp.html" title="Game/src/Ghost.cpp" alt="" coords="5,155,147,181"/>
-<area shape="rect" id="node4" href="$_pacman_game_8cpp.html" title="Game/src/PacmanGame.cpp" alt="" coords="183,229,373,256"/>
-<area shape="rect" id="node7" href="$_pacman_8cpp.html" title="Game/src/Pacman.cpp" alt="" coords="410,155,565,181"/>
+<map id="/home/veyrie_f/Documents/cpp_arcade/Game/include/PacmanCharacter.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Game/include/PacmanCharacter.hpp">
+<area shape="rect" id="node2" href="$_ghost_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/Ghost.hpp" alt="" coords="147,109,325,165"/>
+<area shape="rect" id="node6" href="$_pacman_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/Pacman.hpp" alt="" coords="349,109,528,165"/>
+<area shape="rect" id="node8" href="$_pacman_character_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/PacmanCharacter.cpp" alt="" coords="552,117,840,158"/>
+<area shape="rect" id="node3" href="$_pacman_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/PacmanGame.hpp" alt="" coords="248,213,427,269"/>
+<area shape="rect" id="node5" href="$_ghost_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/Ghost.cpp" alt="" coords="5,221,224,262"/>
+<area shape="rect" id="node4" href="$_pacman_game_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/PacmanGame.cpp" alt="" coords="204,318,471,359"/>
+<area shape="rect" id="node7" href="$_pacman_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/Pacman.cpp" alt="" coords="451,221,681,262"/>
 </map>

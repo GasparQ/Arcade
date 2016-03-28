@@ -24,7 +24,7 @@ var searchData=
   ['layer',['layer',['../_s_d_l__opengl__glext_8h.html#ae7bc0cdc2d90da1b600d6cc916c2772e',1,'SDL_opengl_glext.h']]],
   ['layered',['layered',['../_s_d_l__opengl__glext_8h.html#a12d02feb44c56035bf1af92d3e6a1a3b',1,'SDL_opengl_glext.h']]],
   ['layers',['layers',['../_s_d_l__opengl__glext_8h.html#a9d6b7c6ae9c7f090b02fd8c147bbbfeb',1,'SDL_opengl_glext.h']]],
-  ['left',['left',['../structtypenode.html#a2986201d4ce4443a48f4e6cfbed93228',1,'typenode::left()'],['../structtag_i_t_e_m.html#a92ec9fa6ac34a79b95035dc288138590',1,'tagITEM::left()'],['../class_pacman_character.html#ac000ceede24318d93173843e3de6d049ac6831308ce14a6c01e8522d12aac5571',1,'PacmanCharacter::LEFT()'],['../_s_d_l__opengl__glext_8h.html#a85b8f6c07fbc1fb5d77c2ae090f21995',1,'left():&#160;SDL_opengl_glext.h']]],
+  ['left',['LEFT',['../class_pacman_character.html#ac000ceede24318d93173843e3de6d049ac6831308ce14a6c01e8522d12aac5571',1,'PacmanCharacter::LEFT()'],['../structtypenode.html#a2986201d4ce4443a48f4e6cfbed93228',1,'typenode::left()'],['../structtag_i_t_e_m.html#a92ec9fa6ac34a79b95035dc288138590',1,'tagITEM::left()'],['../_s_d_l__opengl__glext_8h.html#a85b8f6c07fbc1fb5d77c2ae090f21995',1,'left():&#160;SDL_opengl_glext.h']]],
   ['left_5fcoeff',['left_coeff',['../struct_s_d_l___haptic_condition.html#a2adf52c32f60f0b6826b1e3add2eae7a',1,'SDL_HapticCondition']]],
   ['left_5fsat',['left_sat',['../struct_s_d_l___haptic_condition.html#a953448774c40818a4f47c6efea21124d',1,'SDL_HapticCondition']]],
   ['leftright',['leftright',['../union_s_d_l___haptic_effect.html#a3c254b81c1ff41c7888eee0cd0076a12',1,'SDL_HapticEffect']]],

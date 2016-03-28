@@ -1,3 +1,4 @@
 <map id="PacmanCharacter::ResetPosition" name="PacmanCharacter::ResetPosition">
-<area shape="rect" id="node2" href="$class_ghost.html#a2973c0b4dc43b9158ff3ca93b342d765" title="Ghost::ResetPosition" alt="" coords="272,5,419,32"/>
+<area shape="rect" id="node2" href="$class_ghost.html#a2973c0b4dc43b9158ff3ca93b342d765" title="Ghost::ResetPosition" alt="" coords="279,5,425,32"/>
+<area shape="rect" id="node3" href="$class_pacman.html#a1e535e027f5564ab0444d13da849903d" title="Pacman::ResetPosition" alt="" coords="272,56,432,83"/>
 </map>

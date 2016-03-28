@@ -1,6 +1,6 @@
-<map id="Game/include/AGame.hpp" name="Game/include/AGame.hpp">
-<area shape="rect" id="node2" href="$_pacman_game_8hpp.html" title="Game/include/PacmanGame.hpp" alt="" coords="5,80,219,107"/>
-<area shape="rect" id="node4" href="$_snake_8hpp.html" title="Game/include/Snake.hpp" alt="" coords="244,80,412,107"/>
-<area shape="rect" id="node3" href="$_pacman_game_8cpp.html" title="Game/src/PacmanGame.cpp" alt="" coords="17,155,207,181"/>
-<area shape="rect" id="node5" href="$_snake_8cpp.html" title="Game/src/Snake.cpp" alt="" coords="255,155,400,181"/>
+<map id="/home/veyrie_f/Documents/cpp_arcade/Game/include/AGame.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Game/include/AGame.hpp">
+<area shape="rect" id="node2" href="$_pacman_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/PacmanGame.hpp" alt="" coords="65,109,244,165"/>
+<area shape="rect" id="node4" href="$_snake_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/Snake.hpp" alt="" coords="300,109,479,165"/>
+<area shape="rect" id="node3" href="$_pacman_game_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/PacmanGame.cpp" alt="" coords="5,214,272,255"/>
+<area shape="rect" id="node5" href="$_snake_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/Snake.cpp" alt="" coords="297,214,516,255"/>
 </map>
