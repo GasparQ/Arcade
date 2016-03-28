@@ -5,8 +5,8 @@
 #include "../include/Ghost.hpp"
 #include "../../Commons/include/Astar.hpp"
 
-Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<double>(25, 15), color,
-                                                                 "sprites/red_ghost.bmp", " ",
+Ghost::Ghost(AComponent::ComponentColor color, std::string const& shape2D) : PacmanCharacter(Vector2<double>(25, 15), color,
+                                                                 shape2D, " ",
                                                                  GameComponent::Shapes::CUBE)
 {
     m_color_original = m_color;
@@ -133,17 +133,44 @@ void Ghost::SetState(GhostState state)
     {
         m_shapeCurses = "\"";
         m_shape2D = "sprites/ghost_eyes.bmp";
+        velocity = 0.250000000;
+        if (static_cast<int>(m_pos.x * 100.0) % 25 != 0)
+        {
+            m_pos.x = round(m_pos.x);
+        }
+        if (static_cast<int>(m_pos.y * 100.0) % 25 != 0)
+        {
+            m_pos.y = round(m_pos.y);
+        }
     }
     else if (m_state == SCARED)
     {
         m_color = AComponent::ComponentColor::COLOR_BLUE;
         m_shape2D = "sprites/feared_ghost.bmp";
+        velocity = 0.100000;
+        if (static_cast<int>(m_pos.x * 100.0) % 10 != 0)
+        {
+            m_pos.x = round(m_pos.x);
+        }
+        if (static_cast<int>(m_pos.y * 100.0) % 10 != 0)
+        {
+            m_pos.y = round(m_pos.y);
+        }
     }
     else
     {
         m_shapeCurses = " ";
         m_color = m_color_original;
         m_shape2D = "sprites/red_ghost.bmp";
+        velocity = 0.250000000;
+        if (static_cast<int>(m_pos.x * 100.0) % 25 != 0)
+        {
+            m_pos.x = round(m_pos.x);
+        }
+        if (static_cast<int>(m_pos.y * 100.0) % 25 != 0)
+        {
+            m_pos.y = round(m_pos.y);
+        }
     }
 }
 

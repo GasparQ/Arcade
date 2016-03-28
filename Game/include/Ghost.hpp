@@ -10,7 +10,7 @@
 class Ghost : public PacmanCharacter
 {
 public:
-    Ghost(AComponent::ComponentColor color);
+    Ghost(AComponent::ComponentColor color, std::string const& shape2D);
     virtual ~Ghost();
 
 public:
