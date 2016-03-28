@@ -30,12 +30,12 @@ Snake::~Snake()
 
 }
 
-std::stack<AComponent *>                Snake::compute(int keycode)
+std::stack<AComponent *>                    Snake::compute(int keycode)
 {
-    std::stack<AComponent *>            output;
-    std::map<int, keyfunc>::iterator    it;
-    std::list<Vector2<double> >::iterator  bod;
-    HighScoreComponent                  *highScoreComponent;
+    std::stack<AComponent *>                output;
+    std::map<int, keyfunc>::iterator        it;
+    std::list<Vector2<double> >::iterator   bod;
+    HighScoreComponent                      *highScoreComponent;
 
     if (state == AGame::GameState::DEAD)
     {
@@ -199,9 +199,9 @@ void Snake::initGame()
     snakeOri = Snake::RIGHT;
     direction.x = 1;
     direction.y = 0;
-    for (size_t x = 0; x < ArcadeSystem::winWidth; ++x)
+    for (size_t x = 1; x < ArcadeSystem::winWidth - 1; ++x)
     {
-        for (size_t y = 0; y < ArcadeSystem::winHeight; ++y)
+        for (size_t y = 1; y < ArcadeSystem::winHeight - 1; ++y)
         {
             plate.push_back(Vector2<double>(static_cast<int>(x), static_cast<int>(y)));
         }
@@ -282,6 +282,7 @@ void    whereAmI(Snake const &snake)
 }
 
 //TODO fix
+// solution implémentée: ajout de blocks de murs
 extern "C" void Play(void)
 {
     char                        c;
