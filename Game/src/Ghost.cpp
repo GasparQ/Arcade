@@ -5,7 +5,8 @@
 #include "../include/Ghost.hpp"
 #include "../../Commons/include/Astar.hpp"
 
-Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<double>(25, 15), color, "sprites/red_ghost.bmp", " ",
+Ghost::Ghost(AComponent::ComponentColor color) : PacmanCharacter(Vector2<double>(25, 15), color,
+                                                                 "sprites/red_ghost.bmp", " ",
                                                                  GameComponent::Shapes::CUBE)
 {
     m_color_original = m_color;
@@ -22,23 +23,37 @@ Vector2<double> const &Ghost::Move(char map[31][51], Vector2<double> pacmanPos)
     std::string dir;
     Vector2<double> target;
 
+    // If the ghost is frozen, he cannot move
     if (m_state == FREEZE)
     {
         return m_pos;
     }
+
     if (m_state == HUNTING)
     {
-        dir = as.pathFind((int)m_pos.x, (int)m_pos.y, (int)pacmanPos.x, (int)pacmanPos.y);
+        dir = as.pathFind((int) m_pos.x, (int) m_pos.y, (int) pacmanPos.x, (int) pacmanPos.y);
     }
     else if (m_state == SCARED)
     {
         target.x = (pacmanPos.x < 25) ? 48 : 1;
         target.y = (pacmanPos.y < 15) ? 28 : 1;
-        dir = as.pathFind((int)m_pos.x, (int)m_pos.y, (int)target.x, (int)target.y);
+        dir = as.pathFind((int) m_pos.x, (int) m_pos.y, (int) target.x, (int) target.y);
     }
     else if (m_state == DEAD)
     {
-        dir = as.pathFind((int)m_pos.x, (int)m_pos.y, 25, 16);
+        dir = as.pathFind((int) m_pos.x, (int) m_pos.y, 25, 16);
+    }
+
+    if (static_cast<int>(m_pos.x * 10.0) % 10 == 0 && static_cast<int>(m_pos.y * 10.0) % 10 == 0)
+    {
+        if (!dir.empty())
+        {
+            m_curr_dir = dir[0];
+        }
+        else
+        {
+            m_curr_dir = 0;
+        }
     }
 
     /*switch (m_state)
@@ -62,22 +77,22 @@ Vector2<double> const &Ghost::Move(char map[31][51], Vector2<double> pacmanPos)
             break;
     }*/
 
-    if (dir[0] == '0')
+    if (m_curr_dir == '0')
     {
         //++m_pos.x;
         m_pos.x += velocity;
     }
-    else if (dir[0] == '1')
+    else if (m_curr_dir == '1')
     {
         //++m_pos.y;
         m_pos.y += velocity;
     }
-    else if (dir[0] == '2')
+    else if (m_curr_dir == '2')
     {
         //--m_pos.x;
         m_pos.x -= velocity;
     }
-    else if (dir[0] == '3')
+    else if (m_curr_dir == '3')
     {
         //--m_pos.y;
         m_pos.y -= velocity;
