@@ -44,6 +44,12 @@ public:
     {
         return Vector2<T>(-x, -y);
     }
+    /// Equivalent to the == operator but can also take a range in account
+    bool isEqual(Vector2<T> const& other, double delta) const
+    {
+        return (other.x - delta <= x && x <= other.x + delta
+                && other.y - delta <= y && y <= other.y + delta);
+    }
 };
 
 template <class T>

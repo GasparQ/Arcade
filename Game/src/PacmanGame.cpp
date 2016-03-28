@@ -213,7 +213,7 @@ void PacmanGame::MoveEntities()
 
         onReplaceGhostByWall(newMap, (*itGhost).GetState());
         // If pacman is immortal, it kills the ghost, otherwise it dies
-        if ((*itGhost).Move(newMap, newPacPos) == newPacPos)
+        if ((*itGhost).Move(newMap, newPacPos).isEqual(newPacPos, 0.5))
         {
             if (m_pacman.GetState() == Pacman::MORTAL)
             {
