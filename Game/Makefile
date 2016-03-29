@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Thu Mar 10 16:28:26 2016 Quentin Gasparotto
-## Last update Thu Mar 17 20:32:49 2016 Victor Gouet
+## Last update Tue Mar 29 14:15:09 2016 Victor Gouet
 ##
 
 CC	=	g++
@@ -18,9 +18,15 @@ SNAKE	=	$(PREFIX)snake.so
 
 PACMAN	=	$(PREFIX)pacman.so
 
+CENTIPEDE	=	$(PREFIX)centipede.so
+
 SNAKESRCS	=	src/Snake.cpp
 
 SNAKEOBJS	=	$(SNAKESRCS:.cpp=.o)
+
+CENTIPEDESRCS	=	src/Centipede.cpp
+
+CENTIPEDEOBJS	=	$(CENTIPEDESRCS:.cpp=.o)
 
 PACMANSRCS	=	src/Pacman.cpp		\
 			src/PacmanCharacter.cpp	\
@@ -36,7 +42,7 @@ CPPFLAGS	=	-W -Wall -Wextra -fPIC -shared --std=c++11 \
 
 LDFLAGS		=	-shared -Wl,--no-undefined -L ../Commons/ -l_arcade_commons
 
-all:	$(SNAKE) $(PACMAN)
+all:	$(SNAKE) $(PACMAN) $(CENTIPEDE)
 
 $(SNAKE):	$(SNAKEOBJS)
 	$(CC) -o $(SNAKE) $(SNAKEOBJS) $(LDFLAGS)
@@ -44,12 +50,17 @@ $(SNAKE):	$(SNAKEOBJS)
 $(PACMAN):	$(PACMANOBJS)
 	$(CC) -o $(PACMAN) $(PACMANOBJS) $(LDFLAGS)
 
+$(CENTIPEDE):	$(CENTIPEDEOBJS)
+	$(CC) -o $(CENTIPEDE) $(CENTIPEDEOBJS) $(LDFLAGS)
+
 clean:
 	$(RM) $(SNAKEOBJS)
 	$(RM) $(PACMANOBJS)
+	$(RM) $(CENTIPEDEOBJS)
 
 fclean:	clean
 	$(RM) $(SNAKE)
 	$(RM) $(PACMAN)
+	$(RM) $(CENTIPEDE)
 
 re:	fclean all
