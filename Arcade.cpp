@@ -42,17 +42,22 @@ arcade::Arcade::Arcade()
 
 arcade::Arcade::~Arcade()
 {
-    std::map<std::string, void *>::iterator it;
-    std::map<std::string, void *>::iterator end;
 
     if (lib)
+    {
         delete (lib);
-    for (it = dlopenedlibs.begin(), end = dlopenedlibs.end(); it != end; ++it)
+        dlclose(dllib);
+    }
+    for (std::vector<IGame *>::iterator it = games.begin(), end = games.end(); it != end; ++it)
+    {
+        if (*it != NULL)
+            delete(*it);
+    }
+    for (std::map<std::string, void *>::iterator it = dlopenedlibs.begin(), end = dlopenedlibs.end(); it != end; ++it)
     {
         if (it->second && dlclose(it->second) != 0)
             throw std::runtime_error("arcade: cannot close '" + it->first + "' library");
     }
-    dlclose(dllib);
     dlopenedlibs.clear();
     regfree(&lib_names);
 }
@@ -82,7 +87,10 @@ void arcade::Arcade::findCurrLib(std::string const &libname)
         }
     }
     if (it == libsName.end())
+    {
         libsName.push_back(libname);
+        currLibName = libsName.end() - 1;
+    }
 }
 
 std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string const &dirName, regex_t &nameRestric)
@@ -148,6 +156,8 @@ bool                    arcade::Arcade::isLibNameValid(const std::string &string
 
 void        arcade::Arcade::onPrevGraph()
 {
+    if (currLibName == libsName.end())
+        return;
     if (currLibName == libsName.begin())
         currLibName = libsName.end();
     --currLibName;
@@ -156,6 +166,8 @@ void        arcade::Arcade::onPrevGraph()
 
 void        arcade::Arcade::onNextGraph()
 {
+    if (currLibName == libsName.end())
+        return;
     ++currLibName;
     if (currLibName == libsName.end())
         currLibName = libsName.begin();
@@ -164,6 +176,8 @@ void        arcade::Arcade::onNextGraph()
 
 void        arcade::Arcade::onNextGame()
 {
+    if (currGame == games.end())
+        return;
     ++currGame;
     if (currGame == games.end())
         currGame = games.begin();
@@ -171,6 +185,8 @@ void        arcade::Arcade::onNextGame()
 
 void        arcade::Arcade::onPrevGame()
 {
+    if (currGame == games.end())
+        return;
     if (currGame == games.begin())
         currGame = games.end();
     --currGame;
@@ -196,18 +212,12 @@ void        arcade::Arcade::Run()
 {
     int key;
     std::chrono::milliseconds chronoMenu(130);
-    // used to be 100
     std::chrono::milliseconds chronoGame(10);
     std::map<int, arcade::eventSystem>::iterator it;
     ArcadeMenu  menu(*this);
 
     menu.setFrames("text", "./Animation/NcursesAnimation", 4);
     menu.setMode("text");
-    // TODO FAIRE LE MENU 
-    // ET DONC C'EST PAS Arcade::Game mais Arcade::Menu
-    // _status = Arcade::Game;
-    // A ENLEVER POUR APRES
-
     while (isRunning)
     {
         std::stack<AComponent *>    components;
@@ -227,7 +237,7 @@ void        arcade::Arcade::Run()
         {
             components = menu.updateMenu(key);
 	    }
-        if (_status == Arcade::Game)
+        if (_status == Arcade::Game && currGame != games.end())
         {
             components = (*currGame)->compute(key);
         }
@@ -241,8 +251,10 @@ const std::string &arcade::Arcade::getCurrentLibName() const
     return *currLibName;
 }
 
-std::string const &arcade::Arcade::getCurrentGameName() const
+std::string arcade::Arcade::getCurrentGameName() const
 {
+    if (currGame == games.end())
+        return ("No such game");
     return (*currGame)->getName();
 }
 
