@@ -82,6 +82,7 @@ Vector2<double> const &Pacman::Move(char m_map[31][51], Vector2<double>)
             }
             break;
     }
+    _pacman_body = (_pacman_body + 0.2);
     return m_pos;
 }
 
@@ -89,10 +90,27 @@ Pacman::Pacman() : PacmanCharacter(Vector2<double >(25, 18),
 				   AComponent::ComponentColor::COLOR_YELLOW,
 				   "sprites/pacman.bmp", " ", GameComponent::Shapes::SPHERE_LARGE)
 {
-  sprite[UP] = "sprites/pacman_up.bmp";
-  sprite[DOWN] = "sprites/pacman_down.bmp";
-  sprite[LEFT] = "sprites/pacman_left.bmp";
-  sprite[RIGHT] = "sprites/pacman_right.bmp";
+  sprite[UP][0] = "sprites/closed.bmp";
+  sprite[DOWN][0] = "sprites/closed.bmp";
+  sprite[LEFT][0] = "sprites/closed.bmp";
+  sprite[RIGHT][0] = "sprites/closed.bmp";
+
+  sprite[UP][1] = "sprites/pacman_up.bmp";
+  sprite[DOWN][1] = "sprites/pacman_down.bmp";
+  sprite[LEFT][1] = "sprites/pacman_left.bmp";
+  sprite[RIGHT][1] = "sprites/pacman_right.bmp";
+  
+  sprite[UP][2] = "sprites/open_up.bmp";
+  sprite[DOWN][2] = "sprites/open_down.bmp";
+  sprite[LEFT][2] = "sprites/open_left.bmp";
+  sprite[RIGHT][2] = "sprites/open_right.bmp";
+
+  sprite[UP][3] = "sprites/pacman_up.bmp";
+  sprite[DOWN][3] = "sprites/pacman_down.bmp";
+  sprite[LEFT][3] = "sprites/pacman_left.bmp";
+  sprite[RIGHT][3] = "sprites/pacman_right.bmp";
+
+  _pacman_body = OPEN;
 }
 
 Pacman::~Pacman()
@@ -107,7 +125,7 @@ Pacman::PacmanState Pacman::GetState() const
 
 std::string const &Pacman::getShape2D() const
 {
-  return (sprite[m_dir]);
+  return (sprite[m_dir][static_cast<int>(_pacman_body) % 4]);
 }
 
 void Pacman::SetState(Pacman::PacmanState state)
