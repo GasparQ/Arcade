@@ -11,9 +11,8 @@
 #include "../include/Protocol.hpp"
 
 //TODO:
-// pacman must not be able to enter ghost spawn
-// remove walls
 // ghost no route
+// Menu background
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
@@ -270,6 +269,9 @@ void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState 
         }
         ++y;
     }
+    // We always open the spawn for the ghosts
+    newMap[12][25] = ' ';
+
     // If the ghost is alive other ghosts are obstacles
     if (state == Ghost::HUNTING)
     {
