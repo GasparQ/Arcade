@@ -12,7 +12,7 @@
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../include/Protocol.hpp"
 
-const long Snake::snakeSpeed = 8;
+const long Snake::snakeSpeed = 15;
 
 Snake::Snake() :
         AGame("Snake"),
