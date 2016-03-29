@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Thu Mar 10 16:28:26 2016 Quentin Gasparotto
-## Last update Tue Mar 29 14:24:51 2016 Victor Gouet
+## Last update Tue Mar 29 15:38:40 2016 Victor Gouet
 ##
 
 CC	=	g++
@@ -24,7 +24,7 @@ SNAKESRCS	=	src/Snake.cpp
 
 SNAKEOBJS	=	$(SNAKESRCS:.cpp=.o)
 
-CENTIPEDESRCS	=	src/Centipede.cpp \
+CENTIPEDESRCS	=	src/USSEnterprise.cpp \
 			src/CentipedeGame.cpp \
 
 CENTIPEDEOBJS	=	$(CENTIPEDESRCS:.cpp=.o)
