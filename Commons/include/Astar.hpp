@@ -112,7 +112,7 @@ public:
 public:
     // A-star algorithm.
     // The route returned is a string of direction digits.
-    std::string pathFind(const int & xStart, const int & yStart, const int & xFinish, const int & yFinish)
+    std::string const pathFind(int xStart, int yStart, int xFinish, int yFinish)
     {
         std::priority_queue<node> pq[2]; // list of open (not-yet-tried) nodes
         int pqi; // pq index
@@ -162,12 +162,13 @@ public:
 
             // quit searching when the goal state is reached
             //if((*n0).estimate(xFinish, yFinish) == 0)
+            std::string path = "";
+
             if (x == xFinish && y == yFinish)
             {
                 // generate the path from finish to start
                 // by following the directions
-                std::string path = "";
-                while (!(x==xStart && y==yStart))
+                while (!(x == xStart && y == yStart))
                 {
                     j = dir_map[x][y];
                     c = '0' + (j + dir / 2) % dir;
@@ -240,10 +241,13 @@ public:
                         pqi = 1 - pqi;
                         pq[pqi].push(*m0); // add the better node instead
                     }
-                    else delete m0; // garbage collection
+                    else
+                    {
+                        delete m0;
+                    }
                 }
             }
-            delete n0; // garbage collection
+            delete n0;
         }
         return ""; // no route found
     }

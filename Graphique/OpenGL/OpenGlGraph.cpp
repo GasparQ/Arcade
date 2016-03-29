@@ -158,13 +158,13 @@ void OpenGlGraph::DrawCube(Vector2<double> pos, GLubyte r, GLubyte g, GLubyte b,
 
 void OpenGlGraph::DrawTerrain(int sizeX, int sizeY) const
 {
-    for (int i = -1; i <= sizeX; ++i)
+    for (int i = 0; i < sizeX; ++i)
     {
-        for (int j = -1; j <= sizeY; ++j)
+        for (int j = 0; j < sizeY; ++j)
         {
             if (i == -1 || j == -1 || i == sizeX || j == sizeY)
             {
-                DrawCube(Vector2<double>(i, j), AComponent::COLOR_YELLOW);
+                //DrawCube(Vector2<double>(i, j), AComponent::COLOR_YELLOW);
             }
             DrawCube(Vector2<double>(i, j), 152, 152, 152, 1);
         }
@@ -303,7 +303,7 @@ void OpenGlGraph::Set3DMode()
     m_render_mode = PERSPECTIVE;
 }
 
-// Drw text on viewport
+// Draw text on viewport
 void OpenGlGraph::DrawText(Vector2<double> pos, std::string const &text, AComponent::ComponentColor const &color)
 {
     // IMPORTANT : change the color before rasterizing !!
