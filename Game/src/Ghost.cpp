@@ -187,5 +187,7 @@ Ghost::GhostState Ghost::GetState() const
 void Ghost::ResetPosition()
 {
     m_state = FREEZE;
+    m_color = m_color_original;
+    m_shape2D = m_default_sprite;
     PacmanCharacter::ResetPosition();
 }

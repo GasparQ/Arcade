@@ -136,6 +136,11 @@ void Pacman::SetState(Pacman::PacmanState state)
 void Pacman::ResetPosition()
 {
     m_state = MORTAL;
+    m_dir = LEFT;
+    while (!m_dir_stack.empty())
+    {
+        m_dir_stack.pop();
+    }
     PacmanCharacter::ResetPosition();
 }
 
