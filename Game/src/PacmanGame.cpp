@@ -8,11 +8,12 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
-#include "../../Commons/include/Chrono.hpp"
 #include "../include/Protocol.hpp"
 
 //TODO:
-// Ghost can kill pacman if they went back to spawn
+// pacman must not be able to enter ghost spawn
+// remove walls
+// ghost no route
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
@@ -298,7 +299,16 @@ void PacmanGame::MoveEntities()
         // If pacman is immortal, it kills the ghost, otherwise it dies
         if ((*itGhost).Move(newMap, newPacPos).isEqual(newPacPos, 0.5))
         {
-            if (m_pacman.GetState() == Pacman::MORTAL)
+            if (itGhost->GetState() == Ghost::HUNTING)
+            {
+                return Die();
+            }
+            else if (itGhost->GetState() == Ghost::SCARED)
+            {
+                itGhost->SetState(Ghost::DEAD);
+                m_score += 100;
+            }
+            /*if (m_pacman.GetState() == Pacman::MORTAL)
             {
                 Die();
                 return;
@@ -307,7 +317,7 @@ void PacmanGame::MoveEntities()
             {
                 (*itGhost).SetState(Ghost::DEAD);
                 m_score += 100;
-            }
+            }*/
         }
         ++itGhost;
     }
