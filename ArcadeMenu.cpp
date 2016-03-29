@@ -96,10 +96,10 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
 
     if ((it = sysEvents.find(key)) != sysEvents.end())
         (this->*(it->second))();
-    components.push(new AnimationComponent(1, 1, AComponent::ComponentColor::COLOR_WHITE, getNextFrame()));
     components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GRAPHIC]));
     components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GAME]));
     components.push(new UIComponent(*menuComponents[ArcadeMenu::PLAY]));
+    components.push(new AnimationComponent(1, 1, AComponent::ComponentColor::COLOR_WHITE, getNextFrame()));
     return components;
 }
 
