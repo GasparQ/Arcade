@@ -306,8 +306,6 @@ void    whereAmI(Snake const &snake)
     free(pos);
 }
 
-//TODO fix
-// solution implémentée: ajout de blocks de murs
 extern "C" void Play(void)
 {
     char                        c;
