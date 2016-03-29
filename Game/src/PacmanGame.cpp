@@ -12,6 +12,8 @@
 
 //TODO:
 // ghost no route
+// centrer les menus pour opengl
+// changer le spawn des spheres pour le menu
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
