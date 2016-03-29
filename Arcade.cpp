@@ -211,8 +211,8 @@ void        arcade::Arcade::onExit()
 void        arcade::Arcade::Run()
 {
     int key;
-    std::chrono::milliseconds chronoMenu(130);
-    std::chrono::milliseconds chronoGame(10);
+//    std::chrono::milliseconds chronoMenu(130);
+    std::chrono::milliseconds chrono(10);
     std::map<int, arcade::eventSystem>::iterator it;
     ArcadeMenu  menu(*this);
 
@@ -242,7 +242,7 @@ void        arcade::Arcade::Run()
             components = (*currGame)->compute(key);
         }
         lib->display(components);
-        std::this_thread::sleep_for(_status == Arcade::Game ? chronoGame : chronoMenu);
+        std::this_thread::sleep_for(chrono);
     }
 }
 
