@@ -327,7 +327,8 @@ void OpenGlGraph::DrawText(Vector2<double> pos, std::string const &text, ACompon
     // IMPORTANT : change the color before rasterizing !!
     glColor3ub(colors[color].r, colors[color].g, colors[color].b);
 
-    glRasterPos2d(pos.x * m_size_coeff /*+ (7 * (text.size()))*/, (pos.y) * m_size_coeff);
+    //glRasterPos2d(pos.x * m_size_coeff /*+ (7 * (text.size()))*/, (pos.y) * m_size_coeff);
+    glRasterPos2d(pos.x * 30.0, (pos.y) * 24.0);
     for (unsigned int i = 0; i < text.length(); i++)
     {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
@@ -337,10 +338,14 @@ void OpenGlGraph::DrawText(Vector2<double> pos, std::string const &text, ACompon
 void OpenGlGraph::DrawBackgroundMenu()
 {
     unsigned int i;
-    static double ang = 0;
 
     glRotated(ang += 0.25, 0, 0, 1);
-    for (i = 0; m_spheres.size() < 2000; ++i)
+    // To avoid overflow
+    if (static_cast<int>(ang * 10) % 10 == 0 && static_cast<int>(ang) % 360 == 0)
+    {
+        ang = 0;
+    }
+    for (i = 0; m_spheres.size() < 2500; ++i)
     {
         m_spheres.push_back(SphereMenu());
     }
