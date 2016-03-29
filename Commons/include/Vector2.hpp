@@ -36,9 +36,29 @@ public:
     {
         return Vector2<T>(x - vector2.x, y - vector2.y);
     }
+    Vector2     <T>operator*(T i)
+    {
+        return (Vector2<T>(x * i, y * i));
+    }
     bool        operator==(Vector2 const &vector2) const
     {
         return x == vector2.x && y == vector2.y;
+    }
+    bool        operator>(Vector2<double> const &vector2) const
+    {
+        return (x > vector2.x && y > vector2.y);
+    }
+    bool        operator<(Vector2<double> const &vector2) const
+    {
+        return (x < vector2.x && y < vector2.y);
+    }
+    bool        operator>=(Vector2<double> const &vector2) const
+    {
+        return (x >= vector2.x && y >= vector2.y);
+    }
+    bool        operator<=(Vector2<double> const &vector2) const
+    {
+        return (x <= vector2.x && y <= vector2.y);
     }
     Vector2     invert()
     {

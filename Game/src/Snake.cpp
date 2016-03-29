@@ -4,6 +4,7 @@
 
 #include <algorithm>
 #include <unistd.h>
+#include <chrono>
 #include "../include/Snake.hpp"
 #include "../../Commons/include/GameComponent.hpp"
 #include "../../Commons/include/UIComponent.hpp"
@@ -11,12 +12,15 @@
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../include/Protocol.hpp"
 
+const long Snake::snakeSpeed = 8;
+
 Snake::Snake() :
         AGame("Snake"),
         apple(0, 0),
         score(0),
         snakeOri(UP),
-        direction(0, 0)
+        direction(0, 0),
+        counter(0)
 {
     keycodex[ArcadeSystem::ArrowDown] = &Snake::goDown;
     keycodex[ArcadeSystem::ArrowLeft] = &Snake::goLeft;
@@ -52,10 +56,19 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
     }
     else if (state == AGame::GameState::ALIVE)
     {
-        if ((it = keycodex.find(keycode)) != keycodex.end())
-            (this->*it->second)();
-        goAhead();
-        output.push(new UIComponent(Vector2<double>((static_cast<int>(ArcadeSystem::winWidth - std::string("score : " + std::to_string(score)).size()) / 2), 1),
+        counter = counter + getMoveUnit(Snake::snakeSpeed);
+        if (keycode != -1)
+            saved_keycode = keycode;
+        if (counter >= 1)
+        {
+            if ((it = keycodex.find(saved_keycode)) != keycodex.end())
+                (this->*it->second)();
+            saved_keycode = -1;
+            goAhead();
+            counter = 0;
+        }
+        output.push(new UIComponent(Vector2<double>((static_cast<int>(ArcadeSystem::winWidth - std::string(
+                                            "score : " + std::to_string(score)).size()) / 2), 1),
                                     AComponent::COLOR_WHITE,
                                     Vector2<double>(5, 1), "score : " + std::to_string(score)));
     }
@@ -181,6 +194,18 @@ void Snake::move()
     }
     else
         removeBody();
+}
+
+double Snake::getMoveUnit(double unitPerSecond) const
+{
+    static std::chrono::high_resolution_clock::time_point   last_time = std::chrono::high_resolution_clock::now();
+    std::chrono::high_resolution_clock::time_point          curr_time;
+    std::chrono::milliseconds                               time_diff;
+
+    curr_time = std::chrono::high_resolution_clock::now();
+    time_diff = std::chrono::duration_cast<std::chrono::milliseconds>(curr_time - last_time);
+    last_time = curr_time;
+    return (unitPerSecond / 1000.0 * static_cast<double>(time_diff.count()));
 }
 
 void Snake::die()

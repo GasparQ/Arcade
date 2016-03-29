@@ -26,6 +26,8 @@ public:
 
   typedef void (Snake::*keyfunc)();
 
+    static const long  snakeSpeed;
+
 private:
     typedef enum
     {
@@ -36,13 +38,15 @@ private:
     } Orientation;
 
 private:
-    std::list<Vector2<double> >        body;
-    Vector2<double>                    apple;
+    std::list<Vector2<double> >     body;
+    Vector2<double>                 apple;
     size_t                          score;
     Orientation                     snakeOri;
-    Vector2<double>                    direction;
+    Vector2<double>                 direction;
+    double                          counter;
     std::map<int, keyfunc>          keycodex;
-    std::list<Vector2<double> >        plate;
+    std::list<Vector2<double> >     plate;
+    int                             saved_keycode;
 
 public:
     void                            goUp();
@@ -52,6 +56,7 @@ public:
     void                            goAhead();
     Vector2<double> const              &getApple() const;
     std::list<Vector2<double>> const   &getSnake() const;
+    double                              getMoveUnit(double unitPerSecond) const;
 
 private:
     void                        generateAppelPos();
