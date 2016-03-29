@@ -10,6 +10,7 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../../Commons/include/DualTextComponent.hpp"
+#include "../../Commons/include/AnimationComponent.hpp"
 
 // Ctor:
 // Initializes Projection mode (3D by default) and Lighting
@@ -116,12 +117,12 @@ void OpenGlGraph::DrawBackground() const
     DrawTerrain(arcade::winWidth, arcade::winHeight);
 }
 
-void OpenGlGraph::DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size) const
+void OpenGlGraph::DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size, double posZ) const
 {
     GLUquadric *param;
 
     glPushMatrix();
-    glTranslated(-pos.x, 0, -pos.y);
+    glTranslated(-pos.x, -posZ, -pos.y);
     param = gluNewQuadric();
     glColor4d(colors[color].r, colors[color].g, colors[color].b, 1);
     gluSphere(param, size, 20, (size >= 1) ? 20 : (size >= 0.5) ? 10 : 5);
@@ -195,9 +196,12 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
     GameComponent *gc;
     UIComponent *uic;
     HighScoreComponent *hsc;
+    AnimationComponent *ac;
+    bool bIsBackrgoundDrawn = false;
 
     Set3DMode();
-    DrawBackground();
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
     while (!stack.empty())
     {
         if ((gc = dynamic_cast<GameComponent *>(stack.top())) != nullptr)
@@ -205,6 +209,11 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
             if (m_render_mode == ORTHOGRAPHIC)
             {
                 Set3DMode();
+            }
+            if (!bIsBackrgoundDrawn)
+            {
+                bIsBackrgoundDrawn = true;
+                DrawBackground();
             }
             switch (gc->getSprite3D())
             {
@@ -256,6 +265,15 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
             {
                 DrawText(var[i]->getPos(), var[i]->getText(), var[i]->getColor());
             }
+        }
+        else if ((ac = dynamic_cast<AnimationComponent *>(stack.top())) != nullptr)
+        {
+            /// If we have an anim component that means we are on the menu. So we DO NOT display the terrain
+            if (m_render_mode == ORTHOGRAPHIC)
+            {
+                Set3DMode();
+            }
+            DrawBackgroundMenu();
         }
         stack.pop();
     }
@@ -316,3 +334,17 @@ void OpenGlGraph::DrawText(Vector2<double> pos, std::string const &text, ACompon
     }
 }
 
+void OpenGlGraph::DrawBackgroundMenu()
+{
+    int i;
+
+    for (i = 0; m_spheres.size() < 2000; ++i)
+    {
+        m_spheres.push_back(SphereMenu());
+    }
+    for (i = 0; i < m_spheres.size(); ++i)
+    {
+        DrawSphere(m_spheres[i].GetPos(), m_spheres[i].GetColor(), 0.5, m_spheres[i].GetPosZ());
+        m_spheres[i].Update();
+    }
+}

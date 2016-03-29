@@ -12,7 +12,6 @@
 
 //TODO:
 // ghost no route
-// Menu background
 PacmanGame::PacmanGame() :
         AGame("Pacman")
 {
