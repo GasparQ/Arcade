@@ -32,10 +32,13 @@ public:
 
     virtual void goRight(char map[31][51]);
 
+  virtual std::string const &getShape2D() const;
+
 public:
     virtual Vector2<double> const& Move(char map[31][51], Vector2<double> pacmanPos = Vector2<double>(0, 0));
 
 private:
+  std::string		sprite[4];
     PacmanState m_state = MORTAL;
     std::stack<Direction> m_dir_stack;
     /// Max keys to remember

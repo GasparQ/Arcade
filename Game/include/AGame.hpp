@@ -10,11 +10,13 @@
 class AGame : public IGame
 {
 public:
+
     typedef enum
     {
         ALIVE,
         DEAD
     } GameState;
+
     AGame(std::string const &name) : name(name)
     {
         state = ALIVE;

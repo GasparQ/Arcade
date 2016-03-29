@@ -82,13 +82,17 @@ Vector2<double> const &Pacman::Move(char m_map[31][51], Vector2<double>)
             }
             break;
     }
-
     return m_pos;
 }
 
-Pacman::Pacman() : PacmanCharacter(Vector2<double >(25, 18), AComponent::ComponentColor::COLOR_YELLOW, "sprites/pacman.bmp", " ",
-                                   GameComponent::Shapes::SPHERE_LARGE)
+Pacman::Pacman() : PacmanCharacter(Vector2<double >(25, 18),
+				   AComponent::ComponentColor::COLOR_YELLOW,
+				   "sprites/pacman.bmp", " ", GameComponent::Shapes::SPHERE_LARGE)
 {
+  sprite[UP] = "sprites/pacman_up.bmp";
+  sprite[DOWN] = "sprites/pacman_down.bmp";
+  sprite[LEFT] = "sprites/pacman_left.bmp";
+  sprite[RIGHT] = "sprites/pacman_right.bmp";
 }
 
 Pacman::~Pacman()
@@ -99,6 +103,11 @@ Pacman::~Pacman()
 Pacman::PacmanState Pacman::GetState() const
 {
     return m_state;
+}
+
+std::string const &Pacman::getShape2D() const
+{
+  return (sprite[m_dir]);
 }
 
 void Pacman::SetState(Pacman::PacmanState state)

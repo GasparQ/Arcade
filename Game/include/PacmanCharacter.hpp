@@ -29,7 +29,7 @@ public:
 
     GameComponent::Shapes getShape3D() const;
 
-    std::string const &getShape2D() const;
+    virtual std::string const &getShape2D() const;
 
     std::string const &getShapeCurses() const;
 
