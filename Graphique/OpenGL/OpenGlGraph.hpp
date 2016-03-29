@@ -8,6 +8,7 @@
 #include <map>
 #include <GL/gl.h>
 #include <GL/glu.h>
+#include <vector>
 #include "./include/glut.h"
 #include "../SDL2/include/SDL_surface.h"
 #include "../SDL2/include/SDL.h"
@@ -30,7 +31,7 @@ public:
     virtual void display(std::stack<AComponent *>);
 
 private:
-    void DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size) const;
+    void DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size, double posZ = 0) const;
 
     void DrawCube(Vector2<double> pos, AComponent::ComponentColor color, double size = 1, double posY = 0) const;
 
@@ -41,6 +42,8 @@ private:
     void InitLighting() const;
 
     void DrawBackground() const ;
+
+    void DrawBackgroundMenu();
 
     void RefreshImage() const;
 
@@ -66,7 +69,7 @@ private:
     Vector2<double> m_win;
     std::map<int, int>  keyCodeAssociation;
     // RGBA
-    SDL_Color colors[10] = {{0, 0, 0, 0}, // Black
+    SDL_Color colors[10] = {{0, 0, 0, 0}, // black
                             {255, 0, 0, 255}, // red
                             {0, 255, 0, 255}, // green
                             {255, 255, 0, 255}, // yellow
@@ -75,6 +78,53 @@ private:
                             {0, 255, 255, 255}, // cyan
                             {255, 255, 255, 255}}; // white
     RenderMode m_render_mode = PERSPECTIVE;
+
+private:
+    class SphereMenu
+    {
+    public:
+        SphereMenu()
+        {
+            m_pos = Vector2<double>(rand() % 100 - 50, rand() % 100);
+            m_color = static_cast<AComponent::ComponentColor>(rand() % 7 + 1);
+            m_pos_z = rand() % 100 - 50;
+        }
+
+        ~SphereMenu()
+        {}
+
+        Vector2<double> const& GetPos() const
+        {
+            return m_pos;
+        }
+
+        double GetPosZ() const
+        {
+            return m_pos_z;
+        }
+
+        AComponent::ComponentColor GetColor() const
+        {
+            return m_color;
+        }
+
+        void Update()
+        {
+            m_pos.y += m_vel;
+            if (m_pos.y <= 0)
+            {
+                m_pos.y = 100;
+            }
+        }
+
+    private:
+        AComponent::ComponentColor m_color;
+        Vector2<double> m_pos;
+        double m_pos_z;
+        double m_vel = -0.2;
+    };
+
+    std::vector<SphereMenu> m_spheres;
 };
 
 
