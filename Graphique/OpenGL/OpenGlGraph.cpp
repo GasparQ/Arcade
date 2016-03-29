@@ -337,7 +337,9 @@ void OpenGlGraph::DrawText(Vector2<double> pos, std::string const &text, ACompon
 void OpenGlGraph::DrawBackgroundMenu()
 {
     unsigned int i;
+    static double ang = 0;
 
+    glRotated(ang += 0.25, 0, 0, 1);
     for (i = 0; m_spheres.size() < 2000; ++i)
     {
         m_spheres.push_back(SphereMenu());

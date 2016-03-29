@@ -44,6 +44,8 @@ public:
     enum ComponentColor getColor() const;
 
     void setColor(ComponentColor color);
+
+    void setPos(const Vector2<double> & pos);
 };
 
 #endif

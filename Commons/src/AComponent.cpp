@@ -41,3 +41,8 @@ void AComponent::setColor(AComponent::ComponentColor color)
 {
     _color = color;
 }
+
+void AComponent::setPos(const Vector2<double> &_pos)
+{
+    pos = _pos;
+}
