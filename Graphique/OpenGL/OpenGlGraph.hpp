@@ -88,7 +88,23 @@ private:
             m_pos = Vector2<double>(rand() % 100 - 50, rand() % 100);
             m_color = static_cast<AComponent::ComponentColor>(rand() % 7 + 1);
             m_pos_z = rand() % 100 - 50;
-            if (m_pos.x >= 0 && m_pos.x <= 30 && m_pos_z >= -30 && m_pos_z <= 30)
+
+            if (m_pos.x == 0)
+            {
+                m_pos.x = 1;
+            }
+            if (m_pos_z == 0)
+            {
+                m_pos_z = 1;
+            }
+            double dirX = m_pos.x;
+            double dirZ = m_pos_z;
+            while (pow(m_pos.x, 2) + pow(m_pos_z, 2) < pow(30, 2))
+            {
+                m_pos.x += dirX;
+                m_pos_z += dirZ;
+            }
+            /*if (m_pos.x >= 0 && m_pos.x <= 30 && m_pos_z >= -30 && m_pos_z <= 30)
             {
                 m_pos.x += 30;
                 m_pos_z += 30;
@@ -97,7 +113,7 @@ private:
             {
                 m_pos.x -= 30;
                 m_pos_z -= 30;
-            }
+            }*/
         }
 
         ~SphereMenu()
@@ -135,6 +151,7 @@ private:
     };
 
     std::vector<SphereMenu> m_spheres;
+    double ang = 0;
 };
 
 
