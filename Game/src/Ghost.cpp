@@ -5,9 +5,10 @@
 #include "../include/Ghost.hpp"
 #include "../../Commons/include/Astar.hpp"
 
-Ghost::Ghost(AComponent::ComponentColor color, std::string const& shape2D) : PacmanCharacter(Vector2<double>(25, 15), color,
-                                                                 shape2D, " ",
-                                                                 GameComponent::Shapes::CUBE_LARGE)
+Ghost::Ghost(AComponent::ComponentColor color, std::string const &shape2D) : PacmanCharacter(Vector2<double>(25, 15),
+                                                                                             color,
+                                                                                             shape2D, " ",
+                                                                                             GameComponent::Shapes::CUBE_LARGE)
 {
     m_color_original = m_color;
     m_default_sprite = shape2D;
@@ -54,6 +55,10 @@ Vector2<double> const &Ghost::Move(char map[31][51], Vector2<double> pacmanPos)
         else
         {
             m_curr_dir = 0;
+            m_curr_dir = (map[(int) m_pos.y][(int) m_pos.x - 1] != 'X') ? '2' :
+                         (map[(int) m_pos.y][(int) m_pos.x + 1] != 'X') ? '0' :
+                         (map[(int) m_pos.y - 1][(int) m_pos.x] != 'X') ? '3' :
+                         (map[(int) m_pos.y + 1][(int) m_pos.x] != 'X') ? '1' : 0;
         }
     }
 
@@ -130,6 +135,7 @@ void Ghost::goRight(char (*)[51])
 void Ghost::SetState(GhostState state)
 {
     m_state = state;
+    m_prev_pos = Vector2<double>(0, 0);
     if (m_state == DEAD)
     {
         m_shapeCurses = "\"";

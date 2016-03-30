@@ -42,6 +42,7 @@ private:
     AComponent::ComponentColor m_color_original;
     char m_curr_dir = 0;
     std::string m_default_sprite;
+    Vector2<double> m_prev_pos;
 };
 
 

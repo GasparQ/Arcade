@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:38:20 2016 Victor Gouet
-// Last update Tue Mar 29 15:38:21 2016 Victor Gouet
+// Last update Wed Mar 30 16:15:39 2016 Victor Gouet
 //
 //
 
@@ -28,6 +28,7 @@ private:
   const std::string			_file_texture;
   const GameComponent::Shapes		_shapes;
   const AComponent::ComponentColor	_color;
+  Vector2<double>			*_shoot;
 
 public:
   void	goUp(char map[31][51]);
@@ -36,11 +37,17 @@ public:
   void	goRight(char map[31][51]);
 
 public:
+  void			move(int keycode, char map[31][51]);
+  Vector2<double>	*shoot();
+  void		        stopShot();
+
+public:
   Vector2<double> const			&getPos() const;
   std::string const			&getCarac() const;
   std::string const			&getFile2D() const;
   AComponent::ComponentColor		getColor() const;
   GameComponent::Shapes			getShapes() const;
+  Vector2<double>			*getShoot() const;
 
 public:
   GameComponent				*getGameComponent() const;
