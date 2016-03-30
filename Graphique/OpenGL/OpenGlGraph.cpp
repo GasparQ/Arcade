@@ -2,7 +2,6 @@
 // Created by veyrie_f on 3/10/16.
 //
 
-#include <bits/unique_ptr.h>
 #include "OpenGlGraph.hpp"
 #include "../../Arcade.hpp"
 #include "../../Commons/include/UIComponent.hpp"
@@ -11,6 +10,7 @@
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../../Commons/include/DualTextComponent.hpp"
 #include "../../Commons/include/AnimationComponent.hpp"
+#include "../SDL2_mixer/SDL_mixer.h"
 
 // Ctor:
 // Initializes Projection mode (3D by default) and Lighting
@@ -24,13 +24,17 @@ OpenGlGraph::OpenGlGraph(int width, int, const char *name) :
     {
         throw arcade::InitRenderException("OpenGL / SDL");
     }
+
     m_window = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, (int) m_win.x,
                                 (int) m_win.y, SDL_WINDOW_OPENGL);
+
     m_glContext = SDL_GL_CreateContext(m_window);
     if (m_window == NULL || m_glContext == NULL)
     {
         throw arcade::InitRenderException("OpenGL - Screen");
     }
+
+    m_sound.PlaySound("Doom_backsound.wav", true);
 
     // Key binds
     keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;

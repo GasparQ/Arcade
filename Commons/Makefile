@@ -20,11 +20,12 @@ SRCS	=	src/AComponent.cpp		\
 		src/UIComponent.cpp		\
 		src/HighScoreComponent.cpp	\
 		src/LoadHighScore.cpp \
-		src/DualTextComponent.cpp
+		src/DualTextComponent.cpp \
+		Sound.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Wextra -Wnon-virtual-dtor -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./
+CPPFLAGS	=	-W -Wall -Wextra -Wnon-virtual-dtor -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./ -L../Graphique/SDL2/build/.libs/ -lSDL2 -L../Graphique/SDL2_mixer/ -lSDL_mixer
 
 $(NAME):	$(OBJS)
 	ar rc $(NAME) $(OBJS)

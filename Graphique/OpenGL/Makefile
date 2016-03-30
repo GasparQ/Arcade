@@ -20,7 +20,7 @@ OBJS		=	$(SRCS:.cpp=.o)
 
 CPPFLAGS	=	-std=c++11 -W -Wall -Wextra -I ./include -I ../include -I ../../Commons/include -fPIC
 
-LDFLAGS		=	-lGL -lGLU -L../SDL2/build/.libs/ -lSDL2 -shared -L ./libs/ -lglut -L ../../Commons -l_arcade_commons
+LDFLAGS		=	-lGL -lGLU -L../SDL2/build/.libs/ -lSDL2 -L../SDL2_mixer/ -lSDL_mixer -shared -L ./libs/ -lglut -L ../../Commons -l_arcade_commons
 
 $(NAME):	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS) $(LDFLAGS)
