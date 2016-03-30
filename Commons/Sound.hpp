@@ -6,15 +6,16 @@
 #define CPP_ARCADE_SOUND_HPP
 
 #include <map>
-#include "include/AComponent.hpp"
 
-class Sound : public AComponent
+class Sound
 {
 public:
     Sound();
     virtual ~Sound();
 
 public:
+    /// Plays a song located at soundPath.
+    /// @param: bLoop -> should the song loop ?
     void PlaySound(std::string const& soundPath, bool bLoop);
 
 private:

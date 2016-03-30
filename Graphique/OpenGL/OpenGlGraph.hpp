@@ -17,6 +17,7 @@
 #include "../include/IGraph.hpp"
 #include "../../Commons/include/GameComponent.hpp"
 #include "../../Commons/include/UIComponent.hpp"
+#include "../../Commons/Sound.hpp"
 
 class OpenGlGraph : public IGraph
 {
@@ -64,6 +65,7 @@ private:
     SDL_Window *m_window = NULL;
     SDL_GLContext m_glContext = NULL;
     SDL_Event event;
+    Sound m_sound;
     // Stores the coeff to resize
     double m_size_coeff;
     Vector2<double> m_win;
