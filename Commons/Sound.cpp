@@ -34,18 +34,16 @@ void Sound::PlaySound(std::string const &soundPath, bool bLoop)
     {
         std::cerr << "Sound not found : " << soundPath << std::endl;
     }
+    /*else if (m_sounds.find(soundPath) != m_sounds.end())
+    {
+        std::cout << "Already playing" << std::endl;
+    }*/
     else
     {
         Mix_PlayChannel(-1, music, (bLoop) ? -1 : 0);
+        /*if (bLoop)
+        {*/
+            //m_sounds[soundPath] = music;
+        /*}*/
     }
-}
-
-Sound::SoundObj::SoundObj(std::string const &path, bool bLoop)
-{
-
-}
-
-Sound::SoundObj::~SoundObj()
-{
-
 }

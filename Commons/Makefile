@@ -21,7 +21,8 @@ SRCS	=	src/AComponent.cpp		\
 		src/HighScoreComponent.cpp	\
 		src/LoadHighScore.cpp \
 		src/DualTextComponent.cpp \
-		Sound.cpp
+		Sound.cpp \
+		AudioComponent.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 

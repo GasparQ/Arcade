@@ -51,6 +51,8 @@ private:
 
     void PacmanPowerUpEnd();
 
+    void ClearOutput();
+
 private:
     // 50x30
     char m_map[31][51] = {"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -110,6 +112,7 @@ private:
     };
 
 private:
+    std::stack<AComponent *> output;
     Pacman m_pacman;
     std::vector<Ghost> m_ghosts;
     std::list<Gums> m_gums;
