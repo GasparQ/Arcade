@@ -94,6 +94,7 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
     std::stack<AComponent *>    components;
     std::map<int, ArcadeMenu::menuEvents>::iterator   it;
 
+    updateTexts();
     if ((it = sysEvents.find(key)) != sysEvents.end())
         (this->*(it->second))();
     components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GRAPHIC]));

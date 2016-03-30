@@ -11,13 +11,24 @@
 
 #include "../include/GameComponent.hpp"
 
-GameComponent::GameComponent(Vector2<double> const &pos,
-			     AComponent::ComponentColor color,
-			     Shapes sprite3D,
-			     std::string const &spriteText,
-                             std::string const &sprite2D)
-  : AComponent(pos, color), sprite3D(sprite3D),
+GameComponent::GameComponent(
+        Vector2<double> const &pos,
+        AComponent::ComponentColor color,
+        Shapes sprite3D,
+        std::string const &spriteText,
+        std::string const &sprite2D
+) : AComponent(pos, color), sprite3D(sprite3D),
     spriteText(spriteText), fileSprite2D(sprite2D)
+{
+}
+
+GameComponent::GameComponent(Vector2<double> const &pos, Vector2<double> const &size, AComponent::ComponentColor color,
+                             char const &spriteText, std::string const &sprite2D, GameComponent::Shapes sprite3D) :
+    AComponent(pos, color),
+    sprite3D(sprite3D),
+    spriteText(std::string("").insert(0, 1, spriteText)),
+    fileSprite2D(sprite2D),
+    dim(size)
 {
 }
 
@@ -39,4 +50,32 @@ std::string const	&GameComponent::getSprite2D() const
 GameComponent::Shapes GameComponent::getSprite3D() const
 {
   return (this->sprite3D);
+}
+
+void GameComponent::setSpriteText(const char &spriteText)
+{
+    this->spriteText = spriteText;
+}
+
+void GameComponent::setSprite2D(const std::string &sprite2D)
+{
+    fileSprite2D = sprite2D;
+}
+
+void GameComponent::setSprite3D(GameComponent::Shapes sprite3D)
+{
+    this->sprite3D = sprite3D;
+}
+
+Vector2<double> const &GameComponent::getDim() const
+{
+    return dim;
+}
+
+//TODO
+//  -   tell others to implement
+void GameComponent::setSpriteText(const std::string &string)
+{
+    spriteText = string;
+
 }

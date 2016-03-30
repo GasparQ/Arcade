@@ -18,7 +18,7 @@ SRC		=	src/SDLGraph.cpp
 
 OBJ		=	$(SRC:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Wextra $(HEADER) -std=c++11 -fPIC
+CPPFLAGS	=	-W -Wall -Wextra $(HEADER) -std=c++11 -fPIC -g
 
 HEADER		=	-I./include -I ../../Commons/include
 

@@ -299,7 +299,6 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       	{
       	  _displayComponent(animation, _stdscr);
       	}
-      delete obj.top();
       obj.pop();
     }
   if (gameWin)

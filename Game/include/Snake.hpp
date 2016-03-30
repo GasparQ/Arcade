@@ -13,9 +13,33 @@
 #include "../../Commons/include/AComponent.hpp"
 #include "../../Graphique/include/IGraph.hpp"
 #include "AGame.hpp"
+#include "../../Commons/include/GameComponent.hpp"
+#include "../../Commons/include/UIComponent.hpp"
+#include "../../Commons/include/HighScoreComponent.hpp"
 
+//TODO
+//  -   Mettre les gamecomponents directement dans le snake
+//  -   Mettre les constantes en std::string pour les sprites et tout et tout
 class Snake : public AGame
 {
+public:
+    static const std::string                bric2d;
+    static const std::string                bricTxt;
+    static const GameComponent::Shapes      bric3d;
+    static const AComponent::ComponentColor bricColor;
+    static const std::string                apple2d;
+    static const std::string                appleTxt;
+    static const GameComponent::Shapes      apple3d;
+    static const AComponent::ComponentColor appleColor;
+    static const std::string                snkHd2d;
+    static const std::string                snkHdTxt;
+    static const GameComponent::Shapes      snkHd3d;
+    static const AComponent::ComponentColor snkHdColor;
+    static const std::string                snake2d;
+    static const std::string                snakeTxt;
+    static const GameComponent::Shapes      snake3d;
+    static const AComponent::ComponentColor snakeColor;
+
 public:
     Snake();
     virtual ~Snake();
@@ -38,24 +62,27 @@ private:
     } Orientation;
 
 private:
-    std::list<Vector2<double> >     body;
-    Vector2<double>                 apple;
+    std::list<GameComponent *>      body;
+    GameComponent                   *apple;
     size_t                          score;
     Orientation                     snakeOri;
     Vector2<double>                 direction;
     double                          counter;
+    UIComponent                     *uiScore;
+    HighScoreComponent              *highScoreComponent;
     std::map<int, keyfunc>          keycodex;
-    std::list<Vector2<double> >     plate;
+    std::list<GameComponent *>      plate;
     int                             saved_keycode;
+    std::stack<AComponent *>        basicStack;
 
 public:
-    void                            goUp();
-    void                            goDown();
-    void                            goLeft();
-    void                            goRight();
-    void                            goAhead();
-    Vector2<double> const              &getApple() const;
-    std::list<Vector2<double>> const   &getSnake() const;
+    void                                goUp();
+    void                                goDown();
+    void                                goLeft();
+    void                                goRight();
+    void                                goAhead();
+    GameComponent const                 *getApple() const;
+    std::list<GameComponent *> const    &getSnake() const;
     double                              getMoveUnit(double unitPerSecond) const;
 
 private:

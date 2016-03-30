@@ -14,20 +14,23 @@
 # include <iostream>
 # include "AComponent.hpp"
 
-class	UIComponent : public AComponent
+class UIComponent : public AComponent
 {
 private:
-  Vector2<double> dim;
-  std::string text;
+    Vector2<double> dim;
+    std::string text;
 
 public:
-UIComponent(Vector2<double> const &pos, enum ComponentColor color,
-		Vector2<double> const &dim, std::string const &);
-virtual ~UIComponent();
+    UIComponent(Vector2<double> const &pos, enum ComponentColor color,
+                Vector2<double> const &dim, std::string const &);
+
+    virtual ~UIComponent();
 
 public:
-Vector2<double> const &getDim() const;
-std::string const &getText() const;
+    Vector2<double> const   &getDim() const;
+
+    std::string const       &getText() const;
+    void                    setText(std::string const &);
 };
 
 #endif
