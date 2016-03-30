@@ -176,6 +176,8 @@ void SDLGraph::drawText(const std::string &string, Vector2<double> pos, Vector2<
     SDL_Surface *text;
     SDL_Texture *texture;
 
+    if (string.empty())
+        return;
     if ((text = TTF_RenderText_Solid(uifont, string.c_str(), colors[color])) == NULL ||
         (texture = SDL_CreateTextureFromSurface(render, text)) == NULL)
         throw std::runtime_error(SDL_GetError());

@@ -17,9 +17,6 @@
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
 
-//TODO
-//  -   Mettre les gamecomponents directement dans le snake
-//  -   Mettre les constantes en std::string pour les sprites et tout et tout
 class Snake : public AGame
 {
 public:

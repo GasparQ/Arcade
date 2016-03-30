@@ -25,3 +25,8 @@ std::string const &AnimationComponent::getFileName() const
 {
   return (file);
 }
+
+void AnimationComponent::setFileName(const std::string &string)
+{
+    file = string;
+}

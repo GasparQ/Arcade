@@ -14,21 +14,24 @@
 # include <iostream>
 # include "AComponent.hpp"
 
-class   AnimationComponent : public AComponent
+class AnimationComponent : public AComponent
 {
 public:
-  AnimationComponent(int x, int y, enum ComponentColor color,
-		     std::string const &file);
-  virtual ~AnimationComponent();
+    AnimationComponent(int x, int y, enum ComponentColor color,
+                       std::string const &file);
+
+    virtual ~AnimationComponent();
 
 private:
-  const std::string file;
+    std::string file;
 
-  /*
-  **	GETTER
-  */
+    /*
+    **	GETTER
+    */
 public:
-  std::string const &getFileName() const;
+    std::string const &getFileName() const;
+
+    void setFileName(std::string const &);
 };
 
 

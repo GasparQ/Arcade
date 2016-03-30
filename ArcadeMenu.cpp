@@ -7,7 +7,8 @@
 #include "Commons/include/ArcadeSystem.hpp"
 
 ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
-    arcade1(arcade1)
+    arcade1(arcade1),
+    anim(1, 1, AComponent::COLOR_WHITE, "")
 {
     mode = frames.end();
     frameIdx = 0;
@@ -94,13 +95,14 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
     std::stack<AComponent *>    components;
     std::map<int, ArcadeMenu::menuEvents>::iterator   it;
 
-    updateTexts();
     if ((it = sysEvents.find(key)) != sysEvents.end())
         (this->*(it->second))();
-    components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GRAPHIC]));
-    components.push(new DualTextComponent(*menuComponents[ArcadeMenu::GAME]));
-    components.push(new UIComponent(*menuComponents[ArcadeMenu::PLAY]));
-    components.push(new AnimationComponent(1, 1, AComponent::ComponentColor::COLOR_WHITE, getNextFrame()));
+    updateTexts();
+    components.push(&*menuComponents[ArcadeMenu::GRAPHIC]);
+    components.push(&*menuComponents[ArcadeMenu::GAME]);
+    components.push(&*menuComponents[ArcadeMenu::PLAY]);
+    anim.setFileName(getNextFrame());
+    components.push(&anim);
     return components;
 }
 
@@ -109,10 +111,7 @@ void ArcadeMenu::nextAction()
     const arcade::eventSystem eventSystem = (*currComponent).getAction2();
 
     if (eventSystem != NULL)
-    {
         (arcade1.*eventSystem)();
-        updateTexts();
-    }
 }
 
 void ArcadeMenu::prevAction()
@@ -120,10 +119,7 @@ void ArcadeMenu::prevAction()
     const arcade::eventSystem eventSystem = (*currComponent).getAction1();
 
     if (eventSystem != NULL)
-    {
         (arcade1.*eventSystem)();
-        updateTexts();
-    }
 }
 
 void ArcadeMenu::goDown()

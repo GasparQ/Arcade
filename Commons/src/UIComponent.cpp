@@ -37,8 +37,6 @@ std::string const &UIComponent::getText() const
   return (this->text);
 }
 
-//TODO
-//  -   tell others to implement
 void UIComponent::setText(const std::string &string)
 {
     text = string;

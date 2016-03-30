@@ -72,8 +72,6 @@ Vector2<double> const &GameComponent::getDim() const
     return dim;
 }
 
-//TODO
-//  -   tell others to implement
 void GameComponent::setSpriteText(const std::string &string)
 {
     spriteText = string;

@@ -14,12 +14,16 @@
 # include <stack>
 # include "../../Commons/include/AComponent.hpp"
 
-class	IGame
+class IGame
 {
 public:
-    virtual ~IGame() {};
+    virtual ~IGame()
+    { }
+
     virtual std::stack<AComponent *> compute(int keycode) = 0;
-  virtual void restart() = 0;
+
+    virtual void restart() = 0;
+
     virtual std::string const &getName() const = 0;
 };
 

@@ -13,6 +13,7 @@
 #include "Commons/include/AComponent.hpp"
 #include "Commons/include/ActionComponent.hpp"
 #include "Arcade.hpp"
+#include "Commons/include/AnimationComponent.hpp"
 
 /**
  * Class used for the Arcade menu management
@@ -46,6 +47,7 @@ private:
 
 private:
     arcade::Arcade                                                                      &arcade1;
+    AnimationComponent                                                                  anim;
     std::map<std::string, std::vector<std::string>>                                     frames;
     mutable size_t                                                                      frameIdx;
     std::map<std::string, std::vector<std::string>>::iterator                           mode;

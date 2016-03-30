@@ -205,13 +205,13 @@ void        arcade::Arcade::onHome()
 
 void        arcade::Arcade::onExit()
 {
+    throw std::runtime_error("ON QUITE");
     isRunning = false;
 }
 
 void        arcade::Arcade::Run()
 {
     int key;
-//    std::chrono::milliseconds chronoMenu(130);
     std::chrono::milliseconds chrono(10);
     std::map<int, arcade::eventSystem>::iterator it;
     ArcadeMenu  menu(*this);
