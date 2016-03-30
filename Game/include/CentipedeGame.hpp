@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:17:37 2016 Victor Gouet
-// Last update Wed Mar 30 13:32:15 2016 Victor Gouet
+// Last update Wed Mar 30 17:11:42 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDEGAME_HPP
@@ -13,9 +13,14 @@
 
 #include "AGame.hpp"
 #include "USSEnterprise.hpp"
+#include "Centipede.hpp"
+#include <vector>
 
 class	CentipedeGame	: public AGame
 {
+private:
+  const char		block = 'X';
+
 public:
   CentipedeGame();
   virtual ~CentipedeGame();
@@ -23,8 +28,14 @@ public:
   virtual void restart();
 
 private:
-  USSEnterprise	        spaceShip;
+  void		        initMap();
+  void			displayMap(std::stack<AComponent *> &output) const;
+  void		        onShoot(std::stack<AComponent *> &output);
 
+private:
+  USSEnterprise				spaceShip;
+  char					map[31][51];
+  std::vector<Centipede>		centipede;
 };
 
 #endif
