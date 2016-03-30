@@ -98,7 +98,7 @@ void SDLGraph::display(std::stack<AComponent *> stack)
             drawUIComponent(uiComponent);
         else if ((highScoreComponent = dynamic_cast<HighScoreComponent *>(stack.top())))
             drawHighScoreComponent(highScoreComponent);
-        delete (stack.top());
+//        delete (stack.top());
         stack.pop();
     }
     SDL_RenderPresent(render);
@@ -128,8 +128,8 @@ void SDLGraph::displaySurface(SDL_Texture *texture, Vector2<double> pos, Vector2
 
     sdlRect.x = static_cast<int>(pos.x * SDLGraph::scale);
     sdlRect.y = static_cast<int>(pos.y * SDLGraph::scale);
-    sdlRect.w = dim.x * static_cast<int>(SDLGraph::scale);
-    sdlRect.h = dim.y * static_cast<int>(SDLGraph::scale);
+    sdlRect.w = static_cast<int>(dim.x * SDLGraph::scale);
+    sdlRect.h = static_cast<int>(dim.y * SDLGraph::scale);
     if (SDL_RenderCopy(render, texture, NULL, &sdlRect) != 0)
         throw std::runtime_error(SDL_GetError());
 }
@@ -148,10 +148,10 @@ void                            SDLGraph::drawHighScoreComponent(HighScoreCompon
     SDL_Rect                    dim;
     UIComponent const * const   *components;
 
-    dim.x = component->getPos().x * static_cast<int>(SDLGraph::scale);
-    dim.y = component->getPos().y * static_cast<int>(SDLGraph::scale);
-    dim.w = HighScoreComponent::highscoreDim.x * static_cast<int>(SDLGraph::scale);
-    dim.h = HighScoreComponent::highscoreDim.y * static_cast<int>(SDLGraph::scale);
+    dim.x = static_cast<int>(component->getPos().x * SDLGraph::scale);
+    dim.y = static_cast<int>(component->getPos().y * SDLGraph::scale);
+    dim.w = static_cast<int>(HighScoreComponent::highscoreDim.x * SDLGraph::scale);
+    dim.h = static_cast<int>(HighScoreComponent::highscoreDim.y * SDLGraph::scale);
     surface = SDL_CreateRGBSurface(
             0,
             static_cast<int>(HighScoreComponent::highscoreDim.x * SDLGraph::scale),

@@ -10,9 +10,14 @@
 
 #include "../include/UIComponent.hpp"
 
-UIComponent::UIComponent(Vector2<double> const &pos, enum ComponentColor color,
-			 Vector2<double> const &dim, std::string const &text) :
-  AComponent(pos, color), dim(dim), text(text) 
+UIComponent::UIComponent(
+        Vector2<double> const &pos,
+        enum ComponentColor color,
+        Vector2<double> const &dim,
+        std::string const &text
+) : AComponent(pos, color),
+    dim(dim),
+    text(text)
 {
 
 }
@@ -30,4 +35,11 @@ Vector2<double> const &UIComponent::getDim() const
 std::string const &UIComponent::getText() const
 {
   return (this->text);
+}
+
+//TODO
+//  -   tell others to implement
+void UIComponent::setText(const std::string &string)
+{
+    text = string;
 }

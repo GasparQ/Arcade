@@ -14,6 +14,8 @@
 #include "../../../Commons/include/UIComponent.hpp"
 #include "../../../Commons/include/HighScoreComponent.hpp"
 
+//TODO
+//  -   Trucs par défauts au lieu de throw des exceptions #imagesToColorSquare #basicFont
 class   SDLGraph : public IGraph
 {
 public:
