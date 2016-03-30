@@ -5,13 +5,14 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:17:37 2016 Victor Gouet
-// Last update Tue Mar 29 14:28:19 2016 Victor Gouet
+// Last update Wed Mar 30 13:32:15 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDEGAME_HPP
 # define CENTIPEDEGAME_HPP
 
 #include "AGame.hpp"
+#include "USSEnterprise.hpp"
 
 class	CentipedeGame	: public AGame
 {
@@ -20,6 +21,10 @@ public:
   virtual ~CentipedeGame();
   virtual std::stack<AComponent *> compute(int keycode);
   virtual void restart();
+
+private:
+  USSEnterprise	        spaceShip;
+
 };
 
 #endif
