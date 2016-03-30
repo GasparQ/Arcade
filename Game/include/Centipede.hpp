@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:28 2016 Victor Gouet
-// Last update Wed Mar 30 17:01:32 2016 Victor Gouet
+// Last update Wed Mar 30 17:27:26 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDE_HPP_
@@ -48,6 +48,8 @@ private:
 public:
   void				move(char map[31][51]);
   std::vector<AComponent *>	getGameComponent() const;
+  void				add_node();
+  Centipede			splitCentipede(Vector2<double> const &pos);
 
 public:
   std::vector<Vector2<double> >	  const &getPos() const;

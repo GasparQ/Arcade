@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Wed Mar 30 17:01:10 2016 Victor Gouet
+// Last update Wed Mar 30 17:59:08 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -22,29 +22,58 @@ Centipede::Centipede(Vector2<double> const &pos) : _dir(Centipede::Direction::LE
   _map[RIGHT] = &Centipede::goRight;
   _dir = RIGHT;
   _pos.push_back(newPos);
-  _pos.push_back(newPos + Vector2<double>(-1, 0));
+  // _pos.push_back(newPos + Vector2<double>(-1, 0));
 
-  _pos.push_back(newPos + Vector2<double>(-2, 0));
-  _pos.push_back(newPos + Vector2<double>(-3, 0));
+  // _pos.push_back(newPos + Vector2<double>(-2, 0));
+  // _pos.push_back(newPos + Vector2<double>(-3, 0));
 
-  _pos.push_back(newPos + Vector2<double>(-4, 0));
-  _pos.push_back(newPos + Vector2<double>(-5, 0));
+  // _pos.push_back(newPos + Vector2<double>(-4, 0));
+  // _pos.push_back(newPos + Vector2<double>(-5, 0));
 
-  _pos.push_back(newPos + Vector2<double>(-6, 0));
-  _pos.push_back(newPos + Vector2<double>(-7, 0));
+  // _pos.push_back(newPos + Vector2<double>(-6, 0));
+  // _pos.push_back(newPos + Vector2<double>(-7, 0));
 
-  _pos.push_back(newPos + Vector2<double>(-8, 0));
-  _pos.push_back(newPos + Vector2<double>(-9, 0));
-  _pos.push_back(newPos + Vector2<double>(-10, 0));
-  _pos.push_back(newPos + Vector2<double>(-11, 0));
-  _pos.push_back(newPos + Vector2<double>(-12, 0));
-  _pos.push_back(newPos + Vector2<double>(-13, 0));
-  _pos.push_back(newPos + Vector2<double>(-14, 0));
+  // _pos.push_back(newPos + Vector2<double>(-8, 0));
+  // _pos.push_back(newPos + Vector2<double>(-9, 0));
+  // _pos.push_back(newPos + Vector2<double>(-10, 0));
+  // _pos.push_back(newPos + Vector2<double>(-11, 0));
+  // _pos.push_back(newPos + Vector2<double>(-12, 0));
+  // _pos.push_back(newPos + Vector2<double>(-13, 0));
+  // _pos.push_back(newPos + Vector2<double>(-14, 0));
 }
 
 Centipede::~Centipede()
 {
 
+}
+
+void		Centipede::add_node()
+{
+  _pos.push_back(_pos.back() + Vector2<double>(-1, 0));
+}
+
+Centipede	Centipede::splitCentipede(Vector2<double> const &pos)
+{
+  Centipede	centiped(pos);
+  std::vector<Vector2<double> >::iterator	it;
+
+  it = _pos.begin();
+  if (this->_dir == LEFT)
+    {
+      centiped._dir = RIGHT;
+    }
+   if (this->_dir == RIGHT)
+    {
+      centiped._dir = LEFT;
+    }
+  while (it != _pos.end())
+    {
+      if (*it == pos)
+	break;
+      it = _pos.erase(it);
+      centiped.add_node();
+    }
+  return (centiped);
 }
 
 int    Centipede::goUp(char map[31][51], Vector2<double> &pos)

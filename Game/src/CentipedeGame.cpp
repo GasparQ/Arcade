@@ -5,12 +5,11 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Wed Mar 30 17:14:58 2016 Victor Gouet
+// Last update Wed Mar 30 17:56:44 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
-#include <algorithm>
 
 CentipedeGame::CentipedeGame() : AGame("Centipede")
 {
@@ -46,7 +45,7 @@ void			CentipedeGame::onShoot(std::stack<AComponent *> &output)
 	      {
 		if (*itNc == *vecShoot)
 		  {
-		    centipede.push_back(Centipede(*itNc));
+		    centipede.push_back(it->splitCentipede(*itNc));
 		    map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] = 'X';
 		    spaceShip.stopShot();
 		    return ;
@@ -104,8 +103,18 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
 
 void CentipedeGame::restart()
 {
+  Centipede	newCentipede(Vector2<double>(0, 0));
+
+  centipede.clear();
   initMap();
-  centipede.push_back(Centipede(Vector2<double>(0, 0)));
+  newCentipede.add_node();
+  newCentipede.add_node();
+  newCentipede.add_node();
+  newCentipede.add_node();
+  newCentipede.add_node();
+  newCentipede.add_node();
+  newCentipede.add_node();
+  centipede.push_back(newCentipede);
 }
 
 void			CentipedeGame::displayMap(std::stack<AComponent *> &output) const
