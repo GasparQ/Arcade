@@ -52,7 +52,15 @@ namespace arcade
     {
     public:
         InitRenderException(std::string const& msg)
-                : std::runtime_error("arcade: failed to init reder for " + msg)
+                : std::runtime_error("arcade: failed to init render for " + msg)
+        { }
+    };
+
+    class InitSoundException : public std::runtime_error
+    {
+    public:
+        InitSoundException(std::string const& msg)
+        : std::runtime_error("arcade: failed to init sound for " + msg)
         { }
     };
 

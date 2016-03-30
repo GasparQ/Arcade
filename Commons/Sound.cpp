@@ -12,11 +12,11 @@ Sound::Sound()
 {
     if (SDL_Init(SDL_INIT_AUDIO) == -1)
     {
-        throw arcade::InitRenderException("Error in SDL audio init");
+        throw arcade::InitRenderException("SDL audio");
     }
     if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, MIX_DEFAULT_CHANNELS, 4096) == -1)
     {
-        throw arcade::InitRenderException("Error in SDL audio init");
+        throw arcade::InitRenderException("SDL audio");
     }
 }
 

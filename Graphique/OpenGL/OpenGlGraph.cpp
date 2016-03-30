@@ -34,7 +34,7 @@ OpenGlGraph::OpenGlGraph(int width, int, const char *name) :
         throw arcade::InitRenderException("OpenGL - Screen");
     }
 
-    m_sound.PlaySound("Doom_backsound.wav", true);
+    m_sound.PlaySound("Sound/Doom_backsound.wav", true);
 
     // Key binds
     keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;
