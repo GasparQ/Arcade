@@ -1,9 +1,0 @@
-/var/cache/apt/archives/libfluidsynth1_1.1.6-2_amd64.deb
-/var/lib/dpkg/info/libfluidsynth1:amd64.list
-/var/lib/dpkg/info/libfluidsynth1:amd64.shlibs
-/var/lib/dpkg/info/libfluidsynth1:amd64.md5sums
-/var/lib/dpkg/info/libfluidsynth1:amd64.postinst
-/var/lib/dpkg/info/libfluidsynth1:amd64.postrm
-/usr/share/doc/libfluidsynth1
-/usr/lib/x86_64-linux-gnu/libfluidsynth.so.1
-/usr/lib/x86_64-linux-gnu/libfluidsynth.so.1.5.2

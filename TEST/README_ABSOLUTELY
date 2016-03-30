@@ -1,2 +1,0 @@
-POUR COMPILER IL FAUT FAIRE:
-     g++ test.cpp -Wl,-rpath,[PATH_TO_LIBS] -L ./ -lSDL2 -lSDL2_mixer libfluidsynth.so.1
