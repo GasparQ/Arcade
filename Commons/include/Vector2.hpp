@@ -44,6 +44,10 @@ public:
     {
         return x == vector2.x && y == vector2.y;
     }
+    bool operator!=(Vector2 const& other) const
+    {
+        return x != other.x || y != other.y;
+    }
     bool        operator>(Vector2<double> const &vector2) const
     {
         return (x > vector2.x && y > vector2.y);

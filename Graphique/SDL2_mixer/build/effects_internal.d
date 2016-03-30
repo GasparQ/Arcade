@@ -1,0 +1,19 @@
+build/effects_internal.lo: effects_internal.c SDL_mixer.h \
+ ../../Graphique/SDL2/include/SDL_stdinc.h \
+ ../../Graphique/SDL2/include/SDL_config.h \
+ ../../Graphique/SDL2/include/SDL_platform.h \
+ ../../Graphique/SDL2/include/begin_code.h \
+ ../../Graphique/SDL2/include/close_code.h \
+ ../../Graphique/SDL2/include/SDL_rwops.h \
+ ../../Graphique/SDL2/include/SDL_stdinc.h \
+ ../../Graphique/SDL2/include/SDL_error.h \
+ ../../Graphique/SDL2/include/SDL_audio.h \
+ ../../Graphique/SDL2/include/SDL_endian.h \
+ ../../Graphique/SDL2/include/SDL_mutex.h \
+ ../../Graphique/SDL2/include/SDL_thread.h \
+ ../../Graphique/SDL2/include/SDL_atomic.h \
+ ../../Graphique/SDL2/include/SDL_rwops.h \
+ ../../Graphique/SDL2/include/SDL_endian.h \
+ ../../Graphique/SDL2/include/SDL_version.h \
+ ../../Graphique/SDL2/include/begin_code.h \
+ ../../Graphique/SDL2/include/close_code.h effects_internal.h

@@ -28,7 +28,7 @@ Sound::~Sound()
 
 void Sound::PlaySound(std::string const &soundPath, bool bLoop)
 {
-    Mix_Chunk *music = Mix_LoadWAV("Doom_backsound.wav");
+    Mix_Chunk *music = Mix_LoadWAV(soundPath.c_str());
 
     if (music == NULL)
     {
