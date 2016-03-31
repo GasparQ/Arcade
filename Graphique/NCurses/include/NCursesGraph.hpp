@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Thu Mar 31 13:27:57 2016 Victor Gouet
+// Last update Thu Mar 31 15:01:18 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -54,8 +54,8 @@ public:
   {
     color = 3;
     bounce = false;
-    x = rand() % 1500;
-    y = rand() % 1500;
+    x = rand() % 1000;
+    y = rand() % 1000;
   }
 
   void		move()
@@ -75,23 +75,6 @@ public:
 	--x;
 	--y;
       }
-    if (y <= 10)
-      {
-    	color = 2;
-      }
-    else if (y <= 20)
-      {
-    	color = 3;
-      }
-    else if (y <= 30)
-      {
-    	color = 6;
-      }
-    else if (y <= 40)
-      {
-    	color = 7;
-      }
-
     if (x <= 0)
       {
 	bounce = (bounce == true ? false : true);
@@ -101,7 +84,6 @@ public:
       {
 	bounce = (bounce == true ? false : true);
       }
-
     if (x < 0 || y < 0)
       {
 	init();
@@ -112,7 +94,7 @@ public:
 class	NCursesGraph	: public IGraph
 {
 private:
-  static const	int rains_capacity = 10000;
+  static const	int rains_capacity = 20000;
 
 public:
   NCursesGraph();
@@ -141,7 +123,7 @@ private:
   void			_cacheClear();
   bool			isResizeGood() const;
   ncr::Window		*onCreateBoard();
-  ncr::Window		*onCreateUI();
+  // ncr::Window		*onCreateUI();
   void			_displayFile(int x, int y, std::string const &contenu, ncr::Window *);
 };
 

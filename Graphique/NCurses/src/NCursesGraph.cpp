@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Thu Mar 31 12:53:45 2016 Victor Gouet
+// Last update Thu Mar 31 15:00:13 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -140,17 +140,17 @@ ncr::Window		*NCursesGraph::onCreateBoard()
   return (gameWin);
 }
 
-ncr::Window		*NCursesGraph::onCreateUI()
-{
-  // if (UIWin == NULL)
-  //   {
-  //     UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
-  //     UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
-  //     UIWin->makeBorder(' ', ' ', ' ');
-  //     UIWin->attrOFF(A_REVERSE);
-  //   }
-  return (UIWin);
-}
+// ncr::Window		*NCursesGraph::onCreateUI()
+// {
+//   // if (UIWin == NULL)
+//   //   {
+//   //     UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
+//   //     UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
+//   //     UIWin->makeBorder(' ', ' ', ' ');
+//   //     UIWin->attrOFF(A_REVERSE);
+//   //   }
+//   return (UIWin);
+// }
 
 void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
 						ncr::Window *win)
