@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Sun Mar 20 12:01:22 2016 Victor Gouet
+// Last update Thu Mar 31 13:27:57 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -38,8 +38,82 @@ public:
   {}
 }		t_cache;
 
+typedef struct	s_rains
+{
+public:
+  int		color;
+  int		x;
+  int		y;
+
+private:
+  bool		bounce;
+
+public:
+
+  void		init()
+  {
+    color = 3;
+    bounce = false;
+    x = rand() % 1500;
+    y = rand() % 1500;
+  }
+
+  void		move()
+  {
+    int newX;
+    int newY;
+
+    getmaxyx(stdscr, newY, newX);
+
+    if (!bounce)
+      {
+	x--;
+	y++;
+      }
+    else
+      {
+	--x;
+	--y;
+      }
+    if (y <= 10)
+      {
+    	color = 2;
+      }
+    else if (y <= 20)
+      {
+    	color = 3;
+      }
+    else if (y <= 30)
+      {
+    	color = 6;
+      }
+    else if (y <= 40)
+      {
+    	color = 7;
+      }
+
+    if (x <= 0)
+      {
+	bounce = (bounce == true ? false : true);
+	// init();
+      }
+    if (y > newY)
+      {
+	bounce = (bounce == true ? false : true);
+      }
+
+    if (x < 0 || y < 0)
+      {
+	init();
+      }
+  }
+}		t_rains;
+
 class	NCursesGraph	: public IGraph
 {
+private:
+  static const	int rains_capacity = 10000;
+
 public:
   NCursesGraph();
   virtual ~NCursesGraph();
@@ -56,6 +130,8 @@ private:
   std::map<int, int>		keycodeMap;
   ncr::Window			*_stdscr;
   std::map<std::string, std::string>	_fileCache;
+  t_rains			rains[rains_capacity];
+  bool				first_rains;
 
 private:
   void			_displayComponent(GameComponent const *, ncr::Window *win);

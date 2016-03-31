@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Wed Mar 30 23:11:00 2016 Victor Gouet
+// Last update Thu Mar 31 12:53:45 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -75,6 +75,8 @@ NCursesGraph::NCursesGraph()
   keycodeMap[112] = ArcadeSystem::Pause;
   keycodeMap[10] = ArcadeSystem::Enter;
   keycodeMap[263] = ArcadeSystem::Backspace;
+
+  first_rains = true;
 
   int y;
   int x;
@@ -241,26 +243,61 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *// animation
 						ncr::Window *win)
 {
   size_t	i;
-  int		x;
-  int		y;
-  int		newX;
-  int		newY;
+  // int		x;
+  // int		y;
+  // int		newX;
+  // int		newY;
 
   i = 0;
-  int color = rand() % 8 + 1;
-  while (i < 1000)
+  if (first_rains == true)
     {
-      getmaxyx(win->getWin(), y, x);
-      if (y == 0 || x == 0)
-	return ;
-      win->attrON(A_REVERSE | COLOR_PAIR(color));
-      newX = rand() % x;
-      newY = rand() % y;
-      win->print(newX, newY, " ");
-      _cacheGame.push(s_cache(Vector2<double>(newX, newY), " ", win));
+      while (i < rains_capacity)
+	{
+	  rains[i].init();
+	  // rains[i].color = 3;
+	  // rains[i].x = rand() % 1000;
+	  // rains[i].y = rand() % 1000;
+	  // rains[i] = rand() % 40;
+	  ++i;
+	}
+    }
+  else
+    {
+      while (i < rains_capacity)
+      	{
+	   // rains[i].color = 3;
+	  rains[i].move();
+	  // (rains[i].x)--;
+	  // (rains[i].y)--;
+	  ++i;
+      	}
+    }
+  i = 0;
+  while (i < rains_capacity)
+    {
+      win->attrON(A_REVERSE | COLOR_PAIR(rains[i].color));
+      // newX = rand() % x;
+      // newY = rand() % y;
+      win->print(rains[i].x, rains[i].y, " ");
+      _cacheGame.push(s_cache(Vector2<double>(rains[i].x, rains[i].y), " ", win));
       win->attrOFF(A_REVERSE);
       ++i;
     }
+  first_rains = false;
+  // int color = rand() % 8 + 1;
+  // while (i < 1000)
+  //   {
+  //     getmaxyx(win->getWin(), y, x);
+  //     if (y == 0 || x == 0)
+  // 	return ;
+  //     win->attrON(A_REVERSE | COLOR_PAIR(color));
+  //     newX = rand() % x;
+  //     newY = rand() % y;
+  //     win->print(newX, newY, " ");
+  //     _cacheGame.push(s_cache(Vector2<double>(newX, newY), " ", win));
+  //     win->attrOFF(A_REVERSE);
+  //     ++i;
+  //   }
 
 
   // std::ifstream					fd;
