@@ -18,7 +18,8 @@ GameComponent::GameComponent(
         std::string const &spriteText,
         std::string const &sprite2D
 ) : AComponent(pos, color), sprite3D(sprite3D),
-    spriteText(spriteText), fileSprite2D(sprite2D)
+    spriteText(spriteText),
+    fileSprite2D(sprite2D)
 {
 }
 

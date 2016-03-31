@@ -26,6 +26,10 @@ public:
     {}
     Vector2() : x(0), y(0)
     {}
+    Vector2(Vector2<T> const &ref)
+    {
+        *this = ref;
+    }
     ~Vector2()
     {}
     Vector2     operator+(Vector2 const &vector2)
@@ -39,6 +43,12 @@ public:
     Vector2     <T>operator*(T i)
     {
         return (Vector2<T>(x * i, y * i));
+    }
+    Vector2<T>  &operator=(Vector2<T> const &ref)
+    {
+        x = ref.x;
+        y = ref.y;
+        return (*this);
     }
     bool        operator==(Vector2 const &vector2) const
     {

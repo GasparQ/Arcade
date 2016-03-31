@@ -29,6 +29,7 @@ OBJS	=	$(SRCS:.cpp=.o)
 CPPFLAGS	=	-W -Wall -Wextra -Wnon-virtual-dtor -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./
                 #-L ./ -L ../Graphique/SDL2/build/.libs/ -lSDL2 -Wl,rpath,../Graphique/SDL2_mixer -L ../Graphique/SDL2_mixer/ -lSDL2_mixer
 
+CPPFLAGS    += -g
 
 $(NAME):	$(OBJS)
 	ar rc $(NAME) $(OBJS)
