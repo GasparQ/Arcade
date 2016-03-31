@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:17:37 2016 Victor Gouet
-// Last update Thu Mar 31 12:12:21 2016 Victor Gouet
+// Last update Thu Mar 31 23:43:37 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDEGAME_HPP
@@ -15,11 +15,13 @@
 #include "USSEnterprise.hpp"
 #include "Centipede.hpp"
 #include <vector>
+#include "../../Commons/include/HighScoreComponent.hpp"
 
 class CentipedeGame : public AGame
 {
 private:
-    const char block = ' ' + 5;
+  const char block = ' ' + 5;
+  const int waveNbr = 10;
 
 public:
     CentipedeGame();
@@ -37,6 +39,8 @@ private:
 
     void onShoot(std::stack<AComponent *> &output);
 
+  void		initVariable();
+
     bool isEmptyCentipede() const;
 
 private:
@@ -44,6 +48,8 @@ private:
     USSEnterprise spaceShip;
     char map[31][51];
     int _score;
+  int	_wave;
+  HighScoreComponent          *highScoreComponent;
 
 };
 

@@ -12,7 +12,7 @@
 class HighScoreComponent : public AComponent
 {
 public:
-    HighScoreComponent(std::string const &gameName, size_t score);
+    HighScoreComponent(std::string const &gameName, int score);
     virtual ~HighScoreComponent();
     static const std::string    pseudoPlaceholder;
     static const std::string    labelHighscores;
@@ -35,7 +35,7 @@ public:
 private:
     const std::string   gameName;
     LoadHighScore       highScores;
-    size_t              score;
+    int		              score;
     UIComponent         *components[componentNb];
 };
 

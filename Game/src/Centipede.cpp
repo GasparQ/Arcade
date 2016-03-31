@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Thu Mar 31 18:59:19 2016 Victor Gouet
+// Last update Thu Mar 31 23:35:58 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -87,6 +87,23 @@ Centipede &Centipede::operator=(const Centipede &centipede)
 Centipede::~Centipede()
 {
 
+}
+
+bool		Centipede::isTouching(Vector2<double> const &vec) const
+{
+  std::list<centipedeBody>::const_iterator	it;
+
+  it = _pos.begin();
+  while (it != _pos.end())
+    {
+      if (static_cast<int>(vec.x) == static_cast<int>(it->pos.x)
+	  && static_cast<int>(vec.y) == static_cast<int>(it->pos.y))
+	{
+	  return (true);
+	}
+      ++it;
+    }
+  return (false);
 }
 
 void        Centipede::add_node()

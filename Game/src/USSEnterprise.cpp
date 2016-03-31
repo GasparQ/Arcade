@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:13:12 2016 Victor Gouet
-// Last update Thu Mar 31 12:26:14 2016 Victor Gouet
+// Last update Thu Mar 31 23:41:31 2016 Victor Gouet
 //
 
 #include <cmath>
@@ -13,7 +13,7 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 
 USSEnterprise::USSEnterprise()
-  : _pos(Vector2<double>(10, 10)), _carac(" "), _file_texture(""),
+  : _pos(Vector2<double>(20, 20)), _carac(" "), _file_texture(""),
     _shapes(GameComponent::Shapes::SPHERE_LARGE), _color(AComponent::COLOR_MAGENTA), _shoot(NULL)
 {
 }
@@ -94,6 +94,12 @@ void	USSEnterprise::move(int keycode, char map[31][51])
     default:
       break;
     }
+}
+
+void				USSEnterprise::reinitPos()
+{
+  _pos.x = 20;
+  _pos.y = 20;
 }
 
 void				USSEnterprise::stopShot()

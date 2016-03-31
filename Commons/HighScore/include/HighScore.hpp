@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Mon Mar 14 17:40:43 2016 Victor Gouet
-// Last update Mon Mar 14 23:41:23 2016 Victor Gouet
+// Last update Thu Mar 31 23:19:25 2016 Victor Gouet
 //
 
 #ifndef HIGHSCORE_HPP_
@@ -35,7 +35,7 @@ typedef struct	s_highScore
 {
 private:
   char		name[20];
-  unsigned int	score;
+  int		score;
 
   void	        setName(std::string const &newName)
   {
@@ -49,13 +49,13 @@ private:
     name[i] = '\0';
   }
 
-  void		setScore(unsigned int newScore)
+  void		setScore(int newScore)
   {
     score = newScore;
   }
 
 public:
-  unsigned int	getScore() const
+  int		getScore() const
   {
     return (this->score);
   }
@@ -65,7 +65,7 @@ public:
     return (std::string(name));
   }
 
-  s_highScore(unsigned int newScore, std::string const &newName)
+  s_highScore(int newScore, std::string const &newName)
   {
     score = 0;
     std::memset(name, 0, sizeof(name));

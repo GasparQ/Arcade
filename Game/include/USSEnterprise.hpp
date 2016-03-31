@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:38:20 2016 Victor Gouet
-// Last update Wed Mar 30 16:15:39 2016 Victor Gouet
+// Last update Thu Mar 31 23:38:49 2016 Victor Gouet
 //
 //
 
@@ -40,6 +40,7 @@ public:
   void			move(int keycode, char map[31][51]);
   Vector2<double>	*shoot();
   void		        stopShot();
+  void			reinitPos();
 
 public:
   Vector2<double> const			&getPos() const;

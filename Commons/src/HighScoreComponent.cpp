@@ -12,7 +12,7 @@ const Vector2<double>  HighScoreComponent::highscorePos(7, 5);
 
 static std::string  pseudo(HighScoreComponent::pseudoPlaceholder);
 
-HighScoreComponent::HighScoreComponent(std::string const &gameName, size_t score) :
+HighScoreComponent::HighScoreComponent(std::string const &gameName, int score) :
     AComponent(HighScoreComponent::highscorePos, AComponent::ComponentColor::COLOR_WHITE),
     gameName(gameName),
     highScores(gameName + ".arcade"),

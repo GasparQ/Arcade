@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:28 2016 Victor Gouet
-// Last update Thu Mar 31 18:42:30 2016 Victor Gouet
+// Last update Thu Mar 31 23:34:28 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDE_HPP_
@@ -82,6 +82,8 @@ public:
     std::vector<AComponent *> getGameComponent() const;
 
     void add_node();
+
+  bool	        isTouching(Vector2<double> const &vec) const;
 
     void splitCentipede(Vector2<double> const &pos);
 
