@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Thu Mar 31 17:31:46 2016 Victor Gouet
+// Last update Thu Mar 31 18:59:19 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -23,7 +23,7 @@ Centipede::Centipede(Vector2<double> const &pos) : _dir(Centipede::Direction::LE
     _map[LEFT] = &Centipede::goLeft;
     _map[RIGHT] = &Centipede::goRight;
     _dir = RIGHT;
-    this->pos = pos;
+    this->initPos = pos;
     // _pos.push_back(newPos);
     // _pos.push_back(newPos + Vector2<double>(-1, 0));
 
@@ -54,7 +54,7 @@ void        Centipede::add_node()
 {
     if (_pos.empty())
     {
-        _pos.push_back(this->pos);
+        _pos.push_back(this->initPos);
     }
     else
     {
@@ -184,28 +184,31 @@ void                        Centipede::move(char map[31][51])
     //   }
 
     // (this->*_map[_dir])(map, _pos.front());
-    it = _pos.begin();
-    while (it != _pos.end())
-    {
-      if (it != _pos.begin())
-        (this->*_map[_dir])(map, *it);
-      ++it;
-    }
+    // it = _pos.begin();
+    // while (it != _pos.end())
+    // {
+    //   if (it != _pos.begin())
+    //     (this->*_map[_dir])(map, *it);
+    //   ++it;
+    // }
 
-//    it = std::prev(_pos.end());
-//    while (it != _pos.begin())
-//    {
-//
-////        if (it != _pos.end())
-////        {
-////            std::list<Vector2<double> >::iterator it2 = std::prev(it);
-////            // std::cout << *it2 << std::endl;
-////            it->x = it2->x;
-////            it->y = it2->y;
-////        }
-//        --it;
-//    }
-    (this->*_map[_dir])(map, _pos.front());
+   it = std::prev(_pos.end());
+
+   while (it != _pos.begin())
+   {
+
+       if (it != _pos.end())
+       {
+           std::list<Vector2<double> >::iterator it2 = std::prev(it);
+
+           // std::cout << *it2 << std::endl;
+
+           it->x = it2->x;
+           it->y = it2->y;
+       }
+       --it;
+   }
+   (this->*_map[_dir])(map, _pos.front());
 }
 
 std::vector<AComponent *>    Centipede::getGameComponent() const
