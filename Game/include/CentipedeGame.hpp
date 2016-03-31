@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:17:37 2016 Victor Gouet
-// Last update Wed Mar 30 17:11:42 2016 Victor Gouet
+// Last update Wed Mar 30 21:45:50 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDEGAME_HPP
@@ -31,6 +31,7 @@ private:
   void		        initMap();
   void			displayMap(std::stack<AComponent *> &output) const;
   void		        onShoot(std::stack<AComponent *> &output);
+  bool		        isEmptyCentipede() const;
 
 private:
   USSEnterprise				spaceShip;

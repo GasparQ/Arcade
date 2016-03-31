@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Sun Mar 13 17:06:59 2016 Quentin Gasparotto
-## Last update Fri Mar 18 14:06:31 2016 Victor Gouet
+## Last update Wed Mar 30 21:01:05 2016 Fernand Veyrier
 ##
 
 NAME	=	lib_arcade_commons.a
@@ -21,11 +21,14 @@ SRCS	=	src/AComponent.cpp		\
 		src/HighScoreComponent.cpp	\
 		src/LoadHighScore.cpp \
 		src/DualTextComponent.cpp \
-		Sound.cpp
+		Sound.cpp \
+		AudioComponent.cpp
 
 OBJS	=	$(SRCS:.cpp=.o)
 
-CPPFLAGS	=	-W -Wall -Wextra -Wnon-virtual-dtor -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./ -L../Graphique/SDL2/build/.libs/ -lSDL2 -L../Graphique/SDL2_mixer/ -lSDL_mixer
+CPPFLAGS	=	-W -Wall -Wextra -Wnon-virtual-dtor -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./
+                #-L ./ -L ../Graphique/SDL2/build/.libs/ -lSDL2 -Wl,rpath,../Graphique/SDL2_mixer -L ../Graphique/SDL2_mixer/ -lSDL2_mixer
+
 
 $(NAME):	$(OBJS)
 	ar rc $(NAME) $(OBJS)

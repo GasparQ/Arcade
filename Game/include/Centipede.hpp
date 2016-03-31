@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:28 2016 Victor Gouet
-// Last update Wed Mar 30 17:27:26 2016 Victor Gouet
+// Last update Wed Mar 30 21:32:17 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDE_HPP_
@@ -43,6 +43,7 @@ private:
   Direction			_dir;
   Direction			_dir_prev;
   std::vector<Vector2<double> >	_pos;
+  Vector2<double>		pos;
   std::map<Direction, mptr>	_map;
 
 public:

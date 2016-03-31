@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Wed Mar 30 17:56:44 2016 Victor Gouet
+// Last update Wed Mar 30 22:13:48 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
@@ -13,7 +13,7 @@
 
 CentipedeGame::CentipedeGame() : AGame("Centipede")
 {
-  // initMap();
+  initMap();
   restart();
 }
 
@@ -34,8 +34,6 @@ void			CentipedeGame::onShoot(std::stack<AComponent *> &output)
     {
       *vecShoot = *vecShoot + Vector2<double>(0, -1);
 
-      // TOUCH
-      // SHOOT
         it = centipede.begin();	
 	while (it != centipede.end())
 	  {
@@ -43,8 +41,19 @@ void			CentipedeGame::onShoot(std::stack<AComponent *> &output)
 	    std::vector<Vector2<double> >::iterator		itNc = itNewVec.begin();
 	    while (itNc != itNewVec.end())
 	      {
+		// std::cout << *itNc << std::endl;
+		// if (itNc->y >= 31 || itNc->x < 0 || itNc->x >= 51)
+		//   {
+		//     // LE CENTIPEDE TOUCHE LE FOND
+		    
+		//     it = centipede.erase(it);
+		//     break;
+		//   }
 		if (*itNc == *vecShoot)
 		  {
+
+		    // TOUCHER PAR LE SHOOT
+
 		    centipede.push_back(it->splitCentipede(*itNc));
 		    map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] = 'X';
 		    spaceShip.stopShot();
@@ -52,7 +61,8 @@ void			CentipedeGame::onShoot(std::stack<AComponent *> &output)
 		  }
 		++itNc;
 	      }
-	    ++it;
+	    if (it != centipede.end())
+	      ++it;
 	  }
 
       if (vecShoot->y < 0 ||
@@ -69,6 +79,22 @@ void			CentipedeGame::onShoot(std::stack<AComponent *> &output)
     }
 }
 
+bool					CentipedeGame::isEmptyCentipede() const
+{
+  std::vector<Centipede>::const_iterator	it;
+
+  it = centipede.begin();
+  while (it != centipede.end())
+    {
+      if (!it->getPos().empty())
+	{
+	  return (false);
+	}
+      ++it;
+    }
+  return (true);
+}
+
 std::stack<AComponent *> CentipedeGame::compute(int keycode)
 {
   std::stack<AComponent *>		output;
@@ -82,18 +108,34 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
     {
       spaceShip.shoot();
     }
+  if (isEmptyCentipede())
+    {
+      restart();
+      return (output);
+    }
   it = centipede.begin();
   while (it != centipede.end())
     {
       it->move(map);
       vec = it->getGameComponent();
       itVec = vec.begin();
+      std::vector<Vector2<double> >			nc = it->getPos();
+      std::vector<Vector2<double> >::iterator		itNc = nc.begin();
+
       while (itVec != vec.end())
 	{
+	  if (itNc->y >= 31 || itNc->x < 0 || itNc->x >= 51)
+	    {
+	      // LE CENTIPEDE TOUCHE LE FOND
+	      
+	      it = centipede.erase(it);
+	      break;
+	    }
 	  output.push(*itVec);
 	  ++itVec;
 	}
-      ++it;
+      if (it != centipede.end())
+	++it;
     }
   spaceShip.move(keycode, map);
   displayMap(output);
@@ -106,7 +148,6 @@ void CentipedeGame::restart()
   Centipede	newCentipede(Vector2<double>(0, 0));
 
   centipede.clear();
-  initMap();
   newCentipede.add_node();
   newCentipede.add_node();
   newCentipede.add_node();
@@ -149,6 +190,7 @@ void		        CentipedeGame::initMap()
       while (x < 51)
 	{
 	  map[y][x] = (rand() % 30 == 0 ? 'X' : ' ');
+	  // map[y][x] = ' ';
 	  ++x;
 	}
       ++y;

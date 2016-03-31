@@ -11,6 +11,7 @@
 #include "../../Commons/include/DualTextComponent.hpp"
 #include "../../Commons/include/AnimationComponent.hpp"
 #include "../SDL2_mixer/SDL_mixer.h"
+#include "../../Commons/AudioComponent.hpp"
 
 // Ctor:
 // Initializes Projection mode (3D by default) and Lighting
@@ -33,8 +34,6 @@ OpenGlGraph::OpenGlGraph(int width, int, const char *name) :
     {
         throw arcade::InitRenderException("OpenGL - Screen");
     }
-
-    m_sound.PlaySound("Doom_backsound.wav", true);
 
     // Key binds
     keyCodeAssociation[SDL_SCANCODE_LEFT] = ArcadeSystem::ArrowLeft;
@@ -201,6 +200,7 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
     UIComponent *uic;
     HighScoreComponent *hsc;
     AnimationComponent *ac;
+    AudioComponent *auc;
     bool bIsBackrgoundDrawn = false;
 
     Set3DMode();
@@ -240,6 +240,10 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
                     DrawCube(gc->getPos(), gc->getColor(), 0.25);
                     break;
             }
+        }
+        else if ((auc = dynamic_cast<AudioComponent*>(stack.top())) != nullptr)
+        {
+            m_sound.PlaySound(auc->getSoundPath(), auc->getLoop());
         }
         else if ((uic = dynamic_cast<UIComponent *>(stack.top())) != nullptr)
         {
