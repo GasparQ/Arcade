@@ -20,34 +20,38 @@
 class Snake : public AGame
 {
 public:
-    static const std::string                bric2d;
-    static const std::string                bricTxt;
-    static const GameComponent::Shapes      bric3d;
-    static const AComponent::ComponentColor bricColor;
-    static const std::string                apple2d;
-    static const std::string                appleTxt;
-    static const GameComponent::Shapes      apple3d;
-    static const AComponent::ComponentColor appleColor;
-    static const std::string                snkHd2d;
-    static const std::string                snkHdTxt;
-    static const GameComponent::Shapes      snkHd3d;
-    static const AComponent::ComponentColor snkHdColor;
-    static const std::string                snake2d;
-    static const std::string                snakeTxt;
-    static const GameComponent::Shapes      snake3d;
-    static const AComponent::ComponentColor snakeColor;
+    static const std::string                    bric2d;
+    static const std::string                    bricTxt;
+    static const GameComponent::Shapes          bric3d;
+    static const AComponent::ComponentColor     bricColor;
+    static const std::string                    apple2d;
+    static const std::string                    appleTxt;
+    static const GameComponent::Shapes          apple3d;
+    static const AComponent::ComponentColor     appleColor;
+    static const std::string                    snkHd2d;
+    static const std::string                    snkHdTxt;
+    static const GameComponent::Shapes          snkHd3d;
+    static const AComponent::ComponentColor     snkHdColor;
+    static const std::string                    snake2d;
+    static const std::string                    snakeTxt;
+    static const GameComponent::Shapes          snake3d;
+    static const AComponent::ComponentColor     snakeColor;
 
 public:
     Snake();
+
     virtual ~Snake();
 
 public:
-  virtual std::stack<AComponent *> compute(int keycode);
-  virtual void	restart();
+    virtual std::stack<AComponent *> compute(int keycode);
 
-  typedef void (Snake::*keyfunc)();
+    virtual void restart();
 
-    static const long  snakeSpeed;
+    void playARound();
+
+    typedef void (Snake::*keyfunc)();
+
+    static const long snakeSpeed;
 
 private:
     typedef enum
@@ -59,37 +63,50 @@ private:
     } Orientation;
 
 private:
-    std::list<GameComponent *>      body;
-    GameComponent                   *apple;
-    size_t                          score;
-    Orientation                     snakeOri;
-    Vector2<double>                 direction;
-    double                          counter;
-    UIComponent                     *uiScore;
-    HighScoreComponent              *highScoreComponent;
-    std::map<int, keyfunc>          keycodex;
-    std::list<GameComponent *>      plate;
-    int                             saved_keycode;
-    std::stack<AComponent *>        basicStack;
+    std::list<GameComponent *>  body;
+    GameComponent               *apple;
+    size_t                      score;
+    Orientation                 snakeOri;
+    Vector2<double>             direction;
+    double                      counter;
+    UIComponent                 *uiScore;
+    HighScoreComponent          *highScoreComponent;
+    int                         saved_keycode;
+    std::map<int, keyfunc>      keycodex;
+    std::list<GameComponent *>  plate;
+    std::stack<AComponent *>    basicStack;
 
 public:
-    void                                goUp();
-    void                                goDown();
-    void                                goLeft();
-    void                                goRight();
-    void                                goAhead();
-    GameComponent const                 *getApple() const;
-    std::list<GameComponent *> const    &getSnake() const;
-    double                              getMoveUnit(double unitPerSecond) const;
+    void goUp();
+
+    void goDown();
+
+    void goLeft();
+
+    void goRight();
+
+    void goAhead();
+
+    GameComponent const *getApple() const;
+
+    std::list<GameComponent *> const &getSnake() const;
+
+    double getMoveUnit(double unitPerSecond) const;
 
 private:
-    void                        generateAppelPos();
-    void                        removeBody();
-    void                        addBody(Vector2<double> newPos);
-    void                        move();
-    void                        die();
-    void                        initGame();
-    bool                        goOnWall(Vector2<double> const &vector) const;
+    void generateAppelPos();
+
+    void removeBody();
+
+    void addBody(Vector2<double> newPos);
+
+    void move();
+
+    void die();
+
+    void initGame();
+
+    bool goOnWall(Vector2<double> const &vector) const;
 };
 
 #endif //C_SNAKE_HPP

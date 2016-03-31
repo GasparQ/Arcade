@@ -10,6 +10,7 @@
 #include <thread>
 #include <iostream>
 #include <algorithm>
+#include <fstream>
 #include "Arcade.hpp"
 #include "Exception/LoadException.hpp"
 #include "Commons/include/ArcadeSystem.hpp"
@@ -205,7 +206,6 @@ void        arcade::Arcade::onHome()
 
 void        arcade::Arcade::onExit()
 {
-    throw std::runtime_error("ON QUITE");
     isRunning = false;
 }
 
@@ -215,6 +215,7 @@ void        arcade::Arcade::Run()
     std::chrono::milliseconds chrono(10);
     std::map<int, arcade::eventSystem>::iterator it;
     ArcadeMenu  menu(*this);
+    std::ofstream   file("debug.log");
 
     menu.setFrames("text", "./Animation/NcursesAnimation", 4);
     menu.setMode("text");
@@ -225,6 +226,8 @@ void        arcade::Arcade::Run()
         try
         {
             key = lib->eventManagment();
+            if (file.is_open())
+                file << getCurrentLibName() << ": " << key << std::endl;
         }
         catch (std::exception exception)
         {
@@ -244,10 +247,13 @@ void        arcade::Arcade::Run()
         lib->display(components);
         std::this_thread::sleep_for(chrono);
     }
+    file.close();
 }
 
-const std::string &arcade::Arcade::getCurrentLibName() const
+std::string arcade::Arcade::getCurrentLibName() const
 {
+    if (currLibName == libsName.end())
+        return ("No such lib");
     return *currLibName;
 }
 
