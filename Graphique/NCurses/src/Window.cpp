@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:02 2016 Victor Gouet
-// Last update Wed Mar 30 23:29:52 2016 Victor Gouet
+// Last update Thu Mar 31 10:45:55 2016 Victor Gouet
 //
 
 #include "../include/Window.hpp"
@@ -35,6 +35,7 @@ bool		ncr::Window::isAbleToDoSomething(int x, int y) const
   int		actualY;
   int		actualX;
 
+  return (true);
   getmaxyx(win, actualY, actualX);
   if (actualX < x || actualY < y)
     return (false);
