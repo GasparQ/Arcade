@@ -121,6 +121,7 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         std::list<Vector2<double> > nc = it->getPos();
         std::list<Vector2<double> >::iterator itNc = nc.begin();
 
+        std::cout << "\e[32mNew it\e[0m" << std::endl;
         while (itVec != vec.end())
         {
             if (itNc->y > 29 || itNc->x < 0 || itNc->x >= 51)
@@ -130,12 +131,14 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
                 it = centipede.erase(it);
                 break;
             }
+            std::cout << ">> " << (*itVec)->getPos() << std::endl;
             output.push(*itVec);
             ++itVec;
         }
         if (it != centipede.end())
             ++it;
     }
+    std::cout << std::endl;
     spaceShip.move(keycode, map);
     displayMap(output);
     output.push(spaceShip.getGameComponent());
