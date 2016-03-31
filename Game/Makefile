@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Thu Mar 10 16:28:26 2016 Quentin Gasparotto
-## Last update Thu Mar 31 11:22:47 2016 Victor Gouet
+## Last update Thu Mar 31 22:23:32 2016 Fernand Veyrier
 ##
 
 CC	=	g++
@@ -43,6 +43,9 @@ CPPFLAGS	=	-W -Wall -Wextra -fPIC -shared --std=c++11 \
 			-Wl,--no-undefined -g
 
 LDFLAGS		=	-shared -Wl,--no-undefined -L ../Commons/ -l_arcade_commons
+
+## Necessary if using SDL_mixer
+#LDFLAGS	+=	-Wl,-rpath,./Graphique/SDL2_mixer -L ../Graphique/SDL2_mixer -L ../SDL2 -lSDL2 -lSDL2_mixer ../Graphique/SDL2_mixer/libfluidsynth.so.1
 
 all:	$(SNAKE) $(PACMAN) $(CENTIPEDE)
 

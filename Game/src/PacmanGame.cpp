@@ -10,6 +10,7 @@
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../include/Protocol.hpp"
 #include "../../Commons/AudioComponent.hpp"
+#include "../../Commons/Sound.hpp"
 
 //TODO:
 // centrer les menus pour opengl
@@ -340,6 +341,7 @@ void PacmanGame::MoveEntities()
         // If it's a special pacgum
         if ((*it).bIsSpecial())
         {
+            //Sound::Instance()->StopSound("Sound/Pacman_Siren_Sound_Effect_1_.wav");
             output.push(new AudioComponent("Sound/Pacman_Siren_Sound_Effect_1_.wav", false));
 
             // Pacman becomes immortal
