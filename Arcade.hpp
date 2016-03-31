@@ -74,7 +74,7 @@ namespace arcade
 
         void onExit();
 
-        std::string const   &getCurrentLibName() const;
+        std::string         getCurrentLibName() const;
         std::string         getCurrentGameName() const;
 
         void                setStatus(Status);

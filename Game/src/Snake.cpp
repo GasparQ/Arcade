@@ -39,7 +39,8 @@ Snake::Snake() :
         direction(0, 0),
         counter(0),
         uiScore(NULL),
-        highScoreComponent(NULL)
+        highScoreComponent(NULL),
+        saved_keycode(-1)
 {
     keycodex[ArcadeSystem::ArrowDown] = &Snake::goDown;
     keycodex[ArcadeSystem::ArrowLeft] = &Snake::goLeft;
@@ -89,7 +90,6 @@ Snake::~Snake()
 std::stack<AComponent *>                    Snake::compute(int keycode)
 {
     std::stack<AComponent *>                output;
-    std::map<int, keyfunc>::iterator        it;
 
     if (state == AGame::GameState::DEAD)
     {
@@ -115,10 +115,7 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
             saved_keycode = keycode;
         if (counter >= 1)
         {
-            if ((it = keycodex.find(saved_keycode)) != keycodex.end())
-                (this->*it->second)();
-            saved_keycode = -1;
-            goAhead();
+            playARound();
             counter = 0;
         }
         uiScore->setText("score : " + std::to_string(score));
@@ -130,6 +127,16 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
         }
     }
     return output;
+}
+
+void                                    Snake::playARound()
+{
+    std::map<int, keyfunc>::iterator    it;
+
+    if ((it = keycodex.find(saved_keycode)) != keycodex.end())
+        (this->*it->second)();
+    saved_keycode = -1;
+    goAhead();
 }
 
 void    Snake::restart()
@@ -414,12 +421,7 @@ extern "C" void Play(void)
                 snake.goAhead();
                 break;
             case arcade::CommandType::PLAY:
-                components = snake.compute(-1);
-                while (!components.empty())
-                {
-                    delete (components.top());
-                    components.pop();
-                }
+                snake.playARound();
                 break;
             default:
                 break;
