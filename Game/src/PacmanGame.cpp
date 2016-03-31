@@ -157,7 +157,7 @@ void PacmanGame::InitGame(bool bIsRestart, bool bIsNextLevel)
         }
         m_gums.clear();
         StorePacgums();
-        output.push(new AudioComponent("Sound/PacmanIntro.wav", false));
+        output.push(new AudioComponent("Sound/PacmanIntro.wav", false, true));
     }
 }
 
@@ -318,7 +318,7 @@ void PacmanGame::MoveEntities()
             {
                 itGhost->SetState(Ghost::DEAD);
                 m_score += 100;
-                output.push(new AudioComponent("Sound/Pacman_Eating_Ghost_Sound_Effect.wav", false));
+                output.push(new AudioComponent("Sound/Pacman_Eating_Ghost_Sound_Effect.wav", false, true));
             }
             /*if (m_pacman.GetState() == Pacman::MORTAL)
             {
@@ -342,7 +342,7 @@ void PacmanGame::MoveEntities()
         if ((*it).bIsSpecial())
         {
             //Sound::Instance()->StopSound("Sound/Pacman_Siren_Sound_Effect_1_.wav");
-            output.push(new AudioComponent("Sound/Pacman_Siren_Sound_Effect_1_.wav", false));
+            output.push(new AudioComponent("Sound/Pacman_Siren_Sound_Effect_1_.wav", false, true));
 
             // Pacman becomes immortal
             m_pacman.SetState(Pacman::PacmanState::IMMORTAL);
@@ -375,7 +375,7 @@ void PacmanGame::MoveEntities()
         }
         m_score += 10;
         m_gums.remove(*it);
-        output.push(new AudioComponent("Sound/PacmanEat.wav", false));
+        output.push(new AudioComponent("Sound/PacmanEat.wav", false, false));
     }
     // If we ate the gums we restart the level
     if (m_gums.empty())
