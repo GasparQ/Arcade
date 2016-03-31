@@ -23,6 +23,7 @@ public:
     ~SDLGraph();
     static const size_t scale = 25;
     static const std::string fontName;
+    static const std::string defaultFont;
 
 public:
     virtual int eventManagment();

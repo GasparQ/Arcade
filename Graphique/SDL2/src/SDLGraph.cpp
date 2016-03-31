@@ -7,14 +7,16 @@
 #include "../../../Commons/include/ArcadeSystem.hpp"
 #include "../../../Commons/include/DualTextComponent.hpp"
 
-const std::string SDLGraph::fontName = "./fonts/Minecraft.ttf";
+const std::string SDLGraph::fontName = "./fonts/arcade_barbarian.ttf"; /*arcade_fluid.ttf arcade_font.ttf arcade_boxes.ttf ka1.ttf Minecraft.ttf*/
+const std::string SDLGraph::defaultFont = "/usr/share/fonts/truetype/DroidSans-Bold.ttf";
 
 SDLGraph::SDLGraph()
 {
     if (SDL_Init(0) != 0 ||
         (win = SDL_CreateWindow("Arcade", 0, 0, ArcadeSystem::winWidth * SDLGraph::scale, ArcadeSystem::winHeight * SDLGraph::scale, SDL_WINDOW_SHOWN)) == NULL ||
         (render = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED)) == NULL ||
-        TTF_Init() != 0 || (uifont = TTF_OpenFont(SDLGraph::fontName.c_str(), 24)) == NULL)
+        TTF_Init() != 0 || ((uifont = TTF_OpenFont(SDLGraph::fontName.c_str(), 24)) == NULL &&
+        (uifont = TTF_OpenFont(SDLGraph::defaultFont.c_str(), 24)) == NULL))
         throw std::runtime_error(SDL_GetError());
     addColor(AComponent::ComponentColor::COLOR_RED, 174, 10, 15);
     addColor(AComponent::ComponentColor::COLOR_WHITE, 241, 241, 241);
@@ -135,8 +137,34 @@ void SDLGraph::displaySurface(SDL_Texture *texture, Vector2<double> pos, Vector2
 
 void SDLGraph::drawGameComponent(GameComponent const *component) throw(std::runtime_error)
 {
-    SDL_Texture *texture = loadSprite(component->getSprite2D());
+    SDL_Texture *texture;
 
+    try
+    {
+        texture = loadSprite(component->getSprite2D());
+    }
+    catch (std::runtime_error exception)
+    {
+        SDL_Surface *surface;
+        SDL_Rect    rect;
+        Uint32      color = 0;
+        SDL_Color   compColor = colors[component->getColor()];
+
+        color |= compColor.a << 24;
+        color |= compColor.r << 16;
+        color |= compColor.g << 8;
+        color |= compColor.b;
+        rect.x = 0;
+        rect.y = 0;
+        rect.w = SDLGraph::scale;
+        rect.h = SDLGraph::scale;
+        if ((surface = SDL_CreateRGBSurface(0, SDLGraph::scale, SDLGraph::scale, 32, 0, 0, 0, 0)) == NULL ||
+            (SDL_FillRect(surface, &rect, color)) < 0 ||
+            (texture = SDL_CreateTextureFromSurface(render, surface)) == NULL)
+            throw std::runtime_error(SDL_GetError());
+        SDL_FreeSurface(surface);
+        spriteCache[component->getSprite2D()] = texture;
+    }
     displaySurface(texture, component->getPos());
 }
 
