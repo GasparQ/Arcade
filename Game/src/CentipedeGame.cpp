@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Thu Mar 31 16:11:26 2016 Victor Gouet
+// Last update Thu Mar 31 18:34:40 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
@@ -52,6 +52,7 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
                 {
 
                     // TOUCHER PAR LE SHOOT
+
                     _score += 10;
                     centipede.push_back(it->splitCentipede(*itNc));
                     map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] = block;
@@ -121,7 +122,7 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         std::list<Vector2<double> > nc = it->getPos();
         std::list<Vector2<double> >::iterator itNc = nc.begin();
 
-        std::cout << "\e[32mNew it\e[0m" << std::endl;
+        // std::cout << "\e[32mNew it\e[0m" << std::endl;
         while (itVec != vec.end())
         {
             if (itNc->y > 29 || itNc->x < 0 || itNc->x >= 51)
@@ -131,14 +132,14 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
                 it = centipede.erase(it);
                 break;
             }
-            std::cout << ">> " << (*itVec)->getPos() << std::endl;
+            // std::cout << ">> " << (*itVec)->getPos() << std::endl;
             output.push(*itVec);
             ++itVec;
         }
         if (it != centipede.end())
             ++it;
     }
-    std::cout << std::endl;
+    // std::cout << std::endl;
     spaceShip.move(keycode, map);
     displayMap(output);
     output.push(spaceShip.getGameComponent());

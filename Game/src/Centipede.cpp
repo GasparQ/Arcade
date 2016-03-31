@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Thu Mar 31 16:01:11 2016 Victor Gouet
+// Last update Thu Mar 31 17:31:46 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -99,7 +99,8 @@ int    Centipede::goUp(char map[31][51], Vector2<double> &pos)
     {
         return (1);
     }
-    if (newPos >= Vector2<double>(0, 0) && map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+    if (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
+	map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     {
         _dir = _dir_prev;
     }
@@ -118,7 +119,8 @@ int    Centipede::goDown(char map[31][51], Vector2<double> &pos)
         _pos.clear();
         return (1);
     }
-    if (map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+    if (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
+	map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     {
         _dir = _dir_prev;
     }
@@ -129,7 +131,7 @@ int    Centipede::goDown(char map[31][51], Vector2<double> &pos)
 
 int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
 {
-    Vector2<double> newPos = pos + Vector2<double>(-0.001, 0);
+    Vector2<double> newPos = pos + Vector2<double>(-0.3, 0);
 
     if (newPos.x < 0)
     {
@@ -137,7 +139,8 @@ int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
         _dir = DOWN;
         return (1);
     }
-    if (newPos >= Vector2<double>(0, 0) && map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+    if (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
+	map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     {
         _dir_prev = RIGHT;
         _dir = DOWN;
@@ -148,7 +151,7 @@ int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
 
 int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
 {
-    Vector2<double> newPos = pos + Vector2<double>(0.001, 0);
+    Vector2<double> newPos = pos + Vector2<double>(0.3, 0);
 
     if (newPos.x > 50)
     {
@@ -156,7 +159,8 @@ int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
         _dir_prev = LEFT;
         return (1);
     }
-    if (map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+    if (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
+	map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     {
         _dir = DOWN;
         _dir_prev = LEFT;
@@ -170,7 +174,8 @@ void                        Centipede::move(char map[31][51])
     std::list<Vector2<double> >::iterator it;
 
     if (_pos.empty())
-        return;
+        return ;
+
     // it = _pos.begin();
     // while (it != _pos.end())
     //   {
@@ -179,11 +184,14 @@ void                        Centipede::move(char map[31][51])
     //   }
 
     // (this->*_map[_dir])(map, _pos.front());
-
-    for (it = std::next(_pos.begin()); it != _pos.end(); ++it)
+    it = _pos.begin();
+    while (it != _pos.end())
     {
+      if (it != _pos.begin())
         (this->*_map[_dir])(map, *it);
+      ++it;
     }
+
 //    it = std::prev(_pos.end());
 //    while (it != _pos.begin())
 //    {
