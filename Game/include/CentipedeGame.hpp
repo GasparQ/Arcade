@@ -16,28 +16,34 @@
 #include "Centipede.hpp"
 #include <vector>
 
-class	CentipedeGame	: public AGame
+class CentipedeGame : public AGame
 {
 private:
-  const char		block = ' ' + 5;
+    const char block = ' ' + 5;
 
 public:
-  CentipedeGame();
-  virtual ~CentipedeGame();
-  virtual std::stack<AComponent *> compute(int keycode);
-  virtual void restart();
+    CentipedeGame();
+
+    virtual ~CentipedeGame();
+
+    virtual std::stack<AComponent *> compute(int keycode);
+
+    virtual void restart();
 
 private:
-  void		        initMap();
-  void			displayMap(std::stack<AComponent *> &output) const;
-  void		        onShoot(std::stack<AComponent *> &output);
-  bool		        isEmptyCentipede() const;
+    void initMap();
+
+    void displayMap(std::stack<AComponent *> &output) const;
+
+    void onShoot(std::stack<AComponent *> &output);
+
+    bool isEmptyCentipede() const;
 
 private:
-  USSEnterprise				spaceShip;
-  char					map[31][51];
-  std::vector<Centipede>		centipede;
-  int					_score;
+    Centipede centipede;
+    USSEnterprise spaceShip;
+    char map[31][51];
+    int _score;
 
 };
 

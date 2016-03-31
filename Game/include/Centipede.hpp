@@ -17,44 +17,78 @@
 # include <list>
 # include <vector>
 
-class	Centipede
+class Centipede
 {
 public:
-  Centipede(Vector2<double> const &);
-  ~Centipede();
+    Centipede(Vector2<double> const &);
+    Centipede(Centipede const &);
 
-  typedef int (Centipede::*mptr)(char map[31][51], Vector2<double> &pos);
+    ~Centipede();
+
+    Centipede   &operator=(Centipede const &);
+
+    typedef int (Centipede::*mptr)(char map[31][51], Vector2<double> &pos);
 
 public:
-  enum	Direction
+    enum Direction
     {
-      UP,
-      DOWN,
-      LEFT,
-      RIGHT
+        UP,
+        DOWN,
+        LEFT,
+        RIGHT
+    };
+    static const double     centipedeSpeed;
+
+private:
+    int goUp(char map[31][51], Vector2<double> &pos);
+
+    int goDown(char map[31][51], Vector2<double> &pos);
+
+    int goLeft(char map[31][51], Vector2<double> &pos);
+
+    int goRight(char map[31][51], Vector2<double> &pos);
+    class centipedeBody
+    {
+    public:
+        centipedeBody(Vector2<double> const &pos, Direction direction) :
+                pos(pos),
+                direction(direction)
+        {
+        }
+        centipedeBody(centipedeBody const &ref) :
+                pos(ref.pos),
+                direction(ref.direction)
+        {
+        }
+        bool operator==(centipedeBody const &ref)
+        {
+            return (pos == ref.pos && direction == ref.direction);
+        }
+        Vector2<double> pos;
+        Direction       direction;
     };
 
 private:
-  int				goUp(char map[31][51], Vector2<double> &pos);
-  int				goDown(char map[31][51], Vector2<double> &pos);
-  int				goLeft(char map[31][51], Vector2<double> &pos);
-  int				goRight(char map[31][51], Vector2<double> &pos);
-
-private:
-  Direction			_dir;
-  Direction			_dir_prev;
-  std::list<Vector2<double> >	_pos;
-  Vector2<double>		initPos;
-  std::map<Direction, mptr>	_map;
+    Direction _dir;
+    Direction _dir_prev;
+    std::map<Direction, Vector2<double> >   _directions;
+    std::list<centipedeBody > _pos;
+    Vector2<double> initPos;
+    std::map<Direction, mptr> _map;
 
 public:
-  void				move(char map[31][51]);
-  std::vector<AComponent *>	getGameComponent() const;
-  void				add_node();
-  Centipede			splitCentipede(Vector2<double> const &pos);
+    int move(char map[31][51]);
+
+    std::vector<AComponent *> getGameComponent() const;
+
+    void add_node();
+
+    void splitCentipede(Vector2<double> const &pos);
+
+    void clean();
 
 public:
-  std::list<Vector2<double> >	  const &getPos() const;
+    std::list<Vector2<double> > getPos() const;
 };
 
 #endif
