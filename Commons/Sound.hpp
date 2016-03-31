@@ -6,6 +6,7 @@
 #define CPP_ARCADE_SOUND_HPP
 
 #include <map>
+#include "../Graphique/SDL2_mixer/SDL_mixer.h"
 
 class Sound
 {
@@ -19,15 +20,7 @@ public:
     void PlaySound(std::string const& soundPath, bool bLoop);
 
 private:
-    class SoundObj
-    {
-    public:
-        SoundObj(std::string const& path, bool bLoop);
-        ~SoundObj();
-    };
-
-private:
-    std::map<std::string, SoundObj> m_sounds;
+    std::map<std::string, Mix_Chunk*> m_sounds;
 };
 
 

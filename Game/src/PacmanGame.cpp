@@ -9,9 +9,9 @@
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../include/Protocol.hpp"
+#include "../../Commons/AudioComponent.hpp"
 
 //TODO:
-// ghost no route
 // centrer les menus pour opengl
 PacmanGame::PacmanGame() :
         AGame("Pacman")
@@ -29,6 +29,7 @@ PacmanGame::PacmanGame() :
     keycodes[ArcadeSystem::ArrowUp] = &PacmanCharacter::goUp;
 
     InitGame();
+
     //Chrono<Pacman, void (Pacman::*)()> *c = new Chrono<Pacman, void (Pacman::*)()>(10, m_pacman, &Pacman::ResetPosition);
     //c->SetEvent(m_pacman, &Pacman::ResetPosition);
     //c->SetEvent(this, void (PacmanGame::*InitGame)());
@@ -44,9 +45,13 @@ PacmanGame::~PacmanGame()
 
 std::stack<AComponent *> PacmanGame::compute(int keycode)
 {
-    std::stack<AComponent *> output;
     std::map<int, keyfunc>::iterator it;
     HighScoreComponent *highScoreComponent;
+
+    if (output.size() != 1)
+    {
+        ClearOutput();
+    }
 
     if (state == AGame::ALIVE)
     {
@@ -132,6 +137,8 @@ void PacmanGame::restart()
 ///
 void PacmanGame::InitGame(bool bIsRestart, bool bIsNextLevel)
 {
+    ClearOutput();
+
     for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
     {
         it->ResetPosition();
@@ -149,6 +156,7 @@ void PacmanGame::InitGame(bool bIsRestart, bool bIsNextLevel)
         }
         m_gums.clear();
         StorePacgums();
+        output.push(new AudioComponent("Sound/PacmanIntro.wav", false));
     }
 }
 
@@ -157,9 +165,9 @@ extern "C" IGame *loadGame()
     return (new PacmanGame());
 }
 
-void                                    updateMap(struct arcade::GetMap *map, PacmanGame const &pacman)
+void updateMap(struct arcade::GetMap *map, PacmanGame const &pacman)
 {
-    std::vector<std::string>            pacMap = pacman.getMap();
+    std::vector<std::string> pacMap = pacman.getMap();
 
     //Reinit la map
     for (size_t i = 0, len = ArcadeSystem::winHeight * ArcadeSystem::winWidth; i < len; ++i)
@@ -186,13 +194,13 @@ void                                    updateMap(struct arcade::GetMap *map, Pa
     }
 }
 
-void    whereAmI(PacmanGame const &pacman)
+void whereAmI(PacmanGame const &pacman)
 {
     struct arcade::WhereAmI *pos;
-    Vector2<double>         pacpos = pacman.getPacman().getPosition();
-    size_t                  posSize = sizeof(*pos) + sizeof(arcade::Position);
+    Vector2<double> pacpos = pacman.getPacman().getPosition();
+    size_t posSize = sizeof(*pos) + sizeof(arcade::Position);
 
-    if ((pos = (struct arcade::WhereAmI *)(malloc(posSize))) == NULL)
+    if ((pos = (struct arcade::WhereAmI *) (malloc(posSize))) == NULL)
         throw std::bad_alloc();
     pos->type = arcade::CommandType::WHERE_AM_I;
     pos->lenght = 1;
@@ -204,13 +212,13 @@ void    whereAmI(PacmanGame const &pacman)
 
 extern "C" void Play(void)
 {
-    char                        c;
-    PacmanGame                  pacman;
-    struct arcade::GetMap       *map;
-    size_t                      mapSize = sizeof(*map) + (ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t));
-    std::stack<AComponent *>    components;
+    char c;
+    PacmanGame pacman;
+    struct arcade::GetMap *map;
+    size_t mapSize = sizeof(*map) + (ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t));
+    std::stack<AComponent *> components;
 
-    if ((map = (struct arcade::GetMap *)(malloc(mapSize))) == NULL)
+    if ((map = (struct arcade::GetMap *) (malloc(mapSize))) == NULL)
         throw std::bad_alloc();
     map->type = arcade::CommandType::GET_MAP;
     map->width = ArcadeSystem::winWidth;
@@ -280,7 +288,7 @@ void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState 
         {
             if ((*itGhost).GetState() == Ghost::HUNTING)
             {
-                newMap[(int)(*itGhost).getPosition().y][(int)(*itGhost).getPosition().x] = 'X';
+                newMap[(int) (*itGhost).getPosition().y][(int) (*itGhost).getPosition().x] = 'X';
             }
             ++itGhost;
         }
@@ -309,6 +317,7 @@ void PacmanGame::MoveEntities()
             {
                 itGhost->SetState(Ghost::DEAD);
                 m_score += 100;
+                output.push(new AudioComponent("Sound/Pacman_Eating_Ghost_Sound_Effect.wav", false));
             }
             /*if (m_pacman.GetState() == Pacman::MORTAL)
             {
@@ -331,6 +340,8 @@ void PacmanGame::MoveEntities()
         // If it's a special pacgum
         if ((*it).bIsSpecial())
         {
+            output.push(new AudioComponent("Sound/Pacman_Siren_Sound_Effect_1_.wav", false));
+
             // Pacman becomes immortal
             m_pacman.SetState(Pacman::PacmanState::IMMORTAL);
             // And all the ghosts are scared
@@ -345,8 +356,8 @@ void PacmanGame::MoveEntities()
             }
 
             auto chronoDup = std::find_if(std::begin(m_chronos), std::end(m_chronos),
-                                   [&](std::unique_ptr<IChrono>& c)
-                                   { return *c.get() == std::string("Pacgum"); });
+                                          [&](std::unique_ptr<IChrono> &c)
+                                          { return *c.get() == std::string("Pacgum"); });
 
             // If the powerup is already active, we reset it
             if (chronoDup != m_chronos.end())
@@ -362,6 +373,7 @@ void PacmanGame::MoveEntities()
         }
         m_score += 10;
         m_gums.remove(*it);
+        output.push(new AudioComponent("Sound/PacmanEat.wav", false));
     }
     // If we ate the gums we restart the level
     if (m_gums.empty())
@@ -445,7 +457,7 @@ void PacmanGame::PacmanPowerUpEnd()
 
 std::vector<std::string>    PacmanGame::getMap(void) const
 {
-    std::vector<std::string>    map;
+    std::vector<std::string> map;
 
     for (size_t i = 0, len = ArcadeSystem::winHeight; i < len; ++i)
     {
@@ -457,4 +469,14 @@ std::vector<std::string>    PacmanGame::getMap(void) const
 const Pacman &PacmanGame::getPacman(void) const
 {
     return m_pacman;
+}
+
+void PacmanGame::ClearOutput()
+{
+    // Clear the component list. THIS IS NOT OPTIMAL
+    while (!output.empty())
+    {
+        delete output.top();
+        output.pop();
+    }
 }

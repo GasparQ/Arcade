@@ -149,7 +149,7 @@ private:
         AComponent::ComponentColor m_color;
         Vector2<double> m_pos;
         double m_pos_z;
-        double m_vel = -0.2;
+        double m_vel = -0.3;
     };
 
     std::vector<SphereMenu> m_spheres;
