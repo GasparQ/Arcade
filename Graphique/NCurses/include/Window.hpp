@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:12 2016 Victor Gouet
-// Last update Tue Mar 15 15:54:26 2016 Victor Gouet
+// Last update Wed Mar 30 23:16:39 2016 Victor Gouet
 //
 
 #ifndef WINDOWNCURSE_HPP_
@@ -39,6 +39,9 @@ namespace ncr
     int		setAttrOFF(int at);
     int		write(int value, int flags);
     int		write(int x, int y, int value, int flags);
+
+  private:
+    bool	        isAbleToDoSomething(int x, int y) const;
 
     /*
     ** GETTER

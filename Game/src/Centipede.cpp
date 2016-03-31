@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Wed Mar 30 22:21:25 2016 Victor Gouet
+// Last update Wed Mar 30 22:49:53 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -126,7 +126,7 @@ int    Centipede::goDown(char map[31][51], Vector2<double> &pos)
 
 int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
 {
-  Vector2<double>	newPos = pos + Vector2<double>(-1, 0);
+  Vector2<double>	newPos = pos + Vector2<double>(-0.3, 0);
 
   if (newPos.x < 0)
     {
@@ -145,7 +145,7 @@ int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
 
 int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
 {
-  Vector2<double>	newPos = pos + Vector2<double>(1, 0);
+  Vector2<double>	newPos = pos + Vector2<double>(0.3, 0);
 
   if (newPos.x > 50)
     {
@@ -168,14 +168,23 @@ void						Centipede::move(char map[31][51])
 
   if (_pos.empty())
     return ;
+  // it = _pos.begin();
+  // while (it != _pos.end())
+  //   {
+  //     (this->*_map[_dir])(map, *it);
+  //     ++it;
+  //   }
+
+  // (this->*_map[_dir])(map, _pos.front());
   it = _pos.end();
   while (it != _pos.begin())
     {
       if (it != _pos.end())
-	{
-	  std::vector<Vector2<double> >::iterator	it2 = it - 1;
-	  *it = Vector2<double>(it2->x, it2->y);
-	}
+  	{
+  	  // std::vector<Vector2<double> >::iterator	it2 = it - 1;
+  	  // *it = Vector2<double>(it2->x, it2->y);
+	  *it = *(it - 1);
+  	}
       --it;
     }
   (this->*_map[_dir])(map, _pos.front());

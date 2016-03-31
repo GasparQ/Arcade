@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Wed Mar  9 22:40:02 2016 Victor Gouet
-// Last update Tue Mar 15 15:54:17 2016 Victor Gouet
+// Last update Wed Mar 30 23:29:52 2016 Victor Gouet
 //
 
 #include "../include/Window.hpp"
@@ -30,16 +30,31 @@ ncr::Window::~Window()
     }
 }
 
+bool		ncr::Window::isAbleToDoSomething(int x, int y) const
+{
+  int		actualY;
+  int		actualX;
+
+  getmaxyx(win, actualY, actualX);
+  if (actualX < x || actualY < y)
+    return (false);
+  return (true);
+}
+
 /*
 ** USES METHODS
 */
 int		ncr::Window::clear()
 {
+  if (!isAbleToDoSomething(x + this->width, y + this->height))
+    return (-1);
   return (wclear(win));
 }
 
 int		ncr::Window::moveCursor(int x, int y)
 {
+  if (!isAbleToDoSomething(x, y))
+    return (-1);
   return (wmove(win, y, x));
 }
 
@@ -48,6 +63,8 @@ int		ncr::Window::print(const char *format, ...)
   int		value;
   va_list	args;
 
+  if (!isAbleToDoSomething(x, y))
+    return (-1);
   va_start(args, format);
   value = vwprintw(win, format, args);
   va_end(args);
@@ -59,6 +76,8 @@ int		ncr::Window::print(int x, int y, const char *format, ...)
   int		value;
   va_list	args;
 
+  if (!isAbleToDoSomething(x, y))
+    return (-1);
    if (moveCursor(x, y) == ERR)
     return (ERR);
   va_start(args, format);
@@ -74,31 +93,45 @@ int		ncr::Window::write(int value, int flags)
 
 int		ncr::Window::write(int x, int y, int value, int flags)
 {
+  if (!isAbleToDoSomething(x, y))
+    return (-1);
   return (mvwaddch(this->win, y, x, value | flags));
 }
 
 int		ncr::Window::setAttrON(int at)
 {
+  if (!isAbleToDoSomething(x + this->width, y + this->height))
+    return (-1);
   return (wattr_on(win, at, NULL));
 }
 
 int		ncr::Window::setAttrOFF(int at)
 {
+  if (!isAbleToDoSomething(x + this->width, y + this->height))
+    return (-1);
   return (wattr_off(win, at, NULL));
 }
 
 int		ncr::Window::attrON(int at)
 {
+  if (!isAbleToDoSomething(x + this->width, y + this->height))
+    return (-1);
   return (wattron(win, at));
 }
 
 int		ncr::Window::attrOFF(int at)
 {
+  if (!isAbleToDoSomething(x + this->width, y + this->height))
+    return (-1);
   return (wattroff(win, at));
 }
 
 int		ncr::Window::refresh()
 {
+  if (!win)
+    return (-1);
+  if (!isAbleToDoSomething(x + this->width, y + this->height))
+    return (-1);
   return (wrefresh(win));
 }
 

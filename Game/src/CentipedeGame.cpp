@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Wed Mar 30 22:13:48 2016 Victor Gouet
+// Last update Wed Mar 30 22:25:41 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
@@ -41,14 +41,6 @@ void			CentipedeGame::onShoot(std::stack<AComponent *> &output)
 	    std::vector<Vector2<double> >::iterator		itNc = itNewVec.begin();
 	    while (itNc != itNewVec.end())
 	      {
-		// std::cout << *itNc << std::endl;
-		// if (itNc->y >= 31 || itNc->x < 0 || itNc->x >= 51)
-		//   {
-		//     // LE CENTIPEDE TOUCHE LE FOND
-		    
-		//     it = centipede.erase(it);
-		//     break;
-		//   }
 		if (*itNc == *vecShoot)
 		  {
 
