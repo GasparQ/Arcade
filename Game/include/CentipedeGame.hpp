@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:17:37 2016 Victor Gouet
-// Last update Wed Mar 30 21:45:50 2016 Victor Gouet
+// Last update Thu Mar 31 12:12:21 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDEGAME_HPP
@@ -19,7 +19,7 @@
 class	CentipedeGame	: public AGame
 {
 private:
-  const char		block = 'X';
+  const char		block = ' ' + 5;
 
 public:
   CentipedeGame();
@@ -37,6 +37,8 @@ private:
   USSEnterprise				spaceShip;
   char					map[31][51];
   std::vector<Centipede>		centipede;
+  int					_score;
+
 };
 
 #endif

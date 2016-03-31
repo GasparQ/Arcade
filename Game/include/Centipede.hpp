@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:28 2016 Victor Gouet
-// Last update Wed Mar 30 21:32:17 2016 Victor Gouet
+// Last update Thu Mar 31 10:51:01 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDE_HPP_
@@ -14,6 +14,7 @@
 # include "../../Commons/include/Vector2.hpp"
 # include "../../Commons/include/GameComponent.hpp"
 # include <map>
+# include <list>
 # include <vector>
 
 class	Centipede
@@ -42,7 +43,7 @@ private:
 private:
   Direction			_dir;
   Direction			_dir_prev;
-  std::vector<Vector2<double> >	_pos;
+  std::list<Vector2<double> >	_pos;
   Vector2<double>		pos;
   std::map<Direction, mptr>	_map;
 
@@ -53,7 +54,7 @@ public:
   Centipede			splitCentipede(Vector2<double> const &pos);
 
 public:
-  std::vector<Vector2<double> >	  const &getPos() const;
+  std::list<Vector2<double> >	  const &getPos() const;
 };
 
 #endif

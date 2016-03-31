@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Thu Mar 10 16:28:26 2016 Quentin Gasparotto
-## Last update Tue Mar 29 16:08:17 2016 Victor Gouet
+## Last update Thu Mar 31 11:22:47 2016 Victor Gouet
 ##
 
 CC	=	g++
@@ -40,7 +40,7 @@ PACMANOBJS	=	$(PACMANSRCS:.cpp=.o)
 CPPFLAGS	=	-W -Wall -Wextra -fPIC -shared --std=c++11 \
 			-I ./include/ \
 			-I ../../Commons/include \
-			-Wl,--no-undefined
+			-Wl,--no-undefined -g
 
 LDFLAGS		=	-shared -Wl,--no-undefined -L ../Commons/ -l_arcade_commons
 

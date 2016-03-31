@@ -5,9 +5,10 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:13:12 2016 Victor Gouet
-// Last update Wed Mar 30 17:13:51 2016 Victor Gouet
+// Last update Thu Mar 31 12:26:14 2016 Victor Gouet
 //
 
+#include <cmath>
 #include "../include/USSEnterprise.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
 
@@ -25,8 +26,10 @@ void	USSEnterprise::goUp(char map[31][51])
 {
   Vector2<double>	newPos = _pos + Vector2<double>(0, -1);
 
-  if (newPos.y < 0 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] == 'X')
+  if (newPos.y < 0 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     return ;
+  // _pos.x = newPos.x;
+  // _pos.y = newPos.y;
   _pos = newPos;
 }
 
@@ -34,27 +37,33 @@ void	USSEnterprise::goDown(char map[31][51])
 {
   Vector2<double>	newPos = _pos + Vector2<double>(0, 1);
 
-  if (newPos.y > 29 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] == 'X')
+  if (newPos.y > 29 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     return ;
   _pos = newPos;
+  // _pos.x = newPos.x;
+  // _pos.y = newPos.y;
 }
 
 void	USSEnterprise::goLeft(char map[31][51])
 {
   Vector2<double>	newPos = _pos + Vector2<double>(-1, 0);
 
-  if (newPos.x < 0 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] == 'X')
+  if (newPos.x < 0 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     return ;
   _pos = newPos;
+  // _pos.x = newPos.x;
+  // _pos.y = newPos.y;
 }
 
 void	USSEnterprise::goRight(char map[31][51])
 {
   Vector2<double>	newPos = _pos + Vector2<double>(1, 0);
 
-   if (newPos.x > 50 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] == 'X')
+   if (newPos.x > 50 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     return ;
-  _pos = newPos;
+   _pos = newPos;
+   // _pos.x = newPos.x;
+   // _pos.y = newPos.y;
 }
 
 Vector2<double>		*USSEnterprise::shoot()
