@@ -37,7 +37,10 @@ Sound::~Sound()
     Mix_CloseAudio();
 }
 
-void Sound::PlaySound(std::string const &soundPath, bool bLoop)
+/// Plays a sound located at path.
+/// If bLoop, loops forever.
+/// If bOverlap, is the sound is already playing kills the song and restarts it
+void Sound::PlaySound(std::string const &soundPath, bool bLoop, bool bOverlap)
 {
     int channel = 0;
     Mix_Chunk *music = Mix_LoadWAV(soundPath.c_str());
@@ -46,14 +49,16 @@ void Sound::PlaySound(std::string const &soundPath, bool bLoop)
     {
         std::cerr << "Sound not found : " << soundPath << std::endl;
     }
-    /*else if (m_sounds.find(soundPath) != m_sounds.end())
-    {
-        std::cout << "Already playing" << std::endl;
-    }*/
     else
     {
         if (m_sounds.find(soundPath) == m_sounds.end())
         {
+            channel = Mix_PlayChannel(-1, music, (bLoop) ? -1 : 0);
+            m_sounds[soundPath] = channel;
+        }
+        else if (bOverlap)
+        {
+            StopSound(soundPath);
             channel = Mix_PlayChannel(-1, music, (bLoop) ? -1 : 0);
             m_sounds[soundPath] = channel;
         }

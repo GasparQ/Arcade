@@ -243,7 +243,7 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
         }
         else if ((auc = dynamic_cast<AudioComponent*>(stack.top())) != nullptr)
         {
-            m_sound.PlaySound(auc->getSoundPath(), auc->getLoop());
+            m_sound.PlaySound(auc->getSoundPath(), auc->getLoop(), auc->getOverlap());
         }
         else if ((uic = dynamic_cast<UIComponent *>(stack.top())) != nullptr)
         {

@@ -19,7 +19,7 @@ public:
 public:
     /// Plays a song located at soundPath.
     /// @param: bLoop -> should the song loop ?
-    void PlaySound(std::string const &soundPath, bool bLoop);
+    void PlaySound(std::string const &soundPath, bool bLoop, bool bOverlap);
 
     void StopSound(std::string const&soundPath);
 
