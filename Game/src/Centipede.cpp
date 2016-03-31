@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Thu Mar 31 12:13:31 2016 Victor Gouet
+// Last update Thu Mar 31 16:01:11 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -129,7 +129,7 @@ int    Centipede::goDown(char map[31][51], Vector2<double> &pos)
 
 int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
 {
-    Vector2<double> newPos = pos + Vector2<double>(-1, 0);
+    Vector2<double> newPos = pos + Vector2<double>(-0.5, 0);
 
     if (newPos.x < 0)
     {
@@ -148,7 +148,7 @@ int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
 
 int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
 {
-    Vector2<double> newPos = pos + Vector2<double>(1, 0);
+    Vector2<double> newPos = pos + Vector2<double>(0.5, 0);
 
     if (newPos.x > 50)
     {
@@ -167,48 +167,31 @@ int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
 
 void                        Centipede::move(char map[31][51])
 {
-    std::list<Vector2<double> >::iterator it;
+  std::list<Vector2<double> >::iterator it;
 
-    if (_pos.empty())
-        return;
-    // it = _pos.begin();
-    // while (it != _pos.end())
-    //   {
-    //     (this->*_map[_dir])(map, *it);
-    //     ++it;
-    //   }
-
-    // (this->*_map[_dir])(map, _pos.front());
-    it = _pos.end();
-    while (it != _pos.begin())
+  if (_pos.empty())
+    return;
+  // it = _pos.begin();
+  // while (it != _pos.end())
+  //   {
+  //     (this->*_map[_dir])(map, *it);
+  //     ++it;
+  //   }
+  
+  // (this->*_map[_dir])(map, _pos.front());
+  it = _pos.end();
+  while (it != _pos.begin())
     {
-        if (it != _pos.end())
+      if (it != _pos.end())
         {
-            std::list<Vector2<double> >::iterator it2 = std::prev(it);
-            // std::cout << *it2 << std::endl;
-            it->x = round(it2->x);
-            it->y = it2->y;
+	  std::list<Vector2<double> >::iterator it2 = std::prev(it);
+	  // std::cout << *it2 << std::endl;
+	  it->x = round(it2->x);
+	  it->y = it2->y;
         }
-        --it;
+      --it;
     }
-
-    // if (_pos.empty())
-    // return ;
-
-    // Vector2<double>	backPos = _pos.back();
-    // _pos.pop_back();
-
-    // if (_pos.empty())
-    //   return ;
-
-    // _pos.push_front(Vector2<double>(0, 0));
-
-    // if (_pos.empty())
-    //   _pos.push_front(backPos);
-    // else
-    //   _pos.push_front(_pos.front());
-
-    (this->*_map[_dir])(map, _pos.front());
+  (this->*_map[_dir])(map, _pos.front());
 }
 
 std::vector<AComponent *>    Centipede::getGameComponent() const

@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Thu Mar 31 12:20:56 2016 Victor Gouet
+// Last update Thu Mar 31 16:11:26 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
@@ -123,7 +123,7 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
 
         while (itVec != vec.end())
         {
-            if (itNc->y >= 31 || itNc->x < 0 || itNc->x >= 51)
+            if (itNc->y > 29 || itNc->x < 0 || itNc->x >= 51)
             {
                 // LE CENTIPEDE TOUCHE LE FOND
                 _score -= 30;
