@@ -6,6 +6,7 @@
 #define C_AGAME_HPP
 
 #include "IGame.hpp"
+#include "../../Commons/include/ArcadeSystem.hpp"
 
 class AGame : public IGame
 {
@@ -17,9 +18,11 @@ public:
         DEAD
     } GameState;
 
-    AGame(std::string const &name) : name(name)
+    AGame(std::string const &name) :
+            state(ALIVE),
+            name(name),
+            size(ArcadeSystem::winWidth, ArcadeSystem::winHeight)
     {
-        state = ALIVE;
     }
     virtual ~AGame()
     {
@@ -28,10 +31,19 @@ public:
     {
         return name;
     }
+    virtual Vector2<double> const &getSize() const
+    {
+        return size;
+    }
+    virtual std::stack<AComponent *> getInfos() const
+    {
+        return (std::stack<AComponent *>());
+    }
 
 protected:
     GameState           state;
     const std::string   name;
+    Vector2<double>     size;
 };
 
 #endif //C_AGAME_HPP

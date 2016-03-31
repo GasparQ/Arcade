@@ -11,12 +11,31 @@
 #include "../include/Centipede.hpp"
 #include <iterator>
 #include <cmath>
+#include <algorithm>
 
-Centipede::Centipede(Vector2<double> const &pos) : _dir(Centipede::Direction::LEFT),
-                                                   _dir_prev(Centipede::Direction::RIGHT)
+//BE CAREFULL WHEN CHANGIN IT
+//DON'T FORGET TO CHANGE THE ROUND OF POSITIONS IN "int move(char [][]);"
+const double        Centipede::centipedeSpeed = 0.2;
+
+Centipede::Centipede(Vector2<double> const &pos) :
+        _dir(Centipede::Direction::LEFT),
+        _dir_prev(Centipede::Direction::RIGHT),
+        _directions({
+                            {RIGHT, Vector2<double>(1, 0)},
+                            {LEFT, Vector2<double>(-1, 0)},
+                            {UP, Vector2<double>(0, -1)},
+                            {DOWN, Vector2<double>(0, 1)}
+                    })
 // _pos(pos)
 {
     Vector2<double> newPos = pos;
+
+    /*
+     * [UP] => Vector2(0, 1)
+     * [DOWN] => Vector2(0, -1)
+     * [LEFT] => Vector2(-1, 0)
+     * [RIGHT] => Vector2(1, 0)
+     */
 
     _map[UP] = &Centipede::goUp;
     _map[DOWN] = &Centipede::goDown;
@@ -45,6 +64,26 @@ Centipede::Centipede(Vector2<double> const &pos) : _dir(Centipede::Direction::LE
     // _pos.push_back(newPos + Vector2<double>(-14, 0));
 }
 
+Centipede::Centipede(const Centipede &centipede) :
+        _dir(centipede._dir),
+        _dir_prev(centipede._dir_prev),
+        _directions(centipede._directions),
+        _pos(centipede._pos),
+        initPos(centipede.initPos),
+        _map(centipede._map)
+{
+}
+
+Centipede &Centipede::operator=(const Centipede &centipede)
+{
+    _dir = centipede._dir;
+    _dir_prev = centipede._dir_prev;
+    _pos = centipede._pos;
+    initPos = centipede.initPos;
+    _map = centipede._map;
+    return *this;
+}
+
 Centipede::~Centipede()
 {
 
@@ -54,41 +93,47 @@ void        Centipede::add_node()
 {
     if (_pos.empty())
     {
-        _pos.push_back(this->initPos);
+        _pos.push_back(centipedeBody(this->initPos, RIGHT));
     }
     else
     {
-        _pos.push_back(_pos.back() + Vector2<double>(-1, 0));
+        _pos.push_back(centipedeBody(_pos.back().pos + Vector2<double>(-1, 0), RIGHT));
     }
 }
 
-Centipede    Centipede::splitCentipede(Vector2<double> const &pos)
+void    Centipede::splitCentipede(Vector2<double> const &pos)
 {
-    Centipede centiped(pos);
-    std::list<Vector2<double> >::iterator it;
-    int size;
+//    Centipede centiped(pos);
+//    int size;
 
-    it = _pos.begin();
-    if (this->_dir == LEFT)
+    for (std::list<centipedeBody >::iterator it = _pos.begin(); it != _pos.end(); ++it)
     {
-        centiped._dir = RIGHT;
-    }
-    if (this->_dir == RIGHT)
-    {
-        centiped._dir = LEFT;
-    }
-    size = static_cast<int>(_pos.size() / 2);
-    while (it != _pos.end())
-    {
-        Vector2<double> vec = *it;
-
-        it = _pos.erase(it);
-        if (size <= 0)
+        if (static_cast<int>(it->pos.x) == static_cast<int>(pos.x) &&
+            static_cast<int>(it->pos.y) == static_cast<int>(pos.y))
+        {
+            _pos.erase(it);
             break;
-        --size;
-        centiped.add_node();
+        }
     }
-    return (centiped);
+//    it = _pos.begin();
+//    if (this->_dir == LEFT)
+//    {
+//        centiped._dir = RIGHT;
+//    }
+//    if (this->_dir == RIGHT)
+//    {
+//        centiped._dir = LEFT;
+//    }
+//    size = static_cast<int>(_pos.size() / 2);
+//    while (it != _pos.end())
+//    {
+//        it = _pos.erase(it);
+//        if (size <= 0)
+//            break;
+//        --size;
+//        centiped.add_node();
+//    }
+//    return (centiped);
 }
 
 int    Centipede::goUp(char map[31][51], Vector2<double> &pos)
@@ -100,7 +145,7 @@ int    Centipede::goUp(char map[31][51], Vector2<double> &pos)
         return (1);
     }
     if (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
-	map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+        map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     {
         _dir = _dir_prev;
     }
@@ -120,7 +165,7 @@ int    Centipede::goDown(char map[31][51], Vector2<double> &pos)
         return (1);
     }
     if (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
-	map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+        map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     {
         _dir = _dir_prev;
     }
@@ -140,7 +185,7 @@ int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
         return (1);
     }
     if (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
-	map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+        map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     {
         _dir_prev = RIGHT;
         _dir = DOWN;
@@ -160,7 +205,7 @@ int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
         return (1);
     }
     if (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
-	map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+        map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     {
         _dir = DOWN;
         _dir_prev = LEFT;
@@ -169,65 +214,66 @@ int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
     return (0);
 }
 
-void                        Centipede::move(char map[31][51])
+int                        Centipede::move(char map[31][51])
 {
-    std::list<Vector2<double> >::iterator it;
+    std::list<centipedeBody >::iterator it;
+    int scoreToRemove = 0;
 
     if (_pos.empty())
-        return ;
+        return 0;
+    for (it = _pos.begin(); it != _pos.end(); ++it)
+    {
+        Vector2<double> newPos = it->pos + _directions[it->direction] * Centipede::centipedeSpeed;
 
-    // it = _pos.begin();
-    // while (it != _pos.end())
-    //   {
-    //     (this->*_map[_dir])(map, *it);
-    //     ++it;
-    //   }
+        if ((newPos.x < 0 && it->pos.x >= 0) ||
+            (newPos.x >= 50 && it->pos.x < 50) ||
+            (newPos >= Vector2<double>(0, 0) && map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' '))
+        {
+            newPos = it->pos + _directions[DOWN];
+            it->direction = (it->direction == LEFT ? RIGHT : LEFT);
+        }
+        it->pos = newPos;
+        it->pos.x = round(it->pos.x * 10.0) / 10.0;
+        it->pos.y = round(it->pos.y * 10.0) / 10.0;
+        if (it->pos.y > 30)
+        {
+            centipedeBody save = *it;
 
-    // (this->*_map[_dir])(map, _pos.front());
-    // it = _pos.begin();
-    // while (it != _pos.end())
-    // {
-    //   if (it != _pos.begin())
-    //     (this->*_map[_dir])(map, *it);
-    //   ++it;
-    // }
-
-   it = std::prev(_pos.end());
-
-   while (it != _pos.begin())
-   {
-
-       if (it != _pos.end())
-       {
-           std::list<Vector2<double> >::iterator it2 = std::prev(it);
-
-           // std::cout << *it2 << std::endl;
-
-           it->x = it2->x;
-           it->y = it2->y;
-       }
-       --it;
-   }
-   (this->*_map[_dir])(map, _pos.front());
+            scoreToRemove += 30;
+            _pos.erase(it);
+            it = std::find<std::list<centipedeBody>::iterator, centipedeBody>(_pos.begin(), _pos.end(), save);
+        }
+    }
+    return scoreToRemove;
 }
 
 std::vector<AComponent *>    Centipede::getGameComponent() const
 {
     std::vector<AComponent *> vec;
-    std::list<Vector2<double> >::const_iterator it;
+    std::list<centipedeBody>::const_iterator it;
 
     it = _pos.begin();
     while (it != _pos.end())
     {
-        vec.push_back(new GameComponent(*it, AComponent::ComponentColor::COLOR_YELLOW,
+        vec.push_back(new GameComponent(it->pos, AComponent::ComponentColor::COLOR_YELLOW,
                                         GameComponent::Shapes::CUBE_SMALL, " ", "FILE"));
         ++it;
     }
     return (vec);
 }
 
-std::list<Vector2<double> > const &Centipede::getPos() const
+std::list<Vector2<double> > Centipede::getPos() const
 {
-    return (_pos);
+    std::list<Vector2<double> > newList;
+
+    for (std::list<centipedeBody>::const_iterator it = _pos.begin(), end = _pos.end(); it != end; ++it)
+    {
+        newList.push_back(it->pos);
+    }
+    return (newList);
 }
 
+void Centipede::clean()
+{
+    _pos.clear();
+}

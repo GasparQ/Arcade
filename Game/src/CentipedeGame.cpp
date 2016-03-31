@@ -11,7 +11,9 @@
 #include "../include/CentipedeGame.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
 
-CentipedeGame::CentipedeGame() : AGame("Centipede")
+CentipedeGame::CentipedeGame() :
+        AGame("Centipede"),
+        centipede(Vector2<double>(0, 0))
 {
     initMap();
     restart();
@@ -33,7 +35,8 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
     if ((vecShoot = spaceShip.getShoot()) != NULL)
     {
         *vecShoot = *vecShoot + Vector2<double>(0, -1);
-        if (*vecShoot >= Vector2<double>(0, 0) && map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' ')
+        if (*vecShoot >= Vector2<double>(0, 0) &&
+            map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' ')
         {
             // TOUCHE UN BLOCK
             map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)]
@@ -41,29 +44,30 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
             if (map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] == ' ')
                 spaceShip.stopShot();
         }
-        it = centipede.begin();
-        while (it != centipede.end())
+//        it = centipede.begin();
+//        while (it != centipede.end())
+//        {
+        itNewVec = centipede.getPos();
+        std::list<Vector2<double> >::iterator itNc = itNewVec.begin();
+        while (itNc != itNewVec.end())
         {
-            itNewVec = it->getPos();
-            std::list<Vector2<double> >::iterator itNc = itNewVec.begin();
-            while (itNc != itNewVec.end())
+            if (static_cast<int>(itNc->x) == static_cast<int>(vecShoot->x) &&
+                static_cast<int>(itNc->y) == static_cast<int>(vecShoot->y))
             {
-                if (*itNc == *vecShoot)
-                {
 
-                    // TOUCHER PAR LE SHOOT
+                // TOUCHER PAR LE SHOOT
 
-                    _score += 10;
-                    centipede.push_back(it->splitCentipede(*itNc));
-                    map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] = block;
-                    spaceShip.stopShot();
-                    return;
-                }
-                ++itNc;
+                _score += 10;
+                centipede.splitCentipede(*itNc);
+                map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] = block;
+                spaceShip.stopShot();
+                return;
             }
-            if (it != centipede.end())
-                ++it;
+            ++itNc;
         }
+//            if (it != centipede.end())
+//                ++it;
+//        }
 
         if (vecShoot->y < 0 ||
             map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' ')
@@ -81,27 +85,24 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
 
 bool                    CentipedeGame::isEmptyCentipede() const
 {
-    std::vector<Centipede>::const_iterator it;
-
-    it = centipede.begin();
-    while (it != centipede.end())
-    {
-        if (!it->getPos().empty())
-        {
-            return (false);
-        }
-        ++it;
-    }
-    return (true);
+//    std::vector<Centipede>::const_iterator it;
+//
+//    it = centipede.begin();
+//    while (it != centipede.end())
+//    {
+//        if (!it->getPos().empty())
+//        {
+//            return (false);
+//        }
+//        ++it;
+//    }
+    return (centipede.getPos().empty());
 }
 
 std::stack<AComponent *> CentipedeGame::compute(int keycode)
 {
     std::stack<AComponent *> output;
-    std::vector<Centipede>::iterator it;
     std::vector<AComponent *> vec;
-    std::vector<AComponent *>::iterator itVec;
-    std::vector<Vector2<double> > itNewVec;
 
     onShoot(output);
     if (keycode == ArcadeSystem::Space)
@@ -113,33 +114,12 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         restart();
         return (output);
     }
-    it = centipede.begin();
-    while (it != centipede.end())
+    _score -= centipede.move(map);
+    vec = centipede.getGameComponent();
+    for (std::vector<AComponent *>::iterator it1 = vec.begin(); it1 != vec.end(); ++it1)
     {
-        it->move(map);
-        vec = it->getGameComponent();
-        itVec = vec.begin();
-        std::list<Vector2<double> > nc = it->getPos();
-        std::list<Vector2<double> >::iterator itNc = nc.begin();
-
-        // std::cout << "\e[32mNew it\e[0m" << std::endl;
-        while (itVec != vec.end())
-        {
-            if (itNc->y > 29 || itNc->x < 0 || itNc->x >= 51)
-            {
-                // LE CENTIPEDE TOUCHE LE FOND
-                _score -= 30;
-                it = centipede.erase(it);
-                break;
-            }
-            // std::cout << ">> " << (*itVec)->getPos() << std::endl;
-            output.push(*itVec);
-            ++itVec;
-        }
-        if (it != centipede.end())
-            ++it;
+        output.push(*it1);
     }
-    // std::cout << std::endl;
     spaceShip.move(keycode, map);
     displayMap(output);
     output.push(spaceShip.getGameComponent());
@@ -148,18 +128,18 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
 
 void CentipedeGame::restart()
 {
-    Centipede newCentipede(Vector2<double>(0, 0));
+//    Centipede newCentipede(Vector2<double>(0, 0));
 
     _score = 0;
-    centipede.clear();
-    newCentipede.add_node();
-    newCentipede.add_node();
-    newCentipede.add_node();
-    newCentipede.add_node();
-    newCentipede.add_node();
-    newCentipede.add_node();
-    newCentipede.add_node();
-    centipede.push_back(newCentipede);
+    centipede.clean();
+    centipede.add_node();
+    centipede.add_node();
+    centipede.add_node();
+    centipede.add_node();
+    centipede.add_node();
+    centipede.add_node();
+    centipede.add_node();
+//    centipede.push_back(newCentipede);
 }
 
 void            CentipedeGame::displayMap(std::stack<AComponent *> &output) const
@@ -194,7 +174,7 @@ void                CentipedeGame::initMap()
         while (x < 51)
         {
             map[y][x] = (rand() % 30 == 0 ? block : ' ');
-            // map[y][x] = ' ';
+//             map[y][x] = ' ';
             ++x;
         }
         ++y;
