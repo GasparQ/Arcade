@@ -4,11 +4,12 @@
 
 #include "AudioComponent.hpp"
 
-AudioComponent::AudioComponent(const std::string soundPath, bool bLoop, bool bOverlap) :
+AudioComponent::AudioComponent(const std::string soundPath, bool bLoop, bool bOverlap, bool bStop) :
         AComponent(Vector2<double>(0, 0), AComponent::COLOR_WHITE),
         m_loop(bLoop),
         m_soundPath(soundPath),
-        m_overlap(bOverlap)
+        m_overlap(bOverlap),
+        m_stop(bStop)
 {
 
 }
@@ -31,4 +32,9 @@ bool AudioComponent::getLoop() const
 bool AudioComponent::getOverlap() const
 {
     return m_overlap;
+}
+
+bool AudioComponent::getStop() const
+{
+    return m_stop;
 }
