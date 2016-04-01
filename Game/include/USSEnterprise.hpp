@@ -15,44 +15,56 @@
 #include "../../Commons/include/Vector2.hpp"
 #include "../../Commons/include/GameComponent.hpp"
 
-class	USSEnterprise
+class USSEnterprise
 {
 
 public:
-  USSEnterprise();
-  ~USSEnterprise();
+    USSEnterprise();
+
+    ~USSEnterprise();
 
 private:
-  Vector2<double>			_pos;
-  const std::string			_carac;
-  const std::string			_file_texture;
-  const GameComponent::Shapes		_shapes;
-  const AComponent::ComponentColor	_color;
-  Vector2<double>			*_shoot;
-  mutable GameComponent			*gameComponent;
+    Vector2<double> _pos;
+    const std::string _carac;
+    const std::string _file_texture;
+    const GameComponent::Shapes _shapes;
+    const AComponent::ComponentColor _color;
+    Vector2<double> *_shoot;
+    mutable GameComponent *gameComponent;
 
 public:
-  void	goUp(char map[31][51]);
-  void	goDown(char map[31][51]);
-  void	goLeft(char map[31][51]);
-  void	goRight(char map[31][51]);
+    void goUp(char map[31][51]);
+
+    void goDown(char map[31][51]);
+
+    void goLeft(char map[31][51]);
+
+    void goRight(char map[31][51]);
 
 public:
-  void			move(int keycode, char map[31][51]);
-  Vector2<double>	*shoot();
-  void		        stopShot();
-  void			reinitPos();
+    void move(int keycode, char map[31][51]);
+
+    Vector2<double> *shoot();
+
+    void stopShot();
+
+    void reinitPos();
 
 public:
-  Vector2<double> const			&getPos() const;
-  std::string const			&getCarac() const;
-  std::string const			&getFile2D() const;
-  AComponent::ComponentColor		getColor() const;
-  GameComponent::Shapes			getShapes() const;
-  Vector2<double>			*getShoot() const;
+    Vector2<double> const &getPos() const;
+
+    std::string const &getCarac() const;
+
+    std::string const &getFile2D() const;
+
+    AComponent::ComponentColor getColor() const;
+
+    GameComponent::Shapes getShapes() const;
+
+    Vector2<double> *getShoot() const;
 
 public:
-  GameComponent				*getGameComponent() const;
+    GameComponent *getGameComponent() const;
 
 };
 

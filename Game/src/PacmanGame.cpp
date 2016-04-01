@@ -202,16 +202,14 @@ void whereAmI(PacmanGame const &pacman)
 {
     struct arcade::WhereAmI *pos;
     Vector2<double> pacpos = pacman.getPacman().getPosition();
-    size_t posSize = sizeof(*pos) + sizeof(arcade::Position);
+    size_t posSize = sizeof(arcade::Position);
 
-    if ((pos = (struct arcade::WhereAmI *) (malloc(posSize))) == NULL)
-        throw std::bad_alloc();
+    pos = new struct arcade::WhereAmI + posSize;
     pos->type = arcade::CommandType::WHERE_AM_I;
     pos->lenght = 1;
     pos->position[0].x = static_cast<uint16_t >(pacpos.x);
     pos->position[0].y = static_cast<uint16_t >(pacpos.y);
-    write(1, pos, posSize);
-    free(pos);
+    write(1, pos, posSize + sizeof(struct arcade::WhereAmI));
 }
 
 extern "C" void Play(void)
@@ -219,11 +217,9 @@ extern "C" void Play(void)
     char c;
     PacmanGame pacman;
     struct arcade::GetMap *map;
-    size_t mapSize = sizeof(*map) + (ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t));
-    std::stack<AComponent *> components;
+    size_t mapSize = ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t);
 
-    if ((map = (struct arcade::GetMap *) (malloc(mapSize))) == NULL)
-        throw std::bad_alloc();
+    map = new struct arcade::GetMap + mapSize;
     map->type = arcade::CommandType::GET_MAP;
     map->width = ArcadeSystem::winWidth;
     map->height = ArcadeSystem::winHeight;
@@ -236,7 +232,7 @@ extern "C" void Play(void)
                 break;
             case arcade::CommandType::GET_MAP:
                 updateMap(map, pacman);
-                write(1, map, mapSize);
+                write(1, map, mapSize + sizeof(struct arcade::GetMap));
                 break;
             case arcade::CommandType::GO_UP:
                 const_cast<Pacman *>(&pacman.getPacman())->goUp(NULL);
@@ -251,18 +247,12 @@ extern "C" void Play(void)
                 const_cast<Pacman *>(&pacman.getPacman())->goRight(NULL);
                 break;
             case arcade::CommandType::PLAY:
-                components = pacman.compute(-1);
-                while (!components.empty())
-                {
-                    delete (components.top());
-                    components.pop();
-                }
+                pacman.compute(-1);
                 break;
             default:
                 break;
         }
     }
-    free(map);
 }
 
 void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState state) const

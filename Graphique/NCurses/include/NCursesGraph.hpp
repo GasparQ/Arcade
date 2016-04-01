@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Thu Mar 31 15:01:18 2016 Victor Gouet
+// Last update Fri Apr  1 17:47:35 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -122,6 +122,7 @@ private:
   void			_displayComponent(AnimationComponent const *, ncr::Window *win);
   void			_cacheClear();
   bool			isResizeGood() const;
+  bool		        canDisplay(int posX, int posY) const;
   ncr::Window		*onCreateBoard();
   // ncr::Window		*onCreateUI();
   void			_displayFile(int x, int y, std::string const &contenu, ncr::Window *);

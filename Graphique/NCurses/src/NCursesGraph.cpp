@@ -5,11 +5,13 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Apr  1 15:52:33 2016 Victor Gouet
+// Last update Fri Apr  1 18:13:21 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
+
+int		toto = 0;
 
 NCursesGraph::NCursesGraph()
 {
@@ -18,6 +20,8 @@ NCursesGraph::NCursesGraph()
   UIWin = NULL;
   _stdscr = NULL;
 
+  // if (toto == 0)
+  //   {
   if (NCurses::init() == NULL)
     NCurses::destroy(), throw NCursesSystemFailed();
   if (NCurses::noEchoMode() == ERR)
@@ -48,7 +52,7 @@ NCursesGraph::NCursesGraph()
     NCurses::destroy(), throw NCursesSystemFailed();
   if (NCurses::initPair(7, COLOR_WHITE, COLOR_BLACK) == ERR)
     NCurses::destroy(), throw NCursesSystemFailed();
-
+    // }
   // _board->attrON(A_REVERSE | COLOR_PAIR(4));
   // _board->makeBorder(' ', ' ', ' ');
   // _board->attrOFF(A_REVERSE);
@@ -56,7 +60,7 @@ NCursesGraph::NCursesGraph()
   // UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
   // UIWin->makeBorder(' ', ' ', ' ');
   // UIWin->attrOFF(A_REVERSE);
-
+  ++toto;
   keycodeMap[260] = ArcadeSystem::ArrowLeft;
   keycodeMap[261] = ArcadeSystem::ArrowRight;
   keycodeMap[259] = ArcadeSystem::ArrowUp;
@@ -113,6 +117,19 @@ bool			NCursesGraph::isResizeGood() const
   return (true);
 }
 
+bool			NCursesGraph::canDisplay(int posX, int posY) const
+{
+  int			x;
+  int			y;
+
+  getmaxyx(stdscr, y, x);
+  if (x < posX || y < posY)
+    {
+      return (false);
+    }
+  return (true);
+}
+
 int	NCursesGraph::eventManagment()
 {
   int	keycode;
@@ -132,10 +149,6 @@ ncr::Window		*NCursesGraph::onCreateBoard()
     {
       _board = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 1, 2);
       gameWin = new ncr::Window(ArcadeSystem::winHeight, ArcadeSystem::winWidth, 1, 2, *_board);
-      // _board->attrON(A_REVERSE | COLOR_PAIR(4));
-      // _board->makeBorder(' ', ' ', ' ');
-      // _board->attrOFF(A_REVERSE);
-      // _board->refresh();
     }
   return (gameWin);
 }
@@ -148,6 +161,8 @@ void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
   onCreateBoard();
   if (!win)
     return ;
+  if (!canDisplay(pos.x, pos.y))
+     return ;
   if (gameComponent->getSpriteText() != " ")
     win->attrON(COLOR_PAIR(gameComponent->getColor()));
   else
@@ -164,8 +179,9 @@ void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr
   DualTextComponent const   *dualTextComponent =
     dynamic_cast<DualTextComponent const *>(uiComponent);
 
-  // onCreateUI();
   if (!win)
+    return ;
+  if (!canDisplay(pos.x, pos.y))
     return ;
   win->attrON(COLOR_PAIR(uiComponent->getColor()) | A_BOLD);
   win->print(pos.x, pos.y, "%s", uiComponent->getText().c_str());
@@ -173,6 +189,8 @@ void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr
   if (dualTextComponent)
     {
       Vector2<double>	newPos = dualTextComponent->getSubPos();
+      if (!canDisplay(pos.x, newPos.y))
+	return ;
       win->attrON(COLOR_PAIR(dualTextComponent->getColor()) | A_BOLD);
       win->print(pos.x, newPos.y, "%s", dualTextComponent->getSubTitle().c_str());
       _cacheGame.push(s_cache(Vector2<double>(pos.x, newPos.y),
@@ -250,9 +268,12 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *,
   i = 0;
   while (i < rains_capacity)
     {
+       if (!canDisplay(rains[i].x, rains[i].y))
+       	{
+       	  ++i;
+       	  continue;
+       	}
       win->attrON(A_REVERSE | COLOR_PAIR(rains[i].color));
-      // newX = rand() % x;
-      // newY = rand() % y;
       win->print(rains[i].x, rains[i].y, " ");
       _cacheGame.push(s_cache(Vector2<double>(rains[i].x, rains[i].y), " ", win));
       win->attrOFF(A_REVERSE);
@@ -271,6 +292,12 @@ void		NCursesGraph::_cacheClear()
   while (!_cacheGame.empty())
     {
       std::string space(_cacheGame.top().str);
+      if (!canDisplay(static_cast<int>(_cacheGame.top().vector.x),
+		      static_cast<int>(_cacheGame.top().vector.y)))
+	{
+	  _cacheGame.pop();
+	  continue;
+	}
       _cacheGame.top().win->print(_cacheGame.top().vector.x,
 				  _cacheGame.top().vector.y,
 				  space.replace(space.begin(),
