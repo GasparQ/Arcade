@@ -22,8 +22,8 @@
 class CentipedeGame : public AGame
 {
 private:
-  const char block = ' ' + 5;
-  const int waveNbr = 10;
+    const char block = ' ' + 5;
+    const int waveNbr = 10;
 
 public:
     CentipedeGame();
@@ -34,6 +34,18 @@ public:
 
     virtual void restart();
 
+    std::vector<std::string> getMap() const;
+
+    Centipede const &getCentipede() const;
+
+    USSEnterprise const &getUssEntreprise() const;
+
+    void goRight();
+    void goLeft();
+    void goUp();
+    void goDown();
+    void shoot();
+
 private:
     void initMap();
 
@@ -41,7 +53,7 @@ private:
 
     void onShoot(std::stack<AComponent *> &output);
 
-  void		initVariable();
+    void initVariable();
 
     bool isEmptyCentipede() const;
 
@@ -50,13 +62,13 @@ private:
     USSEnterprise spaceShip;
     char map[31][51];
     int _score;
-  int	_wave;
-  HighScoreComponent          *highScoreComponent;
-  std::stack<AComponent *>	_oldStack;
-  mutable std::stack<AComponent *>	_output;
-  UIComponent			*waweCom;
-  UIComponent			*scoreCom;
-  GameComponent			*missilCom;
+    int _wave;
+    HighScoreComponent *highScoreComponent;
+    std::stack<AComponent *> _oldStack;
+    mutable std::stack<AComponent *> _output;
+    UIComponent *waweCom;
+    UIComponent *scoreCom;
+    GameComponent *missilCom;
 };
 
 #endif

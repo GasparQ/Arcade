@@ -21,11 +21,12 @@ class Centipede
 {
 public:
     Centipede(Vector2<double> const &);
+
     Centipede(Centipede const &);
 
     ~Centipede();
 
-    Centipede   &operator=(Centipede const &);
+    Centipede &operator=(Centipede const &);
 
     typedef int (Centipede::*mptr)(char map[31][51], Vector2<double> &pos);
 
@@ -37,7 +38,7 @@ public:
         LEFT,
         RIGHT
     };
-    static const double     centipedeSpeed;
+    static const double centipedeSpeed;
 
 private:
     int goUp(char map[31][51], Vector2<double> &pos);
@@ -47,52 +48,53 @@ private:
     int goLeft(char map[31][51], Vector2<double> &pos);
 
     int goRight(char map[31][51], Vector2<double> &pos);
+
     class centipedeBody
     {
     public:
         centipedeBody(Vector2<double> const &pos, Direction direction) :
                 pos(pos),
                 direction(direction),
-		gameComponent(new GameComponent(pos, AComponent::ComponentColor::COLOR_CYAN,
-						GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
+                gameComponent(new GameComponent(pos, AComponent::ComponentColor::COLOR_CYAN,
+                                                GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
         {
         }
 
         centipedeBody(centipedeBody const &ref) :
                 pos(ref.pos),
                 direction(ref.direction),
-		gameComponent(new GameComponent(ref.pos, AComponent::ComponentColor::COLOR_CYAN,
-						GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
+                gameComponent(new GameComponent(ref.pos, AComponent::ComponentColor::COLOR_CYAN,
+                                                GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
         {
         }
 
-      void		actualiseGameComponent() const
-      {
-      	if (gameComponent)
-      	  gameComponent->setPos(this->pos);
-      }
+        void actualiseGameComponent() const
+        {
+            if (gameComponent)
+                gameComponent->setPos(this->pos);
+        }
 
-      ~centipedeBody()
-      {
-	if (gameComponent)
-	  delete gameComponent;
-      }
+        ~centipedeBody()
+        {
+            if (gameComponent)
+                delete gameComponent;
+        }
 
         bool operator==(centipedeBody const &ref)
         {
             return (pos == ref.pos && direction == ref.direction);
         }
 
-      Vector2<double> pos;
-      Direction       direction;
-      mutable GameComponent	*gameComponent;
+        Vector2<double> pos;
+        Direction direction;
+        mutable GameComponent *gameComponent;
     };
 
 private:
     Direction _dir;
     Direction _dir_prev;
-    std::map<Direction, Vector2<double> >   _directions;
-    std::list<centipedeBody > _pos;
+    std::map<Direction, Vector2<double> > _directions;
+    std::list<centipedeBody> _pos;
     Vector2<double> initPos;
     std::map<Direction, mptr> _map;
 
@@ -103,7 +105,7 @@ public:
 
     void add_node();
 
-  bool	        isTouching(Vector2<double> const &vec) const;
+    bool isTouching(Vector2<double> const &vec) const;
 
     void splitCentipede(Vector2<double> const &pos);
 

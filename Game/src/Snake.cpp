@@ -365,11 +365,10 @@ void                            whereAmI(Snake const &snake)
 {
     struct arcade::WhereAmI     *pos;
     std::list<GameComponent *>  snakeBody = snake.getSnake();
-    size_t                      posSize = sizeof(*pos) + snakeBody.size() * sizeof(arcade::Position);
+    size_t                      posSize = snakeBody.size() * sizeof(arcade::Position);
     size_t                      i = 0;
 
-    if ((pos = (struct arcade::WhereAmI *)(malloc(posSize))) == NULL)
-        throw std::bad_alloc();
+    pos = new struct arcade::WhereAmI + posSize;
     pos->type = arcade::CommandType::WHERE_AM_I;
     pos->lenght = static_cast<uint16_t>(snakeBody.size());
     for (std::list<GameComponent *>::iterator it = snakeBody.begin(), end = snakeBody.end(); it != end; ++it, ++i)
@@ -377,8 +376,7 @@ void                            whereAmI(Snake const &snake)
         pos->position[i].x = static_cast<uint16_t>((*it)->getPos().x);
         pos->position[i].y = static_cast<uint16_t>((*it)->getPos().y);
     }
-    write(1, pos, posSize);
-    free(pos);
+    write(1, pos, posSize + sizeof(struct arcade::WhereAmI));
 }
 
 extern "C" void Play(void)
@@ -386,11 +384,9 @@ extern "C" void Play(void)
     char                        c;
     Snake                       snake;
     struct arcade::GetMap       *map;
-    size_t                      mapSize = sizeof(*map) + (ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t));
-    std::stack<AComponent *>    components;
+    size_t                      mapSize = ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t);
 
-    if ((map = (struct arcade::GetMap *)(malloc(mapSize))) == NULL)
-        throw std::bad_alloc();
+    map = new struct arcade::GetMap + mapSize;
     map->type = arcade::CommandType::GET_MAP;
     map->width = ArcadeSystem::winWidth;
     map->height = ArcadeSystem::winHeight;
@@ -403,7 +399,7 @@ extern "C" void Play(void)
                 break;
             case arcade::CommandType::GET_MAP:
                 updateMap(map, snake);
-                write(1, map, mapSize);
+                write(1, map, mapSize + sizeof(struct arcade::GetMap));
                 break;
             case arcade::CommandType::GO_UP:
                 snake.goUp();
@@ -427,5 +423,4 @@ extern "C" void Play(void)
                 break;
         }
     }
-    free(map);
 }

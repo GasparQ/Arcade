@@ -16,6 +16,9 @@
 #include "Commons/include/ArcadeSystem.hpp"
 #include "ArcadeMenu.hpp"
 
+/**
+ * \brief Constants for directories and symbols
+ */
 const std::string    arcade::Arcade::libDir = "./lib/";
 const std::string    arcade::Arcade::gamesDir = "./games/";
 const std::string    arcade::Arcade::createLib = "loadLib";
