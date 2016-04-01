@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Fri Apr  1 15:40:34 2016 Victor Gouet
+// Last update Fri Apr  1 16:49:12 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -26,7 +26,6 @@ Centipede::Centipede(Vector2<double> const &pos) :
                             {UP, Vector2<double>(0, -1)},
                             {DOWN, Vector2<double>(0, 1)}
                     })
-// _pos(pos)
 {
     Vector2<double> newPos = pos;
 
@@ -43,25 +42,6 @@ Centipede::Centipede(Vector2<double> const &pos) :
     _map[RIGHT] = &Centipede::goRight;
     _dir = RIGHT;
     this->initPos = pos;
-    // _pos.push_back(newPos);
-    // _pos.push_back(newPos + Vector2<double>(-1, 0));
-
-    // _pos.push_back(newPos + Vector2<double>(-2, 0));
-    // _pos.push_back(newPos + Vector2<double>(-3, 0));
-
-    // _pos.push_back(newPos + Vector2<double>(-4, 0));
-    // _pos.push_back(newPos + Vector2<double>(-5, 0));
-
-    // _pos.push_back(newPos + Vector2<double>(-6, 0));
-    // _pos.push_back(newPos + Vector2<double>(-7, 0));
-
-    // _pos.push_back(newPos + Vector2<double>(-8, 0));
-    // _pos.push_back(newPos + Vector2<double>(-9, 0));
-    // _pos.push_back(newPos + Vector2<double>(-10, 0));
-    // _pos.push_back(newPos + Vector2<double>(-11, 0));
-    // _pos.push_back(newPos + Vector2<double>(-12, 0));
-    // _pos.push_back(newPos + Vector2<double>(-13, 0));
-    // _pos.push_back(newPos + Vector2<double>(-14, 0));
 }
 
 Centipede::Centipede(const Centipede &centipede) :
@@ -120,37 +100,15 @@ void        Centipede::add_node()
 
 void    Centipede::splitCentipede(Vector2<double> const &pos)
 {
-//    Centipede centiped(pos);
-//    int size;
-
-    for (std::list<centipedeBody >::iterator it = _pos.begin(); it != _pos.end(); ++it)
+  for (std::list<centipedeBody >::iterator it = _pos.begin(); it != _pos.end(); ++it)
     {
-        if (static_cast<int>(it->pos.x) == static_cast<int>(pos.x) &&
+      if (static_cast<int>(it->pos.x) == static_cast<int>(pos.x) &&
             static_cast<int>(it->pos.y) == static_cast<int>(pos.y))
         {
             _pos.erase(it);
             break;
         }
     }
-//    it = _pos.begin();
-//    if (this->_dir == LEFT)
-//    {
-//        centiped._dir = RIGHT;
-//    }
-//    if (this->_dir == RIGHT)
-//    {
-//        centiped._dir = LEFT;
-//    }
-//    size = static_cast<int>(_pos.size() / 2);
-//    while (it != _pos.end())
-//    {
-//        it = _pos.erase(it);
-//        if (size <= 0)
-//            break;
-//        --size;
-//        centiped.add_node();
-//    }
-//    return (centiped);
 }
 
 int    Centipede::goUp(char map[31][51], Vector2<double> &pos)
@@ -265,7 +223,8 @@ int                        Centipede::move(char map[31][51])
 
             scoreToRemove += 30;
             _pos.erase(it);
-            it = std::find<std::list<centipedeBody>::iterator, centipedeBody>(_pos.begin(), _pos.end(), save);
+            it = std::find<std::list<centipedeBody>::iterator, centipedeBody>(_pos.begin(),
+									      _pos.end(), save);
         }
     }
     return scoreToRemove;
@@ -285,11 +244,8 @@ std::vector<AComponent *>    Centipede::getGameComponent() const
     while (it != _pos.end())
     {
       it->actualiseGameComponent();
-      // it->gameComponent->setPos(const Vector2<double> &pos)
-        vec.push_back(it->gameComponent// new GameComponent(it->pos, AComponent::ComponentColor::COLOR_CYAN,
-                      //                   GameComponent::Shapes::CUBE_SMALL, " ", "FILE")
-		      );
-        ++it;
+      vec.push_back(it->gameComponent);
+      ++it;
     }
     return (vec);
 }
