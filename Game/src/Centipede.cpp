@@ -231,6 +231,12 @@ int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
     return (0);
 }
 
+/**
+ * \brief Move the centipede bodies on the map
+ *
+ * \param map The map of the game
+ * \return The score to remove when centipede arrive to the area limits
+ */
 int                        Centipede::move(char map[31][51])
 {
     std::list<centipedeBody >::iterator it;
@@ -264,6 +270,11 @@ int                        Centipede::move(char map[31][51])
     return scoreToRemove;
 }
 
+/**
+ * \brief Method that will convert the Centipede into gameComponents
+ *
+ * \return Returns a std::vector of game components used in the display
+ */
 std::vector<AComponent *>    Centipede::getGameComponent() const
 {
     std::vector<AComponent *> vec;
@@ -279,6 +290,11 @@ std::vector<AComponent *>    Centipede::getGameComponent() const
     return (vec);
 }
 
+/**
+ * \brief Getter for Centipede positions
+ *
+ * \return All of the positions of the centipede bodies
+ */
 std::list<Vector2<double> > Centipede::getPos() const
 {
     std::list<Vector2<double> > newList;
@@ -290,6 +306,9 @@ std::list<Vector2<double> > Centipede::getPos() const
     return (newList);
 }
 
+/**
+ * \brief Suppress all bodies of the centipede
+ */
 void Centipede::clean()
 {
     _pos.clear();
