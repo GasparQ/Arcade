@@ -49,7 +49,7 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     std::map<int, keyfunc>::iterator it;
     HighScoreComponent *highScoreComponent;
 
-    if (output.size() != 1)
+    if (output.size() != 2)
     {
         ClearOutput();
     }
@@ -139,6 +139,8 @@ void PacmanGame::restart()
 void PacmanGame::InitGame(bool bIsRestart, bool bIsNextLevel)
 {
     ClearOutput();
+    // We clear the sounds playing
+    output.push(new AudioComponent("Sound/Pacman_Siren_Sound_Effect_1_.wav", false, false, true));
 
     for (std::vector<Ghost>::iterator it = m_ghosts.begin(); it != m_ghosts.end(); ++it)
     {

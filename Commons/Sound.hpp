@@ -36,6 +36,7 @@ public:
 
     // called when a song ends playing
     void SoundFinished(int channel);
+    static void ChunkCallback(int channel);
 
 private:
     std::map<std::string, int > m_sounds;
