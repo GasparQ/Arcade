@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:13:12 2016 Victor Gouet
-// Last update Thu Mar 31 23:41:31 2016 Victor Gouet
+// Last update Fri Apr  1 14:48:04 2016 Victor Gouet
 //
 
 #include <cmath>
@@ -13,7 +13,7 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 
 USSEnterprise::USSEnterprise()
-  : _pos(Vector2<double>(20, 20)), _carac(" "), _file_texture(""),
+  : _pos(Vector2<double>(20, 23)), _carac(" "), _file_texture(""),
     _shapes(GameComponent::Shapes::SPHERE_LARGE), _color(AComponent::COLOR_MAGENTA), _shoot(NULL)
 {
 }
@@ -26,7 +26,8 @@ void	USSEnterprise::goUp(char map[31][51])
 {
   Vector2<double>	newPos = _pos + Vector2<double>(0, -1);
 
-  if (newPos.y < 0 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+  if (newPos.y < 23 ||
+      map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     return ;
   // _pos.x = newPos.x;
   // _pos.y = newPos.y;
@@ -59,7 +60,7 @@ void	USSEnterprise::goRight(char map[31][51])
 {
   Vector2<double>	newPos = _pos + Vector2<double>(1, 0);
 
-   if (newPos.x > 50 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
+   if (newPos.x > 49 || map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' ')
     return ;
    _pos = newPos;
    // _pos.x = newPos.x;
@@ -99,7 +100,7 @@ void	USSEnterprise::move(int keycode, char map[31][51])
 void				USSEnterprise::reinitPos()
 {
   _pos.x = 20;
-  _pos.y = 20;
+  _pos.y = 23;
 }
 
 void				USSEnterprise::stopShot()

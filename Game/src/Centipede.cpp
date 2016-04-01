@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Thu Mar 31 23:35:58 2016 Victor Gouet
+// Last update Fri Apr  1 14:22:44 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -250,7 +250,8 @@ int                        Centipede::move(char map[31][51])
 
         if ((newPos.x < 0 && it->pos.x >= 0) ||
             (newPos.x >= 50 && it->pos.x < 50) ||
-            (newPos >= Vector2<double>(0, 0) && map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' '))
+            (newPos >= Vector2<double>(0, 0) && newPos < Vector2<double>(50, 30) &&
+	     map[static_cast<int>(newPos.y)][static_cast<int>(newPos.x)] != ' '))
         {
             newPos = it->pos + _directions[DOWN];
             it->direction = (it->direction == LEFT ? RIGHT : LEFT);
@@ -283,7 +284,7 @@ std::vector<AComponent *>    Centipede::getGameComponent() const
     it = _pos.begin();
     while (it != _pos.end())
     {
-        vec.push_back(new GameComponent(it->pos, AComponent::ComponentColor::COLOR_YELLOW,
+        vec.push_back(new GameComponent(it->pos, AComponent::ComponentColor::COLOR_CYAN,
                                         GameComponent::Shapes::CUBE_SMALL, " ", "FILE"));
         ++it;
     }

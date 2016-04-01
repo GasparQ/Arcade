@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Thu Mar 31 23:42:57 2016 Victor Gouet
+// Last update Fri Apr  1 14:37:49 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
@@ -37,24 +37,34 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
     if ((vecShoot = spaceShip.getShoot()) != NULL)
     {
         *vecShoot = *vecShoot + Vector2<double>(0, -1);
-        if (*vecShoot >= Vector2<double>(0, 0) &&
+
+        if (*vecShoot >= Vector2<double>(0, 0) && *vecShoot < Vector2<double>(50, 30) &&
             map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' ')
         {
+	  // MAP A VERIFIER
+	  // SA SEGFAUKT FICHIER TOTO
+
             // TOUCHE UN BLOCK
-            map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)]
+            
+	  map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)]
                     = static_cast<char>(map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] - 1);
-            if (map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] == ' ')
-                spaceShip.stopShot();
+            // if (map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] == ' ')
+	  spaceShip.stopShot();
+	    
+	    return ;
         }
 //        it = centipede.begin();
 //        while (it != centipede.end())
 //        {
+
         itNewVec = centipede.getPos();
         std::list<Vector2<double> >::iterator itNc = itNewVec.begin();
+
         while (itNc != itNewVec.end())
         {
             if (static_cast<int>(itNc->x) == static_cast<int>(vecShoot->x) &&
-                static_cast<int>(itNc->y) == static_cast<int>(vecShoot->y))
+                static_cast<int>(itNc->y) == static_cast<int>(vecShoot->y) &&
+		*vecShoot >= Vector2<double>(0, 0) && *vecShoot < Vector2<double>(50, 30))
             {
 
                 // TOUCHER PAR LE SHOOT
@@ -68,8 +78,11 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
             ++itNc;
         }
 
-        if (vecShoot->y < 0 ||
-            map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' ')
+        if (vecShoot->y < 0// ||
+	    // *vecShoot <= Vector2<double>(0, 0)
+	    //  && *vecShoot < Vector2<double>(30, 50) &&
+            // map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' '
+	    )
         {
             spaceShip.stopShot();
         }
@@ -187,15 +200,45 @@ void            CentipedeGame::displayMap(std::stack<AComponent *> &output) cons
     int x;
 
     y = 0;
-    while (y < 31)
+    while (y < 30)
     {
         x = 0;
-        while (x < 51)
+        while (x < 50)
         {
             if (map[y][x] != ' ')
-                output.push(new GameComponent(Vector2<double>(x, y),
+	      {
+		int	ref = map[y][x] - ' ';
+	        switch (ref)
+		  {
+		  case 1:
+		    output.push(new GameComponent(Vector2<double>(x, y),
+                                              AComponent::ComponentColor::COLOR_WHITE ,
+                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
+		    break;
+		  case 2:
+		    output.push(new GameComponent(Vector2<double>(x, y),
+                                              AComponent::ComponentColor::COLOR_YELLOW,
+                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
+		    break;
+		  case 3:
+		    output.push(new GameComponent(Vector2<double>(x, y),
+                                              AComponent::ComponentColor::COLOR_GREEN,
+                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
+		    break;
+		  case 4:
+		    output.push(new GameComponent(Vector2<double>(x, y),
+                                              AComponent::ComponentColor::COLOR_BLUE,
+                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
+		    break;
+		  case 5:
+		    output.push(new GameComponent(Vector2<double>(x, y),
                                               AComponent::ComponentColor::COLOR_RED,
                                               GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
+		    break;
+		  default:
+		    break;
+		  }
+	      }
             ++x;
         }
         ++y;
@@ -207,12 +250,12 @@ void                CentipedeGame::initMap()
     int y = 0;
     int x = 0;
 
-    while (y < 31)
+    while (y < 30)
     {
         x = 0;
-        while (x < 51)
+        while (x < 50)
         {
-	  if (y != 20 && x != 20)
+	  if (y != 27 && x != 20)
             map[y][x] = (rand() % 30 == 0 ? block : ' ');
 	  else
 	    map[y][x] = ' ';
