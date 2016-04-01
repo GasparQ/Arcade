@@ -16,8 +16,8 @@
 // Ctor:
 // Initializes Projection mode (3D by default) and Lighting
 OpenGlGraph::OpenGlGraph(int width, int, const char *name) :
-        m_size_coeff(width / arcade::winWidth),
-        m_win(arcade::winWidth * m_size_coeff, arcade::winHeight * m_size_coeff)
+        m_size_coeff(width / ArcadeSystem::winWidth),
+        m_win(ArcadeSystem::winWidth * m_size_coeff, ArcadeSystem::winHeight * m_size_coeff)
 {
     int ac = 1;
     glutInit(&ac, NULL);
@@ -116,8 +116,8 @@ void OpenGlGraph::DrawBackground() const
     //gluLookAt(0, 34, -48, 0, 0, 0, 0, 1, 0);
     gluLookAt(0, 34, -28, 0, 0, -15, 0, 1, 0);
     // then we translate to center
-    glTranslated(arcade::winWidth / 2.0, 0, 0);
-    DrawTerrain(arcade::winWidth, arcade::winHeight);
+    glTranslated(ArcadeSystem::winWidth / 2.0, 0, 0);
+    DrawTerrain(ArcadeSystem::winWidth, ArcadeSystem::winHeight);
 }
 
 void OpenGlGraph::DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size, double posZ) const

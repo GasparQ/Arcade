@@ -8,7 +8,9 @@
 #include <map>
 #include "../Graphique/SDL2_mixer/SDL_mixer.h"
 
-
+// TODO:
+// kill sound when pacman finishes or dies etc
+// menu music
 class Sound
 {
 public:
