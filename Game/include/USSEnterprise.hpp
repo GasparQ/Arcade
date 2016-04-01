@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:38:20 2016 Victor Gouet
-// Last update Thu Mar 31 23:38:49 2016 Victor Gouet
+// Last update Fri Apr  1 15:47:12 2016 Victor Gouet
 //
 //
 
@@ -29,6 +29,7 @@ private:
   const GameComponent::Shapes		_shapes;
   const AComponent::ComponentColor	_color;
   Vector2<double>			*_shoot;
+  mutable GameComponent			*gameComponent;
 
 public:
   void	goUp(char map[31][51]);

@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:13:12 2016 Victor Gouet
-// Last update Fri Apr  1 14:48:04 2016 Victor Gouet
+// Last update Fri Apr  1 16:34:50 2016 Victor Gouet
 //
 
 #include <cmath>
@@ -14,12 +14,15 @@
 
 USSEnterprise::USSEnterprise()
   : _pos(Vector2<double>(20, 23)), _carac(" "), _file_texture(""),
-    _shapes(GameComponent::Shapes::SPHERE_LARGE), _color(AComponent::COLOR_MAGENTA), _shoot(NULL)
+    _shapes(GameComponent::Shapes::SPHERE_LARGE), _color(AComponent::COLOR_MAGENTA), _shoot(NULL),
+    gameComponent(new GameComponent(_pos, _color, _shapes, _carac, _file_texture))
 {
 }
 
 USSEnterprise::~USSEnterprise()
 {
+  if (gameComponent)
+    delete gameComponent;
 }
 
 void	USSEnterprise::goUp(char map[31][51])
@@ -100,7 +103,7 @@ void	USSEnterprise::move(int keycode, char map[31][51])
 void				USSEnterprise::reinitPos()
 {
   _pos.x = 20;
-  _pos.y = 23;
+  _pos.y = 25;
 }
 
 void				USSEnterprise::stopShot()
@@ -142,5 +145,6 @@ GameComponent::Shapes			USSEnterprise::getShapes() const
 
 GameComponent				*USSEnterprise::getGameComponent() const
 {
-  return (new GameComponent(_pos, _color, _shapes, _carac, _file_texture));
+  gameComponent->setPos(getPos());
+  return (gameComponent);
 }
