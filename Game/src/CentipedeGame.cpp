@@ -360,8 +360,7 @@ void                            updateMap(struct arcade::GetMap *map, CentipedeG
     }
     for (std::list<Vector2<double> >::iterator it = centipedePoses.begin(), end = centipedePoses.end(); it != end; ++it)
     {
-        if (*it >= Vector2<double>(0, 0))
-            map->tile[static_cast<size_t >(it->x) + static_cast<size_t >(it->y) * ArcadeSystem::winWidth] = arcade::TileType::EVIL_DUDE;
+        map->tile[static_cast<size_t >(it->x) + static_cast<size_t >(it->y) * ArcadeSystem::winWidth] = arcade::TileType::EVIL_DUDE;
     }
     if (shoot)
     {
