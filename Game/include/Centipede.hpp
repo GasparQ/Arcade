@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:28 2016 Victor Gouet
-// Last update Thu Mar 31 23:34:28 2016 Victor Gouet
+// Last update Fri Apr  1 15:40:29 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDE_HPP_
@@ -52,20 +52,40 @@ private:
     public:
         centipedeBody(Vector2<double> const &pos, Direction direction) :
                 pos(pos),
-                direction(direction)
+                direction(direction),
+		gameComponent(new GameComponent(pos, AComponent::ComponentColor::COLOR_CYAN,
+						GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
         {
         }
+
         centipedeBody(centipedeBody const &ref) :
                 pos(ref.pos),
-                direction(ref.direction)
+                direction(ref.direction),
+		gameComponent(new GameComponent(ref.pos, AComponent::ComponentColor::COLOR_CYAN,
+						GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
         {
         }
+
+      void		actualiseGameComponent() const
+      {
+      	if (gameComponent)
+      	  gameComponent->setPos(this->pos);
+      }
+
+      ~centipedeBody()
+      {
+	if (gameComponent)
+	  delete gameComponent;
+      }
+
         bool operator==(centipedeBody const &ref)
         {
             return (pos == ref.pos && direction == ref.direction);
         }
-        Vector2<double> pos;
-        Direction       direction;
+
+      Vector2<double> pos;
+      Direction       direction;
+      mutable GameComponent	*gameComponent;
     };
 
 private:

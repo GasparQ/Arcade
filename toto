@@ -1,0 +1,21 @@
+==23600== Memcheck, a memory error detector
+==23600== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==23600== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==23600== Command: ./arcade lib/lib_arcade_ncurses.so
+==23600== Parent PID: 20092
+==23600== 
+==23600== 
+==23600== HEAP SUMMARY:
+==23600==     in use at exit: 23,655,654 bytes in 10,753 blocks
+==23600==   total heap usage: 230,050 allocs, 219,297 frees, 295,549,350 bytes allocated
+==23600== 
+==23600== LEAK SUMMARY:
+==23600==    definitely lost: 149,396 bytes in 94 blocks
+==23600==    indirectly lost: 232,806 bytes in 631 blocks
+==23600==      possibly lost: 22,713,684 bytes in 8,871 blocks
+==23600==    still reachable: 559,768 bytes in 1,157 blocks
+==23600==         suppressed: 0 bytes in 0 blocks
+==23600== Rerun with --leak-check=full to see details of leaked memory
+==23600== 
+==23600== For counts of detected and suppressed errors, rerun with: -v
+==23600== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 7 from 1)

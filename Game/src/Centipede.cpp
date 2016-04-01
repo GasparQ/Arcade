@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Fri Apr  1 14:22:44 2016 Victor Gouet
+// Last update Fri Apr  1 15:40:34 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -284,8 +284,11 @@ std::vector<AComponent *>    Centipede::getGameComponent() const
     it = _pos.begin();
     while (it != _pos.end())
     {
-        vec.push_back(new GameComponent(it->pos, AComponent::ComponentColor::COLOR_CYAN,
-                                        GameComponent::Shapes::CUBE_SMALL, " ", "FILE"));
+      it->actualiseGameComponent();
+      // it->gameComponent->setPos(const Vector2<double> &pos)
+        vec.push_back(it->gameComponent// new GameComponent(it->pos, AComponent::ComponentColor::COLOR_CYAN,
+                      //                   GameComponent::Shapes::CUBE_SMALL, " ", "FILE")
+		      );
         ++it;
     }
     return (vec);

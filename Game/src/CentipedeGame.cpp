@@ -5,12 +5,11 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Fri Apr  1 14:37:49 2016 Victor Gouet
+// Last update Fri Apr  1 16:30:30 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
 #include "../../Commons/include/ArcadeSystem.hpp"
-#include "../../Commons/include/UIComponent.hpp"
 
 CentipedeGame::CentipedeGame() :
         AGame("Centipede"),
@@ -19,11 +18,41 @@ CentipedeGame::CentipedeGame() :
   highScoreComponent = NULL;
   initMap();
   restart();
+
+  waweCom = new UIComponent(Vector2<double>(0, 0),
+			    AComponent::COLOR_WHITE,
+			    Vector2<double>(5, 1), "");
+
+  waweCom->setText("wave : " + std::to_string(_wave));
+  waweCom->setPos(Vector2<double>(1, 1));
+
+  _oldStack.push(waweCom);
+
+  scoreCom = new UIComponent(Vector2<double>(0, 0),
+			     AComponent::COLOR_WHITE,
+			     Vector2<double>(5, 1), "");
+
+  _oldStack.push(scoreCom);
+
+  missilCom = new GameComponent(Vector2<double>(0, 0),
+				AComponent::ComponentColor::COLOR_GREEN,
+				GameComponent::Shapes::SPHERE_SMALL, " ", "FILE");
 }
 
 CentipedeGame::~CentipedeGame()
 {
-
+  if (scoreCom)
+    {
+      delete scoreCom;
+    }
+  if (waweCom)
+    {
+      delete waweCom;
+    }
+  if (missilCom)
+    {
+      delete missilCom;
+    }
 }
 
 void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
@@ -41,21 +70,12 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
         if (*vecShoot >= Vector2<double>(0, 0) && *vecShoot < Vector2<double>(50, 30) &&
             map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' ')
         {
-	  // MAP A VERIFIER
-	  // SA SEGFAUKT FICHIER TOTO
-
-            // TOUCHE UN BLOCK
-            
 	  map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)]
                     = static_cast<char>(map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] - 1);
-            // if (map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] == ' ')
 	  spaceShip.stopShot();
 	    
 	    return ;
         }
-//        it = centipede.begin();
-//        while (it != centipede.end())
-//        {
 
         itNewVec = centipede.getPos();
         std::list<Vector2<double> >::iterator itNc = itNewVec.begin();
@@ -78,20 +98,17 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
             ++itNc;
         }
 
-        if (vecShoot->y < 0// ||
-	    // *vecShoot <= Vector2<double>(0, 0)
-	    //  && *vecShoot < Vector2<double>(30, 50) &&
-            // map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' '
-	    )
+        if (vecShoot->y < 0)
         {
             spaceShip.stopShot();
         }
         else
         {
 	  if ((vecShoot = spaceShip.getShoot()) != NULL)
-            output.push(new GameComponent(*vecShoot,
-                                          AComponent::ComponentColor::COLOR_GREEN,
-                                          GameComponent::Shapes::SPHERE_SMALL, " ", "FILE"));
+	    {
+	      missilCom->setPos(*vecShoot);
+	      output.push(missilCom);
+	    }
         }
     }
 }
@@ -106,8 +123,15 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
     std::stack<AComponent *> output;
     std::vector<AComponent *> vec;
 
+    while (!_output.empty())
+      {
+    	if (_output.top())
+    	  delete _output.top();
+    	_output.pop();
+      }
     if (state == ALIVE)
       {
+	output = this->_oldStack;
 	onShoot(output);
 	if (centipede.isTouching(spaceShip.getPos()))
 	  {
@@ -138,19 +162,24 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
 	spaceShip.move(keycode, map);
 	displayMap(output);
 	output.push(spaceShip.getGameComponent());
-	UIComponent		*scoreCom = new UIComponent(Vector2<double>(0, 0),
-							    AComponent::COLOR_WHITE,
-							    Vector2<double>(5, 1), "");
+
+	// UIComponent		*scoreCom = new UIComponent(Vector2<double>(0, 0),
+	// 						    AComponent::COLOR_WHITE,
+	// 						    Vector2<double>(5, 1), "");
+
 	scoreCom->setText("score : " + std::to_string(_score));
 	scoreCom->setPos(Vector2<double>(static_cast<int>(ArcadeSystem::winWidth - scoreCom->getText().length()) / 2, 1));
-	output.push(scoreCom);
+
+	// output.push(scoreCom);
 	
-	UIComponent		*waweCom = new UIComponent(Vector2<double>(0, 0),
-							   AComponent::COLOR_WHITE,
-							   Vector2<double>(5, 1), "");
+	// UIComponent		*waweCom = new UIComponent(Vector2<double>(0, 0),
+	// 						   AComponent::COLOR_WHITE,
+	// 						   Vector2<double>(5, 1), "");
+
 	waweCom->setText("wave : " + std::to_string(_wave));
 	waweCom->setPos(Vector2<double>(1, 1));
-	output.push(waweCom);
+
+	// output.push(waweCom);
       }
     else
       {
@@ -208,36 +237,31 @@ void            CentipedeGame::displayMap(std::stack<AComponent *> &output) cons
             if (map[y][x] != ' ')
 	      {
 		int	ref = map[y][x] - ' ';
+		GameComponent	*gameCom = new GameComponent(Vector2<double>(x, y),
+							     AComponent::ComponentColor::COLOR_WHITE ,
+							     GameComponent::Shapes::CUBE_LARGE, " ", "FILE");
 	        switch (ref)
 		  {
 		  case 1:
-		    output.push(new GameComponent(Vector2<double>(x, y),
-                                              AComponent::ComponentColor::COLOR_WHITE ,
-                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
-		    break;
+		    gameCom->setColor(AComponent::ComponentColor::COLOR_WHITE);
+	            break;
 		  case 2:
-		    output.push(new GameComponent(Vector2<double>(x, y),
-                                              AComponent::ComponentColor::COLOR_YELLOW,
-                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
-		    break;
+		    gameCom->setColor(AComponent::ComponentColor::COLOR_YELLOW);
+	            break;
 		  case 3:
-		    output.push(new GameComponent(Vector2<double>(x, y),
-                                              AComponent::ComponentColor::COLOR_GREEN,
-                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
-		    break;
+		    gameCom->setColor(AComponent::ComponentColor::COLOR_GREEN);
+	            break;
 		  case 4:
-		    output.push(new GameComponent(Vector2<double>(x, y),
-                                              AComponent::ComponentColor::COLOR_BLUE,
-                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
-		    break;
+		    gameCom->setColor(AComponent::ComponentColor::COLOR_BLUE);
+	            break;
 		  case 5:
-		    output.push(new GameComponent(Vector2<double>(x, y),
-                                              AComponent::ComponentColor::COLOR_RED,
-                                              GameComponent::Shapes::CUBE_LARGE, " ", "FILE"));
-		    break;
+		    gameCom->setColor(AComponent::ComponentColor::COLOR_RED);
+	            break;
 		  default:
 		    break;
 		  }
+		output.push(gameCom);
+		_output.push(gameCom);
 	      }
             ++x;
         }
