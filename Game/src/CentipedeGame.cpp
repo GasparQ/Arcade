@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Fri Apr  1 16:35:00 2016 Victor Gouet
+// Last update Fri Apr  1 16:37:32 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
@@ -279,7 +279,7 @@ void                CentipedeGame::initMap()
         x = 0;
         while (x < 50)
         {
-	  if (y != 27 && x != 25)
+	  if (y != 25 && x != 20)
             map[y][x] = (rand() % 30 == 0 ? block : ' ');
 	  else
 	    map[y][x] = ' ';
