@@ -11,7 +11,7 @@
 Sound * Sound::m_sound_token;
 
 // Callback called by Mix when a channels ends playing
-void ChunkCallback(int channel)
+void Sound::ChunkCallback(int channel)
 {
     Sound::Instance()->SoundFinished(channel);
 }

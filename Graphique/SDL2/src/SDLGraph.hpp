@@ -13,6 +13,7 @@
 #include "../../../Commons/include/GameComponent.hpp"
 #include "../../../Commons/include/UIComponent.hpp"
 #include "../../../Commons/include/HighScoreComponent.hpp"
+#include "../../../Commons/Sound.hpp"
 
 /**
  * \brief SDL class for lib_arcade_sdl implementation
@@ -38,6 +39,7 @@ private:
     std::map<std::string, SDL_Texture*> spriteCache;
     TTF_Font                            *uifont;
     std::map<AComponent::ComponentColor, SDL_Color> colors;
+    Sound m_sound;
 
 private:
     SDL_Texture *loadSprite(std::string const &)                                                            throw(std::runtime_error);

@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Sun Mar 13 16:17:19 2016 Quentin Gasparotto
-## Last update Mon Mar 14 21:24:06 2016 Quentin Gasparotto
+## Last update Fri Apr  1 17:32:47 2016 Fernand Veyrier
 ##
 
 NAME		=	../../lib/lib_arcade_sdl2.so
@@ -23,6 +23,10 @@ CPPFLAGS	=	-W -Wall -Wextra $(HEADER) -std=c++11 -fPIC -g
 HEADER		=	-I./include -I ../../Commons/include
 
 LDFLAGS		=	-L ./build/.libs/ -lSDL2 -lSDL2_ttf -shared -L ../../Commons -l_arcade_commons
+
+## Necessary if using SDL_mixer
+LDFLAGS	+=		-Wl,-rpath,./Graphique/SDL2_mixer -L ../SDL2_mixer -L ./ -lSDL2 -lSDL2_mixer ../SDL2_mixer/libfluidsynth.so.1
+
 
 $(NAME):	$(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)

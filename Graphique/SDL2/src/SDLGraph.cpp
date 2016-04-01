@@ -6,6 +6,7 @@
 #include "SDLGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
 #include "../../../Commons/include/DualTextComponent.hpp"
+#include "../../../Commons/AudioComponent.hpp"
 
 const std::string SDLGraph::fontName = "./fonts/arcade_barbarian.ttf"; /*arcade_fluid.ttf arcade_font.ttf arcade_boxes.ttf ka1.ttf Minecraft.ttf*/
 const std::string SDLGraph::defaultFont = "/usr/share/fonts/truetype/DroidSans-Bold.ttf";
@@ -114,6 +115,7 @@ void SDLGraph::display(std::stack<AComponent *> stack)
     GameComponent       *gameComponent;
     UIComponent         *uiComponent;
     HighScoreComponent  *highScoreComponent;
+    AudioComponent *audioComponent;
 
     SDL_RenderClear(render);
     while (!stack.empty())
@@ -124,6 +126,9 @@ void SDLGraph::display(std::stack<AComponent *> stack)
             drawUIComponent(uiComponent);
         else if ((highScoreComponent = dynamic_cast<HighScoreComponent *>(stack.top())))
             drawHighScoreComponent(highScoreComponent);
+        else if ((audioComponent = dynamic_cast<AudioComponent*>(stack.top())))
+            m_sound.PlaySound(audioComponent->getSoundPath(), audioComponent->getLoop(),
+                              audioComponent->getOverlap(), audioComponent->getStop());
         stack.pop();
     }
     SDL_RenderPresent(render);
