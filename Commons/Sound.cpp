@@ -39,27 +39,38 @@ Sound::~Sound()
 /// Plays a sound located at path.
 /// If bLoop, loops forever.
 /// If bOverlap, is the sound is already playing kills the song and restarts it
-void Sound::PlaySound(std::string const &soundPath, bool bLoop, bool bOverlap)
+void Sound::PlaySound(std::string const &soundPath, bool bLoop, bool bOverlap, bool bStop)
 {
     int channel = 0;
-    Mix_Chunk *music = Mix_LoadWAV(soundPath.c_str());
+    Mix_Chunk *music;
 
-    if (music == NULL)
+    if (bStop)
     {
-        std::cerr << "Sound not found : " << soundPath << std::endl;
+        if (m_sounds.find(soundPath) != m_sounds.end())
+        {
+            StopSound(soundPath);
+        }
     }
     else
     {
-        if (m_sounds.find(soundPath) == m_sounds.end())
+        music = Mix_LoadWAV(soundPath.c_str());
+        if (music == NULL)
         {
-            channel = Mix_PlayChannel(-1, music, (bLoop) ? -1 : 0);
-            m_sounds[soundPath] = channel;
+            std::cerr << "Sound not found : " << soundPath << std::endl;
         }
-        else if (bOverlap)
+        else
         {
-            StopSound(soundPath);
-            channel = Mix_PlayChannel(-1, music, (bLoop) ? -1 : 0);
-            m_sounds[soundPath] = channel;
+            if (m_sounds.find(soundPath) == m_sounds.end())
+            {
+                channel = Mix_PlayChannel(-1, music, (bLoop) ? -1 : 0);
+                m_sounds[soundPath] = channel;
+            }
+            else if (bOverlap)
+            {
+                StopSound(soundPath);
+                channel = Mix_PlayChannel(-1, music, (bLoop) ? -1 : 0);
+                m_sounds[soundPath] = channel;
+            }
         }
     }
 }
