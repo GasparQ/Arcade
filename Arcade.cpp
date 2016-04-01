@@ -21,6 +21,9 @@ const std::string    arcade::Arcade::gamesDir = "./games/";
 const std::string    arcade::Arcade::createLib = "loadLib";
 const std::string    arcade::Arcade::createGame = "loadGame";
 
+/**
+ * \brief Arcade constructor for the initialisations of the main program
+ */
 arcade::Arcade::Arcade()
 {
     _status = Arcade::Menu;
@@ -41,6 +44,9 @@ arcade::Arcade::Arcade()
     currLibName = libsName.end();
 }
 
+/**
+ * \brief Destructor of core program, free the memory
+ */
 arcade::Arcade::~Arcade()
 {
 
@@ -63,6 +69,11 @@ arcade::Arcade::~Arcade()
     regfree(&lib_names);
 }
 
+/**
+ * \brief Function for the initialisation of the core program. Throws an exception if something fails.
+ *
+ * \param libname The name of the lib send in program parameter
+ */
 void arcade::Arcade::Init(std::string const &libname)
 {
     std::vector<std::string>            gameLibs;
@@ -75,6 +86,11 @@ void arcade::Arcade::Init(std::string const &libname)
     loadGraph();
 }
 
+/**
+ * \brief Set currLibName iterator from the libname
+ *
+ * \param libname The libname to search in libList
+ */
 void arcade::Arcade::findCurrLib(std::string const &libname)
 {
     std::vector<std::string>::iterator it;
@@ -94,6 +110,13 @@ void arcade::Arcade::findCurrLib(std::string const &libname)
     }
 }
 
+/**
+ * \brief Load files from a directory send in parameters. Filter files from regex pattern.
+ *
+ * \param dirName The name of the directory in which find files
+ * \param nameRestric Pattern which filename has to respect
+ * \return Vector of filenames
+ */
 std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string const &dirName, regex_t &nameRestric)
 {
     std::vector<std::string> names;
@@ -113,6 +136,9 @@ std::vector<std::string>        arcade::Arcade::loadFilesFromDir(std::string con
     return names;
 }
 
+/**
+ * \brief Load graphic lib from currLibName. Throws an exception if an error occurs
+ */
 void        arcade::Arcade::loadGraph()
 {
     IGraph *(*load_lib)();
@@ -131,6 +157,11 @@ void        arcade::Arcade::loadGraph()
     lib = load_lib();
 }
 
+/**
+ * \brief Load games from libsName and put them in a vector and IGames *
+ *
+ * \param libsName Vector of game lib name
+ */
 void        arcade::Arcade::loadGames(const std::vector<std::string> &libsName)
 {
     IGame *(*load_game)();
@@ -146,6 +177,13 @@ void        arcade::Arcade::loadGames(const std::vector<std::string> &libsName)
     currGame = games.begin();
 }
 
+/**
+ * \brief Check if the name of a lib is valid in function of a regex pattern
+ *
+ * \param string The lib name to check
+ * \param reg The regex pattern for libs
+ * \return Either the lib name is valid return true or false
+ */
 bool                    arcade::Arcade::isLibNameValid(const std::string &string, regex_t &reg) const
 {
     static regmatch_t matches[10];
@@ -155,6 +193,9 @@ bool                    arcade::Arcade::isLibNameValid(const std::string &string
     return true;
 }
 
+/**
+ * \brief Function to change the graphical lib to the previous one
+ */
 void        arcade::Arcade::onPrevGraph()
 {
     if (currLibName == libsName.end())
@@ -165,6 +206,9 @@ void        arcade::Arcade::onPrevGraph()
     loadGraph();
 }
 
+/**
+ * \brief Function to change the graphical lib to the next one
+ */
 void        arcade::Arcade::onNextGraph()
 {
     if (currLibName == libsName.end())
@@ -175,6 +219,9 @@ void        arcade::Arcade::onNextGraph()
     loadGraph();
 }
 
+/**
+ * \brief Function to change the game to the next one
+ */
 void        arcade::Arcade::onNextGame()
 {
     if (currGame == games.end())
@@ -184,6 +231,9 @@ void        arcade::Arcade::onNextGame()
         currGame = games.begin();
 }
 
+/**
+ * \brief Function to change the game on the previous one
+ */
 void        arcade::Arcade::onPrevGame()
 {
     if (currGame == games.end())
@@ -193,22 +243,34 @@ void        arcade::Arcade::onPrevGame()
     --currGame;
 }
 
+/**
+ * \brief Function to restart the game
+ */
 void        arcade::Arcade::onRestart()
 {
     (*currGame)->restart();
     lib->display(std::stack<AComponent *>());
 }
 
+/**
+ * \brief Function to return to the home menu
+ */
 void        arcade::Arcade::onHome()
 {
     _status = Arcade::Menu;
 }
 
+/**
+ * \brief Function to exit the program
+ */
 void        arcade::Arcade::onExit()
 {
     isRunning = false;
 }
 
+/**
+ * \brief Main loop of the program
+ */
 void        arcade::Arcade::Run()
 {
     int key;
@@ -246,6 +308,11 @@ void        arcade::Arcade::Run()
     }
 }
 
+/**
+ * \brief Getter for the current lib name
+ *
+ * \return The current lib name
+ */
 std::string arcade::Arcade::getCurrentLibName() const
 {
     if (currLibName == libsName.end())
@@ -253,6 +320,11 @@ std::string arcade::Arcade::getCurrentLibName() const
     return *currLibName;
 }
 
+/**
+ * \brief Getter for the current game name
+ *
+ * \return The current game name
+ */
 std::string arcade::Arcade::getCurrentGameName() const
 {
     if (currGame == games.end())
@@ -260,6 +332,11 @@ std::string arcade::Arcade::getCurrentGameName() const
     return (*currGame)->getName();
 }
 
+/**
+ * \brief Setter for the status
+ *
+ * \param status The new status to set
+ */
 void arcade::Arcade::setStatus(arcade::Arcade::Status status)
 {
     _status = status;
