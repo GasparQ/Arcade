@@ -103,6 +103,7 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
     components.push(&*menuComponents[ArcadeMenu::PLAY]);
     anim.setFileName(getNextFrame());
     components.push(&anim);
+    //components.push();
     return components;
 }
 

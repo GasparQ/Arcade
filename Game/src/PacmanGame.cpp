@@ -41,7 +41,7 @@ PacmanGame::PacmanGame() :
 
 PacmanGame::~PacmanGame()
 {
-
+    ClearOutput();
 }
 
 std::stack<AComponent *> PacmanGame::compute(int keycode)
@@ -49,10 +49,11 @@ std::stack<AComponent *> PacmanGame::compute(int keycode)
     std::map<int, keyfunc>::iterator it;
     HighScoreComponent *highScoreComponent;
 
-    if (output.size() != 2)
+    if (!m_firstLoop)
     {
         ClearOutput();
     }
+    m_firstLoop = false;
 
     if (state == AGame::ALIVE)
     {

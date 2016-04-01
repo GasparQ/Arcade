@@ -120,6 +120,7 @@ private:
     size_t m_score = 0;
     int m_lives = 3;
     std::vector<std::unique_ptr<IChrono> > m_chronos;
+    bool m_firstLoop = true;
 };
 
 #endif //CPP_ARCADE_PACMAN_HPP
