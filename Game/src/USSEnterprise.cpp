@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:13:12 2016 Victor Gouet
-// Last update Fri Apr  1 15:47:52 2016 Victor Gouet
+// Last update Fri Apr  1 16:34:50 2016 Victor Gouet
 //
 
 #include <cmath>
@@ -103,7 +103,7 @@ void	USSEnterprise::move(int keycode, char map[31][51])
 void				USSEnterprise::reinitPos()
 {
   _pos.x = 20;
-  _pos.y = 23;
+  _pos.y = 25;
 }
 
 void				USSEnterprise::stopShot()
