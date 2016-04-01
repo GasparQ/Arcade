@@ -10,6 +10,9 @@
 const std::string SDLGraph::fontName = "./fonts/arcade_barbarian.ttf"; /*arcade_fluid.ttf arcade_font.ttf arcade_boxes.ttf ka1.ttf Minecraft.ttf*/
 const std::string SDLGraph::defaultFont = "/usr/share/fonts/truetype/DroidSans-Bold.ttf";
 
+/**
+ * \brief Constructor in which SDL, TTF, render, window, font, colors, keycodes will be initialised
+ */
 SDLGraph::SDLGraph()
 {
     if (SDL_Init(0) != 0 ||
@@ -42,6 +45,9 @@ SDLGraph::SDLGraph()
     keyCodeAssociation[SDL_SCANCODE_BACKSPACE] = ArcadeSystem::Backspace;
 }
 
+/**
+ * \brief Destructor of SDL lib that will Quit SDL, Quit TTF, close windows, fonts, destroy renderers and cache textures
+ */
 SDLGraph::~SDLGraph()
 {
     std::map<std::string, SDL_Texture*>::iterator   it;
@@ -57,6 +63,14 @@ SDLGraph::~SDLGraph()
     SDL_Quit();
 }
 
+/**
+ * \brief Used to add a color to SDL palette
+ * \param index Color of the component
+ * \param r Red
+ * \param g Green
+ * \param b Blue
+ * \param a Alpha
+ */
 void SDLGraph::addColor(AComponent::ComponentColor index, Uint8 r, Uint8 g, Uint8 b, Uint8 a)
 {
     SDL_Color   color;
@@ -68,6 +82,11 @@ void SDLGraph::addColor(AComponent::ComponentColor index, Uint8 r, Uint8 g, Uint
     colors[index] = color;
 }
 
+/**
+ * \brief Function that will handle a SDL keycode
+ *
+ * \return keycode handled
+ */
 int SDLGraph::eventManagment()
 {
     std::map<int, int>::const_iterator  it;
@@ -85,6 +104,11 @@ int SDLGraph::eventManagment()
     return key;
 }
 
+/**
+ * \brief Function that will display all of the components send in parameters to the screen
+ *
+ * \param stack A stack of components to display
+ */
 void SDLGraph::display(std::stack<AComponent *> stack)
 {
     GameComponent       *gameComponent;
@@ -105,6 +129,12 @@ void SDLGraph::display(std::stack<AComponent *> stack)
     SDL_RenderPresent(render);
 }
 
+/**
+ * \brief function that will load a sprite from his filename, if a error occur it throws an exception. It save it into a cache.
+ *
+ * \param file The filename
+ * \return The texture corresponding to the sprite loaded
+ */
 SDL_Texture     *SDLGraph::loadSprite(const std::string &file) throw(std::runtime_error)
 {
     std::map<std::string, SDL_Texture*>::iterator   it;
@@ -123,6 +153,13 @@ SDL_Texture     *SDLGraph::loadSprite(const std::string &file) throw(std::runtim
     return tex;
 }
 
+/**
+ * \brief Function that will draw a surface on the screen. It throws an exception if display fails.
+ *
+ * \param texture The texture to display
+ * \param pos The position to which display the surface
+ * \param dim The size of the texture
+ */
 void SDLGraph::displaySurface(SDL_Texture *texture, Vector2<double> pos, Vector2<double> dim) throw(std::runtime_error)
 {
     SDL_Rect    sdlRect;
@@ -135,6 +172,11 @@ void SDLGraph::displaySurface(SDL_Texture *texture, Vector2<double> pos, Vector2
         throw std::runtime_error(SDL_GetError());
 }
 
+/**
+ * \brief Draw a game component on the screen, if loadSprite fails, create a colored square texture. Throws an exception if the drawing fails
+ *
+ * \param component The component to draw
+ */
 void SDLGraph::drawGameComponent(GameComponent const *component) throw(std::runtime_error)
 {
     SDL_Texture *texture;
@@ -168,6 +210,11 @@ void SDLGraph::drawGameComponent(GameComponent const *component) throw(std::runt
     displaySurface(texture, component->getPos());
 }
 
+/**
+ * \brief Draw an highscore component. If drawing fails, throws an exceptions.
+ *
+ * \param component The component to draw
+ */
 void                            SDLGraph::drawHighScoreComponent(HighScoreComponent const *component) throw(std::runtime_error)
 {
     SDL_Surface                 *surface;
@@ -198,6 +245,14 @@ void                            SDLGraph::drawHighScoreComponent(HighScoreCompon
     SDL_DestroyTexture(texture);
 }
 
+/**
+ * \brief function to draw text on the screen. Throws an exception if fails.
+ *
+ * \param string The text to display
+ * \param pos The position of the text on the screen
+ * \param dim The size of the text in Unit
+ * \param color The color of the text
+ */
 void SDLGraph::drawText(const std::string &string, Vector2<double> pos, Vector2<double> dim, AComponent::ComponentColor color)
 {
     SDL_Surface *text;
@@ -211,6 +266,11 @@ void SDLGraph::drawText(const std::string &string, Vector2<double> pos, Vector2<
     displaySurface(texture, pos, dim);
 }
 
+/**
+ * \brief Draw an UIComponent on the screen(DualTextComponent is also supported). Throws an exception if failure occurs.
+ *
+ * \param component The UIComponent to display
+ */
 void SDLGraph::drawUIComponent(UIComponent const *component) throw(std::runtime_error)
 {
     DualTextComponent const   *dualTextComponent = dynamic_cast<DualTextComponent const *>(component);
@@ -220,6 +280,9 @@ void SDLGraph::drawUIComponent(UIComponent const *component) throw(std::runtime_
         drawText(dualTextComponent->getSubTitle(), dualTextComponent->getSubPos(), dualTextComponent->getSubDim());
 }
 
+/**
+ * \brief Function to instantiate the lib.
+ */
 extern "C" IGraph *loadLib()
 {
     return (new SDLGraph());
