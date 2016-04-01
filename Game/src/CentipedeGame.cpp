@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Fri Apr  1 16:44:12 2016 Victor Gouet
+// Last update Fri Apr  1 17:14:44 2016 Victor Gouet
 //
 
 #include "../include/CentipedeGame.hpp"
@@ -13,7 +13,7 @@
 
 CentipedeGame::CentipedeGame() :
         AGame("Centipede"),
-        centipede(Vector2<double>(0, 0))
+        centipede(Vector2<double>(10, 0))
 {
   highScoreComponent = NULL;
   // initMap();
