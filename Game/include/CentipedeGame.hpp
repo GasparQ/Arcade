@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:17:37 2016 Victor Gouet
-// Last update Thu Mar 31 23:43:37 2016 Victor Gouet
+// Last update Fri Apr  1 16:24:08 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDEGAME_HPP
@@ -16,6 +16,8 @@
 #include "Centipede.hpp"
 #include <vector>
 #include "../../Commons/include/HighScoreComponent.hpp"
+#include "../../Commons/include/UIComponent.hpp"
+
 
 class CentipedeGame : public AGame
 {
@@ -50,7 +52,11 @@ private:
     int _score;
   int	_wave;
   HighScoreComponent          *highScoreComponent;
-
+  std::stack<AComponent *>	_oldStack;
+  mutable std::stack<AComponent *>	_output;
+  UIComponent			*waweCom;
+  UIComponent			*scoreCom;
+  GameComponent			*missilCom;
 };
 
 #endif

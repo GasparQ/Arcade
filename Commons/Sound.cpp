@@ -6,7 +6,6 @@
 #include "Sound.hpp"
 #include "../Exception/LoadException.hpp"
 #include "../Graphique/SDL2/include/SDL.h"
-#include "../Graphique/SDL2_mixer/SDL_mixer.h"
 
 // Redefine the static member to avoid undefined symbols in dynaic linking
 Sound * Sound::m_sound_token;

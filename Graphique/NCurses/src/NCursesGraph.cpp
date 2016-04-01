@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Thu Mar 31 16:26:13 2016 Victor Gouet
+// Last update Fri Apr  1 15:52:33 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -225,15 +225,10 @@ void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
     }
 }
 
-void		NCursesGraph::_displayComponent(AnimationComponent const *// animation
-						,
+void		NCursesGraph::_displayComponent(AnimationComponent const *,
 						ncr::Window *win)
 {
   size_t	i;
-  // int		x;
-  // int		y;
-  // int		newX;
-  // int		newY;
 
   i = 0;
   if (first_rains == true)
@@ -241,10 +236,6 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *// animation
       while (i < rains_capacity)
 	{
 	  rains[i].init();
-	  // rains[i].color = 3;
-	  // rains[i].x = rand() % 1000;
-	  // rains[i].y = rand() % 1000;
-	  // rains[i] = rand() % 40;
 	  ++i;
 	}
     }
@@ -252,10 +243,7 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *// animation
     {
       while (i < rains_capacity)
       	{
-	   // rains[i].color = 3;
 	  rains[i].move();
-	  // (rains[i].x)--;
-	  // (rains[i].y)--;
 	  ++i;
       	}
     }
@@ -271,39 +259,6 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *// animation
       ++i;
     }
   first_rains = false;
-  // int color = rand() % 8 + 1;
-  // while (i < 1000)
-  //   {
-  //     getmaxyx(win->getWin(), y, x);
-  //     if (y == 0 || x == 0)
-  // 	return ;
-  //     win->attrON(A_REVERSE | COLOR_PAIR(color));
-  //     newX = rand() % x;
-  //     newY = rand() % y;
-  //     win->print(newX, newY, " ");
-  //     _cacheGame.push(s_cache(Vector2<double>(newX, newY), " ", win));
-  //     win->attrOFF(A_REVERSE);
-  //     ++i;
-  //   }
-
-
-  // std::ifstream					fd;
-  // std::stringstream				buffer;
-  // std::map<std::string, std::string>::iterator	it;
-
-  // if ((it = _fileCache.find(animation->getFileName())) != _fileCache.end())
-  //   {
-  //     _displayFile(animation->getPos().x, animation->getPos().y, (*it).second, win);
-  //     return ;
-  //   }
-  // fd.open(animation->getFileName().c_str());
-  // if (fd.is_open())
-  //   {
-  //     buffer << fd.rdbuf();
-  //     _displayFile(animation->getPos().x, animation->getPos().y, buffer.str(), win);
-  //     _fileCache[animation->getFileName()] = buffer.str();
-  //     fd.close();
-  //   }
 }
 
 void		NCursesGraph::_cacheClear()
