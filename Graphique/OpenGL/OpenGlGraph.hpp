@@ -31,6 +31,8 @@ public:
 
     virtual void display(std::stack<AComponent *>);
 
+    virtual void setTitle(const std::string &title);
+
 private:
     void DrawSphere(Vector2<double> pos, AComponent::ComponentColor color, double size, double posZ = 0) const;
 

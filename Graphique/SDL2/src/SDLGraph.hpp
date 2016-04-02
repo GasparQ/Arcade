@@ -30,6 +30,7 @@ public:
 public:
     virtual int eventManagment();
     virtual void display(std::stack<AComponent *>);
+    virtual void setTitle(const std::string &title);
 
 private:
     SDL_Event                           event;

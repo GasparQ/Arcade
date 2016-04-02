@@ -202,28 +202,31 @@ void whereAmI(PacmanGame const &pacman)
 {
     struct arcade::WhereAmI *pos;
     Vector2<double> pacpos = pacman.getPacman().getPosition();
-    size_t posSize = sizeof(arcade::Position);
+    size_t posSize = sizeof(*pos) + sizeof(arcade::Position);
 
-    pos = new struct arcade::WhereAmI + posSize;
+    if ((pos = (arcade::WhereAmI *)malloc(posSize)) == NULL)
+        throw std::bad_alloc();
     pos->type = arcade::CommandType::WHERE_AM_I;
     pos->lenght = 1;
     pos->position[0].x = static_cast<uint16_t >(pacpos.x);
     pos->position[0].y = static_cast<uint16_t >(pacpos.y);
-    write(1, pos, posSize + sizeof(struct arcade::WhereAmI));
+    write(1, pos, posSize);
+    free(pos);
 }
 
 extern "C" void Play(void)
 {
-    char c;
+    arcade::CommandType c;
     PacmanGame pacman;
     struct arcade::GetMap *map;
-    size_t mapSize = ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t);
+    size_t mapSize = sizeof(*map) + ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t);
 
-    map = new struct arcade::GetMap + mapSize;
+    if ((map = (arcade::GetMap *)malloc(mapSize)) == NULL)
+        throw std::bad_alloc();
     map->type = arcade::CommandType::GET_MAP;
     map->width = ArcadeSystem::winWidth;
     map->height = ArcadeSystem::winHeight;
-    while (std::cin.read(&c, 1))
+    while (read(0, &c, sizeof(c)))
     {
         switch (static_cast<arcade::CommandType>(c))
         {
@@ -232,7 +235,7 @@ extern "C" void Play(void)
                 break;
             case arcade::CommandType::GET_MAP:
                 updateMap(map, pacman);
-                write(1, map, mapSize + sizeof(struct arcade::GetMap));
+                write(1, map, mapSize);
                 break;
             case arcade::CommandType::GO_UP:
                 const_cast<Pacman *>(&pacman.getPacman())->goUp(NULL);
@@ -253,6 +256,7 @@ extern "C" void Play(void)
                 break;
         }
     }
+    free(map);
 }
 
 void    PacmanGame::onReplaceGhostByWall(char newMap[31][51], Ghost::GhostState state) const

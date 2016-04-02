@@ -35,10 +35,6 @@ public:
     {
         return size;
     }
-    virtual std::stack<AComponent *> getInfos() const
-    {
-        return (std::stack<AComponent *>());
-    }
 
 protected:
     GameState           state;

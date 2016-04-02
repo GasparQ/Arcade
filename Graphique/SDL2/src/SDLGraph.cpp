@@ -286,6 +286,16 @@ void SDLGraph::drawUIComponent(UIComponent const *component) throw(std::runtime_
 }
 
 /**
+ * \brief Function for setting the title of the window
+ *
+ * \param string The new title of the window
+ */
+void SDLGraph::setTitle(const std::string &string)
+{
+    SDL_SetWindowTitle(win, string.c_str());
+}
+
+/**
  * \brief Function to instantiate the lib.
  */
 extern "C" IGraph *loadLib()

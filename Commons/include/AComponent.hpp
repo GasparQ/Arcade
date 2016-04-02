@@ -18,6 +18,7 @@ class AComponent
 public:
     enum ComponentColor
     {
+        COLOR_BLACK = 0,
         COLOR_RED = 1,
         COLOR_GREEN = 2,
         COLOR_YELLOW = 3,
