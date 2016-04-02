@@ -12,6 +12,7 @@
 #include "Graphique/include/IGraph.hpp"
 #include "Game/include/IGame.hpp"
 #include "Commons/include/Chrono.hpp"
+#include "Commons/AudioComponent.hpp"
 
 /**
  * \brief namespace arcade for the entire project
@@ -86,7 +87,10 @@ namespace arcade
 
         std::stack<AComponent *>    components;
         Chrono<Arcade, void (Arcade::*)()> *chrono_menu;
-
+        /**
+         * \brief Used to store all the musics
+         */
+        AudioComponent audioComponent[1] = {{"Sound/HeyHeyHey.wav", false, false, true}};
 
         /**
          * Methods

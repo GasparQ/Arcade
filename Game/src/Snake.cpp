@@ -138,7 +138,6 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
             output.push(*bod);
         }
     }
-
     output.push(&m_gameMusic);
     return output;
 }
