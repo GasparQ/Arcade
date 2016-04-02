@@ -154,6 +154,9 @@ void        arcade::Arcade::loadGraph()
     if (lib)
     {
         delete (lib);
+    }
+    if (dllib)
+    {
         dlclose(dllib);
     }
     if ((dllib = dlopen(currLibName->c_str(), RTLD_NOW)) == NULL)
@@ -294,7 +297,7 @@ void arcade::Arcade::addMenuSound()
  */
 void        arcade::Arcade::Run()
 {
-    int key;
+    int key = -1;
     std::chrono::milliseconds chrono(10);
     std::map<int, arcade::eventSystem>::iterator it;
     AudioComponent m_audio_stop("Sound/Menu.wav", false, false, true);
@@ -306,7 +309,8 @@ void        arcade::Arcade::Run()
     {
         try
         {
-            key = lib->eventManagment();
+            if (lib)
+                key = lib->eventManagment();
         }
         catch (std::exception exception)
         {
