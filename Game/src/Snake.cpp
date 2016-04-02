@@ -257,8 +257,10 @@ void Snake::goAhead()
         return die();
     for (std::list<GameComponent *>::iterator it = body.begin(), end = body.end(); it != end; ++it)
     {
-        if ((*it)->getPos() == direction)
-            return die();
+      if ((*it)->getPos() == searchedPos)//direction)
+	  {
+	    return die();
+	  }
     }
     move();
 }
