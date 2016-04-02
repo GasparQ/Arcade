@@ -41,7 +41,8 @@ Snake::Snake() :
         counter(0),
         uiScore(NULL),
         highScoreComponent(NULL),
-        saved_keycode(-1)
+        saved_keycode(-1),
+        m_gameMusic("Sound/HeyHeyHey.wav", true, false, false)
 {
     keycodex[ArcadeSystem::ArrowDown] = &Snake::goDown;
     keycodex[ArcadeSystem::ArrowLeft] = &Snake::goLeft;
@@ -132,13 +133,7 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
         }
     }
 
-    if (bFirstLoop)
-    {
-        // Snake's music
-        // TODO: envoyer reference
-        output.push(new AudioComponent("Sound/HeyHeyHey.wav", true, false, false));
-        bFirstLoop = false;
-    }
+    output.push(&m_gameMusic);
     return output;
 }
 
