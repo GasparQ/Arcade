@@ -334,6 +334,16 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
     _stdscr->refresh();
 }
 
+/**
+ * \brief Set the title of the terminal
+ *
+ * \param title The title of the window
+ */
+void NCursesGraph::setTitle(const std::string &)
+{
+//    sys.stdout.write("\x1b]2;%s\x07" % title);
+}
+
 extern "C" IGraph *loadLib()
 {
     return new NCursesGraph();

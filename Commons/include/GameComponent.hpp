@@ -54,6 +54,7 @@ public:
 
     void                    setSpriteText(const char &spriteText);
     void                    setSpriteText(std::string const &);
+
     void                    setSprite2D(const std::string &sprite2D);
     void                    setSprite3D(Shapes sprite3D);
 

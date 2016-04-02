@@ -363,3 +363,13 @@ void OpenGlGraph::DrawBackgroundMenu()
         m_spheres[i].Update();
     }
 }
+
+/**
+ * \brief Setting the title of the window
+ *
+ * \param title The title of the new Window
+ */
+void OpenGlGraph::setTitle(const std::string &title)
+{
+    SDL_SetWindowTitle(m_window, title.c_str());
+}
