@@ -279,6 +279,7 @@ void        arcade::Arcade::Run()
     int key;
     std::chrono::milliseconds chrono(10);
     std::map<int, arcade::eventSystem>::iterator it;
+    AudioComponent m_audio_stop("Sound/Menu.wav", false, false, true);
     ArcadeMenu  menu(*this);
 
     menu.setFrames("text", "./Animation/NcursesAnimation", 4);
@@ -305,6 +306,8 @@ void        arcade::Arcade::Run()
         if (_status == Arcade::Game && currGame != games.end())
         {
             components = (*currGame)->compute(key);
+            /// stops the menu's music
+            components.push(&m_audio_stop);
         }
         lib->display(components);
         std::this_thread::sleep_for(chrono);

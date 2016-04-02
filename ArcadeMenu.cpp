@@ -5,7 +5,6 @@
 #include "ArcadeMenu.hpp"
 #include "Commons/include/AnimationComponent.hpp"
 #include "Commons/include/ArcadeSystem.hpp"
-#include "Commons/AudioComponent.hpp"
 
 ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     arcade1(arcade1),
@@ -105,8 +104,6 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
     components.push(&*menuComponents[ArcadeMenu::PLAY]);
     anim.setFileName(getNextFrame());
     components.push(&anim);
-
-    // TODO: réparer cette merde
     components.push(&m_sound);
 
     return components;

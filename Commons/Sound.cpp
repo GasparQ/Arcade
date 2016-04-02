@@ -39,6 +39,7 @@ Sound::~Sound()
 /// Plays a sound located at path.
 /// If bLoop, loops forever.
 /// If bOverlap, is the sound is already playing kills the song and restarts it
+/// If bStop, stops the sound
 void Sound::PlaySound(std::string const &soundPath, bool bLoop, bool bOverlap, bool bStop)
 {
     int channel = 0;
