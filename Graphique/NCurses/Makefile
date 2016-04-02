@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Thu Mar 10 15:53:59 2016 Quentin Gasparotto
-## Last update Wed Mar 30 23:33:42 2016 Victor Gouet
+## Last update Sat Apr  2 15:42:02 2016 Fernand Veyrier
 ##
 
 NAME		=	../../lib/lib_arcade_ncurses.so
@@ -24,6 +24,9 @@ OBJS		=	$(SRCS:.cpp=.o)
 CPPFLAGS	=	-W -Wall -Werror -I ./include -I ../include -I ../../Commons/include -fPIC -I ./lib/include/ -g
 
 LDFLAGS		=	-shared -L./lib -lncurses++ -lform -lform_g -lmenu -lmenu_g -lncurses -lncurses_g -lncurses++_g -lpanel -lpanel_g -L ../../Commons/ -l_arcade_commons -g
+
+## Necessary if using SDL_mixer
+LDFLAGS	+=		-Wl,-rpath,./Graphique/SDL2_mixer -L ../SDL2_mixer -L ./ -lSDL2 -lSDL2_mixer ../SDL2_mixer/libfluidsynth.so.1
 
 $(NAME):	$(OBJS)
 		$(CC) -o $(NAME) $(OBJS) $(LDFLAGS)

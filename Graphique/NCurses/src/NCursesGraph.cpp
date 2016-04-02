@@ -10,6 +10,7 @@
 
 #include "../include/NCursesGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
+#include "../../../Commons/AudioComponent.hpp"
 
 
 /**
@@ -299,6 +300,7 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
   UIComponent		*uiComponent;
   HighScoreComponent	*highScore;
   AnimationComponent	*animation;
+  AudioComponent *audioComponent;
 
   _cacheClear();
   while (!obj.empty())
@@ -319,6 +321,11 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
       	{
       	  _displayComponent(animation, _stdscr);
       	}
+      else if ((audioComponent = dynamic_cast<AudioComponent*>(obj.top())))
+      {
+        m_sound.PlaySound(audioComponent->getSoundPath(), audioComponent->getLoop(),
+                          audioComponent->getOverlap(), audioComponent->getStop());
+      }
       obj.pop();
     }
   if (gameWin)

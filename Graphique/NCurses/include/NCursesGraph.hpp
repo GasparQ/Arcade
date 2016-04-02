@@ -24,6 +24,7 @@
 # include "../../../Commons/include/AnimationComponent.hpp"
 # include "../../Exception/NCursesException.hpp"
 # include "../../../Commons/include/ActionComponent.hpp"
+#include "../../../Commons/Sound.hpp"
 
 typedef struct	s_cache
 {
@@ -122,6 +123,7 @@ private:
   bool			isResizeGood() const;
   bool		        canDisplay(int posX, int posY) const;
   ncr::Window		*onCreateBoard();
+    Sound m_sound;
 };
 
 #endif
