@@ -5,23 +5,22 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Fri Apr  1 18:13:21 2016 Victor Gouet
+// Last update Sat Apr  2 14:33:22 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
 #include "../../../Commons/include/ArcadeSystem.hpp"
 
-int		toto = 0;
 
+/**
+ * \brief Contructor in which ncurses, color, keycodes will be initialised
+ */
 NCursesGraph::NCursesGraph()
 {
   _board = NULL;
   gameWin = NULL;
-  UIWin = NULL;
   _stdscr = NULL;
 
-  // if (toto == 0)
-  //   {
   if (NCurses::init() == NULL)
     NCurses::destroy(), throw NCursesSystemFailed();
   if (NCurses::noEchoMode() == ERR)
@@ -33,10 +32,6 @@ NCursesGraph::NCursesGraph()
   
   if (!isResizeGood())
     NCurses::destroy(), throw ResizeFailed();
-
-  // _board = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 2, 0, 0);
-  // gameWin = new ncr::Window(ArcadeSystem::winHeight, ArcadeSystem::winWidth, 1, 1, *_board);
-  // UIWin = new ncr::Window(3, ArcadeSystem::winWidth - 1, 2, ArcadeSystem::winHeight + 3);
 
   if (NCurses::initPair(1, COLOR_RED, COLOR_BLACK) == ERR)
     NCurses::destroy(), throw NCursesSystemFailed();
@@ -52,15 +47,7 @@ NCursesGraph::NCursesGraph()
     NCurses::destroy(), throw NCursesSystemFailed();
   if (NCurses::initPair(7, COLOR_WHITE, COLOR_BLACK) == ERR)
     NCurses::destroy(), throw NCursesSystemFailed();
-    // }
-  // _board->attrON(A_REVERSE | COLOR_PAIR(4));
-  // _board->makeBorder(' ', ' ', ' ');
-  // _board->attrOFF(A_REVERSE);
 
-  // UIWin->attrON(A_REVERSE | COLOR_PAIR(4));
-  // UIWin->makeBorder(' ', ' ', ' ');
-  // UIWin->attrOFF(A_REVERSE);
-  ++toto;
   keycodeMap[260] = ArcadeSystem::ArrowLeft;
   keycodeMap[261] = ArcadeSystem::ArrowRight;
   keycodeMap[259] = ArcadeSystem::ArrowUp;
@@ -86,16 +73,16 @@ NCursesGraph::NCursesGraph()
   int x;
 
   getmaxyx(stdscr, y, x);
-  // _stdscr = new ncr::Window(ArcadeSystem::winHeight + 2, ArcadeSystem::winWidth + 20, 0, 0);
   _stdscr = new ncr::Window(y, x, 0, 0);
 }
 
+/**
+ * \brief Will destroy the window and the ncurse
+ */
 NCursesGraph::~NCursesGraph()
 {
   if (gameWin)
     delete gameWin;
-  if (UIWin)
-    delete UIWin;
   if (_board)
     delete _board;
   if (_stdscr)
@@ -103,6 +90,9 @@ NCursesGraph::~NCursesGraph()
   NCurses::destroy();
 }
 
+/**
+ * \brief tell you if the resize is enough to display
+ */
 bool			NCursesGraph::isResizeGood() const
 {
   int	x;
@@ -117,6 +107,9 @@ bool			NCursesGraph::isResizeGood() const
   return (true);
 }
 
+/**
+ * \brief tell you if you can display or not
+ */
 bool			NCursesGraph::canDisplay(int posX, int posY) const
 {
   int			x;
@@ -130,6 +123,9 @@ bool			NCursesGraph::canDisplay(int posX, int posY) const
   return (true);
 }
 
+/**
+ * \brief return the keycode
+ */
 int	NCursesGraph::eventManagment()
 {
   int	keycode;
@@ -143,6 +139,9 @@ int	NCursesGraph::eventManagment()
   return (keycode);
 }
 
+/**
+ * \brief Create the Board which will display the game
+ */
 ncr::Window		*NCursesGraph::onCreateBoard()
 {
   if (_board == NULL)
@@ -153,6 +152,9 @@ ncr::Window		*NCursesGraph::onCreateBoard()
   return (gameWin);
 }
 
+/**
+ * \brief Display GameComponent from the game
+ */
 void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
 						ncr::Window *win)
 {
@@ -173,6 +175,9 @@ void	        NCursesGraph::_displayComponent(GameComponent const *gameComponent,
 			  gameComponent->getSpriteText(), gameWin));
 }
 
+/**
+ * \brief Display UIComponent from the game
+ */
 void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr::Window *win)
 {
   Vector2<double>	pos = uiComponent->getPos();
@@ -198,6 +203,9 @@ void	        NCursesGraph::_displayComponent(UIComponent const *uiComponent, ncr
     }
 }
 
+/**
+ * \brief Display HightScoreComponent from the game
+ */
 void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreComponent,
 						ncr::Window *win)
 {
@@ -211,38 +219,9 @@ void		NCursesGraph::_displayComponent(HighScoreComponent const *hightScoreCompon
     }
 }
 
-void		NCursesGraph::_displayFile(int x, int y, std::string const &contenu,
-					   ncr::Window *win)
-{
-  unsigned int	i;
-  int		newX;
-  int		newY;
-
-  i = 0;
-  newX = x;
-  newY = y;
-  while (i < contenu.size())
-    {
-      if (contenu[i] == '$')
-	{
-	  win->write(newX, newY, ' ', A_REVERSE | COLOR_PAIR(6));
-	  _cacheGame.push(s_cache(Vector2<double>(newX, newY), " ", win));
-	}
-      else if (contenu[i] == '\n')
-	{
-	  ++newY;
-	  newX = x - 1;
-	}
-      else
-	{
-	  win->write(newX, newY, contenu[i], 0);
-	  _cacheGame.push(s_cache(Vector2<double>(newX, newY), " ", win));
-	}
-      ++newX;
-      ++i;
-    }
-}
-
+/**
+ * \brief Display AnimationComponent from the game
+ */
 void		NCursesGraph::_displayComponent(AnimationComponent const *,
 						ncr::Window *win)
 {
@@ -282,6 +261,9 @@ void		NCursesGraph::_displayComponent(AnimationComponent const *,
   first_rains = false;
 }
 
+/**
+ * \brief Clear the cache from the library
+ */
 void		NCursesGraph::_cacheClear()
 {
   if (_cacheGame.empty())
@@ -308,6 +290,9 @@ void		NCursesGraph::_cacheClear()
     }
 }
 
+/**
+ * \brief Display all the component from the stack
+ */
 void	NCursesGraph::display(std::stack<AComponent *>	obj)
 {
   GameComponent		*gameComponent;
@@ -338,8 +323,6 @@ void	NCursesGraph::display(std::stack<AComponent *>	obj)
     }
   if (gameWin)
     gameWin->refresh();
-  if (UIWin)
-    UIWin->refresh();
   if (_stdscr)
     _stdscr->refresh();
 }

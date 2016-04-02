@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 14:58:54 2016 Victor Gouet
-// Last update Fri Apr  1 17:47:35 2016 Victor Gouet
+// Last update Sat Apr  2 14:24:13 2016 Victor Gouet
 //
 
 #ifndef NCURSESGRAP_HPP_
@@ -78,7 +78,6 @@ public:
     if (x <= 0)
       {
 	bounce = (bounce == true ? false : true);
-	// init();
       }
     if (y > newY)
       {
@@ -108,7 +107,6 @@ private:
   ncr::Window			*gameWin;
   ncr::Window			*_board;
   std::stack<t_cache>		_cacheGame;
-  ncr::Window			*UIWin;
   std::map<int, int>		keycodeMap;
   ncr::Window			*_stdscr;
   std::map<std::string, std::string>	_fileCache;
@@ -124,8 +122,6 @@ private:
   bool			isResizeGood() const;
   bool		        canDisplay(int posX, int posY) const;
   ncr::Window		*onCreateBoard();
-  // ncr::Window		*onCreateUI();
-  void			_displayFile(int x, int y, std::string const &contenu, ncr::Window *);
 };
 
 #endif
