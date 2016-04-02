@@ -384,7 +384,7 @@ void                        whereAmI(CentipedeGame const &centipedeGame)
 
 extern "C" void Play(void)
 {
-    char c;
+    arcade::CommandType c;
     CentipedeGame centipedeGame;
     struct arcade::GetMap *map;
     size_t mapSize = sizeof(*map) + ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t);
@@ -394,7 +394,7 @@ extern "C" void Play(void)
     map->type = arcade::CommandType::GET_MAP;
     map->width = ArcadeSystem::winWidth;
     map->height = ArcadeSystem::winHeight;
-    while (std::cin.read(&c, 1))
+    while (read(0, &c, sizeof(c)))
     {
         switch (static_cast<arcade::CommandType>(c))
         {

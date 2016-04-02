@@ -50,19 +50,26 @@ Snake::Snake() :
     basicStack.push(uiScore);
     for (size_t i = 0; i < ArcadeSystem::winWidth; ++i)
     {
-        basicStack.push(new GameComponent(Vector2<double>(i, 0), Snake::bricColor, Snake::bric3d, Snake::bricTxt, Snake::bric2d));
-        basicStack.push(new GameComponent(Vector2<double>(i, ArcadeSystem::winHeight - 1), Snake::bricColor, Snake::bric3d, Snake::bricTxt, Snake::bric2d));
+        basicStack.push(new GameComponent(Vector2<double>(i, 0), Snake::bricColor, Snake::bric3d, Snake::bricTxt,
+                                          Snake::bric2d));
+        basicStack.push(
+                new GameComponent(Vector2<double>(i, ArcadeSystem::winHeight - 1), Snake::bricColor, Snake::bric3d,
+                                  Snake::bricTxt, Snake::bric2d));
     }
     for (size_t i = 1; i < ArcadeSystem::winHeight - 1; ++i)
     {
-        basicStack.push(new GameComponent(Vector2<double>(0, i), Snake::bricColor, Snake::bric3d, Snake::bricTxt, Snake::bric2d));
-        basicStack.push(new GameComponent(Vector2<double>(ArcadeSystem::winWidth - 1, i), Snake::bricColor, Snake::bric3d, Snake::bricTxt, Snake::bric2d));
+        basicStack.push(new GameComponent(Vector2<double>(0, i), Snake::bricColor, Snake::bric3d, Snake::bricTxt,
+                                          Snake::bric2d));
+        basicStack.push(
+                new GameComponent(Vector2<double>(ArcadeSystem::winWidth - 1, i), Snake::bricColor, Snake::bric3d,
+                                  Snake::bricTxt, Snake::bric2d));
     }
     for (size_t x = 1; x < ArcadeSystem::winWidth - 1; ++x)
     {
         for (size_t y = 1; y < ArcadeSystem::winHeight - 1; ++y)
         {
-            plate.push_back(new GameComponent(Vector2<double>(x, y), Snake::bricColor, Snake::bric3d, Snake::bricTxt, Snake::bric2d));
+            plate.push_back(new GameComponent(Vector2<double>(x, y), Snake::bricColor, Snake::bric3d, Snake::bricTxt,
+                                              Snake::bric2d));
         }
     }
     initGame();
@@ -71,14 +78,14 @@ Snake::Snake() :
 Snake::~Snake()
 {
     if (highScoreComponent)
-        delete(highScoreComponent);
+        delete (highScoreComponent);
     for (std::list<GameComponent *>::iterator it = body.begin(), end = body.end(); it != end; ++it)
     {
-        delete(*it);
+        delete (*it);
     }
     for (std::list<GameComponent *>::iterator it = plate.begin(), end = plate.end(); it != end; ++it)
     {
-        delete(*it);
+        delete (*it);
     }
     while (!basicStack.empty())
     {
@@ -89,18 +96,18 @@ Snake::~Snake()
 
 std::stack<AComponent *>                    Snake::compute(int keycode)
 {
-    std::stack<AComponent *>                output;
+    std::stack<AComponent *> output;
 
     if (state == AGame::GameState::DEAD)
     {
         if (highScoreComponent)
-            delete(highScoreComponent);
+            delete (highScoreComponent);
         highScoreComponent = new HighScoreComponent("Snake", score);
         highScoreComponent->UpdatePseudo(keycode);
         if (keycode == ArcadeSystem::Enter && highScoreComponent->submit())
         {
             state = AGame::GameState::ALIVE;
-            delete(highScoreComponent);
+            delete (highScoreComponent);
             highScoreComponent = NULL;
             initGame();
         }
@@ -131,7 +138,7 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
 
 void                                    Snake::playARound()
 {
-    std::map<int, keyfunc>::iterator    it;
+    std::map<int, keyfunc>::iterator it;
 
     if ((it = keycodex.find(saved_keycode)) != keycodex.end())
         (this->*it->second)();
@@ -206,7 +213,7 @@ void Snake::removeBody()
 
 void Snake::addBody(Vector2<double> newPos)
 {
-    GameComponent   *gameComponent = NULL;
+    GameComponent *gameComponent = NULL;
 
     for (std::list<GameComponent *>::iterator it = plate.begin(), end = plate.end(); it != end; ++it)
     {
@@ -257,10 +264,10 @@ void Snake::goAhead()
         return die();
     for (std::list<GameComponent *>::iterator it = body.begin(), end = body.end(); it != end; ++it)
     {
-      if ((*it)->getPos() == searchedPos)//direction)
-	  {
-	    return die();
-	  }
+        if ((*it)->getPos() == searchedPos)//direction)
+        {
+            return die();
+        }
     }
     move();
 }
@@ -279,9 +286,9 @@ void Snake::move()
 
 double Snake::getMoveUnit(double unitPerSecond) const
 {
-    static std::chrono::high_resolution_clock::time_point   last_time = std::chrono::high_resolution_clock::now();
-    std::chrono::high_resolution_clock::time_point          curr_time;
-    std::chrono::milliseconds                               time_diff;
+    static std::chrono::high_resolution_clock::time_point last_time = std::chrono::high_resolution_clock::now();
+    std::chrono::high_resolution_clock::time_point curr_time;
+    std::chrono::milliseconds time_diff;
 
     curr_time = std::chrono::high_resolution_clock::now();
     time_diff = std::chrono::duration_cast<std::chrono::milliseconds>(curr_time - last_time);
@@ -332,10 +339,10 @@ extern "C" IGame *loadGame()
     return (new Snake());
 }
 
-void                                updateMap(struct arcade::GetMap *map, Snake const &snake)
+void updateMap(struct arcade::GetMap *map, Snake const &snake)
 {
-    const GameComponent             *apple;
-    std::list<GameComponent *>      snakeBody = snake.getSnake();
+    const GameComponent *apple;
+    std::list<GameComponent *> snakeBody = snake.getSnake();
 
     //Reinit la map
     for (size_t i = 0, len = ArcadeSystem::winHeight * ArcadeSystem::winWidth; i < len; ++i)
@@ -344,12 +351,12 @@ void                                updateMap(struct arcade::GetMap *map, Snake 
     }
     //Set appel pos
     apple = snake.getApple();
-    map->tile[(int)apple->getPos().y * ArcadeSystem::winWidth + (int)apple->getPos().x] = arcade::TileType::POWERUP;
+    map->tile[(int) apple->getPos().y * ArcadeSystem::winWidth + (int) apple->getPos().x] = arcade::TileType::POWERUP;
     //Set snake pos
-    //    for (std::list<Vector2<double>>::iterator it = snakeBody.begin(), end = snakeBody.end(); it != end; ++it)
-    //    {
-    //        map->tile[(int)it->y * ArcadeSystem::winWidth + (int)it->x] = arcade::TileType::BLOCK;
-    //    }
+//        for (std::list<GameComponent *>::iterator it = snakeBody.begin(), end = snakeBody.end(); it != end; ++it)
+//        {
+//            map->tile[static_cast<size_t>((*it)->getPos().y) * ArcadeSystem::winWidth + static_cast<size_t>((*it)->getPos().x)] = arcade::TileType::BLOCK;
+//        }
     //Set walls pos
     for (size_t i = 0; i < ArcadeSystem::winWidth; ++i)
     {
@@ -363,14 +370,14 @@ void                                updateMap(struct arcade::GetMap *map, Snake 
     }
 }
 
-void                            whereAmI(Snake const &snake)
+void whereAmI(Snake const &snake)
 {
-    struct arcade::WhereAmI     *pos;
-    std::list<GameComponent *>  snakeBody = snake.getSnake();
-    size_t                      posSize = sizeof(*pos) + snakeBody.size() * sizeof(arcade::Position);
-    size_t                      i = 0;
+    struct arcade::WhereAmI *pos;
+    std::list<GameComponent *> snakeBody = snake.getSnake();
+    size_t posSize = sizeof(*pos) + snakeBody.size() * sizeof(arcade::Position);
+    size_t i = 0;
 
-    if ((pos = (struct arcade::WhereAmI *)malloc(posSize)) == NULL)
+    if ((pos = (struct arcade::WhereAmI *) malloc(posSize)) == NULL)
         throw std::bad_alloc();
     pos->type = arcade::CommandType::WHERE_AM_I;
     pos->lenght = static_cast<uint16_t>(snakeBody.size());
@@ -385,46 +392,56 @@ void                            whereAmI(Snake const &snake)
 
 extern "C" void Play(void)
 {
-    char                        c;
-    Snake                       snake;
-    struct arcade::GetMap       *map;
-    size_t                      mapSize = sizeof(*map) + ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(uint16_t);
+    arcade::CommandType c;
+    Snake snake;
+    struct arcade::GetMap *map;
+    size_t mapSize = sizeof(*map) + ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(arcade::TileType);
+    std::ofstream outfile("debug.log");
 
-    if ((map = (struct arcade::GetMap *)malloc(mapSize)) == NULL)
+    if ((map = (struct arcade::GetMap *) malloc(mapSize)) == NULL)
         throw std::bad_alloc();
     map->type = arcade::CommandType::GET_MAP;
     map->width = ArcadeSystem::winWidth;
     map->height = ArcadeSystem::winHeight;
-    while (std::cin.read(&c, 1))
+    while (read(0, &c, sizeof(c)))
     {
         switch (static_cast<arcade::CommandType>(c))
         {
             case arcade::CommandType::WHERE_AM_I:
                 whereAmI(snake);
+                outfile << "WHERE AM I" << std::endl;
                 break;
             case arcade::CommandType::GET_MAP:
                 updateMap(map, snake);
                 write(1, map, mapSize);
+                outfile << "Get map" << std::endl;
                 break;
             case arcade::CommandType::GO_UP:
                 snake.goUp();
+                outfile << "go up" << std::endl;
                 break;
             case arcade::CommandType::GO_DOWN:
                 snake.goDown();
+                outfile << "go down" << std::endl;
                 break;
             case arcade::CommandType::GO_LEFT:
                 snake.goLeft();
+                outfile << "go left" << std::endl;
                 break;
             case arcade::CommandType::GO_RIGHT:
                 snake.goRight();
+                outfile << "go right" << std::endl;
                 break;
             case arcade::CommandType::GO_FORWARD:
                 snake.goAhead();
+                outfile << "go forward" << std::endl;
                 break;
             case arcade::CommandType::PLAY:
                 snake.playARound();
+                outfile << "play" << std::endl;
                 break;
             default:
+                outfile << "nothing" << std::endl;
                 break;
         }
     }
