@@ -66,6 +66,7 @@ Snake::Snake() :
             plate.push_back(new GameComponent(Vector2<double>(x, y), Snake::bricColor, Snake::bric3d, Snake::bricTxt, Snake::bric2d));
         }
     }
+
     initGame();
 }
 
@@ -94,6 +95,7 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
     {
         output.pop();
     }
+
     if (state == AGame::GameState::DEAD)
     {
         if (highScoreComponent)
@@ -128,6 +130,14 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
         {
             output.push(*bod);
         }
+    }
+
+    if (bFirstLoop)
+    {
+        // Snake's music
+        // TODO: envoyer reference
+        output.push(new AudioComponent("Sound/HeyHeyHey.wav", true, false, false));
+        bFirstLoop = false;
     }
     return output;
 }

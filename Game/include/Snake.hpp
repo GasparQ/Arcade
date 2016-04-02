@@ -76,6 +76,7 @@ private:
     std::list<GameComponent *>  plate;
     std::stack<AComponent *>    basicStack;
     std::stack<AComponent *>                output;
+    bool bFirstLoop = true;
 
 public:
     void goUp();
