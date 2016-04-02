@@ -107,12 +107,8 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
     components.push(&anim);
 
     // TODO: réparer cette merde
-    static bool isPushed = false;
-    if (!isPushed)
-    {
-        components.push(&m_sound);
-        isPushed = true;
-    }
+    components.push(&m_sound);
+
     return components;
 }
 

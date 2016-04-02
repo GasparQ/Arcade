@@ -40,6 +40,7 @@ public:
 private:
     std::map<std::string, int > m_sounds;
     static Sound *m_sound_token;
+    std::map<std::string, Mix_Chunk *> m_jukebox;
 };
 
 
