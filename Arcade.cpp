@@ -211,7 +211,8 @@ void        arcade::Arcade::onPrevGraph()
     if (currLibName == libsName.begin())
         currLibName = libsName.end();
     --currLibName;
-    chrono_menu->ResetChrono();
+    if (_status == Arcade::Menu)
+        chrono_menu->ResetChrono();
     loadGraph();
 }
 
@@ -226,7 +227,8 @@ void        arcade::Arcade::onNextGraph()
     if (currLibName == libsName.end())
         currLibName = libsName.begin();
     /// Resets the chrono for the sound
-    chrono_menu->ResetChrono();
+    if (_status == Arcade::Menu)
+        chrono_menu->ResetChrono();
     loadGraph();
 }
 
