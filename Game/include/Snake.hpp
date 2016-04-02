@@ -16,6 +16,7 @@
 #include "../../Commons/include/GameComponent.hpp"
 #include "../../Commons/include/UIComponent.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
+#include "../../Commons/AudioComponent.hpp"
 
 class Snake : public AGame
 {
@@ -76,7 +77,7 @@ private:
     std::list<GameComponent *>  plate;
     std::stack<AComponent *>    basicStack;
     std::stack<AComponent *>                output;
-    bool bFirstLoop = true;
+    AudioComponent m_gameMusic;
 
 public:
     void goUp();
