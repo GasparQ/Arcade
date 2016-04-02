@@ -19,6 +19,7 @@ public:
     virtual double GetRemainingTime() const = 0;
     virtual void TriggerEvent() = 0;
     virtual void ResetChrono() = 0;
+    virtual bool HasTriggered() const = 0;
 
     virtual bool operator==(std::string const& name) const
     {
@@ -66,12 +67,19 @@ public:
 
     void TriggerEvent()
     {
+        m_hasTriggered = true;
         (m_object.*m_method)();
     }
 
     virtual void ResetChrono()
     {
         m_remaining_time = m_start_time;
+        m_hasTriggered = false;
+    }
+
+    virtual bool HasTriggered() const
+    {
+        return m_hasTriggered;
     }
 
 public:
@@ -86,6 +94,7 @@ private:
     double m_start_time = 0;
     T & m_object;
     U m_method;
+    bool m_hasTriggered;
 };
 
 #endif //CPP_ARCADE_CHRONO_HPP

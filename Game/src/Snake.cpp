@@ -11,6 +11,7 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../include/Protocol.hpp"
+#include "../../Commons/AudioComponent.hpp"
 
 const long Snake::snakeSpeed = 15;
 
@@ -72,6 +73,7 @@ Snake::Snake() :
                                               Snake::bric2d));
         }
     }
+
     initGame();
 }
 
@@ -96,8 +98,10 @@ Snake::~Snake()
 
 std::stack<AComponent *>                    Snake::compute(int keycode)
 {
-    std::stack<AComponent *> output;
-
+    while (!output.empty())
+    {
+        output.pop();
+    }
     if (state == AGame::GameState::DEAD)
     {
         if (highScoreComponent)
@@ -132,6 +136,14 @@ std::stack<AComponent *>                    Snake::compute(int keycode)
         {
             output.push(*bod);
         }
+    }
+
+    if (bFirstLoop)
+    {
+        // Snake's music
+        // TODO: envoyer reference
+        output.push(new AudioComponent("Sound/HeyHeyHey.wav", true, false, false));
+        bFirstLoop = false;
     }
     return output;
 }
@@ -279,6 +291,8 @@ void Snake::move()
     {
         score += 10;
         generateAppelPos();
+        // TODO: remove leak
+        output.push(new AudioComponent("Sound/Crounch.wav", false, true, false));
     }
     else
         removeBody();

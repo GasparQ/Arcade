@@ -5,6 +5,7 @@
 #include "ArcadeMenu.hpp"
 #include "Commons/include/AnimationComponent.hpp"
 #include "Commons/include/ArcadeSystem.hpp"
+#include "Commons/include/Chrono.hpp"
 
 ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     arcade1(arcade1),
@@ -59,7 +60,6 @@ ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
 
 ArcadeMenu::~ArcadeMenu()
 {
-
 }
 
 void ArcadeMenu::setFrames(const std::string &mode, const std::string &fileprefix, int t)
@@ -93,8 +93,8 @@ std::string ArcadeMenu::getNextFrame() const
 
 std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
 {
-    std::stack<AComponent *>    components;
     std::map<int, ArcadeMenu::menuEvents>::iterator   it;
+    std::stack<AComponent *>    components;
 
     if ((it = sysEvents.find(key)) != sysEvents.end())
         (this->*(it->second))();

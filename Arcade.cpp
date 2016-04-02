@@ -45,6 +45,8 @@ arcade::Arcade::Arcade()
         throw std::runtime_error("arcade: cannot regcomp");
     libsName = loadFilesFromDir(arcade::Arcade::libDir, lib_names);
     currLibName = libsName.end();
+
+    chrono_menu = new Chrono<Arcade, void (Arcade::*)()>(2.7, *this, &Arcade::addMenuSound, "chronoSound");
 }
 
 /**
@@ -52,7 +54,10 @@ arcade::Arcade::Arcade()
  */
 arcade::Arcade::~Arcade()
 {
-
+    if (chrono_menu)
+    {
+        delete chrono_menu;
+    }
     if (lib)
     {
         delete (lib);
@@ -206,6 +211,8 @@ void        arcade::Arcade::onPrevGraph()
     if (currLibName == libsName.begin())
         currLibName = libsName.end();
     --currLibName;
+    if (_status == Arcade::Menu)
+        chrono_menu->ResetChrono();
     loadGraph();
 }
 
@@ -219,6 +226,9 @@ void        arcade::Arcade::onNextGraph()
     ++currLibName;
     if (currLibName == libsName.end())
         currLibName = libsName.begin();
+    /// Resets the chrono for the sound
+    if (_status == Arcade::Menu)
+        chrono_menu->ResetChrono();
     loadGraph();
 }
 
@@ -272,6 +282,14 @@ void        arcade::Arcade::onExit()
 }
 
 /**
+ * \brief Function to play the sound on the main menu
+ */
+void arcade::Arcade::addMenuSound()
+{
+    components.push(new AudioComponent("Sound/arcade" + std::to_string(rand() % 13 + 1) + ".wav", false, false, false));
+}
+
+/**
  * \brief Main loop of the program
  */
 void        arcade::Arcade::Run()
@@ -286,8 +304,6 @@ void        arcade::Arcade::Run()
     menu.setMode("text");
     while (isRunning)
     {
-        std::stack<AComponent *>    components;
-
         try
         {
             key = lib->eventManagment();
@@ -308,6 +324,13 @@ void        arcade::Arcade::Run()
             components = (*currGame)->compute(key);
             /// stops the menu's music
             components.push(&m_audio_stop);
+        }
+
+        // We update the chrono to trigger the 'Arcaaaaaade' sound
+        chrono_menu->Update();
+        if (chrono_menu->GetRemainingTime() == 0 && !chrono_menu->HasTriggered())
+        {
+            chrono_menu->TriggerEvent();
         }
         lib->display(components);
         std::this_thread::sleep_for(chrono);
