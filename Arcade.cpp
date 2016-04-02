@@ -318,20 +318,26 @@ void        arcade::Arcade::Run()
         if (_status == Arcade::Menu)
         {
             components = menu.updateMenu(key);
+
+            /// We stop all the musics from the games
+            for (int i = 0; i < 1; i++)
+                components.push(&audioComponent[i]);
+
+            // We update the chrono to trigger the 'Arcaaaaaade' sound
+            chrono_menu->Update();
+            if (chrono_menu->GetRemainingTime() == 0 && !chrono_menu->HasTriggered())
+            {
+                chrono_menu->TriggerEvent();
+            }
 	    }
         if (_status == Arcade::Game && currGame != games.end())
         {
             components = (*currGame)->compute(key);
             /// stops the menu's music
             components.push(&m_audio_stop);
+            chrono_menu->ResetChrono();
         }
 
-        // We update the chrono to trigger the 'Arcaaaaaade' sound
-        chrono_menu->Update();
-        if (chrono_menu->GetRemainingTime() == 0 && !chrono_menu->HasTriggered())
-        {
-            chrono_menu->TriggerEvent();
-        }
         lib->display(components);
         std::this_thread::sleep_for(chrono);
     }

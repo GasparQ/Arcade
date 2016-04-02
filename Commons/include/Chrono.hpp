@@ -74,6 +74,7 @@ public:
     virtual void ResetChrono()
     {
         m_remaining_time = m_start_time;
+        m_last_clock = std::chrono::steady_clock::now();
         m_hasTriggered = false;
     }
 
