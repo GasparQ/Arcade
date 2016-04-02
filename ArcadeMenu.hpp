@@ -16,6 +16,7 @@
 #include "Commons/include/AnimationComponent.hpp"
 #include "Commons/Sound.hpp"
 #include "Commons/AudioComponent.hpp"
+#include "Commons/include/Chrono.hpp"
 
 /**
  * Class used for the Arcade menu management

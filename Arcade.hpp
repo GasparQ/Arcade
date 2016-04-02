@@ -11,6 +11,7 @@
 #include <map>
 #include "Graphique/include/IGraph.hpp"
 #include "Game/include/IGame.hpp"
+#include "Commons/include/Chrono.hpp"
 
 /**
  * \brief namespace arcade for the entire project
@@ -83,6 +84,10 @@ namespace arcade
         Status _status;
         regex_t lib_names;
 
+        std::stack<AComponent *>    components;
+        Chrono<Arcade, void (Arcade::*)()> *chrono_menu;
+
+
         /**
          * Methods
          */
@@ -96,6 +101,8 @@ namespace arcade
         std::vector<std::string> loadFilesFromDir(std::string const &dirName, regex_t &nameRestric);
 
         void loadGames(std::vector<std::string> const &);
+
+        void addMenuSound();
     };
 }
 

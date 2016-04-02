@@ -32,6 +32,10 @@ Sound::Sound()
 
 Sound::~Sound()
 {
+    for (auto var : m_jukebox)
+    {
+        Mix_FreeChunk(var.second);
+    }
     SDL_CloseAudio();
     Mix_CloseAudio();
 }
