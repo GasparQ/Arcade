@@ -14,6 +14,8 @@
 #include "Commons/include/ActionComponent.hpp"
 #include "Arcade.hpp"
 #include "Commons/include/AnimationComponent.hpp"
+#include "Commons/Sound.hpp"
+#include "Commons/AudioComponent.hpp"
 
 /**
  * Class used for the Arcade menu management
@@ -54,6 +56,7 @@ private:
     std::vector<ActionComponent<DualTextComponent, arcade::eventSystem > >              menuComponents;
     std::vector<ActionComponent<DualTextComponent, arcade::eventSystem > >::iterator    currComponent;
     std::map<int, menuEvents >                                                          sysEvents;
+    AudioComponent m_sound;
 };
 
 #endif //C_ARCADEMENU_HPP

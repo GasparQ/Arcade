@@ -5,10 +5,12 @@
 #include "ArcadeMenu.hpp"
 #include "Commons/include/AnimationComponent.hpp"
 #include "Commons/include/ArcadeSystem.hpp"
+#include "Commons/AudioComponent.hpp"
 
 ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     arcade1(arcade1),
-    anim(1, 1, AComponent::COLOR_WHITE, "")
+    anim(1, 1, AComponent::COLOR_WHITE, ""),
+    m_sound("Sound/Menu.wav", true, false, false)
 {
     mode = frames.end();
     frameIdx = 0;
@@ -103,7 +105,14 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
     components.push(&*menuComponents[ArcadeMenu::PLAY]);
     anim.setFileName(getNextFrame());
     components.push(&anim);
-    //components.push();
+
+    // TODO: réparer cette merde
+    static bool isPushed = false;
+    if (!isPushed)
+    {
+        components.push(&m_sound);
+        isPushed = true;
+    }
     return components;
 }
 
