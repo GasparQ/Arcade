@@ -63,7 +63,7 @@ private:
         centipedeBody(centipedeBody const &ref) :
                 pos(ref.pos),
                 direction(ref.direction),
-                gameComponent(new GameComponent(ref.pos, AComponent::ComponentColor::COLOR_CYAN,
+                gameComponent(new GameComponent(ref.pos, AComponent::ComponecntColor::COLOR_CYAN,
                                                 GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
         {
         }

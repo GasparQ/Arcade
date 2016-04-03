@@ -8,7 +8,7 @@ int main(int ac, char **av)
 
     if (ac != 2)
     {
-        std::cerr << "Not enought args" << std::endl;
+        std::cerr << "\e[1mUsage\e[0m:" << std::endl << "\t./arcade lib_arcade_[libname].so" << std::endl << "\e[1mTip\e[0m:" << std::endl << "\tThere are few libs in \"./lib/\" directory" << std::endl;
         return (1);
     }
     try
