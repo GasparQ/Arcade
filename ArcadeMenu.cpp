@@ -105,7 +105,6 @@ std::stack<AComponent *>        ArcadeMenu::updateMenu(int key)
     anim.setFileName(getNextFrame());
     components.push(&anim);
     components.push(&m_sound);
-
     return components;
 }
 
