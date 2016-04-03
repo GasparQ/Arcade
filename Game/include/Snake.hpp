@@ -78,6 +78,7 @@ private:
     std::stack<AComponent *>    basicStack;
     std::stack<AComponent *>                output;
     AudioComponent m_gameMusic;
+  AudioComponent		*crounch;
 
 public:
     void goUp();
