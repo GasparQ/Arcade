@@ -110,6 +110,7 @@ namespace arcade
                                            {"Sound/arcade11.wav", false, false, false},
                                            {"Sound/arcade12.wav", false, false, false},
                                            {"Sound/arcade13.wav", false, false, false}};
+        bool m_gameChanged = false;
 
         /**
          * Methods
