@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Fri Apr  1 17:11:09 2016 Victor Gouet
+// Last update Sun Apr  3 11:23:31 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -17,6 +17,9 @@
 //DON'T FORGET TO CHANGE THE ROUND OF POSITIONS IN "int move(char [][]);"
 const double        Centipede::centipedeSpeed = 0.2;
 
+/*
+ * \brief Will create the centipede from the given position
+ */
 Centipede::Centipede(Vector2<double> const &pos) :
         _dir(Centipede::Direction::LEFT),
         _dir_prev(Centipede::Direction::RIGHT),
@@ -69,6 +72,9 @@ Centipede::~Centipede()
 
 }
 
+/*
+ * \brief the centipede is touching the vec paremeter
+ */
 bool		Centipede::isTouching(Vector2<double> const &vec) const
 {
   std::list<centipedeBody>::const_iterator	it;
@@ -98,6 +104,9 @@ void        Centipede::add_node()
     }
 }
 
+/*
+ * \brief when the centipede is split
+ */
 void    Centipede::splitCentipede(Vector2<double> const &pos)
 {
   for (std::list<centipedeBody >::iterator it = _pos.begin(); it != _pos.end(); ++it)
@@ -111,6 +120,9 @@ void    Centipede::splitCentipede(Vector2<double> const &pos)
     }
 }
 
+/*
+ * \brief Centipede goes up
+ */
 int    Centipede::goUp(char map[31][51], Vector2<double> &pos)
 {
     Vector2<double> newPos = pos + Vector2<double>(0, -1);
@@ -129,6 +141,9 @@ int    Centipede::goUp(char map[31][51], Vector2<double> &pos)
     return (0);
 }
 
+/*
+ * \brief Centipede goes down
+ */
 int    Centipede::goDown(char map[31][51], Vector2<double> &pos)
 {
     Vector2<double> newPos = pos + Vector2<double>(0, 1);
@@ -149,6 +164,9 @@ int    Centipede::goDown(char map[31][51], Vector2<double> &pos)
     return (0);
 }
 
+/*
+ * \brief Centipede goes left
+ */
 int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
 {
     Vector2<double> newPos = pos + Vector2<double>(-0.3, 0);
@@ -169,6 +187,9 @@ int    Centipede::goLeft(char map[31][51], Vector2<double> &pos)
     return (0);
 }
 
+/*
+ * \brief Centipede goes right
+ */
 int    Centipede::goRight(char map[31][51], Vector2<double> &pos)
 {
     Vector2<double> newPos = pos + Vector2<double>(0.3, 0);

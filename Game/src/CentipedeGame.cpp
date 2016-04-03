@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Fri Apr  1 17:14:44 2016 Victor Gouet
+// Last update Sun Apr  3 11:19:01 2016 Victor Gouet
 //
 
 #include <unistd.h>
@@ -13,6 +13,9 @@
 #include "../../Commons/include/ArcadeSystem.hpp"
 #include "../../Protocol.hpp"
 
+/*
+ * \brief Create the centipede game, initialise UIComponent and lauch the game
+ */
 CentipedeGame::CentipedeGame() :
         AGame("Centipede"),
         centipede(Vector2<double>(10, 0))
@@ -57,6 +60,9 @@ CentipedeGame::~CentipedeGame()
     }
 }
 
+/*
+ * \brief determine what the missil is touching / wall / centipede / nothing 
+ */
 void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
 {
     std::vector<Centipede>::iterator it;
@@ -72,6 +78,8 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
         if (*vecShoot >= Vector2<double>(0, 0) && *vecShoot < Vector2<double>(50, 30) &&
             map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] != ' ')
         {
+	  // HIT A WALL
+
             map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)]
                     = static_cast<char>(map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] - 1);
             spaceShip.stopShot();
@@ -89,7 +97,7 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
                 *vecShoot >= Vector2<double>(0, 0) && *vecShoot < Vector2<double>(50, 30))
             {
 
-                // TOUCHER PAR LE SHOOT
+                // HIT THE CENTIPEDE
 
                 _score += 10;
                 centipede.splitCentipede(*itNc);
@@ -102,6 +110,9 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
 
         if (vecShoot->y < 0)
         {
+
+	  // HIT NOTHING AND TOO FAR
+
             spaceShip.stopShot();
         }
         else
@@ -115,11 +126,17 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
     }
 }
 
+/*
+ * \brief if there is no centipede
+ */
 bool                    CentipedeGame::isEmptyCentipede() const
 {
     return (centipede.getPos().empty());
 }
 
+/*
+ * \brief compute the game / will make an action with the keycode
+ */
 std::stack<AComponent *> CentipedeGame::compute(int keycode)
 {
     std::stack<AComponent *> output;
@@ -165,24 +182,12 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         displayMap(output);
         output.push(spaceShip.getGameComponent());
 
-        // UIComponent		*scoreCom = new UIComponent(Vector2<double>(0, 0),
-        // 						    AComponent::COLOR_WHITE,
-        // 						    Vector2<double>(5, 1), "");
-
         scoreCom->setText("score : " + std::to_string(_score));
         scoreCom->setPos(
                 Vector2<double>(static_cast<int>(ArcadeSystem::winWidth - scoreCom->getText().length()) / 2, 1));
 
-        // output.push(scoreCom);
-
-        // UIComponent		*waweCom = new UIComponent(Vector2<double>(0, 0),
-        // 						   AComponent::COLOR_WHITE,
-        // 						   Vector2<double>(5, 1), "");
-
         waweCom->setText("wave : " + std::to_string(_wave));
         waweCom->setPos(Vector2<double>(1, 1));
-
-        // output.push(waweCom);
     }
     else
     {
@@ -218,6 +223,10 @@ void        CentipedeGame::initVariable()
     centipede.add_node();
 }
 
+
+/*
+ * \brief Restart the game
+ */
 void CentipedeGame::restart()
 {
     initMap();
@@ -227,6 +236,9 @@ void CentipedeGame::restart()
     initVariable();
 }
 
+/*
+ * \brief Will add the map into the output stack
+ */
 void            CentipedeGame::displayMap(std::stack<AComponent *> &output) const
 {
     int y;
