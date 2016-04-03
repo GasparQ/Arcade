@@ -4,100 +4,123 @@
         <title>Make my own Arcade !</title>
         <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap-theme.min.css"/>
+        <script src="bootstrap-3.3.6-dist/js/jquery.min.js"></script>
         <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-        <script src="bootstrap-3.3.6-dist/js/npm.js"></script>
+        <style>
+            body
+            {
+                text-align: center;
+                padding: 0 5%;
+            }
+            div
+            {
+                display: inline-block;
+                text-align: left;
+            }
+            #header
+            {
+                width: 100%;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <h1>How can I make my own Arcade ?</h1>
-        <ul>
-            <li><a href="#WUARCADE">What's Arcade ?</a></li>
-            <li><a href="#ADDGa">How can I add my own game ?</a></li>
-            <li><a href="#BNB">TP. Lets bounce with Bounce & Break</a></li>
-            <li><a href="#ADDGr">How can I add my own graphical interface ?</a></li>
-            <li><a href="#PRINT">TP. Lets writes some characters</a></li>
-            <li><a href="#BONUS">Bonus. Add your own components</a></li>
-        </ul>
-        <div id="WUARCADE">
-            <h2>What's Arcade ?</h2>
-            <p>
-                Arcade is a project that allow you to launch an arcade born with<br/>
-                multiple games in multiple graphic environment.<br/>
-                In addition, it allow you to add your own games and your own graphics<br/>
-                easily and that I'll teach you trough this tutorial.<br/>
-                To add your own modules, it is necessary for you to have solid bases in c++<br/>
-                If you'r not familiarly with this language, I advise you to learn it before because I won't teach you that.<br/>
-                For a rapid overview of how the project is build look at this Diagram<br/>
-                <img src="./tutp/arcade.png" alt="UML Diagram for arcade" /><br/>
-                As you can see, the arcade is split in two parts that communicates each other through a stack of "AComponents *"<br/>
-                If you want to create a new Game you have to create a new class that inherit from IGame (we also add a class AGame if you want a fast and simple implementation)<br/>
-                As the same way for graphic libraries you have to create a new class that inherit from IGraph<br/>
-                All of this points will be shown to you in this tutorial.<br/>
-                It is important to note that we implements a common library at the root of the repository that you have to link to your libs.<br/>
-                You'll have to use it and moreover the constants in ArcadeSystem.hpp<br/>
-                In bonus, I'll show you how to create your own Components<br/>
-            </p>
+        <div class="page-header" id="header">
+            <h1>How can I make my own Arcade ?</h1>
+            <h3>By Quentin Gasparotto, Victor Gouet, Fernand Veyrier</h3>
         </div>
-        <div id="ADDGa">
-            <h2>How can I add my own game ?</h2>
-            <p>
-                As I said before you can add your own game in our Arcade by creating a new class that inherit from IGame interface (or AGame).<br/>
-                Because IGame is an interface, it contains pure methods that you have to implement in your class<br/>
-                If you choose to inherit from AGame, you only have to implement the method "Compute" and the method "Restart"<br/>
-                Compute is the method that will be called at each frame of the program (60 times per seconds).<br/>
-                That's the method that will update your game components position, statement or the map<br/>
-                I advise you to use GameComponents directly in your code because you'll have to push them in the stack returned<br/>
-                by the method compute. They will not be deleted in graphic library so be careful in your memory usage.<br/>
-                The method restart is the method that, as its name shows, will allow the user to restart your game from the beginning<br/>
-                The method getName is a getter for the name of your game, and the method getSize is a method for the size of your map<br/>
-                Create a ".so" library and copy it in "./games/" directory, it will be recognized by the arcade<br/>
-                Now that you have the keys to add your own game, lets try to implement a Bounce & Break<br/>
-            </p>
+        <div id="tuto">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#WUARCADE" aria-controls="WUARCADE" role="tab" data-toggle="tab">What's Arcade ?</a></li>
+                <li role="presentation"><a href="#ADDGa" aria-controls="ADDGa" role="tab" data-toggle="tab">How can I add my own game ?</a></li>
+                <li role="presentation"><a href="#BNB" aria-controls="BNB" role="tab" data-toggle="tab">TP. Lets bounce with Bounce & Break</a></li>
+                <li role="presentation"><a href="#ADDGr" aria-controls="ADDGr" role="tab" data-toggle="tab">How can I add my own graphical interface ?</a></li>
+                <li role="presentation"><a href="#PRINT" aria-controls="PRINT" role="tab" data-toggle="tab">TP. Lets writes some characters</a></li>
+                <li role="presentation"><a href="#BONUS" aria-controls="BONUS" role="tab" data-toggle="tab">Bonus. Add your own components</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="WUARCADE" role="tabpanel" class="tab-pane fade in active">
+                    <h2>What's Arcade ?</h2>
+                    <p>
+                        Arcade is a project that allow you to launch an arcade born with<br/>
+                        multiple games in multiple graphic environment.<br/>
+                        In addition, it allow you to add your own games and your own graphics<br/>
+                        easily and that I'll teach you trough this tutorial.<br/>
+                        To add your own modules, it is necessary for you to have solid bases in c++<br/>
+                        If you'r not familiarly with this language, I advise you to learn it before because I won't teach you that.<br/>
+                        For a rapid overview of how the project is build look at this Diagram<br/>
+                        <img src="./tutp/arcade.png" alt="UML Diagram for arcade" /><br/>
+                        As you can see, the arcade is split in two parts that communicates each other through a stack of "AComponents *"<br/>
+                        If you want to create a new Game you have to create a new class that inherit from IGame (we also add a class AGame if you want a fast and simple implementation)<br/>
+                        As the same way for graphic libraries you have to create a new class that inherit from IGraph<br/>
+                        All of this points will be shown to you in this tutorial.<br/>
+                        It is important to note that we implements a common library at the root of the repository that you have to link to your libs.<br/>
+                        You'll have to use it and moreover the constants in ArcadeSystem.hpp<br/>
+                        In bonus, I'll show you how to create your own Components<br/>
+                    </p>
+                </div>
+                <div id="ADDGa" role="tabpanel" class="tab-pane fade">
+                    <h2>How can I add my own game ?</h2>
+                    <p>
+                        As I said before you can add your own game in our Arcade by creating a new class that inherit from IGame interface (or AGame).<br/>
+                        Because IGame is an interface, it contains pure methods that you have to implement in your class<br/>
+                        If you choose to inherit from AGame, you only have to implement the method "Compute" and the method "Restart"<br/>
+                        Compute is the method that will be called at each frame of the program (60 times per seconds).<br/>
+                        That's the method that will update your game components position, statement or the map<br/>
+                        I advise you to use GameComponents directly in your code because you'll have to push them in the stack returned<br/>
+                        by the method compute. They will not be deleted in graphic library so be careful in your memory usage.<br/>
+                        The method restart is the method that, as its name shows, will allow the user to restart your game from the beginning<br/>
+                        The method getName is a getter for the name of your game, and the method getSize is a method for the size of your map<br/>
+                        Create a ".so" library and copy it in "./games/" directory, it will be recognized by the arcade<br/>
+                        Now that you have the keys to add your own game, lets try to implement a Bounce & Break<br/>
+                    </p>
+                </div>
+                <div id="BNB" role="tabpanel" class="tab-pane fade">
+                    <h2>TP. Lets bounce with Bounce & Break</h2>
+                    <p>
+                        Okey, now that we're aware of how to create an Arcade game, lets try to create a Bounce & Break<br/>
+                        I will remember you the rules of the game and you will try to create it alone<br/>
+                        The Bounce & Break is a game in which you are a bat and you have to bounce a ball in order to break blocks<br/>
+                        Each time you break a block your score increase and you only have 3 ball<br/>
+                        To help you here's an <a href="./Documentation/html/classes.html" target="_blank">API reference</a> of our project<br/>
+                    </p>
+                </div>
+                <div id="ADDGr" role="tabpanel" class="tab-pane fade">
+                    <h2>How can I add my own graphical interface ?</h2>
+                    <p>
+                        Now that we have our first game we can start to implement a new graphic environment<br/>
+                        To create a new graphic library you'll have to create a new class that inherit from IGraph interface<br/>
+                        Like IGame, you will have to implements few methods in your class<br/>
+                        The method "eventManagment" is a method that will handle an event of your library<br/>
+                        It is important to note that this handle have to be non-blocking, either games will freeze<br/>
+                        The method "display" is a method that will receive a stack of Components that have to be displayed by the library<br/>
+                        For a <a href="./Documentation/html/inherits.html" target="_blank">list of possible Components</a>, search those that inherit from "AComponent"<br/>
+                        The method "setTitle" is a method that allow us to change the title of the window<br/>
+                        When you'r done, create a ".so" library and copy it in "./lib/" directory of load it in argument of the program<br/>
+                    </p>
+                </div>
+                <div id="PRINT" role="tabpanel" class="tab-pane fade">
+                    <h2>TP. Lets writes some characters</h2>
+                    <p>
+                        Good, now you know how to create your graphic library, lets try to create your own text display library<br/>
+                        The goal is to make a graphical display only by writing characters on the standard output<br/>
+                        You can clear the terminal with 'system("clear")'. You will implement the display of<br/>
+                        GameComponents, UIComponents(DualTextComponent) and HighScoreComponent<br/>
+                        Don't forget that you have an <a href="Documentation/html/classes.html" target="_blank">API reference</a><br/>
+                    </p>
+                </div>
+                <div id="BONUS" role="tabpanel" class="tab-pane fade">
+                    <h2>Bonus. Add your own components</h2>
+                    <p>
+                        As you saw previously, components are used to allow the communication between the game libraries and the graphic libraries<br/>
+                        So it could be interesting to know how create my your own Component<br/>
+                        It's as simple as others, you have to create a new class that inherit from the AComponent class or from another daughter class<br/>
+                        However, this component will be internally used by your game and your library, if you want to propose you component in a new release<br/>
+                        do not hesitate to make a pull request on our github<br/>
+                    </p>
+                    <h3>Thank you for following this tutorial and see you next time for a new project</h3>
+                </div>
+            </div>
         </div>
-        <div id="BNB">
-            <h2>TP. Lets bounce with Bounce & Break</h2>
-            <p>
-                Okey, now that we're aware of how to create an Arcade game, lets try to create a Bounce & Break<br/>
-                I will remember you the rules of the game and you will try to create it alone<br/>
-                The Bounce & Break is a game in which you are a bat and you have to bounce a ball in order to break blocks<br/>
-                Each time you break a block your score increase and you only have 3 ball<br/>
-                To help you here's an <a href="./Documentation/html/classes.html" target="_blank">API reference</a> of our project<br/>
-            </p>
-        </div>
-        <div id="ADDGr">
-            <h2>How can I add my own graphical interface ?</h2>
-            <p>
-                Now that we have our first game we can start to implement a new graphic environment<br/>
-                To create a new graphic library you'll have to create a new class that inherit from IGraph interface<br/>
-                Like IGame, you will have to implements few methods in your class<br/>
-                The method "eventManagment" is a method that will handle an event of your library<br/>
-                It is important to note that this handle have to be non-blocking, either games will freeze<br/>
-                The method "display" is a method that will receive a stack of Components that have to be displayed by the library<br/>
-                For a <a href="./Documentation/html/inherits.html" target="_blank">list of possible Components</a>, search those that inherit from "AComponent"<br/>
-                The method "setTitle" is a method that allow us to change the title of the window<br/>
-                When you'r done, create a ".so" library and copy it in "./lib/" directory of load it in argument of the program<br/>
-            </p>
-        </div>
-        <div id="PRINT">
-            <h2>TP. Lets writes some characters</h2>
-            <p>
-                Good, now you know how to create your graphic library, lets try to create your own text display library<br/>
-                The goal is to make a graphical display only by writing characters on the standard output<br/>
-                You can clear the terminal with 'system("clear")'. You will implement the display of<br/>
-                GameComponents, UIComponents(DualTextComponent) and HighScoreComponent<br/>
-                Don't forget that you have an <a href="Documentation/html/classes.html" target="_blank">API reference</a><br/>
-            </p>
-        </div>
-        <div id="BONUS">
-            <h2>Bonus. Add your own components</h2>
-            <p>
-                As you saw previously, components are used to allow the communication between the game libraries and the graphic libraries<br/>
-                So it could be interesting to know how create my your own Component<br/>
-                It's as simple as others, you have to create a new class that inherit from the AComponent class or from another daughter class<br/>
-                However, this component will be internally used by your game and your library, if you want to propose you component in a new release<br/>
-                do not hesitate to make a pull request on our github<br/>
-            </p>
-        </div>
-        <h3>Thank you for following this tutorial and see you next time for a new project</h3>
-        <h4>By Quentin Gasparotto, Victor Gouet, Fernand Veyrier</h4>
     </body>
 </html>
