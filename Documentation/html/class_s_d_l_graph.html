@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -74,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,6 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">SDLGraph Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>SDL class for lib_arcade_sdl implementation.  
+ <a href="class_s_d_l_graph.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_s_d_l_graph_8hpp_source.html">SDLGraph.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -113,13 +118,20 @@ Collaboration diagram for SDLGraph:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ed11ac197e66eabdd7d689df1ca9937"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#a9ed11ac197e66eabdd7d689df1ca9937">SDLGraph</a> ()</td></tr>
+<tr class="memdesc:a9ed11ac197e66eabdd7d689df1ca9937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor in which SDL, TTF, render, window, font, colors, keycodes will be initialised.  <a href="#a9ed11ac197e66eabdd7d689df1ca9937">More...</a><br/></td></tr>
 <tr class="separator:a9ed11ac197e66eabdd7d689df1ca9937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d0395d5b8b135feeefe65374476068"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#af0d0395d5b8b135feeefe65374476068">~SDLGraph</a> ()</td></tr>
+<tr class="memdesc:af0d0395d5b8b135feeefe65374476068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of SDL lib that will Quit SDL, Quit TTF, close windows, fonts, destroy renderers and cache textures.  <a href="#af0d0395d5b8b135feeefe65374476068">More...</a><br/></td></tr>
 <tr class="separator:af0d0395d5b8b135feeefe65374476068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe1f0c01badf17143663695f156ce199"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#abe1f0c01badf17143663695f156ce199">eventManagment</a> ()</td></tr>
+<tr class="memdesc:abe1f0c01badf17143663695f156ce199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that will handle a SDL keycode.  <a href="#abe1f0c01badf17143663695f156ce199">More...</a><br/></td></tr>
 <tr class="separator:abe1f0c01badf17143663695f156ce199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de9c17b48b65fdc049a0bb8ec4483a1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#a0de9c17b48b65fdc049a0bb8ec4483a1">display</a> (std::stack&lt; <a class="el" href="class_a_component.html">AComponent</a> * &gt;)</td></tr>
+<tr class="memdesc:a0de9c17b48b65fdc049a0bb8ec4483a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that will display all of the components send in parameters to the screen.  <a href="#a0de9c17b48b65fdc049a0bb8ec4483a1">More...</a><br/></td></tr>
 <tr class="separator:a0de9c17b48b65fdc049a0bb8ec4483a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1869fb1256a5bd1550e9f6c1c5db0a8d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#a1869fb1256a5bd1550e9f6c1c5db0a8d">setTitle</a> (<a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> &amp;title)</td></tr>
+<tr class="memdesc:a1869fb1256a5bd1550e9f6c1c5db0a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for setting the title of the window.  <a href="#a1869fb1256a5bd1550e9f6c1c5db0a8d">More...</a><br/></td></tr>
+<tr class="separator:a1869fb1256a5bd1550e9f6c1c5db0a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_i_graph"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_graph')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_graph.html">IGraph</a></td></tr>
 <tr class="memitem:a97105e33bdfaca4f6bdc1777870ff941 inherit pub_methods_class_i_graph"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_graph.html#a97105e33bdfaca4f6bdc1777870ff941">~IGraph</a> ()</td></tr>
 <tr class="separator:a97105e33bdfaca4f6bdc1777870ff941 inherit pub_methods_class_i_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,10 +140,16 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa246903bcbd388b8aa01137417503be2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__config__windows_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#aa246903bcbd388b8aa01137417503be2">scale</a> = 25</td></tr>
 <tr class="separator:aa246903bcbd388b8aa01137417503be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae525445d44873efad1fa5a176986e9d3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#ae525445d44873efad1fa5a176986e9d3">fontName</a> = &quot;./fonts/Minecraft.ttf&quot;</td></tr>
+<tr class="memitem:ae525445d44873efad1fa5a176986e9d3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#ae525445d44873efad1fa5a176986e9d3">fontName</a> = &quot;./fonts/arcade_barbarian.ttf&quot;</td></tr>
 <tr class="separator:ae525445d44873efad1fa5a176986e9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833e8b63abe7eaa1a41b3b183f771dca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_d_l_graph.html#a833e8b63abe7eaa1a41b3b183f771dca">defaultFont</a> = &quot;/usr/share/fonts/truetype/DroidSans-Bold.ttf&quot;</td></tr>
+<tr class="separator:a833e8b63abe7eaa1a41b3b183f771dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>SDL class for lib_arcade_sdl implementation. </p>
+
+<p>Definition at line <a class="el" href="_s_d_l_graph_8hpp_source.html#l00021">21</a> of file <a class="el" href="_s_d_l_graph_8hpp_source.html">SDLGraph.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9ed11ac197e66eabdd7d689df1ca9937"></a>
 <div class="memitem">
 <div class="memproto">
@@ -144,6 +162,10 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor in which SDL, TTF, render, window, font, colors, keycodes will be initialised. </p>
+
+<p>Definition at line <a class="el" href="_s_d_l_graph_8cpp_source.html#l00017">17</a> of file <a class="el" href="_s_d_l_graph_8cpp_source.html">SDLGraph.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -168,6 +190,10 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructor of SDL lib that will Quit SDL, Quit TTF, close windows, fonts, destroy renderers and cache textures. </p>
+
+<p>Definition at line <a class="el" href="_s_d_l_graph_8cpp_source.html#l00052">52</a> of file <a class="el" href="_s_d_l_graph_8cpp_source.html">SDLGraph.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -203,14 +229,24 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Function that will display all of the components send in parameters to the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stack</td><td>A stack of components to display </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="class_i_graph.html#a7f3ef8d2f699fbca53123077af8dae3f">IGraph</a>.</p>
+
+<p>Definition at line <a class="el" href="_s_d_l_graph_8cpp_source.html#l00113">113</a> of file <a class="el" href="_s_d_l_graph_8cpp_source.html">SDLGraph.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_s_d_l_graph_a0de9c17b48b65fdc049a0bb8ec4483a1_cgraph.png" border="0" usemap="#class_s_d_l_graph_a0de9c17b48b65fdc049a0bb8ec4483a1_cgraph" alt=""/></div>
 <map name="class_s_d_l_graph_a0de9c17b48b65fdc049a0bb8ec4483a1_cgraph" id="class_s_d_l_graph_a0de9c17b48b65fdc049a0bb8ec4483a1_cgraph">
-<area shape="rect" id="node2" href="_s_d_l__render_8h.html#a473b4abbb29c60e98876eb68ad850f79" title="Clear the current rendering target with the drawing color. " alt="" coords="195,5,323,32"/><area shape="rect" id="node3" href="_s_d_l__render_8h.html#a48fa9d24395f3610746988ecca2aae86" title="Update the m_window with rendering performed. " alt="" coords="187,56,330,83"/></map>
+<area shape="rect" id="node2" href="_s_d_l__render_8h.html#a473b4abbb29c60e98876eb68ad850f79" title="Clear the current rendering target with the drawing color. " alt="" coords="229,5,357,32"/><area shape="rect" id="node3" href="class_sound.html#aeb8f1066a7edf4ded8d67d2ca7417fe6" title="Sound::PlaySound" alt="" coords="228,56,359,83"/><area shape="rect" id="node8" href="class_audio_component.html#ad8fa1a90afc18091fb5a04a9fe52af69" title="AudioComponent::getSoundPath" alt="" coords="187,107,399,133"/><area shape="rect" id="node9" href="class_audio_component.html#a9af99cd99cc6b76aa616eba27b9d1e68" title="AudioComponent::getLoop" alt="" coords="205,157,381,184"/><area shape="rect" id="node10" href="class_audio_component.html#a65799bd9a898dd16139af03ea4054213" title="AudioComponent::getOverlap" alt="" coords="197,208,390,235"/><area shape="rect" id="node11" href="class_audio_component.html#a74179d67fdf8fb2940d2cf92d0c226ea" title="AudioComponent::getStop" alt="" coords="206,259,381,285"/><area shape="rect" id="node12" href="_s_d_l__render_8h.html#a48fa9d24395f3610746988ecca2aae86" title="Update the m_window with rendering performed. " alt="" coords="222,309,365,336"/><area shape="rect" id="node4" href="class_sound.html#a19d2bbd15f932955d33de7b0ab90b244" title="Sound::StopSound" alt="" coords="448,56,579,83"/><area shape="rect" id="node5" href="mixer_8c.html#a29f8403bda00a77830c472e494140eae" title="Mix_HaltChannel" alt="" coords="627,56,749,83"/><area shape="rect" id="node6" href="_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="805,31,921,57"/><area shape="rect" id="node7" href="_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="798,81,927,108"/></map>
 </div>
 </p>
 
@@ -237,7 +273,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Function that will handle a SDL keycode. </p>
+<dl class="section return"><dt>Returns</dt><dd>keycode handled </dd></dl>
+
 <p>Implements <a class="el" href="class_i_graph.html#aba1fcfc4c4233def69d3137f225d8377">IGraph</a>.</p>
+
+<p>Definition at line <a class="el" href="_s_d_l_graph_8cpp_source.html#l00091">91</a> of file <a class="el" href="_s_d_l_graph_8cpp_source.html">SDLGraph.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -250,8 +291,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae525445d44873efad1fa5a176986e9d3"></a>
+<a class="anchor" id="a1869fb1256a5bd1550e9f6c1c5db0a8d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -259,7 +299,53 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> SDLGraph::fontName = &quot;./fonts/Minecraft.ttf&quot;</td>
+          <td class="memname"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a> SDLGraph::setTitle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function for setting the title of the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>The new title of the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_i_graph.html#ac803f2af19fabc57a612375b9f1a7fa5">IGraph</a>.</p>
+
+<p>Definition at line <a class="el" href="_s_d_l_graph_8cpp_source.html#l00295">295</a> of file <a class="el" href="_s_d_l_graph_8cpp_source.html">SDLGraph.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_s_d_l_graph_a1869fb1256a5bd1550e9f6c1c5db0a8d_cgraph.png" border="0" usemap="#class_s_d_l_graph_a1869fb1256a5bd1550e9f6c1c5db0a8d_cgraph" alt=""/></div>
+<map name="class_s_d_l_graph_a1869fb1256a5bd1550e9f6c1c5db0a8d_cgraph" id="class_s_d_l_graph_a1869fb1256a5bd1550e9f6c1c5db0a8d_cgraph">
+<area shape="rect" id="node2" href="_s_d_l__video_8h.html#a41aabc4b68f75f41d97995e02eb9deb6" title="Set the title of a m_window, in UTF&#45;8 format. " alt="" coords="189,5,336,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a833e8b63abe7eaa1a41b3b183f771dca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> SDLGraph::defaultFont = &quot;/usr/share/fonts/truetype/DroidSans-Bold.ttf&quot;</td>
         </tr>
       </table>
   </td>
@@ -268,6 +354,30 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_d_l_graph_8hpp_source.html#l00028">28</a> of file <a class="el" href="_s_d_l_graph_8hpp_source.html">SDLGraph.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae525445d44873efad1fa5a176986e9d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> SDLGraph::fontName = &quot;./fonts/arcade_barbarian.ttf&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_s_d_l_graph_8hpp_source.html#l00027">27</a> of file <a class="el" href="_s_d_l_graph_8hpp_source.html">SDLGraph.hpp</a>.</p>
 
 </div>
 </div>
@@ -289,16 +399,18 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_s_d_l_graph_8hpp_source.html#l00026">26</a> of file <a class="el" href="_s_d_l_graph_8hpp_source.html">SDLGraph.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/src/<a class="el" href="_s_d_l_graph_8hpp_source.html">SDLGraph.hpp</a></li>
-<li>/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/src/<a class="el" href="_s_d_l_graph_8cpp.html">SDLGraph.cpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/src/<a class="el" href="_s_d_l_graph_8cpp_source.html">SDLGraph.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:03 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

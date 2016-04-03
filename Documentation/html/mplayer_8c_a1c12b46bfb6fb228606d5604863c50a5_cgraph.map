@@ -1,0 +1,21 @@
+<map id="Player_HandleTick" name="Player_HandleTick">
+<area shape="rect" id="node2" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="229,5,267,32"/>
+<area shape="rect" id="node3" href="$mplayer_8c.html#af1a0bed099110fd17428349874b05c9d" title="pt_Notes" alt="" coords="211,107,285,133"/>
+<area shape="rect" id="node9" href="$mplayer_8c.html#accb3c4ca0999ebcb3ac532dad88c6caa" title="pt_EffectsPass1" alt="" coords="189,56,307,83"/>
+<area shape="rect" id="node10" href="$mplayer_8c.html#afb4bd057c33ed2d2ae95367eec8d7e69" title="pt_NNA" alt="" coords="213,208,283,235"/>
+<area shape="rect" id="node12" href="$mplayer_8c.html#abbaacee39ae55886ad99021915823d9f" title="pt_SetupVoices" alt="" coords="191,259,305,285"/>
+<area shape="rect" id="node13" href="$mplayer_8c.html#aab2132f34219481ba27b04e525b606eb" title="pt_EffectsPass2" alt="" coords="189,157,307,184"/>
+<area shape="rect" id="node14" href="$mplayer_8c.html#a576fe5c46f2ff1e9e42f2db9a8712b7a" title="pt_UpdateVoices" alt="" coords="187,401,309,428"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a8b4b9f959637868366a193f7f1d9c0de" title="UniFindRow" alt="" coords="399,81,494,108"/>
+<area shape="rect" id="node5" href="$mikmod__internals_8h.html#a86d52014a41c3b93e1276fb571e700ac" title="UniSetRow" alt="" coords="402,31,491,57"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#a49718af75e86ee742b0533a5fbd8000e" title="UniGetByte" alt="" coords="401,183,492,209"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#a8a53f8393336d51ce0803985ea4a5d18" title="UniSkipOpcode" alt="" coords="390,132,503,159"/>
+<area shape="rect" id="node8" href="$munitrk_8c.html#a49718af75e86ee742b0533a5fbd8000e" title="UniGetByte" alt="" coords="584,132,675,159"/>
+<area shape="rect" id="node11" href="$mikmod__internals_8h.html#a8812011b45402eb8954f75c6c8d2f007" title="Voice_Stopped_internal" alt="" coords="367,233,526,260"/>
+<area shape="rect" id="node15" href="$mikmod__internals_8h.html#a7627800c622f2c6b7629799c7123bc9b" title="Voice_Play_internal" alt="" coords="378,452,515,479"/>
+<area shape="rect" id="node16" href="$mikmod__internals_8h.html#a65de3d847cb07ea0e9c74d144c20308a" title="Voice_SetVolume_internal" alt="" coords="359,503,534,529"/>
+<area shape="rect" id="node17" href="$mikmod__internals_8h.html#a7674527ee936acb93f1a46a3ff168cb5" title="Voice_SetPanning_internal" alt="" coords="357,553,536,580"/>
+<area shape="rect" id="node18" href="$mikmod__internals_8h.html#a373eb5caf26917a7d2b603940e241a2c" title="Voice_Stop_internal" alt="" coords="377,284,516,311"/>
+<area shape="rect" id="node19" href="$mikmod__internals_8h.html#a48d098c4ba8b5ea2d81d22081bf17ea5" title="Voice_SetFrequency\l_internal" alt="" coords="375,335,518,377"/>
+<area shape="rect" id="node20" href="$mplayer_8c.html#aac38a18878fa7b55b6db28883861752f" title="getfrequency" alt="" coords="398,401,495,428"/>
+</map>

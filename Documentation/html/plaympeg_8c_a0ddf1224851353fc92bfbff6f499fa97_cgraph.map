@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$common_8c.html#af1c22febc3acaefcf4c031252295d196" title="skip" alt="" coords="173,5,219,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__version_8h.html#a4204ecbb600f51ee50515979e60bf8f3" title="Get the version of SDL that is linked against your program. " alt="" coords="136,56,256,83"/>
+<area shape="rect" id="node4" href="$plaympeg_8c.html#a4907135737e2fb22dcde4be8474bcab1" title="usage" alt="" coords="167,107,225,133"/>
+<area shape="rect" id="node5" href="$_s_d_l__mutex_8h.html#ae1f90ad6a7420fb3c4b5685e440d762f" title="SDL_CreateMutex" alt="" coords="131,157,261,184"/>
+<area shape="rect" id="node6" href="$_s_d_l_8h.html#a8fc8d35348d7c74bad8392d776c937b8" title="SDL_Init" alt="" coords="159,208,233,235"/>
+<area shape="rect" id="node7" href="$_s_d_l__error_8h.html#ac88e1aa404a8f94aaee4ad6b94547647" title="SDL_GetError" alt="" coords="144,259,248,285"/>
+<area shape="rect" id="node8" href="$plaympeg_8c.html#a8b0f4658f006a59254a202ae78c14c67" title="next_movie" alt="" coords="151,309,241,336"/>
+<area shape="rect" id="node9" href="$smpeg_8cpp.html#ad3cbbe3da62b634bb51063b2efa4aa99" title="SMPEG_new_descr" alt="" coords="126,411,266,437"/>
+<area shape="rect" id="node11" href="$smpeg_8cpp.html#ab073b8c58b6a783359edd00b004b2a8b" title="SMPEG_new" alt="" coords="145,360,247,387"/>
+<area shape="rect" id="node12" href="$smpeg_8cpp.html#ac098e9c18d0303b17aa3c33a6f95f480" title="SMPEG_error" alt="" coords="145,664,247,691"/>
+<area shape="rect" id="node15" href="$smpeg_8cpp.html#a8ea0ae3368356749e2536a698a404111" title="SMPEG_delete" alt="" coords="140,512,252,539"/>
+<area shape="rect" id="node16" href="$smpeg_8cpp.html#a0de1569451b0fc34ac7d1bb175eae5d0" title="SMPEG_enableaudio" alt="" coords="123,461,269,488"/>
+<area shape="rect" id="node18" href="$smpeg_8cpp.html#a654bf474fd13555477bf553225bdd49a" title="SMPEG_enablevideo" alt="" coords="123,563,269,589"/>
+<area shape="rect" id="node20" href="$smpeg_8cpp.html#a26bb811e69208b8c42c2ad2666a91d3d" title="SMPEG_setvolume" alt="" coords="127,613,265,640"/>
+<area shape="rect" id="node22" href="$_s_d_l__video_8h.html#a29b118c6932ccb94d85b5435ae1e0a19" title="Set the size of a m_window&#39;s client area. " alt="" coords="122,715,270,741"/>
+<area shape="rect" id="node23" href="$_s_d_l__render_8h.html#a078c0a925e24542d356a02183a306be6" title="Destroy the specified texture. " alt="" coords="123,765,269,792"/>
+<area shape="rect" id="node24" href="$_s_d_l__video_8h.html#a42565088bdb739a5353fd67abbe235d2" title="Create a m_window with the specified position, dimensions, and flags. " alt="" coords="125,816,267,843"/>
+<area shape="rect" id="node25" href="$_s_d_l__render_8h.html#a8db1ba55c15a3477d71f6a793cee54f1" title="Create a 2D rendering context for a m_window. " alt="" coords="123,867,269,893"/>
+<area shape="rect" id="node26" href="$_s_d_l__mouse_8h.html#a00286ec15cd56dee1fd71ed4e6e7a585" title="Toggle whether or not the cursor is shown. " alt="" coords="133,917,259,944"/>
+<area shape="rect" id="node27" href="$_s_d_l__hints_8h.html#a9b47f5aa3911644f0a5a3f0cfa9198a4" title="Set a hint with normal priority. " alt="" coords="147,968,245,995"/>
+<area shape="rect" id="node28" href="$_s_d_l__render_8h.html#ab5ff70c980ec23b05a95e0435bd55b4a" title="Create a texture for a rendering context. " alt="" coords="127,1019,265,1045"/>
+<area shape="rect" id="node29" href="$smpeg_8cpp.html#a60e1994793867af53671b7d1d826df14" title="SMPEG_setdisplay" alt="" coords="128,1221,264,1248"/>
+<area shape="rect" id="node31" href="$plaympeg_8c.html#a6881047f0163f813eab6755b8e4f4f66" title="update" alt="" coords="165,1120,227,1147"/>
+<area shape="rect" id="node32" href="$_s_d_l_8h.html#a14e9091982e09097985e10e3ca65debb" title="SDL_QuitSubSystem" alt="" coords="123,1171,269,1197"/>
+<area shape="rect" id="node33" href="$smpeg_8cpp.html#a4b7a293c5859cc027a0127fa5c86f634" title="SMPEG_loop" alt="" coords="145,1272,247,1299"/>
+<area shape="rect" id="node35" href="$smpeg_8cpp.html#ae799643f9522e932957d85380dcffd5e" title="SMPEG_seek" alt="" coords="143,1323,249,1349"/>
+<area shape="rect" id="node37" href="$smpeg_8cpp.html#a57f84c0990b83243df78cad5b32212f5" title="SMPEG_skip" alt="" coords="145,1424,247,1451"/>
+<area shape="rect" id="node39" href="$smpeg_8cpp.html#ac820747abc5f23f59828f10bb522fac0" title="SMPEG_play" alt="" coords="145,1373,247,1400"/>
+<area shape="rect" id="node40" href="$smpeg_8cpp.html#abe69239dff66301c4c3272947cea579e" title="SMPEG_status" alt="" coords="139,1069,253,1096"/>
+<area shape="rect" id="node41" href="$_s_d_l__events_8h.html#acfa517963c25f8b71acc6b56721c5d9b" title="Polls for currently pending events. " alt="" coords="141,1475,251,1501"/>
+<area shape="rect" id="node42" href="$_s_d_l__render_8h.html#a27bad6dceb9d5e08d41506260dfc1c71" title="Set the drawing area for rendering on the current target. " alt="" coords="112,1525,280,1552"/>
+<area shape="rect" id="node43" href="$_s_d_l__video_8h.html#ab4aa48f0a29f0868ce4e0422c02ed2fa" title="Set a m_window&#39;s fullscreen state. " alt="" coords="105,1576,287,1603"/>
+<area shape="rect" id="node44" href="$smpeg_8cpp.html#a828e5df6e27fa53fb606048287e9d6f3" title="SMPEG_pause" alt="" coords="140,1627,252,1653"/>
+<area shape="rect" id="node45" href="$_s_d_l__render_8h.html#a7aab41a7058997590095e5568d065c11" title="Update the given texture rectangle with new pixel data. " alt="" coords="125,1677,267,1704"/>
+<area shape="rect" id="node46" href="$_s_d_l__render_8h.html#a4b6c2353384c7b7128fd5960b24f2ae6" title="Copy a portion of the texture to the current rendering target. " alt="" coords="132,1728,260,1755"/>
+<area shape="rect" id="node47" href="$_s_d_l__render_8h.html#a48fa9d24395f3610746988ecca2aae86" title="Update the m_window with rendering performed. " alt="" coords="125,1779,267,1805"/>
+<area shape="rect" id="node48" href="$_s_d_l__timer_8h.html#ae8050b95373b95249064467592ab4e21" title="Wait a specified number of milliseconds before returning. " alt="" coords="151,1829,241,1856"/>
+<area shape="rect" id="node49" href="$_s_d_l__mutex_8h.html#ad2bbcc4e32ac927af62f0cba671f63fe" title="SDL_DestroyMutex" alt="" coords="127,1880,265,1907"/>
+<area shape="rect" id="node50" href="$_s_d_l_8h.html#afdabaf714781099083592051f2d9ac11" title="SDL_Quit" alt="" coords="157,1931,235,1957"/>
+<area shape="rect" id="node10" href="$smpeg_8cpp.html#ae7e401c2f7a366e281a193059b229c5b" title="SMPEG_getinfo" alt="" coords="354,385,470,412"/>
+<area shape="rect" id="node13" href="$class_m_p_e_gerror.html#ac7f9938ed72bbdf96007585191e6f544" title="MPEGerror::WasError" alt="" coords="337,892,487,919"/>
+<area shape="rect" id="node14" href="$class_m_p_e_gerror.html#a8612bd5a212102ea901a87e9b4a22d97" title="MPEGerror::TheError" alt="" coords="339,664,485,691"/>
+<area shape="rect" id="node17" href="$class_m_p_e_g.html#a7dfe1379b0958967da8aa0fe3f5f9d79" title="MPEG::EnableAudio" alt="" coords="341,461,483,488"/>
+<area shape="rect" id="node19" href="$class_m_p_e_g.html#a6a22b2984f91fe86c6d9e60d36a16ab3" title="MPEG::EnableVideo" alt="" coords="341,563,483,589"/>
+<area shape="rect" id="node21" href="$class_m_p_e_g.html#ac6cd3f986d36a08f5f0410620fd4d648" title="MPEG::Volume" alt="" coords="355,613,469,640"/>
+<area shape="rect" id="node30" href="$class_m_p_e_g.html#a128c1ba561cb16209e20a14e00c062a2" title="MPEG::SetDisplay" alt="" coords="345,1221,479,1248"/>
+<area shape="rect" id="node34" href="$class_m_p_e_g.html#aad0b2fcf4f47aff83b8503fe3aa612fa" title="MPEG::Loop" alt="" coords="363,1272,461,1299"/>
+<area shape="rect" id="node36" href="$class_m_p_e_g.html#a32884e4534c3236db53f9c3efaf0d6c3" title="MPEG::Seek" alt="" coords="363,1323,461,1349"/>
+<area shape="rect" id="node38" href="$class_m_p_e_g.html#a3da1247a79675ac62ec58de9f9a7119d" title="MPEG::Skip" alt="" coords="365,1424,459,1451"/>
+</map>

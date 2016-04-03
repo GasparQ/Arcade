@@ -1,0 +1,5 @@
+<map id="Player_LoadTitleFP" name="Player_LoadTitleFP">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a34f78cdb0003974fd35daead50e14961" title="_mm_new_file_reader" alt="" coords="195,5,344,32"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a488a8129583caa09f3a32d0d1c049261" title="_mm_delete_file_reader" alt="" coords="189,56,349,83"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="397,5,493,32"/>
+</map>

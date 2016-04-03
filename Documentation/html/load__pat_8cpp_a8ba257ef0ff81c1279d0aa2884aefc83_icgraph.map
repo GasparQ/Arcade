@@ -1,0 +1,8 @@
+<map id="pat_gmtosmp" name="pat_gmtosmp">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a6bf2e0dcc0f6cac93b3926a418b874d8" title="CSoundFile::TestABC" alt="" coords="159,5,311,32"/>
+<area shape="rect" id="node3" href="$load__pat_8h.html#af365caf051b0fee85cae76b1a5a6cc8a" title="PAT_Load_Instruments" alt="" coords="155,56,314,83"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#a399c49f864b730182d9a0e065878a10f" title="CSoundFile::ReadABC" alt="" coords="363,31,520,57"/>
+<area shape="rect" id="node7" href="$class_c_sound_file.html#ad96a25f78d1f3474e9243fce2cb2cdbe" title="CSoundFile::ReadMID" alt="" coords="364,81,519,108"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="569,56,706,83"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="755,56,863,83"/>
+</map>

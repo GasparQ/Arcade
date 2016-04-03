@@ -1,0 +1,5 @@
+<map id="vorbis_synthesis_trackonly" name="vorbis_synthesis_trackonly">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2block_8c.html#ad1b739df454f82dc2eda9985bde218de" title="_vorbis_block_ripcord" alt="" coords="235,5,383,32"/>
+<area shape="rect" id="node3" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a5586b0772a73f943fcaf0db8ab788e4d" title="oggpack_readinit" alt="" coords="249,56,369,83"/>
+<area shape="rect" id="node4" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a7e3e346e19e4a74bfe4e21f90578eee6" title="oggpack_read" alt="" coords="258,107,361,133"/>
+</map>

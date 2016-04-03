@@ -1,0 +1,9 @@
+<map id="MPEGvideo::timeSync" name="MPEGvideo::timeSync">
+<area shape="rect" id="node2" href="$gdith_8cpp.html#a01ba607c8267a75d87c02759d89492f1" title="CurrentTime" alt="" coords="209,107,303,133"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gaction.html#a7ae037b04bb796605436431613d3e8de" title="MPEGaction::Time" alt="" coords="371,157,504,184"/>
+<area shape="rect" id="node8" href="$_s_d_l__timer_8h.html#ae8050b95373b95249064467592ab4e21" title="Wait a specified number of milliseconds before returning. " alt="" coords="211,208,301,235"/>
+<area shape="rect" id="node3" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="418,5,457,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideo.html#a9c1bd198807809037b138a21673e9a4b" title="MPEGvideo::TimeSource" alt="" coords="352,56,523,83"/>
+<area shape="rect" id="node6" href="$video_8cpp.html#a4a5116d1c7db29c0bd5f6a5aa952e642" title="ReadSysClock" alt="" coords="382,107,493,133"/>
+<area shape="rect" id="node7" href="$_s_d_l__timer_8h.html#a0b9bc71d6287e0ffafdc3419760fe2b3" title="Get the number of milliseconds since the SDL library initialization. " alt="" coords="571,107,679,133"/>
+</map>

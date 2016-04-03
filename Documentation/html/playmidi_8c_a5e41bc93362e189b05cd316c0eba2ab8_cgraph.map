@@ -1,0 +1,5 @@
+<map id="Timidity_LoadSong_RW" name="Timidity_LoadSong_RW">
+<area shape="rect" id="node2" href="$common_8c.html#a97c3dbe8452b80903bbb8a330f8bc032" title="safe_malloc" alt="" coords="369,5,461,32"/>
+<area shape="rect" id="node3" href="$readmidi_8c.html#a6582bba81f8f6b9525b28b73a1c63c70" title="read_midi_file" alt="" coords="217,56,319,83"/>
+<area shape="rect" id="node4" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="377,56,453,83"/>
+</map>

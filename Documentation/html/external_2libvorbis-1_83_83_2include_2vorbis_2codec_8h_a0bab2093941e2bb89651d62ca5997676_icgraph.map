@@ -1,0 +1,6 @@
+<map id="vorbis_comment_init" name="vorbis_comment_init">
+<area shape="rect" id="node2" href="$decoder__example_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="256,5,307,32"/>
+<area shape="rect" id="node3" href="$write__read_8h.html#a9a5d40a93bd8ee7e567ff1b88809a5fd" title="write_vorbis_data_or_die" alt="" coords="198,56,365,83"/>
+<area shape="rect" id="node5" href="$write__read_8h.html#a6ea146b765de04017065960d09fb2636" title="read_vorbis_data_or_die" alt="" coords="200,107,363,133"/>
+<area shape="rect" id="node4" href="$test_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="413,81,464,108"/>
+</map>

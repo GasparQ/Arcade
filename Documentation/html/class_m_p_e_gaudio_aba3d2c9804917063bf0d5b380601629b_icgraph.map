@@ -1,0 +1,6 @@
+<map id="MPEGaudio::Stop" name="MPEGaudio::Stop">
+<area shape="rect" id="node2" href="$class_m_p_e_gaudio.html#a87932c2fcd3ae9e49533648bc4c03592" title="MPEGaudio::~MPEGaudio" alt="" coords="181,5,360,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudio.html#abd08180d5181225f27a2f9d40bdc7004" title="MPEGaudio::Rewind" alt="" coords="199,56,343,83"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gaudio.html#ada1d438dc01b84e4734bb033ea983b74" title="MPEGaudio::initialize" alt="" coords="408,56,555,83"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gaudio.html#a84689a033c4121be4edb20b73b57099a" title="MPEGaudio::MPEGaudio" alt="" coords="603,56,773,83"/>
+</map>

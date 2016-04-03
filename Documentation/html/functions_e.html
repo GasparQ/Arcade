@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -117,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,17 +133,143 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>e_o_s
+: <a class="el" href="structogg__packet.html#aa367e7c5425c5f65cbd126b82dfc72e8">ogg_packet</a>
+, <a class="el" href="structogg__stream__state.html#a366e94e72849e0e880d53a22bb9ee646">ogg_stream_state</a>
+</li>
+<li>echo_delay
+: <a class="el" href="struct_voice.html#ab6b3f12d74bcb37ce1093ad24bb98140">Voice</a>
+</li>
+<li>echo_delay_count
+: <a class="el" href="struct_voice.html#a4b5d8d95949eafe61f5ce1833a2463f3">Voice</a>
+</li>
 <li>echoMode()
 : <a class="el" href="class_n_curses.html#aa75309af7a3133925ec4a39c5b670d8a">NCurses</a>
 </li>
 <li>edit
 : <a class="el" href="union_s_d_l___event.html#a9a7e3b67b2654d4c5fc509676c6a7183">SDL_Event</a>
 </li>
+<li>edit1
+: <a class="el" href="struct_f_a_r_h_e_a_d_e_r1.html#a165e36b5cdcc16168b16b43cc75c034a">FARHEADER1</a>
+</li>
+<li>edit2
+: <a class="el" href="struct_f_a_r_h_e_a_d_e_r1.html#a3b02bbdced528bb17375de175b1d0ddf">FARHEADER1</a>
+</li>
+<li>eff
+: <a class="el" href="struct_f_a_r_n_o_t_e.html#a3260d4fa2d0c5659a2f52f110cce2324">FARNOTE</a>
+, <a class="el" href="struct_o_k_t_n_o_t_e.html#af446484a334fceb7d01fbd6773104994">OKTNOTE</a>
+, <a class="el" href="struct_u_l_t_e_v_e_n_t.html#a043e2dab0be9874633c842900bcae835">ULTEVENT</a>
+, <a class="el" href="struct_x_m_n_o_t_e.html#a3fce12e32a685ec0387bca6be5605df1">XMNOTE</a>
+</li>
+<li>eff1
+: <a class="el" href="struct_i_m_f_n_o_t_e.html#abc26940e49857c8b98e29d75de2d2ec5">IMFNOTE</a>
+</li>
+<li>eff2
+: <a class="el" href="struct_i_m_f_n_o_t_e.html#a42ce7438054690d1862ea54f5cb3a1d8">IMFNOTE</a>
+</li>
+<li>Effect
+: <a class="el" href="struct___mod_plug_note.html#a7453d151dce06c580eed11f7199161fd">_ModPlugNote</a>
+</li>
+<li>effect
+: <a class="el" href="struct_a_m_f_n_o_t_e.html#a40b1083fca07c9eb541395cd9cb89cf9">AMFNOTE</a>
+, <a class="el" href="struct_g_d_m_n_o_t_e.html#a0899414677d907c45acb3755dd235bc2">GDMNOTE</a>
+</li>
+<li>effectinfo_ofs
+: <a class="el" href="structtag_m_m_d0_e_x_p.html#a763a27f3f5d92c42537edcedd4e634e5">tagMMD0EXP</a>
+</li>
+<li>eighth_octave_lines
+: <a class="el" href="structvorbis__info__psy__global.html#a88e8cf9fc8dd0de7562379558c4a1910">vorbis_info_psy_global</a>
+, <a class="el" href="structvorbis__look__psy.html#afc52eca23e371be299e975dbedb16340">vorbis_look_psy</a>
+</li>
+<li>elements
+: <a class="el" href="structvqgen.html#ae9cf105abbc253ea85749b1a3c542967">vqgen</a>
+</li>
+<li>ems
+: <a class="el" href="struct_g_d_m_s_a_m_p_l_e.html#aac2f1dc7ade3a1cb12208fcb49c899fe">GDMSAMPLE</a>
+</li>
+<li>enable
+: <a class="el" href="structflac__config__t.html#a99896bcdb5bb9077da5a77e25ae4df38">flac_config_t</a>
+, <a class="el" href="class_m_p_e_gstream.html#adf435576a75bb0a23875fc35ab1747a1">MPEGstream</a>
+, <a class="el" href="structoutput__config__t.html#a3b7593eff73c7283fb792c956789b997">output_config_t</a>
+</li>
+<li>EnableAudio()
+: <a class="el" href="class_m_p_e_g.html#a7dfe1379b0958967da8aa0fe3f5f9d79">MPEG</a>
+</li>
 <li>enabled
-: <a class="el" href="struct_s_d_l_test___test_case_reference.html#a15168c85e38cae7557b4beb477ef6f9a">SDLTest_TestCaseReference</a>
+: <a class="el" href="class_m_p_e_gstream.html#a6b21acd9d2c54e3c5549f924d4b1e5b4">MPEGstream</a>
+, <a class="el" href="struct_s_d_l_test___test_case_reference.html#a15168c85e38cae7557b4beb477ef6f9a">SDLTest_TestCaseReference</a>
+</li>
+<li>EnableVideo()
+: <a class="el" href="class_m_p_e_g.html#a6a22b2984f91fe86c6d9e60d36a16ab3">MPEG</a>
+</li>
+<li>encoder
+: <a class="el" href="struct_encoder_session.html#ae0641c6b6a48bad0d16034653c303b35">EncoderSession</a>
+</li>
+<li>encoder_
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a03e8958f69a5b8fe1637ca4a758d80f8">FLAC::Encoder::Stream</a>
+</li>
+<li>encoder_session
+: <a class="el" href="struct_f_l_a_c_decoder_data.html#a6809cace7405d998b8b8cc9fce331c0e">FLACDecoderData</a>
+</li>
+<li>encoding
+: <a class="el" href="struct_play_mode.html#a6d4c517e5518de302b5008189735c669">PlayMode</a>
+, <a class="el" href="struct_wave_f_m_t.html#a8e3b7f390ed95c8a65f774dc1dcf8126">WaveFMT</a>
 </li>
 <li>end
-: <a class="el" href="struct_s_d_l___haptic_ramp.html#a16dd3ee307795248e21ee45ba8fb4c6c">SDL_HapticRamp</a>
+: <a class="el" href="structenvelope__band.html#abf849c2990c227fc1d1667685c370bc2">envelope_band</a>
+, <a class="el" href="struct_e_n_v_p_r.html#a77a157f8fba1a3b41b70a730c41bc5a6">ENVPR</a>
+, <a class="el" href="class_m_p_e_g__ring.html#aaa688aff3b025781403d7233db408ef5">MPEG_ring</a>
+, <a class="el" href="struct_ogg_vorbis___file.html#ae56eb8bc78d2fc27c79d145a7c80a681">OggVorbis_File</a>
+, <a class="el" href="struct_sample_loop.html#a514b89374fa89dd3299a8e404da99996">SampleLoop</a>
+, <a class="el" href="struct_s_d_l___haptic_ramp.html#a16dd3ee307795248e21ee45ba8fb4c6c">SDL_HapticRamp</a>
+, <a class="el" href="structvorbis__info__residue0.html#af8ce4aeb45a448181c3cd5079908627c">vorbis_info_residue0</a>
+</li>
+<li>end_all_streams()
+: <a class="el" href="class_m_p_e_gsystem.html#a9c5d7ff1c1f040b65d8a8ece04984fa1">MPEGsystem</a>
+</li>
+<li>end_index
+: <a class="el" href="structutils_____cue_specification.html#a0ad9e9085e44a9672537a1a932e5f517">utils__CueSpecification</a>
+</li>
+<li>end_loop
+: <a class="el" href="struct_wave_header.html#a66cffa886b83cd59cad75670b3836da2">WaveHeader</a>
+</li>
+<li>end_of_stream
+: <a class="el" href="struct_f_l_a_c_____ogg_decoder_aspect.html#ab36b114f42b83331b5149cc2eb2148af">FLAC__OggDecoderAspect</a>
+</li>
+<li>end_track
+: <a class="el" href="structutils_____cue_specification.html#a0f1060c9d1cfc542fc8d551133560540">utils__CueSpecification</a>
+</li>
+<li>endbit
+: <a class="el" href="structoggpack__buffer.html#a5a2ecb260025f73201e58dbd621c9f8b">oggpack_buffer</a>
+</li>
+<li>endbyte
+: <a class="el" href="structoggpack__buffer.html#a416200dd77da3603dce3913826d74207">oggpack_buffer</a>
+</li>
+<li>endofstream
+: <a class="el" href="class_m_p_e_gsystem.html#a5636545250f8ea50c9f421403f877869">MPEGsystem</a>
+</li>
+<li>entries
+: <a class="el" href="struct_argument___block_number.html#a47949f69eb82c71a00035d4bd6172905">Argument_BlockNumber</a>
+, <a class="el" href="struct_argument___block_type.html#a916868f0790b87bf9bb3bfb4c8032593">Argument_BlockType</a>
+, <a class="el" href="structcodebook.html#ad025d4a6ebb7417a99870380bfbd1a66">codebook</a>
+, <a class="el" href="structstatic__codebook.html#af672cb700b32f865aa6b3a8807e6bcaf">static_codebook</a>
+, <a class="el" href="structvqgen.html#a1e787843315b3dfd83e0eaa9e5711043">vqgen</a>
+</li>
+<li>entropy_coding_method
+: <a class="el" href="struct_f_l_a_c_____subframe___fixed.html#a0f17f8f756cd2c8acc0262ef14c37088">FLAC__Subframe_Fixed</a>
+, <a class="el" href="struct_f_l_a_c_____subframe___l_p_c.html#adb1401b2f8af05132420145a99f68c6e">FLAC__Subframe_LPC</a>
+</li>
+<li>Entry()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a150f13955a241de4a9dac2946a3b822d">FLAC::Metadata::VorbisComment::Entry</a>
+</li>
+<li>entry
+: <a class="el" href="struct_f_l_a_c_____stream_metadata___vorbis_comment___entry.html#aee25c935e026f730b7d8af573eadf0ef">FLAC__StreamMetadata_VorbisComment_Entry</a>
+</li>
+<li>entry_
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a857c8da808b7e3d28ef671e085304055">FLAC::Metadata::VorbisComment::Entry</a>
+</li>
+<li>entrylist
+: <a class="el" href="structvqgen.html#a5ee8b3519eb4f79d5a5216f915d5b307">vqgen</a>
 </li>
 <li>enum_next
 : <a class="el" href="structtypenode.html#a63eb0fcc7615ca5092b2e69b6b29af1f">typenode</a>
@@ -148,11 +277,114 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>enum_prev
 : <a class="el" href="structtypenode.html#a6cc285092d94e8707312c40480fe0e7c">typenode</a>
 </li>
+<li>env
+: <a class="el" href="struct_e_n_v_p_r.html#a335b54b339fc7f3942fda8d093e73168">ENVPR</a>
+</li>
+<li>EnvData
+: <a class="el" href="struct___m_t2_e_n_v_e_l_o_p_e.html#a8ad882a0498f3019f2e7a7e41038ff16">_MT2ENVELOPE</a>
+</li>
+<li>envelope_increment
+: <a class="el" href="struct_voice.html#ac413cbbc510b8fe2f0bd173462d197b8">Voice</a>
+</li>
+<li>envelope_offset
+: <a class="el" href="struct_sample.html#a5192aa2505869593fb9a1c7c50f16800">Sample</a>
+, <a class="el" href="struct_voice.html#ae2cefb70f62f73461f7f07bec2397589">Voice</a>
+, <a class="el" href="struct_wave_header.html#ac35f8736db54a26f2d166c70bdb41286">WaveHeader</a>
+</li>
+<li>envelope_rate
+: <a class="el" href="struct_sample.html#abc5f2df0999a56d3a926f002fb1cb150">Sample</a>
+, <a class="el" href="struct_voice.html#ab8107fc40776c1610fad8c3193ce1a95">Voice</a>
+, <a class="el" href="struct_wave_header.html#aa84224521de12c61543c6a4468e7063e">WaveHeader</a>
+</li>
+<li>envelope_stage
+: <a class="el" href="struct_voice.html#acee1dd120a7383f5103469a25210ff62">Voice</a>
+</li>
+<li>envelope_target
+: <a class="el" href="struct_voice.html#a7aba0f943e4714458f800d06a2dfbd98">Voice</a>
+</li>
+<li>envelope_volume
+: <a class="el" href="struct_voice.html#abb25bc5393490d83f29f53819cfebb26">Voice</a>
+</li>
+<li>eof
+: <a class="el" href="struct_f_l_a_c_____i_o_callbacks.html#a4810838b77667dc02415c854b2103e66">FLAC__IOCallbacks</a>
+, <a class="el" href="class_m_p_e_gstream.html#a467eeb2d906ad08170d9d24637a8f75b">MPEGstream</a>
+</li>
+<li>Eof()
+: <a class="el" href="class_m_p_e_gsystem.html#a1e8257a0a89af21b7da3de7d5f582ee4">MPEGsystem</a>
+, <a class="el" href="struct_m_r_e_a_d_e_r.html#a367292841bddf827517e8b5d85040856">MREADER</a>
+</li>
+<li>eof
+: <a class="el" href="struct_p_t_m_f_i_l_e_h_e_a_d_e_r.html#acc7f5cedf8fd9f5740f6139c778a1f36">PTMFILEHEADER</a>
+, <a class="el" href="structstream__data__struct.html#a47edd81831ed2bd8d59b97c4f11cdbc0">stream_data_struct</a>
+</li>
+<li>eof_callback()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#adfe8736f74fcc1d18374d74d34995353">FLAC::Decoder::Stream</a>
+, <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#a41a4cf61c44ca9c59f5f3e3ca6d046bc">FLAC__StreamDecoderPrivate</a>
+, <a class="el" href="class_stream_decoder.html#a45715d3e1b603d4ce6c4ea8dacaef8a3">StreamDecoder</a>
+</li>
+<li>eof_callback_()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#ac5cc3893f14acfea22bfb4f07cd1c819">FLAC::Decoder::Stream</a>
+</li>
+<li>EOF_flag
+: <a class="el" href="structvid__stream.html#affe43a13957e5f2e0c2dfee15205d82e">vid_stream</a>
+</li>
+<li>eofflag
+: <a class="el" href="structvorbis__block.html#a7bc1252bc17a2cd1ee2a4154fdd2617b">vorbis_block</a>
+, <a class="el" href="structvorbis__dsp__state.html#af48b32e7555d54a5d18a24385f1296d0">vorbis_dsp_state</a>
+</li>
+<li>eofmarker
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#a779fd67740e6cb7a05f8501da8773fa7">GDMHEADER</a>
+</li>
+<li>EQSet
+: <a class="el" href="struct_in___module.html#a5aa149e543ac78ab1d21aa4071cc5128">In_Module</a>
+</li>
+<li>errbuf
+: <a class="el" href="class_m_p_e_gerror.html#a64bdbca23a576109a2a4a65b9c7ef04b">MPEGerror</a>
+</li>
 <li>error
-: <a class="el" href="struct_s_d_l___dollar_gesture_event.html#a30aaa8fe0df93615e6692aa20e9c13eb">SDL_DollarGestureEvent</a>
+: <a class="el" href="struct___mix___music.html#aea6b649f93451c0787d806183c868e81">_Mix_Music</a>
+, <a class="el" href="struct_decoder_instance.html#a6c9aa0b901f26c34c8971560d3a6a04b">DecoderInstance</a>
+, <a class="el" href="structdither__state.html#a29eabf9bd746ecf4acd354ed9f7a93d3">dither_state</a>
+, <a class="el" href="struct_m_m_f_i_l_e.html#aeb58375a745f74523c0dba6ad0d1392f">MMFILE</a>
+, <a class="el" href="class_m_p_e_gerror.html#ae9e6fcd94dc3e05f5d386e68dc59fc3c">MPEGerror</a>
+, <a class="el" href="struct_s_d_l___dollar_gesture_event.html#a30aaa8fe0df93615e6692aa20e9c13eb">SDL_DollarGestureEvent</a>
+</li>
+<li>error_callback()
+: <a class="el" href="class_file_decoder.html#a965372af769fb2b7b06d9b928647b162">FileDecoder</a>
+, <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a0dbadd163ade7bc2d1858e7a435d5e52">FLAC::Decoder::Stream</a>
+, <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#a655e3af224a9519724b0aa08f00bf1a4">FLAC__StreamDecoderPrivate</a>
+, <a class="el" href="class_our_decoder.html#ad6dcef392b7f1aa8ee1af0d0114f14f2">OurDecoder</a>
+, <a class="el" href="class_our_file_decoder.html#af8ff0f594d92084fbbb87ed9dead974e">OurFileDecoder</a>
+, <a class="el" href="class_stream_decoder.html#a777297f11f2cd45b922f06b06e1ce320">StreamDecoder</a>
+</li>
+<li>error_callback_()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a0873020f111ea387f0316cdd0c99384d">FLAC::Decoder::Stream</a>
+</li>
+<li>error_occurred
+: <a class="el" href="struct_client_data.html#a49bb3cfefdccec2c7212ad4d378bbe4f">ClientData</a>
+, <a class="el" href="structdecoder__client__struct.html#aa2c8d28bb0dc85e694b3f2d8131dd59a">decoder_client_struct</a>
+, <a class="el" href="struct_decoder_client_data.html#af674c1095df5e045ec4cea9266de84f5">DecoderClientData</a>
+, <a class="el" href="struct_stream_decoder_client_data.html#aec3d90fca3d1235cb53f3f2b70fb4dd5">StreamDecoderClientData</a>
+</li>
+<li>error_occurred_
+: <a class="el" href="class_decoder_common.html#a34a7005ec77557f6e65e5977530ba82a">DecoderCommon</a>
+, <a class="el" href="class_our_file_decoder.html#ac842535a1ddabe5d84c87a31c1446fa2">OurFileDecoder</a>
+</li>
+<li>error_stats
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#a6299d3986ec08c22c00ec6c1bf6c5d08">FLAC__StreamEncoderPrivate</a>
+</li>
+<li>error_status
+: <a class="el" href="struct_client_data.html#a10b0781f69413999ab5af69f88927205">ClientData</a>
+</li>
+<li>ErrorHistory
+: <a class="el" href="struct_dither_context.html#a49ff3c226e326db2b683654f71a611b2">DitherContext</a>
+</li>
+<li>errorstream
+: <a class="el" href="class_m_p_e_gsystem.html#aa02d214276ac57454b126d7807175ef8">MPEGsystem</a>
 </li>
 <li>event
-: <a class="el" href="struct_s_d_l___sys_w_mmsg.html#ae32f04e3b3707a452cbb4ed416d56c64">SDL_SysWMmsg</a>
+: <a class="el" href="struct_midi_event_list.html#a23f31c3fe19b3768dd3e1420061857c4">MidiEventList</a>
+, <a class="el" href="struct_s_d_l___sys_w_mmsg.html#ae32f04e3b3707a452cbb4ed416d56c64">SDL_SysWMmsg</a>
 , <a class="el" href="struct_s_d_l___window_event.html#a485cd1f07f0f22fdb9f4c4bf214011dc">SDL_WindowEvent</a>
 </li>
 <li>eventManagment()
@@ -161,8 +393,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_open_gl_graph.html#acf9b77bbd69d36766f01629903e99ecf">OpenGlGraph</a>
 , <a class="el" href="class_s_d_l_graph.html#abe1f0c01badf17143663695f156ce199">SDLGraph</a>
 </li>
+<li>events
+: <a class="el" href="struct___midi_song.html#a33f137c974ba30a1c3e773032ee0a22c">_MidiSong</a>
+</li>
+<li>exclusiveClass
+: <a class="el" href="struct_sample.html#a37ca6331b75051b1c99a2e2d4da2347e">Sample</a>
+</li>
+<li>ExecuteDisplay()
+: <a class="el" href="class_m_p_e_gvideo.html#ab01015b9ca95bc7dd70d5640842e239b">MPEGvideo</a>
+</li>
+<li>exist_stream()
+: <a class="el" href="class_m_p_e_gsystem.html#a4831c19aa9b27684310a7a70c953ad26">MPEGsystem</a>
+</li>
+<li>Exit
+: <a class="el" href="struct_m_d_r_i_v_e_r.html#a6e6ade5ed9f3494b82c05572094778aa">MDRIVER</a>
+</li>
+<li>exp_smp
+: <a class="el" href="struct_m_e_d_e_x_p.html#a04bffd3f1538b1939ded2acdd3399227">MEDEXP</a>
+, <a class="el" href="structtag_m_m_d0_e_x_p.html#a28b778372fd580d66a16f980eb31b49d">tagMMD0EXP</a>
+</li>
+<li>expdata
+: <a class="el" href="structtag_m_e_d_m_o_d_u_l_e_h_e_a_d_e_r.html#a4101da8f9eda939aeb2fc955c9d21326">tagMEDMODULEHEADER</a>
+</li>
+<li>expected
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#a8dced4ffeff2e4501fd754c867c4b723">FLAC__StreamEncoderPrivate</a>
+</li>
+<li>export_picture_to
+: <a class="el" href="struct_operation.html#af11305f7fbb4bef10adcf7dfb7db5cd5">Operation</a>
+</li>
+<li>expression
+: <a class="el" href="struct_channel.html#a3fa539ccc995524d7415ffd7e73b6299">Channel</a>
+, <a class="el" href="struct_control_mode.html#a7aa6dd9060e4f0006197c72501a6f124">ControlMode</a>
+</li>
+<li>ext3dnow
+: <a class="el" href="struct_f_l_a_c_____c_p_u_info___i_a32.html#a063b2a7ba65b7bdc793c9c03801f642c">FLAC__CPUInfo_IA32</a>
+</li>
 <li>ext_Booleans
 : <a class="el" href="structtermtype.html#ae8db369d1885aeced391dc5f01f872ff">termtype</a>
+</li>
+<li>ext_data
+: <a class="el" href="struct_go_p.html#ad6e45c254e5b1dce0f522c43202f7456">GoP</a>
+, <a class="el" href="structpict.html#a76aae283d6b1b126fad23fe7ce7ae951">pict</a>
+, <a class="el" href="structvid__stream.html#abc5ab4e5b20582069105418b7ff7c3fa">vid_stream</a>
 </li>
 <li>ext_Names
 : <a class="el" href="structtermtype.html#a6f88d45c2248b18dc764f81cf2ecc040">termtype</a>
@@ -176,11 +448,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ext_Strings
 : <a class="el" href="structtermtype.html#a54fc8e75a2f06658d215494020aee8ce">termtype</a>
 </li>
+<li>ExtendedChannelEffect()
+: <a class="el" href="class_c_sound_file.html#aee09105713a6118a3fcefbc239ec20a9">CSoundFile</a>
+</li>
+<li>ExtendedMODCommands()
+: <a class="el" href="class_c_sound_file.html#af15205008316ddc8d73ee05913e296ae">CSoundFile</a>
+</li>
+<li>ExtendedS3MCommands()
+: <a class="el" href="class_c_sound_file.html#a1244ae5f59a76ebd281d09e2def31aec">CSoundFile</a>
+</li>
+<li>extmmx
+: <a class="el" href="struct_f_l_a_c_____c_p_u_info___i_a32.html#a3986c35ab71799eaa7d1586587ad51d0">FLAC__CPUInfo_IA32</a>
+</li>
+<li>extra
+: <a class="el" href="struct_a_m_s_f_i_l_e_h_e_a_d_e_r.html#abc5f9d39f6fb30dd45850fb940c1bde0">AMSFILEHEADER</a>
+</li>
+<li>extra_bytes
+: <a class="el" href="structtag_m_m_d_c_o_m_m_a_n_d.html#a14df3098afd7459a76caeca1e3fb967a">tagMMDCOMMAND</a>
+</li>
+<li>extra_count
+: <a class="el" href="structtag_m_m_d_c_o_m_m_a_n_d.html#a4422430d58a66cc1f9152c017032fd0b">tagMMDCOMMAND</a>
+</li>
+<li>extra_info
+: <a class="el" href="structpict.html#acb3cd77682e4b60755e8802a2c4b2411">pict</a>
+, <a class="el" href="structslice.html#affa99bb194cf01602ae748cff5fe9594">slice</a>
+</li>
+<li>extra_songs
+: <a class="el" href="struct_m_e_d_h_e_a_d_e_r.html#aa0e19ffbfc4722f148c21ed7c5686d7c">MEDHEADER</a>
+, <a class="el" href="structtag_m_e_d_m_o_d_u_l_e_h_e_a_d_e_r.html#a0dff1f56a79f987539d415d4710a37b7">tagMEDMODULEHEADER</a>
+</li>
+<li>extraData
+: <a class="el" href="struct_m_i_d_i_event.html#a70662ed5a59461afd434086dadbe355d">MIDIEvent</a>
+</li>
+<li>ExtraFinePortamentoDown()
+: <a class="el" href="class_c_sound_file.html#aa7a7fdd02ae67fefa1e94fd58c0d490a">CSoundFile</a>
+</li>
+<li>ExtraFinePortamentoUp()
+: <a class="el" href="class_c_sound_file.html#a79549e127cb91bc744c843ffd8d09d1e">CSoundFile</a>
+</li>
+<li>extraLen
+: <a class="el" href="struct_m_i_d_i_event.html#a788c86da5c007d34bd7c6c0358702347">MIDIEvent</a>
+</li>
+<li>extspd
+: <a class="el" href="struct_m_o_d_u_l_e.html#ae6e4f8acaeaf316ace0a2e0161d24c00">MODULE</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

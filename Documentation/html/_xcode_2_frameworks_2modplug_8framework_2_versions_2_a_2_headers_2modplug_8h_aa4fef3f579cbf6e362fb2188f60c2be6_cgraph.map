@@ -1,0 +1,4 @@
+<map id="ModPlug_GetLength" name="ModPlug_GetLength">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#aa2a782fa42907990fb9030b9aa4c9d0e" title="CSoundFile::GetSongTime" alt="" coords="195,5,373,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a7341fe49ddbb5c5949e8da08924c5361" title="CSoundFile::GetLength" alt="" coords="422,5,581,32"/>
+</map>

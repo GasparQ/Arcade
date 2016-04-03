@@ -11,7 +11,7 @@
 <area shape="rect" id="node46" href="$_s_d_l__test__log_8h.html" title="SDL_test_log.h" alt="" coords="4626,632,4736,659"/>
 <area shape="rect" id="node47" href="$_s_d_l__test__assert_8h.html" title="SDL_test_assert.h" alt="" coords="3095,632,3224,659"/>
 <area shape="rect" id="node48" href="$_s_d_l__test__harness_8h.html" title="SDL_test_harness.h" alt="" coords="3250,632,3390,659"/>
-<area shape="rect" id="node49" href="$_s_d_l__test__images_8h.html" title="SDL_test_images.h" alt="" coords="3852,184,3988,211"/>
+<area shape="rect" id="node49" href="$_s_d_l__test__images_8h.html" title="SDL_test_images.h" alt="" coords="3853,184,3990,211"/>
 <area shape="rect" id="node50" href="$_s_d_l__test__compare_8h.html" title="SDL_test_compare.h" alt="" coords="3953,109,4098,136"/>
 <area shape="rect" id="node3" href="$_s_d_l__main_8h.html" title="SDL_main.h" alt="" coords="3328,557,3422,584"/>
 <area shape="rect" id="node4" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="1602,632,1703,659"/>
@@ -28,7 +28,7 @@
 <area shape="rect" id="node25" href="$_s_d_l__events_8h.html" title="SDL_events.h" alt="" coords="988,333,1092,360"/>
 <area shape="rect" id="node26" href="$_s_d_l__video_8h.html" title="SDL_video.h" alt="" coords="2809,557,2906,584"/>
 <area shape="rect" id="node27" href="$_s_d_l__joystick_8h.html" title="SDL_joystick.h" alt="" coords="613,483,723,509"/>
-<area shape="rect" id="node28" href="$_s_d_l__gamecontroller_8h.html" title="SDL_gamecontroller.h" alt="" coords="822,408,972,435"/>
+<area shape="rect" id="node28" href="$_s_d_l__gamecontroller_8h.html" title="SDL_gamecontroller.h" alt="" coords="824,408,974,435"/>
 <area shape="rect" id="node29" href="$_s_d_l__filesystem_8h.html" title="Include file for filesystem SDL API functions. " alt="" coords="3125,557,3251,584"/>
 <area shape="rect" id="node30" href="$_s_d_l__haptic_8h.html" title="The SDL Haptic subsystem allows you to control haptic (force feedback) devices. " alt="" coords="580,408,682,435"/>
 <area shape="rect" id="node31" href="$_s_d_l__hints_8h.html" title="SDL_hints.h" alt="" coords="528,557,622,584"/>
@@ -40,5 +40,6 @@
 <area shape="rect" id="node37" href="$_s_d_l__system_8h.html" title="SDL_system.h" alt="" coords="2707,408,2816,435"/>
 <area shape="rect" id="node38" href="$_s_d_l__timer_8h.html" title="SDL_timer.h" alt="" coords="2144,483,2238,509"/>
 <area shape="rect" id="node39" href="$_s_d_l__version_8h.html" title="SDL_version.h" alt="" coords="2473,557,2580,584"/>
-<area shape="rect" id="node5" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="620,707,722,733"/>
+<area shape="rect" id="node5" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="628,707,730,733"/>
+<area shape="rect" id="node6" href="$types_8h.html" title="sys/types.h" alt="" coords="1524,707,1615,733"/>
 </map>

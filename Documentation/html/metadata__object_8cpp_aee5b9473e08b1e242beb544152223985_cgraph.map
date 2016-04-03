@@ -1,0 +1,33 @@
+<map id="test_metadata_object_picture" name="test_metadata_object_picture">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="433,579,615,621"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a5fd592fd29018c66d29f0940f3cf05b3" title="FLAC::Metadata::Prototype\l::get_length" alt="" coords="201,514,383,555"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#gaa12d8f3c14500a977b7ddf14c6bf81fe" title="FLAC__metadata_object\l_clone" alt="" coords="673,1226,839,1267"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#aa3d7384cb724a842c3471a9ab19f81ed" title="FLAC::Metadata::Picture\l::assign" alt="" coords="209,1285,375,1326"/>
+<area shape="rect" id="node11" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a9484ec6ad01ebd1a81021fc17ccabcd0" title="FLAC::Metadata::Picture\l::get_type" alt="" coords="209,579,375,621"/>
+<area shape="rect" id="node12" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a969278ad1b2570b754d8226aec40c320" title="FLAC::Metadata::Picture\l::set_type" alt="" coords="209,645,375,686"/>
+<area shape="rect" id="node13" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#afb4e53cb8ae62ea0d9ebd1afdca40c3f" title="See FLAC__metadata_object_picture_set_mime_type() " alt="" coords="209,5,375,46"/>
+<area shape="rect" id="node15" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a999adc68a162447fb71f72cc8c0bddba" title="FLAC::Metadata::Picture\l::get_mime_type" alt="" coords="209,710,375,751"/>
+<area shape="rect" id="node16" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a1bbcd96802a16fc36ac1b6610cd7d4a3" title="See FLAC__metadata_object_picture_set_description() " alt="" coords="209,70,375,111"/>
+<area shape="rect" id="node18" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a3055574b0a8ef19ce16c4d09b9cfd23e" title="FLAC::Metadata::Picture\l::get_description" alt="" coords="209,775,375,817"/>
+<area shape="rect" id="node19" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a52af34656cd5e0e07bf3e5801d77500c" title="FLAC::Metadata::Picture\l::get_width" alt="" coords="209,841,375,882"/>
+<area shape="rect" id="node20" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a999597df1d95bd27de878565a18ba578" title="FLAC::Metadata::Picture\l::set_width" alt="" coords="209,906,375,947"/>
+<area shape="rect" id="node21" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#aee936ce3397a425b6f2ba7c3f799e58e" title="FLAC::Metadata::Picture\l::get_height" alt="" coords="209,971,375,1013"/>
+<area shape="rect" id="node22" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a96d6bd9f0619d11c4ef8c25169538ebb" title="FLAC::Metadata::Picture\l::set_height" alt="" coords="209,1037,375,1078"/>
+<area shape="rect" id="node23" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a3ac831c0d0da1b9bf719fea7fd51fd8b" title="FLAC::Metadata::Picture\l::get_depth" alt="" coords="209,1102,375,1143"/>
+<area shape="rect" id="node24" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a8002fd1d9c9956b8c2b99d952edf1092" title="FLAC::Metadata::Picture\l::set_depth" alt="" coords="209,135,375,177"/>
+<area shape="rect" id="node25" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#ab2dd65f7673b3fd167c79125ea013685" title="a return value of 0 means true&#45;color, i.e. 2^depth colors " alt="" coords="209,201,375,242"/>
+<area shape="rect" id="node26" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a4bac0286c0fd4de4d2be8d9ba1ba50a5" title="a value of 0 means true&#45;color, i.e. 2^depth colors " alt="" coords="209,266,375,307"/>
+<area shape="rect" id="node27" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a5b2af32824aad6d1853661e0896d8bff" title="FLAC::Metadata::Picture\l::get_data_length" alt="" coords="209,331,375,373"/>
+<area shape="rect" id="node28" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a301630d1c8f7647d0f192e6a2a03e6ba" title="See FLAC__metadata_object_picture_set_data() " alt="" coords="209,1167,375,1209"/>
+<area shape="rect" id="node30" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="254,1351,330,1377"/>
+<area shape="rect" id="node31" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#aa673db555d0af94e6ecffde9d769baea" title="FLAC::Metadata::Picture\l::get_data" alt="" coords="209,397,375,438"/>
+<area shape="rect" id="node32" href="$group__flacpp__metadata__object.html#gaea2484b59c72f4cce8366f25133f5d51" title="FLAC::Metadata::clone" alt="" coords="213,1401,371,1428"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__object.html#gab3d728ca4455bda71cc231fdb91307fb" title="FLAC__metadata_object_new" alt="" coords="896,1233,1093,1260"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__object.html#ga66bbe27dba68ba77be5af83986a280ea" title="FLAC__metadata_object\l_delete" alt="" coords="911,1287,1078,1329"/>
+<area shape="rect" id="node7" href="$lib_f_l_a_c_2metadata__object_8c.html#adca9ba17ba21fe5f9e9c19ba2784ea38" title="FLAC__metadata_object\l_delete_data" alt="" coords="1142,1287,1309,1329"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a553ddf0187b31218ecfb0d7ba259fda0" title="FLAC::Metadata::Prototype\l::assign_object" alt="" coords="433,1285,615,1326"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a325839301bca33a69890b59416bcb314" title="FLAC::Metadata::Prototype\l::clear" alt="" coords="665,1291,847,1333"/>
+<area shape="rect" id="node14" href="$group__flac__metadata__object.html#ga5db3363648b6e7693e032f200f241e85" title="FLAC__metadata_object\l_picture_set_mime_type" alt="" coords="441,5,607,46"/>
+<area shape="rect" id="node17" href="$group__flac__metadata__object.html#ga5582649e395e70a4b3df510a39d70cc5" title="FLAC__metadata_object\l_picture_set_description" alt="" coords="441,70,607,111"/>
+<area shape="rect" id="node29" href="$group__flac__metadata__object.html#ga07e5950094528e2954c06d7991d543a8" title="FLAC__metadata_object\l_picture_set_data" alt="" coords="441,1167,607,1209"/>
+</map>

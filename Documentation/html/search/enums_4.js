@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pacmanstate',['PacmanState',['../class_pacman.html#a6443872e9448e7cd9a0d03582add0919',1,'Pacman']]]
+  ['encoderstatehint',['EncoderStateHint',['../stream__encoder_8c.html#abb306d9d764554cc821f1099a519145b',1,'stream_encoder.c']]]
 ];

@@ -1,0 +1,5 @@
+<map id="Voice_Stopped_internal" name="Voice_Stopped_internal">
+<area shape="rect" id="node2" href="$win32_2mikmod__build_8h.html#a7dc14410ed287c2b07bdc2caacb3f8be" title="Voice_Stopped" alt="" coords="214,5,325,32"/>
+<area shape="rect" id="node3" href="$mplayer_8c.html#afb4bd057c33ed2d2ae95367eec8d7e69" title="pt_NNA" alt="" coords="235,56,304,83"/>
+<area shape="rect" id="node4" href="$mplayer_8c.html#a1c12b46bfb6fb228606d5604863c50a5" title="Player_HandleTick" alt="" coords="374,56,506,83"/>
+</map>

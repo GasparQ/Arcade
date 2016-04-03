@@ -1,0 +1,15 @@
+<map id="SMPEG_new_data" name="SMPEG_new_data">
+<area shape="rect" id="node2" href="$smpeg_8cpp.html#ae7e401c2f7a366e281a193059b229c5b" title="SMPEG_getinfo" alt="" coords="187,132,303,159"/>
+<area shape="rect" id="node3" href="$class_m_p_e_g.html#a34c96b88cbeae132487e64d242d20860" title="MPEG::GetAudioInfo" alt="" coords="358,56,503,83"/>
+<area shape="rect" id="node6" href="$class_m_p_e_g.html#acac571e15ba423c6edf7c1f17c817c56" title="MPEG::GetVideoInfo" alt="" coords="358,132,503,159"/>
+<area shape="rect" id="node9" href="$class_m_p_e_g.html#a3051cd678904c229f017df17652b88cd" title="MPEG::GetSystemInfo" alt="" coords="352,259,509,285"/>
+<area shape="rect" id="node4" href="$class_m_p_e_g.html#a99d8e4ad85bf555a751cb459f81cf6fa" title="MPEG::AudioEnabled" alt="" coords="588,5,737,32"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gaudioaction.html#ab4b1a057457a7f32dcce1d17ad102e04" title="MPEGaudioaction::GetAudioInfo" alt="" coords="557,56,768,83"/>
+<area shape="rect" id="node7" href="$class_m_p_e_g.html#a680373f56c3d0422569d5002d0668c32" title="MPEG::VideoEnabled" alt="" coords="588,107,737,133"/>
+<area shape="rect" id="node8" href="$class_m_p_e_gvideoaction.html#a21a01f09769a1bda416dc75e41ae21ac" title="MPEGvideoaction::GetVideoInfo" alt="" coords="557,157,768,184"/>
+<area shape="rect" id="node10" href="$class_m_p_e_gsystem.html#a0fcebec9f367ee625294938f7a5f52d1" title="MPEGsystem::TotalSize" alt="" coords="817,259,983,285"/>
+<area shape="rect" id="node12" href="$class_m_p_e_gsystem.html#a432f4deef3ca030a7e26b8143e038c74" title="MPEGsystem::Tell" alt="" coords="596,259,729,285"/>
+<area shape="rect" id="node13" href="$class_m_p_e_gsystem.html#a93f35e6b38ae785f19775ee870955597" title="MPEGsystem::TotalTime" alt="" coords="577,309,748,336"/>
+<area shape="rect" id="node14" href="$class_m_p_e_gaction.html#a7ae037b04bb796605436431613d3e8de" title="MPEGaction::Time" alt="" coords="596,360,729,387"/>
+<area shape="rect" id="node11" href="$class_m_p_e_gerror.html#a1c7b0bcff8446609b2ef8d59236cf58d" title="MPEGerror::SetError" alt="" coords="1033,284,1175,311"/>
+</map>

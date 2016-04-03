@@ -1,0 +1,5 @@
+<map id="SMPEG_setvolume" name="SMPEG_setvolume">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#ac6cd3f986d36a08f5f0410620fd4d648" title="MPEG::Volume" alt="" coords="193,31,306,57"/>
+<area shape="rect" id="node3" href="$class_m_p_e_g.html#a99d8e4ad85bf555a751cb459f81cf6fa" title="MPEG::AudioEnabled" alt="" coords="369,5,519,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gaudioaction.html#ac118ef020ef6431118de6c112e125ee1" title="MPEGaudioaction::Volume" alt="" coords="355,56,533,83"/>
+</map>

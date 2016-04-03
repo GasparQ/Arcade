@@ -1,0 +1,6 @@
+<map id="CentipedeGame::CentipedeGame" name="CentipedeGame::CentipedeGame">
+<area shape="rect" id="node2" href="$class_u_i_component.html#ab4240efff43d21f275dc48e48bff8cbf" title="UIComponent::setText" alt="" coords="276,5,431,32"/>
+<area shape="rect" id="node3" href="$class_a_component.html#a97ec0acb5b6df39659d8ac4559c882bd" title="AComponent::setPos" alt="" coords="280,56,427,83"/>
+<area shape="rect" id="node4" href="$class_centipede_game.html#a7e4119f845825d978110eaa8e25c09d3" title="CentipedeGame::restart" alt="" coords="273,107,434,133"/>
+<area shape="rect" id="node5" href="$class_u_s_s_enterprise.html#a7a8af1b1a1a503474785d1249ca697d9" title="USSEnterprise::reinitPos" alt="" coords="483,107,651,133"/>
+</map>

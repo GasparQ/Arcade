@@ -1,4 +1,13 @@
 <map id="SDLGraph::display" name="SDLGraph::display">
-<area shape="rect" id="node2" href="$_s_d_l__render_8h.html#a473b4abbb29c60e98876eb68ad850f79" title="Clear the current rendering target with the drawing color. " alt="" coords="195,5,323,32"/>
-<area shape="rect" id="node3" href="$_s_d_l__render_8h.html#a48fa9d24395f3610746988ecca2aae86" title="Update the m_window with rendering performed. " alt="" coords="187,56,330,83"/>
+<area shape="rect" id="node2" href="$_s_d_l__render_8h.html#a473b4abbb29c60e98876eb68ad850f79" title="Clear the current rendering target with the drawing color. " alt="" coords="229,5,357,32"/>
+<area shape="rect" id="node3" href="$class_sound.html#aeb8f1066a7edf4ded8d67d2ca7417fe6" title="Sound::PlaySound" alt="" coords="228,56,359,83"/>
+<area shape="rect" id="node8" href="$class_audio_component.html#ad8fa1a90afc18091fb5a04a9fe52af69" title="AudioComponent::getSoundPath" alt="" coords="187,107,399,133"/>
+<area shape="rect" id="node9" href="$class_audio_component.html#a9af99cd99cc6b76aa616eba27b9d1e68" title="AudioComponent::getLoop" alt="" coords="205,157,381,184"/>
+<area shape="rect" id="node10" href="$class_audio_component.html#a65799bd9a898dd16139af03ea4054213" title="AudioComponent::getOverlap" alt="" coords="197,208,390,235"/>
+<area shape="rect" id="node11" href="$class_audio_component.html#a74179d67fdf8fb2940d2cf92d0c226ea" title="AudioComponent::getStop" alt="" coords="206,259,381,285"/>
+<area shape="rect" id="node12" href="$_s_d_l__render_8h.html#a48fa9d24395f3610746988ecca2aae86" title="Update the m_window with rendering performed. " alt="" coords="222,309,365,336"/>
+<area shape="rect" id="node4" href="$class_sound.html#a19d2bbd15f932955d33de7b0ab90b244" title="Sound::StopSound" alt="" coords="448,56,579,83"/>
+<area shape="rect" id="node5" href="$mixer_8c.html#a29f8403bda00a77830c472e494140eae" title="Mix_HaltChannel" alt="" coords="627,56,749,83"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="805,31,921,57"/>
+<area shape="rect" id="node7" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="798,81,927,108"/>
 </map>

@@ -1,0 +1,15 @@
+<map id="CSoundFile::ConvertModCommand" name="CSoundFile::ConvertModCommand">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a88bbb15a07ab969a0844f7bd78bad05c" title="CSoundFile::ReadAMF" alt="" coords="497,5,655,32"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#aec1e84bac934f2e5729ee512296128f9" title="CSoundFile::ReadAMS" alt="" coords="497,81,655,108"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#a021ed379cbd1624457b9786862c4a238" title="CSoundFile::ReadAMS2" alt="" coords="283,81,448,108"/>
+<area shape="rect" id="node7" href="$class_c_sound_file.html#a7b575bad8b2e383a1eed9a104a040d0e" title="CSoundFile::ReadDBM" alt="" coords="497,132,655,159"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#aa594df902a6cff5b3f769f73977a6ad3" title="CSoundFile::ReadDSM" alt="" coords="497,183,655,209"/>
+<area shape="rect" id="node9" href="$class_c_sound_file.html#a67f08943b1200c1e9d2464bb94d72182" title="CSoundFile::ReadMod" alt="" coords="288,335,443,361"/>
+<area shape="rect" id="node11" href="$class_c_sound_file.html#a03687c0413b6662cfbaea0ebc3ff5bad" title="CSoundFile::ReadMTM" alt="" coords="497,233,655,260"/>
+<area shape="rect" id="node12" href="$class_c_sound_file.html#af4fada7e4f0280da216f32e6e61b3e6b" title="CSoundFile::ReadPTM" alt="" coords="287,284,444,311"/>
+<area shape="rect" id="node13" href="$class_c_sound_file.html#aa23e53058111f5cecbbe68226312e12d" title="CSoundFile::ReadUlt" alt="" coords="292,461,439,488"/>
+<area shape="rect" id="node14" href="$class_c_sound_file.html#a83973a99b390c2864f2528fa23d58f0a" title="CSoundFile::ReadXM" alt="" coords="291,385,440,412"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="705,259,842,285"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="891,259,999,285"/>
+<area shape="rect" id="node10" href="$class_c_sound_file.html#abb644f9394c81d073e88d10282b4d6e8" title="CSoundFile::ReadUMX" alt="" coords="497,385,655,412"/>
+</map>

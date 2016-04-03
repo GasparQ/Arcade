@@ -1,0 +1,18 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a634a9bdaede2031e443d3f2c52eb3363" title="mdct_init" alt="" coords="124,5,199,32"/>
+<area shape="rect" id="node3" href="$smallft_8c.html#acc2d4b09dbdf3ebecce72a78d51dc0ab" title="drft_init" alt="" coords="129,56,194,83"/>
+<area shape="rect" id="node4" href="$psy_8c.html#a807a71364ce536fec54115f82cfac4b9" title="_vp_psy_init" alt="" coords="114,107,209,133"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2codec__internal_8h.html#afcaeaf1c809309d4f263f40f8b83137f" title="_vp_global_look" alt="" coords="104,208,219,235"/>
+<area shape="rect" id="node7" href="$psytune_8c.html#a1f6c16b6b66f3997f462569ea55f3abe" title="analysis" alt="" coords="126,157,197,184"/>
+<area shape="rect" id="node8" href="$smallft_8c.html#aa1b54755c8bdf09d61862762720797c5" title="drft_forward" alt="" coords="116,259,207,285"/>
+<area shape="rect" id="node9" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#aaacce565968fde070906e1b134716e2b" title="mdct_forward" alt="" coords="111,309,212,336"/>
+<area shape="rect" id="node17" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a546d807c915a5bc9679fde4ab2652ca0" title="mdct_backward" alt="" coords="104,360,219,387"/>
+<area shape="rect" id="node5" href="$libvorbisidec-1_82_81_2floor0_8c.html#a66caace0dd9082cee2abf9708125dd52" title="toBARK" alt="" coords="289,132,359,159"/>
+<area shape="rect" id="node10" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a1132d69075e19db210814d206990bb0c" title="mdct_butterflies" alt="" coords="267,360,381,387"/>
+<area shape="rect" id="node16" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a0789b37647059e00547ea0551de4a9f5" title="mdct_bitreverse" alt="" coords="267,309,381,336"/>
+<area shape="rect" id="node11" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a2bc8649748ee55aa2c3c788fa221ec46" title="mdct_butterfly_first" alt="" coords="439,309,574,336"/>
+<area shape="rect" id="node12" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#ac61922676b70d4aa4c545cadbdfb923a" title="mdct_butterfly_generic" alt="" coords="429,360,584,387"/>
+<area shape="rect" id="node13" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a8604ac2131ef5e9a32583423ddd9f8c1" title="mdct_butterfly_32" alt="" coords="443,411,570,437"/>
+<area shape="rect" id="node14" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a72b07af28f772fad87eea2c23b252a5e" title="mdct_butterfly_16" alt="" coords="633,411,759,437"/>
+<area shape="rect" id="node15" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a499303112b7b111481d9366f03f28892" title="mdct_butterfly_8" alt="" coords="809,411,927,437"/>
+</map>

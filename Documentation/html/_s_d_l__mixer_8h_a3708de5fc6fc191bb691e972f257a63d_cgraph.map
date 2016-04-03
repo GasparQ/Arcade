@@ -1,0 +1,8 @@
+<map id="Mix_SetPosition" name="Mix_SetPosition">
+<area shape="rect" id="node2" href="$mixer_8c.html#a5ca74c29c15dc81b77e683d4f6bf09b2" title="Mix_QuerySpec" alt="" coords="189,5,304,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__stdinc_8h.html#abc2986a4608bc9fd73df173d7619c096" title="SDL_abs" alt="" coords="209,56,285,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="189,107,305,133"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="182,157,311,184"/>
+<area shape="rect" id="node6" href="$effects__internal_8h.html#a6aaf36b8a9ee1f2ca65818b03ad9e121" title="_Mix_UnregisterEffect\l_locked" alt="" coords="171,209,323,250"/>
+<area shape="rect" id="node7" href="$effects__internal_8h.html#a4d2f6563135cbea2ce4dd30a5204c667" title="_Mix_RegisterEffect\l_locked" alt="" coords="176,274,317,315"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CSoundFile::ProcessMidiMacro" name="CSoundFile::ProcessMidiMacro">
+<area shape="rect" id="node2" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="333,5,371,32"/>
+<area shape="rect" id="node3" href="$class_i_mix_plugin.html#a34b762ddb340ca6bd8663890ceea0be0" title="IMixPlugin::MidiSend" alt="" coords="279,56,425,83"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#a692b443f0612ff9f796f83966afba0a3" title="CSoundFile::SetupChannel\lFilter" alt="" coords="262,107,442,149"/>
+</map>

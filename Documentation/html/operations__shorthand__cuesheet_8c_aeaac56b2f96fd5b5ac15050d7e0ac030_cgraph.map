@@ -1,0 +1,14 @@
+<map id="do_shorthand_operation__cuesheet" name="do_shorthand_operation__cuesheet">
+<area shape="rect" id="node2" href="$group__flac__metadata__level2.html#gaed87fc6e4bd4fc47ab5027759b7cd38d" title="FLAC__metadata_iterator_new" alt="" coords="213,5,416,32"/>
+<area shape="rect" id="node3" href="$metaflac_2utils_8c.html#a46a82a4f5106b731041e4f2893f3f21d" title="die" alt="" coords="295,56,334,83"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__level2.html#ga4a5af69a1f19436b02f738eb8c97c959" title="FLAC__metadata_iterator_init" alt="" coords="217,107,412,133"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__level2.html#ga2f68f6da9eeba32e27e1e2dcf33a3862" title="FLAC__metadata_iterator\l_get_block" alt="" coords="229,158,400,199"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__level2.html#ga1af713d0ae3f7b761579b4fac64f0a9e" title="FLAC__metadata_iterator\l_delete" alt="" coords="229,223,400,265"/>
+<area shape="rect" id="node7" href="$group__flac__metadata__level2.html#ga3997509ae7eeea3b208700cdbbbd97ed" title="FLAC__metadata_iterator_next" alt="" coords="213,289,416,316"/>
+<area shape="rect" id="node8" href="$group__flac__metadata__level2.html#ga2f9d8e02bd2e5ffb235af0b02d347d47" title="FLAC__metadata_iterator\l_insert_block_after" alt="" coords="229,341,400,382"/>
+<area shape="rect" id="node9" href="$metaflac_2utils_8c.html#a106857d3d6aef5595915a9e49474cd77" title="print_error_with_chain\l_status" alt="" coords="240,406,389,447"/>
+<area shape="rect" id="node12" href="$group__flac__metadata__object.html#ga66bbe27dba68ba77be5af83986a280ea" title="FLAC__metadata_object\l_delete" alt="" coords="231,471,398,513"/>
+<area shape="rect" id="node10" href="$group__flac__metadata__level2.html#ga3d030e216a6517f23372bb76f0639127" title="FLAC__metadata_chain\l_status" alt="" coords="467,351,629,393"/>
+<area shape="rect" id="node11" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="525,417,571,444"/>
+<area shape="rect" id="node13" href="$lib_f_l_a_c_2metadata__object_8c.html#adca9ba17ba21fe5f9e9c19ba2784ea38" title="FLAC__metadata_object\l_delete_data" alt="" coords="465,471,631,513"/>
+</map>

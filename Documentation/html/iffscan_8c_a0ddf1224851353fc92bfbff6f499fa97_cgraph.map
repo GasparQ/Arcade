@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$foreign__metadata_8c.html#a7172ae91e16bcc8267d949d425683839" title="flac__foreign_metadata_new" alt="" coords="105,5,293,32"/>
+<area shape="rect" id="node3" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="161,56,237,83"/>
+<area shape="rect" id="node4" href="$foreign__metadata_8c.html#ab64357f90fbb73986e76c8897a89a3a2" title="flac__foreign_metadata\l_read_from_aiff" alt="" coords="120,107,277,149"/>
+<area shape="rect" id="node5" href="$foreign__metadata_8c.html#adb091d1f824d6aed87113669ddb6e588" title="flac__foreign_metadata\l_read_from_wave" alt="" coords="120,173,277,214"/>
+<area shape="rect" id="node6" href="$foreign__metadata_8c.html#a69f5cf0a80acf6f60c192250ee5e9a08" title="flac__foreign_metadata\l_delete" alt="" coords="120,238,277,279"/>
+</map>

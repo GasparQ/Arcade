@@ -1,0 +1,6 @@
+<map id="SMPEG_enableaudio" name="SMPEG_enableaudio">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a7dfe1379b0958967da8aa0fe3f5f9d79" title="MPEG::EnableAudio" alt="" coords="201,64,343,91"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaction.html#a6e559ddd951b743508ecdeccbff2f95c" title="MPEGaction::Stop" alt="" coords="419,5,549,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideoaction.html#af484c8a86cb15aec6a023d4040985df2" title="MPEGvideoaction::SetTime\lSource" alt="" coords="392,57,576,98"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gstream.html#adf435576a75bb0a23875fc35ab1747a1" title="MPEGstream::enable" alt="" coords="411,123,557,149"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Mix_SetMusicCMD" name="Mix_SetMusicCMD">
+<area shape="rect" id="node2" href="$music_8c.html#adf80fb086bf15e6c681b011376102321" title="Mix_HaltMusic" alt="" coords="189,31,299,57"/>
+<area shape="rect" id="node5" href="$_s_d_l__stdinc_8h.html#a0e4ade894d550ada1fa19dc2d46e88b8" title="SDL_free" alt="" coords="205,81,283,108"/>
+<area shape="rect" id="node6" href="$_s_d_l__stdinc_8h.html#aa0843b5fde7f958b8eea238304aa5b2d" title="SDL_malloc" alt="" coords="197,132,291,159"/>
+<area shape="rect" id="node3" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="354,5,470,32"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="347,56,477,83"/>
+</map>

@@ -1,5 +1,28 @@
 var searchData=
 [
-  ['loadhighscore',['LoadHighScore',['../class_load_high_score.html',1,'']]],
-  ['loadlibraryexception',['LoadLibraryException',['../classarcade_1_1_load_library_exception.html',1,'arcade']]]
+  ['ichrono',['IChrono',['../class_i_chrono.html',1,'']]],
+  ['igame',['IGame',['../class_i_game.html',1,'']]],
+  ['igraph',['IGraph',['../class_i_graph.html',1,'']]],
+  ['imaadpcmblock',['IMAADPCMBLOCK',['../struct_i_m_a_a_d_p_c_m_b_l_o_c_k.html',1,'']]],
+  ['imfchannel',['IMFCHANNEL',['../struct_i_m_f_c_h_a_n_n_e_l.html',1,'']]],
+  ['imfheader',['IMFHEADER',['../struct_i_m_f_h_e_a_d_e_r.html',1,'']]],
+  ['imfinstheader',['IMFINSTHEADER',['../struct_i_m_f_i_n_s_t_h_e_a_d_e_r.html',1,'']]],
+  ['imfnote',['IMFNOTE',['../struct_i_m_f_n_o_t_e.html',1,'']]],
+  ['imfwavheader',['IMFWAVHEADER',['../struct_i_m_f_w_a_v_h_e_a_d_e_r.html',1,'']]],
+  ['imixplugin',['IMixPlugin',['../class_i_mix_plugin.html',1,'']]],
+  ['in_5fmodule',['In_Module',['../struct_in___module.html',1,'']]],
+  ['incompletelibraryexception',['IncompleteLibraryException',['../classarcade_1_1_incomplete_library_exception.html',1,'arcade']]],
+  ['initrenderexception',['InitRenderException',['../classarcade_1_1_init_render_exception.html',1,'arcade']]],
+  ['initsoundexception',['InitSoundException',['../classarcade_1_1_init_sound_exception.html',1,'arcade']]],
+  ['instrument',['Instrument',['../struct_instrument.html',1,'Instrument'],['../struct_i_n_s_t_r_u_m_e_n_t.html',1,'INSTRUMENT']]],
+  ['instrumentheader',['InstrumentHeader',['../struct_instrument_header.html',1,'']]],
+  ['invalidfileformatexception',['InvalidFileFormatException',['../classarcade_1_1_invalid_file_format_exception.html',1,'arcade']]],
+  ['inverse_5fmap',['inverse_map',['../structinverse__map.html',1,'']]],
+  ['iterator',['Iterator',['../class_f_l_a_c_1_1_metadata_1_1_iterator.html',1,'FLAC::Metadata']]],
+  ['itheader',['ITHEADER',['../struct_i_t_h_e_a_d_e_r.html',1,'']]],
+  ['itinstheader',['ITINSTHEADER',['../struct_i_t_i_n_s_t_h_e_a_d_e_r.html',1,'']]],
+  ['itnote',['ITNOTE',['../struct_i_t_n_o_t_e.html',1,'']]],
+  ['itpack',['ITPACK',['../struct_i_t_p_a_c_k.html',1,'']]],
+  ['itsample',['ITSAMPLE',['../struct_i_t_s_a_m_p_l_e.html',1,'']]],
+  ['itsamplestruct',['ITSAMPLESTRUCT',['../struct_i_t_s_a_m_p_l_e_s_t_r_u_c_t.html',1,'']]]
 ];

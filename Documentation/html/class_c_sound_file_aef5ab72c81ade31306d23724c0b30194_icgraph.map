@@ -1,0 +1,5 @@
+<map id="CSoundFile::ProcessRow" name="CSoundFile::ProcessRow">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#aa74c7074f61936d8bd95e2e4ca334d07" title="CSoundFile::ReadNote" alt="" coords="227,5,384,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7" title="CSoundFile::Read" alt="" coords="433,5,562,32"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a10e70316c7a8219fdb397e6fdeb6b321" title="ModPlug_Read" alt="" coords="611,5,722,32"/>
+</map>

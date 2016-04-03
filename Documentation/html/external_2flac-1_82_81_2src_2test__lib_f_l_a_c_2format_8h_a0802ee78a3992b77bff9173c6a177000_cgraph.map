@@ -1,0 +1,7 @@
+<map id="test_format" name="test_format">
+<area shape="rect" id="node2" href="$group__flac__format.html#gaec1c46afe33c0bb200be68bb36e0dd32" title="FLAC__format_sample\l_rate_is_valid" alt="" coords="393,13,549,54"/>
+<area shape="rect" id="node3" href="$group__flac__format.html#ga996f8732a2502ad79a68bb4a9f945235" title="FLAC__format_sample\l_rate_is_subset" alt="" coords="165,42,321,84"/>
+<area shape="rect" id="node4" href="$group__flac__format.html#ga14980d2e4b0ff2cdd4f22fcf8e75b54c" title="FLAC__format_vorbiscomment\l_entry_name_is_legal" alt="" coords="141,108,344,149"/>
+<area shape="rect" id="node5" href="$group__flac__format.html#gae0707c9d46b2af02f1e145bdae331605" title="FLAC__format_vorbiscomment\l_entry_value_is_legal" alt="" coords="141,173,344,214"/>
+<area shape="rect" id="node6" href="$group__flac__format.html#ga6878e238052fc0f7109b55129d64b4e5" title="FLAC__format_vorbiscomment\l_entry_is_legal" alt="" coords="141,238,344,280"/>
+</map>

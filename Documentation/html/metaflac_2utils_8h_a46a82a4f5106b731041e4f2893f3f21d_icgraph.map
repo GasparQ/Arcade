@@ -1,0 +1,12 @@
+<map id="die" name="die">
+<area shape="rect" id="node2" href="$metaflac_2utils_8h.html#af1bf904c41ea3f314fa3a61986a06eda" title="local_strdup" alt="" coords="127,20,219,47"/>
+<area shape="rect" id="node4" href="$options_8h.html#ad25996ced8dba99e2d9ea4ccdbc69020" title="parse_options" alt="" coords="329,71,431,97"/>
+<area shape="rect" id="node6" href="$metaflac_2utils_8h.html#a98e5c15ea6b62ed4fc596035b291b52b" title="local_strcat" alt="" coords="129,121,218,148"/>
+<area shape="rect" id="node7" href="$operations__shorthand__cuesheet_8c.html#aeaac56b2f96fd5b5ac15050d7e0ac030" title="do_shorthand_operation\l__cuesheet" alt="" coords="93,173,253,214"/>
+<area shape="rect" id="node8" href="$operations__shorthand__picture_8c.html#aec90e9cae51ffd8026e2c55a1a355b6c" title="do_shorthand_operation\l__picture" alt="" coords="93,238,253,279"/>
+<area shape="rect" id="node9" href="$operations__shorthand__seektable_8c.html#aebb13ea74dba8b3598ecd98d41baa88f" title="do_shorthand_operation\l__add_seekpoints" alt="" coords="93,303,253,345"/>
+<area shape="rect" id="node10" href="$operations__shorthand__streaminfo_8c.html#a3142babc5fdbd995511fd1931eacc66f" title="do_shorthand_operation\l__streaminfo" alt="" coords="93,369,253,410"/>
+<area shape="rect" id="node11" href="$operations__shorthand__vorbiscomment_8c.html#a1412adfc117ce330182bc4bdc26af158" title="do_shorthand_operation\l__vorbis_comment" alt="" coords="93,434,253,475"/>
+<area shape="rect" id="node3" href="$metaflac_2utils_8h.html#ad71d64dbf771f4fcfc091b64972d4656" title="parse_vorbis_comment\l_field" alt="" coords="301,5,459,46"/>
+<area shape="rect" id="node5" href="$src_2metaflac_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="507,71,557,97"/>
+</map>

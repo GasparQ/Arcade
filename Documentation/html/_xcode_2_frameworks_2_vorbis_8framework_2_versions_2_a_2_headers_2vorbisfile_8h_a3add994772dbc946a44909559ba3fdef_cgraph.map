@@ -1,0 +1,9 @@
+<map id="ov_clear" name="ov_clear">
+<area shape="rect" id="node2" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a6a89cd06e8119b22a2d6a565e2d92c4e" title="vorbis_block_clear" alt="" coords="137,5,268,32"/>
+<area shape="rect" id="node3" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a3af19007415290a3f237e9a821bfe616" title="vorbis_dsp_clear" alt="" coords="143,56,263,83"/>
+<area shape="rect" id="node4" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a305dff20a5476305be61e46f6b34d4e1" title="ogg_stream_clear" alt="" coords="140,107,265,133"/>
+<area shape="rect" id="node5" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#abaf171c1341b23e1c2eed7dab00d9f4a" title="vorbis_info_clear" alt="" coords="143,157,263,184"/>
+<area shape="rect" id="node6" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a2fd38dcf146b850e88f281978b580d3e" title="vorbis_comment_clear" alt="" coords="126,208,279,235"/>
+<area shape="rect" id="node7" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a43833b30d583f7522224fb28849fc479" title="ogg_sync_clear" alt="" coords="146,259,259,285"/>
+<area shape="rect" id="node8" href="$decoder__example_8c.html#a3c0e6adffda7f5625e76eb279e2d05e3" title="_VDBG_dump" alt="" coords="149,309,256,336"/>
+</map>

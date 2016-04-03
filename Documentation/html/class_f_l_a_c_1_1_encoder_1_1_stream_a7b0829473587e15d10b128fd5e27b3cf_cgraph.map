@@ -1,0 +1,17 @@
+<map id="FLAC::Encoder::Stream::set_compression_level" name="FLAC::Encoder::Stream::set_compression_level">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abb12dc332530d995a8a929a5b51ffc8b" title="FLAC::Encoder::Stream\l::is_valid" alt="" coords="216,273,379,314"/>
+<area shape="rect" id="node3" href="$group__flac__stream__encoder.html#ga03495bcd0aae71116c701b0dcf311c4b" title="FLAC__stream_encoder\l_set_compression_level" alt="" coords="216,338,379,379"/>
+<area shape="rect" id="node4" href="$group__flac__stream__encoder.html#gadbd1084da109cf0ddd007a5c64027504" title="FLAC__stream_encoder\l_set_do_mid_side_stereo" alt="" coords="452,5,623,46"/>
+<area shape="rect" id="node5" href="$group__flac__stream__encoder.html#ga7b7d294dccd5df7c6c67e75f59798f48" title="FLAC__stream_encoder\l_set_loose_mid_side_stereo" alt="" coords="444,70,631,111"/>
+<area shape="rect" id="node6" href="$group__flac__stream__encoder.html#ga83d38fd6fca7abbf8363bdc2536a299e" title="FLAC__stream_encoder\l_set_apodization" alt="" coords="456,135,619,177"/>
+<area shape="rect" id="node9" href="$group__flac__stream__encoder.html#gac3bde5abdaa340674c5659e2e85d2611" title="FLAC__stream_encoder\l_set_max_lpc_order" alt="" coords="456,201,619,242"/>
+<area shape="rect" id="node10" href="$group__flac__stream__encoder.html#ga0888d739c952ff73456bf90e48634514" title="FLAC__stream_encoder\l_set_qlp_coeff_precision" alt="" coords="454,266,621,307"/>
+<area shape="rect" id="node11" href="$group__flac__stream__encoder.html#ga3aa94a1aec1cf40c37e54434c86bb50d" title="FLAC__stream_encoder\l_set_do_qlp_coeff_prec\l_search" alt="" coords="456,331,619,387"/>
+<area shape="rect" id="node12" href="$group__flac__stream__encoder.html#gaa839d19b6d1b30ba0407d419bdb6fe67" title="FLAC__stream_encoder\l_set_do_escape_coding" alt="" coords="456,410,619,451"/>
+<area shape="rect" id="node13" href="$group__flac__stream__encoder.html#ga7fbc05ec9abd249a400fccb9f189e55e" title="FLAC__stream_encoder\l_set_do_exhaustive_model\l_search" alt="" coords="447,475,627,531"/>
+<area shape="rect" id="node14" href="$group__flac__stream__encoder.html#gae3e2dd204f276d051bf1a118383bfda2" title="FLAC__stream_encoder\l_set_min_residual_partition_order" alt="" coords="429,554,645,595"/>
+<area shape="rect" id="node15" href="$group__flac__stream__encoder.html#ga6de153da5a8eeeb1be2271c27fa58b37" title="FLAC__stream_encoder\l_set_max_residual_partition_order" alt="" coords="427,619,647,661"/>
+<area shape="rect" id="node16" href="$group__flac__stream__encoder.html#ga668de93e7061bce21475c062ffab3e18" title="FLAC__stream_encoder\l_set_rice_parameter_search_dist" alt="" coords="430,685,645,726"/>
+<area shape="rect" id="node7" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="697,417,743,444"/>
+<area shape="rect" id="node8" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="701,143,739,169"/>
+</map>

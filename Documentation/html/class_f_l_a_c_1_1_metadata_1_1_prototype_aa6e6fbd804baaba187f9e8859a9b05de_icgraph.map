@@ -1,0 +1,10 @@
+<map id="FLAC::Metadata::Prototype::operator=" name="FLAC::Metadata::Prototype::operator=">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a353a63aa812f125fedec844142946142" title="FLAC::Metadata::StreamInfo\l::operator=" alt="" coords="253,5,443,46"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_padding.html#aece6ab03932bea3f0c32ff3cd88f2617" title="FLAC::Metadata::Padding\l::operator=" alt="" coords="261,70,435,111"/>
+<area shape="rect" id="node4" href="$class_f_l_a_c_1_1_metadata_1_1_application.html#a3ca9dd06666b1dc7d4bdb6aef8e14d04" title="FLAC::Metadata::Application\l::operator=" alt="" coords="253,135,443,177"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_metadata_1_1_seek_table.html#ac1094c0536952a569e41ba619f9b4ff5" title="FLAC::Metadata::SeekTable\l::operator=" alt="" coords="254,201,442,242"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#a135650367ce6c2c5ce12b534307f1cca" title="FLAC::Metadata::VorbisComment\l::operator=" alt="" coords="238,266,458,307"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#ad24bf2e19de81159d5e205ae5ef63843" title="FLAC::Metadata::CueSheet\l::operator=" alt="" coords="256,331,440,373"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a2ab3ef473f6c70aafe5bd3229f397a93" title="FLAC::Metadata::Picture\l::operator=" alt="" coords="265,397,431,438"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_metadata_1_1_unknown.html#a295f824df8ed10c3386df72272fdca47" title="FLAC::Metadata::Unknown\l::operator=" alt="" coords="257,462,439,503"/>
+</map>

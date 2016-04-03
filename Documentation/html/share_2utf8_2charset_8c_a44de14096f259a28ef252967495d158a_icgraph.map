@@ -1,0 +1,10 @@
+<map id="wctomb_8bit" name="wctomb_8bit">
+<area shape="rect" id="node2" href="$share_2utf8_2charset_8h.html#a46e1566f7a1a98855a39a90b11308263" title="charset_find" alt="" coords="149,107,243,133"/>
+<area shape="rect" id="node3" href="$share_2utf8_2charset_8h.html#a74f30742d454300063ff81977ae83d39" title="charset_convert" alt="" coords="291,5,405,32"/>
+<area shape="rect" id="node6" href="$charset__test_8c.html#a08a14e282e2d184868bf7e9480a2af0a" title="test_utf8" alt="" coords="465,56,538,83"/>
+<area shape="rect" id="node7" href="$charset__test_8c.html#ac61b8e9c5650d473e002d52981cf984e" title="test_ascii" alt="" coords="462,107,541,133"/>
+<area shape="rect" id="node8" href="$charset__test_8c.html#af85d08691eee11072f7aa637ec089727" title="test_iso1" alt="" coords="311,157,385,184"/>
+<area shape="rect" id="node9" href="$charset__test_8c.html#a845ca6a3ea96b0e994a7fe2afe015273" title="test_iso2" alt="" coords="311,208,385,235"/>
+<area shape="rect" id="node4" href="$charset__test_8c.html#a0773f6e7a43d1ea60005b71d9a195714" title="test_convert" alt="" coords="454,5,549,32"/>
+<area shape="rect" id="node5" href="$charset__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="597,107,648,133"/>
+</map>

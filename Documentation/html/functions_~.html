@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -117,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -142,6 +145,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>~AnimationComponent()
 : <a class="el" href="class_animation_component.html#ad35cdc747a5578fdea681486f063f515">AnimationComponent</a>
 </li>
+<li>~Application()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_application.html#a1a40d48f70ccee0ca067b5b486bdf0c7">FLAC::Metadata::Application</a>
+</li>
 <li>~Arcade()
 : <a class="el" href="classarcade_1_1_arcade.html#a80f5dc92d29b9935b0a6a4577c67b62c">arcade::Arcade</a>
 </li>
@@ -151,11 +157,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>~Astar()
 : <a class="el" href="class_astar.html#a985199a369cccbc109e998820f53e006">Astar</a>
 </li>
+<li>~AudioComponent()
+: <a class="el" href="class_audio_component.html#a68bf2351458d61601aad7abeb3f58588">AudioComponent</a>
+</li>
+<li>~Centipede()
+: <a class="el" href="class_centipede.html#a960454b63733792b46ab91c959e8ec2c">Centipede</a>
+</li>
+<li>~CentipedeGame()
+: <a class="el" href="class_centipede_game.html#a55f5c59fbb849243503ac7132678773d">CentipedeGame</a>
+</li>
+<li>~Chain()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_chain.html#a5487119397cdb872f5b631ea38308a7c">FLAC::Metadata::Chain</a>
+</li>
 <li>~Chrono()
 : <a class="el" href="class_chrono.html#aed07c69774ca5353da3dbfe826756065">Chrono&lt; T, U &gt;</a>
 </li>
+<li>~CSoundFile()
+: <a class="el" href="class_c_sound_file.html#a15e0c23ddc1cabf5be7116f6f371f80e">CSoundFile</a>
+</li>
+<li>~CueSheet()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#a879e743714c1f39b2b3e8665e4df8bf0">FLAC::Metadata::CueSheet</a>
+</li>
+<li>~CzCUBICSPLINE()
+: <a class="el" href="class_cz_c_u_b_i_c_s_p_l_i_n_e.html#a83b5ff63e4f46656154c6afe35e8d42a">CzCUBICSPLINE</a>
+</li>
+<li>~CzWINDOWEDFIR()
+: <a class="el" href="class_cz_w_i_n_d_o_w_e_d_f_i_r.html#a3ce4845744989c4c457f30b4fea0b041">CzWINDOWEDFIR</a>
+</li>
 <li>~DualTextComponent()
 : <a class="el" href="class_dual_text_component.html#a5d0ee6c41346b0304d93ddd7a43852db">DualTextComponent</a>
+</li>
+<li>~Entry()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#add46ffd3c31188b7498a075e475bb54b">FLAC::Metadata::VorbisComment::Entry</a>
+</li>
+<li>~File()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_file.html#affb2c9d7cb5e06889bb6ec58e302e47e">FLAC::Decoder::File</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_file.html#afcd9941610cdcb5ccb3cc5b1a2f14157">FLAC::Encoder::File</a>
+</li>
+<li>~FileDecoder()
+: <a class="el" href="class_file_decoder.html#a9346b4780db3a0c08462a58651c34281">FileDecoder</a>
+</li>
+<li>~FileEncoder()
+: <a class="el" href="class_file_encoder.html#a76d4cd94e2d10b091c57a4a52689ff3d">FileEncoder</a>
+</li>
+<li>~FMT()
+: <a class="el" href="class_f_m_t.html#aba0f511ae98aa028950ceec0c9b9a18b">FMT</a>
 </li>
 <li>~GameComponent()
 : <a class="el" href="class_game_component.html#a6d4c3872b9603eb0673655c4b4c0b183">GameComponent</a>
@@ -178,11 +224,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>~IGraph()
 : <a class="el" href="class_i_graph.html#a97105e33bdfaca4f6bdc1777870ff941">IGraph</a>
 </li>
+<li>~IMixPlugin()
+: <a class="el" href="class_i_mix_plugin.html#a1f6a088f9eaaa455a763a5e8989d1073">IMixPlugin</a>
+</li>
 <li>~IncompleteLibraryException()
 : <a class="el" href="classarcade_1_1_incomplete_library_exception.html#a5b991faf434fb8aee752fb69b344b1f2">arcade::IncompleteLibraryException</a>
 </li>
 <li>~InvalidFileFormatException()
 : <a class="el" href="classarcade_1_1_invalid_file_format_exception.html#aec794541ac3dcd92d8cc7d294fc6ac32">arcade::InvalidFileFormatException</a>
+</li>
+<li>~Iterator()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_iterator.html#af65c2485039db9c831707f37375077c4">FLAC::Metadata::Iterator</a>
 </li>
 <li>~LoadHighScore()
 : <a class="el" href="class_load_high_score.html#a9686ad50df33ae470aa981dc6530d047">LoadHighScore</a>
@@ -192,6 +244,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>~Menu()
 : <a class="el" href="classncr_1_1_menu.html#a2f5165d20cb06c6149c77040d252f4b0">ncr::Menu</a>
+</li>
+<li>~MPEG()
+: <a class="el" href="class_m_p_e_g.html#ad19e00f23f4516316c15f38196ea6856">MPEG</a>
+</li>
+<li>~MPEG_ring()
+: <a class="el" href="class_m_p_e_g__ring.html#a177d3b514c4fb0a5d6fd71e03cbb2e0f">MPEG_ring</a>
+</li>
+<li>~MPEGaudio()
+: <a class="el" href="class_m_p_e_gaudio.html#a87932c2fcd3ae9e49533648bc4c03592">MPEGaudio</a>
+</li>
+<li>~MPEGlist()
+: <a class="el" href="class_m_p_e_glist.html#a65648bed7456584e4513a675a863cb55">MPEGlist</a>
+</li>
+<li>~MPEGstream()
+: <a class="el" href="class_m_p_e_gstream.html#a96195d43f3ce0db048358a6fba52f22b">MPEGstream</a>
+</li>
+<li>~MPEGsystem()
+: <a class="el" href="class_m_p_e_gsystem.html#a867334bc75686e69409c3b42a4ca6a9a">MPEGsystem</a>
+</li>
+<li>~MPEGvideo()
+: <a class="el" href="class_m_p_e_gvideo.html#a9827df379b778863ab0b52282dbf690b">MPEGvideo</a>
 </li>
 <li>~NCursesGraph()
 : <a class="el" href="class_n_curses_graph.html#a6839a71d0d2c0abdb98b0f9215a4d824">NCursesGraph</a>
@@ -211,20 +284,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>~PacmanGame()
 : <a class="el" href="class_pacman_game.html#a46907bc9381284756194664eaf94a651">PacmanGame</a>
 </li>
+<li>~Padding()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_padding.html#aa2aa27f13cb93c5c7163cdfa45d61798">FLAC::Metadata::Padding</a>
+</li>
+<li>~Picture()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#ae368ed040d9984582199588d9493d112">FLAC::Metadata::Picture</a>
+</li>
+<li>~Prototype()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_prototype.html#a35ae903d2bcb0933eec698d3d71fcee5">FLAC::Metadata::Prototype</a>
+</li>
 <li>~ResizeFailed()
 : <a class="el" href="class_resize_failed.html#ac6daf0a09140fa492791c0fc3f143935">ResizeFailed</a>
 </li>
 <li>~SDLGraph()
 : <a class="el" href="class_s_d_l_graph.html#af0d0395d5b8b135feeefe65374476068">SDLGraph</a>
 </li>
+<li>~SeekTable()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_seek_table.html#abdc1465d1d81b8f4162a4714bb98bd8f">FLAC::Metadata::SeekTable</a>
+</li>
+<li>~SimpleIterator()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#ab74bd4d94a4c20b31804bbae34e2e318">FLAC::Metadata::SimpleIterator</a>
+</li>
 <li>~Snake()
 : <a class="el" href="class_snake.html#a941fbaad96ee33ca3a7c30c28ca44ef8">Snake</a>
+</li>
+<li>~Sound()
+: <a class="el" href="class_sound.html#a0907389078bf740be2a5763366ad3376">Sound</a>
+</li>
+<li>~Stream()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#ac3085a4ab3a6acaae9ed8cbcd71c8495">FLAC::Decoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a2e183b54e54c64d20a1f056c88093a50">FLAC::Encoder::Stream</a>
+</li>
+<li>~StreamDecoder()
+: <a class="el" href="class_stream_decoder.html#abd7d3063f9a5c6cf2ce9ae077ef2398b">StreamDecoder</a>
+</li>
+<li>~StreamEncoder()
+: <a class="el" href="class_stream_encoder.html#a096fc854bf1d9cc28f47fd7a114a4ac2">StreamEncoder</a>
+</li>
+<li>~StreamInfo()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a9bbee5d65b4ce23f8338fbaca9b66879">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>~T_String()
+: <a class="el" href="class_t___string.html#a3f43bf7d5a94d8f85cac036ab2220f59">T_String</a>
+</li>
+<li>~Track()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet_1_1_track.html#a435e024baf22a5bbcc78e87ba4863f4a">FLAC::Metadata::CueSheet::Track</a>
 </li>
 <li>~UIComponent()
 : <a class="el" href="class_u_i_component.html#a6c874869efe5ab6a94f6ed5c2bc26ed0">UIComponent</a>
 </li>
+<li>~Unknown()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_unknown.html#ae06afb545cb63656e3e30204aaddc961">FLAC::Metadata::Unknown</a>
+</li>
+<li>~USSEnterprise()
+: <a class="el" href="class_u_s_s_enterprise.html#a2fb7fab2ea5028b5ed36ba38dc0af4e7">USSEnterprise</a>
+</li>
 <li>~Vector2()
 : <a class="el" href="class_vector2.html#aeeec9edf776c95591482c9f0c706218a">Vector2&lt; T &gt;</a>
+</li>
+<li>~VorbisComment()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#af585c58d3d84412343ac7d46a0335675">FLAC::Metadata::VorbisComment</a>
 </li>
 <li>~Window()
 : <a class="el" href="classncr_1_1_window.html#abb8c14269f5d436fbac7b3afe7d38e46">ncr::Window</a>
@@ -233,7 +352,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,0 +1,6 @@
+<map id="ConvertMDLCommand" name="ConvertMDLCommand">
+<area shape="rect" id="node2" href="$load__mdl_8cpp.html#a45a225feebcb2b0b209f658e4874c117" title="UnpackMDLTrack" alt="" coords="211,5,339,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a621c024c751b7f3196dba8229ea0cd8a" title="CSoundFile::ReadMDL" alt="" coords="387,5,544,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="593,5,730,32"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="779,5,887,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="S3MIT_ProcessCmd" name="S3MIT_ProcessCmd">
+<area shape="rect" id="node2" href="$mlutil_8c.html#a6d2ea2321f7f3ecf686e82888d14fc28" title="UniEffect" alt="" coords="392,56,469,83"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#a4dd810360efbbdd4e6266dc6422a34ed" title="UniWriteByte" alt="" coords="519,5,619,32"/>
+<area shape="rect" id="node5" href="$mlutil_8c.html#adce7cc9bc920a916c01efad71c7d90d3" title="S3MIT_CreateOrders" alt="" coords="197,107,344,133"/>
+<area shape="rect" id="node6" href="$mlutil_8c.html#a2db842ddde2dbe6465fa5c1abfad8c00" title="UniPTEffect" alt="" coords="223,157,318,184"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#abf34654ace93ba7783d814e15aef9058" title="UniWriteWord" alt="" coords="517,56,621,83"/>
+</map>

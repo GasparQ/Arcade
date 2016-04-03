@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,11 +79,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="functions_func.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_func_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_func_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_func_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_func_e.html#index_e"><span>e</span></a></li>
@@ -89,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_g.html#index_g"><span>g</span></a></li>
       <li class="current"><a href="functions_func_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_func_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
@@ -109,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,17 +127,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>HasTriggered()
+: <a class="el" href="class_chrono.html#a381619eb029633049b7d209c22c7ef7c">Chrono&lt; T, U &gt;</a>
+, <a class="el" href="class_i_chrono.html#a3226f207239cd056b1cbfdb21dc728a2">IChrono</a>
+</li>
 <li>hide_cursor()
 : <a class="el" href="class_n_curses.html#a25c0e004ef9752bb1a18716b230b830a">NCurses</a>
 </li>
 <li>HighScoreComponent()
-: <a class="el" href="class_high_score_component.html#adaab9cf4c8ea4b5c18b680b4bd8a4ca9">HighScoreComponent</a>
+: <a class="el" href="class_high_score_component.html#a52c3dd91a22c4249782adb587c20f700">HighScoreComponent</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,0 +1,7 @@
+<map id="CSoundFile::SetPatternName" name="CSoundFile::SetPatternName">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a021ed379cbd1624457b9786862c4a238" title="CSoundFile::ReadAMS2" alt="" coords="248,5,413,32"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#afb8da08e5de6cae3ed7c411e39ec2fbf" title="CSoundFile::ReadMed" alt="" coords="464,56,619,83"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#aec1e84bac934f2e5729ee512296128f9" title="CSoundFile::ReadAMS" alt="" coords="462,5,621,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="670,31,807,57"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="857,31,965,57"/>
+</map>

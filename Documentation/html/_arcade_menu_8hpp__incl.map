@@ -1,10 +1,29 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/ArcadeMenu.hpp" name="/home/veyrie_f/Documents/cpp_arcade/ArcadeMenu.hpp">
-<area shape="rect" id="node7" href="$_a_component_8hpp.html" title="Commons/include/AComponent.hpp" alt="" coords="661,320,893,347"/>
-<area shape="rect" id="node11" href="$_action_component_8hpp.html" title="Commons/include/ActionComponent.hpp" alt="" coords="866,96,1125,123"/>
-<area shape="rect" id="node14" href="$_arcade_8hpp.html" title="Arcade.hpp" alt="" coords="251,96,339,123"/>
-<area shape="rect" id="node8" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="747,395,839,421"/>
-<area shape="rect" id="node12" href="$_u_i_component_8hpp.html" title="UIComponent.hpp" alt="" coords="867,245,995,272"/>
-<area shape="rect" id="node13" href="$_dual_text_component_8hpp.html" title="DualTextComponent.hpp" alt="" coords="943,171,1109,197"/>
-<area shape="rect" id="node16" href="$_i_graph_8hpp.html" title="Graphique/include/IGraph.hpp" alt="" coords="547,171,741,197"/>
-<area shape="rect" id="node17" href="$_i_game_8hpp.html" title="Game/include/IGame.hpp" alt="" coords="352,171,523,197"/>
+<area shape="rect" id="node7" href="$_a_component_8hpp.html" title="Commons/include/AComponent.hpp" alt="" coords="2975,352,3207,379"/>
+<area shape="rect" id="node11" href="$_action_component_8hpp.html" title="Commons/include/ActionComponent.hpp" alt="" coords="3582,96,3841,123"/>
+<area shape="rect" id="node14" href="$_arcade_8hpp.html" title="Arcade.hpp" alt="" coords="2675,96,2763,123"/>
+<area shape="rect" id="node18" href="$_chrono_8hpp.html" title="Commons/include/Chrono.hpp" alt="" coords="3310,179,3508,205"/>
+<area shape="rect" id="node21" href="$_audio_component_8hpp.html" title="Commons/AudioComponent.hpp" alt="" coords="2471,179,2680,205"/>
+<area shape="rect" id="node22" href="$_animation_component_8hpp.html" title="Commons/include/Animation\lComponent.hpp" alt="" coords="3460,262,3649,303"/>
+<area shape="rect" id="node23" href="$_sound_8hpp.html" title="Commons/Sound.hpp" alt="" coords="2063,96,2211,123"/>
+<area shape="rect" id="node8" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="3079,435,3171,461"/>
+<area shape="rect" id="node12" href="$_u_i_component_8hpp.html" title="UIComponent.hpp" alt="" coords="3673,269,3801,296"/>
+<area shape="rect" id="node13" href="$_dual_text_component_8hpp.html" title="DualTextComponent.hpp" alt="" coords="3702,179,3868,205"/>
+<area shape="rect" id="node16" href="$_i_graph_8hpp.html" title="Graphique/include/IGraph.hpp" alt="" coords="2847,179,3041,205"/>
+<area shape="rect" id="node17" href="$_i_game_8hpp.html" title="Game/include/IGame.hpp" alt="" coords="3065,179,3236,205"/>
+<area shape="rect" id="node24" href="$_s_d_l__mixer_8h.html" title="../Graphique/SDL2_mixer\l/SDL_mixer.h" alt="" coords="1210,171,1379,213"/>
+<area shape="rect" id="node25" href="$_s_d_l__stdinc_8h.html" title="../../Graphique/SDL2\l/include/SDL_stdinc.h" alt="" coords="1131,609,1281,650"/>
+<area shape="rect" id="node28" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="455,848,553,875"/>
+<area shape="rect" id="node29" href="$close__code_8h.html" title="close_code.h" alt="" coords="1881,848,1980,875"/>
+<area shape="rect" id="node42" href="$_s_d_l__rwops_8h.html" title="../../Graphique/SDL2\l/include/SDL_rwops.h" alt="" coords="1162,427,1312,469"/>
+<area shape="rect" id="node44" href="$_s_d_l__audio_8h.html" title="../../Graphique/SDL2\l/include/SDL_audio.h" alt="" coords="1277,262,1424,303"/>
+<area shape="rect" id="node45" href="$_s_d_l__endian_8h.html" title="SDL_endian.h" alt="" coords="195,525,299,552"/>
+<area shape="rect" id="node49" href="$_s_d_l__version_8h.html" title="../../Graphique/SDL2\l/include/SDL_version.h" alt="" coords="2055,518,2212,559"/>
+<area shape="rect" id="node26" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1589,699,1691,725"/>
+<area shape="rect" id="node30" href="$types_8h.html" title="sys/types.h" alt="" coords="1149,699,1240,725"/>
+<area shape="rect" id="node27" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1609,773,1721,800"/>
+<area shape="rect" id="node43" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="1498,525,1589,552"/>
+<area shape="rect" id="node46" href="$_s_d_l__mutex_8h.html" title="SDL_mutex.h" alt="" coords="1389,435,1491,461"/>
+<area shape="rect" id="node47" href="$_s_d_l__thread_8h.html" title="SDL_thread.h" alt="" coords="1579,352,1681,379"/>
+<area shape="rect" id="node48" href="$_s_d_l__atomic_8h.html" title="SDL_atomic.h" alt="" coords="1675,525,1780,552"/>
 </map>

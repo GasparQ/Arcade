@@ -1,0 +1,6 @@
+<map id="flac__encode_raw" name="flac__encode_raw">
+<area shape="rect" id="node2" href="$include_2share_2grabbag_2replaygain_8h.html#ae15d7d5e331d5cde16b14d3be087272f" title="grabbag__replaygain\l_is_valid_sample_frequency" alt="" coords="181,5,368,46"/>
+<area shape="rect" id="node3" href="$flac_2utils_8c.html#a49d11f8965cf4137438e474d336a7e87" title="flac__utils_canonicalize\l_skip_until_specification" alt="" coords="193,70,357,111"/>
+<area shape="rect" id="node4" href="$flac_2utils_8c.html#a53ac4128646927aeaf432f28f63533d5" title="flac__utils_printf" alt="" coords="216,136,333,163"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="417,136,463,163"/>
+</map>

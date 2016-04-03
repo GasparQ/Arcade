@@ -1,0 +1,5 @@
+<map id="vorbis_analysis_wrote" name="vorbis_analysis_wrote">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2block_8c.html#ab57487095e7cb8ab66f57e6c9b6400cd" title="vorbis_analysis_buffer" alt="" coords="205,5,357,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2lpc_8c.html#a0cc602a0114d5b46a0db0f362c67822c" title="vorbis_lpc_from_data" alt="" coords="208,56,355,83"/>
+<area shape="rect" id="node4" href="$libvorbis-1_83_83_2lib_2lpc_8c.html#a46ea915aca4497037fa6ea5b57bbe9df" title="vorbis_lpc_predict" alt="" coords="218,107,345,133"/>
+</map>

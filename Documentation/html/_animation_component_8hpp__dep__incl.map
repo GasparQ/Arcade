@@ -1,6 +1,9 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Commons/include/AnimationComponent.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Commons/include/AnimationComponent.hpp">
-<area shape="rect" id="node2" href="$_arcade_menu_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.cpp" alt="" coords="5,117,200,158"/>
-<area shape="rect" id="node3" href="$_animation_component_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Commons/src\l/AnimationComponent.cpp" alt="" coords="224,109,403,165"/>
-<area shape="rect" id="node4" href="$_n_curses_graph_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/NCurses\l/include/NCursesGraph.hpp" alt="" coords="427,109,639,165"/>
-<area shape="rect" id="node5" href="$_n_curses_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/NCurses\l/src/NCursesGraph.cpp" alt="" coords="427,213,639,269"/>
+<area shape="rect" id="node2" href="$_arcade_menu_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.hpp" alt="" coords="73,117,268,158"/>
+<area shape="rect" id="node4" href="$_arcade_menu_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.cpp" alt="" coords="208,221,403,262"/>
+<area shape="rect" id="node5" href="$_animation_component_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Commons/src\l/AnimationComponent.cpp" alt="" coords="343,109,521,165"/>
+<area shape="rect" id="node6" href="$_n_curses_graph_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/NCurses\l/include/NCursesGraph.hpp" alt="" coords="546,109,757,165"/>
+<area shape="rect" id="node8" href="$_open_gl_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/OpenGlGraph.cpp" alt="" coords="783,109,991,165"/>
+<area shape="rect" id="node3" href="$_arcade_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Arcade.cpp" alt="" coords="5,221,184,262"/>
+<area shape="rect" id="node7" href="$_n_curses_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/NCurses\l/src/NCursesGraph.cpp" alt="" coords="546,213,757,269"/>
 </map>

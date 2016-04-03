@@ -1,0 +1,14 @@
+<map id="ogg_page_bos" name="ogg_page_bos">
+<area shape="rect" id="node2" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#a60db38b6032f1fb0729e14adb61f11a2" title="ogg_stream_pagein" alt="" coords="161,5,295,32"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ac7e8d23aa742cbff39425fa620f56f30" title="ov_raw_seek" alt="" coords="179,56,277,83"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a10f51fe54d7334136cca8927602ba277" title="ov_pcm_seek" alt="" coords="561,107,663,133"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a033abf32795dd65412acb65ec9813172" title="ov_pcm_seek_page" alt="" coords="344,56,483,83"/>
+<area shape="rect" id="node13" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a53777ca05e1557139fa47693471fb531" title="ov_raw_seek_lap" alt="" coords="352,5,475,32"/>
+<area shape="rect" id="node10" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a1bf7109c7770b54d73386678d08f600e" title="ov_time_seek_page" alt="" coords="543,56,681,83"/>
+<area shape="rect" id="node12" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a991451d1859ba8b998db7e005cb3b87b" title="ov_pcm_seek_page_lap" alt="" coords="531,5,693,32"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ace67cdf6531919e05b3bb164db45181a" title="ov_halfrate" alt="" coords="779,81,866,108"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#acca7a3b0c08acd43a2d70a03591232ec" title="ov_time_seek" alt="" coords="771,132,874,159"/>
+<area shape="rect" id="node9" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a88868174d5c99bbfea1ecf27b5987a1a" title="ov_pcm_seek_lap" alt="" coords="759,183,886,209"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ac6957ebd8b9d2477507eb1c23f904bec" title="ov_time_seek_lap" alt="" coords="953,132,1079,159"/>
+<area shape="rect" id="node11" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a48b714260279171536078483bbaee682" title="ov_time_seek_page_lap" alt="" coords="741,7,904,33"/>
+</map>

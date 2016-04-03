@@ -1,0 +1,8 @@
+<map id="flac__encode_wav" name="flac__encode_wav">
+<area shape="rect" id="node2" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="398,42,445,68"/>
+<area shape="rect" id="node3" href="$foreign__metadata_8c.html#adb091d1f824d6aed87113669ddb6e588" title="flac__foreign_metadata\l_read_from_wave" alt="" coords="188,34,345,76"/>
+<area shape="rect" id="node4" href="$flac_2utils_8c.html#a53ac4128646927aeaf432f28f63533d5" title="flac__utils_printf" alt="" coords="208,100,325,127"/>
+<area shape="rect" id="node5" href="$group__flac__format.html#gaec1c46afe33c0bb200be68bb36e0dd32" title="FLAC__format_sample\l_rate_is_valid" alt="" coords="189,152,345,193"/>
+<area shape="rect" id="node6" href="$flac_2utils_8c.html#a49d11f8965cf4137438e474d336a7e87" title="flac__utils_canonicalize\l_skip_until_specification" alt="" coords="185,217,349,258"/>
+<area shape="rect" id="node7" href="$common_8c.html#af1c22febc3acaefcf4c031252295d196" title="skip" alt="" coords="243,283,290,310"/>
+</map>

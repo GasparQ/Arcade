@@ -1,0 +1,6 @@
+<map id="Mix_QuickLoad_WAV" name="Mix_QuickLoad_WAV">
+<area shape="rect" id="node2" href="$_s_d_l__error_8h.html#a26775853eaf43390bbceb27eb21a2240" title="SDL_SetError" alt="" coords="207,5,310,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__stdinc_8h.html#aee91cc8889e6d920b9bb6970b0274c96" title="SDL_calloc" alt="" coords="214,56,303,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__stdinc_8h.html#a1b20f81edc207c5f77323d7b3e1b7ec3" title="SDL_memcpy" alt="" coords="206,107,311,133"/>
+<area shape="rect" id="node5" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="221,157,297,184"/>
+</map>

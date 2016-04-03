@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::Iterator::get_block" name="FLAC::Metadata::Iterator::get_block">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a9878c8330bdfb522dc2ce851b016d307" title="Returns true iff object was properly constructed. " alt="" coords="223,5,390,46"/>
+<area shape="rect" id="node3" href="$namespace_f_l_a_c_1_1_metadata_1_1local.html#a8df28d7c46448436905e52a01824dbec" title="FLAC::Metadata::local\l::construct_block" alt="" coords="230,70,383,111"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__level2.html#ga2f68f6da9eeba32e27e1e2dcf33a3862" title="FLAC__metadata_iterator\l_get_block" alt="" coords="221,135,392,177"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="FLAC__bitwriter_write_rice_signed_block" name="FLAC__bitwriter_write_rice_signed_block">
+<area shape="rect" id="node2" href="$bitmath_8c.html#a69888163f5c4ed93f69f078f2f40bda6" title="FLAC__bitmath_ilog2" alt="" coords="208,5,355,32"/>
+<area shape="rect" id="node3" href="$lib_f_l_a_c_2bitwriter_8c.html#aecb918f25dcf759201b20c52bbf3edd1" title="FLAC__bitwriter_write\l_raw_uint32" alt="" coords="206,57,357,98"/>
+<area shape="rect" id="node4" href="$lib_f_l_a_c_2bitwriter_8c.html#a056f5b6a0f2decad8757a321bd4f3116" title="FLAC__bitwriter_write\l_zeroes" alt="" coords="206,122,357,163"/>
+</map>

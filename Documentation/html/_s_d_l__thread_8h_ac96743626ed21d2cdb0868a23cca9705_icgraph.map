@@ -1,0 +1,23 @@
+<map id="SDL_WaitThread" name="SDL_WaitThread">
+<area shape="rect" id="node2" href="$class_m_p_e_gsystem.html#a125a9623c290487263488921f691aa03" title="MPEGsystem::Stop" alt="" coords="176,271,315,297"/>
+<area shape="rect" id="node19" href="$class_m_p_e_gvideo.html#a6b89bceec472fb016289346935b9eb85" title="MPEGvideo::Stop" alt="" coords="631,325,758,352"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gsystem.html#a867334bc75686e69409c3b42a4ca6a9a" title="MPEGsystem::~MPEGsystem" alt="" coords="363,271,565,297"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gsystem.html#a615de34aeaaeeeb5c4e9dcf5dcba9053" title="MPEGsystem::Seek" alt="" coords="393,216,535,243"/>
+<area shape="rect" id="node5" href="$class_m_p_e_g.html#a7d45f1ea5e9b6f4c7c57fed5fe5a548c" title="MPEG::seekIntoStream" alt="" coords="614,157,775,184"/>
+<area shape="rect" id="node15" href="$class_m_p_e_gsystem.html#ac1e879f6d7e8a472f29a396d12b8139d" title="MPEGsystem::Rewind" alt="" coords="617,216,773,243"/>
+<area shape="rect" id="node6" href="$class_m_p_e_g.html#ac6d9de8b36e88c0e6090138df4ce8efb" title="MPEG::Rewind" alt="" coords="857,81,970,108"/>
+<area shape="rect" id="node8" href="$class_m_p_e_g.html#a32884e4534c3236db53f9c3efaf0d6c3" title="MPEG::Seek" alt="" coords="1313,107,1412,133"/>
+<area shape="rect" id="node7" href="$class_m_p_e_g.html#aa2301e9ca5e2b4d7fecc8968019a60ab" title="MPEG::GetStatus" alt="" coords="1076,56,1204,83"/>
+<area shape="rect" id="node12" href="$class_m_p_e_g.html#a813e52209dcb56d41b1cfe39f3f7abe5" title="MPEG::RenderFinal" alt="" coords="1071,5,1209,32"/>
+<area shape="rect" id="node14" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#ad937c1fb51fa8a98bf3ec4e13c41ff44" title="SMPEG_rewind" alt="" coords="1083,107,1197,133"/>
+<area shape="rect" id="node11" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#af1eccbda7f844fa0a18e9b0b9ced735c" title="SMPEG_status" alt="" coords="1497,56,1610,83"/>
+<area shape="rect" id="node9" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a5dc227914aed5353a54ff305405c58d4" title="SMPEG_seek" alt="" coords="1501,107,1606,133"/>
+<area shape="rect" id="node10" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1659,81,1709,108"/>
+<area shape="rect" id="node13" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a681ce255dfe97e0009ed724feaad5e00" title="SMPEG_renderFinal" alt="" coords="1292,5,1433,32"/>
+<area shape="rect" id="node16" href="$class_m_p_e_gstream.html#a9bde53506dbe351adecc1e84e243807a" title="MPEGstream::rewind\l_stream" alt="" coords="840,209,987,250"/>
+<area shape="rect" id="node17" href="$class_m_p_e_gvideo.html#a490bfa3daef3d8d833143b8499f04c3e" title="MPEGvideo::RenderFrame" alt="" coords="1051,348,1229,375"/>
+<area shape="rect" id="node18" href="$class_m_p_e_gvideo.html#a7a5d980d350d4e3edee339b635d58b19" title="MPEGvideo::RenderFinal" alt="" coords="1277,348,1448,375"/>
+<area shape="rect" id="node20" href="$class_m_p_e_gvideo.html#a9827df379b778863ab0b52282dbf690b" title="MPEGvideo::~MPEGvideo" alt="" coords="824,275,1003,301"/>
+<area shape="rect" id="node21" href="$class_m_p_e_gvideo.html#adf8fe80363dff7281a38c92e7737e5d4" title="MPEGvideo::Play" alt="" coords="850,325,977,352"/>
+<area shape="rect" id="node22" href="$class_m_p_e_gvideo.html#a29125d4831a3aa894adcd2152d0b494b" title="MPEGvideo::Rewind" alt="" coords="841,376,985,403"/>
+</map>

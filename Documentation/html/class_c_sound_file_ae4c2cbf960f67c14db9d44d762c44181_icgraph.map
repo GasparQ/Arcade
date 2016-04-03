@@ -1,0 +1,7 @@
+<map id="CSoundFile::FrequencyToTranspose" name="CSoundFile::FrequencyToTranspose">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a7b575bad8b2e383a1eed9a104a040d0e" title="CSoundFile::ReadDBM" alt="" coords="326,5,485,32"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#ae8b75be1b7edea409a9465ece8c04ef3" title="CSoundFile::ReadMT2" alt="" coords="328,56,483,83"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#ac116f98ca1d7dd8676a05ef6c61504d9" title="CSoundFile::FrequencyToTranspose" alt="" coords="288,107,523,133"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="571,31,709,57"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="758,31,866,57"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="ogg_sync_reset" name="ogg_sync_reset">
+<area shape="rect" id="node2" href="$ogg__decoder__aspect_8c.html#a1f76a97a461ce3a4f8c71f9d32812810" title="FLAC__ogg_decoder_aspect\l_flush" alt="" coords="169,38,359,79"/>
+<area shape="rect" id="node3" href="$ogg__decoder__aspect_8c.html#a1b81eb9844c1e66266044e5ae7f3442f" title="FLAC__ogg_decoder_aspect\l_reset" alt="" coords="409,5,599,46"/>
+<area shape="rect" id="node6" href="$group__flac__stream__decoder.html#ga0109ce87f2c648b224b68c08b3c090cb" title="FLAC__stream_decoder\l_flush" alt="" coords="423,70,585,111"/>
+<area shape="rect" id="node4" href="$group__flac__stream__decoder.html#ga2342cf4f3caf9ad20fca1373aaea0c27" title="FLAC__stream_decoder\l_reset" alt="" coords="648,5,811,46"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a79ecbf60483e9f31aae7d1e117d4e8e5" title="See FLAC__stream_decoder_reset() " alt="" coords="859,5,1021,46"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a8e27385f6a06fe594f46ead0d50c2937" title="See FLAC__stream_decoder_flush() " alt="" coords="648,70,811,111"/>
+<area shape="rect" id="node8" href="$playback_8h.html#ab7826a4c1b16912b0db2f69f1a8b7e58" title="FLAC_plugin__seek" alt="" coords="660,136,799,163"/>
+</map>

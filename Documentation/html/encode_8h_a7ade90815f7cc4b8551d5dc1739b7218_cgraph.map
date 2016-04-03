@@ -1,0 +1,9 @@
+<map id="flac__encode_aif" name="flac__encode_aif">
+<area shape="rect" id="node2" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="387,43,434,70"/>
+<area shape="rect" id="node3" href="$foreign__metadata_8c.html#ab64357f90fbb73986e76c8897a89a3a2" title="flac__foreign_metadata\l_read_from_aiff" alt="" coords="177,36,335,77"/>
+<area shape="rect" id="node4" href="$flac_2utils_8c.html#a53ac4128646927aeaf432f28f63533d5" title="flac__utils_printf" alt="" coords="197,102,315,129"/>
+<area shape="rect" id="node5" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="218,153,294,179"/>
+<area shape="rect" id="node6" href="$common_8c.html#af1c22febc3acaefcf4c031252295d196" title="skip" alt="" coords="233,203,279,230"/>
+<area shape="rect" id="node7" href="$group__flac__format.html#gaec1c46afe33c0bb200be68bb36e0dd32" title="FLAC__format_sample\l_rate_is_valid" alt="" coords="178,255,334,296"/>
+<area shape="rect" id="node8" href="$flac_2utils_8c.html#a49d11f8965cf4137438e474d336a7e87" title="flac__utils_canonicalize\l_skip_until_specification" alt="" coords="174,320,338,361"/>
+</map>

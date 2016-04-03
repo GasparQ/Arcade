@@ -1,0 +1,8 @@
+<map id="Timidity_Init" name="Timidity_Init">
+<area shape="rect" id="node2" href="$getopt_8c.html#aee28fd8a0e40b6d958f7d20348e45368" title="getenv" alt="" coords="193,5,255,32"/>
+<area shape="rect" id="node3" href="$output_8c.html#a137f0591bf91164da319585c6ea4b0c7" title="s32tos8" alt="" coords="190,56,258,83"/>
+<area shape="rect" id="node4" href="$output_8c.html#aef320a36a75a31f49f5b77d036d030c4" title="s32tou8" alt="" coords="190,107,258,133"/>
+<area shape="rect" id="node5" href="$common_8c.html#a97c3dbe8452b80903bbb8a330f8bc032" title="safe_malloc" alt="" coords="350,183,442,209"/>
+<area shape="rect" id="node6" href="$tables_8c.html#a61d70fb2db70b9bd08da992c48e6e525" title="init_tables" alt="" coords="183,208,265,235"/>
+<area shape="rect" id="node7" href="$instrum_8c.html#a179f1963dfc43f38a2efc3087d09749c" title="set_default_instrument" alt="" coords="147,259,301,285"/>
+</map>

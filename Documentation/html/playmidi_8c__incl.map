@@ -1,0 +1,21 @@
+<map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/timidity/playmidi.c" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/timidity/playmidi.c">
+<area shape="rect" id="node5" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="863,109,965,136"/>
+<area shape="rect" id="node22" href="$_s_d_l2__mixer_2timidity_2config_8h.html" title="config.h" alt="" coords="1389,109,1457,136"/>
+<area shape="rect" id="node24" href="$common_8h.html" title="common.h" alt="" coords="1533,109,1614,136"/>
+<area shape="rect" id="node26" href="$instrum_8h.html" title="instrum.h" alt="" coords="1640,109,1715,136"/>
+<area shape="rect" id="node27" href="$playmidi_8h.html" title="playmidi.h" alt="" coords="1740,109,1821,136"/>
+<area shape="rect" id="node28" href="$readmidi_8h.html" title="readmidi.h" alt="" coords="1846,109,1927,136"/>
+<area shape="rect" id="node29" href="$output_8h.html" title="output.h" alt="" coords="1953,109,2022,136"/>
+<area shape="rect" id="node30" href="$mix_8h.html" title="mix.h" alt="" coords="2047,109,2101,136"/>
+<area shape="rect" id="node31" href="$ctrlmode_8h.html" title="ctrlmode.h" alt="" coords="2126,109,2207,136"/>
+<area shape="rect" id="node32" href="$timidity_8h.html" title="timidity.h" alt="" coords="2233,109,2306,136"/>
+<area shape="rect" id="node33" href="$timidity_2tables_8h.html" title="tables.h" alt="" coords="1513,259,1581,285"/>
+<area shape="rect" id="node6" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="779,259,881,285"/>
+<area shape="rect" id="node9" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="1327,483,1426,509"/>
+<area shape="rect" id="node10" href="$close__code_8h.html" title="close_code.h" alt="" coords="219,483,318,509"/>
+<area shape="rect" id="node21" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="784,184,875,211"/>
+<area shape="rect" id="node7" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1238,333,1339,360"/>
+<area shape="rect" id="node11" href="$types_8h.html" title="sys/types.h" alt="" coords="785,333,875,360"/>
+<area shape="rect" id="node8" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1225,408,1338,435"/>
+<area shape="rect" id="node23" href="$_s_d_l__endian_8h.html" title="SDL_endian.h" alt="" coords="1191,184,1295,211"/>
+</map>

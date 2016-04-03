@@ -1,0 +1,6 @@
+<map id="FLAC::Metadata::VorbisComment::set_comment" name="FLAC::Metadata::VorbisComment::set_comment">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="554,5,737,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#gadf034b2c385e7932c6be2d724a0deae3" title="FLAC__metadata_object\l_vorbiscomment_set_comment" alt="" coords="283,99,487,141"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#af82ae544ebd6ac2df97c359672d4a956" title="FLAC::Metadata::VorbisComment\l::Entry::get_entry" alt="" coords="275,34,495,75"/>
+<area shape="rect" id="node4" href="$group__flac__format.html#ga6878e238052fc0f7109b55129d64b4e5" title="FLAC__format_vorbiscomment\l_entry_is_legal" alt="" coords="544,99,747,141"/>
+</map>

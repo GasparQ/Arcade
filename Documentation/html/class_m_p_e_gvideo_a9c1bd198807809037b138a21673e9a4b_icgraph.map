@@ -1,0 +1,7 @@
+<map id="MPEGvideo::TimeSource" name="MPEGvideo::TimeSource">
+<area shape="rect" id="node2" href="$gdith_8cpp.html#a01ba607c8267a75d87c02759d89492f1" title="CurrentTime" alt="" coords="225,31,319,57"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gvideo.html#a25ba28b97c348c7773bf24a7dc386959" title="MPEGvideo::timeSync" alt="" coords="368,31,523,57"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideo.html#ab01015b9ca95bc7dd70d5640842e239b" title="MPEGvideo::ExecuteDisplay" alt="" coords="571,5,763,32"/>
+<area shape="rect" id="node5" href="$video_8cpp.html#ab2c83025cde77691cf896d0fe63cec29" title="mpegVidRsrc" alt="" coords="811,31,912,57"/>
+<area shape="rect" id="node6" href="$_m_p_e_gvideo_8cpp.html#a6fabc47d44feaff23c4ea242270f8bc3" title="Play_MPEGvideo" alt="" coords="960,31,1085,57"/>
+</map>

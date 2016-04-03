@@ -1,0 +1,12 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a30edd47cbc52fef162a7c7686af6416e" title="ov_open_callbacks" alt="" coords="104,5,237,32"/>
+<area shape="rect" id="node3" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a5a62d840710076235d1cbab5318f6399" title="ov_seekable" alt="" coords="123,56,218,83"/>
+<area shape="rect" id="node4" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a6670a0d98e113d00f8501c512eb9154a" title="ov_streams" alt="" coords="125,107,216,133"/>
+<area shape="rect" id="node5" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a87bb18020fd1bb2916187d13d7652663" title="ov_pcm_total" alt="" coords="121,157,221,184"/>
+<area shape="rect" id="node6" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a59a8e5db6c99b6b5b1157001cf854975" title="ov_time_total" alt="" coords="121,208,221,235"/>
+<area shape="rect" id="node7" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a361c3a0cebdc25c7be81aaa8f441ddf8" title="ov_info" alt="" coords="139,259,203,285"/>
+<area shape="rect" id="node8" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#af1456db1cb141046519ee6b4db0fcf3a" title="ov_bitrate" alt="" coords="131,309,210,336"/>
+<area shape="rect" id="node9" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a1f8e5bd99e125408a14c1bc654f92760" title="ov_serialnumber" alt="" coords="112,360,229,387"/>
+<area shape="rect" id="node10" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a052f63d189dd8563022c1c1796b683a5" title="ov_raw_total" alt="" coords="123,411,219,437"/>
+<area shape="rect" id="node11" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisfile_8h.html#a3add994772dbc946a44909559ba3fdef" title="ov_clear" alt="" coords="135,461,206,488"/>
+</map>

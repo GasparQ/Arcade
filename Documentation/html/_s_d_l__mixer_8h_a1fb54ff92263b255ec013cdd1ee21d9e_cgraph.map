@@ -1,0 +1,6 @@
+<map id="Mix_FadeInChannelTimed" name="Mix_FadeInChannelTimed">
+<area shape="rect" id="node2" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="237,5,353,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__timer_8h.html#a0b9bc71d6287e0ffafdc3419760fe2b3" title="Get the number of milliseconds since the SDL library initialization. " alt="" coords="241,56,349,83"/>
+<area shape="rect" id="node4" href="$mixer_8c.html#a630a61db62cebb42841b03c41e84c824" title="Mix_Playing" alt="" coords="248,107,341,133"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="230,157,359,184"/>
+</map>

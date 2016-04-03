@@ -1,0 +1,17 @@
+<map id="Mix_LoadWAV_RW" name="Mix_LoadWAV_RW">
+<area shape="rect" id="node2" href="$_s_d_l__error_8h.html#a26775853eaf43390bbceb27eb21a2240" title="SDL_SetError" alt="" coords="393,208,495,235"/>
+<area shape="rect" id="node3" href="$_s_d_l__stdinc_8h.html#aa0843b5fde7f958b8eea238304aa5b2d" title="SDL_malloc" alt="" coords="397,56,491,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__rwops_8h.html#a8320334c299a3631fd6beb9937c30f04" title="SDL_ReadLE32" alt="" coords="386,360,502,387"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a7e5d38e8c1f8951704a76330c3b1ac81" title="SDL_LoadWAV_RW" alt="" coords="192,309,336,336"/>
+<area shape="rect" id="node6" href="$load__aiff_8c.html#a4f8bfeb8a86dd97d52686a100d02b4bf" title="Mix_LoadAIFF_RW" alt="" coords="195,208,333,235"/>
+<area shape="rect" id="node10" href="$load__voc_8c.html#a0accd84cb7bdf3597f1e1f6756943e6a" title="Mix_LoadVOC_RW" alt="" coords="195,107,333,133"/>
+<area shape="rect" id="node12" href="$_s_d_l__stdinc_8h.html#a0e4ade894d550ada1fa19dc2d46e88b8" title="SDL_free" alt="" coords="405,5,483,32"/>
+<area shape="rect" id="node13" href="$_s_d_l__audio_8h.html#a41e1602bc7cd4edb87ca779cf01d40bb" title="SDL_BuildAudioCVT" alt="" coords="192,360,336,387"/>
+<area shape="rect" id="node14" href="$_s_d_l__stdinc_8h.html#aee91cc8889e6d920b9bb6970b0274c96" title="SDL_calloc" alt="" coords="219,411,309,437"/>
+<area shape="rect" id="node15" href="$_s_d_l__stdinc_8h.html#a1b20f81edc207c5f77323d7b3e1b7ec3" title="SDL_memcpy" alt="" coords="211,461,317,488"/>
+<area shape="rect" id="node16" href="$_s_d_l__audio_8h.html#a8e8660222356e07002dde4928118b7df" title="SDL_ConvertAudio" alt="" coords="197,512,331,539"/>
+<area shape="rect" id="node7" href="$_s_d_l__rwops_8h.html#af023e134e3ae87b1595306e5faeaab76" title="SDL_ReadBE32" alt="" coords="385,309,503,336"/>
+<area shape="rect" id="node8" href="$_s_d_l__rwops_8h.html#a3cdf85a50e40dc58536930429b7b4d09" title="SDL_ReadBE16" alt="" coords="385,259,503,285"/>
+<area shape="rect" id="node9" href="$_s_d_l__stdinc_8h.html#aa71450ffd083274ca708b348e6faf770" title="SDL_memset" alt="" coords="393,157,495,184"/>
+<area shape="rect" id="node11" href="$_s_d_l__stdinc_8h.html#a5123a34a3c99b29c423893aac78b4454" title="SDL_realloc" alt="" coords="397,107,491,133"/>
+</map>

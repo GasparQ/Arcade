@@ -1,0 +1,12 @@
+<map id="MPEGaction::ResetSynchro" name="MPEGaction::ResetSynchro">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a7d45f1ea5e9b6f4c7c57fed5fe5a548c" title="MPEG::seekIntoStream" alt="" coords="241,31,402,57"/>
+<area shape="rect" id="node3" href="$class_m_p_e_g.html#ac6d9de8b36e88c0e6090138df4ce8efb" title="MPEG::Rewind" alt="" coords="451,81,565,108"/>
+<area shape="rect" id="node5" href="$class_m_p_e_g.html#a32884e4534c3236db53f9c3efaf0d6c3" title="MPEG::Seek" alt="" coords="821,5,920,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_g.html#aa2301e9ca5e2b4d7fecc8968019a60ab" title="MPEG::GetStatus" alt="" coords="619,56,747,83"/>
+<area shape="rect" id="node9" href="$class_m_p_e_g.html#a813e52209dcb56d41b1cfe39f3f7abe5" title="MPEG::RenderFinal" alt="" coords="613,107,752,133"/>
+<area shape="rect" id="node11" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#ad937c1fb51fa8a98bf3ec4e13c41ff44" title="SMPEG_rewind" alt="" coords="625,157,740,184"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#af1eccbda7f844fa0a18e9b0b9ced735c" title="SMPEG_status" alt="" coords="990,56,1103,83"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a5dc227914aed5353a54ff305405c58d4" title="SMPEG_seek" alt="" coords="994,5,1099,32"/>
+<area shape="rect" id="node7" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1152,31,1203,57"/>
+<area shape="rect" id="node10" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a681ce255dfe97e0009ed724feaad5e00" title="SMPEG_renderFinal" alt="" coords="800,107,941,133"/>
+</map>

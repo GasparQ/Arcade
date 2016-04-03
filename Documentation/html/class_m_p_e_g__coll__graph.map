@@ -1,0 +1,20 @@
+<map id="MPEG" name="MPEG">
+<area shape="rect" id="node2" href="$class_m_p_e_gerror.html" title="MPEGerror" alt="" coords="11,105,98,132"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudio.html" title="MPEGaudio" alt="" coords="699,137,791,164"/>
+<area shape="rect" id="node8" href="$class_m_p_e_gsystem.html" title="MPEGsystem" alt="" coords="209,168,313,195"/>
+<area shape="rect" id="node10" href="$class_m_p_e_gvideo.html" title="MPEGvideo" alt="" coords="699,464,791,491"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gaudioaction.html" title="MPEGaudioaction" alt="" coords="198,411,325,437"/>
+<area shape="rect" id="node11" href="$class_m_p_e_gvideoaction.html" title="MPEGvideoaction" alt="" coords="451,448,578,475"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gaction.html" title="MPEGaction" alt="" coords="7,447,103,473"/>
+<area shape="rect" id="node6" href="$class_m_p_e_gstream.html" title="MPEGstream" alt="" coords="464,127,565,153"/>
+<area shape="rect" id="node7" href="$class_m_p_e_glist.html" title="MPEGlist" alt="" coords="222,93,301,120"/>
+<area shape="rect" id="node9" href="$struct_s_d_l___r_wops.html" title="SDL_RWops" alt="" coords="5,263,104,289"/>
+<area shape="rect" id="node13" href="$structvid__stream.html" title="vid_stream" alt="" coords="894,643,981,669"/>
+<area shape="rect" id="node12" href="$struct_s_m_p_e_g___frame.html" title="SMPEG_Frame" alt="" coords="457,499,572,525"/>
+<area shape="rect" id="node14" href="$struct_go_p.html" title="GoP" alt="" coords="721,565,769,592"/>
+<area shape="rect" id="node15" href="$structblock.html" title="block" alt="" coords="719,616,772,643"/>
+<area shape="rect" id="node16" href="$structpict.html" title="pict" alt="" coords="724,667,767,693"/>
+<area shape="rect" id="node17" href="$structmacroblock.html" title="macroblock" alt="" coords="701,717,790,744"/>
+<area shape="rect" id="node18" href="$structslice.html" title="slice" alt="" coords="721,768,770,795"/>
+<area shape="rect" id="node19" href="$structpict__image.html" title="pict_image" alt="" coords="703,855,788,881"/>
+</map>

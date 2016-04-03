@@ -1,0 +1,5 @@
+<map id="_float32_unpack" name="_float32_unpack">
+<area shape="rect" id="node2" href="$localcodebook_8h.html#aa0b435e53b16ef46145637c02f34c394" title="_book_unquantize" alt="" coords="190,5,317,32"/>
+<area shape="rect" id="node4" href="$localcodebook_8h.html#a042a0dce77fd02c52e095c266bb0afb7" title="vorbis_book_init_encode" alt="" coords="171,56,336,83"/>
+<area shape="rect" id="node3" href="$libvorbisidec-1_82_81_2codebook_8h.html#ad821fef31bb1a8da7303ec63befe6006" title="vorbis_book_init_decode" alt="" coords="384,5,549,32"/>
+</map>

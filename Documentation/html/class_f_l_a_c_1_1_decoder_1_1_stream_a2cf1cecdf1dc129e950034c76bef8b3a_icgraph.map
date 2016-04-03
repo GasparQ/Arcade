@@ -1,0 +1,34 @@
+<map id="FLAC::Decoder::Stream::is_valid" name="FLAC::Decoder::Stream::is_valid">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#af9ff3cbaf7e56e6755c714bd6972c089" title="See FLAC__stream_decoder_set_ogg_serial_number() " alt="" coords="226,5,390,46"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#ace8abae9cf554d8f7fd55942ee7ecd2c" title="See FLAC__stream_decoder_set_md5_checking() " alt="" coords="227,70,389,111"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#ab201da8711a3935421c9a3f72a87cc4e" title="See FLAC__stream_decoder_set_metadata_respond() " alt="" coords="227,475,389,517"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a83ff6cf21b260f7094c618c3819e9280" title="See FLAC__stream_decoder_set_metadata_respond_application() " alt="" coords="227,540,389,596"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a3d44ff87021ef6d20deb67d55ae602d6" title="See FLAC__stream_decoder_set_metadata_respond_all() " alt="" coords="217,619,399,661"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a0aa236f848f856c746af4e7312e65f33" title="See FLAC__stream_decoder_set_metadata_ignore() " alt="" coords="227,685,389,726"/>
+<area shape="rect" id="node11" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#ac1c3c2463580ae2f8a0cbcb28cc16412" title="See FLAC__stream_decoder_set_metadata_ignore_application() " alt="" coords="227,749,389,805"/>
+<area shape="rect" id="node12" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a8d71c06229f35f8225b04f8f1b255c22" title="See FLAC__stream_decoder_set_metadata_ignore_all() " alt="" coords="223,829,393,870"/>
+<area shape="rect" id="node13" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a3b1b297dbdfcdf95003419f5f4da68fc" title="See FLAC__stream_decoder_get_state() " alt="" coords="227,135,389,177"/>
+<area shape="rect" id="node14" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a343bc2bd2c6778608fad877c8299807b" title="See FLAC__stream_decoder_get_md5_checking() " alt="" coords="227,894,389,935"/>
+<area shape="rect" id="node15" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a473c0bfe0770a8902e202ae3bc1cfb38" title="See FLAC__stream_decoder_get_total_samples() " alt="" coords="227,959,389,1001"/>
+<area shape="rect" id="node16" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a60b5e0d25d6220b757a940a99880cc1b" title="See FLAC__stream_decoder_get_channels() " alt="" coords="227,1025,389,1066"/>
+<area shape="rect" id="node17" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a2e138dee55435050dedcc3ba08874b96" title="See FLAC__stream_decoder_get_channel_assignment() " alt="" coords="221,1090,395,1131"/>
+<area shape="rect" id="node18" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a29bf73e10dad707875564772245b7dd6" title="See FLAC__stream_decoder_get_bits_per_sample() " alt="" coords="227,1155,389,1197"/>
+<area shape="rect" id="node19" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a9f70266044b3edf1515ab52dc1992631" title="See FLAC__stream_decoder_get_sample_rate() " alt="" coords="227,1221,389,1262"/>
+<area shape="rect" id="node20" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a8786f9a751f3f3813d5451ca9ebfd495" title="See FLAC__stream_decoder_get_blocksize() " alt="" coords="227,1286,389,1327"/>
+<area shape="rect" id="node21" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#af4fbbdd0ea096a77037f1d53dcade7f1" title="See FLAC__stream_decoder_get_decode_position() " alt="" coords="227,1351,389,1393"/>
+<area shape="rect" id="node22" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a5267433117fbed17e11498856d881335" title="Seek FLAC__stream_decoder_init_stream() " alt="" coords="227,345,389,386"/>
+<area shape="rect" id="node24" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a5dcd3a0ed3192a793d058e6d270078ed" title="Seek FLAC__stream_decoder_init_ogg_stream() " alt="" coords="227,410,389,451"/>
+<area shape="rect" id="node26" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a90a50edc0c4544df1ef0040cf3869234" title="See FLAC__stream_decoder_finish() " alt="" coords="227,279,389,321"/>
+<area shape="rect" id="node27" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a8e27385f6a06fe594f46ead0d50c2937" title="See FLAC__stream_decoder_flush() " alt="" coords="227,1417,389,1458"/>
+<area shape="rect" id="node28" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a79ecbf60483e9f31aae7d1e117d4e8e5" title="See FLAC__stream_decoder_reset() " alt="" coords="227,1482,389,1523"/>
+<area shape="rect" id="node29" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a6d0d804bca44c0432f3cadfe12e64321" title="See FLAC__stream_decoder_process_single() " alt="" coords="227,1547,389,1589"/>
+<area shape="rect" id="node30" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a5238e5dfa3f41c2494cc396e22337136" title="See FLAC__stream_decoder_process_until_end_of_metadata() " alt="" coords="227,1612,389,1668"/>
+<area shape="rect" id="node31" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a019c76ebdf480ab06d8838a0005f3017" title="See FLAC__stream_decoder_process_until_end_of_stream() " alt="" coords="227,200,389,256"/>
+<area shape="rect" id="node32" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#ad82f2665930b14d9135d443217c699bf" title="See FLAC__stream_decoder_skip_single_frame() " alt="" coords="227,1691,389,1733"/>
+<area shape="rect" id="node33" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a859fee76dfa23c09e0b0f872b4a328aa" title="See FLAC__stream_decoder_seek_absolute() " alt="" coords="227,1757,389,1798"/>
+<area shape="rect" id="node4" href="$_graphique_2_s_d_l2__mixer_2external_2flac-1_82_81_2examples_2cpp_2decode_2file_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="511,143,561,169"/>
+<area shape="rect" id="node5" href="$class_stream_decoder.html#a9999cc43a682b708b627e40e7ff530e5" title="StreamDecoder::test\l_respond" alt="" coords="465,277,607,318"/>
+<area shape="rect" id="node6" href="$class_file_decoder.html#ae95d563fb845814477fcefe4e07bbba1" title="FileDecoder::test_respond" alt="" coords="449,219,623,245"/>
+<area shape="rect" id="node23" href="$class_f_l_a_c_1_1_decoder_1_1_file.html#af14a571289919cd98039f2e680633bfd" title="See FLAC__stream_decoder_init_file() " alt="" coords="465,345,607,386"/>
+<area shape="rect" id="node25" href="$class_f_l_a_c_1_1_decoder_1_1_file.html#a96c5bd4520e4081873120f1dbcdbf671" title="See FLAC__stream_decoder_init_ogg_file() " alt="" coords="465,410,607,451"/>
+</map>

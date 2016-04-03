@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -80,8 +82,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
+      <li><a href="#index__"><span>_</span></a></li>
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_k"><span>k</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li class="current"><a href="#index_w"><span>w</span></a></li>
     </ul>
@@ -92,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,6 +115,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 &#160;
 
+<h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_ModPlug_Flags
+: <a class="el" href="external_2libmodplug-0_88_88_84_2src_2modplug_8h.html#a3e39048e3a9ce7c7a25016512645205a">modplug.h</a>
+</li>
+<li>_ModPlug_ResamplingMode
+: <a class="el" href="external_2libmodplug-0_88_88_84_2src_2modplug_8h.html#a4a3b8e7e38e893a43eb42b469baa3bbe">modplug.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>ABCEVENT_CMD
+: <a class="el" href="load__abc_8cpp.html#a4effa496d2144e946892e468d06d5c0e">load_abc.cpp</a>
+</li>
+<li>ABCEVENT_JUMPTYPE
+: <a class="el" href="load__abc_8cpp.html#a577e76dd22302b5b7b19074ac1dd4c5c">load_abc.cpp</a>
+</li>
+<li>ABCEVENT_X_CMD
+: <a class="el" href="load__abc_8cpp.html#a8c5ae79f7c5f1c52533082c906c050db">load_abc.cpp</a>
+</li>
+<li>ABCEVENT_X_EFFECT
+: <a class="el" href="load__abc_8cpp.html#a654121dd85b9f56e0bb9f51fc133396f">load_abc.cpp</a>
+</li>
+<li>ABCEVENT_X_NOTE
+: <a class="el" href="load__abc_8cpp.html#a227be4c1a9038b32039b4fe49b8945b1">load_abc.cpp</a>
+</li>
+<li>ArgumentType
+: <a class="el" href="options_8h.html#aa15f3f718db408445afc1b93c12294c5">options.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>compression_setting_type_t
+: <a class="el" href="encode_8h.html#af2c0e53174ce8c1f7cd13d337db827ba">encode.h</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>DBDIRS
 : <a class="el" href="term__entry_8h.html#a7bfa7165f1146349fb4ba5c4dc5a01fc">term_entry.h</a>
@@ -111,9 +161,144 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>EncoderStateHint
+: <a class="el" href="stream__encoder_8c.html#abb306d9d764554cc821f1099a519145b">stream_encoder.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>FileFormat
+: <a class="el" href="src_2flac_2main_8c.html#a610845e6f56e545283af144cbbb99cfe">main.c</a>
+</li>
+<li>FLAC__ApodizationFunction
+: <a class="el" href="external_2flac-1_82_81_2src_2lib_f_l_a_c_2include_2protected_2stream__encoder_8h.html#adc0ccdee5c1fc6fa57c3f430e5cc6374">stream_encoder.h</a>
+</li>
+<li>FLAC__ChannelAssignment
+: <a class="el" href="group__flac__format.html#ga79855f8525672e37f299bbe02952ef9c">format.h</a>
+</li>
+<li>FLAC__CPUInfo_Type
+: <a class="el" href="cpu_8h.html#ab3e7684a9d63906e1293fe59e24a1d57">cpu.h</a>
+</li>
+<li>FLAC__EntropyCodingMethodType
+: <a class="el" href="group__flac__format.html#ga951733d2ea01943514290012cd622d3a">format.h</a>
+</li>
+<li>FLAC__FrameNumberType
+: <a class="el" href="group__flac__format.html#ga8fe9ebc78386cd2a3d23b7b8e3818e1c">format.h</a>
+</li>
+<li>FLAC__Metadata_ChainStatus
+: <a class="el" href="group__flac__metadata__level2.html#gafe2a924893b0800b020bea8160fd4531">metadata.h</a>
+</li>
+<li>FLAC__Metadata_SimpleIteratorStatus
+: <a class="el" href="group__flac__metadata__level1.html#gac926e7d2773a05066115cac9048bbec9">metadata.h</a>
+</li>
+<li>FLAC__MetadataType
+: <a class="el" href="group__flac__format.html#gac71714ba8ddbbd66d26bb78a427fac01">format.h</a>
+</li>
+<li>FLAC__OggDecoderAspectReadStatus
+: <a class="el" href="ogg__decoder__aspect_8h.html#af5bf8c24b354d85937d61a988cbe71bc">ogg_decoder_aspect.h</a>
+</li>
+<li>FLAC__StreamDecoderErrorStatus
+: <a class="el" href="group__flac__stream__decoder.html#ga130e70bd9a73d3c2416247a3e5132ecf">stream_decoder.h</a>
+</li>
+<li>FLAC__StreamDecoderInitStatus
+: <a class="el" href="group__flac__stream__decoder.html#gaaed54a24ac6310d29c5cafba79759c44">stream_decoder.h</a>
+</li>
+<li>FLAC__StreamDecoderLengthStatus
+: <a class="el" href="group__flac__stream__decoder.html#gad5860157c2bb34501b8b9370472d727a">stream_decoder.h</a>
+</li>
+<li>FLAC__StreamDecoderReadStatus
+: <a class="el" href="group__flac__stream__decoder.html#gad793ead451206c64a91dc0b851027b93">stream_decoder.h</a>
+</li>
+<li>FLAC__StreamDecoderSeekStatus
+: <a class="el" href="group__flac__stream__decoder.html#gac8d269e3c7af1a5889d3bd38409ed67d">stream_decoder.h</a>
+</li>
+<li>FLAC__StreamDecoderState
+: <a class="el" href="group__flac__stream__decoder.html#ga3adb6891c5871a87cd5bbae6c770ba2d">stream_decoder.h</a>
+</li>
+<li>FLAC__StreamDecoderTellStatus
+: <a class="el" href="group__flac__stream__decoder.html#ga83708207969383bd7b5c1e9148528845">stream_decoder.h</a>
+</li>
+<li>FLAC__StreamDecoderWriteStatus
+: <a class="el" href="group__flac__stream__decoder.html#ga73f67eb9e0ab57945afe038751bc62c8">stream_decoder.h</a>
+</li>
+<li>FLAC__StreamEncoderInitStatus
+: <a class="el" href="group__flac__stream__encoder.html#ga3bb869620af2b188d77982a5c30b047d">stream_encoder.h</a>
+</li>
+<li>FLAC__StreamEncoderReadStatus
+: <a class="el" href="group__flac__stream__encoder.html#ga2e81f007fb0a7414c0bbb453f37ea37f">stream_encoder.h</a>
+</li>
+<li>FLAC__StreamEncoderSeekStatus
+: <a class="el" href="group__flac__stream__encoder.html#ga6d5be3489f45fcf0c252022c65d87aca">stream_encoder.h</a>
+</li>
+<li>FLAC__StreamEncoderState
+: <a class="el" href="group__flac__stream__encoder.html#gac5e9db4fc32ca2fa74abd9c8a87c02a5">stream_encoder.h</a>
+</li>
+<li>FLAC__StreamEncoderTellStatus
+: <a class="el" href="group__flac__stream__encoder.html#gab628f63181250eb977a28bf12b7dd9ff">stream_encoder.h</a>
+</li>
+<li>FLAC__StreamEncoderWriteStatus
+: <a class="el" href="group__flac__stream__encoder.html#ga3737471fd49730bb8cf9b182bdeda05e">stream_encoder.h</a>
+</li>
+<li>FLAC__StreamMetadata_Picture_Type
+: <a class="el" href="group__flac__format.html#gaf6d3e836cee023e0b8d897f1fdc9825d">format.h</a>
+</li>
+<li>FLAC__SubframeType
+: <a class="el" href="group__flac__format.html#ga1f431eaf213e74d7747589932d263348">format.h</a>
+</li>
+<li>foreign_block_type_t
+: <a class="el" href="foreign__metadata_8h.html#adb95c116a179be8763314fa28beca587">foreign_metadata.h</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
 <li>khronos_boolean_enum_t
 : <a class="el" href="_s_d_l__opengles2__khrplatform_8h.html#a0b823cfbc138820708978d43a5f26c64">SDL_opengles2_khrplatform.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>Layer
+: <a class="el" href="decoders_8c.html#a9a8118be7780e95363d631cbca7e7800">decoders.c</a>
+, <a class="el" href="encoders_8cpp.html#a9a8118be7780e95363d631cbca7e7800">encoders.cpp</a>
+, <a class="el" href="flac-1_82_81_2src_2test__lib_f_l_a_c_09_09_2decoders_8cpp.html#a9a8118be7780e95363d631cbca7e7800">decoders.cpp</a>
+, <a class="el" href="encoders_8c.html#a9a8118be7780e95363d631cbca7e7800">encoders.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>MIDEVENT_X_EFFECT
+: <a class="el" href="load__mid_8cpp.html#a7e2bedb7128e940cae8019379af4f3a3">load_mid.cpp</a>
+</li>
+<li>Mix_Fading
+: <a class="el" href="_s_d_l__mixer_8h.html#a362f2bccb8d01c337b0c6a934edd456c">SDL_mixer.h</a>
+</li>
+<li>MIX_InitFlags
+: <a class="el" href="_s_d_l__mixer_8h.html#a3de2cd65e9533014d1bba145f6f2d36d">SDL_mixer.h</a>
+</li>
+<li>Mix_MusicType
+: <a class="el" href="_s_d_l__mixer_8h.html#a3deb8c84c2e0a1bb970cd496d9e46f46">SDL_mixer.h</a>
+</li>
+<li>MPEGstatus
+: <a class="el" href="_m_p_e_gaction_8h.html#aba1f9efb2bc59158039d9cae154f9034">MPEGaction.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>NoiseShaping
+: <a class="el" href="replaygain__synthesis_8h.html#ac9742b8037806648f7cf5e6ab62a42df">replaygain_synthesis.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>OperationType
+: <a class="el" href="options_8h.html#a9a2c9c31d675b34f6ec35cc1ca89e047">options.h</a>
 </li>
 </ul>
 
@@ -221,6 +406,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SDL_WindowFlags
 : <a class="el" href="_s_d_l__video_8h.html#ab10f4fd6a082ef06fcae96860c95fb18">SDL_video.h</a>
 </li>
+<li>SMPEGstatus
+: <a class="el" href="_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a733ca74c6f8fc6b71ab4c6c5037543ab">smpeg.h</a>
+</li>
 </ul>
 
 
@@ -232,7 +420,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

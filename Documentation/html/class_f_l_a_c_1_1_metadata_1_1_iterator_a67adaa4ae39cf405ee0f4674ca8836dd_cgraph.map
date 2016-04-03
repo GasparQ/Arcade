@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::Iterator::delete_block" name="FLAC::Metadata::Iterator::delete_block">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a9878c8330bdfb522dc2ce851b016d307" title="Returns true iff object was properly constructed. " alt="" coords="223,5,390,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__level2.html#ga18fdaae4986696dc000cae6357810f7b" title="FLAC__metadata_iterator\l_delete_block" alt="" coords="221,70,392,111"/>
+<area shape="rect" id="node4" href="$external_2flac-1_82_81_2src_2lib_f_l_a_c_2include_2private_2metadata_8h.html#adca9ba17ba21fe5f9e9c19ba2784ea38" title="FLAC__metadata_object\l_delete_data" alt="" coords="441,70,607,111"/>
+</map>

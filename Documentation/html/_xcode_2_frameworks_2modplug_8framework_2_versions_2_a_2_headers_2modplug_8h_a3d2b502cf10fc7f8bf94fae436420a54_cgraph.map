@@ -1,0 +1,12 @@
+<map id="ModPlug_SetSettings" name="ModPlug_SetSettings">
+<area shape="rect" id="node2" href="$namespace_mod_plug.html#a1713f96b768bc55284fa3e2516f6f6b7" title="ModPlug::UpdateSettings" alt="" coords="203,157,373,184"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a661b4b80b800efdebcaf64c1ffad238f" title="CSoundFile::SetReverbParameters" alt="" coords="427,5,653,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#a6c3b24f180c00d5ff49454cb4ae5f7f7" title="CSoundFile::SetXBassParameters" alt="" coords="428,56,652,83"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#a4a2f575166be8cfcd081925cc5b48dfa" title="CSoundFile::SetSurroundParameters" alt="" coords="421,107,659,133"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#aca3128e17470033e70f77fd3b195b6d0" title="CSoundFile::SetWaveConfig" alt="" coords="445,157,635,184"/>
+<area shape="rect" id="node9" href="$class_c_sound_file.html#a7fe2afa5a87233ab1a46e6e3e0150f3c" title="CSoundFile::SetMixConfig" alt="" coords="451,208,629,235"/>
+<area shape="rect" id="node10" href="$class_c_sound_file.html#a53d2af40954b2999c97752a8af423291" title="CSoundFile::SetWaveConfigEx" alt="" coords="437,259,643,285"/>
+<area shape="rect" id="node11" href="$class_c_sound_file.html#a78cabd484edd7845b4534d01ac532d3c" title="CSoundFile::SetResamplingMode" alt="" coords="431,309,649,336"/>
+<area shape="rect" id="node7" href="$class_c_sound_file.html#ae4c2cc893cd56a391b5791eaf5eb7fe6" title="CSoundFile::InitPlayer" alt="" coords="707,208,861,235"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#a6c5c062066e96947cbb34a0179a87951" title="CSoundFile::InitializeDSP" alt="" coords="910,208,1085,235"/>
+</map>

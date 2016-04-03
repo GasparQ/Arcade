@@ -1,0 +1,24 @@
+<map id="SDL_malloc" name="SDL_malloc">
+<area shape="rect" id="node2" href="$effects__internal_8h.html#a1d175e28b427d6b2689bf11f27d4e982" title="_Eff_build_volume_table_u8" alt="" coords="150,5,335,32"/>
+<area shape="rect" id="node3" href="$effects__internal_8h.html#a774d2cfebf6662af5273bca6da43ca77" title="_Eff_build_volume_table_s8" alt="" coords="150,56,335,83"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideo.html#a77223486a4de5b63e67d90869bbd2b24" title="MPEGvideo::MPEGvideo" alt="" coords="157,107,328,133"/>
+<area shape="rect" id="node5" href="$load__aiff_8h.html#a4f8bfeb8a86dd97d52686a100d02b4bf" title="Mix_LoadAIFF_RW" alt="" coords="174,208,311,235"/>
+<area shape="rect" id="node6" href="$_s_d_l__mixer_8h.html#ade68686625490fae426a8f711a105501" title="Mix_LoadWAV_RW" alt="" coords="401,208,540,235"/>
+<area shape="rect" id="node7" href="$load__voc_8h.html#a0accd84cb7bdf3597f1e1f6756943e6a" title="Mix_LoadVOC_RW" alt="" coords="174,259,311,285"/>
+<area shape="rect" id="node8" href="$_s_d_l__mixer_8h.html#a874d68326b7e6f6319052537ccbe5d8e" title="Mix_OpenAudio" alt="" coords="789,233,904,260"/>
+<area shape="rect" id="node13" href="$_s_d_l__mixer_8h.html#ab10255f1ad6adbc9734ca1214308d38d" title="Mix_QuickLoad_RAW" alt="" coords="167,563,318,589"/>
+<area shape="rect" id="node14" href="$_s_d_l__mixer_8h.html#a29e887541a3b3aaa34788a80ecd068bb" title="Mix_LoadMUS" alt="" coords="618,436,726,463"/>
+<area shape="rect" id="node15" href="$_s_d_l__mixer_8h.html#a86cd0a57f1e9a7c3238e9ef3088b9430" title="Mix_LoadMUSType_RW" alt="" coords="387,487,554,513"/>
+<area shape="rect" id="node17" href="$_s_d_l__mixer_8h.html#a06ae6e530b2bda61f772c74e374e70af" title="Mix_SetMusicCMD" alt="" coords="175,360,311,387"/>
+<area shape="rect" id="node22" href="$wavestream_8h.html#a7713975c4495dab01c96dc67e4d615c2" title="WAVStream_LoadSong_RW" alt="" coords="147,512,338,539"/>
+<area shape="rect" id="node23" href="$playmus_2_s_d_l_main_8m.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="217,613,268,640"/>
+<area shape="rect" id="node9" href="$class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9" title="Sound::Sound" alt="" coords="952,233,1056,260"/>
+<area shape="rect" id="node12" href="$playmus_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="979,385,1029,412"/>
+<area shape="rect" id="node10" href="$class_sound.html#a654d251e57564b62db784beae79cc07e" title="Sound::Instance" alt="" coords="1104,208,1221,235"/>
+<area shape="rect" id="node11" href="$class_sound.html#a9f3e9e495574b7afc22e59dbb49c5442" title="Sound::ChunkCallback" alt="" coords="1270,233,1426,260"/>
+<area shape="rect" id="node16" href="$_s_d_l__mixer_8h.html#a57e1289e3cc2793a14d1b817c706ef8d" title="Mix_LoadMUS_RW" alt="" coords="603,487,741,513"/>
+<area shape="rect" id="node18" href="$music_8c.html#a6e298ae0e53bb5cc7084327a06598bce" title="close_music" alt="" coords="423,335,518,361"/>
+<area shape="rect" id="node19" href="$_s_d_l__mixer_8h.html#a2cb071e94923956f4c3ca4d3998669e7" title="Mix_CloseAudio" alt="" coords="613,335,731,361"/>
+<area shape="rect" id="node20" href="$class_sound.html#a0907389078bf740be2a5763366ad3376" title="Sound::~Sound" alt="" coords="791,335,903,361"/>
+<area shape="rect" id="node21" href="$playmus_8c.html#a7ee82fb747045b001eb11854f61934bc" title="CleanUp" alt="" coords="810,284,883,311"/>
+</map>

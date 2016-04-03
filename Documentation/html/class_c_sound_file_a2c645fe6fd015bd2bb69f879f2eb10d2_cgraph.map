@@ -1,0 +1,19 @@
+<map id="CSoundFile::Read669" name="CSoundFile::Read669">
+<area shape="rect" id="node2" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="731,28,770,55"/>
+<area shape="rect" id="node3" href="$load__669_8cpp.html#a669e52a4f25f0b6953cdb63043f6d392" title="lengthArrayToDWORD" alt="" coords="221,79,377,106"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#a846f81ea273e97bc67faf415165782fd" title="CSoundFile::AllocatePattern" alt="" coords="205,130,392,156"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#af10fec50722149d3d68174ac99ab210e" title="CSoundFile::ReadSample" alt="" coords="212,231,385,258"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#ae0d67886be5e003c76d43ed6b195a44c" title="CSoundFile::AllocateSample" alt="" coords="449,130,639,156"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#aca94e85e13eb247be49e9e71d46fdba5" title="CSoundFile::GetDeltaValue" alt="" coords="453,180,635,207"/>
+<area shape="rect" id="node9" href="$sndfile_8cpp.html#a9a3ee6ab5b0aa09683ecda8b248bb721" title="ITUnpack8Bit" alt="" coords="493,231,595,258"/>
+<area shape="rect" id="node11" href="$sndfile_8cpp.html#ae01ae0cf1cd6fb4759d658f874fd2d83" title="ITUnpack16Bit" alt="" coords="489,282,599,308"/>
+<area shape="rect" id="node12" href="$sndfile_8cpp.html#a6a7453a1ec30af9ed50667c1882f9793" title="AMSUnpack" alt="" coords="496,332,592,359"/>
+<area shape="rect" id="node13" href="$sndfile_8cpp.html#a68cbc6b8589dac8424805a7bc7ea5596" title="MDLReadBits" alt="" coords="492,383,596,410"/>
+<area shape="rect" id="node14" href="$sndfile_8cpp.html#a162aab797e521be1660e637d3f36351d" title="DMFUnpack" alt="" coords="496,434,592,460"/>
+<area shape="rect" id="node17" href="$class_c_sound_file.html#ae200af8cb3cc96cfe1a5d26a1369583d" title="CSoundFile::FreeSample" alt="" coords="460,484,628,511"/>
+<area shape="rect" id="node18" href="$class_c_sound_file.html#a61708907b348e5255233cfebd55f30f1" title="CSoundFile::AdjustSampleLoop" alt="" coords="441,28,647,55"/>
+<area shape="rect" id="node7" href="$stdafx_8h.html#a4d1b58b0db2411b4dcd711cac07ef041" title="GlobalAllocPtr" alt="" coords="698,130,803,156"/>
+<area shape="rect" id="node10" href="$load__it_8cpp.html#a802321d29880f39dc0264f3e4bee567b" title="ITReadBits" alt="" coords="707,256,795,283"/>
+<area shape="rect" id="node15" href="$load__dmf_8cpp.html#a74590f0ab3278ce0b40a366e6f0c0b00" title="DMFNewNode" alt="" coords="696,459,805,486"/>
+<area shape="rect" id="node16" href="$load__dmf_8cpp.html#ab6811a0401fe9cbd73c3897ca2820b0b" title="DMFReadBits" alt="" coords="854,434,959,460"/>
+</map>

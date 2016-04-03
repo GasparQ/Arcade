@@ -1,0 +1,12 @@
+<map id="oggpack_writeclear" name="oggpack_writeclear">
+<area shape="rect" id="node2" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#af2e77bfb7ad82b12c81e725d7b4c2133" title="oggpack_write" alt="" coords="228,56,335,83"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#a81cec9a7d04f473b38cfbc083d747042" title="oggpackB_write" alt="" coords="224,107,339,133"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#a12aeb63fb274f529b6bd25b795aca6f6" title="oggpackB_writeclear" alt="" coords="210,157,353,184"/>
+<area shape="rect" id="node9" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#a6a89cd06e8119b22a2d6a565e2d92c4e" title="vorbis_block_clear" alt="" coords="216,208,347,235"/>
+<area shape="rect" id="node10" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#ac031289d0c9856508b5bff3ffb992246" title="vorbis_commentheader_out" alt="" coords="190,259,373,285"/>
+<area shape="rect" id="node11" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#a76b877e3ab680d7537ec58ebd7fa990a" title="vorbis_analysis_headerout" alt="" coords="193,309,369,336"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#a954dc6d19d32b82851970138fe2c54a9" title="oggpack_writealign" alt="" coords="427,5,560,32"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#adc9ef879e4c946efd285937e53a57dd8" title="oggpack_writecopy" alt="" coords="426,56,561,83"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#a67f128fbd1c2823097e24e924c9500b5" title="oggpackB_writealign" alt="" coords="422,107,565,133"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#ae033d573c9e7a5a9338250f887af287b" title="oggpackB_writecopy" alt="" coords="422,157,565,184"/>
+</map>

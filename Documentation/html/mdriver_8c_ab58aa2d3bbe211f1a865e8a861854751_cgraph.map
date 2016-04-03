@@ -1,0 +1,6 @@
+<map id="MikMod_SetNumVoices_internal" name="MikMod_SetNumVoices_internal">
+<area shape="rect" id="node2" href="$mdriver_8c.html#a4da9b50ffd9ccd4e7b356076ea19176f" title="MikMod_DisableOutput\l_internal" alt="" coords="419,5,578,46"/>
+<area shape="rect" id="node3" href="$mdriver_8c.html#ade652196cbe6b0decef25ab8d0fd9d32" title="MikMod_Exit_internal" alt="" coords="220,37,367,64"/>
+<area shape="rect" id="node4" href="$mdriver_8c.html#aa777a525009cca5a3190f5ba301f8557" title="Voice_Stop_internal" alt="" coords="224,88,363,115"/>
+<area shape="rect" id="node5" href="$mdriver_8c.html#a737a110e30343a9e5aa73889a33cc40d" title="MikMod_EnableOutput\l_internal" alt="" coords="216,139,371,181"/>
+</map>

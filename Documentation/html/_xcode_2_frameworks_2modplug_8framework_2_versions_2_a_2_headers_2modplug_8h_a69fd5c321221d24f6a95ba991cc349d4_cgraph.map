@@ -1,0 +1,11 @@
+<map id="ModPlug_ExportXM" name="ModPlug_ExportXM">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a5466a6835e3a3a87e01eaf16297fecaf" title="CSoundFile::SaveXM" alt="" coords="193,107,341,133"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a6405eb32f64cc8003bf8ebf80ce3e537" title="CSoundFile::ModSaveCommand" alt="" coords="389,5,603,32"/>
+<area shape="rect" id="node4" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="477,56,515,83"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#aff6f51ba6963e5e1b5e2db6abc7566b9" title="CSoundFile::CanPackSample" alt="" coords="398,107,594,133"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#af321ea19c372c99978046627a3a4625f" title="CSoundFile::WriteSample" alt="" coords="409,157,583,184"/>
+<area shape="rect" id="node9" href="$class_c_sound_file.html#aeba300293c7e84f2579b3b61c2340a00" title="CSoundFile::SaveMixPlugins" alt="" coords="400,208,592,235"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#a4c8575056e75c54b37b0d8547e4d2ed7" title="CSoundFile::PackSample" alt="" coords="666,81,838,108"/>
+<area shape="rect" id="node7" href="$sndfile_8h.html#af3654a1002cc06298b6e7f3b9c28a2e6" title="_muldiv" alt="" coords="719,132,785,159"/>
+<area shape="rect" id="node10" href="$class_i_mix_plugin.html#a3b43b8b8b561e07e96915388c1ed1ca5" title="IMixPlugin::SaveAllParameters" alt="" coords="651,208,853,235"/>
+</map>

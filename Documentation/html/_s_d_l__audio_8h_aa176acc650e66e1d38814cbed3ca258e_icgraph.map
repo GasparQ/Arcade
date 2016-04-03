@@ -1,0 +1,11 @@
+<map id="SDL_CloseAudio" name="SDL_CloseAudio">
+<area shape="rect" id="node2" href="$class_sound.html#a0907389078bf740be2a5763366ad3376" title="Sound::~Sound" alt="" coords="404,5,516,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudio.html#a87932c2fcd3ae9e49533648bc4c03592" title="MPEGaudio::~MPEGaudio" alt="" coords="176,31,355,57"/>
+<area shape="rect" id="node4" href="$_s_d_l__mixer_8h.html#a874d68326b7e6f6319052537ccbe5d8e" title="Mix_OpenAudio" alt="" coords="403,132,517,159"/>
+<area shape="rect" id="node9" href="$_s_d_l__mixer_8h.html#a2cb071e94923956f4c3ca4d3998669e7" title="Mix_CloseAudio" alt="" coords="207,81,324,108"/>
+<area shape="rect" id="node5" href="$class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9" title="Sound::Sound" alt="" coords="565,132,669,159"/>
+<area shape="rect" id="node8" href="$playmus_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="592,81,643,108"/>
+<area shape="rect" id="node6" href="$class_sound.html#a654d251e57564b62db784beae79cc07e" title="Sound::Instance" alt="" coords="717,107,835,133"/>
+<area shape="rect" id="node7" href="$class_sound.html#a9f3e9e495574b7afc22e59dbb49c5442" title="Sound::ChunkCallback" alt="" coords="883,132,1039,159"/>
+<area shape="rect" id="node10" href="$playmus_8c.html#a7ee82fb747045b001eb11854f61934bc" title="CleanUp" alt="" coords="423,81,497,108"/>
+</map>

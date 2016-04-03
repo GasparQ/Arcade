@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -74,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_snake-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Snake Class Reference</div>  </div>
@@ -107,7 +110,7 @@ Collaboration diagram for Snake:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_snake__coll__graph.png" border="0" usemap="#_snake_coll__map" alt="Collaboration graph"/></div>
 <map name="_snake_coll__map" id="_snake_coll__map">
-<area shape="rect" id="node2" href="class_a_game.html" title="AGame" alt="" coords="5,80,72,107"/><area shape="rect" id="node3" href="class_i_game.html" title="IGame" alt="" coords="8,5,69,32"/></map>
+<area shape="rect" id="node2" href="class_a_game.html" title="AGame" alt="" coords="63,96,129,123"/><area shape="rect" id="node3" href="class_i_game.html" title="IGame" alt="" coords="5,5,67,32"/><area shape="rect" id="node4" href="class_vector2.html" title="Vector2\&lt; double \&gt;" alt="" coords="91,5,220,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -130,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa1c341c5a4720f8aaf477c1f9e90ebcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad674de9bd10d7af6f7b249b478745565"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#ad674de9bd10d7af6f7b249b478745565">restart</a> ()</td></tr>
 <tr class="separator:ad674de9bd10d7af6f7b249b478745565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6bca74fbcef494e90b69b8d77756be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#ab6bca74fbcef494e90b69b8d77756be0">playARound</a> ()</td></tr>
+<tr class="separator:ab6bca74fbcef494e90b69b8d77756be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b58cff227bab98162e179b7fff1e65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a79b58cff227bab98162e179b7fff1e65">goUp</a> ()</td></tr>
 <tr class="separator:a79b58cff227bab98162e179b7fff1e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e75465f8982e67b5f156432c0a0868b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a3e75465f8982e67b5f156432c0a0868b">goDown</a> ()</td></tr>
@@ -140,31 +145,81 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1850bb9cf00539a2bf2462ce4dfb69e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c6815bbc4ee21e93970c741f92dd1f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5">goAhead</a> ()</td></tr>
 <tr class="separator:a4c6815bbc4ee21e93970c741f92dd1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa29ce4710253ce1d74c15a718e06bc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#afa29ce4710253ce1d74c15a718e06bc5">getApple</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
-<tr class="separator:afa29ce4710253ce1d74c15a718e06bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b2d2fe401cbeb3c25de01c980e8880c"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt;<br class="typebreak"/>
- &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a3b2d2fe401cbeb3c25de01c980e8880c">getSnake</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
-<tr class="separator:a3b2d2fe401cbeb3c25de01c980e8880c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a5782f3228d480f73dd9f0fbc84027"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_component.html">GameComponent</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a11a5782f3228d480f73dd9f0fbc84027">getApple</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="separator:a11a5782f3228d480f73dd9f0fbc84027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc05e077357ee7554767d9bbd1f882c"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_game_component.html">GameComponent</a> * &gt;<br class="typebreak"/>
+ <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#aadc05e077357ee7554767d9bbd1f882c">getSnake</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="separator:aadc05e077357ee7554767d9bbd1f882c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba31d7861c6a44b78a3ff13be40559eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#aba31d7861c6a44b78a3ff13be40559eb">getMoveUnit</a> (double unitPerSecond) <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="separator:aba31d7861c6a44b78a3ff13be40559eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_game"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_game')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_game.html">AGame</a></td></tr>
-<tr class="memitem:ae6562b250ccadd13c0557dd9ca27d49e inherit pub_methods_class_a_game"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#ae6562b250ccadd13c0557dd9ca27d49e">AGame</a> (<a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;<a class="el" href="_s_d_l__opengl__glext_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>)</td></tr>
+<tr class="memitem:ae6562b250ccadd13c0557dd9ca27d49e inherit pub_methods_class_a_game"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#ae6562b250ccadd13c0557dd9ca27d49e">AGame</a> (<a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;<a class="el" href="_s_d_l__opengl__glext_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>)</td></tr>
 <tr class="separator:ae6562b250ccadd13c0557dd9ca27d49e inherit pub_methods_class_a_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c1c6e1460dd4531f1fe57f201dd8d38 inherit pub_methods_class_a_game"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#a0c1c6e1460dd4531f1fe57f201dd8d38">~AGame</a> ()</td></tr>
 <tr class="separator:a0c1c6e1460dd4531f1fe57f201dd8d38 inherit pub_methods_class_a_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c092d0d1341a34cf267ffc13983b23a inherit pub_methods_class_a_game"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#a2c092d0d1341a34cf267ffc13983b23a">getName</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="memitem:a2c092d0d1341a34cf267ffc13983b23a inherit pub_methods_class_a_game"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#a2c092d0d1341a34cf267ffc13983b23a">getName</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
 <tr class="separator:a2c092d0d1341a34cf267ffc13983b23a inherit pub_methods_class_a_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab469359a43d9b8e88d8f61c089a64dd7 inherit pub_methods_class_a_game"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#ab469359a43d9b8e88d8f61c089a64dd7">getSize</a> () <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> </td></tr>
+<tr class="separator:ab469359a43d9b8e88d8f61c089a64dd7 inherit pub_methods_class_a_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_i_game"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_game')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_game.html">IGame</a></td></tr>
 <tr class="memitem:ab09af95521c3a0ce1a5a806d65370443 inherit pub_methods_class_i_game"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_game.html#ab09af95521c3a0ce1a5a806d65370443">~IGame</a> ()</td></tr>
 <tr class="separator:ab09af95521c3a0ce1a5a806d65370443 inherit pub_methods_class_i_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a3e1636d917acd36b8bb69647409aa250"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a3e1636d917acd36b8bb69647409aa250">bric2d</a> = &quot;./sprites/bric.bmp&quot;</td></tr>
+<tr class="separator:a3e1636d917acd36b8bb69647409aa250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd0798091cbeea68e4828ab9d462b4b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a0cd0798091cbeea68e4828ab9d462b4b">bricTxt</a> = &quot;#&quot;</td></tr>
+<tr class="separator:a0cd0798091cbeea68e4828ab9d462b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6578e51de7d4bc09fd92d47bebdb7768"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a6578e51de7d4bc09fd92d47bebdb7768">bric3d</a> = <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396ea4fb77d321207aa6e021e91da5a20115e">GameComponent::CUBE_LARGE</a></td></tr>
+<tr class="separator:a6578e51de7d4bc09fd92d47bebdb7768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b623f7793d5a1d1659d22fa9a7bb60a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <br class="typebreak"/>
+<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a0b623f7793d5a1d1659d22fa9a7bb60a">bricColor</a> = <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ada8b76028f895db5ec0693a1ba69a174">AComponent::COLOR_BLUE</a></td></tr>
+<tr class="separator:a0b623f7793d5a1d1659d22fa9a7bb60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f1a187097c9fa58e16c0318adf4cc3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a09f1a187097c9fa58e16c0318adf4cc3">apple2d</a> = &quot;./sprites/apple.bmp&quot;</td></tr>
+<tr class="separator:a09f1a187097c9fa58e16c0318adf4cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb1c83db47a6aa24effcedbd9a3a091"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a6eb1c83db47a6aa24effcedbd9a3a091">appleTxt</a> = &quot; &quot;</td></tr>
+<tr class="separator:a6eb1c83db47a6aa24effcedbd9a3a091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a529bb558d8b36049f64f09d55a0ee89d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a529bb558d8b36049f64f09d55a0ee89d">apple3d</a> = <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396eaa02ac953c6951c123d1cfe99b77acb55">GameComponent::SPHERE_LARGE</a></td></tr>
+<tr class="separator:a529bb558d8b36049f64f09d55a0ee89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5ff374d9a451964f940845a33169e5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <br class="typebreak"/>
+<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#acb5ff374d9a451964f940845a33169e5">appleColor</a> = <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a799cda56bc46dab3ce7ffe78119ad18c">AComponent::COLOR_RED</a></td></tr>
+<tr class="separator:acb5ff374d9a451964f940845a33169e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4dbec46fabdb2b33ee629335a5e7129"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#af4dbec46fabdb2b33ee629335a5e7129">snkHd2d</a> = &quot;./sprites/snake_head.bmp&quot;</td></tr>
+<tr class="separator:af4dbec46fabdb2b33ee629335a5e7129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c8d7f07a236936327b10c84ea96676"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#ad0c8d7f07a236936327b10c84ea96676">snkHdTxt</a> = &quot; &quot;</td></tr>
+<tr class="separator:ad0c8d7f07a236936327b10c84ea96676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f7bbb4d5ea993b1bac73aaceaa02f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a88f7bbb4d5ea993b1bac73aaceaa02f9">snkHd3d</a> = <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396ea4fb77d321207aa6e021e91da5a20115e">GameComponent::CUBE_LARGE</a></td></tr>
+<tr class="separator:a88f7bbb4d5ea993b1bac73aaceaa02f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf38d815d311f894344f3c07891ed66b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <br class="typebreak"/>
+<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#acf38d815d311f894344f3c07891ed66b">snkHdColor</a> = <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a02f819e899815589e7aa99919c39f865">AComponent::COLOR_GREEN</a></td></tr>
+<tr class="separator:acf38d815d311f894344f3c07891ed66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8f64d0f3516a866bbb3fe6fe782d2b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#afb8f64d0f3516a866bbb3fe6fe782d2b">snake2d</a> = &quot;./sprites/snake.bmp&quot;</td></tr>
+<tr class="separator:afb8f64d0f3516a866bbb3fe6fe782d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105c322b15ac793a226b2bce51eee7f3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a105c322b15ac793a226b2bce51eee7f3">snakeTxt</a> = &quot; &quot;</td></tr>
+<tr class="separator:a105c322b15ac793a226b2bce51eee7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e19467f52e848ccd7b519034266eab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a15e19467f52e848ccd7b519034266eab">snake3d</a> = <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396ea4fb77d321207aa6e021e91da5a20115e">GameComponent::CUBE_LARGE</a></td></tr>
+<tr class="separator:a15e19467f52e848ccd7b519034266eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2222efc41ff9849e6da4636905c540e5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <br class="typebreak"/>
+<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a2222efc41ff9849e6da4636905c540e5">snakeColor</a> = <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a324a6c51990df1d12369811dff76d03b">AComponent::COLOR_CYAN</a></td></tr>
+<tr class="separator:a2222efc41ff9849e6da4636905c540e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14d73ca0134cd7ae08bd32441d6e66b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#aa14d73ca0134cd7ae08bd32441d6e66b">snakeSpeed</a> = 15</td></tr>
+<tr class="separator:aa14d73ca0134cd7ae08bd32441d6e66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_a_game"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_game')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_game.html">AGame</a></td></tr>
 <tr class="memitem:ab87307d6b18a38ff235d290c212cd4fd inherit pro_attribs_class_a_game"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_game.html#a869e071750478202c9c6b5bbe3a2b4ee">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#ab87307d6b18a38ff235d290c212cd4fd">state</a></td></tr>
 <tr class="separator:ab87307d6b18a38ff235d290c212cd4fd inherit pro_attribs_class_a_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a28939a3f9f7be7301f6e4868ac4544 inherit pro_attribs_class_a_game"><td class="memItemLeft" align="right" valign="top"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#a3a28939a3f9f7be7301f6e4868ac4544">name</a></td></tr>
+<tr class="memitem:a3a28939a3f9f7be7301f6e4868ac4544 inherit pro_attribs_class_a_game"><td class="memItemLeft" align="right" valign="top"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#a3a28939a3f9f7be7301f6e4868ac4544">name</a></td></tr>
 <tr class="separator:a3a28939a3f9f7be7301f6e4868ac4544 inherit pro_attribs_class_a_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f6fb6e56330a71b41ed9850431a7ee inherit pro_attribs_class_a_game"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_game.html#a38f6fb6e56330a71b41ed9850431a7ee">size</a></td></tr>
+<tr class="separator:a38f6fb6e56330a71b41ed9850431a7ee inherit pro_attribs_class_a_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00021">21</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a951caca23cb4d02ecc4f246ea6cfb431"></a>
 <div class="memitem">
 <div class="memproto">
@@ -174,6 +229,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00053">53</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
 
 </div>
 </div>
@@ -190,6 +247,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00035">35</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -223,6 +282,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00082">82</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -250,32 +311,25 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_i_game.html#a7f2a51fce03fe3419264553a40c48f4e">IGame</a>.</p>
 
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00105">105</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_snake_aa1c341c5a4720f8aaf477c1f9e90ebcb_cgraph.png" border="0" usemap="#class_snake_aa1c341c5a4720f8aaf477c1f9e90ebcb_cgraph" alt=""/></div>
 <map name="class_snake_aa1c341c5a4720f8aaf477c1f9e90ebcb_cgraph" id="class_snake_aa1c341c5a4720f8aaf477c1f9e90ebcb_cgraph">
-<area shape="rect" id="node2" href="class_high_score_component.html#a68a9a13345949f7eb3e48bcf7a38d446" title="HighScoreComponent\l::UpdatePseudo" alt="" coords="171,5,322,46"/><area shape="rect" id="node3" href="class_high_score_component.html#a7f753ddb2c0bc1b891437599c7aaca4a" title="HighScoreComponent\l::submit" alt="" coords="171,70,322,111"/><area shape="rect" id="node6" href="class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5" title="Snake::goAhead" alt="" coords="187,136,306,163"/><area shape="rect" id="node4" href="class_load_high_score.html#a23f8e0823e3d81c22925028c386fa8db" title="LoadHighScore::setHighScore" alt="" coords="371,52,570,79"/><area shape="rect" id="node5" href="class_load_high_score.html#abe988bee8c025745dc8dd7c9ea73a63a" title="LoadHighScore::flush" alt="" coords="397,103,544,129"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_snake_aa1c341c5a4720f8aaf477c1f9e90ebcb_icgraph.png" border="0" usemap="#class_snake_aa1c341c5a4720f8aaf477c1f9e90ebcb_icgraph" alt=""/></div>
-<map name="class_snake_aa1c341c5a4720f8aaf477c1f9e90ebcb_icgraph" id="class_snake_aa1c341c5a4720f8aaf477c1f9e90ebcb_icgraph">
-<area shape="rect" id="node2" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="171,5,219,32"/></map>
+<area shape="rect" id="node2" href="class_high_score_component.html#a68a9a13345949f7eb3e48bcf7a38d446" title="HighScoreComponent\l::UpdatePseudo" alt="" coords="173,5,323,46"/><area shape="rect" id="node3" href="class_high_score_component.html#a7f753ddb2c0bc1b891437599c7aaca4a" title="HighScoreComponent\l::submit" alt="" coords="173,70,323,111"/><area shape="rect" id="node6" href="class_snake.html#aba31d7861c6a44b78a3ff13be40559eb" title="Snake::getMoveUnit" alt="" coords="177,136,319,163"/><area shape="rect" id="node7" href="class_snake.html#ab6bca74fbcef494e90b69b8d77756be0" title="Snake::playARound" alt="" coords="179,187,317,213"/><area shape="rect" id="node9" href="class_u_i_component.html#ab4240efff43d21f275dc48e48bff8cbf" title="UIComponent::setText" alt="" coords="171,237,325,264"/><area shape="rect" id="node10" href="class_a_component.html#a97ec0acb5b6df39659d8ac4559c882bd" title="AComponent::setPos" alt="" coords="175,288,321,315"/><area shape="rect" id="node11" href="class_u_i_component.html#a9a55d81c4034d3f693fb5366b0bff1dd" title="UIComponent::getText" alt="" coords="171,339,325,365"/><area shape="rect" id="node4" href="class_load_high_score.html#a23f8e0823e3d81c22925028c386fa8db" title="LoadHighScore::setHighScore" alt="" coords="374,52,573,79"/><area shape="rect" id="node5" href="class_load_high_score.html#abe988bee8c025745dc8dd7c9ea73a63a" title="LoadHighScore::flush" alt="" coords="400,103,547,129"/><area shape="rect" id="node8" href="class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5" title="Snake::goAhead" alt="" coords="414,187,533,213"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="afa29ce4710253ce1d74c15a718e06bc5"></a>
+<a class="anchor" id="a11a5782f3228d480f73dd9f0fbc84027"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; &amp; Snake::getApple </td>
+          <td class="memname"><a class="el" href="class_game_component.html">GameComponent</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> * Snake::getApple </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -283,23 +337,52 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00338">338</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_snake_afa29ce4710253ce1d74c15a718e06bc5_icgraph.png" border="0" usemap="#class_snake_afa29ce4710253ce1d74c15a718e06bc5_icgraph" alt=""/></div>
-<map name="class_snake_afa29ce4710253ce1d74c15a718e06bc5_icgraph" id="class_snake_afa29ce4710253ce1d74c15a718e06bc5_icgraph">
+<div class="center"><img src="class_snake_a11a5782f3228d480f73dd9f0fbc84027_icgraph.png" border="0" usemap="#class_snake_a11a5782f3228d480f73dd9f0fbc84027_icgraph" alt=""/></div>
+<map name="class_snake_a11a5782f3228d480f73dd9f0fbc84027_icgraph" id="class_snake_a11a5782f3228d480f73dd9f0fbc84027_icgraph">
 <area shape="rect" id="node2" href="_snake_8cpp.html#a20ad0db93a03e6ebe30ec59738214db8" title="updateMap" alt="" coords="174,5,261,32"/><area shape="rect" id="node3" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="309,5,357,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a3b2d2fe401cbeb3c25de01c980e8880c"></a>
+<a class="anchor" id="aba31d7861c6a44b78a3ff13be40559eb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp; Snake::getSnake </td>
+          <td class="memname">double Snake::getMoveUnit </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>unitPerSecond</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00299">299</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_snake_aba31d7861c6a44b78a3ff13be40559eb_icgraph.png" border="0" usemap="#class_snake_aba31d7861c6a44b78a3ff13be40559eb_icgraph" alt=""/></div>
+<map name="class_snake_aba31d7861c6a44b78a3ff13be40559eb_icgraph" id="class_snake_aba31d7861c6a44b78a3ff13be40559eb_icgraph">
+<area shape="rect" id="node2" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="195,5,312,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aadc05e077357ee7554767d9bbd1f882c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; <a class="el" href="class_game_component.html">GameComponent</a> * &gt; <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp; Snake::getSnake </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -307,11 +390,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00343">343</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_snake_a3b2d2fe401cbeb3c25de01c980e8880c_icgraph.png" border="0" usemap="#class_snake_a3b2d2fe401cbeb3c25de01c980e8880c_icgraph" alt=""/></div>
-<map name="class_snake_a3b2d2fe401cbeb3c25de01c980e8880c_icgraph" id="class_snake_a3b2d2fe401cbeb3c25de01c980e8880c_icgraph">
+<div class="center"><img src="class_snake_aadc05e077357ee7554767d9bbd1f882c_icgraph.png" border="0" usemap="#class_snake_aadc05e077357ee7554767d9bbd1f882c_icgraph" alt=""/></div>
+<map name="class_snake_aadc05e077357ee7554767d9bbd1f882c_icgraph" id="class_snake_aadc05e077357ee7554767d9bbd1f882c_icgraph">
 <area shape="rect" id="node2" href="_snake_8cpp.html#a20ad0db93a03e6ebe30ec59738214db8" title="updateMap" alt="" coords="177,5,263,32"/><area shape="rect" id="node4" href="_snake_8cpp.html#ad1c43aa668695928b44a5a0743cb2af7" title="whereAmI" alt="" coords="179,56,261,83"/><area shape="rect" id="node3" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="312,31,360,57"/></map>
 </div>
 </p>
@@ -331,12 +416,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00270">270</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_snake_a4c6815bbc4ee21e93970c741f92dd1f5_icgraph.png" border="0" usemap="#class_snake_a4c6815bbc4ee21e93970c741f92dd1f5_icgraph" alt=""/></div>
 <map name="class_snake_a4c6815bbc4ee21e93970c741f92dd1f5_icgraph" id="class_snake_a4c6815bbc4ee21e93970c741f92dd1f5_icgraph">
-<area shape="rect" id="node2" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="173,5,291,32"/><area shape="rect" id="node3" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="339,31,387,57"/></map>
+<area shape="rect" id="node2" href="class_snake.html#ab6bca74fbcef494e90b69b8d77756be0" title="Snake::playARound" alt="" coords="173,5,312,32"/><area shape="rect" id="node4" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="395,56,443,83"/><area shape="rect" id="node3" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="360,5,477,32"/></map>
 </div>
 </p>
 
@@ -354,6 +441,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00174">174</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -379,6 +468,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00183">183</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -402,6 +493,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00192">192</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -427,12 +520,49 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00165">165</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_snake_a79b58cff227bab98162e179b7fff1e65_icgraph.png" border="0" usemap="#class_snake_a79b58cff227bab98162e179b7fff1e65_icgraph" alt=""/></div>
 <map name="class_snake_a79b58cff227bab98162e179b7fff1e65_icgraph" id="class_snake_a79b58cff227bab98162e179b7fff1e65_icgraph">
 <area shape="rect" id="node2" href="class_snake.html#aa9cbcdb4b25d84cbf83509039cac8d01" title="Snake::Snake" alt="" coords="152,5,256,32"/><area shape="rect" id="node3" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="180,56,228,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6bca74fbcef494e90b69b8d77756be0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a> Snake::playARound </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00150">150</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_snake_ab6bca74fbcef494e90b69b8d77756be0_cgraph.png" border="0" usemap="#class_snake_ab6bca74fbcef494e90b69b8d77756be0_cgraph" alt=""/></div>
+<map name="class_snake_ab6bca74fbcef494e90b69b8d77756be0_cgraph" id="class_snake_ab6bca74fbcef494e90b69b8d77756be0_cgraph">
+<area shape="rect" id="node2" href="class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5" title="Snake::goAhead" alt="" coords="193,5,311,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_snake_ab6bca74fbcef494e90b69b8d77756be0_icgraph.png" border="0" usemap="#class_snake_ab6bca74fbcef494e90b69b8d77756be0_icgraph" alt=""/></div>
+<map name="class_snake_ab6bca74fbcef494e90b69b8d77756be0_icgraph" id="class_snake_ab6bca74fbcef494e90b69b8d77756be0_icgraph">
+<area shape="rect" id="node2" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="192,5,309,32"/><area shape="rect" id="node3" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="227,56,275,83"/></map>
 </div>
 </p>
 
@@ -461,16 +591,393 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="class_i_game.html#a9c1560a799fe35427ab591ea1aae3f93">IGame</a>.</p>
 
+<p>Definition at line <a class="el" href="_snake_8cpp_source.html#l00160">160</a> of file <a class="el" href="_snake_8cpp_source.html">Snake.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a09f1a187097c9fa58e16c0318adf4cc3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> Snake::apple2d = &quot;./sprites/apple.bmp&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00028">28</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a529bb558d8b36049f64f09d55a0ee89d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a> Snake::apple3d = <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396eaa02ac953c6951c123d1cfe99b77acb55">GameComponent::SPHERE_LARGE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00030">30</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb5ff374d9a451964f940845a33169e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> Snake::appleColor = <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a799cda56bc46dab3ce7ffe78119ad18c">AComponent::COLOR_RED</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00031">31</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6eb1c83db47a6aa24effcedbd9a3a091"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> Snake::appleTxt = &quot; &quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00029">29</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e1636d917acd36b8bb69647409aa250"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> Snake::bric2d = &quot;./sprites/bric.bmp&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00024">24</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6578e51de7d4bc09fd92d47bebdb7768"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a> Snake::bric3d = <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396ea4fb77d321207aa6e021e91da5a20115e">GameComponent::CUBE_LARGE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00026">26</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b623f7793d5a1d1659d22fa9a7bb60a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> Snake::bricColor = <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ada8b76028f895db5ec0693a1ba69a174">AComponent::COLOR_BLUE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00027">27</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0cd0798091cbeea68e4828ab9d462b4b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> Snake::bricTxt = &quot;#&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00025">25</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb8f64d0f3516a866bbb3fe6fe782d2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> Snake::snake2d = &quot;./sprites/snake.bmp&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00036">36</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a15e19467f52e848ccd7b519034266eab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a> Snake::snake3d = <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396ea4fb77d321207aa6e021e91da5a20115e">GameComponent::CUBE_LARGE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00038">38</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2222efc41ff9849e6da4636905c540e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> Snake::snakeColor = <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a324a6c51990df1d12369811dff76d03b">AComponent::COLOR_CYAN</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00039">39</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa14d73ca0134cd7ae08bd32441d6e66b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> long Snake::snakeSpeed = 15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00055">55</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a105c322b15ac793a226b2bce51eee7f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> Snake::snakeTxt = &quot; &quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00037">37</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4dbec46fabdb2b33ee629335a5e7129"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> Snake::snkHd2d = &quot;./sprites/snake_head.bmp&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00032">32</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88f7bbb4d5ea993b1bac73aaceaa02f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396e">GameComponent::Shapes</a> Snake::snkHd3d = <a class="el" href="class_game_component.html#a11ac7d0c01f4151895a18176347d396ea4fb77d321207aa6e021e91da5a20115e">GameComponent::CUBE_LARGE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00034">34</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf38d815d311f894344f3c07891ed66b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">AComponent::ComponentColor</a> Snake::snkHdColor = <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a02f819e899815589e7aa99919c39f865">AComponent::COLOR_GREEN</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00035">35</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0c8d7f07a236936327b10c84ea96676"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> Snake::snkHdTxt = &quot; &quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_snake_8hpp_source.html#l00033">33</a> of file <a class="el" href="_snake_8hpp_source.html">Snake.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/veyrie_f/Documents/cpp_arcade/Game/include/<a class="el" href="_snake_8hpp_source.html">Snake.hpp</a></li>
-<li>/home/veyrie_f/Documents/cpp_arcade/Game/src/<a class="el" href="_snake_8cpp.html">Snake.cpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Game/src/<a class="el" href="_snake_8cpp_source.html">Snake.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:03 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

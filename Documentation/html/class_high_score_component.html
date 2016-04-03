@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -74,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,12 +123,13 @@ Public Types</h2></td></tr>
 <tr class="separator:a1032f25b694200af9771532f06cd25af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_a_component"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_component')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_component.html">AComponent</a></td></tr>
 <tr class="memitem:a76ed8540d67007fd0ab5a74c6b425b87 inherit pub_types_class_a_component"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> { <br/>
-&#160;&#160;<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a799cda56bc46dab3ce7ffe78119ad18c">COLOR_RED</a> = 1, 
+&#160;&#160;<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a885866e27421267459690725eb4f9f50">COLOR_BLACK</a> = 0, 
+<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a799cda56bc46dab3ce7ffe78119ad18c">COLOR_RED</a> = 1, 
 <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a02f819e899815589e7aa99919c39f865">COLOR_GREEN</a> = 2, 
 <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a876dba1d9bfad7bdea1cbc4f87d6c212">COLOR_YELLOW</a> = 3, 
-<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ada8b76028f895db5ec0693a1ba69a174">COLOR_BLUE</a> = 4, 
 <br/>
-&#160;&#160;<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ae376e4d201f998557619eef49c37edb9">COLOR_MAGENTA</a> = 5, 
+&#160;&#160;<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ada8b76028f895db5ec0693a1ba69a174">COLOR_BLUE</a> = 4, 
+<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ae376e4d201f998557619eef49c37edb9">COLOR_MAGENTA</a> = 5, 
 <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a324a6c51990df1d12369811dff76d03b">COLOR_CYAN</a> = 6, 
 <a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87aff317793ecea35db045db414449ef7f3">COLOR_WHITE</a> = 7
 <br/>
@@ -135,8 +138,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adaab9cf4c8ea4b5c18b680b4bd8a4ca9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#adaab9cf4c8ea4b5c18b680b4bd8a4ca9">HighScoreComponent</a> (<a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;gameName, <a class="el" href="_s_d_l__config__windows_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> score)</td></tr>
-<tr class="separator:adaab9cf4c8ea4b5c18b680b4bd8a4ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c3dd91a22c4249782adb587c20f700"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a52c3dd91a22c4249782adb587c20f700">HighScoreComponent</a> (<a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;gameName, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> score)</td></tr>
+<tr class="separator:a52c3dd91a22c4249782adb587c20f700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18867357f3ac49fdec4535f7a50e210c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a18867357f3ac49fdec4535f7a50e210c">~HighScoreComponent</a> ()</td></tr>
 <tr class="separator:a18867357f3ac49fdec4535f7a50e210c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a9a13345949f7eb3e48bcf7a38d446"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a68a9a13345949f7eb3e48bcf7a38d446">UpdatePseudo</a> (<a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> key)</td></tr>
@@ -158,12 +161,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7da7e1744242875a3ec0e38c06f0656a inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa612b3ac138e06242617068a0e61c19d inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#aa612b3ac138e06242617068a0e61c19d">setColor</a> (<a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>)</td></tr>
 <tr class="separator:aa612b3ac138e06242617068a0e61c19d inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ec0acb5b6df39659d8ac4559c882bd inherit pub_methods_class_a_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__opengles2__gl2ext_8h.html#ae5d8fa23ad07c48bb609509eae494c95">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_component.html#a97ec0acb5b6df39659d8ac4559c882bd">setPos</a> (<a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt; &amp;pos)</td></tr>
+<tr class="separator:a97ec0acb5b6df39659d8ac4559c882bd inherit pub_methods_class_a_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a88fc8d3d5c066bc8732caf41018be8a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a88fc8d3d5c066bc8732caf41018be8a1">pseudoPlaceholder</a></td></tr>
+<tr class="memitem:a88fc8d3d5c066bc8732caf41018be8a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a88fc8d3d5c066bc8732caf41018be8a1">pseudoPlaceholder</a></td></tr>
 <tr class="separator:a88fc8d3d5c066bc8732caf41018be8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7130cb1808836c75a0580e708d8f24d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a7130cb1808836c75a0580e708d8f24d9">labelHighscores</a></td></tr>
+<tr class="memitem:a7130cb1808836c75a0580e708d8f24d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a7130cb1808836c75a0580e708d8f24d9">labelHighscores</a></td></tr>
 <tr class="separator:a7130cb1808836c75a0580e708d8f24d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dda79a092cb435b977345a6b1cdf7ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__config__windows_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a2dda79a092cb435b977345a6b1cdf7ed">componentNb</a> = 14</td></tr>
 <tr class="separator:a2dda79a092cb435b977345a6b1cdf7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +177,10 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a709f9dab53bf232bbb7673f9a8b4b778"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="class_vector2.html">Vector2</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_high_score_component.html#a709f9dab53bf232bbb7673f9a8b4b778">highscorePos</a></td></tr>
 <tr class="separator:a709f9dab53bf232bbb7673f9a8b4b778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="_high_score_component_8hpp_source.html#l00012">12</a> of file <a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a1032f25b694200af9771532f06cd25af"></a>
 <div class="memitem">
 <div class="memproto">
@@ -193,23 +201,25 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 </table>
 
+<p>Definition at line <a class="el" href="_high_score_component_8hpp_source.html#l00022">22</a> of file <a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="adaab9cf4c8ea4b5c18b680b4bd8a4ca9"></a>
+<a class="anchor" id="a52c3dd91a22c4249782adb587c20f700"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">HighScoreComponent::HighScoreComponent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> <a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> &amp;&#160;</td>
           <td class="paramname"><em>gameName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__config__windows_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
           <td class="paramname"><em>score</em>&#160;</td>
         </tr>
         <tr>
@@ -220,11 +230,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_high_score_component_8cpp_source.html#l00015">15</a> of file <a class="el" href="_high_score_component_8cpp_source.html">HighScoreComponent.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_high_score_component_adaab9cf4c8ea4b5c18b680b4bd8a4ca9_cgraph.png" border="0" usemap="#class_high_score_component_adaab9cf4c8ea4b5c18b680b4bd8a4ca9_cgraph" alt=""/></div>
-<map name="class_high_score_component_adaab9cf4c8ea4b5c18b680b4bd8a4ca9_cgraph" id="class_high_score_component_adaab9cf4c8ea4b5c18b680b4bd8a4ca9_cgraph">
+<div class="center"><img src="class_high_score_component_a52c3dd91a22c4249782adb587c20f700_cgraph.png" border="0" usemap="#class_high_score_component_a52c3dd91a22c4249782adb587c20f700_cgraph" alt=""/></div>
+<map name="class_high_score_component_a52c3dd91a22c4249782adb587c20f700_cgraph" id="class_high_score_component_a52c3dd91a22c4249782adb587c20f700_cgraph">
 <area shape="rect" id="node2" href="class_load_high_score.html#a34573298c79f1b0569f769fb667ca20e" title="LoadHighScore::getAllHigh\lScore" alt="" coords="213,5,392,46"/></map>
 </div>
 </p>
@@ -252,6 +264,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_high_score_component_8cpp_source.html#l00075">75</a> of file <a class="el" href="_high_score_component_8cpp_source.html">HighScoreComponent.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -267,6 +281,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_high_score_component_8cpp_source.html#l00108">108</a> of file <a class="el" href="_high_score_component_8cpp_source.html">HighScoreComponent.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -292,6 +308,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_high_score_component_8cpp_source.html#l00113">113</a> of file <a class="el" href="_high_score_component_8cpp_source.html">HighScoreComponent.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -306,7 +324,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_high_score_component_a7f753ddb2c0bc1b891437599c7aaca4a_icgraph.png" border="0" usemap="#class_high_score_component_a7f753ddb2c0bc1b891437599c7aaca4a_icgraph" alt=""/></div>
 <map name="class_high_score_component_a7f753ddb2c0bc1b891437599c7aaca4a_icgraph" id="class_high_score_component_a7f753ddb2c0bc1b891437599c7aaca4a_icgraph">
-<area shape="rect" id="node2" href="class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="205,5,368,32"/><area shape="rect" id="node4" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="228,56,345,83"/><area shape="rect" id="node3" href="_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,5,464,32"/><area shape="rect" id="node5" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,56,464,83"/></map>
+<area shape="rect" id="node2" href="class_centipede_game.html#a808a7409fb5921d8be8a58f74f539106" title="CentipedeGame::compute" alt="" coords="206,5,381,32"/><area shape="rect" id="node4" href="class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="212,56,375,83"/><area shape="rect" id="node6" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="235,107,352,133"/><area shape="rect" id="node3" href="_centipede_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="429,5,477,32"/><area shape="rect" id="node5" href="_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="429,56,477,83"/></map>
 </div>
 </p>
 
@@ -326,12 +344,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_high_score_component_8cpp_source.html#l00083">83</a> of file <a class="el" href="_high_score_component_8cpp_source.html">HighScoreComponent.cpp</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_high_score_component_a68a9a13345949f7eb3e48bcf7a38d446_icgraph.png" border="0" usemap="#class_high_score_component_a68a9a13345949f7eb3e48bcf7a38d446_icgraph" alt=""/></div>
 <map name="class_high_score_component_a68a9a13345949f7eb3e48bcf7a38d446_icgraph" id="class_high_score_component_a68a9a13345949f7eb3e48bcf7a38d446_icgraph">
-<area shape="rect" id="node2" href="class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="205,5,368,32"/><area shape="rect" id="node4" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="228,56,345,83"/><area shape="rect" id="node3" href="_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,5,464,32"/><area shape="rect" id="node5" href="_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="416,56,464,83"/></map>
+<area shape="rect" id="node2" href="class_centipede_game.html#a808a7409fb5921d8be8a58f74f539106" title="CentipedeGame::compute" alt="" coords="206,5,381,32"/><area shape="rect" id="node4" href="class_pacman_game.html#a0300bb86b88fd0224c58282a1291b41a" title="PacmanGame::compute" alt="" coords="212,56,375,83"/><area shape="rect" id="node6" href="class_snake.html#aa1c341c5a4720f8aaf477c1f9e90ebcb" title="Snake::compute" alt="" coords="235,107,352,133"/><area shape="rect" id="node3" href="_centipede_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="429,5,477,32"/><area shape="rect" id="node5" href="_pacman_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="429,56,477,83"/></map>
 </div>
 </p>
 
@@ -356,6 +376,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_high_score_component_8hpp_source.html#l00019">19</a> of file <a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a316d59b18e14dc83aaab2423615b7166"></a>
@@ -375,6 +397,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_high_score_component_8hpp_source.html#l00020">20</a> of file <a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a>.</p>
 
 </div>
 </div>
@@ -396,6 +420,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_high_score_component_8hpp_source.html#l00021">21</a> of file <a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7130cb1808836c75a0580e708d8f24d9"></a>
@@ -406,7 +432,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> HighScoreComponent::labelHighscores</td>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> HighScoreComponent::labelHighscores</td>
         </tr>
       </table>
   </td>
@@ -415,6 +441,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_high_score_component_8hpp_source.html#l00018">18</a> of file <a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a>.</p>
 
 </div>
 </div>
@@ -426,7 +454,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="_s_d_l__opengl__glext_8h.html#ae84541b4f3d8e1ea24ec0f466a8c568b">std::string</a> HighScoreComponent::pseudoPlaceholder</td>
+          <td class="memname"><a class="el" href="term__entry_8h.html#a57bd63ce7f9a353488880e3de6692d5a">const</a> <a class="el" href="test__lib_f_l_a_c_2format_8c.html#ab02026ad0de9fb6c1b4233deb0a00c75">std::string</a> HighScoreComponent::pseudoPlaceholder</td>
         </tr>
       </table>
   </td>
@@ -436,16 +464,18 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_high_score_component_8hpp_source.html#l00017">17</a> of file <a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/veyrie_f/Documents/cpp_arcade/Commons/include/<a class="el" href="_high_score_component_8hpp_source.html">HighScoreComponent.hpp</a></li>
-<li>/home/veyrie_f/Documents/cpp_arcade/Commons/src/<a class="el" href="_high_score_component_8cpp.html">HighScoreComponent.cpp</a></li>
+<li>/home/veyrie_f/Documents/cpp_arcade/Commons/src/<a class="el" href="_high_score_component_8cpp_source.html">HighScoreComponent.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:03 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

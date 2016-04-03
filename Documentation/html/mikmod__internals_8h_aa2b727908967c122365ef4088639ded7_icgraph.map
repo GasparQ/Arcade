@@ -1,0 +1,21 @@
+<map id="AllocPositions" name="AllocPositions">
+<area shape="rect" id="node2" href="$load__669_8c.html#abf53839eae50899773c5f54787e1d75a" title="S69_Load" alt="" coords="199,5,279,32"/>
+<area shape="rect" id="node3" href="$load__amf_8c.html#abc5169d6198576f3d1e2cc4786cc5b2d" title="AMF_Load" alt="" coords="196,56,281,83"/>
+<area shape="rect" id="node4" href="$load__dsm_8c.html#a4c944bdfa142de670209787e2806f8cd" title="DSM_Load" alt="" coords="195,107,282,133"/>
+<area shape="rect" id="node5" href="$load__far_8c.html#aae0f8a388c10c0039a5c5462f79fe4a2" title="FAR_Load" alt="" coords="197,157,281,184"/>
+<area shape="rect" id="node6" href="$load__gdm_8c.html#a223ebb121129b7fc1af3afb7881c709b" title="GDM_Load" alt="" coords="195,208,283,235"/>
+<area shape="rect" id="node7" href="$load__imf_8c.html#a9ef6478f54740fdff788120a0bd98976" title="IMF_Load" alt="" coords="199,259,279,285"/>
+<area shape="rect" id="node8" href="$load__it_8c.html#af048d36fad98fa472619043b26f8bac8" title="IT_Load" alt="" coords="204,309,273,336"/>
+<area shape="rect" id="node9" href="$load__med_8c.html#a245db58375ce572d416c2bb11e0f4090" title="MED_Load" alt="" coords="195,360,282,387"/>
+<area shape="rect" id="node10" href="$load__mtm_8c.html#a87de277bc45dda77ae88b3c52f66de73" title="MTM_Load" alt="" coords="195,411,282,437"/>
+<area shape="rect" id="node11" href="$load__s3m_8c.html#a9b0fb0148d7833fdcab91f1389ec5054" title="S3M_Load" alt="" coords="197,461,281,488"/>
+<area shape="rect" id="node12" href="$load__stm_8c.html#a579dceaa0e718376a7db9b5c2ebc596f" title="STM_Load" alt="" coords="196,512,281,539"/>
+<area shape="rect" id="node13" href="$load__ult_8c.html#a9fda3df0bd4f13e29e118a811dfefdbe" title="ULT_Load" alt="" coords="197,563,280,589"/>
+<area shape="rect" id="node14" href="$load__uni_8c.html#a889dd09058556592efe9edabd027c29f" title="UNI_Load" alt="" coords="198,613,279,640"/>
+<area shape="rect" id="node15" href="$load__xm_8c.html#a667070bf1144d30378244785d8b77168" title="XM_Load" alt="" coords="200,664,277,691"/>
+<area shape="rect" id="node16" href="$class_c_sound_file.html#a399c49f864b730182d9a0e065878a10f" title="CSoundFile::ReadABC" alt="" coords="160,715,317,741"/>
+<area shape="rect" id="node19" href="$class_c_sound_file.html#ad96a25f78d1f3474e9243fce2cb2cdbe" title="CSoundFile::ReadMID" alt="" coords="161,765,316,792"/>
+<area shape="rect" id="node20" href="$class_c_sound_file.html#a8d0b34a3d17d4af1571fd0741a7ed261" title="CSoundFile::ReadPAT" alt="" coords="161,816,316,843"/>
+<area shape="rect" id="node17" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="366,765,503,792"/>
+<area shape="rect" id="node18" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="553,765,661,792"/>
+</map>

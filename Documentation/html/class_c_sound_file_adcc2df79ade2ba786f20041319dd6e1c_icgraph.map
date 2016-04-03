@@ -1,0 +1,9 @@
+<map id="CSoundFile::GetNoteFromPeriod" name="CSoundFile::GetNoteFromPeriod">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a67f08943b1200c1e9d2464bb94d72182" title="CSoundFile::ReadMod" alt="" coords="271,56,425,83"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#aa74c7074f61936d8bd95e2e4ca334d07" title="CSoundFile::ReadNote" alt="" coords="269,107,427,133"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#abb644f9394c81d073e88d10282b4d6e8" title="CSoundFile::ReadUMX" alt="" coords="475,5,634,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="683,31,821,57"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="870,31,978,57"/>
+<area shape="rect" id="node7" href="$class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7" title="CSoundFile::Read" alt="" coords="490,107,619,133"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a10e70316c7a8219fdb397e6fdeb6b321" title="ModPlug_Read" alt="" coords="697,107,807,133"/>
+</map>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['khronos_5fboolean_5fenum_5ft',['khronos_boolean_enum_t',['../_s_d_l__opengles2__khrplatform_8h.html#a0b823cfbc138820708978d43a5f26c64',1,'SDL_opengles2_khrplatform.h']]]
+  ['dbdirs',['DBDIRS',['../term__entry_8h.html#a7bfa7165f1146349fb4ba5c4dc5a01fc',1,'term_entry.h']]],
+  ['direction',['Direction',['../class_centipede.html#af6345e2954400a30873e06457625f8d2',1,'Centipede::Direction()'],['../class_pacman_character.html#ac000ceede24318d93173843e3de6d049',1,'PacmanCharacter::Direction()']]]
 ];

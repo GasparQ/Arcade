@@ -1,0 +1,12 @@
+<map id="mutils__compare_block" name="mutils__compare_block">
+<area shape="rect" id="node2" href="$metadata__utils_8c.html#aa20c205d2f7530d83b16aa23d1d0b8ee" title="mutils__compare_block\l_data_streaminfo" alt="" coords="214,70,373,111"/>
+<area shape="rect" id="node4" href="$metadata__utils_8c.html#aa7d770ec05e8aeda6399e38ae4f77b42" title="mutils__compare_block\l_data_padding" alt="" coords="214,5,373,46"/>
+<area shape="rect" id="node6" href="$metadata__utils_8c.html#aa339c77e3c21b5841bfb86f1e23136cb" title="mutils__compare_block\l_data_application" alt="" coords="214,135,373,177"/>
+<area shape="rect" id="node7" href="$metadata__utils_8c.html#a487a4d4d53cfe2ee04f20f1ad8c22fee" title="mutils__compare_block\l_data_seektable" alt="" coords="214,201,373,242"/>
+<area shape="rect" id="node8" href="$metadata__utils_8c.html#a31273afcbdb9400e6ec32e9959e88a42" title="mutils__compare_block\l_data_vorbiscomment" alt="" coords="214,266,373,307"/>
+<area shape="rect" id="node9" href="$metadata__utils_8c.html#a9fa844183b410970b0492d09bdaaf6a1" title="mutils__compare_block\l_data_cuesheet" alt="" coords="214,331,373,373"/>
+<area shape="rect" id="node10" href="$metadata__utils_8c.html#ab5129e739a664c490372a7b346cffea6" title="mutils__compare_block\l_data_picture" alt="" coords="214,397,373,438"/>
+<area shape="rect" id="node11" href="$metadata__utils_8c.html#a8332c947694038d9654b8ffc2fcc10d6" title="mutils__compare_block\l_data_unknown" alt="" coords="214,462,373,503"/>
+<area shape="rect" id="node3" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="422,273,498,300"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="437,12,483,39"/>
+</map>

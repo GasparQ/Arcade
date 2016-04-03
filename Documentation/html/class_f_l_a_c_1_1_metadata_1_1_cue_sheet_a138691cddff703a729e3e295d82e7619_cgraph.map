@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::CueSheet::is_legal" name="FLAC::Metadata::CueSheet::is_legal">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="238,5,421,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga1160f85e437c1a763ec0a8f372cb1390" title="FLAC__metadata_object\l_cuesheet_is_legal" alt="" coords="246,70,413,111"/>
+<area shape="rect" id="node4" href="$group__flac__format.html#gae922cabe2dc3f81af10cb635cf996114" title="FLAC__format_cuesheet\l_is_legal" alt="" coords="470,70,637,111"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="ReadTags" name="ReadTags">
+<area shape="rect" id="node2" href="$tags_8c.html#add642c04bcdb481b5f6c018696408f31" title="FLAC_plugin__tags_get" alt="" coords="137,56,298,83"/>
+<area shape="rect" id="node5" href="$tags_8c.html#a3f0482eb2983710e4ded15ccbbd00c5c" title="FLAC_plugin__tags_set\l_tag_ucs2" alt="" coords="137,114,298,155"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__level0.html#gaf66469f31dca28837ffd3f8b0ec5c082" title="FLAC__metadata_get_tags" alt="" coords="355,5,536,32"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#gab3d728ca4455bda71cc231fdb91307fb" title="FLAC__metadata_object_new" alt="" coords="347,56,544,83"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__object.html#ga0ec0c7ddd3a8832ee7a75bf47956b1c7" title="FLAC__metadata_object\l_vorbiscomment_entry\l_from_name_value_pair" alt="" coords="362,107,529,163"/>
+<area shape="rect" id="node9" href="$group__flac__metadata__object.html#gabef3625575b7e4c7257617a27220959a" title="FLAC__metadata_object\l_vorbiscomment_replace\l_comment" alt="" coords="362,231,529,287"/>
+<area shape="rect" id="node7" href="$group__flac__format.html#ga14980d2e4b0ff2cdd4f22fcf8e75b54c" title="FLAC__format_vorbiscomment\l_entry_name_is_legal" alt="" coords="592,49,795,90"/>
+<area shape="rect" id="node8" href="$group__flac__format.html#gae0707c9d46b2af02f1e145bdae331605" title="FLAC__format_vorbiscomment\l_entry_value_is_legal" alt="" coords="592,114,795,155"/>
+<area shape="rect" id="node10" href="$group__flac__format.html#ga6878e238052fc0f7109b55129d64b4e5" title="FLAC__format_vorbiscomment\l_entry_is_legal" alt="" coords="1312,295,1515,337"/>
+<area shape="rect" id="node11" href="$group__flac__metadata__object.html#gadf034b2c385e7932c6be2d724a0deae3" title="FLAC__metadata_object\l_vorbiscomment_set_comment" alt="" coords="1059,295,1263,337"/>
+<area shape="rect" id="node12" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="843,151,1010,207"/>
+<area shape="rect" id="node14" href="$group__flac__metadata__object.html#gad04ef80ae5f852db8f3729a6ef8c1631" title="FLAC__metadata_object\l_vorbiscomment_append\l_comment" alt="" coords="610,231,777,287"/>
+<area shape="rect" id="node13" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="1078,157,1245,213"/>
+<area shape="rect" id="node15" href="$group__flac__metadata__object.html#ga0c23f59f465f302b35a2d3ab1eae07e7" title="FLAC__metadata_object\l_vorbiscomment_insert\l_comment" alt="" coords="843,231,1010,287"/>
+</map>

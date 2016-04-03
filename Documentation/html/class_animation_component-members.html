@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -74,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,24 +97,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a42f018755d7fccdde7f90070c812e048">AComponent</a>(int x, int y, enum ComponentColor color)</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_component.html#ad66b34f4c82089a9f824be0f55193d30">AComponent</a>(Vector2&lt; double &gt; const &amp;pos, enum ComponentColor color)</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_animation_component.html#a8377b0670ce6802a258fe5b067d4cc25">AnimationComponent</a>(int x, int y, enum ComponentColor color, std::string const &amp;file)</td><td class="entry"><a class="el" href="class_animation_component.html">AnimationComponent</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ada8b76028f895db5ec0693a1ba69a174">COLOR_BLUE</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a324a6c51990df1d12369811dff76d03b">COLOR_CYAN</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a02f819e899815589e7aa99919c39f865">COLOR_GREEN</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ae376e4d201f998557619eef49c37edb9">COLOR_MAGENTA</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a799cda56bc46dab3ce7ffe78119ad18c">COLOR_RED</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87aff317793ecea35db045db414449ef7f3">COLOR_WHITE</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a876dba1d9bfad7bdea1cbc4f87d6c212">COLOR_YELLOW</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> enum name</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_component.html#a7da7e1744242875a3ec0e38c06f0656a">getColor</a>() const </td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_animation_component.html#a727895c2e08838f8ceda5e743de5c5f3">getFileName</a>() const </td><td class="entry"><a class="el" href="class_animation_component.html">AnimationComponent</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_component.html#a4575869d086fd815ed433dcbf57c3b96">getPos</a>() const </td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#aa612b3ac138e06242617068a0e61c19d">setColor</a>(ComponentColor color)</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_component.html#a6781bba3bde97c1ceef275a14a346eb5">~AComponent</a>()</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_animation_component.html#ad35cdc747a5578fdea681486f063f515">~AnimationComponent</a>()</td><td class="entry"><a class="el" href="class_animation_component.html">AnimationComponent</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a885866e27421267459690725eb4f9f50">COLOR_BLACK</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ada8b76028f895db5ec0693a1ba69a174">COLOR_BLUE</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a324a6c51990df1d12369811dff76d03b">COLOR_CYAN</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a02f819e899815589e7aa99919c39f865">COLOR_GREEN</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87ae376e4d201f998557619eef49c37edb9">COLOR_MAGENTA</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a799cda56bc46dab3ce7ffe78119ad18c">COLOR_RED</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87aff317793ecea35db045db414449ef7f3">COLOR_WHITE</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87a876dba1d9bfad7bdea1cbc4f87d6c212">COLOR_YELLOW</a> enum value</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_component.html#a76ed8540d67007fd0ab5a74c6b425b87">ComponentColor</a> enum name</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a7da7e1744242875a3ec0e38c06f0656a">getColor</a>() const </td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_animation_component.html#a727895c2e08838f8ceda5e743de5c5f3">getFileName</a>() const </td><td class="entry"><a class="el" href="class_animation_component.html">AnimationComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a4575869d086fd815ed433dcbf57c3b96">getPos</a>() const </td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_component.html#aa612b3ac138e06242617068a0e61c19d">setColor</a>(ComponentColor color)</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_animation_component.html#a897cd8f79dc11877f64fb7ac70295853">setFileName</a>(std::string const &amp;)</td><td class="entry"><a class="el" href="class_animation_component.html">AnimationComponent</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_component.html#a97ec0acb5b6df39659d8ac4559c882bd">setPos</a>(const Vector2&lt; double &gt; &amp;pos)</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_component.html#a6781bba3bde97c1ceef275a14a346eb5">~AComponent</a>()</td><td class="entry"><a class="el" href="class_a_component.html">AComponent</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_animation_component.html#ad35cdc747a5578fdea681486f063f515">~AnimationComponent</a>()</td><td class="entry"><a class="el" href="class_animation_component.html">AnimationComponent</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:02 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

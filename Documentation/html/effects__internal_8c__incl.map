@@ -1,0 +1,18 @@
+<map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/effects_internal.c" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/effects_internal.c">
+<area shape="rect" id="node4" href="$_s_d_l__mixer_8h.html" title="SDL_mixer.h" alt="" coords="869,184,968,211"/>
+<area shape="rect" id="node29" href="$effects__internal_8h.html" title="effects_internal.h" alt="" coords="691,109,813,136"/>
+<area shape="rect" id="node5" href="$_s_d_l__stdinc_8h.html" title="../../Graphique/SDL2\l/include/SDL_stdinc.h" alt="" coords="1097,606,1247,647"/>
+<area shape="rect" id="node8" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="1695,845,1793,872"/>
+<area shape="rect" id="node9" href="$close__code_8h.html" title="close_code.h" alt="" coords="209,845,308,872"/>
+<area shape="rect" id="node21" href="$_s_d_l__rwops_8h.html" title="../../Graphique/SDL2\l/include/SDL_rwops.h" alt="" coords="195,425,345,466"/>
+<area shape="rect" id="node23" href="$_s_d_l__audio_8h.html" title="../../Graphique/SDL2\l/include/SDL_audio.h" alt="" coords="845,259,992,301"/>
+<area shape="rect" id="node24" href="$_s_d_l__endian_8h.html" title="SDL_endian.h" alt="" coords="1795,523,1899,549"/>
+<area shape="rect" id="node28" href="$_s_d_l__version_8h.html" title="../../Graphique/SDL2\l/include/SDL_version.h" alt="" coords="1923,515,2080,557"/>
+<area shape="rect" id="node6" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="723,696,824,723"/>
+<area shape="rect" id="node10" href="$types_8h.html" title="sys/types.h" alt="" coords="1477,696,1568,723"/>
+<area shape="rect" id="node7" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="534,771,647,797"/>
+<area shape="rect" id="node22" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="347,523,439,549"/>
+<area shape="rect" id="node25" href="$_s_d_l__mutex_8h.html" title="SDL_mutex.h" alt="" coords="950,432,1052,459"/>
+<area shape="rect" id="node26" href="$_s_d_l__thread_8h.html" title="SDL_thread.h" alt="" coords="810,349,912,376"/>
+<area shape="rect" id="node27" href="$_s_d_l__atomic_8h.html" title="SDL_atomic.h" alt="" coords="633,523,737,549"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="FileDecoder" name="FileDecoder">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_decoder_1_1_file.html" title="This class wraps the FLAC__StreamDecoder. If you are not decoding from a file, you may need to use FL..." alt="" coords="15,80,157,107"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html" title="This class wraps the FLAC__StreamDecoder. If you are decoding from a file, FLAC::Decoder::File may be..." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node4" href="$class_decoder_common.html" title="DecoderCommon" alt="" coords="182,80,305,107"/>
+</map>

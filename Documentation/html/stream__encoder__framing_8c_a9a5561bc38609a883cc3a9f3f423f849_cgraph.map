@@ -1,0 +1,6 @@
+<map id="FLAC__subframe_add_fixed" name="FLAC__subframe_add_fixed">
+<area shape="rect" id="node2" href="$lib_f_l_a_c_2bitwriter_8c.html#aecb918f25dcf759201b20c52bbf3edd1" title="FLAC__bitwriter_write\l_raw_uint32" alt="" coords="406,23,557,64"/>
+<area shape="rect" id="node3" href="$lib_f_l_a_c_2bitwriter_8c.html#aabfd19bdf430b36ffc2e6f2902b97d89" title="FLAC__bitwriter_write\l_unary_unsigned" alt="" coords="206,88,357,130"/>
+<area shape="rect" id="node5" href="$lib_f_l_a_c_2bitwriter_8c.html#ad08f3fe518daf223ed3d14419d5fcf12" title="FLAC__bitwriter_write\l_raw_int32" alt="" coords="206,23,357,64"/>
+<area shape="rect" id="node4" href="$lib_f_l_a_c_2bitwriter_8c.html#a056f5b6a0f2decad8757a321bd4f3116" title="FLAC__bitwriter_write\l_zeroes" alt="" coords="406,88,557,130"/>
+</map>

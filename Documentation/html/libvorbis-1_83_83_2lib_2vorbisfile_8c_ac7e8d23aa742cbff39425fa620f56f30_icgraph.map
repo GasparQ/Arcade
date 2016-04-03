@@ -1,0 +1,12 @@
+<map id="ov_raw_seek" name="ov_raw_seek">
+<area shape="rect" id="node2" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a033abf32795dd65412acb65ec9813172" title="ov_pcm_seek_page" alt="" coords="152,168,291,195"/>
+<area shape="rect" id="node11" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a53777ca05e1557139fa47693471fb531" title="ov_raw_seek_lap" alt="" coords="160,219,283,245"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a10f51fe54d7334136cca8927602ba277" title="ov_pcm_seek" alt="" coords="369,105,471,132"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a1bf7109c7770b54d73386678d08f600e" title="ov_time_seek_page" alt="" coords="351,168,489,195"/>
+<area shape="rect" id="node10" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a991451d1859ba8b998db7e005cb3b87b" title="ov_pcm_seek_page_lap" alt="" coords="339,219,501,245"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ace67cdf6531919e05b3bb164db45181a" title="ov_halfrate" alt="" coords="587,29,674,56"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#acca7a3b0c08acd43a2d70a03591232ec" title="ov_time_seek" alt="" coords="579,80,682,107"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a88868174d5c99bbfea1ecf27b5987a1a" title="ov_pcm_seek_lap" alt="" coords="567,131,694,157"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ac6957ebd8b9d2477507eb1c23f904bec" title="ov_time_seek_lap" alt="" coords="761,80,887,107"/>
+<area shape="rect" id="node9" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a48b714260279171536078483bbaee682" title="ov_time_seek_page_lap" alt="" coords="549,181,712,208"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CSoundFile::ExtendedS3MCommands" name="CSoundFile::ExtendedS3MCommands">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a0bc06230cfe662d4de16efa14426aa5f" title="CSoundFile::GetPeriodFromNote" alt="" coords="302,5,517,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aa2b7672e51b28f7fc7a8dd53d14da2a8" title="CSoundFile::KeyOff" alt="" coords="340,56,479,83"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#aee09105713a6118a3fcefbc239ec20a9" title="CSoundFile::ExtendedChannel\lEffect" alt="" coords="309,107,510,149"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#abae79707e219367b0a3502ec01374a68" title="CSoundFile::NoteCut" alt="" coords="336,173,483,200"/>
+<area shape="rect" id="node3" href="$sndfile_8h.html#af3654a1002cc06298b6e7f3b9c28a2e6" title="_muldiv" alt="" coords="565,5,632,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::SeekTable::is_legal" name="FLAC::Metadata::SeekTable::is_legal">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="243,5,426,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga08f33e2ef85d72363dda82de3208ed1e" title="FLAC__metadata_object\l_seektable_is_legal" alt="" coords="251,70,418,111"/>
+<area shape="rect" id="node4" href="$group__flac__format.html#ga02270d9b92dbe7617635c65a1d0f58ff" title="FLAC__format_seektable\l_is_legal" alt="" coords="475,70,645,111"/>
+</map>

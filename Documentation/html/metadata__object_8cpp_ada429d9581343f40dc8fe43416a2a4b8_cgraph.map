@@ -1,0 +1,42 @@
+<map id="test_metadata_object_vorbiscomment" name="test_metadata_object_vorbiscomment">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a202f4e8b418fd3cc4c4acffff4fc17ff" title="Returns true iff object was properly constructed. " alt="" coords="201,26,421,68"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a1c2893d8edc37498fb57dcb1ae003cbb" title="FLAC::Metadata::VorbisComment\l::Entry::get_field" alt="" coords="470,885,690,926"/>
+<area shape="rect" id="node4" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="749,700,931,741"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a29bdeb2eb58d106dee5ee6d659c311e9" title="FLAC::Metadata::VorbisComment\l::Entry::get_field_length" alt="" coords="470,1002,690,1044"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#aa34dc25ab7d5ad2116e6fa1559c378e5" title="FLAC::Metadata::VorbisComment\l::Entry::get_field_name_length" alt="" coords="470,200,690,241"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a99284b76a89b347328a5202efa88ea86" title="FLAC::Metadata::VorbisComment\l::Entry::get_field_value_length" alt="" coords="470,637,690,678"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#af82ae544ebd6ac2df97c359672d4a956" title="FLAC::Metadata::VorbisComment\l::Entry::get_entry" alt="" coords="470,418,690,460"/>
+<area shape="rect" id="node9" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="273,456,349,483"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#aca171ebcd2e91136134a388c7cbf4326" title="FLAC::Metadata::VorbisComment\l::Entry::get_field_name" alt="" coords="470,134,690,176"/>
+<area shape="rect" id="node11" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a77008db8684d6fb476c677e0634a27c5" title="FLAC::Metadata::VorbisComment\l::Entry::get_field_value" alt="" coords="470,820,690,861"/>
+<area shape="rect" id="node12" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a63b7e835b27b29bf02c3a7b0bc5000cd" title="FLAC::Metadata::VorbisComment\l::Entry::set_field_name" alt="" coords="201,760,421,801"/>
+<area shape="rect" id="node14" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a6494567865de5ba61edd4e264312926f" title="FLAC::Metadata::VorbisComment\l::Entry::set_field_value" alt="" coords="470,1120,690,1161"/>
+<area shape="rect" id="node16" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#ae6cc410fd34d3aa31bd50dad4fe43442" title="FLAC::Metadata::VorbisComment\l::Entry::set_field" alt="" coords="470,1381,690,1422"/>
+<area shape="rect" id="node19" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a5fd592fd29018c66d29f0940f3cf05b3" title="FLAC::Metadata::Prototype\l::get_length" alt="" coords="219,260,402,301"/>
+<area shape="rect" id="node20" href="$group__flac__metadata__object.html#gaa12d8f3c14500a977b7ddf14c6bf81fe" title="FLAC__metadata_object\l_clone" alt="" coords="757,1505,923,1546"/>
+<area shape="rect" id="node24" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#a9db2171c398cd62a5907e625c3a6228d" title="FLAC::Metadata::VorbisComment\l::assign" alt="" coords="201,1433,421,1474"/>
+<area shape="rect" id="node27" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#ab63b3a079d91e2497d133a26cf8be2cd" title="FLAC::Metadata::VorbisComment\l::get_num_comments" alt="" coords="201,626,421,668"/>
+<area shape="rect" id="node28" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#ad8cffdb4c43ba01eaa9a3f7be0d5926a" title="See FLAC__metadata_object_vorbiscomment_set_vendor_string() " alt="" coords="201,1178,421,1220"/>
+<area shape="rect" id="node30" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#a86ef43d506a6e4992b3bf3e2c227f54e" title="FLAC::Metadata::VorbisComment\l::get_vendor_string" alt="" coords="201,1056,421,1097"/>
+<area shape="rect" id="node31" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#a1126c7a0f25a2cf78efc8317d3a861f2" title="See FLAC__metadata_object_vorbiscomment_append_comment() " alt="" coords="201,390,421,432"/>
+<area shape="rect" id="node36" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#affce4cadbfc6334af4656b26ff2cb32d" title="FLAC::Metadata::VorbisComment\l::get_comment" alt="" coords="201,92,421,133"/>
+<area shape="rect" id="node37" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#af3c0467a369fff79f07af781c0d24c0c" title="See FLAC__metadata_object_vorbiscomment_delete_comment() " alt="" coords="470,1316,690,1357"/>
+<area shape="rect" id="node39" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#ad2aabf071235c0f00e580828e9c93f58" title="See FLAC__metadata_object_vorbiscomment_insert_comment() " alt="" coords="201,558,421,600"/>
+<area shape="rect" id="node40" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#ac75ecd354178786318c5c3af1919d949" title="See FLAC__metadata_object_vorbiscomment_set_comment() " alt="" coords="201,325,421,366"/>
+<area shape="rect" id="node41" href="$group__flacpp__metadata__object.html#gaea2484b59c72f4cce8366f25133f5d51" title="FLAC::Metadata::clone" alt="" coords="232,1563,389,1590"/>
+<area shape="rect" id="node13" href="$group__flac__format.html#ga14980d2e4b0ff2cdd4f22fcf8e75b54c" title="FLAC__format_vorbiscomment\l_entry_name_is_legal" alt="" coords="479,702,681,744"/>
+<area shape="rect" id="node15" href="$group__flac__format.html#gae0707c9d46b2af02f1e145bdae331605" title="FLAC__format_vorbiscomment\l_entry_value_is_legal" alt="" coords="739,1138,941,1180"/>
+<area shape="rect" id="node17" href="$group__flac__format.html#ga6878e238052fc0f7109b55129d64b4e5" title="FLAC__format_vorbiscomment\l_entry_is_legal" alt="" coords="1243,506,1445,548"/>
+<area shape="rect" id="node18" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="817,1338,863,1364"/>
+<area shape="rect" id="node21" href="$group__flac__metadata__object.html#gab3d728ca4455bda71cc231fdb91307fb" title="FLAC__metadata_object_new" alt="" coords="993,1512,1191,1539"/>
+<area shape="rect" id="node22" href="$group__flac__metadata__object.html#ga66bbe27dba68ba77be5af83986a280ea" title="FLAC__metadata_object\l_delete" alt="" coords="1009,1442,1175,1484"/>
+<area shape="rect" id="node23" href="$lib_f_l_a_c_2metadata__object_8c.html#adca9ba17ba21fe5f9e9c19ba2784ea38" title="FLAC__metadata_object\l_delete_data" alt="" coords="1261,1442,1427,1484"/>
+<area shape="rect" id="node25" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a553ddf0187b31218ecfb0d7ba259fda0" title="FLAC::Metadata::Prototype\l::assign_object" alt="" coords="489,1446,671,1488"/>
+<area shape="rect" id="node26" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a325839301bca33a69890b59416bcb314" title="FLAC::Metadata::Prototype\l::clear" alt="" coords="749,1440,931,1481"/>
+<area shape="rect" id="node29" href="$group__flac__metadata__object.html#gabfc6277c08a86329efd19572695b57e6" title="FLAC__metadata_object\l_vorbiscomment_set_vendor\l_string" alt="" coords="485,1236,675,1292"/>
+<area shape="rect" id="node32" href="$group__flac__metadata__object.html#gad04ef80ae5f852db8f3729a6ef8c1631" title="FLAC__metadata_object\l_vorbiscomment_append\l_comment" alt="" coords="497,55,663,111"/>
+<area shape="rect" id="node33" href="$group__flac__metadata__object.html#ga0c23f59f465f302b35a2d3ab1eae07e7" title="FLAC__metadata_object\l_vorbiscomment_insert\l_comment" alt="" coords="757,470,923,526"/>
+<area shape="rect" id="node34" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="1009,902,1175,958"/>
+<area shape="rect" id="node35" href="$group__flac__metadata__object.html#gadf034b2c385e7932c6be2d724a0deae3" title="FLAC__metadata_object\l_vorbiscomment_set_comment" alt="" coords="990,448,1194,489"/>
+<area shape="rect" id="node38" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="757,1239,923,1295"/>
+</map>

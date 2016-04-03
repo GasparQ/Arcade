@@ -1,0 +1,5 @@
+<map id="CSoundFile::SetSpeed" name="CSoundFile::SetSpeed">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a06472a95eb9082b22775e6b2e7a4d160" title="CSoundFile::IsSongFinished" alt="" coords="211,5,399,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a7487548309ac30b5816d001c3cb256a8" title="CSoundFile::GlobalFadeSong" alt="" coords="208,56,403,83"/>
+<area shape="rect" id="node4" href="$sndmix_8cpp.html#af3654a1002cc06298b6e7f3b9c28a2e6" title="_muldiv" alt="" coords="451,56,517,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Voice_SetFrequency_internal" name="Voice_SetFrequency_internal">
+<area shape="rect" id="node2" href="$win32_2mikmod__build_8h.html#aa15bcc34ea41dd752f176b69c4c8762f" title="Voice_SetFrequency" alt="" coords="198,5,341,32"/>
+<area shape="rect" id="node3" href="$mplayer_8c.html#a576fe5c46f2ff1e9e42f2db9a8712b7a" title="pt_UpdateVoices" alt="" coords="208,56,331,83"/>
+<area shape="rect" id="node4" href="$mplayer_8c.html#a1c12b46bfb6fb228606d5604863c50a5" title="Player_HandleTick" alt="" coords="390,56,522,83"/>
+</map>

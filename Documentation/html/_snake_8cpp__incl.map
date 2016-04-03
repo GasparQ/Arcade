@@ -1,15 +1,16 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Game/src/Snake.cpp" name="/home/veyrie_f/Documents/cpp_arcade/Game/src/Snake.cpp">
-<area shape="rect" id="node4" href="$_snake_8hpp.html" title="../include/Snake.hpp" alt="" coords="856,104,996,131"/>
-<area shape="rect" id="node16" href="$_game_component_8hpp.html" title="../../Commons/include\l/GameComponent.hpp" alt="" coords="763,278,916,319"/>
-<area shape="rect" id="node17" href="$_u_i_component_8hpp.html" title="../../Commons/include\l/UIComponent.hpp" alt="" coords="589,278,739,319"/>
-<area shape="rect" id="node18" href="$_arcade_system_8hpp.html" title="../../Commons/include\l/ArcadeSystem.hpp" alt="" coords="1135,97,1285,138"/>
-<area shape="rect" id="node20" href="$_high_score_component_8hpp.html" title="../../Commons/include\l/HighScoreComponent.hpp" alt="" coords="461,187,640,229"/>
-<area shape="rect" id="node29" href="$_game_2include_2_protocol_8hpp.html" title="../include/Protocol.hpp" alt="" coords="1356,104,1508,131"/>
-<area shape="rect" id="node9" href="$_a_component_8hpp.html" title="../../Commons/include\l/AComponent.hpp" alt="" coords="879,369,1029,410"/>
-<area shape="rect" id="node13" href="$_i_graph_8hpp.html" title="../../Graphique/include\l/IGraph.hpp" alt="" coords="993,278,1143,319"/>
-<area shape="rect" id="node14" href="$_a_game_8hpp.html" title="AGame.hpp" alt="" coords="1129,195,1220,221"/>
-<area shape="rect" id="node10" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="894,459,985,485"/>
-<area shape="rect" id="node15" href="$_i_game_8hpp.html" title="IGame.hpp" alt="" coords="1167,285,1253,312"/>
-<area shape="rect" id="node21" href="$include_2_load_high_score_8hpp.html" title="LoadHighScore.hpp" alt="" coords="339,285,473,312"/>
-<area shape="rect" id="node23" href="$include_2_high_score_8hpp.html" title="HighScore.hpp" alt="" coords="461,376,568,403"/>
+<area shape="rect" id="node5" href="$_snake_8hpp.html" title="../include/Snake.hpp" alt="" coords="1045,96,1185,123"/>
+<area shape="rect" id="node17" href="$_arcade_system_8hpp.html" title="../../Commons/include\l/ArcadeSystem.hpp" alt="" coords="1531,262,1681,303"/>
+<area shape="rect" id="node19" href="$_game_component_8hpp.html" title="../../Commons/include\l/GameComponent.hpp" alt="" coords="537,262,689,303"/>
+<area shape="rect" id="node20" href="$_u_i_component_8hpp.html" title="../../Commons/include\l/UIComponent.hpp" alt="" coords="766,262,916,303"/>
+<area shape="rect" id="node21" href="$_high_score_component_8hpp.html" title="../../Commons/include\l/HighScoreComponent.hpp" alt="" coords="464,171,643,213"/>
+<area shape="rect" id="node30" href="$_audio_component_8hpp.html" title="../../Commons/AudioComponent.hpp" alt="" coords="819,179,1052,205"/>
+<area shape="rect" id="node31" href="$_game_2include_2_protocol_8hpp.html" title="../include/Protocol.hpp" alt="" coords="1649,96,1801,123"/>
+<area shape="rect" id="node10" href="$_a_component_8hpp.html" title="../../Commons/include\l/AComponent.hpp" alt="" coords="879,353,1029,394"/>
+<area shape="rect" id="node14" href="$_i_graph_8hpp.html" title="../../Graphique/include\l/IGraph.hpp" alt="" coords="1179,262,1329,303"/>
+<area shape="rect" id="node15" href="$_a_game_8hpp.html" title="AGame.hpp" alt="" coords="1301,179,1392,205"/>
+<area shape="rect" id="node11" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="894,443,985,469"/>
+<area shape="rect" id="node16" href="$_i_game_8hpp.html" title="IGame.hpp" alt="" coords="1354,269,1440,296"/>
+<area shape="rect" id="node22" href="$include_2_load_high_score_8hpp.html" title="LoadHighScore.hpp" alt="" coords="377,269,512,296"/>
+<area shape="rect" id="node24" href="$include_2_high_score_8hpp.html" title="HighScore.hpp" alt="" coords="105,360,212,387"/>
 </map>

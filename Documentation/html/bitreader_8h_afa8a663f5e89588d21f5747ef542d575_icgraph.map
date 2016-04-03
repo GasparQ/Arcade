@@ -1,0 +1,11 @@
+<map id="FLAC__bitreader_read_raw_uint32" name="FLAC__bitreader_read_raw_uint32">
+<area shape="rect" id="node2" href="$bitreader_8h.html#af372422bf62b3e703ef7210ac0e2e2ea" title="FLAC__bitreader_read\l_raw_int32" alt="" coords="223,5,375,46"/>
+<area shape="rect" id="node3" href="$bitreader_8h.html#a6d69fe04dd39ddc4c6c2804275052616" title="FLAC__bitreader_read\l_raw_uint64" alt="" coords="223,70,375,111"/>
+<area shape="rect" id="node4" href="$bitreader_8h.html#acda8774501dc16ac2198d1be768c4680" title="FLAC__bitreader_read\l_uint32_little_endian" alt="" coords="223,135,375,177"/>
+<area shape="rect" id="node5" href="$bitreader_8h.html#a005f5de0552ce1fd27faa43e1cad8196" title="FLAC__bitreader_skip\l_bits_no_crc" alt="" coords="441,223,591,265"/>
+<area shape="rect" id="node6" href="$bitreader_8h.html#a00e783d8613440130f2a81f49416a538" title="FLAC__bitreader_skip\l_byte_block_aligned_no_crc" alt="" coords="205,253,392,294"/>
+<area shape="rect" id="node7" href="$bitreader_8h.html#a222e525a0eeecf636a43580eb738a9d2" title="FLAC__bitreader_read\l_byte_block_aligned_no_crc" alt="" coords="205,318,392,359"/>
+<area shape="rect" id="node8" href="$bitreader_8h.html#a006e08b1c0d743dcd15ea2177ddbb761" title="FLAC__bitreader_read\l_rice_signed" alt="" coords="223,383,375,425"/>
+<area shape="rect" id="node9" href="$bitreader_8h.html#a99b7ed52b8404ed6a9f3c5034d1ff365" title="FLAC__bitreader_read\l_utf8_uint32" alt="" coords="223,449,375,490"/>
+<area shape="rect" id="node10" href="$bitreader_8h.html#a4a9f259cfff57225f893bc3224c7ee75" title="FLAC__bitreader_read\l_utf8_uint64" alt="" coords="223,514,375,555"/>
+</map>

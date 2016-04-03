@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::CueSheet::set_track" name="FLAC::Metadata::CueSheet::set_track">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="238,5,421,46"/>
+<area shape="rect" id="node3" href="$lib_f_l_a_c_2metadata__object_8c.html#a682176f845b99956b3974bcc1bb63a20" title="FLAC__metadata_object\l_cuesheet_set_track" alt="" coords="246,70,413,111"/>
+<area shape="rect" id="node4" href="$class_f_l_a_c_1_1_metadata_1_1_cue_sheet_1_1_track.html#a4dd8fe7981c91433004dd84df9f3fa73" title="FLAC::Metadata::CueSheet\l::Track::get_track" alt="" coords="237,135,421,177"/>
+</map>

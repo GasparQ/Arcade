@@ -1,0 +1,7 @@
+<map id="FLAC__bitreader_clear" name="FLAC__bitreader_clear">
+<area shape="rect" id="node2" href="$group__flac__stream__decoder.html#ga0109ce87f2c648b224b68c08b3c090cb" title="FLAC__stream_decoder\l_flush" alt="" coords="208,70,371,111"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a8e27385f6a06fe594f46ead0d50c2937" title="See FLAC__stream_decoder_flush() " alt="" coords="419,5,581,46"/>
+<area shape="rect" id="node4" href="$group__flac__stream__decoder.html#ga2342cf4f3caf9ad20fca1373aaea0c27" title="FLAC__stream_decoder\l_reset" alt="" coords="419,70,581,111"/>
+<area shape="rect" id="node6" href="$playback_8h.html#ab7826a4c1b16912b0db2f69f1a8b7e58" title="FLAC_plugin__seek" alt="" coords="431,136,569,163"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a79ecbf60483e9f31aae7d1e117d4e8e5" title="See FLAC__stream_decoder_reset() " alt="" coords="629,70,792,111"/>
+</map>

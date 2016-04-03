@@ -1,0 +1,10 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$bookutil_8c.html#a50640af9d0fce982c9782ca52e828834" title="get_next_ivalue" alt="" coords="131,5,245,32"/>
+<area shape="rect" id="node6" href="$bookutil_8c.html#a25ec924593bf4fc64d82c3559454fedb" title="spinnit" alt="" coords="551,132,611,159"/>
+<area shape="rect" id="node7" href="$bookutil_8c.html#aac36c31bb4019d162a15e8ecdac1dfae" title="reset_next_value" alt="" coords="127,107,249,133"/>
+<area shape="rect" id="node8" href="$bookutil_8c.html#aa4905ee535b22a0fa19d0e5b70e1dfe8" title="build_tree_from_lengths0" alt="" coords="105,157,271,184"/>
+<area shape="rect" id="node3" href="$bookutil_8c.html#a3294feba84f7b80c5421e4fe6289803b" title="get_next_value" alt="" coords="345,5,455,32"/>
+<area shape="rect" id="node4" href="$bookutil_8c.html#a29edc4f28032fccfb86f4bdfd32feb9b" title="get_line_value" alt="" coords="529,5,634,32"/>
+<area shape="rect" id="node5" href="$bookutil_8c.html#a75839547489bdf091b1b93d9a1a907ff" title="get_line" alt="" coords="548,56,615,83"/>
+<area shape="rect" id="node9" href="$bookutil_8c.html#ab3eface47e7aaf85199733babcd8a540" title="build_tree_from_lengths" alt="" coords="320,144,480,171"/>
+</map>

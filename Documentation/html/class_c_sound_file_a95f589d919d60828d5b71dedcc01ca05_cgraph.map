@@ -1,0 +1,4 @@
+<map id="CSoundFile::RemoveSelectedSamples" name="CSoundFile::RemoveSelectedSamples">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a1e723142847712cc0f4ba02a880b5865" title="CSoundFile::DestroySample" alt="" coords="254,12,442,39"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#ae200af8cb3cc96cfe1a5d26a1369583d" title="CSoundFile::FreeSample" alt="" coords="491,12,659,39"/>
+</map>

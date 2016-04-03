@@ -1,0 +1,11 @@
+<map id="FLAC::Metadata::Iterator::is_valid" name="FLAC::Metadata::Iterator::is_valid">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#ab5713af7318f10a46bd8b26ce586947c" title="See FLAC__metadata_iterator_init(). " alt="" coords="222,5,389,46"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a1d2871fc1fdcc5dffee1eafd7019f4a0" title="See FLAC__metadata_iterator_next(). " alt="" coords="222,70,389,111"/>
+<area shape="rect" id="node4" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#ade6ee6b67b22115959e2adfc65d5d3b4" title="See FLAC__metadata_iterator_prev(). " alt="" coords="222,135,389,177"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a104bf7a3b416f0b228977f301c3ff50c" title="See FLAC__metadata_iterator_get_block_type(). " alt="" coords="222,201,389,242"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a9fb167ff8f0b058e244353a21541f3d7" title="See FLAC__metadata_iterator_get_block(). " alt="" coords="222,266,389,307"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a3123daf89fca2a8981c9f361f466a418" title="See FLAC__metadata_iterator_set_block(). " alt="" coords="222,331,389,373"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a67adaa4ae39cf405ee0f4674ca8836dd" title="See FLAC__metadata_iterator_delete_block(). " alt="" coords="222,397,389,438"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a86de6d0b21ac08b74a2ea8c1a9adce36" title="See FLAC__metadata_iterator_insert_block_before(). " alt="" coords="222,462,389,503"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#a73e7a3f7192f369cb3a19d078da504ab" title="See FLAC__metadata_iterator_insert_block_after(). " alt="" coords="222,527,389,569"/>
+</map>

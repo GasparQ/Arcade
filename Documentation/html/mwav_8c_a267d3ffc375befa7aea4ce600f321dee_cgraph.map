@@ -1,0 +1,10 @@
+<map id="Sample_LoadGeneric_internal" name="Sample_LoadGeneric_internal">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a2c5b3b0be9a73192b6e47a3a603a8467" title="_mm_read_string" alt="" coords="216,5,339,32"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#a6965a4ccce8bd5d43291b51d51135e65" title="_mm_read_I_ULONG" alt="" coords="203,56,351,83"/>
+<area shape="rect" id="node5" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="239,107,315,133"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#a106a6ec11b18c867cd7641a102d21c1c" title="_mm_read_I_UWORD" alt="" coords="200,157,355,184"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="432,233,528,260"/>
+<area shape="rect" id="node8" href="$mikmod__internals_8h.html#ace386a76d6c67435b3c24e5fd496aa24" title="SL_RegisterSample" alt="" coords="208,259,347,285"/>
+<area shape="rect" id="node9" href="$mikmod__internals_8h.html#a09c44b3dc4e45fdf9664a24b5fd450d4" title="SL_LoadSamples" alt="" coords="215,309,339,336"/>
+<area shape="rect" id="node4" href="$mmio_8c.html#ac7a9e6ca7b17a0e1c8163558b04cbb9f" title="_mm_read_I_UWORD" alt="" coords="403,56,557,83"/>
+</map>

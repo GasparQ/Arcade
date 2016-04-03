@@ -1,0 +1,12 @@
+<map id="get_file_stats_" name="get_file_stats_">
+<area shape="rect" id="node2" href="$group__flac__metadata__level1.html#ga2a055cca4e6e06ae62517c8b0fa6e8a3" title="FLAC__metadata_simple\l_iterator_init" alt="" coords="161,169,330,210"/>
+<area shape="rect" id="node9" href="$group__flac__metadata__level2.html#gaa15ead7230217de8e79f4af822cda490" title="FLAC__metadata_chain\l_write" alt="" coords="164,331,327,373"/>
+<area shape="rect" id="node3" href="$foreign__metadata_8h.html#ab44bbed523118b973d769a667a61e053" title="flac__foreign_metadata\l_write_to_flac" alt="" coords="404,5,561,46"/>
+<area shape="rect" id="node4" href="$foreign__metadata_8h.html#ab0ea284a7cc6a33e5d9549e2f524157b" title="flac__foreign_metadata\l_read_from_flac" alt="" coords="404,70,561,111"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#a67dc75f18d282f41696467f1fbf5c3e8" title="See FLAC__metadata_simple_iterator_init(). " alt="" coords="379,135,586,177"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__level0.html#gaa13138ab038694909964998a113817b4" title="FLAC__metadata_get\l_picture" alt="" coords="408,201,557,242"/>
+<area shape="rect" id="node8" href="$src_2plugin__common_2replaygain_8h.html#ad5fc2618526ba58c6265227e802ba361" title="FLAC_plugin__replaygain\l_get_from_file" alt="" coords="397,266,568,307"/>
+<area shape="rect" id="node7" href="$group__flacpp__metadata__level0.html#gaf11a81a7152bbe0e31d8fd6f29df8334" title="See FLAC__metadata_get_picture(). " alt="" coords="635,201,779,242"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_metadata_1_1_chain.html#a2341690885e2312013afc561e6fafd81" title="See FLAC__metadata_chain_write(). " alt="" coords="403,331,563,373"/>
+<area shape="rect" id="node11" href="$tags_8h.html#a06eefe595d2e6bf8f6577a11b7cb0e43" title="FLAC_plugin__tags_set" alt="" coords="402,397,563,424"/>
+</map>

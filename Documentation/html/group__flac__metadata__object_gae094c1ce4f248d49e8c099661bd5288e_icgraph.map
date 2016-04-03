@@ -1,0 +1,10 @@
+<map id="FLAC__metadata_object_vorbiscomment_find_entry_from" name="FLAC__metadata_object_vorbiscomment_find_entry_from">
+<area shape="rect" id="node2" href="$flac_2utils_8h.html#aebd2232c9b3b3f35830b73e650626719" title="flac__utils_get_channel\l_mask_tag" alt="" coords="282,5,441,46"/>
+<area shape="rect" id="node3" href="$test__lib_f_l_a_c_09_09_2metadata_8cpp.html#ad486ab18682b0911e1069ee1f5b4329b" title="test_metadata_object" alt="" coords="288,71,435,97"/>
+<area shape="rect" id="node5" href="$share_2grabbag_2replaygain_8c.html#a12b1528e48408386c8a541fff96f51a5" title="grabbag__replaygain\l_load_from_vorbiscomment" alt="" coords="270,122,453,163"/>
+<area shape="rect" id="node7" href="$tags_8h.html#ac9b2ba1af2f9dfb262c95ec809e4cb2f" title="FLAC_plugin__tags_get\l_tag_utf8" alt="" coords="281,187,442,229"/>
+<area shape="rect" id="node9" href="$tags_8h.html#a8947f1962430b82680ce0615ee7dee1c" title="FLAC_plugin__tags_add\l_tag_utf8" alt="" coords="279,253,443,294"/>
+<area shape="rect" id="node4" href="$test__lib_f_l_a_c_09_09_2metadata_8cpp.html#abb0b2cfa6ca9f0a08753883889c0c378" title="test_metadata" alt="" coords="534,71,639,97"/>
+<area shape="rect" id="node6" href="$src_2plugin__common_2replaygain_8h.html#ad5fc2618526ba58c6265227e802ba361" title="FLAC_plugin__replaygain\l_get_from_file" alt="" coords="501,122,672,163"/>
+<area shape="rect" id="node8" href="$tags_8h.html#a86fb5b6645721080fd8024661cb17967" title="FLAC_plugin__tags_get\l_tag_ucs2" alt="" coords="506,187,667,229"/>
+</map>

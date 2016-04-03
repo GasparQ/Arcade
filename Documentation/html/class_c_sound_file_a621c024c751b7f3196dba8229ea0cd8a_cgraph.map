@@ -1,0 +1,20 @@
+<map id="CSoundFile::ReadMDL" name="CSoundFile::ReadMDL">
+<area shape="rect" id="node2" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="737,90,775,117"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#af10fec50722149d3d68174ac99ab210e" title="CSoundFile::ReadSample" alt="" coords="217,268,391,294"/>
+<area shape="rect" id="node17" href="$class_c_sound_file.html#a846f81ea273e97bc67faf415165782fd" title="CSoundFile::AllocatePattern" alt="" coords="211,318,397,345"/>
+<area shape="rect" id="node18" href="$load__mdl_8cpp.html#a45a225feebcb2b0b209f658e4874c117" title="UnpackMDLTrack" alt="" coords="240,445,368,472"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#ae0d67886be5e003c76d43ed6b195a44c" title="CSoundFile::AllocateSample" alt="" coords="455,192,644,218"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#aca94e85e13eb247be49e9e71d46fdba5" title="CSoundFile::GetDeltaValue" alt="" coords="458,242,641,269"/>
+<area shape="rect" id="node7" href="$sndfile_8cpp.html#a9a3ee6ab5b0aa09683ecda8b248bb721" title="ITUnpack8Bit" alt="" coords="498,293,601,320"/>
+<area shape="rect" id="node9" href="$sndfile_8cpp.html#ae01ae0cf1cd6fb4759d658f874fd2d83" title="ITUnpack16Bit" alt="" coords="495,344,604,370"/>
+<area shape="rect" id="node10" href="$sndfile_8cpp.html#a6a7453a1ec30af9ed50667c1882f9793" title="AMSUnpack" alt="" coords="501,394,597,421"/>
+<area shape="rect" id="node11" href="$sndfile_8cpp.html#a68cbc6b8589dac8424805a7bc7ea5596" title="MDLReadBits" alt="" coords="497,445,601,472"/>
+<area shape="rect" id="node12" href="$sndfile_8cpp.html#a162aab797e521be1660e637d3f36351d" title="DMFUnpack" alt="" coords="501,496,597,522"/>
+<area shape="rect" id="node15" href="$class_c_sound_file.html#ae200af8cb3cc96cfe1a5d26a1369583d" title="CSoundFile::FreeSample" alt="" coords="465,40,633,66"/>
+<area shape="rect" id="node16" href="$class_c_sound_file.html#a61708907b348e5255233cfebd55f30f1" title="CSoundFile::AdjustSampleLoop" alt="" coords="446,90,653,117"/>
+<area shape="rect" id="node5" href="$stdafx_8h.html#a4d1b58b0db2411b4dcd711cac07ef041" title="GlobalAllocPtr" alt="" coords="703,192,809,218"/>
+<area shape="rect" id="node8" href="$load__it_8cpp.html#a802321d29880f39dc0264f3e4bee567b" title="ITReadBits" alt="" coords="712,318,800,345"/>
+<area shape="rect" id="node13" href="$load__dmf_8cpp.html#a74590f0ab3278ce0b40a366e6f0c0b00" title="DMFNewNode" alt="" coords="701,521,811,548"/>
+<area shape="rect" id="node14" href="$load__dmf_8cpp.html#ab6811a0401fe9cbd73c3897ca2820b0b" title="DMFReadBits" alt="" coords="859,496,965,522"/>
+<area shape="rect" id="node19" href="$load__mdl_8cpp.html#ac0228a33d539039c1b2333c9fd9bd0d6" title="ConvertMDLCommand" alt="" coords="471,546,627,573"/>
+</map>

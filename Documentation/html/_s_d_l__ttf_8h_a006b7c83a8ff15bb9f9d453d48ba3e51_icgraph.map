@@ -1,3 +1,3 @@
 <map id="TTF_CloseFont" name="TTF_CloseFont">
-<area shape="rect" id="node2" href="$class_s_d_l_graph.html#af0d0395d5b8b135feeefe65374476068" title="SDLGraph::~SDLGraph" alt="" coords="168,5,328,32"/>
+<area shape="rect" id="node2" href="$class_s_d_l_graph.html#af0d0395d5b8b135feeefe65374476068" title="Destructor of SDL lib that will Quit SDL, Quit TTF, close windows, fonts, destroy renderers and cache..." alt="" coords="168,5,328,32"/>
 </map>

@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="165,344,241,371"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a67d44e83d8c94a04d602ec7daf90966a" title="See FLAC__stream_encoder_set_verify() " alt="" coords="121,461,284,502"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a7b0829473587e15d10b128fd5e27b3cf" title="See FLAC__stream_encoder_set_compression_level() " alt="" coords="121,395,284,437"/>
+<area shape="rect" id="node19" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a5b3b843c1294a88ec3ce142a8c771cea" title="See FLAC__stream_encoder_set_channels() " alt="" coords="121,526,284,567"/>
+<area shape="rect" id="node21" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a05a63153a5e0a7c4122834beafbe9e66" title="See FLAC__stream_encoder_set_bits_per_sample() " alt="" coords="121,591,284,633"/>
+<area shape="rect" id="node23" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#af35ccb46fda06b30e1b2d03af0996098" title="See FLAC__stream_encoder_set_sample_rate() " alt="" coords="121,657,284,698"/>
+<area shape="rect" id="node25" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a6a9dfe3cb7943751888b486853577237" title="See FLAC__stream_encoder_set_total_samples_estimate() " alt="" coords="106,722,299,763"/>
+<area shape="rect" id="node27" href="$group__flac__metadata__object.html#gab3d728ca4455bda71cc231fdb91307fb" title="FLAC__metadata_object_new" alt="" coords="104,1115,301,1141"/>
+<area shape="rect" id="node28" href="$group__flac__metadata__object.html#ga0ec0c7ddd3a8832ee7a75bf47956b1c7" title="FLAC__metadata_object\l_vorbiscomment_entry\l_from_name_value_pair" alt="" coords="119,1165,286,1221"/>
+<area shape="rect" id="node31" href="$group__flac__metadata__object.html#gad04ef80ae5f852db8f3729a6ef8c1631" title="FLAC__metadata_object\l_vorbiscomment_append\l_comment" alt="" coords="119,1245,286,1301"/>
+<area shape="rect" id="node36" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#ade255a7fd915ebe4d4b3a1623beeb0a9" title="See FLAC__stream_encoder_set_metadata() " alt="" coords="121,787,284,829"/>
+<area shape="rect" id="node39" href="$class_f_l_a_c_1_1_encoder_1_1_file.html#abc91903fbc5cabbdc28dc6777b3e7c19" title="See FLAC__stream_encoder_init_FILE() " alt="" coords="132,853,273,894"/>
+<area shape="rect" id="node41" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#aac4cb649f8a41c7a310d610af2f5445b" title="See FLAC__stream_encoder_process_interleaved() " alt="" coords="121,918,284,959"/>
+<area shape="rect" id="node43" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a90e5e82bf38eb2300f2420bae2114b21" title="See FLAC__stream_encoder_finish() " alt="" coords="121,983,284,1025"/>
+<area shape="rect" id="node45" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a7d02295b73cbf9a073af5f16d1c0e8bf" title="See FLAC__stream_encoder_get_state() " alt="" coords="121,1049,284,1090"/>
+<area shape="rect" id="node47" href="$class_f_l_a_c_1_1_encoder_1_1_stream_1_1_state.html#a7cbc1b32b54af4606abf81b6c336262e" title="FLAC::Encoder::Stream\l::State::resolved_as\l_cstring" alt="" coords="121,1325,284,1381"/>
+<area shape="rect" id="node49" href="$group__flac__metadata__object.html#ga66bbe27dba68ba77be5af83986a280ea" title="FLAC__metadata_object\l_delete" alt="" coords="119,1405,286,1446"/>
+<area shape="rect" id="node4" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abb12dc332530d995a8a929a5b51ffc8b" title="FLAC::Encoder::Stream\l::is_valid" alt="" coords="369,723,532,765"/>
+<area shape="rect" id="node5" href="$group__flac__stream__encoder.html#ga5f4ac18a7207d2864fed72d284486f9e" title="FLAC__stream_encoder\l_set_verify" alt="" coords="369,397,532,438"/>
+<area shape="rect" id="node7" href="$group__flac__stream__encoder.html#ga03495bcd0aae71116c701b0dcf311c4b" title="FLAC__stream_encoder\l_set_compression_level" alt="" coords="369,331,532,373"/>
+<area shape="rect" id="node8" href="$group__flac__stream__encoder.html#gadbd1084da109cf0ddd007a5c64027504" title="FLAC__stream_encoder\l_set_do_mid_side_stereo" alt="" coords="625,70,796,111"/>
+<area shape="rect" id="node9" href="$group__flac__stream__encoder.html#ga7b7d294dccd5df7c6c67e75f59798f48" title="FLAC__stream_encoder\l_set_loose_mid_side_stereo" alt="" coords="617,135,804,177"/>
+<area shape="rect" id="node10" href="$group__flac__stream__encoder.html#ga83d38fd6fca7abbf8363bdc2536a299e" title="FLAC__stream_encoder\l_set_apodization" alt="" coords="629,201,792,242"/>
+<area shape="rect" id="node11" href="$group__flac__stream__encoder.html#gac3bde5abdaa340674c5659e2e85d2611" title="FLAC__stream_encoder\l_set_max_lpc_order" alt="" coords="629,266,792,307"/>
+<area shape="rect" id="node12" href="$group__flac__stream__encoder.html#ga0888d739c952ff73456bf90e48634514" title="FLAC__stream_encoder\l_set_qlp_coeff_precision" alt="" coords="627,331,794,373"/>
+<area shape="rect" id="node13" href="$group__flac__stream__encoder.html#ga3aa94a1aec1cf40c37e54434c86bb50d" title="FLAC__stream_encoder\l_set_do_qlp_coeff_prec\l_search" alt="" coords="629,396,792,452"/>
+<area shape="rect" id="node14" href="$group__flac__stream__encoder.html#gaa839d19b6d1b30ba0407d419bdb6fe67" title="FLAC__stream_encoder\l_set_do_escape_coding" alt="" coords="629,475,792,517"/>
+<area shape="rect" id="node15" href="$group__flac__stream__encoder.html#ga7fbc05ec9abd249a400fccb9f189e55e" title="FLAC__stream_encoder\l_set_do_exhaustive_model\l_search" alt="" coords="621,540,801,596"/>
+<area shape="rect" id="node16" href="$group__flac__stream__encoder.html#gae3e2dd204f276d051bf1a118383bfda2" title="FLAC__stream_encoder\l_set_min_residual_partition_order" alt="" coords="603,619,819,661"/>
+<area shape="rect" id="node17" href="$group__flac__stream__encoder.html#ga6de153da5a8eeeb1be2271c27fa58b37" title="FLAC__stream_encoder\l_set_max_residual_partition_order" alt="" coords="601,685,821,726"/>
+<area shape="rect" id="node18" href="$group__flac__stream__encoder.html#ga668de93e7061bce21475c062ffab3e18" title="FLAC__stream_encoder\l_set_rice_parameter_search_dist" alt="" coords="603,5,818,46"/>
+<area shape="rect" id="node20" href="$group__flac__stream__encoder.html#gabfc9c883c124a849b5b42a87c30e10a5" title="FLAC__stream_encoder\l_set_channels" alt="" coords="369,462,532,503"/>
+<area shape="rect" id="node22" href="$group__flac__stream__encoder.html#ga5a21cf7f86a81df6ba72714a6b917aa3" title="FLAC__stream_encoder\l_set_bits_per_sample" alt="" coords="369,527,532,569"/>
+<area shape="rect" id="node24" href="$group__flac__stream__encoder.html#ga108c3f4fbdcaa744ddbb125f91cb3838" title="FLAC__stream_encoder\l_set_sample_rate" alt="" coords="369,593,532,634"/>
+<area shape="rect" id="node26" href="$group__flac__stream__encoder.html#ga0d3f45052f2f7379c73e2b027c7f956c" title="FLAC__stream_encoder\l_set_total_samples_estimate" alt="" coords="355,658,547,699"/>
+<area shape="rect" id="node29" href="$group__flac__format.html#ga14980d2e4b0ff2cdd4f22fcf8e75b54c" title="FLAC__format_vorbiscomment\l_entry_name_is_legal" alt="" coords="349,1181,552,1222"/>
+<area shape="rect" id="node30" href="$group__flac__format.html#gae0707c9d46b2af02f1e145bdae331605" title="FLAC__format_vorbiscomment\l_entry_value_is_legal" alt="" coords="349,1115,552,1157"/>
+<area shape="rect" id="node32" href="$group__flac__metadata__object.html#ga0c23f59f465f302b35a2d3ab1eae07e7" title="FLAC__metadata_object\l_vorbiscomment_insert\l_comment" alt="" coords="367,1245,534,1301"/>
+<area shape="rect" id="node33" href="$group__flac__format.html#ga6878e238052fc0f7109b55129d64b4e5" title="FLAC__format_vorbiscomment\l_entry_is_legal" alt="" coords="869,1223,1072,1265"/>
+<area shape="rect" id="node34" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="627,1311,794,1367"/>
+<area shape="rect" id="node35" href="$group__flac__metadata__object.html#gadf034b2c385e7932c6be2d724a0deae3" title="FLAC__metadata_object\l_vorbiscomment_set_comment" alt="" coords="609,1194,813,1235"/>
+<area shape="rect" id="node37" href="$group__flac__stream__encoder.html#ga67b30b1a67a9274f7708a22154b225f6" title="FLAC__stream_encoder\l_set_metadata" alt="" coords="369,789,532,830"/>
+<area shape="rect" id="node38" href="$ogg__encoder__aspect_8h.html#a52d82498157cc613e235728656214896" title="FLAC__ogg_encoder_aspect\l_set_num_metadata" alt="" coords="615,789,806,830"/>
+<area shape="rect" id="node40" href="$group__flac__stream__encoder.html#ga78653fea5d9bc490fff34e3ef86de944" title="FLAC__stream_encoder\l_init_FILE" alt="" coords="369,854,532,895"/>
+<area shape="rect" id="node42" href="$group__flac__stream__encoder.html#ga67c2ff5b23b945180797de420b1f27c0" title="FLAC__stream_encoder\l_process_interleaved" alt="" coords="369,919,532,961"/>
+<area shape="rect" id="node44" href="$group__flac__stream__encoder.html#gab2c1e5477c1e3fe9ad0d722ff8eecda2" title="FLAC__stream_encoder\l_finish" alt="" coords="369,985,532,1026"/>
+<area shape="rect" id="node46" href="$group__flac__stream__encoder.html#gaff7284e55f01b59ed8f03317df510992" title="FLAC__stream_encoder\l_get_state" alt="" coords="369,1050,532,1091"/>
+<area shape="rect" id="node48" href="$group__flac__stream__encoder.html#gafd3324a31c36de1eda05c3bc0c7f6176" title="FLAC__stream_encoder\l_get_resolved_state_string" alt="" coords="361,1333,540,1374"/>
+<area shape="rect" id="node50" href="$lib_f_l_a_c_2metadata__object_8c.html#adca9ba17ba21fe5f9e9c19ba2784ea38" title="FLAC__metadata_object\l_delete_data" alt="" coords="367,1405,534,1446"/>
+</map>

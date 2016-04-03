@@ -1,6 +1,10 @@
 var searchData=
 [
   ['g',['g',['../_s_d_l__opengl__glext_8h.html#acaceb3a655ff28b75259860bcb868f9f',1,'SDL_opengl_glext.h']]],
+  ['gdmheader',['GDMHEADER',['../load__gdm_8c.html#a66fe22b95dc60ad2e4218c9d86fa3af0',1,'load_gdm.c']]],
+  ['gdmnote',['GDMNOTE',['../load__gdm_8c.html#a48f943d44258b0cdda3d5acbafe6537a',1,'load_gdm.c']]],
+  ['gdmsample',['GDMSAMPLE',['../load__gdm_8c.html#aeb0d1905f925065f1070be33981ad189',1,'load_gdm.c']]],
+  ['gdmtrack',['GDMTRACK',['../load__gdm_8c.html#ac277fa3801cc8eb68c636a22c27ccd17',1,'load_gdm.c']]],
   ['genmode',['genMode',['../_s_d_l__opengl__glext_8h.html#a862536ffb3cfb1646f6b649ba2348e5f',1,'SDL_opengl_glext.h']]],
   ['getprocaddress',['getProcAddress',['../_s_d_l__opengl__glext_8h.html#a49955d55ac58f463496a20b9221a8c32',1,'SDL_opengl_glext.h']]],
   ['glbitfield',['GLbitfield',['../_s_d_l__opengl_8h.html#a0fb936f29008789fb46b434319f68cc9',1,'GLbitfield():&#160;SDL_opengl.h'],['../_s_d_l__opengles2__gl2_8h.html#a0fb936f29008789fb46b434319f68cc9',1,'GLbitfield():&#160;SDL_opengles2_gl2.h']]],
@@ -39,6 +43,7 @@ var searchData=
   ['glushort',['GLushort',['../_s_d_l__opengl_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468',1,'GLushort():&#160;SDL_opengl.h'],['../_s_d_l__opengles2__gl2_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468',1,'GLushort():&#160;SDL_opengles2_gl2.h']]],
   ['glvdpausurfacenv',['GLvdpauSurfaceNV',['../_s_d_l__opengl__glext_8h.html#a67592bca213196f7614d0e3e7683cdd0',1,'SDL_opengl_glext.h']]],
   ['glvoid',['GLvoid',['../_s_d_l__opengl_8h.html#a1e5eb1ac5e47603cc80ab58338b92393',1,'GLvoid():&#160;SDL_opengl.h'],['../_s_d_l__opengles2__gl2_8h.html#a1e5eb1ac5e47603cc80ab58338b92393',1,'GLvoid():&#160;SDL_opengles2_gl2.h']]],
+  ['gop',['GoP',['../video_8h.html#a2eb1694a4192d5f013003b7faddf1823',1,'video.h']]],
   ['green',['green',['../_s_d_l__opengl__glext_8h.html#ac14cda87cf6c751d53b65a3cd41c35a1',1,'SDL_opengl_glext.h']]],
   ['group',['group',['../_s_d_l__opengl__glext_8h.html#a907548ce3e5521fd5399f50e8df298bf',1,'group():&#160;SDL_opengl_glext.h'],['../_s_d_l__opengles2__gl2ext_8h.html#a907548ce3e5521fd5399f50e8df298bf',1,'group():&#160;SDL_opengles2_gl2ext.h']]],
   ['group_5fsize_5fx',['group_size_x',['../_s_d_l__opengl__glext_8h.html#a9ff5efccd386bdb4de1c7aab2edcc654',1,'SDL_opengl_glext.h']]],

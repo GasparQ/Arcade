@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::VorbisComment::delete_comment" name="FLAC::Metadata::VorbisComment::delete_comment">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="275,5,458,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="283,69,450,125"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="507,69,674,125"/>
+</map>

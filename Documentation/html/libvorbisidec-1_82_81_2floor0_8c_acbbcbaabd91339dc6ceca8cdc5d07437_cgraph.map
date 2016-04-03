@@ -1,0 +1,7 @@
+<map id="vorbis_lsp_to_curve" name="vorbis_lsp_to_curve">
+<area shape="rect" id="node2" href="$libvorbisidec-1_82_81_2misc_8h.html#a632de8c87c1a6b0d673019cd2213bf23" title="MULT32" alt="" coords="227,5,299,32"/>
+<area shape="rect" id="node3" href="$libvorbisidec-1_82_81_2floor0_8c.html#a40139073a013528e2eb748f368730cde" title="vorbis_coslook_i" alt="" coords="203,56,322,83"/>
+<area shape="rect" id="node4" href="$libvorbisidec-1_82_81_2floor0_8c.html#a5d9b372fc3acf91e038d2922b80a21c7" title="vorbis_fromdBlook_i" alt="" coords="193,107,333,133"/>
+<area shape="rect" id="node5" href="$libvorbisidec-1_82_81_2floor0_8c.html#aaa16cc34e09c6c592dded95ab4f17fe9" title="vorbis_invsqlook_i" alt="" coords="198,157,327,184"/>
+<area shape="rect" id="node6" href="$libvorbisidec-1_82_81_2misc_8h.html#a9ab59730b34c0bf6a023562f1db8a78d" title="MULT31_SHIFT15" alt="" coords="197,208,329,235"/>
+</map>

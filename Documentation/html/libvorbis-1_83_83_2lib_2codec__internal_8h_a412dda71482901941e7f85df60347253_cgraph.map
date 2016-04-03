@@ -1,0 +1,4 @@
+<map id="floor1_encode" name="floor1_encode">
+<area shape="rect" id="node2" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#af2e77bfb7ad82b12c81e725d7b4c2133" title="oggpack_write" alt="" coords="347,5,453,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2codebook_8c.html#aef10100390bdb0f59f150e45c5255afa" title="vorbis_book_encode" alt="" coords="157,31,299,57"/>
+</map>

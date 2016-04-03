@@ -1,0 +1,24 @@
+<map id="_muldiv" name="_muldiv">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#afb8da08e5de6cae3ed7c411e39ec2fbf" title="CSoundFile::ReadMed" alt="" coords="151,5,305,32"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#a0bc06230cfe662d4de16efa14426aa5f" title="CSoundFile::GetPeriodFromNote" alt="" coords="121,309,335,336"/>
+<area shape="rect" id="node11" href="$class_c_sound_file.html#aa74c7074f61936d8bd95e2e4ca334d07" title="CSoundFile::ReadNote" alt="" coords="1595,360,1752,387"/>
+<area shape="rect" id="node17" href="$class_c_sound_file.html#ab451674f91ef7138f3cda4eea023a0d1" title="CSoundFile::GetFreqFromPeriod" alt="" coords="122,436,334,463"/>
+<area shape="rect" id="node18" href="$class_c_sound_file.html#aff6f51ba6963e5e1b5e2db6abc7566b9" title="CSoundFile::CanPackSample" alt="" coords="130,385,326,412"/>
+<area shape="rect" id="node21" href="$class_c_sound_file.html#ae9723c01a91a99cd9c389ae9612c1b68" title="CSoundFile::FadeSong" alt="" coords="884,563,1041,589"/>
+<area shape="rect" id="node22" href="$class_c_sound_file.html#a7487548309ac30b5816d001c3cb256a8" title="CSoundFile::GlobalFadeSong" alt="" coords="384,107,579,133"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="413,5,550,32"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="654,5,762,32"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#adae8e888d4a9b43fbb88b42bb4947183" title="CSoundFile::SaveIT" alt="" coords="411,411,551,437"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#a67626347127871c29e0b331d1064ecdc" title="CSoundFile::NoteChange" alt="" coords="396,309,567,336"/>
+<area shape="rect" id="node15" href="$class_c_sound_file.html#af15205008316ddc8d73ee05913e296ae" title="CSoundFile::ExtendedMODCommands" alt="" coords="837,208,1088,235"/>
+<area shape="rect" id="node16" href="$class_c_sound_file.html#a1244ae5f59a76ebd281d09e2def31aec" title="CSoundFile::ExtendedS3MCommands" alt="" coords="839,157,1086,184"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a8e2a40955ee267596666ce0b69813f3f" title="ModPlug_ExportIT" alt="" coords="643,411,773,437"/>
+<area shape="rect" id="node9" href="$class_c_sound_file.html#ae7914e0e2fdeb8832bc3ed0f4353c728" title="CSoundFile::ProcessEffects" alt="" coords="1137,233,1325,260"/>
+<area shape="rect" id="node14" href="$class_c_sound_file.html#a12de9a0cd538134fed95248af7d11da3" title="CSoundFile::RetrigNote" alt="" coords="627,259,789,285"/>
+<area shape="rect" id="node10" href="$class_c_sound_file.html#aef5ab72c81ade31306d23724c0b30194" title="CSoundFile::ProcessRow" alt="" coords="1373,284,1547,311"/>
+<area shape="rect" id="node12" href="$class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7" title="CSoundFile::Read" alt="" coords="1801,461,1930,488"/>
+<area shape="rect" id="node13" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a10e70316c7a8219fdb397e6fdeb6b321" title="ModPlug_Read" alt="" coords="1979,461,2090,488"/>
+<area shape="rect" id="node19" href="$class_c_sound_file.html#a5466a6835e3a3a87e01eaf16297fecaf" title="CSoundFile::SaveXM" alt="" coords="407,461,555,488"/>
+<area shape="rect" id="node20" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a69fd5c321221d24f6a95ba991cc349d4" title="ModPlug_ExportXM" alt="" coords="639,461,777,488"/>
+<area shape="rect" id="node23" href="$class_c_sound_file.html#ae7c7687544ae1dff0d5a441a548d8f99" title="CSoundFile::SetSpeed" alt="" coords="885,107,1040,133"/>
+</map>

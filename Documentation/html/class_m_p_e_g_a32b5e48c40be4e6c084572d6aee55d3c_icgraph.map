@@ -1,0 +1,8 @@
+<map id="MPEG::Play" name="MPEG::Play">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#aa2301e9ca5e2b4d7fecc8968019a60ab" title="MPEG::GetStatus" alt="" coords="149,56,277,83"/>
+<area shape="rect" id="node3" href="$class_m_p_e_g.html#a32884e4534c3236db53f9c3efaf0d6c3" title="MPEG::Seek" alt="" coords="327,5,425,32"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a22ed0ed7f19f6ad621f7c73d085d83a0" title="SMPEG_play" alt="" coords="325,107,427,133"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#af1eccbda7f844fa0a18e9b0b9ced735c" title="SMPEG_status" alt="" coords="475,56,589,83"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a5dc227914aed5353a54ff305405c58d4" title="SMPEG_seek" alt="" coords="479,5,585,32"/>
+<area shape="rect" id="node5" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="637,56,688,83"/>
+</map>

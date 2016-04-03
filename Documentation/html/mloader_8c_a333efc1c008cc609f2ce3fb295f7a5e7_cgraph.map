@@ -1,0 +1,24 @@
+<map id="Player_Load" name="Player_Load">
+<area shape="rect" id="node2" href="$mloader_8c.html#a9d91e79a5b88e3538726027aacaa83ff" title="Player_LoadFP" alt="" coords="150,203,261,230"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#a34f78cdb0003974fd35daead50e14961" title="_mm_new_file_reader" alt="" coords="517,47,667,74"/>
+<area shape="rect" id="node5" href="$mloader_8c.html#a2fae628507c3fc370597e4d482d81ad7" title="Player_LoadGeneric" alt="" coords="320,203,459,230"/>
+<area shape="rect" id="node23" href="$mikmod__internals_8h.html#a488a8129583caa09f3a32d0d1c049261" title="_mm_delete_file_reader" alt="" coords="309,254,469,280"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="955,28,1051,55"/>
+<area shape="rect" id="node6" href="$mloader_8c.html#a8c2e25c76cdbb33b067e7d18b291d97c" title="Player_LoadGeneric\l_internal" alt="" coords="523,200,661,241"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#ac0610585b62ded5a13825c69c025c402" title="_mm_iobase_setcur" alt="" coords="727,26,865,52"/>
+<area shape="rect" id="node8" href="$mikmod__internals_8h.html#a0dbf66368b7408fc115e84e8981349ad" title="_mm_iobase_revert" alt="" coords="728,76,864,103"/>
+<area shape="rect" id="node9" href="$mikmod__internals_8h.html#af89f77e8d346aa5c902db88bda53adee" title="UniInit" alt="" coords="766,127,826,154"/>
+<area shape="rect" id="node10" href="$mikmod__internals_8h.html#a199114564b0945a8cc30523274e6af19" title="UniCleanup" alt="" coords="751,178,841,204"/>
+<area shape="rect" id="node11" href="$mikmod__internals_8h.html#a200c95c55b410b5505676cb216606cf1" title="MikMod_SetNumVoices\l_internal" alt="" coords="715,229,877,270"/>
+<area shape="rect" id="node16" href="$mloader_8c.html#a4eb118ca8b86e872877db8bbd49c4fdd" title="Player_Free" alt="" coords="750,295,842,322"/>
+<area shape="rect" id="node17" href="$mloader_8c.html#a168cb47cf889b821b97af8883326b476" title="Player_Free_internal" alt="" coords="932,350,1073,376"/>
+<area shape="rect" id="node21" href="$mikmod__internals_8h.html#a09c44b3dc4e45fdf9664a24b5fd450d4" title="SL_LoadSamples" alt="" coords="734,396,858,423"/>
+<area shape="rect" id="node22" href="$mikmod__internals_8h.html#a5016c14430dfe9f799c06e04d1ebd9fe" title="Player_Init" alt="" coords="754,447,838,474"/>
+<area shape="rect" id="node12" href="$mdriver_8c.html#a4da9b50ffd9ccd4e7b356076ea19176f" title="MikMod_DisableOutput\l_internal" alt="" coords="1129,149,1287,190"/>
+<area shape="rect" id="node13" href="$mdriver_8c.html#ade652196cbe6b0decef25ab8d0fd9d32" title="MikMod_Exit_internal" alt="" coords="929,182,1076,208"/>
+<area shape="rect" id="node14" href="$mdriver_8c.html#aa777a525009cca5a3190f5ba301f8557" title="Voice_Stop_internal" alt="" coords="933,232,1072,259"/>
+<area shape="rect" id="node15" href="$mdriver_8c.html#a737a110e30343a9e5aa73889a33cc40d" title="MikMod_EnableOutput\l_internal" alt="" coords="925,284,1080,325"/>
+<area shape="rect" id="node18" href="$mikmod__internals_8h.html#a1191da554c9eee1fa80c29b08fb6be6c" title="Player_Exit_internal" alt="" coords="1139,350,1277,376"/>
+<area shape="rect" id="node19" href="$mplayer_8c.html#a9606a2d09eba8f79f30c765da6e5c456" title="Player_Stop_internal" alt="" coords="1337,350,1479,376"/>
+<area shape="rect" id="node20" href="$mikmod__internals_8h.html#a4da9b50ffd9ccd4e7b356076ea19176f" title="MikMod_DisableOutput\l_internal" alt="" coords="1529,342,1687,384"/>
+</map>

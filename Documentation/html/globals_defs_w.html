@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -105,6 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_defs_v.html#index_v"><span>v</span></a></li>
       <li class="current"><a href="globals_defs_w.html#index_w"><span>w</span></a></li>
       <li><a href="globals_defs_x.html#index_x"><span>x</span></a></li>
+      <li><a href="globals_defs_y.html#index_y"><span>y</span></a></li>
       <li><a href="globals_defs_z.html#index_z"><span>z</span></a></li>
     </ul>
   </div>
@@ -114,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -208,11 +211,96 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>wattrset
 : <a class="el" href="curses_8h.html#a0071bf069365871b5ce80553200cc742">curses.h</a>
 </li>
+<li>WAVE
+: <a class="el" href="mixer_8c.html#a231ae87a2701dff2ad68bbba3e12d2b1">mixer.c</a>
+, <a class="el" href="wavestream_8c.html#a231ae87a2701dff2ad68bbba3e12d2b1">wavestream.c</a>
+</li>
+<li>WAVE_FORMAT_EXTENSIBLE
+: <a class="el" href="load__wav_8cpp.html#a97cbfca9458338218863c675bea01194">load_wav.cpp</a>
+</li>
+<li>WAVE_FORMAT_PCM
+: <a class="el" href="stdafx_8h.html#abf8ff615d1a5d5b851f5c0b40bf16fef">stdafx.h</a>
+</li>
+<li>WAVE_MONO
+: <a class="el" href="wavestream_8c.html#a8a4175217f91a76c90a2c80a557f5e41">wavestream.c</a>
+</li>
+<li>WAVE_STEREO
+: <a class="el" href="wavestream_8c.html#ada226115a8c6bb4a2d7cbca8cab45337">wavestream.c</a>
+</li>
+<li>WB
+: <a class="el" href="floatdct_8cpp.html#a9b2a44784b5711a72705c875ddfb7761">floatdct.cpp</a>
+</li>
 <li>wcwidth
 : <a class="el" href="nc__mingw_8h.html#ad7e6019f460bcc568edd28ee2d55ac55">nc_mingw.h</a>
 </li>
 <li>wdeleteln
 : <a class="el" href="curses_8h.html#acf6183eabc8f98972070a6b5cfc9a9b7">curses.h</a>
+</li>
+<li>WFIR_16BITSHIFT
+: <a class="el" href="fastmix_8cpp.html#a8027dc3a3b61aba8a998b57351e128f9">fastmix.cpp</a>
+</li>
+<li>WFIR_8SHIFT
+: <a class="el" href="fastmix_8cpp.html#a06d413dcbfdd2e1c7168f9d3986ed1be">fastmix.cpp</a>
+</li>
+<li>WFIR_BLACKMAN3T61
+: <a class="el" href="fastmix_8cpp.html#aed953dc185bf9d59d06b3ff705b3298d">fastmix.cpp</a>
+</li>
+<li>WFIR_BLACKMAN3T67
+: <a class="el" href="fastmix_8cpp.html#a5ab7b995ed7fd04a5c103e84aede89c9">fastmix.cpp</a>
+</li>
+<li>WFIR_BLACKMAN4T74
+: <a class="el" href="fastmix_8cpp.html#a713356726392d6205f3d20c027ccee4c">fastmix.cpp</a>
+</li>
+<li>WFIR_BLACKMAN4T92
+: <a class="el" href="fastmix_8cpp.html#a405541a79bc80fb04dc8b7703b92d34e">fastmix.cpp</a>
+</li>
+<li>WFIR_BLACKMANEXACT
+: <a class="el" href="fastmix_8cpp.html#afee9f1f25b1de3da9d3e284e1137b53c">fastmix.cpp</a>
+</li>
+<li>WFIR_CUTOFF
+: <a class="el" href="fastmix_8cpp.html#af7ea6f8738d95296b96df447aeb218e3">fastmix.cpp</a>
+</li>
+<li>WFIR_FRACBITS
+: <a class="el" href="fastmix_8cpp.html#aa3276b5b27c1f9679225e709fc42f8cd">fastmix.cpp</a>
+</li>
+<li>WFIR_FRACHALVE
+: <a class="el" href="fastmix_8cpp.html#a280d5f6b2eebf106e0b7a754845bb023">fastmix.cpp</a>
+</li>
+<li>WFIR_FRACMASK
+: <a class="el" href="fastmix_8cpp.html#af8679026b177c58905f694da40fc4f10">fastmix.cpp</a>
+</li>
+<li>WFIR_FRACSHIFT
+: <a class="el" href="fastmix_8cpp.html#aa3fb857658f7915a4036e201a4c336eb">fastmix.cpp</a>
+</li>
+<li>WFIR_HAMMING
+: <a class="el" href="fastmix_8cpp.html#ad6ff1068edd2579f61c6b77634488df2">fastmix.cpp</a>
+</li>
+<li>WFIR_HANN
+: <a class="el" href="fastmix_8cpp.html#a8465124665fefd4407bbb0ead56ea862">fastmix.cpp</a>
+</li>
+<li>WFIR_KAISER4T
+: <a class="el" href="fastmix_8cpp.html#aa99b6e6ec299fcad29cde329e974024d">fastmix.cpp</a>
+</li>
+<li>WFIR_LOG2WIDTH
+: <a class="el" href="fastmix_8cpp.html#aa2ac221126bad55256892508051f77cc">fastmix.cpp</a>
+</li>
+<li>WFIR_LUTLEN
+: <a class="el" href="fastmix_8cpp.html#af3645862b19634db55c454d4ee1ac0c1">fastmix.cpp</a>
+</li>
+<li>WFIR_QUANTBITS
+: <a class="el" href="fastmix_8cpp.html#a7c7d542beb995a5e3614df18d5b2932b">fastmix.cpp</a>
+</li>
+<li>WFIR_QUANTSCALE
+: <a class="el" href="fastmix_8cpp.html#add8c4be50a4ce8ae323ab41cf128b7af">fastmix.cpp</a>
+</li>
+<li>WFIR_SMPSPERWING
+: <a class="el" href="fastmix_8cpp.html#a2f91fab5d55091971274d2c7094e2345">fastmix.cpp</a>
+</li>
+<li>WFIR_TYPE
+: <a class="el" href="fastmix_8cpp.html#ae8a1ec7a1972a97f272e4a7dd4f153ee">fastmix.cpp</a>
+</li>
+<li>WFIR_WIDTH
+: <a class="el" href="fastmix_8cpp.html#af535de08e67471836dabc9c052aa2a2a">fastmix.cpp</a>
 </li>
 <li>wgetdelay
 : <a class="el" href="curses_8h.html#a91309ea8b7ca8b103649e124f6c443b4">curses.h</a>
@@ -226,6 +314,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>wgetstr
 : <a class="el" href="curses_8h.html#a4a91338ffd68815c86da797d1efab04f">curses.h</a>
 </li>
+<li>WHEELSHIFT
+: <a class="el" href="load__mid_8cpp.html#aecc2bea957e480a37b8e8a4a9ed41016">load_mid.cpp</a>
+</li>
+<li>WI
+: <a class="el" href="plugin__winamp2_2configure_8c.html#a3e32e4fe626fcec0998dcadc1e616720">configure.c</a>
+</li>
 <li>wide_char_size
 : <a class="el" href="term_8h.html#afe0fbc94a43f051aa496959535b23472">term.h</a>
 </li>
@@ -234,6 +328,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>winchstr
 : <a class="el" href="curses_8h.html#a1da61a3479b22fed2327bd58f5aaadd0">curses.h</a>
+</li>
+<li>WINDOWSIZE
+: <a class="el" href="_m_p_e_gaudio_8h.html#a7cf6abdb80c7e45e52a9484ed4f8ac0e">MPEGaudio.h</a>
 </li>
 <li>winsertln
 : <a class="el" href="curses_8h.html#a0338709acc7e1137f9555e87a89dab11">curses.h</a>
@@ -247,6 +344,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>WINVER
 : <a class="el" href="nc__mingw_8h.html#a966cd377b9f3fdeb1432460c33352af1">nc_mingw.h</a>
 </li>
+<li>WM_WA_MPEG_EOF
+: <a class="el" href="in2_8h.html#a5bd4ab819070b50eb7663c6423a2dcfc">in2.h</a>
+</li>
+<li>WORD_ALIGN
+: <a class="el" href="libvorbis-1_83_83_2lib_2block_8c.html#a30463aa9e07abedb8216acbd4548fbdc">block.c</a>
+</li>
+<li>WS
+: <a class="el" href="plugin__winamp2_2configure_8c.html#ae8b7738bea780be1d91f886f23fe0504">configure.c</a>
+</li>
+<li>wsprintf
+: <a class="el" href="stdafx_8h.html#ab2c46f8340e65c34bfb349224f1e0253">stdafx.h</a>
+</li>
 <li>wstandend
 : <a class="el" href="curses_8h.html#a044632e202ac2ea234ec08724f7d6a2c">curses.h</a>
 </li>
@@ -257,7 +366,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

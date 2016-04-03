@@ -1,0 +1,6 @@
+<map id="ov_read" name="ov_read">
+<area shape="rect" id="node2" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#ac8d21b854dbcb022dab0b46521e9de31" title="vorbis_synthesis_pcmout" alt="" coords="123,5,293,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2vorbisfile_8c.html#a361c3a0cebdc25c7be81aaa8f441ddf8" title="ov_info" alt="" coords="176,56,240,83"/>
+<area shape="rect" id="node4" href="$libvorbisidec-1_82_81_2misc_8h.html#ae21ae2a03205fb6c47c3ccd492b25e59" title="CLIP_TO_15" alt="" coords="159,107,257,133"/>
+<area shape="rect" id="node5" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a81b9782f945ca76509f79cdf5777b4cb" title="vorbis_synthesis_read" alt="" coords="132,157,284,184"/>
+</map>

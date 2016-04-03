@@ -1,0 +1,10 @@
+<map id="CSoundFile::GetNNAChannel" name="CSoundFile::GetNNAChannel">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a8df1ca54b04dc0dd13b963bb37b72955" title="CSoundFile::CheckNNA" alt="" coords="251,5,416,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#ae7914e0e2fdeb8832bc3ed0f4353c728" title="CSoundFile::ProcessEffects" alt="" coords="974,31,1162,57"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#a12de9a0cd538134fed95248af7d11da3" title="CSoundFile::RetrigNote" alt="" coords="465,31,626,57"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aef5ab72c81ade31306d23724c0b30194" title="CSoundFile::ProcessRow" alt="" coords="1211,31,1384,57"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#aa74c7074f61936d8bd95e2e4ca334d07" title="CSoundFile::ReadNote" alt="" coords="1432,31,1589,57"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7" title="CSoundFile::Read" alt="" coords="1638,31,1767,57"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a10e70316c7a8219fdb397e6fdeb6b321" title="ModPlug_Read" alt="" coords="1817,31,1927,57"/>
+<area shape="rect" id="node9" href="$class_c_sound_file.html#af15205008316ddc8d73ee05913e296ae" title="CSoundFile::ExtendedMODCommands" alt="" coords="675,81,925,108"/>
+</map>

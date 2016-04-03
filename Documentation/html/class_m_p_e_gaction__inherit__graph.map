@@ -1,0 +1,6 @@
+<map id="MPEGaction" name="MPEGaction">
+<area shape="rect" id="node2" href="$class_m_p_e_gaudioaction.html" title="MPEGaudioaction" alt="" coords="5,80,131,107"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideoaction.html" title="MPEGvideoaction" alt="" coords="155,80,281,107"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudio.html" title="MPEGaudio" alt="" coords="22,155,113,181"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gvideo.html" title="MPEGvideo" alt="" coords="173,155,264,181"/>
+</map>

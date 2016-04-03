@@ -1,3 +1,4 @@
 <map id="SDL_RenderPresent" name="SDL_RenderPresent">
-<area shape="rect" id="node2" href="$class_s_d_l_graph.html#a0de9c17b48b65fdc049a0bb8ec4483a1" title="SDLGraph::display" alt="" coords="198,5,330,32"/>
+<area shape="rect" id="node2" href="$class_s_d_l_graph.html#a0de9c17b48b65fdc049a0bb8ec4483a1" title="Function that will display all of the components send in parameters to the screen. " alt="" coords="198,5,330,32"/>
+<area shape="rect" id="node3" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="239,56,289,83"/>
 </map>

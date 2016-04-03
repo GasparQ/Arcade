@@ -1,0 +1,10 @@
+<map id="_ilog" name="_ilog">
+<area shape="rect" id="node2" href="$libvorbisidec-1_82_81_2codebook_8h.html#ad821fef31bb1a8da7303ec63befe6006" title="vorbis_book_init_decode" alt="" coords="113,56,279,83"/>
+<area shape="rect" id="node3" href="$libvorbisidec-1_82_81_2sharedbook_8c.html#aec05a8c0eabef16f1074fa1d596ce6e4" title="_book_maptype1_quantvals" alt="" coords="104,107,288,133"/>
+<area shape="rect" id="node4" href="$localcodebook_8h.html#a2e4cf9084f67bbbdf68500dc850e33b2" title="vorbis_staticbook_pack" alt="" coords="343,5,502,32"/>
+<area shape="rect" id="node5" href="$libvorbisidec-1_82_81_2codebook_8h.html#a5eb28707ade9f87ff5d1cbf11fb89be6" title="vorbis_staticbook_unpack" alt="" coords="336,56,509,83"/>
+<area shape="rect" id="node6" href="$bookutil_8h.html#a46685e1f108a0a705dfe0a6c22016f2c" title="codebook_load" alt="" coords="368,107,477,133"/>
+<area shape="rect" id="node7" href="$distribution_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="557,132,608,159"/>
+<area shape="rect" id="node8" href="$bookutil_8h.html#ad87e59f6127d6aa5868af58aa64d966b" title="write_codebook" alt="" coords="366,208,479,235"/>
+<area shape="rect" id="node9" href="$latticebuild_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="557,208,608,235"/>
+</map>

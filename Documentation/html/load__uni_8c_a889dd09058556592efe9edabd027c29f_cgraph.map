@@ -1,0 +1,12 @@
+<map id="UNI_Load" name="UNI_Load">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a43ba01073701e2567b9b150135a9b011" title="_mm_read_M_UWORD" alt="" coords="141,5,302,32"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#a106a6ec11b18c867cd7641a102d21c1c" title="_mm_read_I_UWORD" alt="" coords="144,56,299,83"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="173,107,269,133"/>
+<area shape="rect" id="node5" href="$mikmod__internals_8h.html#aa2b727908967c122365ef4088639ded7" title="AllocPositions" alt="" coords="169,157,274,184"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#a4153516e17cbbf8b21a86865220937ed" title="_mm_read_M_UWORDS" alt="" coords="136,208,307,235"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#a722f3aedb018057f4dc6bc6da44ca07e" title="AllocSamples" alt="" coords="170,259,273,285"/>
+<area shape="rect" id="node8" href="$mikmod__internals_8h.html#acb221281ef0f87119f54b450bbb91e17" title="AllocInstruments" alt="" coords="161,309,281,336"/>
+<area shape="rect" id="node9" href="$mikmod__internals_8h.html#a2340d9d9f51408584fe13e058499b917" title="AllocPatterns" alt="" coords="171,360,271,387"/>
+<area shape="rect" id="node10" href="$mikmod__internals_8h.html#a14b57d88fefe72192ceb93402f1dcaea" title="_mm_read_I_UWORDS" alt="" coords="140,411,303,437"/>
+<area shape="rect" id="node11" href="$mikmod__internals_8h.html#aa96e38c5178f640fc4242b85809f5f75" title="AllocTracks" alt="" coords="176,461,267,488"/>
+</map>

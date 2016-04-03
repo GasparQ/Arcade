@@ -1,0 +1,7 @@
+<map id="FLAC::Decoder::Stream::get_decode_position" name="FLAC::Decoder::Stream::get_decode_position">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a2cf1cecdf1dc129e950034c76bef8b3a" title="FLAC::Decoder::Stream\l::is_valid" alt="" coords="216,5,379,46"/>
+<area shape="rect" id="node3" href="$group__flac__stream__decoder.html#ga11507d25b6fdbd1efd5ee642923730fa" title="FLAC__stream_decoder\l_get_decode_position" alt="" coords="216,70,379,111"/>
+<area shape="rect" id="node4" href="$bitreader_8c.html#af9ec09ffd07bb9ff748d00235662cd61" title="FLAC__bitreader_is\l_consumed_byte_aligned" alt="" coords="678,41,847,82"/>
+<area shape="rect" id="node5" href="$stream__decoder_8c.html#a601cc83672f082f1369b579425f4570d" title="FLAC__stream_decoder\l_get_input_bytes_unconsumed" alt="" coords="427,99,629,141"/>
+<area shape="rect" id="node6" href="$bitreader_8c.html#a9da26624ab8ed8a47cd2947746c6a1ab" title="FLAC__bitreader_get\l_input_bits_unconsumed" alt="" coords="679,106,846,147"/>
+</map>

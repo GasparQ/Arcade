@@ -1,0 +1,6 @@
+<map id="process_vector" name="process_vector">
+<area shape="rect" id="node2" href="$metrics_8c.html#a1d57896bf0a4cf34cbb21ca2d0a94f80" title="process_one" alt="" coords="165,31,261,57"/>
+<area shape="rect" id="node5" href="$bookutil_8c.html#a25ec924593bf4fc64d82c3559454fedb" title="spinnit" alt="" coords="183,81,243,108"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#aa6bbd2467f16f0ce31ad363b45841bab" title="vorbis_book_besterror" alt="" coords="310,5,461,32"/>
+<area shape="rect" id="node4" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#a19abd9f8ad7e141510d918ffd96bb91a" title="vorbis_book_codelen" alt="" coords="313,56,457,83"/>
+</map>

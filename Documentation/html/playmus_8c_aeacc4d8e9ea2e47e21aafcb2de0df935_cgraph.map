@@ -1,0 +1,10 @@
+<map id="Menu" name="Menu">
+<area shape="rect" id="node2" href="$music_8c.html#a02c77937576794d6a504c9977522b334" title="Mix_PauseMusic" alt="" coords="116,5,239,32"/>
+<area shape="rect" id="node3" href="$music_8c.html#a5d190c81b73b8c2f741d425a4b877447" title="Mix_ResumeMusic" alt="" coords="110,56,245,83"/>
+<area shape="rect" id="node4" href="$music_8c.html#adf80fb086bf15e6c681b011376102321" title="Mix_HaltMusic" alt="" coords="123,107,232,133"/>
+<area shape="rect" id="node7" href="$music_8c.html#a2920f6ddd71a206803a7e8cc3db83231" title="Mix_VolumeMusic" alt="" coords="113,157,242,184"/>
+<area shape="rect" id="node8" href="$music_8c.html#aec6cbb8c9563427e2bbfebb0467bfcb0" title="Mix_PlayingMusic" alt="" coords="113,208,241,235"/>
+<area shape="rect" id="node9" href="$music_8c.html#a165a2cfd951b943bab82d24db18a5e63" title="Mix_PausedMusic" alt="" coords="113,259,242,285"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="301,132,417,159"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="294,183,423,209"/>
+</map>

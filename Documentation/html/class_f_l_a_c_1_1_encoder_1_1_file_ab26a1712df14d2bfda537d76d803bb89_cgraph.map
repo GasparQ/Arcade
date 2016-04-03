@@ -1,0 +1,14 @@
+<map id="FLAC::Encoder::File::init_ogg" name="FLAC::Encoder::File::init_ogg">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a78c593ff0e5b59804a9e629799e18036" title="See FLAC__stream_encoder_init_ogg_stream() " alt="" coords="195,201,357,242"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abb12dc332530d995a8a929a5b51ffc8b" title="FLAC::Encoder::Stream\l::is_valid" alt="" coords="405,5,568,46"/>
+<area shape="rect" id="node4" href="$group__flac__stream__encoder.html#ga87af71d74c09f7d482f9f420ef9bf826" title="FLAC__stream_encoder\l_init_ogg_stream" alt="" coords="405,70,568,111"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a3061b822212a78e981a56877f895038d" title="FLAC::Encoder::Stream\l::read_callback_" alt="" coords="405,135,568,177"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#acbeed6309e1f9ef04990fc492180d1bc" title="FLAC::Encoder::Stream\l::write_callback_" alt="" coords="405,201,568,242"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a7c243c5ee0a7de32bbf390daa10d8a43" title="FLAC::Encoder::Stream\l::seek_callback_" alt="" coords="405,266,568,307"/>
+<area shape="rect" id="node11" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#ae939dd38bd45f140d35de673bee50be6" title="FLAC::Encoder::Stream\l::tell_callback_" alt="" coords="405,331,568,373"/>
+<area shape="rect" id="node12" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abe1facc2a279e86de213bd4e251c14cd" title="FLAC::Encoder::Stream\l::metadata_callback_" alt="" coords="405,397,568,438"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="827,211,874,237"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a973237637c09a14579797c0bc445baf1" title="See FLAC__StreamEncoderReadCallback. " alt="" coords="616,145,779,186"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#afa6c90811480bb4fccb1cf3da8160c47" title="See FLAC__StreamEncoderWriteCallback. " alt="" coords="616,262,779,303"/>
+<area shape="rect" id="node13" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#affc9c53d8b6e0cfcb3bc85255e0bf1ac" title="See FLAC__StreamEncoderMetadataCallback. " alt="" coords="616,394,779,435"/>
+</map>

@@ -1,10 +1,11 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_rect.h" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_rect.h">
-<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="836,259,937,285"/>
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="808,259,909,285"/>
 <area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="83,483,181,509"/>
-<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1531,483,1629,509"/>
-<area shape="rect" id="node19" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="882,184,973,211"/>
-<area shape="rect" id="node20" href="$_s_d_l__pixels_8h.html" title="SDL_pixels.h" alt="" coords="1363,184,1463,211"/>
-<area shape="rect" id="node21" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="961,109,1063,136"/>
-<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1315,333,1416,360"/>
-<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1309,408,1421,435"/>
+<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1451,483,1549,509"/>
+<area shape="rect" id="node20" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="1033,184,1124,211"/>
+<area shape="rect" id="node21" href="$_s_d_l__pixels_8h.html" title="SDL_pixels.h" alt="" coords="765,184,864,211"/>
+<area shape="rect" id="node22" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="940,109,1041,136"/>
+<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1235,333,1336,360"/>
+<area shape="rect" id="node7" href="$types_8h.html" title="sys/types.h" alt="" coords="896,333,987,360"/>
+<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1222,408,1335,435"/>
 </map>

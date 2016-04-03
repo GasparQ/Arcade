@@ -1,0 +1,7 @@
+<map id="vorbis_staticbook_unpack" name="vorbis_staticbook_unpack">
+<area shape="rect" id="node2" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a7e3e346e19e4a74bfe4e21f90578eee6" title="oggpack_read" alt="" coords="267,5,370,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#a6ffad9cca3bc0e3c913059a5a948d70e" title="_ilog" alt="" coords="294,56,343,83"/>
+<area shape="rect" id="node4" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a6483ce3b4718d510fd506a7d0099d8e4" title="oggpack_bytes" alt="" coords="263,107,374,133"/>
+<area shape="rect" id="node5" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#aec05a8c0eabef16f1074fa1d596ce6e4" title="_book_maptype1_quantvals" alt="" coords="227,157,411,184"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#a0ed7bb03c373f902d26796714fb97c5b" title="vorbis_staticbook_destroy" alt="" coords="231,208,406,235"/>
+</map>

@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['tagitem',['tagITEM',['../structtag_i_t_e_m.html',1,'']]],
-  ['tagmenu',['tagMENU',['../structtag_m_e_n_u.html',1,'']]],
-  ['term',['term',['../structterm.html',1,'']]],
-  ['termtype',['termtype',['../structtermtype.html',1,'']]],
-  ['text',['TEXT',['../struct_t_e_x_t.html',1,'']]],
-  ['tinfo_5ffkeys',['tinfo_fkeys',['../structtinfo__fkeys.html',1,'']]],
-  ['token',['token',['../structtoken.html',1,'']]],
-  ['typenode',['typenode',['../structtypenode.html',1,'']]]
+  ['ratios',['RATIOS',['../struct_r_a_t_i_o_s.html',1,'']]],
+  ['raw_5fdecode_5foptions_5ft',['raw_decode_options_t',['../structraw__decode__options__t.html',1,'']]],
+  ['raw_5fencode_5foptions_5ft',['raw_encode_options_t',['../structraw__encode__options__t.html',1,'']]],
+  ['replaygain_5fsynthesis_5fspec_5ft',['replaygain_synthesis_spec_t',['../structreplaygain__synthesis__spec__t.html',1,'']]],
+  ['resizefailed',['ResizeFailed',['../class_resize_failed.html',1,'']]]
 ];

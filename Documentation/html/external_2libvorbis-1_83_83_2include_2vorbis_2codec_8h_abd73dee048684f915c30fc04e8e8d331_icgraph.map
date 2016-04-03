@@ -1,0 +1,12 @@
+<map id="vorbis_synthesis_halfrate_p" name="vorbis_synthesis_halfrate_p">
+<area shape="rect" id="node2" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#adc4f36cb355bb7ab7a62c2133e315208" title="ov_halfrate_p" alt="" coords="239,43,339,69"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a10f51fe54d7334136cca8927602ba277" title="ov_pcm_seek" alt="" coords="238,131,341,157"/>
+<area shape="rect" id="node9" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a4d30c9fa8b330b75863c76cb4c20ee48" title="ov_read_filter" alt="" coords="239,181,339,208"/>
+<area shape="rect" id="node11" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a373af2a3d0353dd40e5ce5687859fdbd" title="ov_read_float" alt="" coords="239,232,339,259"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#aebae91900bda92038fb9c14f3f6ec28c" title="ov_crosslap" alt="" coords="407,5,499,32"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ace67cdf6531919e05b3bb164db45181a" title="ov_halfrate" alt="" coords="410,80,497,107"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#acca7a3b0c08acd43a2d70a03591232ec" title="ov_time_seek" alt="" coords="402,131,505,157"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a88868174d5c99bbfea1ecf27b5987a1a" title="ov_pcm_seek_lap" alt="" coords="390,181,517,208"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ac6957ebd8b9d2477507eb1c23f904bec" title="ov_time_seek_lap" alt="" coords="566,131,693,157"/>
+<area shape="rect" id="node10" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a208c65166b8d9c868167dc9d389fdba8" title="ov_read" alt="" coords="419,232,487,259"/>
+</map>

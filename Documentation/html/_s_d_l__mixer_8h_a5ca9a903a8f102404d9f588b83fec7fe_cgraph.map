@@ -1,0 +1,6 @@
+<map id="Mix_ExpireChannel" name="Mix_ExpireChannel">
+<area shape="rect" id="node2" href="$mixer_8c.html#a7a88ac603f100a614df67887d6d5b8bf" title="Mix_ExpireChannel" alt="" coords="190,61,325,88"/>
+<area shape="rect" id="node3" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="381,5,497,32"/>
+<area shape="rect" id="node4" href="$_s_d_l__timer_8h.html#a0b9bc71d6287e0ffafdc3419760fe2b3" title="Get the number of milliseconds since the SDL library initialization. " alt="" coords="385,93,493,120"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="374,144,503,171"/>
+</map>

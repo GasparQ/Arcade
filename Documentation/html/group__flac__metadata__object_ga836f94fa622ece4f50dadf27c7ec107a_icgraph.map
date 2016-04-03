@@ -1,0 +1,18 @@
+<map id="FLAC__metadata_object_seektable_resize_points" name="FLAC__metadata_object_seektable_resize_points">
+<area shape="rect" id="node2" href="$group__flac__metadata__object.html#ga0c658260aaffb126486f5d1e211b53e5" title="FLAC__metadata_object\l_seektable_insert_point" alt="" coords="254,5,421,46"/>
+<area shape="rect" id="node7" href="$test__lib_f_l_a_c_09_09_2metadata_8cpp.html#ad486ab18682b0911e1069ee1f5b4329b" title="test_metadata_object" alt="" coords="520,261,667,288"/>
+<area shape="rect" id="node8" href="$group__flac__metadata__object.html#ga5a865f792845cbf22b5935c3d96568d1" title="FLAC__metadata_object\l_seektable_delete_point" alt="" coords="254,70,421,111"/>
+<area shape="rect" id="node10" href="$group__flac__metadata__object.html#gae9d8c43dc78bde9778c4e57c5f74b025" title="FLAC__metadata_object\l_seektable_template_append\l_placeholders" alt="" coords="242,489,433,545"/>
+<area shape="rect" id="node13" href="$group__flac__metadata__object.html#ga9ce1940ca29d71739316cf104256c078" title="FLAC__metadata_object\l_seektable_template_append_point" alt="" coords="224,569,451,610"/>
+<area shape="rect" id="node14" href="$group__flac__metadata__object.html#gac27a59879fa8cdf47b75f8d73de82f0e" title="FLAC__metadata_object\l_seektable_template_append\l_points" alt="" coords="242,135,433,191"/>
+<area shape="rect" id="node15" href="$group__flac__metadata__object.html#gab96c6585578c87f6853731860e2872e0" title="FLAC__metadata_object\l_seektable_template_append\l_spaced_points" alt="" coords="242,265,433,321"/>
+<area shape="rect" id="node16" href="$group__flac__metadata__object.html#gabf797b64b96808cabf1d995573680fe9" title="FLAC__metadata_object\l_seektable_template_append\l_spaced_points_by_samples" alt="" coords="242,345,433,401"/>
+<area shape="rect" id="node17" href="$group__flac__metadata__object.html#gaee6a1f08321b56a3fa65af94dd7830cd" title="FLAC__metadata_object\l_seektable_template_sort" alt="" coords="252,425,423,466"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_seek_table.html#a688ee146faf497ef96e953008adcc95a" title="See FLAC__metadata_object_seektable_insert_point() " alt="" coords="499,5,687,46"/>
+<area shape="rect" id="node4" href="$metadata__object_8cpp.html#a04452e1b8bd768f583ee52387febcdde" title="test_metadata_object\l_seektable" alt="" coords="743,70,889,111"/>
+<area shape="rect" id="node5" href="$metadata__object_8cpp.html#ad486ab18682b0911e1069ee1f5b4329b" title="test_metadata_object" alt="" coords="944,97,1091,124"/>
+<area shape="rect" id="node6" href="$test__lib_f_l_a_c_09_09_2metadata_8cpp.html#abb0b2cfa6ca9f0a08753883889c0c378" title="test_metadata" alt="" coords="1139,161,1245,188"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_metadata_1_1_seek_table.html#af5962d076051a3e46379475c3f2b4fa8" title="See FLAC__metadata_object_seektable_delete_point() " alt="" coords="499,70,687,111"/>
+<area shape="rect" id="node11" href="$seektable_8c.html#ac468072a140b78f111740801d5ca6cfc" title="grabbag__seektable\l_convert_specification\l_to_template" alt="" coords="517,417,669,473"/>
+<area shape="rect" id="node12" href="$operations__shorthand__seektable_8c.html#aebb13ea74dba8b3598ecd98d41baa88f" title="do_shorthand_operation\l__add_seekpoints" alt="" coords="736,425,896,466"/>
+</map>

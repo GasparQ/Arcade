@@ -1,7 +1,12 @@
 <map id="Snake::compute" name="Snake::compute">
-<area shape="rect" id="node2" href="$class_high_score_component.html#a68a9a13345949f7eb3e48bcf7a38d446" title="HighScoreComponent\l::UpdatePseudo" alt="" coords="171,5,322,46"/>
-<area shape="rect" id="node3" href="$class_high_score_component.html#a7f753ddb2c0bc1b891437599c7aaca4a" title="HighScoreComponent\l::submit" alt="" coords="171,70,322,111"/>
-<area shape="rect" id="node6" href="$class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5" title="Snake::goAhead" alt="" coords="187,136,306,163"/>
-<area shape="rect" id="node4" href="$class_load_high_score.html#a23f8e0823e3d81c22925028c386fa8db" title="LoadHighScore::setHighScore" alt="" coords="371,52,570,79"/>
-<area shape="rect" id="node5" href="$class_load_high_score.html#abe988bee8c025745dc8dd7c9ea73a63a" title="LoadHighScore::flush" alt="" coords="397,103,544,129"/>
+<area shape="rect" id="node2" href="$class_high_score_component.html#a68a9a13345949f7eb3e48bcf7a38d446" title="HighScoreComponent\l::UpdatePseudo" alt="" coords="173,5,323,46"/>
+<area shape="rect" id="node3" href="$class_high_score_component.html#a7f753ddb2c0bc1b891437599c7aaca4a" title="HighScoreComponent\l::submit" alt="" coords="173,70,323,111"/>
+<area shape="rect" id="node6" href="$class_snake.html#aba31d7861c6a44b78a3ff13be40559eb" title="Snake::getMoveUnit" alt="" coords="177,136,319,163"/>
+<area shape="rect" id="node7" href="$class_snake.html#ab6bca74fbcef494e90b69b8d77756be0" title="Snake::playARound" alt="" coords="179,187,317,213"/>
+<area shape="rect" id="node9" href="$class_u_i_component.html#ab4240efff43d21f275dc48e48bff8cbf" title="UIComponent::setText" alt="" coords="171,237,325,264"/>
+<area shape="rect" id="node10" href="$class_a_component.html#a97ec0acb5b6df39659d8ac4559c882bd" title="AComponent::setPos" alt="" coords="175,288,321,315"/>
+<area shape="rect" id="node11" href="$class_u_i_component.html#a9a55d81c4034d3f693fb5366b0bff1dd" title="UIComponent::getText" alt="" coords="171,339,325,365"/>
+<area shape="rect" id="node4" href="$class_load_high_score.html#a23f8e0823e3d81c22925028c386fa8db" title="LoadHighScore::setHighScore" alt="" coords="374,52,573,79"/>
+<area shape="rect" id="node5" href="$class_load_high_score.html#abe988bee8c025745dc8dd7c9ea73a63a" title="LoadHighScore::flush" alt="" coords="400,103,547,129"/>
+<area shape="rect" id="node8" href="$class_snake.html#a4c6815bbc4ee21e93970c741f92dd1f5" title="Snake::goAhead" alt="" coords="414,187,533,213"/>
 </map>

@@ -1,0 +1,9 @@
+<map id="MikMod_EnableOutput_internal" name="MikMod_EnableOutput_internal">
+<area shape="rect" id="node2" href="$mdriver_8c.html#ab58aa2d3bbe211f1a865e8a861854751" title="MikMod_SetNumVoices\l_internal" alt="" coords="208,27,371,69"/>
+<area shape="rect" id="node8" href="$win32_2mikmod__build_8h.html#aa7d37a3cbbe6ba392396718db9d4e099" title="MikMod_EnableOutput" alt="" coords="212,93,367,120"/>
+<area shape="rect" id="node3" href="$win32_2mikmod__build_8h.html#a762add4d44fdb6d62ad8a2f64a2baec4" title="MikMod_SetNumVoices" alt="" coords="419,5,581,32"/>
+<area shape="rect" id="node4" href="$mloader_8c.html#a8c2e25c76cdbb33b067e7d18b291d97c" title="Player_LoadGeneric\l_internal" alt="" coords="431,57,569,98"/>
+<area shape="rect" id="node5" href="$win32_2mikmod__build_8h.html#a373940737ca88906ab5ecb9646a763b1" title="Player_LoadGeneric" alt="" coords="629,64,768,91"/>
+<area shape="rect" id="node6" href="$win32_2mikmod__build_8h.html#a73506cefb979ecd02fa925271f9ac069" title="Player_LoadFP" alt="" coords="817,64,927,91"/>
+<area shape="rect" id="node7" href="$win32_2mikmod__build_8h.html#abea9eb9ef17918ca1dc9953cbe64d2ce" title="Player_Load" alt="" coords="977,64,1071,91"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CSoundFile::CreateStereoMix" name="CSoundFile::CreateStereoMix">
+<area shape="rect" id="node2" href="$fastmix_8cpp.html#a917b9a0b955757899d1d1ddc646ac14a" title="X86_InitMixBuffer" alt="" coords="259,5,386,32"/>
+<area shape="rect" id="node3" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="303,56,342,83"/>
+<area shape="rect" id="node4" href="$fastmix_8cpp.html#a86e8cc3a56e7d81781fb020fcf03b457" title="X86_EndChannelOfs" alt="" coords="251,107,395,133"/>
+</map>

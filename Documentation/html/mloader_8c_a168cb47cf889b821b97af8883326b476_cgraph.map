@@ -1,0 +1,5 @@
+<map id="Player_Free_internal" name="Player_Free_internal">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a1191da554c9eee1fa80c29b08fb6be6c" title="Player_Exit_internal" alt="" coords="195,12,333,39"/>
+<area shape="rect" id="node3" href="$mplayer_8c.html#a9606a2d09eba8f79f30c765da6e5c456" title="Player_Stop_internal" alt="" coords="382,12,525,39"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a4da9b50ffd9ccd4e7b356076ea19176f" title="MikMod_DisableOutput\l_internal" alt="" coords="574,5,733,46"/>
+</map>

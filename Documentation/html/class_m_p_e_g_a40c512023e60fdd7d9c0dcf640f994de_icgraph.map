@@ -1,0 +1,7 @@
+<map id="MPEG::GetAudio" name="MPEG::GetAudio">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a04da9a63f05b55b5c0c23fb0516350ad" title="MPEG::WantedSpec" alt="" coords="176,5,320,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_g.html#ab15d6d0913760ca9c9fbc08676fea20a" title="MPEG::ActualSpec" alt="" coords="180,56,316,83"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a24fc7c1e4dfc10742e9da19f75c5647e" title="SMPEG_playAudio" alt="" coords="181,107,315,133"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a09bfcf7e4410d487f4bc37d53eab83a4" title="SMPEG_wantedSpec" alt="" coords="368,5,517,32"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a8e679c9e64d9f8b16df2cdf3d08fa6c7" title="SMPEG_actualSpec" alt="" coords="371,56,514,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="FLAC::Encoder::Stream::set_do_qlp_coeff_prec_search" name="FLAC::Encoder::Stream::set_do_qlp_coeff_prec_search">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abb12dc332530d995a8a929a5b51ffc8b" title="FLAC::Encoder::Stream\l::is_valid" alt="" coords="216,5,379,46"/>
+<area shape="rect" id="node3" href="$group__flac__stream__encoder.html#ga3aa94a1aec1cf40c37e54434c86bb50d" title="FLAC__stream_encoder\l_set_do_qlp_coeff_prec\l_search" alt="" coords="216,69,379,125"/>
+</map>

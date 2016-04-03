@@ -1,0 +1,7 @@
+<map id="FLAC::Encoder::Stream::metadata_callback" name="FLAC::Encoder::Stream::metadata_callback">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abe1facc2a279e86de213bd4e251c14cd" title="FLAC::Encoder::Stream\l::metadata_callback_" alt="" coords="216,38,379,79"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#ad39dffdff05aa5e75bffb0bf897bf097" title="See FLAC__stream_encoder_init_stream() " alt="" coords="427,5,589,46"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a78c593ff0e5b59804a9e629799e18036" title="See FLAC__stream_encoder_init_ogg_stream() " alt="" coords="427,70,589,111"/>
+<area shape="rect" id="node4" href="$class_f_l_a_c_1_1_encoder_1_1_file.html#a00efbde7cb05d219cdbb7a325b0577a3" title="See FLAC__stream_encoder_init_file() " alt="" coords="637,5,779,46"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_encoder_1_1_file.html#ab26a1712df14d2bfda537d76d803bb89" title="See FLAC__stream_encoder_init_ogg_file() " alt="" coords="637,70,779,111"/>
+</map>

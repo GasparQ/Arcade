@@ -1,0 +1,12 @@
+<map id="FLAC::Encoder::File::init" name="FLAC::Encoder::File::init">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#ad39dffdff05aa5e75bffb0bf897bf097" title="See FLAC__stream_encoder_init_stream() " alt="" coords="195,169,357,210"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abb12dc332530d995a8a929a5b51ffc8b" title="FLAC::Encoder::Stream\l::is_valid" alt="" coords="405,5,568,46"/>
+<area shape="rect" id="node4" href="$group__flac__stream__encoder.html#ga85221c4ceb9f22dfd4983d8f07a9a35b" title="FLAC__stream_encoder\l_init_stream" alt="" coords="405,70,568,111"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#acbeed6309e1f9ef04990fc492180d1bc" title="FLAC::Encoder::Stream\l::write_callback_" alt="" coords="405,135,568,177"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a7c243c5ee0a7de32bbf390daa10d8a43" title="FLAC::Encoder::Stream\l::seek_callback_" alt="" coords="405,201,568,242"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#ae939dd38bd45f140d35de673bee50be6" title="FLAC::Encoder::Stream\l::tell_callback_" alt="" coords="405,266,568,307"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abe1facc2a279e86de213bd4e251c14cd" title="FLAC::Encoder::Stream\l::metadata_callback_" alt="" coords="405,331,568,373"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="827,280,874,307"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#afa6c90811480bb4fccb1cf3da8160c47" title="See FLAC__StreamEncoderWriteCallback. " alt="" coords="616,194,779,235"/>
+<area shape="rect" id="node11" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#affc9c53d8b6e0cfcb3bc85255e0bf1ac" title="See FLAC__StreamEncoderMetadataCallback. " alt="" coords="616,331,779,373"/>
+</map>

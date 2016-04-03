@@ -1,0 +1,34 @@
+<map id="FLAC__metadata_object_clone" name="FLAC__metadata_object_clone">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#aa6e6fbd804baaba187f9e8859a9b05de" title="FLAC::Metadata::Prototype\l::operator=" alt="" coords="222,266,405,307"/>
+<area shape="rect" id="node11" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a553ddf0187b31218ecfb0d7ba259fda0" title="FLAC::Metadata::Prototype\l::assign_object" alt="" coords="222,943,405,985"/>
+<area shape="rect" id="node13" href="$metadata__object_8cpp.html#a135a527833ad55c93c76c51709a86894" title="test_metadata_object\l_streaminfo" alt="" coords="737,1243,884,1285"/>
+<area shape="rect" id="node17" href="$metadata__object_8cpp.html#a2b831434e5f6dd9b7d631a7f132d17a7" title="test_metadata_object\l_padding" alt="" coords="737,1159,884,1201"/>
+<area shape="rect" id="node19" href="$metadata__object_8cpp.html#a403211b365e65ba214e8bc0390a1cc75" title="test_metadata_object\l_application" alt="" coords="737,963,884,1005"/>
+<area shape="rect" id="node21" href="$metadata__object_8cpp.html#a04452e1b8bd768f583ee52387febcdde" title="test_metadata_object\l_seektable" alt="" coords="737,630,884,671"/>
+<area shape="rect" id="node24" href="$metadata__object_8cpp.html#ada429d9581343f40dc8fe43416a2a4b8" title="test_metadata_object\l_vorbiscomment" alt="" coords="737,695,884,737"/>
+<area shape="rect" id="node27" href="$metadata__object_8cpp.html#a5d3068c9230d3b666f8166eb5ad99136" title="test_metadata_object\l_cuesheet" alt="" coords="737,822,884,863"/>
+<area shape="rect" id="node30" href="$metadata__object_8cpp.html#aee5b9473e08b1e242beb544152223985" title="test_metadata_object\l_picture" alt="" coords="737,1094,884,1135"/>
+<area shape="rect" id="node32" href="$test__lib_f_l_a_c_09_09_2metadata_8cpp.html#ad486ab18682b0911e1069ee1f5b4329b" title="test_metadata_object" alt="" coords="947,1216,1093,1243"/>
+<area shape="rect" id="node33" href="$tags_8h.html#a06eefe595d2e6bf8f6577a11b7cb0e43" title="FLAC_plugin__tags_set" alt="" coords="233,1461,394,1488"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a353a63aa812f125fedec844142946142" title="FLAC::Metadata::StreamInfo\l::operator=" alt="" coords="469,5,659,46"/>
+<area shape="rect" id="node4" href="$class_f_l_a_c_1_1_metadata_1_1_padding.html#aece6ab03932bea3f0c32ff3cd88f2617" title="FLAC::Metadata::Padding\l::operator=" alt="" coords="477,70,651,111"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_metadata_1_1_application.html#a3ca9dd06666b1dc7d4bdb6aef8e14d04" title="FLAC::Metadata::Application\l::operator=" alt="" coords="469,135,659,177"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_metadata_1_1_seek_table.html#ac1094c0536952a569e41ba619f9b4ff5" title="FLAC::Metadata::SeekTable\l::operator=" alt="" coords="470,201,658,242"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#a135650367ce6c2c5ce12b534307f1cca" title="FLAC::Metadata::VorbisComment\l::operator=" alt="" coords="454,266,674,307"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#ad24bf2e19de81159d5e205ae5ef63843" title="FLAC::Metadata::CueSheet\l::operator=" alt="" coords="472,331,656,373"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#a2ab3ef473f6c70aafe5bd3229f397a93" title="FLAC::Metadata::Picture\l::operator=" alt="" coords="481,397,647,438"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_metadata_1_1_unknown.html#a295f824df8ed10c3386df72272fdca47" title="FLAC::Metadata::Unknown\l::operator=" alt="" coords="473,462,655,503"/>
+<area shape="rect" id="node12" href="$class_f_l_a_c_1_1_metadata_1_1_stream_info.html#ad1193a408a5735845dea17a131b7282c" title="FLAC::Metadata::StreamInfo\l::assign" alt="" coords="469,1243,659,1285"/>
+<area shape="rect" id="node16" href="$class_f_l_a_c_1_1_metadata_1_1_padding.html#a3b7508e56df71854ff1f5ad9570b5684" title="FLAC::Metadata::Padding\l::assign" alt="" coords="477,1126,651,1167"/>
+<area shape="rect" id="node18" href="$class_f_l_a_c_1_1_metadata_1_1_application.html#a47f68d7001ef094a916d3b13fe589fc2" title="FLAC::Metadata::Application\l::assign" alt="" coords="469,943,659,985"/>
+<area shape="rect" id="node20" href="$class_f_l_a_c_1_1_metadata_1_1_seek_table.html#ad9d0036938d6ad1c81180cf1e156b844" title="FLAC::Metadata::SeekTable\l::assign" alt="" coords="470,630,658,671"/>
+<area shape="rect" id="node22" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#a9db2171c398cd62a5907e625c3a6228d" title="FLAC::Metadata::VorbisComment\l::assign" alt="" coords="454,695,674,737"/>
+<area shape="rect" id="node25" href="$class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#ac83a472ca9852f3e2e800ae57d3e1305" title="FLAC::Metadata::CueSheet\l::assign" alt="" coords="472,878,656,919"/>
+<area shape="rect" id="node28" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#aa3d7384cb724a842c3471a9ab19f81ed" title="FLAC::Metadata::Picture\l::assign" alt="" coords="481,1061,647,1102"/>
+<area shape="rect" id="node31" href="$class_f_l_a_c_1_1_metadata_1_1_unknown.html#a4dc5e794c8d529245888414b2bf7d404" title="FLAC::Metadata::Unknown\l::assign" alt="" coords="473,813,655,854"/>
+<area shape="rect" id="node14" href="$metadata__object_8cpp.html#ad486ab18682b0911e1069ee1f5b4329b" title="test_metadata_object" alt="" coords="947,1036,1093,1063"/>
+<area shape="rect" id="node15" href="$test__lib_f_l_a_c_09_09_2metadata_8cpp.html#abb0b2cfa6ca9f0a08753883889c0c378" title="test_metadata" alt="" coords="1142,1127,1247,1153"/>
+<area shape="rect" id="node23" href="$group__flacpp__metadata__level0.html#gaae3e5fdfa4f866239d665c5b5cef6fe0" title="See FLAC__metadata_get_tags(). " alt="" coords="723,761,899,788"/>
+<area shape="rect" id="node26" href="$group__flacpp__metadata__level0.html#ga4841af6cb6c5dc46d255d1d6e34d2c87" title="See FLAC__metadata_get_cuesheet(). " alt="" coords="739,887,883,929"/>
+<area shape="rect" id="node29" href="$group__flacpp__metadata__level0.html#gab99326ba601186b2893383f13cdd0f38" title="See FLAC__metadata_get_picture(). " alt="" coords="739,1029,883,1070"/>
+</map>

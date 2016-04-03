@@ -1,0 +1,18 @@
+<map id="vid_stream" name="vid_stream">
+<area shape="rect" id="node2" href="$class_m_p_e_gvideo.html" title="MPEGvideo" alt="" coords="414,333,505,360"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gerror.html" title="MPEGerror" alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node10" href="$class_m_p_e_gsystem.html" title="MPEGsystem" alt="" coords="93,96,197,123"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideoaction.html" title="MPEGvideoaction" alt="" coords="299,229,425,256"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gaction.html" title="MPEGaction" alt="" coords="328,5,424,32"/>
+<area shape="rect" id="node6" href="$class_m_p_e_gaudioaction.html" title="MPEGaudioaction" alt="" coords="381,96,507,123"/>
+<area shape="rect" id="node7" href="$struct_s_m_p_e_g___frame.html" title="SMPEG_Frame" alt="" coords="451,229,565,256"/>
+<area shape="rect" id="node8" href="$class_m_p_e_gstream.html" title="MPEGstream" alt="" coords="140,229,241,256"/>
+<area shape="rect" id="node9" href="$class_m_p_e_glist.html" title="MPEGlist" alt="" coords="226,96,304,123"/>
+<area shape="rect" id="node11" href="$struct_s_d_l___r_wops.html" title="SDL_RWops" alt="" coords="116,5,215,32"/>
+<area shape="rect" id="node12" href="$struct_go_p.html" title="GoP" alt="" coords="532,96,580,123"/>
+<area shape="rect" id="node13" href="$structblock.html" title="block" alt="" coords="604,96,657,123"/>
+<area shape="rect" id="node14" href="$structpict.html" title="pict" alt="" coords="681,96,724,123"/>
+<area shape="rect" id="node15" href="$structmacroblock.html" title="macroblock" alt="" coords="749,96,837,123"/>
+<area shape="rect" id="node16" href="$structslice.html" title="slice" alt="" coords="862,96,911,123"/>
+<area shape="rect" id="node17" href="$structpict__image.html" title="pict_image" alt="" coords="936,96,1021,123"/>
+</map>

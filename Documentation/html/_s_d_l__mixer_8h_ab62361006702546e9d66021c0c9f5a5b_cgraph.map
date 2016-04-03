@@ -1,0 +1,6 @@
+<map id="Mix_FadeOutGroup" name="Mix_FadeOutGroup">
+<area shape="rect" id="node2" href="$mixer_8c.html#a28d78612f7a4b6c3cc20f5230c6ff33f" title="Mix_FadeOutChannel" alt="" coords="190,56,338,83"/>
+<area shape="rect" id="node3" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="394,5,510,32"/>
+<area shape="rect" id="node4" href="$_s_d_l__timer_8h.html#a0b9bc71d6287e0ffafdc3419760fe2b3" title="Get the number of milliseconds since the SDL library initialization. " alt="" coords="398,56,506,83"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="387,107,517,133"/>
+</map>

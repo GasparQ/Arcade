@@ -1,0 +1,17 @@
+<map id="FLAC_plugin__decoder_delete" name="FLAC_plugin__decoder_delete">
+<area shape="rect" id="node2" href="$playback_8c.html#a27e0038e45166af88622a2814cf1b280" title="FLAC_plugin__decoder\l_finish" alt="" coords="213,111,371,153"/>
+<area shape="rect" id="node13" href="$group__flac__stream__decoder.html#gab958ee28b829be37e541946676ad9677" title="FLAC__stream_decoder\l_delete" alt="" coords="211,223,373,265"/>
+<area shape="rect" id="node3" href="$group__flac__stream__decoder.html#ga5899c204ad7183ec04e41855090c0635" title="FLAC__stream_decoder\l_get_state" alt="" coords="432,5,595,46"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="933,121,979,148"/>
+<area shape="rect" id="node5" href="$group__flac__stream__decoder.html#gaa51bb38f762ee11b320a0839f165c5ce" title="FLAC__stream_decoder\l_finish" alt="" coords="432,223,595,265"/>
+<area shape="rect" id="node6" href="$md5_8h.html#aa1f60f6a474efae8794727ad7b8507c5" title="FLAC__MD5Final" alt="" coords="686,289,813,316"/>
+<area shape="rect" id="node8" href="$bitreader_8c.html#a891c42265a86aa0269b04806d4f12bad" title="FLAC__bitreader_free" alt="" coords="675,340,824,367"/>
+<area shape="rect" id="node9" href="$ogg__decoder__aspect_8h.html#a826e3a9e773ba66e6591f105c94b0e37" title="FLAC__ogg_decoder_aspect\l_finish" alt="" coords="654,223,845,265"/>
+<area shape="rect" id="node12" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="711,172,787,199"/>
+<area shape="rect" id="node7" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="937,289,975,316"/>
+<area shape="rect" id="node10" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a43833b30d583f7522224fb28849fc479" title="ogg_sync_clear" alt="" coords="899,235,1013,261"/>
+<area shape="rect" id="node11" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a305dff20a5476305be61e46f6b34d4e1" title="ogg_stream_clear" alt="" coords="893,184,1019,211"/>
+<area shape="rect" id="node14" href="$bitreader_8c.html#a0b842e6b5161429f590bd465b09d33e5" title="FLAC__bitreader_delete" alt="" coords="432,301,595,328"/>
+<area shape="rect" id="node15" href="$lib_f_l_a_c_2format_8c.html#a3da2b4148bb58720734d37957b8c1b29" title="FLAC__format_entropy\l_coding_method_partitioned\l_rice_contents_clear" alt="" coords="421,377,605,433"/>
+<area shape="rect" id="node16" href="$lib_f_l_a_c_2format_8c.html#a3388f1dff9fedd7a18df7ab08f0443ec" title="FLAC__format_entropy\l_coding_method_partitioned\l_rice_contents_init" alt="" coords="657,391,841,447"/>
+</map>

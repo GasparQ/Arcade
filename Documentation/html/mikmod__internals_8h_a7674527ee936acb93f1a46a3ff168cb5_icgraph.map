@@ -1,0 +1,7 @@
+<map id="Voice_SetPanning_internal" name="Voice_SetPanning_internal">
+<area shape="rect" id="node2" href="$win32_2mikmod__build_8h.html#aa69baca41b4c95ec42e58bdb102328d1" title="Voice_SetPanning" alt="" coords="242,5,371,32"/>
+<area shape="rect" id="node3" href="$mdriver_8c.html#ae5f7cc212c2c6d6552c4ed67c10b98d2" title="Sample_Play_internal" alt="" coords="233,56,381,83"/>
+<area shape="rect" id="node5" href="$mplayer_8c.html#a576fe5c46f2ff1e9e42f2db9a8712b7a" title="pt_UpdateVoices" alt="" coords="245,107,368,133"/>
+<area shape="rect" id="node4" href="$win32_2mikmod__build_8h.html#a41334c7112403c295605bfb64c4b804a" title="Sample_Play" alt="" coords="447,56,545,83"/>
+<area shape="rect" id="node6" href="$mplayer_8c.html#a1c12b46bfb6fb228606d5604863c50a5" title="Player_HandleTick" alt="" coords="430,107,562,133"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MPEGvideo::GetVideoInfo" name="MPEGvideo::GetVideoInfo">
+<area shape="rect" id="node2" href="$video_8cpp.html#a4a5116d1c7db29c0bd5f6a5aa952e642" title="ReadSysClock" alt="" coords="250,5,361,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gerror.html#ac7f9938ed72bbdf96007585191e6f544" title="MPEGerror::WasError" alt="" coords="230,56,381,83"/>
+<area shape="rect" id="node3" href="$_s_d_l__timer_8h.html#a0b9bc71d6287e0ffafdc3419760fe2b3" title="Get the number of milliseconds since the SDL library initialization. " alt="" coords="430,5,538,32"/>
+</map>

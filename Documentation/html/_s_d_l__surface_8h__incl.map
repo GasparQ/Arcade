@@ -1,12 +1,13 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_surface.h" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_surface.h">
-<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="873,333,975,360"/>
-<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="184,557,283,584"/>
-<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1633,557,1732,584"/>
-<area shape="rect" id="node19" href="$_s_d_l__pixels_8h.html" title="SDL_pixels.h" alt="" coords="195,259,295,285"/>
-<area shape="rect" id="node20" href="$_s_d_l__rect_8h.html" title="SDL_rect.h" alt="" coords="699,109,787,136"/>
-<area shape="rect" id="node22" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="816,184,917,211"/>
-<area shape="rect" id="node23" href="$_s_d_l__blendmode_8h.html" title="SDL_blendmode.h" alt="" coords="347,483,476,509"/>
-<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="397,408,499,435"/>
-<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="553,483,665,509"/>
-<area shape="rect" id="node21" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="794,259,885,285"/>
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="898,333,1000,360"/>
+<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="264,557,362,584"/>
+<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1632,557,1730,584"/>
+<area shape="rect" id="node20" href="$_s_d_l__pixels_8h.html" title="SDL_pixels.h" alt="" coords="263,259,362,285"/>
+<area shape="rect" id="node21" href="$_s_d_l__rect_8h.html" title="SDL_rect.h" alt="" coords="878,109,966,136"/>
+<area shape="rect" id="node23" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="1010,184,1112,211"/>
+<area shape="rect" id="node24" href="$_s_d_l__blendmode_8h.html" title="SDL_blendmode.h" alt="" coords="44,483,173,509"/>
+<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="769,408,870,435"/>
+<area shape="rect" id="node7" href="$types_8h.html" title="sys/types.h" alt="" coords="945,408,1036,435"/>
+<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="726,483,838,509"/>
+<area shape="rect" id="node22" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="1015,259,1106,285"/>
 </map>

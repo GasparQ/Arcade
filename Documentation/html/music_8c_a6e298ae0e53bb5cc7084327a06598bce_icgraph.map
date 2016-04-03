@@ -1,0 +1,10 @@
+<map id="close_music" name="close_music">
+<area shape="rect" id="node2" href="$_s_d_l__mixer_8h.html#a2cb071e94923956f4c3ca4d3998669e7" title="Mix_CloseAudio" alt="" coords="149,56,267,83"/>
+<area shape="rect" id="node3" href="$class_sound.html#a0907389078bf740be2a5763366ad3376" title="Sound::~Sound" alt="" coords="316,5,428,32"/>
+<area shape="rect" id="node4" href="$_s_d_l__mixer_8h.html#a874d68326b7e6f6319052537ccbe5d8e" title="Mix_OpenAudio" alt="" coords="315,56,429,83"/>
+<area shape="rect" id="node9" href="$playmus_8c.html#a7ee82fb747045b001eb11854f61934bc" title="CleanUp" alt="" coords="335,107,409,133"/>
+<area shape="rect" id="node5" href="$class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9" title="Sound::Sound" alt="" coords="477,56,581,83"/>
+<area shape="rect" id="node8" href="$playmus_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="504,107,555,133"/>
+<area shape="rect" id="node6" href="$class_sound.html#a654d251e57564b62db784beae79cc07e" title="Sound::Instance" alt="" coords="629,31,747,57"/>
+<area shape="rect" id="node7" href="$class_sound.html#a9f3e9e495574b7afc22e59dbb49c5442" title="Sound::ChunkCallback" alt="" coords="795,56,951,83"/>
+</map>

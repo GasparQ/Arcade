@@ -1,0 +1,7 @@
+<map id="CSoundFile::LoadMixPlugins" name="CSoundFile::LoadMixPlugins">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a75f114f07c619e33b2bce5eba31b90a7" title="CSoundFile::ReadIT" alt="" coords="249,5,391,32"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#a83973a99b390c2864f2528fa23d58f0a" title="CSoundFile::ReadXM" alt="" coords="245,56,395,83"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#abb644f9394c81d073e88d10282b4d6e8" title="CSoundFile::ReadUMX" alt="" coords="443,31,602,57"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="651,31,789,57"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="838,31,946,57"/>
+</map>

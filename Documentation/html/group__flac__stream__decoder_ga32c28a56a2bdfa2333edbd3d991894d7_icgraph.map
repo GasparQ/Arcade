@@ -1,0 +1,7 @@
+<map id="FLAC__stream_decoder_init_stream" name="FLAC__stream_decoder_init_stream">
+<area shape="rect" id="node2" href="$encode_8h.html#ac6dc72bc13bbdb309cb6750a0ab1231f" title="flac__encode_flac" alt="" coords="234,19,361,45"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a5267433117fbed17e11498856d881335" title="Seek FLAC__stream_decoder_init_stream() " alt="" coords="216,70,379,111"/>
+<area shape="rect" id="node4" href="$class_f_l_a_c_1_1_decoder_1_1_file.html#af14a571289919cd98039f2e680633bfd" title="See FLAC__stream_decoder_init_file() " alt="" coords="443,5,586,46"/>
+<area shape="rect" id="node5" href="$class_stream_decoder.html#a9999cc43a682b708b627e40e7ff530e5" title="StreamDecoder::test\l_respond" alt="" coords="443,70,586,111"/>
+<area shape="rect" id="node6" href="$class_file_decoder.html#ae95d563fb845814477fcefe4e07bbba1" title="FileDecoder::test_respond" alt="" coords="427,136,602,163"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="AllocPatterns" name="AllocPatterns">
+<area shape="rect" id="node2" href="$load__amf_8c.html#abc5169d6198576f3d1e2cc4786cc5b2d" title="AMF_Load" alt="" coords="191,5,276,32"/>
+<area shape="rect" id="node3" href="$load__dsm_8c.html#a4c944bdfa142de670209787e2806f8cd" title="DSM_Load" alt="" coords="190,56,277,83"/>
+<area shape="rect" id="node4" href="$load__far_8c.html#aae0f8a388c10c0039a5c5462f79fe4a2" title="FAR_Load" alt="" coords="191,107,275,133"/>
+<area shape="rect" id="node5" href="$load__gdm_8c.html#a223ebb121129b7fc1af3afb7881c709b" title="GDM_Load" alt="" coords="189,157,277,184"/>
+<area shape="rect" id="node6" href="$load__imf_8c.html#a9ef6478f54740fdff788120a0bd98976" title="IMF_Load" alt="" coords="193,208,273,235"/>
+<area shape="rect" id="node7" href="$load__it_8c.html#af048d36fad98fa472619043b26f8bac8" title="IT_Load" alt="" coords="199,259,268,285"/>
+<area shape="rect" id="node8" href="$load__mtm_8c.html#a87de277bc45dda77ae88b3c52f66de73" title="MTM_Load" alt="" coords="190,309,277,336"/>
+<area shape="rect" id="node9" href="$load__s3m_8c.html#a9b0fb0148d7833fdcab91f1389ec5054" title="S3M_Load" alt="" coords="191,360,275,387"/>
+<area shape="rect" id="node10" href="$load__ult_8c.html#a9fda3df0bd4f13e29e118a811dfefdbe" title="ULT_Load" alt="" coords="192,411,275,437"/>
+<area shape="rect" id="node11" href="$load__uni_8c.html#a889dd09058556592efe9edabd027c29f" title="UNI_Load" alt="" coords="193,461,274,488"/>
+<area shape="rect" id="node12" href="$class_c_sound_file.html#a399c49f864b730182d9a0e065878a10f" title="CSoundFile::ReadABC" alt="" coords="155,512,312,539"/>
+<area shape="rect" id="node15" href="$class_c_sound_file.html#ad96a25f78d1f3474e9243fce2cb2cdbe" title="CSoundFile::ReadMID" alt="" coords="156,563,311,589"/>
+<area shape="rect" id="node16" href="$class_c_sound_file.html#a8d0b34a3d17d4af1571fd0741a7ed261" title="CSoundFile::ReadPAT" alt="" coords="156,613,311,640"/>
+<area shape="rect" id="node13" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="361,563,498,589"/>
+<area shape="rect" id="node14" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="547,563,655,589"/>
+</map>

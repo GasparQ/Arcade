@@ -1,0 +1,9 @@
+<map id="oggpack_write" name="oggpack_write">
+<area shape="rect" id="node2" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#a954dc6d19d32b82851970138fe2c54a9" title="oggpack_writealign" alt="" coords="173,5,307,32"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2_ogg_8framework_2_versions_2_a_2_headers_2ogg_8h.html#adc9ef879e4c946efd285937e53a57dd8" title="oggpack_writecopy" alt="" coords="173,56,307,83"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#a7efe5889f6919053b8ab8d69e61ac995" title="vorbis_bitrate_addblock" alt="" coords="161,107,319,133"/>
+<area shape="rect" id="node5" href="$localcodebook_8h.html#a2e4cf9084f67bbbdf68500dc850e33b2" title="vorbis_staticbook_pack" alt="" coords="161,157,319,184"/>
+<area shape="rect" id="node6" href="$localcodebook_8h.html#aef10100390bdb0f59f150e45c5255afa" title="vorbis_book_encode" alt="" coords="169,208,311,235"/>
+<area shape="rect" id="node7" href="$libvorbis-1_83_83_2lib_2floor1_8c.html#a412dda71482901941e7f85df60347253" title="floor1_encode" alt="" coords="369,233,471,260"/>
+<area shape="rect" id="node8" href="$res0_8c.html#a6eec0ebcdf40a65e65b15fedf564a6dc" title="res0_pack" alt="" coords="199,309,281,336"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Voice_Stop_internal" name="Voice_Stop_internal">
+<area shape="rect" id="node2" href="$win32_2mikmod__build_8h.html#a7f3e77209e897c75115ac21bc7e599c6" title="Voice_Stop" alt="" coords="229,5,318,32"/>
+<area shape="rect" id="node3" href="$mdriver_8c.html#ab58aa2d3bbe211f1a865e8a861854751" title="MikMod_SetNumVoices\l_internal" alt="" coords="192,57,355,98"/>
+<area shape="rect" id="node9" href="$mplayer_8c.html#a576fe5c46f2ff1e9e42f2db9a8712b7a" title="pt_UpdateVoices" alt="" coords="212,123,335,149"/>
+<area shape="rect" id="node11" href="$win32_2mikmod__build_8h.html#ae2c0903788e97ff5dc1f26925650177a" title="Player_Start" alt="" coords="226,173,321,200"/>
+<area shape="rect" id="node12" href="$win32_2mikmod__build_8h.html#a468e399842742350c00351727e30cd5d" title="Player_NextPosition" alt="" coords="203,224,344,251"/>
+<area shape="rect" id="node13" href="$win32_2mikmod__build_8h.html#afd44c78dafd9f5e026c0fe66e4dd6fd0" title="Player_PrevPosition" alt="" coords="203,275,343,301"/>
+<area shape="rect" id="node14" href="$win32_2mikmod__build_8h.html#ae2e313e2dc882da17360f1c44b891fbb" title="Player_SetPosition" alt="" coords="207,325,340,352"/>
+<area shape="rect" id="node4" href="$win32_2mikmod__build_8h.html#a762add4d44fdb6d62ad8a2f64a2baec4" title="MikMod_SetNumVoices" alt="" coords="403,5,565,32"/>
+<area shape="rect" id="node5" href="$mloader_8c.html#a8c2e25c76cdbb33b067e7d18b291d97c" title="Player_LoadGeneric\l_internal" alt="" coords="415,57,553,98"/>
+<area shape="rect" id="node6" href="$win32_2mikmod__build_8h.html#a373940737ca88906ab5ecb9646a763b1" title="Player_LoadGeneric" alt="" coords="613,64,752,91"/>
+<area shape="rect" id="node7" href="$win32_2mikmod__build_8h.html#a73506cefb979ecd02fa925271f9ac069" title="Player_LoadFP" alt="" coords="801,64,911,91"/>
+<area shape="rect" id="node8" href="$win32_2mikmod__build_8h.html#abea9eb9ef17918ca1dc9953cbe64d2ce" title="Player_Load" alt="" coords="961,64,1055,91"/>
+<area shape="rect" id="node10" href="$mplayer_8c.html#a1c12b46bfb6fb228606d5604863c50a5" title="Player_HandleTick" alt="" coords="418,123,550,149"/>
+</map>

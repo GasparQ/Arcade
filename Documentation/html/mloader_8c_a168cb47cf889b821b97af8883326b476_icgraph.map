@@ -1,0 +1,7 @@
+<map id="Player_Free_internal" name="Player_Free_internal">
+<area shape="rect" id="node2" href="$win32_2mikmod__build_8h.html#a2257a9ef221fcfa5156c06b787748d45" title="Player_Free" alt="" coords="195,5,287,32"/>
+<area shape="rect" id="node3" href="$mloader_8c.html#a8c2e25c76cdbb33b067e7d18b291d97c" title="Player_LoadGeneric\l_internal" alt="" coords="336,23,475,65"/>
+<area shape="rect" id="node4" href="$win32_2mikmod__build_8h.html#a373940737ca88906ab5ecb9646a763b1" title="Player_LoadGeneric" alt="" coords="523,31,661,57"/>
+<area shape="rect" id="node5" href="$win32_2mikmod__build_8h.html#a73506cefb979ecd02fa925271f9ac069" title="Player_LoadFP" alt="" coords="710,31,821,57"/>
+<area shape="rect" id="node6" href="$win32_2mikmod__build_8h.html#abea9eb9ef17918ca1dc9953cbe64d2ce" title="Player_Load" alt="" coords="870,31,965,57"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="MPEGsystem::SystemLoop" name="MPEGsystem::SystemLoop">
+<area shape="rect" id="node2" href="$class_m_p_e_gsystem.html#a1e8257a0a89af21b7da3de7d5f582ee4" title="MPEGsystem::Eof" alt="" coords="710,70,842,97"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gsystem.html#a9c5d7ff1c1f040b65d8a8ece04984fa1" title="MPEGsystem::end_all\l_streams" alt="" coords="246,319,399,360"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gerror.html#a1c7b0bcff8446609b2ef8d59236cf58d" title="MPEGerror::SetError" alt="" coords="251,385,394,411"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gsystem.html#a6e2fe1a945858523a7c1046a7e0e55ab" title="MPEGsystem::seek_first\l_header" alt="" coords="467,33,637,75"/>
+<area shape="rect" id="node7" href="$_s_d_l__mutex_8h.html#af51d75d18cb90f28b35c31e853b04792" title="SDL_SemWait" alt="" coords="268,435,377,462"/>
+<area shape="rect" id="node8" href="$class_m_p_e_gsystem.html#a36453c8763955246a5e70b4200db4108" title="MPEGsystem::FillBuffer" alt="" coords="241,267,405,294"/>
+<area shape="rect" id="node6" href="$class_m_p_e_gsystem.html#a007e4734445c48286f0903d5c1b9b68f" title="MPEGsystem::Read" alt="" coords="705,158,847,185"/>
+<area shape="rect" id="node9" href="$class_m_p_e_gsystem.html#ad76d9ec624196dcd4c8bac888687bdc4" title="MPEGsystem::RequestBuffer" alt="" coords="454,470,650,497"/>
+<area shape="rect" id="node11" href="$_m_p_e_gsystem_8cpp.html#a170625cf28ac92c3a95aa6538f492eb7" title="skip_zeros" alt="" coords="509,217,595,243"/>
+<area shape="rect" id="node12" href="$class_m_p_e_gsystem.html#a4831c19aa9b27684310a7a70c953ad26" title="MPEGsystem::exist_stream" alt="" coords="459,267,645,294"/>
+<area shape="rect" id="node13" href="$class_m_p_e_gsystem.html#a050f72352bbdf91e4272a1523ebf0606" title="MPEGsystem::seek_next\l_header" alt="" coords="466,151,638,192"/>
+<area shape="rect" id="node14" href="$class_m_p_e_gsystem.html#a9611cff06ea0591175149053055028c1" title="MPEGsystem::get_stream" alt="" coords="463,318,641,345"/>
+<area shape="rect" id="node15" href="$class_m_p_e_gsystem.html#af1b219a169d65bcb1e7041b1d379ce25" title="MPEGsystem::add_stream" alt="" coords="462,369,642,395"/>
+<area shape="rect" id="node16" href="$class_m_p_e_gstream.html#af557cc2a563ef976b74f0b09cfb16ee8" title="MPEGstream::insert\l_packet" alt="" coords="481,547,623,588"/>
+<area shape="rect" id="node10" href="$_s_d_l__mutex_8h.html#a0c50f774babf7a44c381238a1f780595" title="SDL_SemPost" alt="" coords="721,445,831,471"/>
+<area shape="rect" id="node17" href="$class_m_p_e_glist.html#af09ed9b2379258a753ceab81ef39ce61" title="MPEGlist::Next" alt="" coords="916,453,1031,479"/>
+<area shape="rect" id="node18" href="$class_m_p_e_glist.html#ada87cd32bdef039d5734e524e467e181" title="MPEGlist::Alloc" alt="" coords="719,613,833,639"/>
+<area shape="rect" id="node20" href="$class_m_p_e_glist.html#abf3d8b8cf2c919508a0fb1bd885491f9" title="MPEGlist::Buffer" alt="" coords="715,663,837,690"/>
+<area shape="rect" id="node21" href="$class_m_p_e_gstream.html#adfd6904922a141826cb760613ac610d9" title="MPEGstream::garbage\l_collect" alt="" coords="699,547,853,588"/>
+<area shape="rect" id="node19" href="$class_m_p_e_glist.html#afc244088cea3cf633e3794eb675642c2" title="MPEGlist::MPEGlist" alt="" coords="902,706,1045,733"/>
+<area shape="rect" id="node22" href="$class_m_p_e_glist.html#a007d9c423418e39626378f3a448f670b" title="MPEGlist::Lock" alt="" coords="916,503,1031,530"/>
+<area shape="rect" id="node23" href="$class_m_p_e_glist.html#ace13a695db37034d6ca7196055c0b9d8" title="MPEGlist::Prev" alt="" coords="917,554,1030,581"/>
+<area shape="rect" id="node24" href="$class_m_p_e_glist.html#acd0ab5d3b4710f68eb985c9d54e4d4e8" title="MPEGlist::IsLocked" alt="" coords="904,605,1043,631"/>
+<area shape="rect" id="node25" href="$class_m_p_e_glist.html#abaa256256f146189a5421bcb3efdef91" title="MPEGlist::Unlock" alt="" coords="910,655,1037,682"/>
+</map>

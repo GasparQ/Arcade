@@ -1,3 +1,6 @@
 <map id="SDL_Quit" name="SDL_Quit">
-<area shape="rect" id="node2" href="$class_s_d_l_graph.html#af0d0395d5b8b135feeefe65374476068" title="SDLGraph::~SDLGraph" alt="" coords="133,5,293,32"/>
+<area shape="rect" id="node2" href="$class_s_d_l_graph.html#af0d0395d5b8b135feeefe65374476068" title="Destructor of SDL lib that will Quit SDL, Quit TTF, close windows, fonts, destroy renderers and cache..." alt="" coords="133,5,293,32"/>
+<area shape="rect" id="node3" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="188,56,239,83"/>
+<area shape="rect" id="node4" href="$playmus_8c.html#a7ee82fb747045b001eb11854f61934bc" title="CleanUp" alt="" coords="177,107,250,133"/>
+<area shape="rect" id="node5" href="$playmus_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="341,107,392,133"/>
 </map>

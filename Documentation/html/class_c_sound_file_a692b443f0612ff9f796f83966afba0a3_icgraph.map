@@ -1,0 +1,11 @@
+<map id="CSoundFile::SetupChannelFilter" name="CSoundFile::SetupChannelFilter">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a67626347127871c29e0b331d1064ecdc" title="CSoundFile::NoteChange" alt="" coords="235,95,405,121"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#aa74c7074f61936d8bd95e2e4ca334d07" title="CSoundFile::ReadNote" alt="" coords="1467,171,1624,197"/>
+<area shape="rect" id="node10" href="$class_c_sound_file.html#affd8aad15d278654a6a9ff11261882ac" title="CSoundFile::ProcessMidiMacro" alt="" coords="454,5,661,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#ae7914e0e2fdeb8832bc3ed0f4353c728" title="CSoundFile::ProcessEffects" alt="" coords="1009,107,1197,133"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#a12de9a0cd538134fed95248af7d11da3" title="CSoundFile::RetrigNote" alt="" coords="477,107,638,133"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aef5ab72c81ade31306d23724c0b30194" title="CSoundFile::ProcessRow" alt="" coords="1245,132,1419,159"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7" title="CSoundFile::Read" alt="" coords="1673,171,1802,197"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a10e70316c7a8219fdb397e6fdeb6b321" title="ModPlug_Read" alt="" coords="1851,171,1962,197"/>
+<area shape="rect" id="node9" href="$class_c_sound_file.html#af15205008316ddc8d73ee05913e296ae" title="CSoundFile::ExtendedMODCommands" alt="" coords="709,107,960,133"/>
+</map>

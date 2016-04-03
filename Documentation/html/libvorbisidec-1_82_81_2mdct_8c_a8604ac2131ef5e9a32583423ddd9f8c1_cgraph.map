@@ -1,0 +1,8 @@
+<map id="mdct_butterfly_32" name="mdct_butterfly_32">
+<area shape="rect" id="node2" href="$libvorbisidec-1_82_81_2misc_8h.html#a59165665e236e860f1b07ea83acafbd6" title="XNPROD31" alt="" coords="198,5,293,32"/>
+<area shape="rect" id="node3" href="$libvorbisidec-1_82_81_2misc_8h.html#a766407d8b96842068554534a3767205a" title="MULT31" alt="" coords="381,56,453,83"/>
+<area shape="rect" id="node5" href="$libvorbisidec-1_82_81_2misc_8h.html#a5bf94cf569913439b146f522cf0977e0" title="XPROD31" alt="" coords="203,107,287,133"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a72b07af28f772fad87eea2c23b252a5e" title="mdct_butterfly_16" alt="" coords="182,157,309,184"/>
+<area shape="rect" id="node4" href="$libvorbisidec-1_82_81_2misc_8h.html#a632de8c87c1a6b0d673019cd2213bf23" title="MULT32" alt="" coords="525,56,597,83"/>
+<area shape="rect" id="node7" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a499303112b7b111481d9366f03f28892" title="mdct_butterfly_8" alt="" coords="358,157,477,184"/>
+</map>

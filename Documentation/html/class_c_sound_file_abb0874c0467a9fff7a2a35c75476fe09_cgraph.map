@@ -1,0 +1,5 @@
+<map id="CSoundFile::Destroy" name="CSoundFile::Destroy">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a44d3db09508a303f294ce4615557fe77" title="CSoundFile::FreePattern" alt="" coords="198,5,365,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#ae200af8cb3cc96cfe1a5d26a1369583d" title="CSoundFile::FreeSample" alt="" coords="197,56,365,83"/>
+<area shape="rect" id="node4" href="$class_i_mix_plugin.html#a57d143edade8dce988d39ec31f849e30" title="IMixPlugin::Release" alt="" coords="212,107,351,133"/>
+</map>

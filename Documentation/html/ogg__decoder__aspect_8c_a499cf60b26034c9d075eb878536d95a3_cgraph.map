@@ -1,0 +1,9 @@
+<map id="FLAC__ogg_decoder_aspect_read_callback_wrapper" name="FLAC__ogg_decoder_aspect_read_callback_wrapper">
+<area shape="rect" id="node2" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a387e608bc7cc9d39e74c962475f2e9d4" title="ogg_stream_packetout" alt="" coords="245,5,400,32"/>
+<area shape="rect" id="node3" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="285,56,361,83"/>
+<area shape="rect" id="node4" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#abcb8ea90cec5a3e5bb19686432c11da6" title="ogg_sync_pageout" alt="" coords="257,107,388,133"/>
+<area shape="rect" id="node5" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a6194aa97806e93b0889a3b376c7ceb8f" title="ogg_page_serialno" alt="" coords="257,157,388,184"/>
+<area shape="rect" id="node6" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a60db38b6032f1fb0729e14adb61f11a2" title="ogg_stream_pagein" alt="" coords="255,208,390,235"/>
+<area shape="rect" id="node7" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a699610803ac0cd2cc36224e57e7f783c" title="ogg_sync_buffer" alt="" coords="263,259,382,285"/>
+<area shape="rect" id="node8" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#abd197a9cda5a6cec788c65c79530e20d" title="ogg_sync_wrote" alt="" coords="264,309,381,336"/>
+</map>

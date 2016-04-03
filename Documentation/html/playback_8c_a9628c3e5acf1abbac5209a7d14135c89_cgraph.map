@@ -1,0 +1,12 @@
+<map id="FLAC_plugin__decode" name="FLAC_plugin__decode">
+<area shape="rect" id="node2" href="$group__flac__stream__decoder.html#ga5899c204ad7183ec04e41855090c0635" title="FLAC__stream_decoder\l_get_state" alt="" coords="223,5,385,46"/>
+<area shape="rect" id="node3" href="$group__flac__stream__decoder.html#ga8c4708eb2c5d99595f64dc2473aa2f42" title="FLAC__stream_decoder\l_process_single" alt="" coords="223,70,385,111"/>
+<area shape="rect" id="node4" href="$in__flac_8c.html#a6e1942ce23265db255ccb2a201342d52" title="FLAC_plugin__show_error" alt="" coords="217,136,391,163"/>
+<area shape="rect" id="node5" href="$group__flac__stream__decoder.html#ga4b5dfb85d4c80cc846f5395cb61dc1f3" title="FLAC__stream_decoder\l_get_resolved_state_string" alt="" coords="215,187,393,229"/>
+<area shape="rect" id="node6" href="$group__flac__stream__decoder.html#ga11507d25b6fdbd1efd5ee642923730fa" title="FLAC__stream_decoder\l_get_decode_position" alt="" coords="223,253,385,294"/>
+<area shape="rect" id="node10" href="$replaygain__synthesis_8h.html#a5723c5f098ef97d9cd9f4c0701891366" title="FLAC__replaygain_synthesis\l__apply_gain" alt="" coords="208,318,400,359"/>
+<area shape="rect" id="node11" href="$dither_8c.html#a9f7c369ff60dc6b60d0d892a3bb0721f" title="FLAC__plugin_common\l__pack_pcm_signed_little\l_endian" alt="" coords="218,383,390,439"/>
+<area shape="rect" id="node7" href="$bitreader_8c.html#af9ec09ffd07bb9ff748d00235662cd61" title="FLAC__bitreader_is\l_consumed_byte_aligned" alt="" coords="699,223,869,265"/>
+<area shape="rect" id="node8" href="$stream__decoder_8c.html#a601cc83672f082f1369b579425f4570d" title="FLAC__stream_decoder\l_get_input_bytes_unconsumed" alt="" coords="448,282,651,323"/>
+<area shape="rect" id="node9" href="$bitreader_8c.html#a9da26624ab8ed8a47cd2947746c6a1ab" title="FLAC__bitreader_get\l_input_bits_unconsumed" alt="" coords="701,289,867,330"/>
+</map>

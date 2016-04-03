@@ -1,0 +1,6 @@
+<map id="grabbag__replaygain_store_to_vorbiscomment_album" name="grabbag__replaygain_store_to_vorbiscomment_album">
+<area shape="rect" id="node2" href="$group__flac__metadata__object.html#ga525525f5f21b1caee776cba3cfb6d72f" title="FLAC__metadata_object\l_vorbiscomment_remove\l_entries_matching" alt="" coords="269,45,437,101"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#gac31ee3de9f9931628f120cb611bb0f20" title="FLAC__metadata_object\l_vorbiscomment_entry\l_matches" alt="" coords="486,5,653,61"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="486,85,653,141"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="702,85,869,141"/>
+</map>

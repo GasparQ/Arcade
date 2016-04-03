@@ -1,0 +1,9 @@
+<map id="MPEGsystem::TotalTime" name="MPEGsystem::TotalTime">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a3051cd678904c229f017df17652b88cd" title="MPEG::GetSystemInfo" alt="" coords="224,81,381,108"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#abf74048403789382d752d6fa85cd1a66" title="SMPEG_getinfo" alt="" coords="430,81,546,108"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a16734c5248cee728d37679af73a1c8d1" title="SMPEG_new" alt="" coords="616,5,717,32"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a68bd3a2702ba61c8f35450c562a8d03e" title="SMPEG_new_descr" alt="" coords="597,56,737,83"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#ab68075d30f6af8b1a12b87d3b474e966" title="SMPEG_new_data" alt="" coords="600,107,733,133"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a46cf8cabcc1c0d48a724da6dd5c48671" title="SMPEG_new_rwops" alt="" coords="595,157,738,184"/>
+<area shape="rect" id="node5" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="787,31,837,57"/>
+</map>

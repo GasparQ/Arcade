@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::CueSheet::insert_index" name="FLAC::Metadata::CueSheet::insert_index">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="243,5,426,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga2f8c5d80c409eff5ebd53ccd0c6f0984" title="FLAC__metadata_object\l_cuesheet_track_insert_index" alt="" coords="237,70,432,111"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#ga57dfba89ba704574bde4e3fcd925d473" title="FLAC__metadata_object\l_cuesheet_track_resize\l_indices" alt="" coords="481,63,647,119"/>
+</map>

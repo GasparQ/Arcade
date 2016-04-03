@@ -1,0 +1,6 @@
+<map id="res0_inverse" name="res0_inverse">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2codebook_8c.html#a1e21765f57f5e92dd447a2c65639ebd0" title="vorbis_book_decodevs_add" alt="" coords="150,31,333,57"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2codebook_8c.html#a04dd209c5e29ced5480eabd0c28da1d9" title="decode_packed_entry\l_number" alt="" coords="381,23,531,65"/>
+<area shape="rect" id="node4" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#ad49883be3d28269b4dc245460dd4753c" title="oggpack_look" alt="" coords="579,5,682,32"/>
+<area shape="rect" id="node5" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#ab1072d1dfae8866cce6014489fa926f0" title="oggpack_adv" alt="" coords="581,56,680,83"/>
+</map>
