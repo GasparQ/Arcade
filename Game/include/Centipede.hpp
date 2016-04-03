@@ -56,7 +56,7 @@ private:
                 pos(pos),
                 direction(direction),
                 gameComponent(new GameComponent(pos, AComponent::ComponentColor::COLOR_CYAN,
-                                                GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
+                                                GameComponent::Shapes::SPHERE_LARGE, " ", "FILE"))
         {
         }
 
@@ -64,14 +64,17 @@ private:
                 pos(ref.pos),
                 direction(ref.direction),
                 gameComponent(new GameComponent(ref.pos, AComponent::ComponentColor::COLOR_CYAN,
-                                                GameComponent::Shapes::CUBE_SMALL, " ", "FILE"))
+                                                GameComponent::Shapes::SPHERE_LARGE, " ", "FILE"))
         {
         }
 
         void actualiseGameComponent() const
         {
             if (gameComponent)
+            {
                 gameComponent->setPos(this->pos);
+                gameComponent->setSprite2D(direction == Direction::RIGHT ?  "./sprites/centipederight.bmp" : "./sprites/centipede.bmp");
+            }
         }
 
         ~centipedeBody()

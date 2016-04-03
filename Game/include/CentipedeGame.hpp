@@ -67,7 +67,7 @@ private:
     HighScoreComponent *highScoreComponent;
     std::stack<AComponent *> _oldStack;
     mutable std::stack<AComponent *> _output;
-    UIComponent *waweCom;
+    UIComponent *waveCom;
     UIComponent *scoreCom;
     GameComponent *missilCom;
     AudioComponent *centipedeMusic;

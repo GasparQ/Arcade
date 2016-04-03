@@ -24,14 +24,14 @@ CentipedeGame::CentipedeGame() :
     // initMap();
     restart();
 
-    waweCom = new UIComponent(Vector2<double>(0, 0),
+    waveCom = new UIComponent(Vector2<double>(0, 0),
                               AComponent::COLOR_WHITE,
                               Vector2<double>(5, 1), "");
 
-    waweCom->setText("wave : " + std::to_string(_wave));
-    waweCom->setPos(Vector2<double>(1, 1));
+    waveCom->setText("wave : " + std::to_string(_wave));
+    waveCom->setPos(Vector2<double>(1, 1));
 
-    _oldStack.push(waweCom);
+    _oldStack.push(waveCom);
 
     scoreCom = new UIComponent(Vector2<double>(0, 0),
                                AComponent::COLOR_WHITE,
@@ -41,10 +41,9 @@ CentipedeGame::CentipedeGame() :
 
     missilCom = new GameComponent(Vector2<double>(0, 0),
                                   AComponent::ComponentColor::COLOR_GREEN,
-                                  GameComponent::Shapes::SPHERE_SMALL, " ", "FILE");
+                                  GameComponent::Shapes::SPHERE_SMALL, " ", "./sprites/missile.bmp");
 
     centipedeMusic = new AudioComponent("Sound/CentipedeIntro.wav", false, false, false);
-
 }
 
 CentipedeGame::~CentipedeGame()
@@ -53,9 +52,9 @@ CentipedeGame::~CentipedeGame()
     {
         delete scoreCom;
     }
-    if (waweCom)
+    if (waveCom)
     {
-        delete waweCom;
+        delete waveCom;
     }
     if (missilCom)
     {
@@ -189,8 +188,8 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         scoreCom->setPos(
                 Vector2<double>(static_cast<int>(ArcadeSystem::winWidth - scoreCom->getText().length()) / 2, 1));
 
-        waweCom->setText("wave : " + std::to_string(_wave));
-        waweCom->setPos(Vector2<double>(1, 1));
+        waveCom->setText("wave : " + std::to_string(_wave));
+        waveCom->setPos(Vector2<double>(1, 1));
     }
     else
     {
@@ -269,18 +268,23 @@ void            CentipedeGame::displayMap(std::stack<AComponent *> &output) cons
                 {
                     case 1:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_WHITE);
+                        gameCom->setSprite2D("./sprites/mushroom.bmp");
                         break;
                     case 2:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_YELLOW);
+                        gameCom->setSprite2D("./sprites/mushroom1.bmp");
                         break;
                     case 3:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_GREEN);
+                        gameCom->setSprite2D("./sprites/mushroom2.bmp");
                         break;
                     case 4:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_BLUE);
+                        gameCom->setSprite2D("./sprites/mushroom3.bmp");
                         break;
                     case 5:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_RED);
+                        gameCom->setSprite2D("./sprites/mushroom4.bmp");
                         break;
                     default:
                         break;
