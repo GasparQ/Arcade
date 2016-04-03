@@ -42,7 +42,7 @@ Snake::Snake() :
         uiScore(NULL),
         highScoreComponent(NULL),
         saved_keycode(-1),
-        m_gameMusic("Sound/HeyHeyHey.wav", true, false, false)
+        m_gameMusic("Sound/HeyHeyHey.wav", false, false, false)
 {
     keycodex[ArcadeSystem::ArrowDown] = &Snake::goDown;
     keycodex[ArcadeSystem::ArrowLeft] = &Snake::goLeft;
