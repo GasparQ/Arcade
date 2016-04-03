@@ -54,7 +54,7 @@ private:
 
     void Set3DMode();
 
-    void DrawText(Vector2<double> pos, std::string const& text, AComponent::ComponentColor const& color);
+    void DrawText(Vector2<double> pos, std::string const& text, AComponent::ComponentColor const& color, Vector2<double> dim);
 
 private:
     enum RenderMode

@@ -16,7 +16,7 @@ ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     frameIdx = 0;
     menuComponents.push_back(
             ActionComponent<DualTextComponent, arcade::eventSystem >(
-                    DualTextComponent(Vector2<double>(ArcadeSystem::winWidth / 2 - 10, 5),
+                    DualTextComponent(Vector2<double>(ArcadeSystem::winWidth / 2 - 10, 7),
                                       AComponent::ComponentColor::COLOR_WHITE,
                                       Vector2<double>(20, 3),
                                       "Graphic"
@@ -28,7 +28,7 @@ ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     menuComponents.push_back(
             ActionComponent<DualTextComponent, arcade::eventSystem >(
                     DualTextComponent(
-                            Vector2<double>(ArcadeSystem::winWidth / 2 - 10, 11),
+                            Vector2<double>(ArcadeSystem::winWidth / 2 - 10, 13),
                             AComponent::ComponentColor::COLOR_WHITE,
                             Vector2<double>(20, 3),
                             "Game"
@@ -40,7 +40,7 @@ ArcadeMenu::ArcadeMenu(arcade::Arcade &arcade1) :
     menuComponents.push_back(
             ActionComponent<DualTextComponent, arcade::eventSystem >(
                     DualTextComponent(
-                            Vector2<double>(ArcadeSystem::winWidth / 2 - 10, 17),
+                            Vector2<double>(ArcadeSystem::winWidth / 2 - 10, 19),
                             AComponent::ComponentColor::COLOR_WHITE,
                             Vector2<double>(20, 3),
                             "Play"

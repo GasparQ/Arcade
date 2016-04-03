@@ -254,12 +254,12 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
             DualTextComponent *dtc;
             if ((dtc = dynamic_cast<DualTextComponent*>(stack.top())) != nullptr)
             {
-                DrawText(dtc->getPos(), dtc->getText(), dtc->getColor());
-                DrawText(dtc->getSubPos(), dtc->getSubTitle(), dtc->getColor());
+                DrawText(dtc->getPos(), dtc->getText(), dtc->getColor(), dtc->getDim());
+                DrawText(dtc->getSubPos(), dtc->getSubTitle(), dtc->getColor(), dtc->getSubDim());
             }
             else
             {
-                DrawText(uic->getPos(), uic->getText(), uic->getColor());
+                DrawText(uic->getPos(), uic->getText(), uic->getColor(), uic->getDim());
             }
         }
         else if ((hsc = dynamic_cast<HighScoreComponent *>(stack.top())) != nullptr)
@@ -271,7 +271,7 @@ void OpenGlGraph::display(std::stack<AComponent *> stack)
             const UIComponent *const *var = hsc->getComponentsToDisplay();
             for (int i = 0; var && var[i]; i++)
             {
-                DrawText(var[i]->getPos(), var[i]->getText(), var[i]->getColor());
+                DrawText(var[i]->getPos(), var[i]->getText(), var[i]->getColor(), var[i]->getDim());
             }
         }
         else if ((ac = dynamic_cast<AnimationComponent *>(stack.top())) != nullptr)
@@ -330,13 +330,14 @@ void OpenGlGraph::Set3DMode()
 }
 
 // Draw text on viewport
-void OpenGlGraph::DrawText(Vector2<double> pos, std::string const &text, AComponent::ComponentColor const &color)
+void OpenGlGraph::DrawText(Vector2<double> pos, std::string const &text, AComponent::ComponentColor const &color, Vector2<double> dim)
 {
     // IMPORTANT : change the color before rasterizing !!
     glColor3ub(colors[color].r, colors[color].g, colors[color].b);
 
     //glRasterPos2d(pos.x * m_size_coeff /*+ (7 * (text.size()))*/, (pos.y) * m_size_coeff);
-    glRasterPos2d(pos.x * 30.0, (pos.y) * 24.0);
+    glRasterPos2d((pos.x + dim.x / 2.0) * 20.0,
+                  (pos.y + dim.y / 2.0) * 25.0);
     for (unsigned int i = 0; i < text.length(); i++)
     {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
