@@ -30,6 +30,9 @@ protected:
     std::string m_chronoName;
 };
 
+// TODO: change chrono with doubles instead of time point to be able to reset it
+// stop all the sounds in the libs when needed !!
+
 /// <summary>
 /// This class holds a chronometer and can trigger events
 /// </summary>
@@ -38,19 +41,29 @@ class Chrono : public IChrono
 {
 public:
     Chrono(double time, T & object, U method, std::string const& name) :
+            m_last_clock(std::chrono::steady_clock::now()),
             m_remaining_time(time),
             m_start_time(m_remaining_time),
             m_object(object),
-            m_method(method)
+            m_method(method),
+            m_isFirstUpdate(true)
     {
-        m_last_clock = std::chrono::steady_clock::now();
         m_chronoName = name;
     }
     virtual ~Chrono()
     {}
 
+    /**
+     * \brief Update the chrono internal time
+     */
     void Update()
     {
+        // We check if it is the first time, because the now() value would not be accurate
+        if (m_isFirstUpdate)
+        {
+            m_last_clock = std::chrono::steady_clock::now();
+            m_isFirstUpdate = false;
+        }
         m_remaining_time -= std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now()
                                                                                   - m_last_clock).count() / 1000.0;
         m_last_clock = std::chrono::steady_clock::now();
@@ -75,9 +88,13 @@ public:
     {
         m_remaining_time = m_start_time;
         m_last_clock = std::chrono::steady_clock::now();
+        m_isFirstUpdate = true;
         m_hasTriggered = false;
     }
 
+    /**
+     * \brief Has the event been triggered ?
+     */
     virtual bool HasTriggered() const
     {
         return m_hasTriggered;
@@ -96,6 +113,7 @@ private:
     T & m_object;
     U m_method;
     bool m_hasTriggered;
+    bool m_isFirstUpdate;
 };
 
 #endif //CPP_ARCADE_CHRONO_HPP

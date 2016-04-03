@@ -63,7 +63,7 @@ void Sound::PlaySound(std::string const &soundPath, bool bLoop, bool bOverlap, b
             m_jukebox[soundPath] = Mix_LoadWAV(soundPath.c_str());
         }
         music = m_jukebox[soundPath];
-        
+
         if (music != NULL)
         {
             if (m_sounds.find(soundPath) == m_sounds.end())
