@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:16 2016 Victor Gouet
-// Last update Sun Apr  3 11:23:31 2016 Victor Gouet
+// Last update Sun Apr  3 16:01:10 2016 Victor Gouet
 //
 
 #include "../include/Centipede.hpp"
@@ -45,6 +45,7 @@ Centipede::Centipede(Vector2<double> const &pos) :
     _map[RIGHT] = &Centipede::goRight;
     _dir = RIGHT;
     this->initPos = pos;
+    centipedeMove = new AudioComponent("Sound/CentipedeMove.wav", false, false, false);
 }
 
 Centipede::Centipede(const Centipede &centipede) :
@@ -55,6 +56,7 @@ Centipede::Centipede(const Centipede &centipede) :
         initPos(centipede.initPos),
         _map(centipede._map)
 {
+  centipedeMove = new AudioComponent("Sound/CentipedeMove.wav", false, false, false);
 }
 
 Centipede &Centipede::operator=(const Centipede &centipede)
@@ -64,12 +66,16 @@ Centipede &Centipede::operator=(const Centipede &centipede)
     _pos = centipede._pos;
     initPos = centipede.initPos;
     _map = centipede._map;
+    centipedeMove = new AudioComponent("Sound/CentipedeMove.wav", false, false, false);
     return *this;
 }
 
 Centipede::~Centipede()
 {
-
+  if (centipedeMove)
+    {
+      delete centipedeMove;
+    }
 }
 
 /*
@@ -268,6 +274,7 @@ std::vector<AComponent *>    Centipede::getGameComponent() const
       vec.push_back(it->gameComponent);
       ++it;
     }
+    vec.push_back(centipedeMove);
     return (vec);
 }
 

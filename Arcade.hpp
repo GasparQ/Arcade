@@ -90,7 +90,10 @@ namespace arcade
         /**
          * \brief Used to store all the musics
          */
-        AudioComponent audioComponent[1] = {{"Sound/HeyHeyHey.wav", false, false, true}};
+        AudioComponent audioComponent[4] = {{"Sound/HeyHeyHey.wav", false, false, true},
+                                            {"Sound/Pacman_Siren_Sound_Effect_1_.wav", false, false, true},
+                                            {"Sound/CentipedeIntro.wav", false, false, true},
+                                            {"Sound/PacmanIntro.wav", false, false, true}};
         /**
          * \brief Used to store all the opening sounds
          */
@@ -107,6 +110,7 @@ namespace arcade
                                            {"Sound/arcade11.wav", false, false, false},
                                            {"Sound/arcade12.wav", false, false, false},
                                            {"Sound/arcade13.wav", false, false, false}};
+        bool m_gameChanged = false;
 
         /**
          * Methods

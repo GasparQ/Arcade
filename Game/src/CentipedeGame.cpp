@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Sun Apr  3 11:19:01 2016 Victor Gouet
+// Last update Sun Apr  3 15:27:03 2016 Victor Gouet
 //
 
 #include <unistd.h>
@@ -22,16 +22,16 @@ CentipedeGame::CentipedeGame() :
 {
     highScoreComponent = NULL;
     // initMap();
-    restart();
 
-    waweCom = new UIComponent(Vector2<double>(0, 0),
+    waveCom = new UIComponent(Vector2<double>(0, 0),
                               AComponent::COLOR_WHITE,
                               Vector2<double>(5, 1), "");
 
-    waweCom->setText("wave : " + std::to_string(_wave));
-    waweCom->setPos(Vector2<double>(1, 1));
+    _wave = 1;
+    waveCom->setText("wave : " + std::to_string(_wave));
+    waveCom->setPos(Vector2<double>(1, 1));
 
-    _oldStack.push(waweCom);
+    _oldStack.push(waveCom);
 
     scoreCom = new UIComponent(Vector2<double>(0, 0),
                                AComponent::COLOR_WHITE,
@@ -42,6 +42,14 @@ CentipedeGame::CentipedeGame() :
     missilCom = new GameComponent(Vector2<double>(0, 0),
                                   AComponent::ComponentColor::COLOR_GREEN,
                                   GameComponent::Shapes::SPHERE_SMALL, " ", "./sprites/missile.bmp");
+
+    centipedeMusic = new AudioComponent("Sound/CentipedeIntro.wav", false, false, false);
+
+    centipedeExplosion = new AudioComponent("Sound/CentipedeExplosion.wav", false, true, false);
+
+    spaceShipShoot = new AudioComponent("Sound/CentipedeShot.wav", false, true, false);
+
+    restart();
 }
 
 CentipedeGame::~CentipedeGame()
@@ -50,18 +58,30 @@ CentipedeGame::~CentipedeGame()
     {
         delete scoreCom;
     }
-    if (waweCom)
+    if (waveCom)
     {
-        delete waweCom;
+        delete waveCom;
     }
     if (missilCom)
     {
         delete missilCom;
     }
+    if (centipedeMusic)
+      {
+	delete centipedeMusic;
+      }
+    if (centipedeExplosion)
+      {
+	delete centipedeExplosion;
+      }
+    if (spaceShipShoot)
+      {
+	delete spaceShipShoot;
+      }
 }
 
 /*
- * \brief determine what the missil is touching / wall / centipede / nothing 
+ * \brief determine what the missile is touching / wall / centipede / nothing
  */
 void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
 {
@@ -103,6 +123,7 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
                 centipede.splitCentipede(*itNc);
                 map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] = block;
                 spaceShip.stopShot();
+		output.push(centipedeExplosion);
                 return;
             }
             ++itNc;
@@ -151,6 +172,10 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
     if (state == ALIVE)
     {
         output = this->_oldStack;
+	if (this->_oldStack.size() == 3)
+	  {
+	    _oldStack.pop();
+	  }
         onShoot(output);
         if (centipede.isTouching(spaceShip.getPos()))
         {
@@ -160,6 +185,7 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         if (keycode == ArcadeSystem::Space)
         {
             spaceShip.shoot();
+            output.push(spaceShipShoot);
         }
         if (isEmptyCentipede())
         {
@@ -186,8 +212,8 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         scoreCom->setPos(
                 Vector2<double>(static_cast<int>(ArcadeSystem::winWidth - scoreCom->getText().length()) / 2, 1));
 
-        waweCom->setText("wave : " + std::to_string(_wave));
-        waweCom->setPos(Vector2<double>(1, 1));
+        waveCom->setText("wave : " + std::to_string(_wave));
+        waveCom->setPos(Vector2<double>(1, 1));
     }
     else
     {
@@ -207,7 +233,6 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         else
             output.push(highScoreComponent);
     }
-
     return (output);
 }
 
@@ -229,6 +254,7 @@ void        CentipedeGame::initVariable()
  */
 void CentipedeGame::restart()
 {
+  _oldStack.push(centipedeMusic);
     initMap();
     spaceShip.reinitPos();
     _wave = 1;

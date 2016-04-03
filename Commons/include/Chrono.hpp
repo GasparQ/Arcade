@@ -30,9 +30,6 @@ protected:
     std::string m_chronoName;
 };
 
-// TODO: change chrono with doubles instead of time point to be able to reset it
-// stop all the sounds in the libs when needed !!
-
 /// <summary>
 /// This class holds a chronometer and can trigger events
 /// </summary>

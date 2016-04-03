@@ -240,6 +240,7 @@ void        arcade::Arcade::onNextGraph()
  */
 void        arcade::Arcade::onNextGame()
 {
+    m_gameChanged = true;
     if (currGame == games.end())
         return;
     ++currGame;
@@ -252,6 +253,7 @@ void        arcade::Arcade::onNextGame()
  */
 void        arcade::Arcade::onPrevGame()
 {
+    m_gameChanged = true;
     if (currGame == games.end())
         return;
     if (currGame == games.begin())
@@ -328,7 +330,7 @@ void        arcade::Arcade::Run()
             components = menu.updateMenu(key);
 
             /// We stop all the musics from the games
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 4; i++)
             {
                 components.push(&audioComponent[i]);
             }
@@ -351,6 +353,16 @@ void        arcade::Arcade::Run()
             {
                 audioOpening[i].setStop(true);
                 components.push(&audioOpening[i]);
+            }
+        }
+
+        if (m_gameChanged)
+        {
+            m_gameChanged = false;
+            /// We stop all the musics from the games
+            for (int i = 0; i < 4; i++)
+            {
+                components.push(&audioComponent[i]);
             }
         }
 

@@ -16,7 +16,6 @@ Ghost::Ghost(AComponent::ComponentColor color, std::string const &shape2D) : Pac
 
 Ghost::~Ghost()
 {
-
 }
 
 Vector2<double> const &Ghost::Move(char map[31][51], Vector2<double> pacmanPos)

@@ -42,7 +42,7 @@ Snake::Snake() :
         uiScore(NULL),
         highScoreComponent(NULL),
         saved_keycode(-1),
-        m_gameMusic("Sound/HeyHeyHey.wav", true, false, false)
+        m_gameMusic("Sound/HeyHeyHey.wav", false, false, false)
 {
     keycodex[ArcadeSystem::ArrowDown] = &Snake::goDown;
     keycodex[ArcadeSystem::ArrowLeft] = &Snake::goLeft;
@@ -74,6 +74,7 @@ Snake::Snake() :
                                               Snake::bric2d));
         }
     }
+    crounch = new AudioComponent("Sound/Crounch.wav", false, true, false);
 
     initGame();
 }
@@ -95,6 +96,10 @@ Snake::~Snake()
         delete (basicStack.top());
         basicStack.pop();
     }
+    if (crounch)
+      {
+	delete crounch;
+      }
 }
 
 std::stack<AComponent *>                    Snake::compute(int keycode)
@@ -285,8 +290,7 @@ void Snake::move()
     {
         score += 10;
         generateAppelPos();
-        // TODO: remove leak
-        output.push(new AudioComponent("Sound/Crounch.wav", false, true, false));
+        output.push(crounch);
     }
     else
         removeBody();

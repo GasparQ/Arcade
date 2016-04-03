@@ -8,8 +8,6 @@
 #include <map>
 #include "../Graphique/SDL2_mixer/SDL_mixer.h"
 
-// TODO:
-// menu music
 class Sound
 {
 public:
