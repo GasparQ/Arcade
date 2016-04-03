@@ -1,0 +1,11 @@
+<map id="FLAC_plugin__tags_add_tag_utf8" name="FLAC_plugin__tags_add_tag_utf8">
+<area shape="rect" id="node2" href="$group__flac__metadata__object.html#gae094c1ce4f248d49e8c099661bd5288e" title="FLAC__metadata_object\l_vorbiscomment_find_entry_from" alt="" coords="219,5,434,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga0ec0c7ddd3a8832ee7a75bf47956b1c7" title="FLAC__metadata_object\l_vorbiscomment_entry\l_from_name_value_pair" alt="" coords="243,69,410,125"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__object.html#gad04ef80ae5f852db8f3729a6ef8c1631" title="FLAC__metadata_object\l_vorbiscomment_append\l_comment" alt="" coords="243,149,410,205"/>
+<area shape="rect" id="node4" href="$group__flac__format.html#ga14980d2e4b0ff2cdd4f22fcf8e75b54c" title="FLAC__format_vorbiscomment\l_entry_name_is_legal" alt="" coords="483,15,685,57"/>
+<area shape="rect" id="node5" href="$group__flac__format.html#gae0707c9d46b2af02f1e145bdae331605" title="FLAC__format_vorbiscomment\l_entry_value_is_legal" alt="" coords="483,81,685,122"/>
+<area shape="rect" id="node7" href="$group__flac__metadata__object.html#ga0c23f59f465f302b35a2d3ab1eae07e7" title="FLAC__metadata_object\l_vorbiscomment_insert\l_comment" alt="" coords="501,149,667,205"/>
+<area shape="rect" id="node8" href="$group__flac__format.html#ga6878e238052fc0f7109b55129d64b4e5" title="FLAC__format_vorbiscomment\l_entry_is_legal" alt="" coords="987,161,1189,202"/>
+<area shape="rect" id="node9" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="753,149,919,205"/>
+<area shape="rect" id="node10" href="$group__flac__metadata__object.html#gadf034b2c385e7932c6be2d724a0deae3" title="FLAC__metadata_object\l_vorbiscomment_set_comment" alt="" coords="734,229,938,270"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="test_metadata_object_application" name="test_metadata_object_application">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="441,173,623,214"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a5fd592fd29018c66d29f0940f3cf05b3" title="FLAC::Metadata::Prototype\l::get_length" alt="" coords="205,74,387,116"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#gaa12d8f3c14500a977b7ddf14c6bf81fe" title="FLAC__metadata_object\l_clone" alt="" coords="681,388,847,429"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_metadata_1_1_application.html#a47f68d7001ef094a916d3b13fe589fc2" title="FLAC::Metadata::Application\l::assign" alt="" coords="201,453,391,494"/>
+<area shape="rect" id="node11" href="$class_f_l_a_c_1_1_metadata_1_1_application.html#a1091e3153598a350db898ac2c52db979" title="FLAC::Metadata::Application\l::set_id" alt="" coords="201,140,391,181"/>
+<area shape="rect" id="node12" href="$class_f_l_a_c_1_1_metadata_1_1_application.html#acbb3f2b255a4c5cc4ad179a79b1588f1" title="This form always copies data. " alt="" coords="201,388,391,429"/>
+<area shape="rect" id="node14" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="258,336,334,363"/>
+<area shape="rect" id="node15" href="$class_f_l_a_c_1_1_metadata_1_1_application.html#a13dcf609bba5c76a56e98bd6bfbb17c1" title="FLAC::Metadata::Application\l::get_id" alt="" coords="201,205,391,246"/>
+<area shape="rect" id="node16" href="$class_f_l_a_c_1_1_metadata_1_1_application.html#af793311d25fbf68ed99c8f0d28c43ada" title="FLAC::Metadata::Application\l::get_data" alt="" coords="201,270,391,312"/>
+<area shape="rect" id="node17" href="$group__flacpp__metadata__object.html#gaea2484b59c72f4cce8366f25133f5d51" title="FLAC::Metadata::clone" alt="" coords="217,519,375,546"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__object.html#gab3d728ca4455bda71cc231fdb91307fb" title="FLAC__metadata_object_new" alt="" coords="904,395,1101,422"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__object.html#ga66bbe27dba68ba77be5af83986a280ea" title="FLAC__metadata_object\l_delete" alt="" coords="919,449,1086,490"/>
+<area shape="rect" id="node7" href="$lib_f_l_a_c_2metadata__object_8c.html#adca9ba17ba21fe5f9e9c19ba2784ea38" title="FLAC__metadata_object\l_delete_data" alt="" coords="1150,449,1317,490"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a553ddf0187b31218ecfb0d7ba259fda0" title="FLAC::Metadata::Prototype\l::assign_object" alt="" coords="441,453,623,494"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a325839301bca33a69890b59416bcb314" title="FLAC::Metadata::Prototype\l::clear" alt="" coords="673,453,855,494"/>
+<area shape="rect" id="node13" href="$group__flac__metadata__object.html#ga8f7fbaa68d5637e2409a053ec2ff744d" title="FLAC__metadata_object\l_application_set_data" alt="" coords="449,388,615,429"/>
+</map>

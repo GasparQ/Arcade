@@ -1,0 +1,7 @@
+<map id="Voice_Play_internal" name="Voice_Play_internal">
+<area shape="rect" id="node2" href="$win32_2mikmod__build_8h.html#a4a64c7aa62999f7181c6e7dc2f33206b" title="Voice_Play" alt="" coords="223,5,311,32"/>
+<area shape="rect" id="node3" href="$mdriver_8c.html#ae5f7cc212c2c6d6552c4ed67c10b98d2" title="Sample_Play_internal" alt="" coords="193,56,341,83"/>
+<area shape="rect" id="node5" href="$mplayer_8c.html#a576fe5c46f2ff1e9e42f2db9a8712b7a" title="pt_UpdateVoices" alt="" coords="205,107,328,133"/>
+<area shape="rect" id="node4" href="$win32_2mikmod__build_8h.html#a41334c7112403c295605bfb64c4b804a" title="Sample_Play" alt="" coords="407,56,505,83"/>
+<area shape="rect" id="node6" href="$mplayer_8c.html#a1c12b46bfb6fb228606d5604863c50a5" title="Player_HandleTick" alt="" coords="390,107,522,133"/>
+</map>

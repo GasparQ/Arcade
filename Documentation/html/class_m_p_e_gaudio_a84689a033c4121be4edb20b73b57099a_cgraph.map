@@ -1,0 +1,16 @@
+<map id="MPEGaudio::MPEGaudio" name="MPEGaudio::MPEGaudio">
+<area shape="rect" id="node2" href="$class_m_p_e_gaudio.html#ada1d438dc01b84e4734bb033ea983b74" title="MPEGaudio::initialize" alt="" coords="239,81,385,108"/>
+<area shape="rect" id="node9" href="$class_m_p_e_gaudio.html#a1b3a236f4c2c7da2814cc1e4cb6379a4" title="MPEGaudio::WantedSpec" alt="" coords="225,132,399,159"/>
+<area shape="rect" id="node10" href="$_s_d_l__audio_8h.html#a2edf30e7747584e28041b4986f89f440" title="SDL_OpenAudio" alt="" coords="253,183,371,209"/>
+<area shape="rect" id="node11" href="$class_m_p_e_gaudio.html#a60af29aeb765c5af7597773a210c3424" title="MPEGaudio::ActualSpec" alt="" coords="229,233,395,260"/>
+<area shape="rect" id="node12" href="$class_m_p_e_gerror.html#a1c7b0bcff8446609b2ef8d59236cf58d" title="MPEGerror::SetError" alt="" coords="241,284,383,311"/>
+<area shape="rect" id="node13" href="$_s_d_l__error_8h.html#ac88e1aa404a8f94aaee4ad6b94547647" title="SDL_GetError" alt="" coords="260,335,364,361"/>
+<area shape="rect" id="node14" href="$_s_d_l__audio_8h.html#aa68e60a33666ff4f2d36f3827b1d6061" title="SDL_PauseAudio" alt="" coords="249,385,375,412"/>
+<area shape="rect" id="node15" href="$class_m_p_e_gaudio.html#a7d31d7ebe5bcec8fa81a8f04a58c443f" title="MPEGaudio::Volume" alt="" coords="240,436,384,463"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudio.html#abd08180d5181225f27a2f9d40bdc7004" title="MPEGaudio::Rewind" alt="" coords="468,56,612,83"/>
+<area shape="rect" id="node8" href="$class_m_p_e_gaudio.html#a06ad1260c95aade677c42dcf60de9a7d" title="MPEGaudio::ResetSynchro" alt="" coords="449,107,631,133"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gaudio.html#aba3d2c9804917063bf0d5b380601629b" title="MPEGaudio::Stop" alt="" coords="681,56,807,83"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="886,5,1002,32"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="879,56,1009,83"/>
+<area shape="rect" id="node7" href="$class_m_p_e_gaction.html#a12e7fe7696dd1bd5f9f05ca2e08413a0" title="MPEGaction::ResetPause" alt="" coords="856,107,1032,133"/>
+</map>

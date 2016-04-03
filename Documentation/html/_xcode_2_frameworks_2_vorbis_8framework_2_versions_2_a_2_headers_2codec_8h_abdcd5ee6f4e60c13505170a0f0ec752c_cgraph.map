@@ -1,0 +1,6 @@
+<map id="vorbis_analysis_init" name="vorbis_analysis_init">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2codec__internal_8h.html#afcaeaf1c809309d4f263f40f8b83137f" title="_vp_global_look" alt="" coords="196,5,311,32"/>
+<area shape="rect" id="node3" href="$envelope_8c.html#aedc9746428d2a6117963e8dee322325e" title="_ve_envelope_init" alt="" coords="190,56,317,83"/>
+<area shape="rect" id="node5" href="$bitrate_8c.html#ab885f5b929f532f9e5a49aa234a705ce" title="vorbis_bitrate_init" alt="" coords="191,107,315,133"/>
+<area shape="rect" id="node4" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a634a9bdaede2031e443d3f2c52eb3363" title="mdct_init" alt="" coords="365,56,440,83"/>
+</map>

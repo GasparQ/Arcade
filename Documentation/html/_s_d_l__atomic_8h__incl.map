@@ -1,7 +1,8 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_atomic.h" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_atomic.h">
-<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="693,109,795,136"/>
-<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="869,259,981,285"/>
-<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="731,333,829,360"/>
-<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1021,333,1120,360"/>
-<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="817,184,919,211"/>
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="647,109,748,136"/>
+<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="761,259,873,285"/>
+<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="5,333,104,360"/>
+<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1231,333,1329,360"/>
+<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="317,184,419,211"/>
+<area shape="rect" id="node7" href="$types_8h.html" title="sys/types.h" alt="" coords="152,184,243,211"/>
 </map>

@@ -1,3 +1,6 @@
 <map id="SDL_GetError" name="SDL_GetError">
-<area shape="rect" id="node2" href="$class_s_d_l_graph.html#a9ed11ac197e66eabdd7d689df1ca9937" title="SDLGraph::SDLGraph" alt="" coords="157,5,309,32"/>
+<area shape="rect" id="node2" href="$class_s_d_l_graph.html#a9ed11ac197e66eabdd7d689df1ca9937" title="Constructor in which SDL, TTF, render, window, font, colors, keycodes will be initialised. " alt="" coords="167,5,319,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudio.html#a84689a033c4121be4edb20b73b57099a" title="MPEGaudio::MPEGaudio" alt="" coords="157,56,328,83"/>
+<area shape="rect" id="node4" href="$class_m_p_e_g.html#a566f6a596fffac729a2f2413b15fc3f2" title="MPEG::MPEG" alt="" coords="189,107,297,133"/>
+<area shape="rect" id="node5" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="217,157,268,184"/>
 </map>

@@ -1,0 +1,12 @@
+<map id="FLAC__format_entropy_coding_method_partitioned_rice_contents_clear" name="FLAC__format_entropy_coding_method_partitioned_rice_contents_clear">
+<area shape="rect" id="node2" href="$group__flac__stream__decoder.html#gab958ee28b829be37e541946676ad9677" title="FLAC__stream_decoder\l_delete" alt="" coords="237,173,400,214"/>
+<area shape="rect" id="node6" href="$group__flac__stream__encoder.html#ga9c9956af42bebe923da59437628aa9ea" title="FLAC__stream_encoder\l_delete" alt="" coords="448,303,611,345"/>
+<area shape="rect" id="node3" href="$examples_2c_2decode_2file_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="504,5,555,32"/>
+<area shape="rect" id="node4" href="$encode_8h.html#ac6dc72bc13bbdb309cb6750a0ab1231f" title="flac__encode_flac" alt="" coords="466,56,593,83"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#ac3085a4ab3a6acaae9ed8cbcd71c8495" title="FLAC::Decoder::Stream\l::~Stream" alt="" coords="448,107,611,149"/>
+<area shape="rect" id="node10" href="$share_2grabbag_2replaygain_8c.html#ac2d2eb81f661527bdb055778a4394a67" title="grabbag__replaygain\l_analyze_file" alt="" coords="459,173,600,214"/>
+<area shape="rect" id="node11" href="$playback_8h.html#a22fc9292a5e328bf0689567e103b9ee9" title="FLAC_plugin__decoder\l_delete" alt="" coords="451,238,608,279"/>
+<area shape="rect" id="node7" href="$examples_2c_2encode_2file_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="715,252,765,279"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#a2e183b54e54c64d20a1f056c88093a50" title="FLAC::Encoder::Stream\l::~Stream" alt="" coords="659,303,821,345"/>
+<area shape="rect" id="node9" href="$file__utils__flac_8c.html#a032538a19ad733721331fb98ed31dcb0" title="file_utils__generate\l_flacfile" alt="" coords="673,369,807,410"/>
+</map>

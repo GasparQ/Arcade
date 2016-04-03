@@ -1,0 +1,5 @@
+<map id="FLAC__stream_decoder_process_single" name="FLAC__stream_decoder_process_single">
+<area shape="rect" id="node2" href="$encode_8h.html#ac6dc72bc13bbdb309cb6750a0ab1231f" title="flac__encode_flac" alt="" coords="234,5,361,32"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a6d0d804bca44c0432f3cadfe12e64321" title="See FLAC__stream_decoder_process_single() " alt="" coords="216,57,379,98"/>
+<area shape="rect" id="node4" href="$playback_8h.html#a9628c3e5acf1abbac5209a7d14135c89" title="FLAC_plugin__decode" alt="" coords="221,123,374,149"/>
+</map>

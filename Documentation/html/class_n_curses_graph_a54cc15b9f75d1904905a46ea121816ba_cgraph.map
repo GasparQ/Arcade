@@ -1,3 +1,12 @@
 <map id="NCursesGraph::display" name="NCursesGraph::display">
-<area shape="rect" id="node2" href="$classncr_1_1_window.html#ac2642af30cf4a7e6945fa0c4a1765858" title="ncr::Window::refresh" alt="" coords="214,5,357,32"/>
+<area shape="rect" id="node2" href="$class_sound.html#aeb8f1066a7edf4ded8d67d2ca7417fe6" title="Sound::PlaySound" alt="" coords="255,31,385,57"/>
+<area shape="rect" id="node7" href="$class_audio_component.html#ad8fa1a90afc18091fb5a04a9fe52af69" title="AudioComponent::getSoundPath" alt="" coords="214,81,426,108"/>
+<area shape="rect" id="node8" href="$class_audio_component.html#a9af99cd99cc6b76aa616eba27b9d1e68" title="AudioComponent::getLoop" alt="" coords="232,132,408,159"/>
+<area shape="rect" id="node9" href="$class_audio_component.html#a65799bd9a898dd16139af03ea4054213" title="AudioComponent::getOverlap" alt="" coords="223,183,417,209"/>
+<area shape="rect" id="node10" href="$class_audio_component.html#a74179d67fdf8fb2940d2cf92d0c226ea" title="AudioComponent::getStop" alt="" coords="233,233,407,260"/>
+<area shape="rect" id="node11" href="$classncr_1_1_window.html#ac2642af30cf4a7e6945fa0c4a1765858" title="ncr::Window::refresh" alt="" coords="249,284,391,311"/>
+<area shape="rect" id="node3" href="$class_sound.html#a19d2bbd15f932955d33de7b0ab90b244" title="Sound::StopSound" alt="" coords="475,31,605,57"/>
+<area shape="rect" id="node4" href="$mixer_8c.html#a29f8403bda00a77830c472e494140eae" title="Mix_HaltChannel" alt="" coords="653,31,776,57"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="831,5,947,32"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="825,56,954,83"/>
 </map>

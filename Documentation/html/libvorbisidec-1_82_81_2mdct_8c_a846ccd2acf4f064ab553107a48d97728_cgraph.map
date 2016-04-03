@@ -1,0 +1,13 @@
+<map id="mdct_backward" name="mdct_backward">
+<area shape="rect" id="node2" href="$libvorbisidec-1_82_81_2misc_8h.html#a5bf94cf569913439b146f522cf0977e0" title="XPROD31" alt="" coords="183,5,267,32"/>
+<area shape="rect" id="node5" href="$libvorbisidec-1_82_81_2misc_8h.html#a59165665e236e860f1b07ea83acafbd6" title="XNPROD31" alt="" coords="178,56,273,83"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a1132d69075e19db210814d206990bb0c" title="mdct_butterflies" alt="" coords="168,107,283,133"/>
+<area shape="rect" id="node12" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a0789b37647059e00547ea0551de4a9f5" title="mdct_bitreverse" alt="" coords="168,157,283,184"/>
+<area shape="rect" id="node3" href="$libvorbisidec-1_82_81_2misc_8h.html#a766407d8b96842068554534a3767205a" title="MULT31" alt="" coords="372,5,444,32"/>
+<area shape="rect" id="node4" href="$libvorbisidec-1_82_81_2misc_8h.html#a632de8c87c1a6b0d673019cd2213bf23" title="MULT32" alt="" coords="561,5,633,32"/>
+<area shape="rect" id="node7" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a2bc8649748ee55aa2c3c788fa221ec46" title="mdct_butterfly_first" alt="" coords="341,56,475,83"/>
+<area shape="rect" id="node8" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#ac61922676b70d4aa4c545cadbdfb923a" title="mdct_butterfly_generic" alt="" coords="331,107,485,133"/>
+<area shape="rect" id="node9" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a8604ac2131ef5e9a32583423ddd9f8c1" title="mdct_butterfly_32" alt="" coords="345,157,471,184"/>
+<area shape="rect" id="node10" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a72b07af28f772fad87eea2c23b252a5e" title="mdct_butterfly_16" alt="" coords="534,157,661,184"/>
+<area shape="rect" id="node11" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a499303112b7b111481d9366f03f28892" title="mdct_butterfly_8" alt="" coords="710,157,829,184"/>
+</map>

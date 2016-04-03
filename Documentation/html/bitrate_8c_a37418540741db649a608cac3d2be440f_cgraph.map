@@ -1,0 +1,5 @@
+<map id="vorbis_bitrate_flushpacket" name="vorbis_bitrate_flushpacket">
+<area shape="rect" id="node2" href="$bitrate_8c.html#a340357d7f7012c18f5ca87ef769dfa97" title="vorbis_bitrate_managed" alt="" coords="229,5,389,32"/>
+<area shape="rect" id="node3" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#abf824fd3dd4a0bd810adb2d3490e3b70" title="oggpack_get_buffer" alt="" coords="241,56,377,83"/>
+<area shape="rect" id="node4" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a6483ce3b4718d510fd506a7d0099d8e4" title="oggpack_bytes" alt="" coords="254,107,365,133"/>
+</map>

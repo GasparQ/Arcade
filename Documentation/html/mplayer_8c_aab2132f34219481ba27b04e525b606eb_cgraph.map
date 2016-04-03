@@ -1,0 +1,6 @@
+<map id="pt_EffectsPass2" name="pt_EffectsPass2">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a86d52014a41c3b93e1276fb571e700ac" title="UniSetRow" alt="" coords="186,5,275,32"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#a49718af75e86ee742b0533a5fbd8000e" title="UniGetByte" alt="" coords="185,56,276,83"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a8a53f8393336d51ce0803985ea4a5d18" title="UniSkipOpcode" alt="" coords="174,107,287,133"/>
+<area shape="rect" id="node5" href="$munitrk_8c.html#a49718af75e86ee742b0533a5fbd8000e" title="UniGetByte" alt="" coords="336,107,427,133"/>
+</map>

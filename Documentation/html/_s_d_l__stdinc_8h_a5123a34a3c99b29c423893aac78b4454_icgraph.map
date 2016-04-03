@@ -1,0 +1,5 @@
+<map id="SDL_realloc" name="SDL_realloc">
+<area shape="rect" id="node2" href="$load__voc_8h.html#a0accd84cb7bdf3597f1e1f6756943e6a" title="Mix_LoadVOC_RW" alt="" coords="154,5,291,32"/>
+<area shape="rect" id="node4" href="$_s_d_l__mixer_8h.html#a3bb24eade448b0c5515f9d402d935924" title="Mix_AllocateChannels" alt="" coords="147,56,299,83"/>
+<area shape="rect" id="node3" href="$_s_d_l__mixer_8h.html#ade68686625490fae426a8f711a105501" title="Mix_LoadWAV_RW" alt="" coords="347,5,485,32"/>
+</map>

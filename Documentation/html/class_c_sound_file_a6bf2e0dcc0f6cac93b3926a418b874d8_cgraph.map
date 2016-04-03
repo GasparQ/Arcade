@@ -1,0 +1,9 @@
+<map id="CSoundFile::TestABC" name="CSoundFile::TestABC">
+<area shape="rect" id="node2" href="$getopt_8c.html#aee28fd8a0e40b6d958f7d20348e45368" title="getenv" alt="" coords="268,5,329,32"/>
+<area shape="rect" id="node3" href="$load__pat_8cpp.html#a6819f200079f2c9a81d7c0f2aea27c2b" title="pat_gm_drumnote" alt="" coords="235,56,362,83"/>
+<area shape="rect" id="node4" href="$load__pat_8cpp.html#a2441765f26879e9baa1c0539a7c7a74d" title="pat_gm_drumnr" alt="" coords="440,81,552,108"/>
+<area shape="rect" id="node5" href="$load__pat_8cpp.html#a8ba257ef0ff81c1279d0aa2884aefc83" title="pat_gmtosmp" alt="" coords="248,157,349,184"/>
+<area shape="rect" id="node6" href="$load__pat_8cpp.html#a99b08eb6e180f358e73cfe1c53e79110" title="pat_modnote" alt="" coords="250,208,347,235"/>
+<area shape="rect" id="node7" href="$class_c_sound_file.html#a846f81ea273e97bc67faf415165782fd" title="CSoundFile::AllocatePattern" alt="" coords="205,259,392,285"/>
+<area shape="rect" id="node8" href="$cwmikmodheaders_8h.html#a91ca23db677fbf51663c03060776457d" title="strcasecmp" alt="" coords="253,309,344,336"/>
+</map>

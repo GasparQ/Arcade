@@ -1,0 +1,7 @@
+<map id="CSoundFile::ReadPAT" name="CSoundFile::ReadPAT">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#aa2b727908967c122365ef4088639ded7" title="AllocPositions" alt="" coords="215,5,321,32"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#acb221281ef0f87119f54b450bbb91e17" title="AllocInstruments" alt="" coords="208,56,328,83"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a722f3aedb018057f4dc6bc6da44ca07e" title="AllocSamples" alt="" coords="217,107,319,133"/>
+<area shape="rect" id="node5" href="$mikmod__internals_8h.html#aa96e38c5178f640fc4242b85809f5f75" title="AllocTracks" alt="" coords="223,157,313,184"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#a2340d9d9f51408584fe13e058499b917" title="AllocPatterns" alt="" coords="218,208,318,235"/>
+</map>

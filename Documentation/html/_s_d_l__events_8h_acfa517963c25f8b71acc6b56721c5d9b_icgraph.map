@@ -1,5 +1,5 @@
 <map id="SDL_PollEvent" name="SDL_PollEvent">
 <area shape="rect" id="node2" href="$_graphique_2_open_g_l_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="main" alt="" coords="245,5,296,32"/>
 <area shape="rect" id="node3" href="$class_open_gl_graph.html#acf9b77bbd69d36766f01629903e99ecf" title="OpenGlGraph::eventManagment" alt="" coords="166,56,375,83"/>
-<area shape="rect" id="node4" href="$class_s_d_l_graph.html#abe1f0c01badf17143663695f156ce199" title="SDLGraph::eventManagment" alt="" coords="175,107,366,133"/>
+<area shape="rect" id="node4" href="$class_s_d_l_graph.html#abe1f0c01badf17143663695f156ce199" title="Function that will handle a SDL keycode. " alt="" coords="175,107,366,133"/>
 </map>

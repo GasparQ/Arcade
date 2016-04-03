@@ -1,0 +1,9 @@
+<map id="Player_Exit_internal" name="Player_Exit_internal">
+<area shape="rect" id="node2" href="$mloader_8c.html#a168cb47cf889b821b97af8883326b476" title="Player_Free_internal" alt="" coords="192,31,333,57"/>
+<area shape="rect" id="node8" href="$mplayer_8c.html#a1a3593f6b860329d96f78c7836790f66" title="Player_Exit" alt="" coords="218,81,307,108"/>
+<area shape="rect" id="node3" href="$win32_2mikmod__build_8h.html#a2257a9ef221fcfa5156c06b787748d45" title="Player_Free" alt="" coords="382,5,474,32"/>
+<area shape="rect" id="node4" href="$mloader_8c.html#a8c2e25c76cdbb33b067e7d18b291d97c" title="Player_LoadGeneric\l_internal" alt="" coords="523,23,661,65"/>
+<area shape="rect" id="node5" href="$win32_2mikmod__build_8h.html#a373940737ca88906ab5ecb9646a763b1" title="Player_LoadGeneric" alt="" coords="709,31,848,57"/>
+<area shape="rect" id="node6" href="$win32_2mikmod__build_8h.html#a73506cefb979ecd02fa925271f9ac069" title="Player_LoadFP" alt="" coords="897,31,1007,57"/>
+<area shape="rect" id="node7" href="$win32_2mikmod__build_8h.html#abea9eb9ef17918ca1dc9953cbe64d2ce" title="Player_Load" alt="" coords="1057,31,1151,57"/>
+</map>

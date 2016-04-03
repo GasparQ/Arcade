@@ -1,0 +1,9 @@
+<map id="FLAC::Metadata::Chain::is_valid" name="FLAC::Metadata::Chain::is_valid">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_chain.html#ab35ee440a4730e95fa81e1e142deff93" title="See FLAC__metadata_chain_status(). " alt="" coords="224,5,384,46"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_chain.html#a509bf6a75a12df65bc77947a4765d9c1" title="See FLAC__metadata_chain_read(), FLAC__metadata_chain_read_ogg(). " alt="" coords="224,70,384,111"/>
+<area shape="rect" id="node4" href="$class_f_l_a_c_1_1_metadata_1_1_chain.html#a1d54ed419365faf5429caa84b35265c3" title="See FLAC__metadata_chain_check_if_tempfile_needed(). " alt="" coords="213,135,395,177"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_metadata_1_1_chain.html#a2341690885e2312013afc561e6fafd81" title="See FLAC__metadata_chain_write(). " alt="" coords="224,201,384,242"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_metadata_1_1_chain.html#aef51a0414284f468a2d73c07b540641d" title="See FLAC__metadata_chain_merge_padding(). " alt="" coords="224,266,384,307"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_metadata_1_1_chain.html#a779eaac12da7e7edac67089053e5907f" title="See FLAC__metadata_chain_sort_padding(). " alt="" coords="224,331,384,373"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#ab5713af7318f10a46bd8b26ce586947c" title="See FLAC__metadata_iterator_init(). " alt="" coords="221,397,387,438"/>
+</map>

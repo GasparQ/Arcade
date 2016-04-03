@@ -1,0 +1,5 @@
+<map id="FLAC__stream_decoder_seek_absolute" name="FLAC__stream_decoder_seek_absolute">
+<area shape="rect" id="node2" href="$encode_8h.html#ac6dc72bc13bbdb309cb6750a0ab1231f" title="flac__encode_flac" alt="" coords="234,5,361,32"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a859fee76dfa23c09e0b0f872b4a328aa" title="See FLAC__stream_decoder_seek_absolute() " alt="" coords="216,57,379,98"/>
+<area shape="rect" id="node4" href="$playback_8h.html#ab7826a4c1b16912b0db2f69f1a8b7e58" title="FLAC_plugin__seek" alt="" coords="228,123,367,149"/>
+</map>

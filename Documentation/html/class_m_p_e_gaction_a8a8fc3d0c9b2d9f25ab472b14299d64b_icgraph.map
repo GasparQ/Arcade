@@ -1,0 +1,7 @@
+<map id="MPEGaction::Pause" name="MPEGaction::Pause">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a4fac5d7baf2e8b17ec4a3f32f608c58c" title="MPEG::Pause" alt="" coords="195,5,301,32"/>
+<area shape="rect" id="node5" href="$class_m_p_e_g.html#a32884e4534c3236db53f9c3efaf0d6c3" title="MPEG::Seek" alt="" coords="199,56,297,83"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a3c0247c5db14c3e04a645eb3d0963087" title="SMPEG_pause" alt="" coords="349,5,461,32"/>
+<area shape="rect" id="node4" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="509,31,560,57"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a5dc227914aed5353a54ff305405c58d4" title="SMPEG_seek" alt="" coords="353,56,458,83"/>
+</map>

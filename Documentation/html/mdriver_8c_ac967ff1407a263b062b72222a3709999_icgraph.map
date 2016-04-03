@@ -1,0 +1,5 @@
+<map id="Voice_SetVolume_internal" name="Voice_SetVolume_internal">
+<area shape="rect" id="node2" href="$win32_2mikmod__build_8h.html#a24e92a0662b73cd79336c2a923e85b42" title="Voice_SetVolume" alt="" coords="230,5,357,32"/>
+<area shape="rect" id="node3" href="$mplayer_8c.html#a576fe5c46f2ff1e9e42f2db9a8712b7a" title="pt_UpdateVoices" alt="" coords="232,56,355,83"/>
+<area shape="rect" id="node4" href="$mplayer_8c.html#a1c12b46bfb6fb228606d5604863c50a5" title="Player_HandleTick" alt="" coords="406,56,538,83"/>
+</map>

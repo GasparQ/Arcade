@@ -1,0 +1,7 @@
+<map id="UniGetByte" name="UniGetByte">
+<area shape="rect" id="node2" href="$mplayer_8c.html#af1a0bed099110fd17428349874b05c9d" title="pt_Notes" alt="" coords="329,5,404,32"/>
+<area shape="rect" id="node4" href="$mplayer_8c.html#aab2132f34219481ba27b04e525b606eb" title="pt_EffectsPass2" alt="" coords="307,56,426,83"/>
+<area shape="rect" id="node5" href="$munitrk_8c.html#a7d0885b53b05e471456ca62ae065a8b6" title="UniGetWord" alt="" coords="154,81,249,108"/>
+<area shape="rect" id="node6" href="$munitrk_8c.html#a8a53f8393336d51ce0803985ea4a5d18" title="UniSkipOpcode" alt="" coords="145,31,258,57"/>
+<area shape="rect" id="node3" href="$mplayer_8c.html#a1c12b46bfb6fb228606d5604863c50a5" title="Player_HandleTick" alt="" coords="475,31,607,57"/>
+</map>

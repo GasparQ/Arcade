@@ -1,5 +1,7 @@
 <map id="AComponent::getPos" name="AComponent::getPos">
 <area shape="rect" id="node2" href="$class_dual_text_component.html#a153a341eeaf7d5e6fd7306f0fe425f2c" title="DualTextComponent::\lsetSubTitle" alt="" coords="201,5,351,46"/>
-<area shape="rect" id="node4" href="$class_open_gl_graph.html#a2864301b1f133d8d7108be5e0f718b78" title="OpenGlGraph::display" alt="" coords="201,71,351,97"/>
+<area shape="rect" id="node4" href="$_snake_8cpp.html#a20ad0db93a03e6ebe30ec59738214db8" title="updateMap" alt="" coords="233,71,319,97"/>
+<area shape="rect" id="node6" href="$class_open_gl_graph.html#a2864301b1f133d8d7108be5e0f718b78" title="OpenGlGraph::display" alt="" coords="201,121,351,148"/>
 <area shape="rect" id="node3" href="$class_dual_text_component.html#a870feb1d473d51bdfc3a0af3c546b59c" title="DualTextComponent::\lDualTextComponent" alt="" coords="401,5,551,46"/>
+<area shape="rect" id="node5" href="$_snake_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="452,71,500,97"/>
 </map>

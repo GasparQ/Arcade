@@ -1,0 +1,8 @@
+<map id="WAVStream_Init" name="WAVStream_Init">
+<area shape="rect" id="node2" href="$music_8c.html#a1e1592a564082cbe5685bd847e506a6c" title="open_music" alt="" coords="174,56,266,83"/>
+<area shape="rect" id="node3" href="$_s_d_l__mixer_8h.html#a874d68326b7e6f6319052537ccbe5d8e" title="Mix_OpenAudio" alt="" coords="315,56,429,83"/>
+<area shape="rect" id="node4" href="$class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9" title="Sound::Sound" alt="" coords="477,31,581,57"/>
+<area shape="rect" id="node7" href="$playmus_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="504,81,555,108"/>
+<area shape="rect" id="node5" href="$class_sound.html#a654d251e57564b62db784beae79cc07e" title="Sound::Instance" alt="" coords="629,5,747,32"/>
+<area shape="rect" id="node6" href="$class_sound.html#a9f3e9e495574b7afc22e59dbb49c5442" title="Sound::ChunkCallback" alt="" coords="795,31,951,57"/>
+</map>

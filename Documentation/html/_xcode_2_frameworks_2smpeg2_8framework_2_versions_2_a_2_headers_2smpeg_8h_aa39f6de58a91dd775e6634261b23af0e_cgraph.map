@@ -1,0 +1,5 @@
+<map id="SMPEG_setdisplay" name="SMPEG_setdisplay">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a128c1ba561cb16209e20a14e00c062a2" title="MPEG::SetDisplay" alt="" coords="189,31,323,57"/>
+<area shape="rect" id="node3" href="$class_m_p_e_g.html#a680373f56c3d0422569d5002d0668c32" title="MPEG::VideoEnabled" alt="" coords="396,5,545,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideoaction.html#a67220ad711c4c3aa79d068e848c10ea8" title="MPEGvideoaction::SetDisplay" alt="" coords="371,56,570,83"/>
+</map>

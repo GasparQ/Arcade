@@ -1,0 +1,12 @@
+<map id="CSoundFile" name="CSoundFile">
+<area shape="rect" id="node2" href="$struct___s_n_d_m_i_x_p_l_u_g_i_n.html" title="_SNDMIXPLUGIN" alt="" coords="334,76,466,103"/>
+<area shape="rect" id="node3" href="$struct___s_n_d_m_i_x_p_l_u_g_i_n_i_n_f_o.html" title="_SNDMIXPLUGININFO" alt="" coords="11,5,175,32"/>
+<area shape="rect" id="node4" href="$struct___s_n_d_m_i_x_p_l_u_g_i_n_s_t_a_t_e.html" title="_SNDMIXPLUGINSTATE" alt="" coords="6,56,181,83"/>
+<area shape="rect" id="node5" href="$class_i_mix_plugin.html" title="IMixPlugin" alt="" coords="52,107,135,133"/>
+<area shape="rect" id="node6" href="$struct___i_n_s_t_r_u_m_e_n_t_h_e_a_d_e_r.html" title="_INSTRUMENTHEADER" alt="" coords="6,171,181,197"/>
+<area shape="rect" id="node8" href="$struct___m_o_d_c_h_a_n_n_e_l.html" title="_MODCHANNEL" alt="" coords="337,220,463,247"/>
+<area shape="rect" id="node7" href="$struct___m_o_d_c_o_m_m_a_n_d.html" title="_MODCOMMAND" alt="" coords="335,333,465,360"/>
+<area shape="rect" id="node9" href="$struct___m_o_d_i_n_s_t_r_u_m_e_n_t.html" title="_MODINSTRUMENT" alt="" coords="19,240,168,267"/>
+<area shape="rect" id="node10" href="$struct_m_o_d_m_i_d_i_c_f_g.html" title="MODMIDICFG" alt="" coords="345,384,455,411"/>
+<area shape="rect" id="node11" href="$struct___m_o_d_c_h_a_n_n_e_l_s_e_t_t_i_n_g_s.html" title="_MODCHANNELSETTINGS" alt="" coords="304,435,496,461"/>
+</map>

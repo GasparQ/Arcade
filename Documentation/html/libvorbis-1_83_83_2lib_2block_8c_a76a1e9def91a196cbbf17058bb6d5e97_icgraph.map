@@ -1,0 +1,8 @@
+<map id="_vorbis_block_alloc" name="_vorbis_block_alloc">
+<area shape="rect" id="node2" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#a0c75b86b435cd45905ff62e2b9c93ab1" title="vorbis_analysis_blockout" alt="" coords="189,5,357,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2floor1_8c.html#a9cf8bca345f5cc65b555411560dbceb7" title="floor1_fit" alt="" coords="237,56,309,83"/>
+<area shape="rect" id="node4" href="$libvorbis-1_83_83_2lib_2floor1_8c.html#a833379c90cf29a7f88e6a33977f6f37a" title="floor1_interpolate_fit" alt="" coords="204,107,343,133"/>
+<area shape="rect" id="node5" href="$res0_8c.html#a7a1911ccd7eae9eca1c379195e194e4b" title="res2_forward" alt="" coords="225,157,322,184"/>
+<area shape="rect" id="node6" href="$res0_8c.html#a1009f8b935601c07a71b10ed3937864b" title="res2_inverse" alt="" coords="225,208,321,235"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#ad74ed4c29400ef6d23b14846c8c4ccb4" title="vorbis_synthesis" alt="" coords="213,259,333,285"/>
+</map>

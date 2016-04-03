@@ -1,0 +1,9 @@
+<map id="mdct_forward" name="mdct_forward">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a1132d69075e19db210814d206990bb0c" title="mdct_butterflies" alt="" coords="155,56,269,83"/>
+<area shape="rect" id="node8" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a0789b37647059e00547ea0551de4a9f5" title="mdct_bitreverse" alt="" coords="155,107,269,133"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a2bc8649748ee55aa2c3c788fa221ec46" title="mdct_butterfly_first" alt="" coords="327,5,462,32"/>
+<area shape="rect" id="node4" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#ac61922676b70d4aa4c545cadbdfb923a" title="mdct_butterfly_generic" alt="" coords="317,56,472,83"/>
+<area shape="rect" id="node5" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a8604ac2131ef5e9a32583423ddd9f8c1" title="mdct_butterfly_32" alt="" coords="331,107,458,133"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a72b07af28f772fad87eea2c23b252a5e" title="mdct_butterfly_16" alt="" coords="521,107,647,133"/>
+<area shape="rect" id="node7" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a499303112b7b111481d9366f03f28892" title="mdct_butterfly_8" alt="" coords="697,107,815,133"/>
+</map>

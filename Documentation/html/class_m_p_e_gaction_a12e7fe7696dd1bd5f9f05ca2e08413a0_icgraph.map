@@ -1,0 +1,14 @@
+<map id="MPEGaction::ResetPause" name="MPEGaction::ResetPause">
+<area shape="rect" id="node2" href="$class_m_p_e_gaudio.html#af7fec254aa2fdcda77e789782ab77af6" title="MPEGaudio::Play" alt="" coords="230,5,357,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudio.html#aba3d2c9804917063bf0d5b380601629b" title="MPEGaudio::Stop" alt="" coords="230,56,357,83"/>
+<area shape="rect" id="node8" href="$class_m_p_e_gvideo.html#adf8fe80363dff7281a38c92e7737e5d4" title="MPEGvideo::Play" alt="" coords="431,107,558,133"/>
+<area shape="rect" id="node9" href="$class_m_p_e_gvideo.html#a6b89bceec472fb016289346935b9eb85" title="MPEGvideo::Stop" alt="" coords="230,157,357,184"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gaudio.html#a87932c2fcd3ae9e49533648bc4c03592" title="MPEGaudio::~MPEGaudio" alt="" coords="405,5,584,32"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gaudio.html#abd08180d5181225f27a2f9d40bdc7004" title="MPEGaudio::Rewind" alt="" coords="423,56,567,83"/>
+<area shape="rect" id="node6" href="$class_m_p_e_gaudio.html#ada1d438dc01b84e4734bb033ea983b74" title="MPEGaudio::initialize" alt="" coords="648,56,795,83"/>
+<area shape="rect" id="node7" href="$class_m_p_e_gaudio.html#a84689a033c4121be4edb20b73b57099a" title="MPEGaudio::MPEGaudio" alt="" coords="859,56,1029,83"/>
+<area shape="rect" id="node10" href="$class_m_p_e_gvideo.html#a9827df379b778863ab0b52282dbf690b" title="MPEGvideo::~MPEGvideo" alt="" coords="405,157,584,184"/>
+<area shape="rect" id="node11" href="$class_m_p_e_gvideo.html#a29125d4831a3aa894adcd2152d0b494b" title="MPEGvideo::Rewind" alt="" coords="423,208,567,235"/>
+<area shape="rect" id="node13" href="$class_m_p_e_gvideo.html#a7a5d980d350d4e3edee339b635d58b19" title="MPEGvideo::RenderFinal" alt="" coords="859,233,1029,260"/>
+<area shape="rect" id="node12" href="$class_m_p_e_gvideo.html#a490bfa3daef3d8d833143b8499f04c3e" title="MPEGvideo::RenderFrame" alt="" coords="632,208,811,235"/>
+</map>

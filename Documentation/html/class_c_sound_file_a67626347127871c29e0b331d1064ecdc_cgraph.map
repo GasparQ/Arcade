@@ -1,0 +1,7 @@
+<map id="CSoundFile::NoteChange" name="CSoundFile::NoteChange">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#aa2b7672e51b28f7fc7a8dd53d14da2a8" title="CSoundFile::KeyOff" alt="" coords="263,5,401,32"/>
+<area shape="rect" id="node3" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="313,56,351,83"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#a0bc06230cfe662d4de16efa14426aa5f" title="CSoundFile::GetPeriodFromNote" alt="" coords="225,107,439,133"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#a692b443f0612ff9f796f83966afba0a3" title="CSoundFile::SetupChannel\lFilter" alt="" coords="242,158,422,199"/>
+<area shape="rect" id="node5" href="$sndfile_8h.html#af3654a1002cc06298b6e7f3b9c28a2e6" title="_muldiv" alt="" coords="488,107,555,133"/>
+</map>

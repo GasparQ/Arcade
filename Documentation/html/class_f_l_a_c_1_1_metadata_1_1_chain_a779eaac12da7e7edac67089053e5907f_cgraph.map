@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::Chain::sort_padding" name="FLAC::Metadata::Chain::sort_padding">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_chain.html#a7c7799a4ed676ac334381af9e3888549" title="Returns true iff object was properly constructed. " alt="" coords="215,5,375,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__level2.html#gaa14304da1c8e706808cfafa5cbbf575b" title="FLAC__metadata_chain\l_sort_padding" alt="" coords="213,70,376,111"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__level2.html#gab24934bc1f0e054c631a22c9b9221f3e" title="FLAC__metadata_chain\l_merge_padding" alt="" coords="424,70,587,111"/>
+</map>

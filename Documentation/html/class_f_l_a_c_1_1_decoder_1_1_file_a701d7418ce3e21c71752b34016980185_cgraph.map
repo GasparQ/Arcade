@@ -1,0 +1,10 @@
+<map id="FLAC::Decoder::File::init_ogg" name="FLAC::Decoder::File::init_ogg">
+<area shape="rect" id="node2" href="$group__flac__stream__decoder.html#gac6a35b1db07e057ec9912f637b37dd74" title="FLAC__stream_decoder\l_init_ogg_FILE" alt="" coords="197,5,360,46"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a3dbb4f593790ac99f1ce7f391beb429c" title="FLAC::Decoder::Stream\l::write_callback_" alt="" coords="197,70,360,111"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a40aa6d89df9b7bf7448b5dfb2ae0d94a" title="FLAC::Decoder::Stream\l::metadata_callback_" alt="" coords="197,135,360,177"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a0873020f111ea387f0316cdd0c99384d" title="FLAC::Decoder::Stream\l::error_callback_" alt="" coords="197,246,360,287"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="619,165,666,192"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#af5a61e9ff720cca3eb38d1f2790f00fb" title="see FLAC__StreamDecoderWriteCallback " alt="" coords="408,70,571,111"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#af792eb19438df44b9099da94273f1cbe" title="see FLAC__StreamDecoderMetadataCallback " alt="" coords="408,187,571,229"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a0dbadd163ade7bc2d1858e7a435d5e52" title="see FLAC__StreamDecoderErrorCallback " alt="" coords="408,305,571,346"/>
+</map>

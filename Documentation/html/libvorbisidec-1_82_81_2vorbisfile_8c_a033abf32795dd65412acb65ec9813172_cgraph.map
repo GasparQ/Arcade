@@ -1,0 +1,13 @@
+<map id="ov_pcm_seek_page" name="ov_pcm_seek_page">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2vorbisfile_8c.html#a87bb18020fd1bb2916187d13d7652663" title="ov_pcm_total" alt="" coords="231,5,331,32"/>
+<area shape="rect" id="node3" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a6194aa97806e93b0889a3b376c7ceb8f" title="ogg_page_serialno" alt="" coords="216,56,347,83"/>
+<area shape="rect" id="node4" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a538a0abd2b69e7548eb6638475ede669" title="ogg_page_granulepos" alt="" coords="207,107,355,133"/>
+<area shape="rect" id="node5" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#ad650e1f6753a2644d735f605164c40f3" title="vorbis_synthesis_restart" alt="" coords="199,157,363,184"/>
+<area shape="rect" id="node6" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#af6da3e5f5a7980513878576c9499d192" title="ogg_stream_reset_serialno" alt="" coords="192,208,371,235"/>
+<area shape="rect" id="node7" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a60db38b6032f1fb0729e14adb61f11a2" title="ogg_stream_pagein" alt="" coords="214,259,349,285"/>
+<area shape="rect" id="node8" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a55245182c6e49c3e474fb8c83a39faae" title="ogg_stream_packetpeek" alt="" coords="199,309,363,336"/>
+<area shape="rect" id="node9" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a01e13664fc5db742a2658dcb5dbec978" title="ogg_page_continued" alt="" coords="211,360,352,387"/>
+<area shape="rect" id="node10" href="$libvorbis-1_83_83_2lib_2vorbisfile_8c.html#ac7e8d23aa742cbff39425fa620f56f30" title="ov_raw_seek" alt="" coords="232,411,331,437"/>
+<area shape="rect" id="node11" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a387e608bc7cc9d39e74c962475f2e9d4" title="ogg_stream_packetout" alt="" coords="204,461,359,488"/>
+<area shape="rect" id="node12" href="$libvorbisidec-1_82_81_2vorbisfile_8c.html#a446cf71f86bd18ecf5d03e2845fc1e1e" title="rescale64" alt="" coords="242,512,321,539"/>
+</map>

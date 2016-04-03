@@ -1,5 +1,5 @@
 <map id="ArcadeMenu::getNextFrame" name="ArcadeMenu::getNextFrame">
 <area shape="rect" id="node2" href="$class_arcade_menu.html#aa3e7e813a1bba4fd54a8add002161330" title="ArcadeMenu::updateMenu" alt="" coords="241,5,415,32"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_arcade.html#ab4b7672a0735834d668cd13a044bd011" title="arcade::Arcade::Run" alt="" coords="465,5,607,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_arcade.html#ab4b7672a0735834d668cd13a044bd011" title="Main loop of the program. " alt="" coords="465,5,607,32"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="main" alt="" coords="656,5,707,32"/>
 </map>

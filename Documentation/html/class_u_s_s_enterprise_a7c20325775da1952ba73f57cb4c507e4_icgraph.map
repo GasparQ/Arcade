@@ -1,0 +1,6 @@
+<map id="USSEnterprise::goLeft" name="USSEnterprise::goLeft">
+<area shape="rect" id="node2" href="$class_centipede_game.html#ab24e171e4bd1e045e1967992e89f2598" title="CentipedeGame::goLeft" alt="" coords="413,5,573,32"/>
+<area shape="rect" id="node4" href="$class_u_s_s_enterprise.html#a784b5ac8a7af0d4e6db5390e0bd73fde" title="USSEnterprise::move" alt="" coords="208,56,357,83"/>
+<area shape="rect" id="node3" href="$_centipede_game_8cpp.html#a209335d248e70fbe25a751fe6fad2a27" title="Play" alt="" coords="629,31,677,57"/>
+<area shape="rect" id="node5" href="$class_centipede_game.html#a808a7409fb5921d8be8a58f74f539106" title="CentipedeGame::compute" alt="" coords="406,56,581,83"/>
+</map>

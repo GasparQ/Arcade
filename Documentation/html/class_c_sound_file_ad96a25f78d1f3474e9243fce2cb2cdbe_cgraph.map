@@ -1,0 +1,17 @@
+<map id="CSoundFile::ReadMID" name="CSoundFile::ReadMID">
+<area shape="rect" id="node2" href="$getopt_8c.html#aee28fd8a0e40b6d958f7d20348e45368" title="getenv" alt="" coords="464,16,525,43"/>
+<area shape="rect" id="node3" href="$load__pat_8cpp.html#a80aae5ce8df3390e5963be0727eb7d39" title="pat_resetsmp" alt="" coords="247,42,348,68"/>
+<area shape="rect" id="node4" href="$load__pat_8cpp.html#add983206a46906b51ab432c80e4fed9f" title="pat_init_patnames" alt="" coords="233,92,361,119"/>
+<area shape="rect" id="node6" href="$load__mid_8cpp.html#aa8e62521a4fb611b94b0f28cda44c617" title="mid_first_noteonevent_tick" alt="" coords="208,143,387,170"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#aa2b727908967c122365ef4088639ded7" title="AllocPositions" alt="" coords="245,194,350,220"/>
+<area shape="rect" id="node8" href="$load__pat_8cpp.html#af365caf051b0fee85cae76b1a5a6cc8a" title="PAT_Load_Instruments" alt="" coords="218,244,377,271"/>
+<area shape="rect" id="node15" href="$mikmod__internals_8h.html#aa96e38c5178f640fc4242b85809f5f75" title="AllocTracks" alt="" coords="252,295,343,322"/>
+<area shape="rect" id="node16" href="$mikmod__internals_8h.html#a2340d9d9f51408584fe13e058499b917" title="AllocPatterns" alt="" coords="247,346,347,372"/>
+<area shape="rect" id="node5" href="$load__pat_8cpp.html#a2441765f26879e9baa1c0539a7c7a74d" title="pat_gm_drumnr" alt="" coords="439,92,551,119"/>
+<area shape="rect" id="node9" href="$load__pat_8cpp.html#ad67b277fb64e4b0633c94f2c449aa885" title="pat_numsmp" alt="" coords="446,143,543,170"/>
+<area shape="rect" id="node10" href="$load__pat_8cpp.html#a8ba257ef0ff81c1279d0aa2884aefc83" title="pat_gmtosmp" alt="" coords="444,194,545,220"/>
+<area shape="rect" id="node11" href="$load__pat_8cpp.html#a8b9cbc66ad2c2176d077f0e2c57dd8cd" title="pat_numinstr" alt="" coords="446,244,543,271"/>
+<area shape="rect" id="node12" href="$mikmod__internals_8h.html#acb221281ef0f87119f54b450bbb91e17" title="AllocInstruments" alt="" coords="435,295,555,322"/>
+<area shape="rect" id="node13" href="$mikmod__internals_8h.html#a722f3aedb018057f4dc6bc6da44ca07e" title="AllocSamples" alt="" coords="443,346,546,372"/>
+<area shape="rect" id="node14" href="$load__pat_8cpp.html#a29903956f56b316960b099da29ea6483" title="pat_smptogm" alt="" coords="444,396,545,423"/>
+</map>

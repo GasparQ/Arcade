@@ -1,0 +1,11 @@
+<map id="CSoundFile::RetrigNote" name="CSoundFile::RetrigNote">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a8df1ca54b04dc0dd13b963bb37b72955" title="CSoundFile::CheckNNA" alt="" coords="236,56,401,83"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#a6a4464acc8175d7a9d34780c249ae38f" title="CSoundFile::InstrumentChange" alt="" coords="216,107,421,133"/>
+<area shape="rect" id="node7" href="$class_c_sound_file.html#a67626347127871c29e0b331d1064ecdc" title="CSoundFile::NoteChange" alt="" coords="233,157,404,184"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a247174c63c1669e4dd3997a9f23238c7" title="CSoundFile::GetNNAChannel" alt="" coords="479,5,675,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aa2b7672e51b28f7fc7a8dd53d14da2a8" title="CSoundFile::KeyOff" alt="" coords="508,56,647,83"/>
+<area shape="rect" id="node6" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="558,107,597,133"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#a0bc06230cfe662d4de16efa14426aa5f" title="CSoundFile::GetPeriodFromNote" alt="" coords="470,224,685,251"/>
+<area shape="rect" id="node10" href="$class_c_sound_file.html#a692b443f0612ff9f796f83966afba0a3" title="CSoundFile::SetupChannel\lFilter" alt="" coords="487,158,667,199"/>
+<area shape="rect" id="node9" href="$sndfile_8h.html#af3654a1002cc06298b6e7f3b9c28a2e6" title="_muldiv" alt="" coords="733,224,800,251"/>
+</map>

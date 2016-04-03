@@ -1,0 +1,9 @@
+<map id="FLAC__Subframe" name="FLAC__Subframe">
+<area shape="rect" id="node2" href="$struct_f_l_a_c_____subframe___fixed.html" title="FLAC__Subframe_Fixed" alt="" coords="1053,5,1219,32"/>
+<area shape="rect" id="node3" href="$struct_f_l_a_c_____entropy_coding_method.html" title="FLAC__EntropyCodingMethod" alt="" coords="651,31,850,57"/>
+<area shape="rect" id="node6" href="$struct_f_l_a_c_____subframe___l_p_c.html" title="FLAC__Subframe_LPC" alt="" coords="1057,56,1215,83"/>
+<area shape="rect" id="node4" href="$struct_f_l_a_c_____entropy_coding_method___partitioned_rice.html" title="FLAC__EntropyCodingMethod\l_PartitionedRice" alt="" coords="310,23,509,65"/>
+<area shape="rect" id="node5" href="$struct_f_l_a_c_____entropy_coding_method___partitioned_rice_contents.html" title="FLAC__EntropyCodingMethod\l_PartitionedRiceContents" alt="" coords="6,23,205,65"/>
+<area shape="rect" id="node7" href="$struct_f_l_a_c_____subframe___verbatim.html" title="FLAC__Subframe_Verbatim" alt="" coords="1043,107,1229,133"/>
+<area shape="rect" id="node8" href="$struct_f_l_a_c_____subframe___constant.html" title="FLAC__Subframe_Constant" alt="" coords="1043,157,1229,184"/>
+</map>

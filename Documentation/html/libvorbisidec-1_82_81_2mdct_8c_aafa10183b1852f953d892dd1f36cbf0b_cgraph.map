@@ -1,0 +1,5 @@
+<map id="mdct_bitreverse" name="mdct_bitreverse">
+<area shape="rect" id="node2" href="$libvorbisidec-1_82_81_2mdct_8c.html#aad0830c45c2915fcdae634cb856eec54" title="bitrev12" alt="" coords="177,5,245,32"/>
+<area shape="rect" id="node3" href="$libvorbisidec-1_82_81_2misc_8h.html#a8d5c88bd27c4e9bd12705591c69e5b02" title="XPROD32" alt="" coords="169,56,253,83"/>
+<area shape="rect" id="node4" href="$libvorbisidec-1_82_81_2misc_8h.html#a632de8c87c1a6b0d673019cd2213bf23" title="MULT32" alt="" coords="301,56,373,83"/>
+</map>

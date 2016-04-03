@@ -1,0 +1,5 @@
+<map id="SMPEG_enablevideo" name="SMPEG_enablevideo">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a6a22b2984f91fe86c6d9e60d36a16ab3" title="MPEG::EnableVideo" alt="" coords="201,31,343,57"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaction.html#a6e559ddd951b743508ecdeccbff2f95c" title="MPEGaction::Stop" alt="" coords="400,5,531,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gstream.html#adf435576a75bb0a23875fc35ab1747a1" title="MPEGstream::enable" alt="" coords="392,56,539,83"/>
+</map>

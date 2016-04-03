@@ -1,0 +1,8 @@
+<map id="FLAC::Metadata::Application::assign" name="FLAC::Metadata::Application::assign">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a553ddf0187b31218ecfb0d7ba259fda0" title="FLAC::Metadata::Prototype\l::assign_object" alt="" coords="246,38,429,79"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a325839301bca33a69890b59416bcb314" title="FLAC::Metadata::Prototype\l::clear" alt="" coords="478,5,661,46"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__object.html#gaa12d8f3c14500a977b7ddf14c6bf81fe" title="FLAC__metadata_object\l_clone" alt="" coords="486,70,653,111"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#ga66bbe27dba68ba77be5af83986a280ea" title="FLAC__metadata_object\l_delete" alt="" coords="725,9,891,50"/>
+<area shape="rect" id="node5" href="$lib_f_l_a_c_2metadata__object_8c.html#adca9ba17ba21fe5f9e9c19ba2784ea38" title="FLAC__metadata_object\l_delete_data" alt="" coords="955,9,1122,50"/>
+<area shape="rect" id="node7" href="$group__flac__metadata__object.html#gab3d728ca4455bda71cc231fdb91307fb" title="FLAC__metadata_object_new" alt="" coords="709,77,907,104"/>
+</map>

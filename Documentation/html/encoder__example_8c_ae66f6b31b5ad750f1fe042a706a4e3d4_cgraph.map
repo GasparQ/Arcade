@@ -1,0 +1,25 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#af0ed4e74fe68802c7d337a2645e759d6" title="vorbis_info_init" alt="" coords="137,5,247,32"/>
+<area shape="rect" id="node3" href="$external_2libvorbis-1_83_83_2include_2vorbis_2vorbisenc_8h.html#ab4e3d96c3008a29c615271d1f551c2a0" title="vorbis_encode_init_vbr" alt="" coords="115,56,269,83"/>
+<area shape="rect" id="node4" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a0bab2093941e2bb89651d62ca5997676" title="vorbis_comment_init" alt="" coords="121,107,263,133"/>
+<area shape="rect" id="node5" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a0d0b69d0f7018455ad15ff735a6403fb" title="vorbis_comment_add_tag" alt="" coords="107,157,277,184"/>
+<area shape="rect" id="node6" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#abdcd5ee6f4e60c13505170a0f0ec752c" title="vorbis_analysis_init" alt="" coords="124,208,260,235"/>
+<area shape="rect" id="node7" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#ab6d85544ab746e98fc63308f6bed27a0" title="vorbis_block_init" alt="" coords="133,259,251,285"/>
+<area shape="rect" id="node8" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#abbbbea9bc3d14e9aff39582854d96d94" title="ogg_stream_init" alt="" coords="135,309,249,336"/>
+<area shape="rect" id="node9" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a76b877e3ab680d7537ec58ebd7fa990a" title="vorbis_analysis_headerout" alt="" coords="104,360,280,387"/>
+<area shape="rect" id="node10" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a57ec8183300b01784037b7fd845894e4" title="ogg_stream_packetin" alt="" coords="119,411,265,437"/>
+<area shape="rect" id="node11" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#aae837247e0edb7003c7ce5b7ae76d20e" title="ogg_stream_flush" alt="" coords="129,461,255,488"/>
+<area shape="rect" id="node12" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#ae527e6764c45e6e8a23c60d777496adf" title="vorbis_analysis_wrote" alt="" coords="117,512,267,539"/>
+<area shape="rect" id="node13" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#ab57487095e7cb8ab66f57e6c9b6400cd" title="vorbis_analysis_buffer" alt="" coords="116,563,268,589"/>
+<area shape="rect" id="node14" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a0c75b86b435cd45905ff62e2b9c93ab1" title="vorbis_analysis_blockout" alt="" coords="108,613,276,640"/>
+<area shape="rect" id="node15" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a3873974078caf99893e6268e5ce6d896" title="vorbis_analysis" alt="" coords="136,664,248,691"/>
+<area shape="rect" id="node16" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a7efe5889f6919053b8ab8d69e61ac995" title="vorbis_bitrate_addblock" alt="" coords="113,715,271,741"/>
+<area shape="rect" id="node17" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a37418540741db649a608cac3d2be440f" title="vorbis_bitrate_flushpacket" alt="" coords="105,765,279,792"/>
+<area shape="rect" id="node18" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a75f6056bc13fa979a2443a3c309dc83f" title="ogg_stream_pageout" alt="" coords="121,816,263,843"/>
+<area shape="rect" id="node19" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#ad970fa8d2ee19a0c965a45f55f108ec6" title="ogg_page_eos" alt="" coords="139,867,245,893"/>
+<area shape="rect" id="node20" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a305dff20a5476305be61e46f6b34d4e1" title="ogg_stream_clear" alt="" coords="129,917,255,944"/>
+<area shape="rect" id="node21" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a6a89cd06e8119b22a2d6a565e2d92c4e" title="vorbis_block_clear" alt="" coords="127,968,257,995"/>
+<area shape="rect" id="node22" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a3af19007415290a3f237e9a821bfe616" title="vorbis_dsp_clear" alt="" coords="132,1019,252,1045"/>
+<area shape="rect" id="node23" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a2fd38dcf146b850e88f281978b580d3e" title="vorbis_comment_clear" alt="" coords="115,1069,269,1096"/>
+<area shape="rect" id="node24" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#abaf171c1341b23e1c2eed7dab00d9f4a" title="vorbis_info_clear" alt="" coords="132,1120,252,1147"/>
+</map>

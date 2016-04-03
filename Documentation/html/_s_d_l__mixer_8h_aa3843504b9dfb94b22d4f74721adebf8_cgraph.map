@@ -1,0 +1,5 @@
+<map id="Mix_RegisterEffect" name="Mix_RegisterEffect">
+<area shape="rect" id="node2" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="202,5,318,32"/>
+<area shape="rect" id="node3" href="$mixer_8c.html#a4d2f6563135cbea2ce4dd30a5204c667" title="_Mix_RegisterEffect\l_locked" alt="" coords="189,57,331,98"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="195,123,325,149"/>
+</map>

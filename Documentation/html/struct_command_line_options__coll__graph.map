@@ -1,0 +1,19 @@
+<map id="CommandLineOptions" name="CommandLineOptions">
+<area shape="rect" id="node2" href="$struct_operation.html" title="Operation" alt="" coords="739,428,818,455"/>
+<area shape="rect" id="node3" href="$struct_argument___streaminfo_u_int64.html" title="Argument_StreaminfoUInt64" alt="" coords="360,220,547,247"/>
+<area shape="rect" id="node4" href="$struct_argument___vc_field_name.html" title="Argument_VcFieldName" alt="" coords="371,271,535,297"/>
+<area shape="rect" id="node5" href="$struct_argument___export_picture_to.html" title="Argument_ExportPictureTo" alt="" coords="364,372,543,399"/>
+<area shape="rect" id="node6" href="$struct_argument___block_number.html" title="Argument_BlockNumber" alt="" coords="13,221,177,248"/>
+<area shape="rect" id="node14" href="$struct_argument.html" title="Argument" alt="" coords="739,107,818,133"/>
+<area shape="rect" id="node7" href="$struct_argument___streaminfo_u_int32.html" title="Argument_StreaminfoUInt32" alt="" coords="360,587,547,613"/>
+<area shape="rect" id="node8" href="$struct_argument___add_padding.html" title="Argument_AddPadding" alt="" coords="376,637,531,664"/>
+<area shape="rect" id="node9" href="$struct_argument___vc_field.html" title="Argument_VcField" alt="" coords="389,688,518,715"/>
+<area shape="rect" id="node10" href="$struct_argument___streaminfo_m_d5.html" title="Argument_StreaminfoMD5" alt="" coords="365,321,541,348"/>
+<area shape="rect" id="node11" href="$struct_argument___string.html" title="Argument_String" alt="" coords="394,423,513,449"/>
+<area shape="rect" id="node12" href="$struct_argument___add_seekpoint.html" title="Argument_AddSeekpoint" alt="" coords="11,501,178,528"/>
+<area shape="rect" id="node13" href="$struct_argument___import_cuesheet_from.html" title="Argument_ImportCuesheetFrom" alt="" coords="349,473,557,500"/>
+<area shape="rect" id="node15" href="$struct_argument___block_type.html" title="Argument_BlockType" alt="" coords="380,107,527,133"/>
+<area shape="rect" id="node16" href="$struct_argument___block_type_entry.html" title="Argument_BlockTypeEntry" alt="" coords="5,107,184,133"/>
+<area shape="rect" id="node17" href="$struct_argument___data_format.html" title="Argument_DataFormat" alt="" coords="376,5,531,32"/>
+<area shape="rect" id="node18" href="$struct_argument___from_file.html" title="Argument_FromFile" alt="" coords="385,56,521,83"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="encode_options_t" name="encode_options_t">
+<area shape="rect" id="node2" href="$structutils_____skip_until_specification.html" title="utils__SkipUntilSpecification" alt="" coords="883,184,1071,211"/>
+<area shape="rect" id="node3" href="$struct_f_l_a_c_____stream_metadata.html" title="FLAC__StreamMetadata" alt="" coords="894,241,1061,268"/>
+<area shape="rect" id="node4" href="$struct_f_l_a_c_____stream_metadata___padding.html" title="FLAC__StreamMetadata\l_Padding" alt="" coords="566,5,733,46"/>
+<area shape="rect" id="node5" href="$struct_f_l_a_c_____stream_metadata___picture.html" title="FLAC__StreamMetadata\l_Picture" alt="" coords="566,70,733,111"/>
+<area shape="rect" id="node6" href="$struct_f_l_a_c_____stream_metadata___application.html" title="FLAC__StreamMetadata\l_Application" alt="" coords="566,135,733,177"/>
+<area shape="rect" id="node7" href="$struct_f_l_a_c_____stream_metadata___unknown.html" title="FLAC__StreamMetadata\l_Unknown" alt="" coords="566,201,733,242"/>
+<area shape="rect" id="node8" href="$struct_f_l_a_c_____stream_metadata___stream_info.html" title="FLAC__StreamMetadata\l_StreamInfo" alt="" coords="566,266,733,307"/>
+<area shape="rect" id="node9" href="$struct_f_l_a_c_____stream_metadata___vorbis_comment.html" title="FLAC__StreamMetadata\l_VorbisComment" alt="" coords="566,331,733,373"/>
+<area shape="rect" id="node10" href="$struct_f_l_a_c_____stream_metadata___vorbis_comment___entry.html" title="FLAC__StreamMetadata\l_VorbisComment_Entry" alt="" coords="267,331,434,373"/>
+<area shape="rect" id="node11" href="$struct_f_l_a_c_____stream_metadata___cue_sheet.html" title="FLAC__StreamMetadata\l_CueSheet" alt="" coords="566,397,733,438"/>
+<area shape="rect" id="node12" href="$struct_f_l_a_c_____stream_metadata___cue_sheet___track.html" title="FLAC__StreamMetadata\l_CueSheet_Track" alt="" coords="267,397,434,438"/>
+<area shape="rect" id="node13" href="$struct_f_l_a_c_____stream_metadata___cue_sheet___index.html" title="FLAC__StreamMetadata\l_CueSheet_Index" alt="" coords="6,397,173,438"/>
+<area shape="rect" id="node14" href="$struct_f_l_a_c_____stream_metadata___seek_table.html" title="FLAC__StreamMetadata\l_SeekTable" alt="" coords="566,462,733,503"/>
+<area shape="rect" id="node15" href="$struct_f_l_a_c_____stream_metadata___seek_point.html" title="FLAC__StreamMetadata\l_SeekPoint" alt="" coords="267,462,434,503"/>
+<area shape="rect" id="node16" href="$structcompression__setting__t.html" title="compression_setting_t" alt="" coords="901,292,1054,319"/>
+</map>

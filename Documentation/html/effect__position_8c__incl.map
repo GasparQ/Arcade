@@ -1,0 +1,39 @@
+<map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/effect_position.c" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/effect_position.c">
+<area shape="rect" id="node5" href="$_s_d_l_8h.html" title="SDL.h" alt="" coords="2033,184,2091,211"/>
+<area shape="rect" id="node26" href="$_s_d_l__endian_8h.html" title="SDL_endian.h" alt="" coords="209,333,313,360"/>
+<area shape="rect" id="node49" href="$_s_d_l__mixer_8h.html" title="SDL_mixer.h" alt="" coords="287,184,385,211"/>
+<area shape="rect" id="node50" href="$effects__internal_8h.html" title="effects_internal.h" alt="" coords="275,109,397,136"/>
+<area shape="rect" id="node6" href="$_s_d_l__main_8h.html" title="SDL_main.h" alt="" coords="633,483,727,509"/>
+<area shape="rect" id="node7" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="2080,557,2181,584"/>
+<area shape="rect" id="node10" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="1287,781,1385,808"/>
+<area shape="rect" id="node11" href="$close__code_8h.html" title="close_code.h" alt="" coords="2949,781,3048,808"/>
+<area shape="rect" id="node21" href="$_s_d_l__assert_8h.html" title="SDL_assert.h" alt="" coords="4339,557,4441,584"/>
+<area shape="rect" id="node23" href="$_s_d_l__atomic_8h.html" title="SDL_atomic.h" alt="" coords="3398,483,3503,509"/>
+<area shape="rect" id="node24" href="$_s_d_l__audio_8h.html" title="SDL_audio.h" alt="" coords="1445,259,1541,285"/>
+<area shape="rect" id="node25" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="2825,483,2916,509"/>
+<area shape="rect" id="node27" href="$_s_d_l__mutex_8h.html" title="SDL_mutex.h" alt="" coords="2169,408,2271,435"/>
+<area shape="rect" id="node28" href="$_s_d_l__thread_8h.html" title="SDL_thread.h" alt="" coords="2079,333,2181,360"/>
+<area shape="rect" id="node29" href="$_s_d_l__rwops_8h.html" title="SDL_rwops.h" alt="" coords="1496,408,1597,435"/>
+<area shape="rect" id="node30" href="$_s_d_l__clipboard_8h.html" title="SDL_clipboard.h" alt="" coords="803,483,921,509"/>
+<area shape="rect" id="node31" href="$_s_d_l__cpuinfo_8h.html" title="SDL_cpuinfo.h" alt="" coords="946,483,1053,509"/>
+<area shape="rect" id="node32" href="$_s_d_l__events_8h.html" title="SDL_events.h" alt="" coords="3247,259,3352,285"/>
+<area shape="rect" id="node33" href="$_s_d_l__video_8h.html" title="SDL_video.h" alt="" coords="3833,483,3929,509"/>
+<area shape="rect" id="node36" href="$_s_d_l__joystick_8h.html" title="SDL_joystick.h" alt="" coords="3126,408,3236,435"/>
+<area shape="rect" id="node37" href="$_s_d_l__gamecontroller_8h.html" title="SDL_gamecontroller.h" alt="" coords="2867,333,3017,360"/>
+<area shape="rect" id="node38" href="$_s_d_l__filesystem_8h.html" title="Include file for filesystem SDL API functions. " alt="" coords="1130,483,1256,509"/>
+<area shape="rect" id="node39" href="$_s_d_l__haptic_8h.html" title="The SDL Haptic subsystem allows you to control haptic (force feedback) devices. " alt="" coords="2687,333,2788,360"/>
+<area shape="rect" id="node40" href="$_s_d_l__hints_8h.html" title="SDL_hints.h" alt="" coords="1434,483,1528,509"/>
+<area shape="rect" id="node41" href="$_s_d_l__loadso_8h.html" title="SDL_loadso.h" alt="" coords="1723,408,1827,435"/>
+<area shape="rect" id="node42" href="$_s_d_l__log_8h.html" title="SDL_log.h" alt="" coords="1553,483,1635,509"/>
+<area shape="rect" id="node43" href="$_s_d_l__messagebox_8h.html" title="SDL_messagebox.h" alt="" coords="1953,408,2092,435"/>
+<area shape="rect" id="node44" href="$_s_d_l__power_8h.html" title="SDL_power.h" alt="" coords="2547,483,2648,509"/>
+<area shape="rect" id="node45" href="$_s_d_l__render_8h.html" title="SDL_render.h" alt="" coords="3603,408,3705,435"/>
+<area shape="rect" id="node46" href="$_s_d_l__system_8h.html" title="SDL_system.h" alt="" coords="3843,333,3952,360"/>
+<area shape="rect" id="node47" href="$_s_d_l__timer_8h.html" title="SDL_timer.h" alt="" coords="2449,408,2543,435"/>
+<area shape="rect" id="node48" href="$_s_d_l__version_8h.html" title="SDL_version.h" alt="" coords="398,483,505,509"/>
+<area shape="rect" id="node8" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="3403,632,3504,659"/>
+<area shape="rect" id="node12" href="$types_8h.html" title="sys/types.h" alt="" coords="2003,632,2093,659"/>
+<area shape="rect" id="node9" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="3403,707,3516,733"/>
+<area shape="rect" id="node34" href="$_s_d_l__keyboard_8h.html" title="SDL_keyboard.h" alt="" coords="3782,408,3900,435"/>
+<area shape="rect" id="node35" href="$_s_d_l__mouse_8h.html" title="SDL_mouse.h" alt="" coords="3422,408,3527,435"/>
+</map>

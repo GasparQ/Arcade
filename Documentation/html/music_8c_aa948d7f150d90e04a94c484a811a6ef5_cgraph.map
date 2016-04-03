@@ -1,0 +1,5 @@
+<map id="music_mixer" name="music_mixer">
+<area shape="rect" id="node2" href="$wavestream_8c.html#a78162c767ed09cd22a7bcf19f1b1dd2d" title="WAVStream_PlaySome" alt="" coords="149,5,312,32"/>
+<area shape="rect" id="node3" href="$common_8c.html#af1c22febc3acaefcf4c031252295d196" title="skip" alt="" coords="207,56,254,83"/>
+<area shape="rect" id="node4" href="$playmidi_8c.html#a90e73401772ef58c3955160c3e54b5e7" title="Timidity_PlaySome" alt="" coords="163,107,298,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="FLAC__bitreader_skip_bits_no_crc" name="FLAC__bitreader_skip_bits_no_crc">
+<area shape="rect" id="node2" href="$bitreader_8c.html#a987c03dcc24ca412b7be1dd8cdfebb41" title="FLAC__bitreader_read\l_raw_uint32" alt="" coords="449,5,601,46"/>
+<area shape="rect" id="node4" href="$bitreader_8c.html#a00e783d8613440130f2a81f49416a538" title="FLAC__bitreader_skip\l_byte_block_aligned_no_crc" alt="" coords="205,63,392,105"/>
+<area shape="rect" id="node3" href="$bitreader_8c.html#a5e57c37c89695940eff2a88a2c577117" title="bitreader_read_from\l_client_" alt="" coords="659,34,797,75"/>
+<area shape="rect" id="node5" href="$bitreader_8c.html#af9ec09ffd07bb9ff748d00235662cd61" title="FLAC__bitreader_is\l_consumed_byte_aligned" alt="" coords="441,122,610,163"/>
+</map>

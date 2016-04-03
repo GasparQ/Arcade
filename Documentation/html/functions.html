@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -117,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,6 +133,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_3dnow
+: <a class="el" href="struct_f_l_a_c_____c_p_u_info___i_a32.html#a418e9224e63d855b6bc9531045e8ec1a">FLAC__CPUInfo_IA32</a>
+</li>
 <li>_attrs
 : <a class="el" href="struct__win__st.html#a498435ff52e07f3771ebd51328fef61a">_win_st</a>
 </li>
@@ -144,6 +150,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_bkgd
 : <a class="el" href="struct__win__st.html#a79ad9bd482eb4ce3a3d952575db681ee">_win_st</a>
+</li>
+<li>_callback
+: <a class="el" href="class_m_p_e_gvideo.html#a908a56c46fbd5a58eed5b4b3c2b8d1b6">MPEGvideo</a>
+</li>
+<li>_callback_data
+: <a class="el" href="class_m_p_e_gvideo.html#a39aca37ec8c25e5188c8eb3af119d2aa">MPEGvideo</a>
+</li>
+<li>_callback_lock
+: <a class="el" href="class_m_p_e_gvideo.html#a9c8b4fbedf95caa8e380251e7b51341d">MPEGvideo</a>
 </li>
 <li>_clear
 : <a class="el" href="struct__win__st.html#a2f3a1f909c73925b16c8be1df7554d5b">_win_st</a>
@@ -160,6 +175,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_flags
 : <a class="el" href="struct__win__st.html#ab7b1c8bcaea02e10a5589c29344d0007">_win_st</a>
 </li>
+<li>_fps
+: <a class="el" href="class_m_p_e_gvideo.html#a63ed40caf0880f83d7ecff4d5a18db68">MPEGvideo</a>
+</li>
+<li>_frame
+: <a class="el" href="class_m_p_e_gvideo.html#afff0d6ed9fba3d987f832860d7fd1051">MPEGvideo</a>
+</li>
+<li>_h
+: <a class="el" href="class_m_p_e_gvideo.html#acf50bc47a947d7994f3a5ac99dcf8273">MPEGvideo</a>
+</li>
 <li>_idcok
 : <a class="el" href="struct__win__st.html#ad8d218de9515c05248ee0e6aa33d6e31">_win_st</a>
 </li>
@@ -168,6 +192,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_immed
 : <a class="el" href="struct__win__st.html#a4b29eeca06dc132fcfeeb5cff2f8fcdc">_win_st</a>
+</li>
+<li>_jumpFrame
+: <a class="el" href="structvid__stream.html#aea9e660678bf61c0b2df9053818794c4">vid_stream</a>
 </li>
 <li>_leaveok
 : <a class="el" href="struct__win__st.html#a49dc49a62c6699ad480c69b77137e598">_win_st</a>
@@ -183,6 +210,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_notimeout
 : <a class="el" href="struct__win__st.html#a7409a833fd1de32bb9cdd94f76324c80">_win_st</a>
+</li>
+<li>_oh
+: <a class="el" href="class_m_p_e_gvideo.html#a810c581907d39848102396ed8607572a">MPEGvideo</a>
+</li>
+<li>_oneFrameTime
+: <a class="el" href="structvid__stream.html#a713450e14c6a7d6ca0221b35e2486aa2">vid_stream</a>
+</li>
+<li>_ow
+: <a class="el" href="class_m_p_e_gvideo.html#a0847af03e4e606a456a1d79e4898684d">MPEGvideo</a>
 </li>
 <li>_pad
 : <a class="el" href="struct__win__st.html#aed46089bc75b2bfe414b771be874feaa">_win_st</a>
@@ -223,14 +259,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_scroll
 : <a class="el" href="struct__win__st.html#ae079acc4752884e6125c6bbbca906f7e">_win_st</a>
 </li>
+<li>_skipCount
+: <a class="el" href="structvid__stream.html#a1e58323139976ed0665cc673b0f75490">vid_stream</a>
+</li>
+<li>_skipFrame
+: <a class="el" href="structvid__stream.html#a453b8667f5b4284f256c2164f537862a">vid_stream</a>
+</li>
+<li>_smpeg
+: <a class="el" href="structvid__stream.html#a918111676d97a085f9a013058522ae29">vid_stream</a>
+</li>
+<li>_stream
+: <a class="el" href="class_m_p_e_gvideo.html#af0c9d357ca468cd8b0a407dfec643e91">MPEGvideo</a>
+</li>
 <li>_sync
 : <a class="el" href="struct__win__st.html#af0a53ae963f8fab4ab321ba360a53a91">_win_st</a>
 </li>
 <li>_termname
 : <a class="el" href="structterm.html#aa57ca35ab188dbadee1c65899ad2a3b4">term</a>
 </li>
+<li>_thread
+: <a class="el" href="class_m_p_e_gvideo.html#a09397df4e49f2a0bf99aaf840a92397c">MPEGvideo</a>
+</li>
 <li>_use_keypad
 : <a class="el" href="struct__win__st.html#a3c86cad5ccbae59fc484d00e6f1ff9c1">_win_st</a>
+</li>
+<li>_w
+: <a class="el" href="class_m_p_e_gvideo.html#ac5c2cd08ceb20e46312fd1ed126a42e0">MPEGvideo</a>
 </li>
 <li>_yoffset
 : <a class="el" href="struct__win__st.html#afe905b935d351a4473668d422744523c">_win_st</a>
@@ -239,7 +293,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

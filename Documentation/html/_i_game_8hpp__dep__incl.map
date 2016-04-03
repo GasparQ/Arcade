@@ -1,13 +1,15 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Game/include/IGame.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Game/include/IGame.hpp">
-<area shape="rect" id="node2" href="$_arcade_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Arcade.hpp" alt="" coords="365,117,544,158"/>
-<area shape="rect" id="node8" href="$_a_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/AGame.hpp" alt="" coords="848,109,1027,165"/>
-<area shape="rect" id="node9" href="$_pacman_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/PacmanGame.hpp" alt="" coords="785,213,964,269"/>
-<area shape="rect" id="node3" href="$_arcade_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Arcade.cpp" alt="" coords="5,318,184,359"/>
-<area shape="rect" id="node4" href="$_arcade_menu_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.hpp" alt="" coords="132,221,327,262"/>
-<area shape="rect" id="node6" href="$_open_gl_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/OpenGlGraph.cpp" alt="" coords="351,213,559,269"/>
-<area shape="rect" id="node7" href="$main_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/main.cpp" alt="" coords="583,221,761,262"/>
-<area shape="rect" id="node5" href="$_arcade_menu_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.cpp" alt="" coords="208,318,403,359"/>
-<area shape="rect" id="node11" href="$_snake_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/Snake.hpp" alt="" coords="1004,213,1183,269"/>
-<area shape="rect" id="node10" href="$_pacman_game_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/PacmanGame.cpp" alt="" coords="724,318,991,359"/>
-<area shape="rect" id="node12" href="$_snake_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/Snake.cpp" alt="" coords="1015,318,1235,359"/>
+<area shape="rect" id="node2" href="$_arcade_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Arcade.hpp" alt="" coords="267,117,445,158"/>
+<area shape="rect" id="node8" href="$_a_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/AGame.hpp" alt="" coords="912,109,1091,165"/>
+<area shape="rect" id="node11" href="$_pacman_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/PacmanGame.hpp" alt="" coords="1115,213,1293,269"/>
+<area shape="rect" id="node3" href="$_arcade_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Arcade.cpp" alt="" coords="132,325,311,366"/>
+<area shape="rect" id="node4" href="$_arcade_menu_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.hpp" alt="" coords="259,221,453,262"/>
+<area shape="rect" id="node6" href="$_open_gl_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/OpenGlGraph.cpp" alt="" coords="477,213,685,269"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/main.cpp" alt="" coords="5,221,184,262"/>
+<area shape="rect" id="node5" href="$_arcade_menu_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.cpp" alt="" coords="335,325,529,366"/>
+<area shape="rect" id="node9" href="$_centipede_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/CentipedeGame.hpp" alt="" coords="709,213,888,269"/>
+<area shape="rect" id="node13" href="$_snake_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/Snake.hpp" alt="" coords="912,213,1091,269"/>
+<area shape="rect" id="node10" href="$_centipede_game_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/Centipede\lGame.cpp" alt="" coords="650,317,867,373"/>
+<area shape="rect" id="node12" href="$_pacman_game_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/PacmanGame.cpp" alt="" coords="1136,325,1403,366"/>
+<area shape="rect" id="node14" href="$_snake_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/Snake.cpp" alt="" coords="891,325,1111,366"/>
 </map>

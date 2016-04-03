@@ -1,0 +1,8 @@
+<map id="vorbis_book_init_decode" name="vorbis_book_init_decode">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2sharedbook_8c.html#af6fb53b9bd8315ee369415851efe1c1a" title="_make_words" alt="" coords="231,5,334,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2sharedbook_8c.html#afc7114e7e9eed5d347f748f2edd12989" title="_book_unquantize" alt="" coords="219,56,346,83"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2sharedbook_8c.html#a6ffad9cca3bc0e3c913059a5a948d70e" title="_ilog" alt="" coords="258,107,307,133"/>
+<area shape="rect" id="node7" href="$libvorbis-1_83_83_2lib_2sharedbook_8c.html#a694fd03843fc2c26272557d009f12daf" title="vorbis_book_clear" alt="" coords="219,157,346,184"/>
+<area shape="rect" id="node4" href="$libvorbis-1_83_83_2lib_2sharedbook_8c.html#a414000078eb7696277bab0bcede52a8b" title="_float32_unpack" alt="" coords="428,31,545,57"/>
+<area shape="rect" id="node5" href="$libvorbis-1_83_83_2lib_2sharedbook_8c.html#aec05a8c0eabef16f1074fa1d596ce6e4" title="_book_maptype1_quantvals" alt="" coords="395,81,579,108"/>
+</map>

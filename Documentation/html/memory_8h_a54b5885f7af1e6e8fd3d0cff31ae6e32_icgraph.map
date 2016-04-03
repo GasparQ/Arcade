@@ -1,0 +1,7 @@
+<map id="FLAC__memory_alloc_aligned" name="FLAC__memory_alloc_aligned">
+<area shape="rect" id="node2" href="$memory_8c.html#a18aa0f1f0e78dcf70d763d4f27ea0893" title="FLAC__memory_alloc\l_aligned_int32_array" alt="" coords="213,5,363,46"/>
+<area shape="rect" id="node3" href="$memory_8c.html#a99cfb54804bd530ec2688c0393130aff" title="FLAC__memory_alloc\l_aligned_uint32_array" alt="" coords="213,70,363,111"/>
+<area shape="rect" id="node4" href="$memory_8c.html#a6362dd2a032d2d61d0452c7f57ba7f64" title="FLAC__memory_alloc\l_aligned_uint64_array" alt="" coords="213,135,363,177"/>
+<area shape="rect" id="node5" href="$memory_8c.html#a34a0862968a32b7cd3e5626ff316544b" title="FLAC__memory_alloc\l_aligned_unsigned_array" alt="" coords="205,201,371,242"/>
+<area shape="rect" id="node6" href="$memory_8c.html#a688418bd7932c7e1cb0fc88a4cba90b3" title="FLAC__memory_alloc\l_aligned_real_array" alt="" coords="213,266,363,307"/>
+</map>

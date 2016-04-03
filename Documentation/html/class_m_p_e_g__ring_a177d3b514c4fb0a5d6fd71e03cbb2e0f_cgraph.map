@@ -1,0 +1,6 @@
+<map id="MPEG_ring::~MPEG_ring" name="MPEG_ring::~MPEG_ring">
+<area shape="rect" id="node2" href="$class_m_p_e_g__ring.html#a4a757412c31ed528c5a9f03a85060b75" title="MPEG_ring::ReleaseThreads" alt="" coords="227,31,419,57"/>
+<area shape="rect" id="node5" href="$_s_d_l__mutex_8h.html#a23deb3b7e29a5137d804e4be3453a768" title="SDL_DestroySemaphore" alt="" coords="239,81,406,108"/>
+<area shape="rect" id="node3" href="$_s_d_l__mutex_8h.html#ae66390dca585fdab8de871fe32935768" title="SDL_SemValue" alt="" coords="467,5,581,32"/>
+<area shape="rect" id="node4" href="$_s_d_l__mutex_8h.html#a0c50f774babf7a44c381238a1f780595" title="SDL_SemPost" alt="" coords="469,56,579,83"/>
+</map>

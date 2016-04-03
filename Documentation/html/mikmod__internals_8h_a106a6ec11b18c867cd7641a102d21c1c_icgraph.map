@@ -1,0 +1,23 @@
+<map id="_mm_read_I_UWORD" name="_mm_read_I_UWORD">
+<area shape="rect" id="node2" href="$load__amf_8c.html#abc5169d6198576f3d1e2cc4786cc5b2d" title="AMF_Load" alt="" coords="441,94,527,121"/>
+<area shape="rect" id="node3" href="$load__dsm_8c.html#a4c944bdfa142de670209787e2806f8cd" title="DSM_Load" alt="" coords="441,145,527,172"/>
+<area shape="rect" id="node4" href="$load__far_8c.html#aae0f8a388c10c0039a5c5462f79fe4a2" title="FAR_Load" alt="" coords="442,196,526,222"/>
+<area shape="rect" id="node5" href="$load__gdm_8c.html#afe9f1aecb0498d8ead680678ffc1601b" title="GDM_ReadPattern" alt="" coords="219,44,352,70"/>
+<area shape="rect" id="node6" href="$load__gdm_8c.html#a223ebb121129b7fc1af3afb7881c709b" title="GDM_Load" alt="" coords="440,44,528,70"/>
+<area shape="rect" id="node7" href="$load__imf_8c.html#a9ef6478f54740fdff788120a0bd98976" title="IMF_Load" alt="" coords="444,246,524,273"/>
+<area shape="rect" id="node8" href="$load__it_8c.html#af048d36fad98fa472619043b26f8bac8" title="IT_Load" alt="" coords="449,297,519,324"/>
+<area shape="rect" id="node9" href="$load__mtm_8c.html#a87de277bc45dda77ae88b3c52f66de73" title="MTM_Load" alt="" coords="441,398,527,425"/>
+<area shape="rect" id="node10" href="$load__s3m_8c.html#a9b0fb0148d7833fdcab91f1389ec5054" title="S3M_Load" alt="" coords="442,449,526,476"/>
+<area shape="rect" id="node11" href="$load__stm_8c.html#a579dceaa0e718376a7db9b5c2ebc596f" title="STM_Load" alt="" coords="441,500,527,526"/>
+<area shape="rect" id="node12" href="$load__ult_8c.html#a9fda3df0bd4f13e29e118a811dfefdbe" title="ULT_Load" alt="" coords="443,668,525,694"/>
+<area shape="rect" id="node13" href="$load__uni_8c.html#a889dd09058556592efe9edabd027c29f" title="UNI_Load" alt="" coords="245,753,326,780"/>
+<area shape="rect" id="node14" href="$load__xm_8c.html#a667070bf1144d30378244785d8b77168" title="XM_Load" alt="" coords="445,550,523,577"/>
+<area shape="rect" id="node15" href="$mmio_8c.html#a04f3858ed114a76778fbc4b90730edc7" title="_mm_read_I_ULONG" alt="" coords="211,348,359,374"/>
+<area shape="rect" id="node18" href="$mwav_8c.html#a267d3ffc375befa7aea4ce600f321dee" title="Sample_LoadGeneric\l_internal" alt="" coords="411,602,557,643"/>
+<area shape="rect" id="node22" href="$mmio_8c.html#acb638662dcceda5fd854444069f62659" title="_mm_read_I_SWORD" alt="" coords="209,702,362,729"/>
+<area shape="rect" id="node16" href="$mmio_8c.html#a5d7f35b0406d070fc3924f9621cdc669" title="_mm_read_I_SLONG" alt="" coords="411,348,557,374"/>
+<area shape="rect" id="node17" href="$load__669_8c.html#abf53839eae50899773c5f54787e1d75a" title="S69_Load" alt="" coords="639,348,719,374"/>
+<area shape="rect" id="node19" href="$win32_2mikmod__build_8h.html#a165c29a0cb1f4d41cf5a7fca4add5d7c" title="Sample_LoadGeneric" alt="" coords="605,609,752,636"/>
+<area shape="rect" id="node20" href="$win32_2mikmod__build_8h.html#adafc579be67959447014b5667018d21f" title="Sample_LoadFP" alt="" coords="801,609,919,636"/>
+<area shape="rect" id="node21" href="$win32_2mikmod__build_8h.html#af0aea29faedd56b2ff2332c63e12d4eb" title="Sample_Load" alt="" coords="968,609,1069,636"/>
+</map>

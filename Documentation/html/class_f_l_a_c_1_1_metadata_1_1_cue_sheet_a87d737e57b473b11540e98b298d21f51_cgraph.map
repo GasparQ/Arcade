@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::CueSheet::delete_track" name="FLAC::Metadata::CueSheet::delete_track">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="238,5,421,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga3232bae96f19722bee19afd37fdc214d" title="FLAC__metadata_object\l_cuesheet_delete_track" alt="" coords="246,70,413,111"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#gafb0e09fdcfb08c466ceb1f6bca961177" title="FLAC__metadata_object\l_cuesheet_resize_tracks" alt="" coords="470,70,637,111"/>
+</map>

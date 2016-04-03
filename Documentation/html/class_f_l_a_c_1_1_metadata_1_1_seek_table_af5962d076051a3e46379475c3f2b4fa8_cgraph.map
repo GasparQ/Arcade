@@ -1,0 +1,5 @@
+<map id="FLAC::Metadata::SeekTable::delete_point" name="FLAC::Metadata::SeekTable::delete_point">
+<area shape="rect" id="node2" href="$group__flacpp__metadata__object.html#ga57adba3b3a548f7d9d8803762a8216d6" title="FLAC::Metadata::Prototype\l::is_valid" alt="" coords="243,5,426,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga5a865f792845cbf22b5935c3d96568d1" title="FLAC__metadata_object\l_seektable_delete_point" alt="" coords="251,70,418,111"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#ga836f94fa622ece4f50dadf27c7ec107a" title="FLAC__metadata_object\l_seektable_resize_points" alt="" coords="475,70,645,111"/>
+</map>

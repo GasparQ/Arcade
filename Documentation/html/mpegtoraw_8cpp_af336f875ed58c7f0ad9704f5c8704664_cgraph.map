@@ -1,0 +1,10 @@
+<map id="Play_MPEGaudio" name="Play_MPEGaudio">
+<area shape="rect" id="node2" href="$class_m_p_e_gaudio.html#a861687c35b451e127796c3ca5e7682ab" title="MPEGaudio::GetStatus" alt="" coords="179,5,338,32"/>
+<area shape="rect" id="node5" href="$_s_d_l__timer_8h.html#a0b9bc71d6287e0ffafdc3419760fe2b3" title="Get the number of milliseconds since the SDL library initialization. " alt="" coords="397,107,505,133"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#ab9ad945b4b15d816802f5a79da06c9f9" title="SDL_MixAudio" alt="" coords="204,107,313,133"/>
+<area shape="rect" id="node7" href="$class_m_p_e_gaudio.html#a98717379d9d4c8fad2c7019745f565be" title="MPEGaudio::Time" alt="" coords="194,157,323,184"/>
+<area shape="rect" id="node8" href="$class_m_p_e_gaudio.html#ab9c5c2af283eeb32e97d8856febc8dd3" title="MPEGaudio::run" alt="" coords="199,208,318,235"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gstream.html#a467eeb2d906ad08170d9d24637a8f75b" title="MPEGstream::eof" alt="" coords="387,5,514,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_glist.html#a56002e99b86b240248084ad034d63b6c" title="MPEGlist::Size" alt="" coords="563,5,675,32"/>
+<area shape="rect" id="node9" href="$_s_d_l__endian_8h.html#a157cb22d3cc4b3f623822b15c3921e54" title="SDL_Swap16" alt="" coords="399,208,502,235"/>
+</map>

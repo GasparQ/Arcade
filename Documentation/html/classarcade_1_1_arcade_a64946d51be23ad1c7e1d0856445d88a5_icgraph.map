@@ -1,4 +1,4 @@
 <map id="arcade::Arcade::onPrevGame" name="arcade::Arcade::onPrevGame">
-<area shape="rect" id="node2" href="$classarcade_1_1_arcade.html#abcaa2bd2bf558b8d17cf5227cff4ebdf" title="arcade::Arcade::Arcade" alt="" coords="257,5,415,32"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_arcade.html#abcaa2bd2bf558b8d17cf5227cff4ebdf" title="Arcade constructor for the initialisations of the main program. " alt="" coords="257,5,415,32"/>
 <area shape="rect" id="node3" href="$class_arcade_menu.html#ad0ca65e22d97591b27f6035dcfb82c67" title="ArcadeMenu::ArcadeMenu" alt="" coords="248,56,424,83"/>
 </map>

@@ -1,0 +1,8 @@
+<map id="grabbag__replaygain_store_to_file_reference" name="grabbag__replaygain_store_to_file_reference">
+<area shape="rect" id="node2" href="$share_2grabbag_2replaygain_8c.html#a2ed72fd5c42c1854abe4c23d1f995445" title="grabbag__replaygain\l_store_to_vorbiscomment\l_reference" alt="" coords="217,45,389,101"/>
+<area shape="rect" id="node7" href="$group__flac__metadata__level2.html#ga178898eef72ba9d569b1964fffcb4a8b" title="FLAC__metadata_chain\l_delete" alt="" coords="221,125,384,166"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga525525f5f21b1caee776cba3cfb6d72f" title="FLAC__metadata_object\l_vorbiscomment_remove\l_entries_matching" alt="" coords="437,45,605,101"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#gac31ee3de9f9931628f120cb611bb0f20" title="FLAC__metadata_object\l_vorbiscomment_entry\l_matches" alt="" coords="654,5,821,61"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="654,85,821,141"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="870,85,1037,141"/>
+</map>

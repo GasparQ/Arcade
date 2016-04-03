@@ -1,0 +1,7 @@
+<map id="MPEGstream::garbage_collect" name="MPEGstream::garbage_collect">
+<area shape="rect" id="node2" href="$class_m_p_e_glist.html#a007d9c423418e39626378f3a448f670b" title="MPEGlist::Lock" alt="" coords="220,5,335,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_glist.html#ace13a695db37034d6ca7196055c0b9d8" title="MPEGlist::Prev" alt="" coords="221,56,334,83"/>
+<area shape="rect" id="node4" href="$class_m_p_e_glist.html#af09ed9b2379258a753ceab81ef39ce61" title="MPEGlist::Next" alt="" coords="220,107,335,133"/>
+<area shape="rect" id="node5" href="$class_m_p_e_glist.html#acd0ab5d3b4710f68eb985c9d54e4d4e8" title="MPEGlist::IsLocked" alt="" coords="208,157,347,184"/>
+<area shape="rect" id="node6" href="$class_m_p_e_glist.html#abaa256256f146189a5421bcb3efdef91" title="MPEGlist::Unlock" alt="" coords="214,208,341,235"/>
+</map>

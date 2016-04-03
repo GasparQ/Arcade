@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -116,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -133,6 +136,74 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="struct_s_d_l___display_mode.html#a0d9eabed50a560ed553af772c26632d7">SDL_DisplayMode</a>
 , <a class="el" href="struct_s_d_l___rect.html#a0a17d46b320af8063b746153348edd72">SDL_Rect</a>
 , <a class="el" href="struct_s_d_l___surface.html#af33bcf87a1f5e10a99b3c7e8626b38c8">SDL_Surface</a>
+, <a class="el" href="struct_s_m_p_e_g___frame.html#a0d0598bdf53c7d18944ce0c839d2ca35">SMPEG_Frame</a>
+</li>
+<li>h_size
+: <a class="el" href="structvid__stream.html#a902b10c38749e08bfe1531b070865fea">vid_stream</a>
+</li>
+<li>halfrate_flag
+: <a class="el" href="structcodec__setup__info.html#a88a2b7fda297b325bcdfb24ba9c81b49">codec_setup_info</a>
+</li>
+<li>halves
+: <a class="el" href="unionmagic.html#a535bcb2c1f58d71d76d406af591452ca">magic</a>
+</li>
+<li>handle
+: <a class="el" href="struct_f_l_a_c_____metadata___chain.html#aff61ff4560fd428cede2c10a33e53b3d">FLAC__Metadata_Chain</a>
+, <a class="el" href="struct_m_p___c_h_a_n_n_e_l.html#acfdf4d3e8dadb787ef67ad9d3baecd60">MP_CHANNEL</a>
+, <a class="el" href="struct_s_a_m_p_l_e.html#a3bcfa441296688c90d60a7f63b0a0adf">SAMPLE</a>
+, <a class="el" href="struct_v_i_n_f_o.html#adba5e63e9c9db4a7948348e57f0f83b0">VINFO</a>
+</li>
+<li>hard_limit
+: <a class="el" href="structflac__config__t.html#a9800e70f1e92d27c87a5de2e9d9aaffd">flac_config_t</a>
+, <a class="el" href="structoutput__config__t.html#ada7d70823ea3914fdb650430a30f9054">output_config_t</a>
+</li>
+<li>HardVoiceLimit
+: <a class="el" href="struct_m_d_r_i_v_e_r.html#ac0f2abc2a8c80f87824fb6ddabf31bbf">MDRIVER</a>
+</li>
+<li>harmoniccontent
+: <a class="el" href="struct_channel.html#a62dd6e2664839682cb8f9cec189fa3d1">Channel</a>
+</li>
+<li>has_arg
+: <a class="el" href="structshare____option.html#a8f5933942ecba67c80ed113c7ba12725">share__option</a>
+</li>
+<li>has_audio
+: <a class="el" href="struct___s_m_p_e_g___info.html#a1bc4440c713c03c7c9ca9d1f38a77d05">_SMPEG_Info</a>
+</li>
+<li>has_block_type
+: <a class="el" href="struct_command_line_options.html#a23896f20dd4c160aff71c58db40ce110">CommandLineOptions</a>
+</li>
+<li>has_cue_specification
+: <a class="el" href="structdecode__options__t.html#a090ac01d144b0c8b0ae24de42b5ec100">decode_options_t</a>
+</li>
+<li>has_end_point
+: <a class="el" href="structutils_____cue_specification.html#ab737b2555e312a8e7fe84dace304773e">utils__CueSpecification</a>
+</li>
+<li>has_except_block_type
+: <a class="el" href="struct_command_line_options.html#ae6a6ab20262e859a4335968e67adf6f7">CommandLineOptions</a>
+</li>
+<li>has_extended
+: <a class="el" href="structvocstuff.html#aebd41bb84c3ce3d8924a7012296e55d4">vocstuff</a>
+</li>
+<li>has_md5sum
+: <a class="el" href="struct_decoder_session.html#a170ff40c257b7503511652e7fa8c7e58">DecoderSession</a>
+</li>
+<li>has_replaygain
+: <a class="el" href="structstream__data__struct.html#ab738985d3ef937973e317de0b95a433a">stream_data_struct</a>
+</li>
+<li>has_seek_table
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#a2342ea5264765bff36b5e41dffd49fcc">FLAC__StreamDecoderPrivate</a>
+</li>
+<li>has_start_point
+: <a class="el" href="structutils_____cue_specification.html#a1db538512a5cf1bbef062aa67778b1a6">utils__CueSpecification</a>
+</li>
+<li>has_stats
+: <a class="el" href="struct_f_l_a_c_____metadata___simple_iterator.html#abd0a18edd7cf23b6ba81b1937330168c">FLAC__Metadata_SimpleIterator</a>
+</li>
+<li>has_stream_info
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#af7aad9e9efbef7dc506a3c4e45acee01">FLAC__StreamDecoderPrivate</a>
+</li>
+<li>has_video
+: <a class="el" href="struct___s_m_p_e_g___info.html#a4e91ccaea24d50b857948444339997a7">_SMPEG_Info</a>
 </li>
 <li>hash_of
 : <a class="el" href="struct_hash_data.html#aa5fc2114a16c367da9c4e0471cef1103">HashData</a>
@@ -144,19 +215,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>hat_mask
 : <a class="el" href="struct_s_d_l___game_controller_button_bind.html#a9f1197eb0a12d824946d59ee6c4a2999">SDL_GameControllerButtonBind</a>
 </li>
+<li>have_working_packet
+: <a class="el" href="struct_f_l_a_c_____ogg_decoder_aspect.html#a81e82436142f6a79c584520d11b2fe9f">FLAC__OggDecoderAspect</a>
+</li>
+<li>have_working_page
+: <a class="el" href="struct_f_l_a_c_____ogg_decoder_aspect.html#a189d26c093d2f4d55e1a00106d8c28ae">FLAC__OggDecoderAspect</a>
+</li>
+<li>hdlg
+: <a class="el" href="struct_l_o_c_a_l_d_a_t_a.html#afd3e44c433a5d74a299a9ca8f43fa220">LOCALDATA</a>
+</li>
+<li>hDllInstance
+: <a class="el" href="struct_in___module.html#a93e3a7c9bee6acc5db4daf456727425c">In_Module</a>
+, <a class="el" href="struct_out___module.html#a19f4363b3701e7637ca43a70644eadb7">Out_Module</a>
+</li>
+<li>hdrlen
+: <a class="el" href="struct_w_a_v_e_f_o_r_m_a_t_h_e_a_d_e_r.html#a1c35fb459a58dd0e5946f2eeb2d696d1">WAVEFORMATHEADER</a>
+</li>
+<li>hdrsize
+: <a class="el" href="struct_m_m_c_m_p_f_i_l_e_h_e_a_d_e_r.html#aaacd52cc466802241728828358143440">MMCMPFILEHEADER</a>
+</li>
+<li>head
+: <a class="el" href="struct___a_b_c_t_r_a_c_k.html#adb5689c88c30ad1baa9cd5a1ce108031">_ABCTRACK</a>
+, <a class="el" href="struct___m_i_d_t_r_a_c_k.html#aa2f25f3159220d225aba949ab7941831">_MIDTRACK</a>
+, <a class="el" href="struct_f_l_a_c_____metadata___chain.html#a9514533fb8386d26d38991bb7e1aea46">FLAC__Metadata_Chain</a>
+</li>
+<li>header
+: <a class="el" href="struct_f_l_a_c_____frame.html#ae39796592bb27512110976fe7b80ce06">FLAC__Frame</a>
+, <a class="el" href="structogg__page.html#acc3e10f279fe5687287c73d36a8892db">ogg_page</a>
+, <a class="el" href="structogg__stream__state.html#a5c83d7bc34e1d6bd15e424a7feb59b5d">ogg_stream_state</a>
+, <a class="el" href="struct_patch_header.html#a00f1667fc9df48903d0ffbbe0f6d37bd">PatchHeader</a>
+, <a class="el" href="structprivate__state.html#aa013e7a0c879c920032aea499b4b9473">private_state</a>
+</li>
+<li>header1
+: <a class="el" href="structprivate__state.html#a39269dbce7d1ee96422dd1624df7ac4e">private_state</a>
+</li>
+<li>header2
+: <a class="el" href="structprivate__state.html#a13f7fdfde42c329aa7d1c088592b3c66">private_state</a>
+</li>
+<li>header_fill
+: <a class="el" href="structogg__stream__state.html#af37e7ffba5e7197c8bfabee7a1a6b641">ogg_stream_state</a>
+</li>
+<li>header_len
+: <a class="el" href="structogg__page.html#aeaa6edc2ff9f2c5cc8f0ecf001936b7b">ogg_page</a>
+</li>
+<li>header_warmup
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#a91bc66ef904d099020ddc6f8ecfe5c8c">FLAC__StreamDecoderPrivate</a>
+</li>
+<li>headerbytes
+: <a class="el" href="structogg__sync__state.html#abb64d78f386bc413527df838f2f681d5">ogg_sync_state</a>
+</li>
+<li>headerlen
+: <a class="el" href="struct_f_a_r_h_e_a_d_e_r1.html#ad7405d68a4e9751c41ce032a5cc9e11b">FARHEADER1</a>
+</li>
+<li>Headers
+: <a class="el" href="class_c_sound_file.html#a5eaa56d3deb4a6ec7e8ef6d75830a039">CSoundFile</a>
+</li>
 <li>headerSize
 : <a class="el" href="structs__header.html#a3b1403d068241af9a9c57a16e87eaab1">s_header</a>
 </li>
+<li>headersize
+: <a class="el" href="struct_x_m_h_e_a_d_e_r.html#a65fab62b2c11ce2a97ac08d763845629">XMHEADER</a>
+</li>
 <li>height
-: <a class="el" href="structarcade_1_1_get_map.html#ae83569f92aa2a5cc6f50355162c62eb3">arcade::GetMap</a>
+: <a class="el" href="struct___s_m_p_e_g___info.html#a2e818ad621ccb815acc48e561d77d272">_SMPEG_Info</a>
+, <a class="el" href="structarcade_1_1_get_map.html#ae83569f92aa2a5cc6f50355162c62eb3">arcade::GetMap</a>
+, <a class="el" href="struct_f_l_a_c_____stream_metadata___picture.html#a76dbd1212d330807cda289660f5ee754">FLAC__StreamMetadata_Picture</a>
+, <a class="el" href="struct_m_p_e_g___video_info.html#a27e378a8ad6dc48aba1d75443a21da43">MPEG_VideoInfo</a>
+, <a class="el" href="struct_picture_file.html#a1713bc95e99abde8fc3e5c44b02aa7b6">PictureFile</a>
 , <a class="el" href="struct_s_d_l_test___surface_image__s.html#a310092874695556e4b7f1f63aec24213">SDLTest_SurfaceImage_s</a>
 , <a class="el" href="structtag_m_e_n_u.html#a18e66f7e825dd9e3624407a6b9578e3a">tagMENU</a>
 </li>
 <li>here
 : <a class="el" href="struct_s_d_l___r_wops.html#a6fc84601c17e347c6ef24c63a79deb57">SDL_RWops</a>
 </li>
+<li>hi
+: <a class="el" href="struct___instrument_layer.html#acedfd387f9f81c3c5d3d203272a43591">_InstrumentLayer</a>
+, <a class="el" href="structcodec__setup__info.html#aedeb89fe833e4b8de6eee1248cef3903">codec_setup_info</a>
+, <a class="el" href="struct_c_p_s_process_ser_num.html#ae052a7253c1a9b8c2c79a3053761f82c">CPSProcessSerNum</a>
+, <a class="el" href="unionmagic.html#ad39a47e5648edda3cf04d455e1cd6bca">magic</a>
+, <a class="el" href="structnoiseguard.html#a88d4adfe32e7ee064bf0319b8f41c0ac">noiseguard</a>
+</li>
 <li>hidden
 : <a class="el" href="struct_s_d_l___r_wops.html#a362df87898893bd29a05434308f78c4d">SDL_RWops</a>
+</li>
+<li>high_freq
+: <a class="el" href="struct_sample.html#a9afc0cacd46ede6646d41acfdd233e1b">Sample</a>
+</li>
+<li>high_frequency
+: <a class="el" href="struct_wave_header.html#a701ba8381193414a4c742d72844623b8">WaveHeader</a>
 </li>
 <li>highscoreDim
 : <a class="el" href="class_high_score_component.html#a316d59b18e14dc83aaab2423615b7166">HighScoreComponent</a>
@@ -164,11 +310,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>highscorePos
 : <a class="el" href="class_high_score_component.html#a709f9dab53bf232bbb7673f9a8b4b778">HighScoreComponent</a>
 </li>
+<li>hineighbor
+: <a class="el" href="structvorbis__look__floor1.html#aabef086edefd38cb3e914ace5b9a0ea0">vorbis_look_floor1</a>
+</li>
+<li>hioffset
+: <a class="el" href="struct_m_p___c_o_n_t_r_o_l.html#a1591dbbd2c0aa46eda87619a47c3fab3">MP_CONTROL</a>
+</li>
+<li>hlmask
+: <a class="el" href="structtag_m_m_d1_b_l_o_c_k_i_n_f_o.html#a4c501c6d61348bd92e193dfc405d405c">tagMMD1BLOCKINFO</a>
+</li>
+<li>hMainWindow
+: <a class="el" href="struct_in___module.html#a837cccfa09e1bcb65202223aa5502c83">In_Module</a>
+, <a class="el" href="struct_out___module.html#a0008a316aad75c1b994596e28f375579">Out_Module</a>
+</li>
+<li>hmem
+: <a class="el" href="structtag_s3_m_s_a_m_p_l_e_s_t_r_u_c_t.html#a41551a10635fd15f0c0eca6337a1e594">tagS3MSAMPLESTRUCT</a>
+</li>
+<li>hold
+: <a class="el" href="struct_m_e_d_i_n_s_t_e_x_t.html#aca78386ef5a0a70097119ff7cb172aaa">MEDINSTEXT</a>
+</li>
+<li>htab
+: <a class="el" href="struct_l_o_c_a_l_d_a_t_a.html#a4d84157dc3adecb25563bc302b9d4321">LOCALDATA</a>
+</li>
+<li>http_buffer_size
+: <a class="el" href="structflac__config__t.html#aabc33c47559a22a5674c7f71c8ece1b3">flac_config_t</a>
+</li>
+<li>http_prebuffer
+: <a class="el" href="structflac__config__t.html#a252e88b5c990e39dd28290ab3b37404d">flac_config_t</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

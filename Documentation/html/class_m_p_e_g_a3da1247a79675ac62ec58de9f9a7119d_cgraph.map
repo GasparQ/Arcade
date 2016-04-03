@@ -1,0 +1,7 @@
+<map id="MPEG::Skip" name="MPEG::Skip">
+<area shape="rect" id="node2" href="$class_m_p_e_gsystem.html#a9611cff06ea0591175149053055028c1" title="MPEGsystem::get_stream" alt="" coords="150,5,327,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gsystem.html#ac6efcf62bc0d034173547a8834a53c43" title="MPEGsystem::Skip" alt="" coords="169,56,308,83"/>
+<area shape="rect" id="node4" href="$class_m_p_e_g.html#a680373f56c3d0422569d5002d0668c32" title="MPEG::VideoEnabled" alt="" coords="164,107,313,133"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gaction.html#af645030af94c820323fafd278bc01738" title="MPEGaction::Skip" alt="" coords="173,157,304,184"/>
+<area shape="rect" id="node6" href="$class_m_p_e_g.html#a99d8e4ad85bf555a751cb459f81cf6fa" title="MPEG::AudioEnabled" alt="" coords="164,208,313,235"/>
+</map>

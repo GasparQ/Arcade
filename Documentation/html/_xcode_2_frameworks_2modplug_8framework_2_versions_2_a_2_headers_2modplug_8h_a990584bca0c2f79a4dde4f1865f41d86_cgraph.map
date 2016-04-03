@@ -1,0 +1,6 @@
+<map id="ModPlug_Seek" name="ModPlug_Seek">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#aa2a782fa42907990fb9030b9aa4c9d0e" title="CSoundFile::GetSongTime" alt="" coords="172,5,351,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#a3c7ff7d532aa8752587e05443194b484" title="CSoundFile::GetMaxPosition" alt="" coords="166,56,357,83"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#a7de04f32e0e8f8709d4178562282b3d3" title="CSoundFile::SetCurrentPos" alt="" coords="169,107,353,133"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a7341fe49ddbb5c5949e8da08924c5361" title="CSoundFile::GetLength" alt="" coords="406,5,565,32"/>
+</map>

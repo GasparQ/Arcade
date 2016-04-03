@@ -1,0 +1,8 @@
+<map id="wav_decode_options_t" name="wav_decode_options_t">
+<area shape="rect" id="node2" href="$structforeign__metadata__t.html" title="foreign_metadata_t" alt="" coords="405,20,539,47"/>
+<area shape="rect" id="node3" href="$structforeign__block__t.html" title="foreign_block_t" alt="" coords="45,5,155,32"/>
+<area shape="rect" id="node4" href="$structdecode__options__t.html" title="decode_options_t" alt="" coords="410,99,534,125"/>
+<area shape="rect" id="node5" href="$structutils_____cue_specification.html" title="utils__CueSpecification" alt="" coords="21,56,179,83"/>
+<area shape="rect" id="node6" href="$structreplaygain__synthesis__spec__t.html" title="replaygain_synthesis\l_spec_t" alt="" coords="28,107,172,149"/>
+<area shape="rect" id="node7" href="$structutils_____skip_until_specification.html" title="utils__SkipUntilSpecification" alt="" coords="6,173,194,200"/>
+</map>

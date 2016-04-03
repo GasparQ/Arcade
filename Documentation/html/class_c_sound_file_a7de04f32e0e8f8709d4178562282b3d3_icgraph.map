@@ -1,0 +1,5 @@
+<map id="CSoundFile::SetCurrentPos" name="CSoundFile::SetCurrentPos">
+<area shape="rect" id="node2" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a990584bca0c2f79a4dde4f1865f41d86" title="ModPlug_Seek" alt="" coords="279,5,390,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#aacdba6c46dda6064506c044c4fa3cd6a" title="CSoundFile::SetCurrentOrder" alt="" coords="238,56,431,83"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a64434de03af9931da2877f5b2fda22f9" title="ModPlug_SeekOrder" alt="" coords="481,56,623,83"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="FLAC::Metadata::get_picture" name="FLAC::Metadata::get_picture">
+<area shape="rect" id="node2" href="$group__flac__metadata__level0.html#gaa13138ab038694909964998a113817b4" title="FLAC__metadata_get\l_picture" alt="" coords="431,223,580,265"/>
+<area shape="rect" id="node13" href="$class_f_l_a_c_1_1_metadata_1_1_picture.html#aa3d7384cb724a842c3471a9ab19f81ed" title="FLAC::Metadata::Picture\l::assign" alt="" coords="198,381,365,422"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__level1.html#gad37c37ce49a1757ca007353c72713f04" title="FLAC__metadata_simple\l_iterator_new" alt="" coords="653,318,822,359"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__level1.html#ga2a055cca4e6e06ae62517c8b0fa6e8a3" title="FLAC__metadata_simple\l_iterator_init" alt="" coords="653,70,822,111"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__level1.html#ga46e64734300a022bb9616b26228b0348" title="FLAC__metadata_simple\l_iterator_delete" alt="" coords="653,5,822,46"/>
+<area shape="rect" id="node7" href="$group__flac__metadata__level1.html#ga4649a49d230ac8bfc3ec88f5196205bb" title="FLAC__metadata_simple\l_iterator_get_block_type" alt="" coords="653,135,822,177"/>
+<area shape="rect" id="node8" href="$group__flac__metadata__level1.html#gad5ed392fd8b9abd6888e72691ff40774" title="FLAC__metadata_simple\l_iterator_get_block" alt="" coords="653,383,822,425"/>
+<area shape="rect" id="node10" href="$group__flac__metadata__object.html#ga66bbe27dba68ba77be5af83986a280ea" title="FLAC__metadata_object\l_delete" alt="" coords="893,417,1059,458"/>
+<area shape="rect" id="node12" href="$group__flac__metadata__level1.html#gacac860d14fc0ff37cc2c034d3f972320" title="FLAC__metadata_simple\l_iterator_next" alt="" coords="653,253,822,294"/>
+<area shape="rect" id="node5" href="$metadata__manip_8cpp.html#a78ca20ee78ff833d630554784810d654" title="get_file_stats_" alt="" coords="923,77,1029,104"/>
+<area shape="rect" id="node9" href="$group__flac__metadata__object.html#gab3d728ca4455bda71cc231fdb91307fb" title="FLAC__metadata_object_new" alt="" coords="877,485,1075,512"/>
+<area shape="rect" id="node11" href="$lib_f_l_a_c_2metadata__object_8c.html#adca9ba17ba21fe5f9e9c19ba2784ea38" title="FLAC__metadata_object\l_delete_data" alt="" coords="1123,417,1290,458"/>
+<area shape="rect" id="node14" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a553ddf0187b31218ecfb0d7ba259fda0" title="FLAC::Metadata::Prototype\l::assign_object" alt="" coords="414,449,597,490"/>
+<area shape="rect" id="node15" href="$class_f_l_a_c_1_1_metadata_1_1_prototype.html#a325839301bca33a69890b59416bcb314" title="FLAC::Metadata::Prototype\l::clear" alt="" coords="646,449,829,490"/>
+<area shape="rect" id="node16" href="$group__flac__metadata__object.html#gaa12d8f3c14500a977b7ddf14c6bf81fe" title="FLAC__metadata_object\l_clone" alt="" coords="654,514,821,555"/>
+</map>

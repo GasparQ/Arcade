@@ -1,0 +1,5 @@
+<map id="FLAC::Encoder::Stream::get_verify_decoder_state" name="FLAC::Encoder::Stream::get_verify_decoder_state">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html#abb12dc332530d995a8a929a5b51ffc8b" title="FLAC::Encoder::Stream\l::is_valid" alt="" coords="236,5,399,46"/>
+<area shape="rect" id="node3" href="$group__flac__stream__encoder.html#gac613bebe4181568e7ca59cca30294e52" title="FLAC__stream_encoder\l_get_verify_decoder_state" alt="" coords="230,70,405,111"/>
+<area shape="rect" id="node4" href="$group__flac__stream__decoder.html#ga5899c204ad7183ec04e41855090c0635" title="FLAC__stream_decoder\l_get_state" alt="" coords="453,70,616,111"/>
+</map>

@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,11 +79,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="functions_func.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_func_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_func_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_func_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_func_e.html#index_e"><span>e</span></a></li>
@@ -89,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_func_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
@@ -109,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,6 +127,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>S3MConvert()
+: <a class="el" href="class_c_sound_file.html#a307399fbc8fb2604fe3c6a305b7462bc">CSoundFile</a>
+</li>
+<li>S3MSaveConvert()
+: <a class="el" href="class_c_sound_file.html#a8c06c2d7aabb0705922bceea289fb210">CSoundFile</a>
+</li>
 <li>s_cache()
 : <a class="el" href="structs__cache.html#a0740e85e553483db32671dfdcdfcc5b5">s_cache</a>
 </li>
@@ -129,16 +140,264 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structs__header.html#a2d2864a0667df226e7fa0359d3e502e4">s_header</a>
 </li>
 <li>s_highScore()
-: <a class="el" href="structs__high_score.html#ac7428d09ab8182122d0f2612e8c0bfb3">s_highScore</a>
+: <a class="el" href="structs__high_score.html#a92b1bc07a11e4b71459a2d2cc15d8f94">s_highScore</a>
+</li>
+<li>SaveAllParameters()
+: <a class="el" href="class_i_mix_plugin.html#a3b43b8b8b561e07e96915388c1ed1ca5">IMixPlugin</a>
+</li>
+<li>SaveIT()
+: <a class="el" href="class_c_sound_file.html#adae8e888d4a9b43fbb88b42bb4947183">CSoundFile</a>
+</li>
+<li>SaveMixPlugins()
+: <a class="el" href="class_c_sound_file.html#aeba300293c7e84f2579b3b61c2340a00">CSoundFile</a>
+</li>
+<li>SaveMod()
+: <a class="el" href="class_c_sound_file.html#aa6c854466f50f76674b15994573968cb">CSoundFile</a>
+</li>
+<li>SaveS3M()
+: <a class="el" href="class_c_sound_file.html#a273f8aa35de62a3b4dedc540d04aec5c">CSoundFile</a>
+</li>
+<li>SaveXM()
+: <a class="el" href="class_c_sound_file.html#a5466a6835e3a3a87e01eaf16297fecaf">CSoundFile</a>
 </li>
 <li>SDLGraph()
 : <a class="el" href="class_s_d_l_graph.html#a9ed11ac197e66eabdd7d689df1ca9937">SDLGraph</a>
+</li>
+<li>Seek()
+: <a class="el" href="class_m_p_e_g.html#a32884e4534c3236db53f9c3efaf0d6c3">MPEG</a>
+, <a class="el" href="class_m_p_e_gsystem.html#a615de34aeaaeeeb5c4e9dcf5dcba9053">MPEGsystem</a>
+</li>
+<li>seek_absolute()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a859fee76dfa23c09e0b0f872b4a328aa">FLAC::Decoder::Stream</a>
+</li>
+<li>seek_callback()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a159620053a7ae9fbe2d61ec5bf31ea9d">FLAC::Decoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a2574a6f512b4b309327fd9f36b748d96">FLAC::Encoder::Stream</a>
+, <a class="el" href="class_stream_decoder.html#a58ea72f73c35b984ccba40cc664399f8">StreamDecoder</a>
+, <a class="el" href="class_stream_encoder.html#a791b2e8158ede7b3a3e99aded8f3f4d8">StreamEncoder</a>
+</li>
+<li>seek_callback_()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a8ba714e7853330695e9e3cafcba6fdf0">FLAC::Decoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a7c243c5ee0a7de32bbf390daa10d8a43">FLAC::Encoder::Stream</a>
+</li>
+<li>seek_first_header()
+: <a class="el" href="class_m_p_e_gsystem.html#a6e2fe1a945858523a7c1046a7e0e55ab">MPEGsystem</a>
+</li>
+<li>seek_marker()
+: <a class="el" href="class_m_p_e_gstream.html#ae45fe5c9ea242887904cdd560cfe13ca">MPEGstream</a>
+</li>
+<li>seek_next_header()
+: <a class="el" href="class_m_p_e_gsystem.html#a050f72352bbdf91e4272a1523ebf0606">MPEGsystem</a>
+</li>
+<li>seekIntoStream()
+: <a class="el" href="class_m_p_e_g.html#a7d45f1ea5e9b6f4c7c57fed5fe5a548c">MPEG</a>
+</li>
+<li>SeekTable()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_seek_table.html#afc3c768da0edce2d99d8fc8df1b977d7">FLAC::Metadata::SeekTable</a>
 </li>
 <li>select()
 : <a class="el" href="class_action_component.html#a44a5fafd92c13b8e9d4b6ea084014339">ActionComponent&lt; linkedElemType, action1Type, action2Type &gt;</a>
 </li>
 <li>selectWindow()
 : <a class="el" href="classncr_1_1_menu.html#ab9588d039f1c6b6adc2b27bd82d04210">ncr::Menu</a>
+</li>
+<li>set_apodization()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a9dc6ea94522b86dc85d87a6c20edde1c">FLAC::Encoder::Stream</a>
+</li>
+<li>set_bits_per_sample()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a05a63153a5e0a7c4122834beafbe9e66">FLAC::Encoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a53e22a2b6765d96552ff31a0b21fbbdd">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_block()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_iterator.html#a3123daf89fca2a8981c9f361f466a418">FLAC::Metadata::Iterator</a>
+, <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#a0ebd4df55346cbcec9ace04f7d7b484d">FLAC::Metadata::SimpleIterator</a>
+</li>
+<li>set_blocksize()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a03c39b7cd632d02ba17f64c383b843a9">FLAC::Encoder::Stream</a>
+</li>
+<li>set_channels()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a5b3b843c1294a88ec3ce142a8c771cea">FLAC::Encoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a7d813d6f3d64570126858492a786b885">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_colors()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#a4bac0286c0fd4de4d2be8d9ba1ba50a5">FLAC::Metadata::Picture</a>
+</li>
+<li>set_comment()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#ac75ecd354178786318c5c3af1919d949">FLAC::Metadata::VorbisComment</a>
+</li>
+<li>set_compression_level()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a7b0829473587e15d10b128fd5e27b3cf">FLAC::Encoder::Stream</a>
+</li>
+<li>set_data()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_application.html#acbb3f2b255a4c5cc4ad179a79b1588f1">FLAC::Metadata::Application</a>
+, <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#a301630d1c8f7647d0f192e6a2a03e6ba">FLAC::Metadata::Picture</a>
+, <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_unknown.html#a8621d3eff6af5acc278297b3d2837a76">FLAC::Metadata::Unknown</a>
+</li>
+<li>set_depth()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#a8002fd1d9c9956b8c2b99d952edf1092">FLAC::Metadata::Picture</a>
+</li>
+<li>set_description()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#a1bbcd96802a16fc36ac1b6610cd7d4a3">FLAC::Metadata::Picture</a>
+</li>
+<li>set_do_escape_coding()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a433a07844b264e9b40de69a297479447">FLAC::Encoder::Stream</a>
+</li>
+<li>set_do_exhaustive_model_search()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#abade9c7cd083b2539454ea998f85f58f">FLAC::Encoder::Stream</a>
+</li>
+<li>set_do_mid_side_stereo()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a62568f8a3cfc62669ff0f1ab43986ab9">FLAC::Encoder::Stream</a>
+</li>
+<li>set_do_qlp_coeff_prec_search()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#adfe8ef2ac7d74623942e4b6de17e261a">FLAC::Encoder::Stream</a>
+</li>
+<li>set_field()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#ae6cc410fd34d3aa31bd50dad4fe43442">FLAC::Metadata::VorbisComment::Entry</a>
+</li>
+<li>set_field_name()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a63b7e835b27b29bf02c3a7b0bc5000cd">FLAC::Metadata::VorbisComment::Entry</a>
+</li>
+<li>set_field_value()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment_1_1_entry.html#a6494567865de5ba61edd4e264312926f">FLAC::Metadata::VorbisComment::Entry</a>
+</li>
+<li>set_height()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#a96d6bd9f0619d11c4ef8c25169538ebb">FLAC::Metadata::Picture</a>
+</li>
+<li>set_id()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_application.html#a1091e3153598a350db898ac2c52db979">FLAC::Metadata::Application</a>
+</li>
+<li>set_index()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#aa061e5116d5607c01b921d8ddcbe1999">FLAC::Metadata::CueSheet</a>
+, <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet_1_1_track.html#aa8a70d722043e1f4bdea0c3c837c3472">FLAC::Metadata::CueSheet::Track</a>
+</li>
+<li>set_is_cd()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#a8fb5d848cf386a9f63ceaa2153e4e0c7">FLAC::Metadata::CueSheet</a>
+</li>
+<li>set_is_last()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_prototype.html#af40c7c078e408f7d6d0b5f521a013315">FLAC::Metadata::Prototype</a>
+</li>
+<li>set_isrc()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet_1_1_track.html#a6e86dff01b47678d5f0daa4d060c067d">FLAC::Metadata::CueSheet::Track</a>
+</li>
+<li>set_lead_in()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#a9574767b8d13e88d804a42e9d37187a6">FLAC::Metadata::CueSheet</a>
+</li>
+<li>set_length()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_padding.html#addd51552e05e0c569dc3859431bb2840">FLAC::Metadata::Padding</a>
+</li>
+<li>set_loose_mid_side_stereo()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#abacc983280b364b39ff5c701d8ad8005">FLAC::Encoder::Stream</a>
+</li>
+<li>set_max_blocksize()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a1f61e1285252714f536f5cbc9d21a37b">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_max_framesize()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a67735d6f89d3e0387abec989dcd4fd23">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_max_lpc_order()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a48aa790f98b07a8dd22144bb145ca5b5">FLAC::Encoder::Stream</a>
+</li>
+<li>set_max_residual_partition_order()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#af1ffdae1443cc2e36ffdcd5567fad544">FLAC::Encoder::Stream</a>
+</li>
+<li>set_md5_checking()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#ace8abae9cf554d8f7fd55942ee7ecd2c">FLAC::Decoder::Stream</a>
+</li>
+<li>set_md5sum()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#afef84aaea3c333ad880e7843c70aed02">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_media_catalog_number()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#ab870f6ff2b44149494914163d78ecd2a">FLAC::Metadata::CueSheet</a>
+</li>
+<li>set_metadata()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#ade255a7fd915ebe4d4b3a1623beeb0a9">FLAC::Encoder::Stream</a>
+</li>
+<li>set_metadata_ignore()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a0aa236f848f856c746af4e7312e65f33">FLAC::Decoder::Stream</a>
+</li>
+<li>set_metadata_ignore_all()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a8d71c06229f35f8225b04f8f1b255c22">FLAC::Decoder::Stream</a>
+</li>
+<li>set_metadata_ignore_application()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#ac1c3c2463580ae2f8a0cbcb28cc16412">FLAC::Decoder::Stream</a>
+</li>
+<li>set_metadata_respond()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#ab201da8711a3935421c9a3f72a87cc4e">FLAC::Decoder::Stream</a>
+</li>
+<li>set_metadata_respond_all()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a3d44ff87021ef6d20deb67d55ae602d6">FLAC::Decoder::Stream</a>
+</li>
+<li>set_metadata_respond_application()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a83ff6cf21b260f7094c618c3819e9280">FLAC::Decoder::Stream</a>
+</li>
+<li>set_mime_type()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#afb4e53cb8ae62ea0d9ebd1afdca40c3f">FLAC::Metadata::Picture</a>
+</li>
+<li>set_min_blocksize()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#ab6f6626737e0c42066dba690edce36de">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_min_framesize()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a2bd0480bae277d2b88c55b73f6d14b23">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_min_residual_partition_order()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#abd7b71020ac7908f8c4a25f56a8462f4">FLAC::Encoder::Stream</a>
+</li>
+<li>set_number()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet_1_1_track.html#a80a7fc4efe72021a43e96c170457ec44">FLAC::Metadata::CueSheet::Track</a>
+</li>
+<li>set_offset()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet_1_1_track.html#a78af8923ef6543c4393458166a12b46e">FLAC::Metadata::CueSheet::Track</a>
+</li>
+<li>set_ogg_serial_number()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#af9ff3cbaf7e56e6755c714bd6972c089">FLAC::Decoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a72b4d936a2b70e37d903ec924b4dfce8">FLAC::Encoder::Stream</a>
+</li>
+<li>set_point()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_seek_table.html#a992aa37cd6a781b3e1f64a2d1d982229">FLAC::Metadata::SeekTable</a>
+</li>
+<li>set_pre_emphasis()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet_1_1_track.html#a0b62ce4e977d5ee927fe770020caba88">FLAC::Metadata::CueSheet::Track</a>
+</li>
+<li>set_qlp_coeff_precision()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#ab43d6ad2dfe0bb7734187b3c312fe247">FLAC::Encoder::Stream</a>
+</li>
+<li>set_rice_parameter_search_dist()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a0239613526c2ddee3f6a8c1ebc0eceb0">FLAC::Encoder::Stream</a>
+</li>
+<li>set_sample_rate()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#af35ccb46fda06b30e1b2d03af0996098">FLAC::Encoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a08df92c03bf07fb9f3a438820eacb734">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_streamable_subset()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#afd9fe101c9750815c68e69c3e251284c">FLAC::Encoder::Stream</a>
+</li>
+<li>set_total_samples()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#a57250a3a3a7a666c39ec0ac6d8432472">FLAC::Metadata::StreamInfo</a>
+</li>
+<li>set_total_samples_estimate()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a6a9dfe3cb7943751888b486853577237">FLAC::Encoder::Stream</a>
+</li>
+<li>set_track()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet.html#a5fb53ab58aec0a980425bcfbae160a60">FLAC::Metadata::CueSheet</a>
+</li>
+<li>set_type()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_cue_sheet_1_1_track.html#a36346d75b75c2f3b55d861826f9e032d">FLAC::Metadata::CueSheet::Track</a>
+, <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#a969278ad1b2570b754d8226aec40c320">FLAC::Metadata::Picture</a>
+</li>
+<li>set_vendor_string()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#ad8cffdb4c43ba01eaa9a3f7be0d5926a">FLAC::Metadata::VorbisComment</a>
+</li>
+<li>set_verify()
+: <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a67d44e83d8c94a04d602ec7daf90966a">FLAC::Encoder::Stream</a>
+</li>
+<li>set_width()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_picture.html#a999597df1d95bd27de878565a18ba578">FLAC::Metadata::Picture</a>
+</li>
+<li>SetAGC()
+: <a class="el" href="class_c_sound_file.html#abf37f47731d2bf1dd58deaf3a841325c">CSoundFile</a>
+</li>
+<li>setAppleMenu:
+: <a class="el" href="category_n_s_application_07_s_d_l___missing___methods_08.html#abc77a503ce35ae00353bc65f8d3f3f3e">NSApplication(SDL_Missing_Methods)</a>
 </li>
 <li>setAttrOFF()
 : <a class="el" href="classncr_1_1_window.html#ac8e197fd4b8ee6deba90d2ae50f10391">ncr::Window</a>
@@ -152,14 +411,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setColorPair()
 : <a class="el" href="classncr_1_1_window.html#aa7c5dbb3cb6892bce0f18f72229f472e">ncr::Window</a>
 </li>
+<li>SetCurrentOrder()
+: <a class="el" href="class_c_sound_file.html#aacdba6c46dda6064506c044c4fa3cd6a">CSoundFile</a>
+</li>
+<li>SetCurrentPos()
+: <a class="el" href="class_c_sound_file.html#a7de04f32e0e8f8709d4178562282b3d3">CSoundFile</a>
+</li>
+<li>SetDisplay()
+: <a class="el" href="class_m_p_e_g.html#a128c1ba561cb16209e20a14e00c062a2">MPEG</a>
+, <a class="el" href="class_m_p_e_gvideo.html#a425610b1e829bd3e29db38cf42a85788">MPEGvideo</a>
+, <a class="el" href="class_m_p_e_gvideoaction.html#a67220ad711c4c3aa79d068e848c10ea8">MPEGvideoaction</a>
+</li>
+<li>setdownfrequency()
+: <a class="el" href="class_m_p_e_gaudio.html#a0b5834e6230b835d56fe1260c54bc355">MPEGaudio</a>
+</li>
+<li>SetError()
+: <a class="el" href="class_m_p_e_gerror.html#a1c7b0bcff8446609b2ef8d59236cf58d">MPEGerror</a>
+</li>
+<li>setFileName()
+: <a class="el" href="class_animation_component.html#a897cd8f79dc11877f64fb7ac70295853">AnimationComponent</a>
+</li>
+<li>setforcetomono()
+: <a class="el" href="class_m_p_e_gaudio.html#ad46f3273ab57c0d941ddb446a44fb226">MPEGaudio</a>
+</li>
 <li>setFrames()
 : <a class="el" href="class_arcade_menu.html#a758b552f633bad38fbb2a422a8918dd9">ArcadeMenu</a>
 </li>
 <li>setHighScore()
 : <a class="el" href="class_load_high_score.html#a23f8e0823e3d81c22925028c386fa8db">LoadHighScore</a>
 </li>
+<li>SetMasterVolume()
+: <a class="el" href="class_c_sound_file.html#aff81d5c21db278d8ec0a02984ed7fc8c">CSoundFile</a>
+</li>
+<li>SetMixConfig()
+: <a class="el" href="class_c_sound_file.html#a7fe2afa5a87233ab1a46e6e3e0150f3c">CSoundFile</a>
+</li>
 <li>setMode()
 : <a class="el" href="class_arcade_menu.html#a86054d211c6f4f287da30410b84b8b9e">ArcadeMenu</a>
+</li>
+<li>SetPatternName()
+: <a class="el" href="class_c_sound_file.html#aa8135801c1a03f3749404f3f2f14250f">CSoundFile</a>
+</li>
+<li>setPos()
+: <a class="el" href="class_a_component.html#a97ec0acb5b6df39659d8ac4559c882bd">AComponent</a>
+</li>
+<li>SetRepeatCount()
+: <a class="el" href="class_c_sound_file.html#a3f9859b0e0698938377b08cf2bb78791">CSoundFile</a>
+</li>
+<li>SetResamplingMode()
+: <a class="el" href="class_c_sound_file.html#a78cabd484edd7845b4534d01ac532d3c">CSoundFile</a>
+</li>
+<li>SetReverbParameters()
+: <a class="el" href="class_c_sound_file.html#a661b4b80b800efdebcaf64c1ffad238f">CSoundFile</a>
+</li>
+<li>SetSpeed()
+: <a class="el" href="class_c_sound_file.html#ae7c7687544ae1dff0d5a441a548d8f99">CSoundFile</a>
+</li>
+<li>setSprite2D()
+: <a class="el" href="class_game_component.html#a59e436d284d118a959825d533337f5ae">GameComponent</a>
+</li>
+<li>setSprite3D()
+: <a class="el" href="class_game_component.html#a3599c7c2c0c701493e90b2bbbf3715db">GameComponent</a>
+</li>
+<li>setSpriteText()
+: <a class="el" href="class_game_component.html#ad8fa4283d102d58edd9bd724c0f257b9">GameComponent</a>
 </li>
 <li>SetState()
 : <a class="el" href="class_ghost.html#a133cb7fa03fd60120bb071fb12fb2beb">Ghost</a>
@@ -168,29 +483,148 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>setStatus()
 : <a class="el" href="classarcade_1_1_arcade.html#a4ac08903a57c110dece41623872bcd36">arcade::Arcade</a>
 </li>
+<li>setStop()
+: <a class="el" href="class_audio_component.html#a376dc655787ed8bac46ec712968e34f0">AudioComponent</a>
+</li>
 <li>setSubTitle()
 : <a class="el" href="class_dual_text_component.html#a153a341eeaf7d5e6fd7306f0fe425f2c">DualTextComponent</a>
+</li>
+<li>SetSurroundParameters()
+: <a class="el" href="class_c_sound_file.html#a4a2f575166be8cfcd081925cc5b48dfa">CSoundFile</a>
+</li>
+<li>SetTempo()
+: <a class="el" href="class_c_sound_file.html#ad2391bc18e329e468e83a3dcde7f7913">CSoundFile</a>
+</li>
+<li>setText()
+: <a class="el" href="class_u_i_component.html#ab4240efff43d21f275dc48e48bff8cbf">UIComponent</a>
+</li>
+<li>SetTimeSource()
+: <a class="el" href="class_m_p_e_gvideoaction.html#af484c8a86cb15aec6a023d4040985df2">MPEGvideoaction</a>
+</li>
+<li>setTitle()
+: <a class="el" href="class_i_graph.html#ac803f2af19fabc57a612375b9f1a7fa5">IGraph</a>
+, <a class="el" href="class_n_curses_graph.html#a54d2e157f2c57e05d84ed98eed6468e6">NCursesGraph</a>
+, <a class="el" href="class_open_gl_graph.html#a651e1069b78b4608e34c7644b1d44733">OpenGlGraph</a>
+, <a class="el" href="class_s_d_l_graph.html#a1869fb1256a5bd1550e9f6c1c5db0a8d">SDLGraph</a>
+</li>
+<li>SetupChannelFilter()
+: <a class="el" href="class_c_sound_file.html#a692b443f0612ff9f796f83966afba0a3">CSoundFile</a>
+</li>
+<li>SetWaveConfig()
+: <a class="el" href="class_c_sound_file.html#aca3128e17470033e70f77fd3b195b6d0">CSoundFile</a>
+</li>
+<li>SetWaveConfigEx()
+: <a class="el" href="class_c_sound_file.html#a53d2af40954b2999c97752a8af423291">CSoundFile</a>
+</li>
+<li>SetXBassParameters()
+: <a class="el" href="class_c_sound_file.html#a6c3b24f180c00d5ff49454cb4ae5f7f7">CSoundFile</a>
+</li>
+<li>shoot()
+: <a class="el" href="class_centipede_game.html#a63860da95095078f6218c9bd335e2271">CentipedeGame</a>
+, <a class="el" href="class_u_s_s_enterprise.html#a0062b6339ea344d9a27b5395db727a99">USSEnterprise</a>
 </li>
 <li>show_cursor()
 : <a class="el" href="class_n_curses.html#ab87c6f42bb28aa982a929123cc2c774d">NCurses</a>
 </li>
+<li>SimpleIterator()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#a4b344fc98d6eb7121ce39b751f703af8">FLAC::Metadata::SimpleIterator</a>
+</li>
 <li>Sint64()
-: <a class="el" href="struct_s_d_l___r_wops.html#a45f66dbb683a88281d96f83ca18c525f">SDL_RWops</a>
+: <a class="el" href="struct_s_d_l___r_wops.html#a767114391a3d1b4a7c214da3e164acf5">SDL_RWops</a>
+</li>
+<li>Size()
+: <a class="el" href="class_m_p_e_glist.html#a56002e99b86b240248084ad034d63b6c">MPEGlist</a>
 </li>
 <li>size_t()
 : <a class="el" href="struct_s_d_l___r_wops.html#a5f12fd517afffba5bfaff4643d6792b1">SDL_RWops</a>
 </li>
+<li>Skip()
+: <a class="el" href="class_m_p_e_g.html#a3da1247a79675ac62ec58de9f9a7119d">MPEG</a>
+, <a class="el" href="class_m_p_e_gaction.html#af645030af94c820323fafd278bc01738">MPEGaction</a>
+, <a class="el" href="class_m_p_e_gaudio.html#af956843f34a5958b5b6acde84b24c1c1">MPEGaudio</a>
+, <a class="el" href="class_m_p_e_gsystem.html#ac6efcf62bc0d034173547a8834a53c43">MPEGsystem</a>
+, <a class="el" href="class_m_p_e_gvideo.html#a102c9ca243e5f679de40153b47197008">MPEGvideo</a>
+</li>
+<li>skip_single_frame()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#ad82f2665930b14d9135d443217c699bf">FLAC::Decoder::Stream</a>
+</li>
 <li>Snake()
 : <a class="el" href="class_snake.html#aa9cbcdb4b25d84cbf83509039cac8d01">Snake</a>
 </li>
+<li>sort_padding()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_chain.html#a779eaac12da7e7edac67089053e5907f">FLAC::Metadata::Chain</a>
+</li>
+<li>Sound()
+: <a class="el" href="class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9">Sound</a>
+</li>
+<li>SoundFinished()
+: <a class="el" href="class_sound.html#a316b43ed2e2a7c438eab49a1552e3815">Sound</a>
+</li>
+<li>splitCentipede()
+: <a class="el" href="class_centipede.html#afaca2a304f09cd4d8ac8049100adb877">Centipede</a>
+</li>
+<li>Start()
+: <a class="el" href="class_m_p_e_gsystem.html#a6cc75b68aecede62873aaf2885f7c7fa">MPEGsystem</a>
+</li>
+<li>State()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream_1_1_state.html#a7bb916c135589c18d457a8c23c0d0baf">FLAC::Decoder::Stream::State</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream_1_1_state.html#a64b68350cffe445da0f7f0b39f14fd5b">FLAC::Encoder::Stream::State</a>
+</li>
+<li>status()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_chain.html#ab35ee440a4730e95fa81e1e142deff93">FLAC::Metadata::Chain</a>
+</li>
+<li>Status()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_chain_1_1_status.html#a729a1cd46a7156075086b07ac9c3d6a3">FLAC::Metadata::Chain::Status</a>
+</li>
+<li>status()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#a5e3b527b636a97cbe434b92949680174">FLAC::Metadata::SimpleIterator</a>
+</li>
+<li>Status()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_simple_iterator_1_1_status.html#ab10337fe1994c5981db4e54557b941fd">FLAC::Metadata::SimpleIterator::Status</a>
+</li>
+<li>Stop()
+: <a class="el" href="class_m_p_e_g.html#ac68e141fcf24519efa575c8758947f14">MPEG</a>
+, <a class="el" href="class_m_p_e_gaction.html#a6e559ddd951b743508ecdeccbff2f95c">MPEGaction</a>
+, <a class="el" href="class_m_p_e_gaudio.html#aba3d2c9804917063bf0d5b380601629b">MPEGaudio</a>
+, <a class="el" href="class_m_p_e_gsystem.html#a125a9623c290487263488921f691aa03">MPEGsystem</a>
+, <a class="el" href="class_m_p_e_gvideo.html#a6b89bceec472fb016289346935b9eb85">MPEGvideo</a>
+</li>
+<li>stopShot()
+: <a class="el" href="class_u_s_s_enterprise.html#a4b30cd6048b47618e0059977e1dde741">USSEnterprise</a>
+</li>
+<li>StopSound()
+: <a class="el" href="class_sound.html#a19d2bbd15f932955d33de7b0ab90b244">Sound</a>
+</li>
+<li>strdup()
+: <a class="el" href="class_t___string.html#aa61d347f89c789fb32aa6f6047f77b04">T_String</a>
+</li>
+<li>Stream()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#aee85c0110292a0631ea7225f2b6afa09">FLAC::Decoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a4e904a3a816d9fe81826f6eb1966cc26">FLAC::Encoder::Stream</a>
+</li>
+<li>StreamDecoder()
+: <a class="el" href="class_stream_decoder.html#a041d462db52d6827b96c9f919ce7d858">StreamDecoder</a>
+</li>
+<li>StreamEncoder()
+: <a class="el" href="class_stream_encoder.html#a8d58d165dbf131cba271ae5f5f53b1c7">StreamEncoder</a>
+</li>
+<li>StreamInfo()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_stream_info.html#aaf4d96124e2b323398f7edf1aaf28003">FLAC::Metadata::StreamInfo</a>
+</li>
 <li>submit()
 : <a class="el" href="class_high_score_component.html#a7f753ddb2c0bc1b891437599c7aaca4a">HighScoreComponent</a>
+</li>
+<li>SystemLoop()
+: <a class="el" href="class_m_p_e_gsystem.html#a6ec025710cd7366f370b648f3156eb48">MPEGsystem</a>
+</li>
+<li>SystemThread()
+: <a class="el" href="class_m_p_e_gsystem.html#abd0f4f0e0d413f362de2a0ee657f884a">MPEGsystem</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

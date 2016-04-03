@@ -1,0 +1,8 @@
+<map id="vorbis_analysis_blockout" name="vorbis_analysis_blockout">
+<area shape="rect" id="node2" href="$envelope_8c.html#a177b23eed4057ff521a5053a479ff66d" title="_ve_envelope_search" alt="" coords="222,5,370,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2block_8c.html#ad1b739df454f82dc2eda9985bde218de" title="_vorbis_block_ripcord" alt="" coords="222,56,370,83"/>
+<area shape="rect" id="node4" href="$envelope_8c.html#ae37cff40382633516d101381a1fbb6c1" title="_ve_envelope_mark" alt="" coords="227,107,365,133"/>
+<area shape="rect" id="node5" href="$psy_8c.html#acf2486bf30b03e505305f05fd3107bb1" title="_vp_ampmax_decay" alt="" coords="225,157,367,184"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2block_8c.html#a76a1e9def91a196cbbf17058bb6d5e97" title="_vorbis_block_alloc" alt="" coords="228,208,364,235"/>
+<area shape="rect" id="node7" href="$envelope_8c.html#aab5046c33ff5024cffb59d256999ca9d" title="_ve_envelope_shift" alt="" coords="229,259,363,285"/>
+</map>

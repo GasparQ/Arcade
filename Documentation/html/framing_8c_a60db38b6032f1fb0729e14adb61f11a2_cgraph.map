@@ -1,0 +1,10 @@
+<map id="ogg_stream_pagein" name="ogg_stream_pagein">
+<area shape="rect" id="node2" href="$framing_8c.html#a4c3333898b90e1df4734abd96e2d5cb1" title="ogg_page_version" alt="" coords="201,5,327,32"/>
+<area shape="rect" id="node3" href="$framing_8c.html#a01e13664fc5db742a2658dcb5dbec978" title="ogg_page_continued" alt="" coords="193,56,335,83"/>
+<area shape="rect" id="node4" href="$framing_8c.html#a9c0d96d6060b511e6ad4c0a2aec3bc49" title="ogg_page_bos" alt="" coords="211,107,317,133"/>
+<area shape="rect" id="node5" href="$framing_8c.html#ad970fa8d2ee19a0c965a45f55f108ec6" title="ogg_page_eos" alt="" coords="211,157,317,184"/>
+<area shape="rect" id="node6" href="$framing_8c.html#a538a0abd2b69e7548eb6638475ede669" title="ogg_page_granulepos" alt="" coords="190,208,338,235"/>
+<area shape="rect" id="node7" href="$framing_8c.html#a6194aa97806e93b0889a3b376c7ceb8f" title="ogg_page_serialno" alt="" coords="199,259,329,285"/>
+<area shape="rect" id="node8" href="$framing_8c.html#a5b4cfa61e780b79880071f927c22800e" title="ogg_page_pageno" alt="" coords="201,309,327,336"/>
+<area shape="rect" id="node9" href="$framing_8c.html#a19a4792d729d1a199dcd974733702acd" title="ogg_stream_check" alt="" coords="198,360,330,387"/>
+</map>

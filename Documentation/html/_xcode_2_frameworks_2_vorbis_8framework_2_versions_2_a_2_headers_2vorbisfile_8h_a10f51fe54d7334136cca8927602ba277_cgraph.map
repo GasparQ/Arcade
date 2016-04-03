@@ -1,0 +1,17 @@
+<map id="ov_pcm_seek" name="ov_pcm_seek">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2vorbisfile_8c.html#a033abf32795dd65412acb65ec9813172" title="ov_pcm_seek_page" alt="" coords="180,5,319,32"/>
+<area shape="rect" id="node3" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a55245182c6e49c3e474fb8c83a39faae" title="ogg_stream_packetpeek" alt="" coords="167,56,331,83"/>
+<area shape="rect" id="node4" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a5868aa9f561feefb7f613e9fa42967b8" title="vorbis_packet_blocksize" alt="" coords="167,107,332,133"/>
+<area shape="rect" id="node5" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a387e608bc7cc9d39e74c962475f2e9d4" title="ogg_stream_packetout" alt="" coords="172,157,327,184"/>
+<area shape="rect" id="node6" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#acb7d9b60b9c9f057e1bed14c76810ae5" title="vorbis_info_blocksize" alt="" coords="176,208,323,235"/>
+<area shape="rect" id="node7" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a378e222706bd42aa1fa30924311bfa07" title="vorbis_synthesis_trackonly" alt="" coords="159,259,339,285"/>
+<area shape="rect" id="node8" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#acbcda429474c093c54fd9e2ffaee2547" title="vorbis_synthesis_blockin" alt="" coords="165,309,333,336"/>
+<area shape="rect" id="node9" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a9c0d96d6060b511e6ad4c0a2aec3bc49" title="ogg_page_bos" alt="" coords="196,360,303,387"/>
+<area shape="rect" id="node10" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a6194aa97806e93b0889a3b376c7ceb8f" title="ogg_page_serialno" alt="" coords="184,411,315,437"/>
+<area shape="rect" id="node11" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#af6da3e5f5a7980513878576c9499d192" title="ogg_stream_reset_serialno" alt="" coords="160,461,339,488"/>
+<area shape="rect" id="node12" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a60db38b6032f1fb0729e14adb61f11a2" title="ogg_stream_pagein" alt="" coords="182,512,317,539"/>
+<area shape="rect" id="node13" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#abd73dee048684f915c30fc04e8e8d331" title="vorbis_synthesis_halfrate_p" alt="" coords="157,563,341,589"/>
+<area shape="rect" id="node14" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#ac8d21b854dbcb022dab0b46521e9de31" title="vorbis_synthesis_pcmout" alt="" coords="164,613,335,640"/>
+<area shape="rect" id="node15" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a81b9782f945ca76509f79cdf5777b4cb" title="vorbis_synthesis_read" alt="" coords="173,664,325,691"/>
+<area shape="rect" id="node16" href="$libvorbis-1_83_83_2lib_2vorbisfile_8c.html#a87bb18020fd1bb2916187d13d7652663" title="ov_pcm_total" alt="" coords="199,715,299,741"/>
+</map>

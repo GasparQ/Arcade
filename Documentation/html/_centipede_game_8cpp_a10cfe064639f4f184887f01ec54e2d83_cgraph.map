@@ -1,0 +1,7 @@
+<map id="updateMap" name="updateMap">
+<area shape="rect" id="node2" href="$class_centipede_game.html#a384082c9877d170396110f788e8c4b9f" title="CentipedeGame::getMap" alt="" coords="171,5,338,32"/>
+<area shape="rect" id="node3" href="$class_centipede_game.html#ae7a50de4f2cf919a30984244861653ea" title="CentipedeGame::getCentipede" alt="" coords="154,56,355,83"/>
+<area shape="rect" id="node4" href="$class_centipede.html#a3edfc5d3eb1498a6e6a9eb32cc343018" title="Getter for Centipede positions. " alt="" coords="189,107,320,133"/>
+<area shape="rect" id="node5" href="$class_centipede_game.html#ad07f4c16dd9ba234569b9c290c23613f" title="CentipedeGame::getUssEntreprise" alt="" coords="142,157,367,184"/>
+<area shape="rect" id="node6" href="$class_u_s_s_enterprise.html#a933890ed3e45ffb5a8431f7b0463174c" title="USSEnterprise::getShoot" alt="" coords="170,208,339,235"/>
+</map>

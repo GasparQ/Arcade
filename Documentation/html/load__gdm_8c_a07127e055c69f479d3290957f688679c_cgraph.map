@@ -1,0 +1,11 @@
+<map id="GDM_ConvertTrack" name="GDM_ConvertTrack">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#ade4b3f2bca77c43a34021887a1e338d4" title="UniReset" alt="" coords="201,5,279,32"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#a5f03dda9cc212bdf447a2bcbb5a9250a" title="UniEffect" alt="" coords="345,107,423,133"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#a8e803624d84d511d2ee7d47eaa1c16f0" title="UniPTEffect" alt="" coords="193,56,287,83"/>
+<area shape="rect" id="node8" href="$mikmod__internals_8h.html#a91f1c43b23ca5586bf7f469ed2e8ebd8" title="UniNewline" alt="" coords="195,157,285,184"/>
+<area shape="rect" id="node9" href="$mikmod__internals_8h.html#a837d1c1b6c6866f50268c270dc026d31" title="UniDup" alt="" coords="207,208,273,235"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a4dd810360efbbdd4e6266dc6422a34ed" title="UniWriteByte" alt="" coords="482,56,582,83"/>
+<area shape="rect" id="node5" href="$mikmod__internals_8h.html#abf34654ace93ba7783d814e15aef9058" title="UniWriteWord" alt="" coords="480,107,584,133"/>
+<area shape="rect" id="node7" href="$mlutil_8c.html#a6d2ea2321f7f3ecf686e82888d14fc28" title="UniEffect" alt="" coords="345,56,423,83"/>
+<area shape="rect" id="node10" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="336,208,432,235"/>
+</map>

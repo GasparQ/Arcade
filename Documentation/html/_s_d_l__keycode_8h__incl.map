@@ -1,8 +1,9 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_keycode.h" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2/include/SDL_keycode.h">
-<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="613,184,715,211"/>
-<area shape="rect" id="node19" href="$_s_d_l__scancode_8h.html" title="SDL_scancode.h" alt="" coords="652,109,775,136"/>
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="540,184,641,211"/>
+<area shape="rect" id="node20" href="$_s_d_l__scancode_8h.html" title="SDL_scancode.h" alt="" coords="579,109,701,136"/>
 <area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="68,259,169,285"/>
 <area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="5,408,104,435"/>
 <area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="144,408,243,435"/>
+<area shape="rect" id="node7" href="$types_8h.html" title="sys/types.h" alt="" coords="308,259,399,285"/>
 <area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="59,333,172,360"/>
 </map>

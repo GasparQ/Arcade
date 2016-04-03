@@ -1,0 +1,5 @@
+<map id="FLAC__ogg_decoder_aspect_flush" name="FLAC__ogg_decoder_aspect_flush">
+<area shape="rect" id="node2" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="286,5,333,32"/>
+<area shape="rect" id="node3" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a675ce59aae7b53cba0ed6a8bf913ae98" title="ogg_stream_reset" alt="" coords="246,56,373,83"/>
+<area shape="rect" id="node4" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#aac95c26af4c17a724fe8c574fb7d04ec" title="ogg_sync_reset" alt="" coords="252,107,367,133"/>
+</map>

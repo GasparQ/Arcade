@@ -1,0 +1,11 @@
+<map id="spinnit" name="spinnit">
+<area shape="rect" id="node2" href="$bookutil_8h.html#ab3eface47e7aaf85199733babcd8a540" title="build_tree_from_lengths" alt="" coords="115,31,275,57"/>
+<area shape="rect" id="node6" href="$distribution_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="169,81,220,108"/>
+<area shape="rect" id="node7" href="$metrics_8c.html#a4bd7f880c7805f822c0487764f182023" title="process_vector" alt="" coords="139,132,250,159"/>
+<area shape="rect" id="node8" href="$vqgen_8h.html#a8c95e754d17581f3a84960fcca7c7e9f" title="vqgen_addpoint" alt="" coords="138,183,251,209"/>
+<area shape="rect" id="node9" href="$vqgen_8c.html#a47fa479b814d13e675fe9ba3a19fb3fd" title="vqgen_sortmesh" alt="" coords="135,233,254,260"/>
+<area shape="rect" id="node10" href="$vqgen_8h.html#abee0301a61f2865d404c3b0dd38248ce" title="vqgen_iterate" alt="" coords="357,259,457,285"/>
+<area shape="rect" id="node3" href="$bookutil_8h.html#aa4905ee535b22a0fa19d0e5b70e1dfe8" title="build_tree_from_lengths0" alt="" coords="323,5,490,32"/>
+<area shape="rect" id="node5" href="$latticebuild_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="381,56,432,83"/>
+<area shape="rect" id="node4" href="$huffbuild_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="539,5,589,32"/>
+</map>

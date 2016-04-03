@@ -1,0 +1,4 @@
+<map id="ModPlug_SeekOrder" name="ModPlug_SeekOrder">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#aacdba6c46dda6064506c044c4fa3cd6a" title="CSoundFile::SetCurrentOrder" alt="" coords="198,5,391,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a7de04f32e0e8f8709d4178562282b3d3" title="CSoundFile::SetCurrentPos" alt="" coords="440,5,624,32"/>
+</map>

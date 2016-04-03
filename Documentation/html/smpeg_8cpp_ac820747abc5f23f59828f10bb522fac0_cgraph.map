@@ -1,0 +1,6 @@
+<map id="SMPEG_play" name="SMPEG_play">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a32b5e48c40be4e6c084572d6aee55d3c" title="MPEG::Play" alt="" coords="155,56,250,83"/>
+<area shape="rect" id="node3" href="$class_m_p_e_g.html#a99d8e4ad85bf555a751cb459f81cf6fa" title="MPEG::AudioEnabled" alt="" coords="299,5,448,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gaction.html#a0bf80ed6c951615d7543974d0ee3d6c4" title="MPEGaction::Play" alt="" coords="308,56,439,83"/>
+<area shape="rect" id="node5" href="$class_m_p_e_g.html#a680373f56c3d0422569d5002d0668c32" title="MPEG::VideoEnabled" alt="" coords="299,107,448,133"/>
+</map>

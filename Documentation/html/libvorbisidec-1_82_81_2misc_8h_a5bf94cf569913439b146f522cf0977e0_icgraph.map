@@ -1,0 +1,5 @@
+<map id="XPROD31" name="XPROD31">
+<area shape="rect" id="node2" href="$libvorbisidec-1_82_81_2mdct_8c.html#a8604ac2131ef5e9a32583423ddd9f8c1" title="mdct_butterfly_32" alt="" coords="153,5,279,32"/>
+<area shape="rect" id="node3" href="$libvorbisidec-1_82_81_2mdct_8c.html#aa658c9c8a14de7aed3b34bd12ac9055a" title="mdct_butterfly_generic" alt="" coords="139,56,293,83"/>
+<area shape="rect" id="node4" href="$libvorbisidec-1_82_81_2mdct_8h.html#a846ccd2acf4f064ab553107a48d97728" title="mdct_backward" alt="" coords="159,107,273,133"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="oggpack_read" name="oggpack_read">
+<area shape="rect" id="node2" href="$libvorbisidec-1_82_81_2codebook_8h.html#a5eb28707ade9f87ff5d1cbf11fb89be6" title="vorbis_staticbook_unpack" alt="" coords="161,5,335,32"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#aded021367258095562dae4d0e150dd8a" title="vorbis_synthesis_idheader" alt="" coords="160,56,336,83"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#af1192fabbd28f89d048de1b381463219" title="vorbis_synthesis_headerin" alt="" coords="160,107,336,133"/>
+<area shape="rect" id="node5" href="$res0_8c.html#aeb3e5f0ef16725bfd83a4787654efd3d" title="res0_unpack" alt="" coords="200,157,296,184"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#ad74ed4c29400ef6d23b14846c8c4ccb4" title="vorbis_synthesis" alt="" coords="188,208,308,235"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#a378e222706bd42aa1fa30924311bfa07" title="vorbis_synthesis_trackonly" alt="" coords="158,259,338,285"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2codec_8h.html#a5868aa9f561feefb7f613e9fa42967b8" title="vorbis_packet_blocksize" alt="" coords="165,309,331,336"/>
+</map>

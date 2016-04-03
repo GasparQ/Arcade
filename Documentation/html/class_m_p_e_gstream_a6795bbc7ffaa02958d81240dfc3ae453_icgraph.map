@@ -1,0 +1,10 @@
+<map id="MPEGstream::copy_data" name="MPEGstream::copy_data">
+<area shape="rect" id="node2" href="$class_m_p_e_gvideo.html#a77223486a4de5b63e67d90869bbd2b24" title="MPEGvideo::MPEGvideo" alt="" coords="224,5,395,32"/>
+<area shape="rect" id="node3" href="$readfile_8cpp.html#a4175b430645b1fba673e85cb1ec60114" title="get_more_data" alt="" coords="255,56,363,83"/>
+<area shape="rect" id="node4" href="$util_8cpp.html#a9530b8c97d100762566990118a983bf1" title="correct_underflow" alt="" coords="443,56,568,83"/>
+<area shape="rect" id="node5" href="$parseblock_8cpp.html#a9885c360a6553d992c8c0e492897efd7" title="ParseReconBlock" alt="" coords="617,5,743,32"/>
+<area shape="rect" id="node6" href="$parseblock_8cpp.html#abb346d35e69c4d431bc426e211844511" title="ParseAwayBlock" alt="" coords="619,56,741,83"/>
+<area shape="rect" id="node7" href="$util_8cpp.html#a29d02c540ba6d203aee2709e7b6e737a" title="next_start_code" alt="" coords="623,107,737,133"/>
+<area shape="rect" id="node8" href="$video_8cpp.html#ab2c83025cde77691cf896d0fe63cec29" title="mpegVidRsrc" alt="" coords="792,107,893,133"/>
+<area shape="rect" id="node9" href="$_m_p_e_gvideo_8cpp.html#a6fabc47d44feaff23c4ea242270f8bc3" title="Play_MPEGvideo" alt="" coords="941,107,1067,133"/>
+</map>

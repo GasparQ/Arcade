@@ -1,0 +1,10 @@
+<map id="vorbis_synthesis_blockin" name="vorbis_synthesis_blockin">
+<area shape="rect" id="node2" href="$decoder__example_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="277,43,328,69"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a10f51fe54d7334136cca8927602ba277" title="ov_pcm_seek" alt="" coords="251,93,354,120"/>
+<area shape="rect" id="node8" href="$write__read_8h.html#a6ea146b765de04017065960d09fb2636" title="read_vorbis_data_or_die" alt="" coords="221,156,384,183"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ace67cdf6531919e05b3bb164db45181a" title="ov_halfrate" alt="" coords="453,29,539,56"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#acca7a3b0c08acd43a2d70a03591232ec" title="ov_time_seek" alt="" coords="445,80,547,107"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a88868174d5c99bbfea1ecf27b5987a1a" title="ov_pcm_seek_lap" alt="" coords="433,131,559,157"/>
+<area shape="rect" id="node6" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ac6957ebd8b9d2477507eb1c23f904bec" title="ov_time_seek_lap" alt="" coords="609,80,735,107"/>
+<area shape="rect" id="node9" href="$test_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="471,181,521,208"/>
+</map>

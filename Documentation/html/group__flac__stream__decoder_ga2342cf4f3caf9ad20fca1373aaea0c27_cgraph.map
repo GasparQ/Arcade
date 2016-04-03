@@ -1,0 +1,11 @@
+<map id="FLAC__stream_decoder_reset" name="FLAC__stream_decoder_reset">
+<area shape="rect" id="node2" href="$group__flac__stream__decoder.html#ga0109ce87f2c648b224b68c08b3c090cb" title="FLAC__stream_decoder\l_flush" alt="" coords="231,70,393,111"/>
+<area shape="rect" id="node8" href="$ogg__decoder__aspect_8h.html#a1b81eb9844c1e66266044e5ae7f3442f" title="FLAC__ogg_decoder_aspect\l_reset" alt="" coords="217,5,407,46"/>
+<area shape="rect" id="node10" href="$md5_8h.html#a769ec1037726d962a972c8ae20d296b1" title="FLAC__MD5Init" alt="" coords="254,136,370,163"/>
+<area shape="rect" id="node3" href="$ogg__decoder__aspect_8h.html#a1f76a97a461ce3a4f8c71f9d32812810" title="FLAC__ogg_decoder_aspect\l_flush" alt="" coords="457,122,647,163"/>
+<area shape="rect" id="node7" href="$bitreader_8c.html#a4ade6a35e2ddd708520abcdbcb8d399f" title="FLAC__bitreader_clear" alt="" coords="475,71,629,97"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="737,15,783,41"/>
+<area shape="rect" id="node5" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#a675ce59aae7b53cba0ed6a8bf913ae98" title="ogg_stream_reset" alt="" coords="697,67,823,93"/>
+<area shape="rect" id="node6" href="$external_2libogg-1_83_81_2include_2ogg_2ogg_8h.html#aac95c26af4c17a724fe8c574fb7d04ec" title="ogg_sync_reset" alt="" coords="703,121,817,148"/>
+<area shape="rect" id="node9" href="$ogg__decoder__aspect_8c.html#a1f76a97a461ce3a4f8c71f9d32812810" title="FLAC__ogg_decoder_aspect\l_flush" alt="" coords="457,5,647,46"/>
+</map>

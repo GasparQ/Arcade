@@ -1,0 +1,10 @@
+<map id="FLAC__bitreader_is_consumed_byte_aligned" name="FLAC__bitreader_is_consumed_byte_aligned">
+<area shape="rect" id="node2" href="$bitreader_8h.html#a00e783d8613440130f2a81f49416a538" title="FLAC__bitreader_skip\l_byte_block_aligned_no_crc" alt="" coords="232,5,419,46"/>
+<area shape="rect" id="node4" href="$bitreader_8h.html#a222e525a0eeecf636a43580eb738a9d2" title="FLAC__bitreader_read\l_byte_block_aligned_no_crc" alt="" coords="232,70,419,111"/>
+<area shape="rect" id="node5" href="$group__flac__stream__decoder.html#ga11507d25b6fdbd1efd5ee642923730fa" title="FLAC__stream_decoder\l_get_decode_position" alt="" coords="475,158,637,199"/>
+<area shape="rect" id="node9" href="$stream__decoder_8c.html#a601cc83672f082f1369b579425f4570d" title="FLAC__stream_decoder\l_get_input_bytes_unconsumed" alt="" coords="224,187,427,229"/>
+<area shape="rect" id="node3" href="$bitreader_8h.html#a005f5de0552ce1fd27faa43e1cad8196" title="FLAC__bitreader_skip\l_bits_no_crc" alt="" coords="481,5,631,46"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#af4fbbdd0ea096a77037f1d53dcade7f1" title="See FLAC__stream_decoder_get_decode_position() " alt="" coords="685,99,848,141"/>
+<area shape="rect" id="node7" href="$playback_8h.html#ab7826a4c1b16912b0db2f69f1a8b7e58" title="FLAC_plugin__seek" alt="" coords="697,165,836,192"/>
+<area shape="rect" id="node8" href="$playback_8h.html#a9628c3e5acf1abbac5209a7d14135c89" title="FLAC_plugin__decode" alt="" coords="690,216,843,243"/>
+</map>

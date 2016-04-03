@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,11 +79,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="functions_func.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_func_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_func_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_func_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_func_e.html#index_e"><span>e</span></a></li>
@@ -89,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_func_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
@@ -109,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,35 +127,249 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>Read()
+: <a class="el" href="class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7">CSoundFile</a>
+</li>
+<li>read()
+: <a class="el" href="class_f_l_a_c_1_1_metadata_1_1_chain.html#a030c805328fc8b2da947830959dafb5b">FLAC::Metadata::Chain</a>
+</li>
+<li>Read()
+: <a class="el" href="class_m_p_e_gsystem.html#a007e4734445c48286f0903d5c1b9b68f">MPEGsystem</a>
+</li>
+<li>Read669()
+: <a class="el" href="class_c_sound_file.html#a2c645fe6fd015bd2bb69f879f2eb10d2">CSoundFile</a>
+</li>
+<li>read_callback()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_file.html#acf292efaab02383905cdc3ec559ae3ca">FLAC::Decoder::File</a>
+, <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#af91735b6c715ca648493e837f513ef3d">FLAC::Decoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a973237637c09a14579797c0bc445baf1">FLAC::Encoder::Stream</a>
+, <a class="el" href="class_stream_decoder.html#ae067d65198e57137fc5cca801239d3cb">StreamDecoder</a>
+, <a class="el" href="class_stream_encoder.html#a35d2f2284e85c20bcc0e407096f3b0c7">StreamEncoder</a>
+</li>
+<li>read_callback_()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a2e7bb016b4e178f85707288608670bbe">FLAC::Decoder::Stream</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream.html#a3061b822212a78e981a56877f895038d">FLAC::Encoder::Stream</a>
+</li>
+<li>ReadABC()
+: <a class="el" href="class_c_sound_file.html#a399c49f864b730182d9a0e065878a10f">CSoundFile</a>
+</li>
+<li>ReadAMF()
+: <a class="el" href="class_c_sound_file.html#a88bbb15a07ab969a0844f7bd78bad05c">CSoundFile</a>
+</li>
+<li>ReadAMS()
+: <a class="el" href="class_c_sound_file.html#aec1e84bac934f2e5729ee512296128f9">CSoundFile</a>
+</li>
+<li>ReadAMS2()
+: <a class="el" href="class_c_sound_file.html#a021ed379cbd1624457b9786862c4a238">CSoundFile</a>
+</li>
+<li>ReadDBM()
+: <a class="el" href="class_c_sound_file.html#a7b575bad8b2e383a1eed9a104a040d0e">CSoundFile</a>
+</li>
+<li>ReadDMF()
+: <a class="el" href="class_c_sound_file.html#a4b1cb7c162d11a7005234cf71d65b363">CSoundFile</a>
+</li>
+<li>ReadDone()
+: <a class="el" href="class_m_p_e_g__ring.html#aa2cbd459292af3b530f1d2d116baa73d">MPEG_ring</a>
+</li>
+<li>ReadDSM()
+: <a class="el" href="class_c_sound_file.html#aa594df902a6cff5b3f769f73977a6ad3">CSoundFile</a>
+</li>
+<li>ReadFAR()
+: <a class="el" href="class_c_sound_file.html#a843634efab08d389c3b0661ffc8ad923">CSoundFile</a>
+</li>
+<li>ReadInstrumentFromSong()
+: <a class="el" href="class_c_sound_file.html#a130a62b1a16f0a6194abaec37995652f">CSoundFile</a>
+</li>
+<li>ReadIT()
+: <a class="el" href="class_c_sound_file.html#a75f114f07c619e33b2bce5eba31b90a7">CSoundFile</a>
+</li>
+<li>ReadJ2B()
+: <a class="el" href="class_c_sound_file.html#a6df619a2a02d5114506f5ec12b35a0b4">CSoundFile</a>
+</li>
+<li>ReadMDL()
+: <a class="el" href="class_c_sound_file.html#a621c024c751b7f3196dba8229ea0cd8a">CSoundFile</a>
+</li>
+<li>ReadMed()
+: <a class="el" href="class_c_sound_file.html#afb8da08e5de6cae3ed7c411e39ec2fbf">CSoundFile</a>
+</li>
+<li>ReadMID()
+: <a class="el" href="class_c_sound_file.html#ad96a25f78d1f3474e9243fce2cb2cdbe">CSoundFile</a>
+</li>
+<li>ReadMod()
+: <a class="el" href="class_c_sound_file.html#a67f08943b1200c1e9d2464bb94d72182">CSoundFile</a>
+</li>
+<li>ReadMT2()
+: <a class="el" href="class_c_sound_file.html#ae8b75be1b7edea409a9465ece8c04ef3">CSoundFile</a>
+</li>
+<li>ReadMTM()
+: <a class="el" href="class_c_sound_file.html#a03687c0413b6662cfbaea0ebc3ff5bad">CSoundFile</a>
+</li>
+<li>ReadNote()
+: <a class="el" href="class_c_sound_file.html#aa74c7074f61936d8bd95e2e4ca334d07">CSoundFile</a>
+</li>
+<li>ReadOKT()
+: <a class="el" href="class_c_sound_file.html#ad9b90f663a4c418ccd40feb40e514f36">CSoundFile</a>
+</li>
+<li>ReadPAT()
+: <a class="el" href="class_c_sound_file.html#a8d0b34a3d17d4af1571fd0741a7ed261">CSoundFile</a>
+</li>
+<li>ReadPSM()
+: <a class="el" href="class_c_sound_file.html#a90d6da123c4c2f372c8c4ebd2569dc21">CSoundFile</a>
+</li>
+<li>ReadPTM()
+: <a class="el" href="class_c_sound_file.html#af4fada7e4f0280da216f32e6e61b3e6b">CSoundFile</a>
+</li>
+<li>ReadS3M()
+: <a class="el" href="class_c_sound_file.html#a6464e6e38431ebe632b0991e2fcc2f64">CSoundFile</a>
+</li>
+<li>ReadSample()
+: <a class="el" href="class_c_sound_file.html#af10fec50722149d3d68174ac99ab210e">CSoundFile</a>
+</li>
+<li>ReadSampleFromSong()
+: <a class="el" href="class_c_sound_file.html#adf9d449b5d8f8b3ea049d2957f2db61b">CSoundFile</a>
+</li>
+<li>ReadSome()
+: <a class="el" href="class_m_p_e_g__ring.html#af40cba6cc0d42f7aac3a4d8d5508bb12">MPEG_ring</a>
+</li>
+<li>ReadSTM()
+: <a class="el" href="class_c_sound_file.html#a130aaea11e90d398fabb7c787dfe7c48">CSoundFile</a>
+</li>
+<li>ReadTimeStamp()
+: <a class="el" href="class_m_p_e_g__ring.html#aafe16bd149c4a872cfd3e2b6e0b39cf1">MPEG_ring</a>
+</li>
+<li>ReadUlt()
+: <a class="el" href="class_c_sound_file.html#aa23e53058111f5cecbbe68226312e12d">CSoundFile</a>
+</li>
+<li>ReadUMX()
+: <a class="el" href="class_c_sound_file.html#abb644f9394c81d073e88d10282b4d6e8">CSoundFile</a>
+</li>
+<li>ReadWav()
+: <a class="el" href="class_c_sound_file.html#a97591793a3dce131614d1819a50a9a1e">CSoundFile</a>
+</li>
+<li>ReadXM()
+: <a class="el" href="class_c_sound_file.html#a83973a99b390c2864f2528fa23d58f0a">CSoundFile</a>
+</li>
 <li>refresh()
 : <a class="el" href="classncr_1_1_menu.html#af5e08905803f6c420cde7b7fea5c398d">ncr::Menu</a>
 , <a class="el" href="classncr_1_1_window.html#ac2642af30cf4a7e6945fa0c4a1765858">ncr::Window</a>
 </li>
+<li>reinitPos()
+: <a class="el" href="class_u_s_s_enterprise.html#a7a8af1b1a1a503474785d1249ca697d9">USSEnterprise</a>
+</li>
+<li>Release()
+: <a class="el" href="class_i_mix_plugin.html#a57d143edade8dce988d39ec31f849e30">IMixPlugin</a>
+</li>
+<li>ReleaseThreads()
+: <a class="el" href="class_m_p_e_g__ring.html#a4a757412c31ed528c5a9f03a85060b75">MPEG_ring</a>
+</li>
+<li>RemoveInstrumentSamples()
+: <a class="el" href="class_c_sound_file.html#a05e9f221c272b95d8e85b66c1201e575">CSoundFile</a>
+</li>
+<li>RemoveSelectedSamples()
+: <a class="el" href="class_c_sound_file.html#a95f589d919d60828d5b71dedcc01ca05">CSoundFile</a>
+</li>
+<li>RenderFinal()
+: <a class="el" href="class_m_p_e_g.html#a813e52209dcb56d41b1cfe39f3f7abe5">MPEG</a>
+, <a class="el" href="class_m_p_e_gvideo.html#a7a5d980d350d4e3edee339b635d58b19">MPEGvideo</a>
+, <a class="el" href="class_m_p_e_gvideoaction.html#affe5e94609641d68d0f16ba077aab5b8">MPEGvideoaction</a>
+</li>
+<li>RenderFrame()
+: <a class="el" href="class_m_p_e_g.html#a88005039fc9ddebebc752bb58d860a98">MPEG</a>
+, <a class="el" href="class_m_p_e_gvideo.html#a490bfa3daef3d8d833143b8499f04c3e">MPEGvideo</a>
+, <a class="el" href="class_m_p_e_gvideoaction.html#ac6ba68f80b39bb1dc5319d31baf322a6">MPEGvideoaction</a>
+</li>
+<li>RequestBuffer()
+: <a class="el" href="class_m_p_e_gsystem.html#ad76d9ec624196dcd4c8bac888687bdc4">MPEGsystem</a>
+</li>
+<li>reset()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream.html#a79ecbf60483e9f31aae7d1e117d4e8e5">FLAC::Decoder::Stream</a>
+</li>
+<li>Reset()
+: <a class="el" href="class_t___string.html#a0cff11085d29462b1d7c73279a0ece2a">T_String</a>
+</li>
+<li>reset_all_streams()
+: <a class="el" href="class_m_p_e_gsystem.html#a6482e5047e2ad5abd87976f3ee6c83cd">MPEGsystem</a>
+</li>
+<li>reset_stream()
+: <a class="el" href="class_m_p_e_gstream.html#a916c0ba01688290b6a27f9ba42267e0b">MPEGstream</a>
+</li>
+<li>ResetAGC()
+: <a class="el" href="class_c_sound_file.html#a942e3e264456ed6aa599636ee01a9b35">CSoundFile</a>
+</li>
+<li>ResetChannels()
+: <a class="el" href="class_c_sound_file.html#a4b43e4c563c3799f345e88816bb43822">CSoundFile</a>
+</li>
 <li>ResetChrono()
 : <a class="el" href="class_chrono.html#ae8fe3d878e8fab65a7d2c4015372016f">Chrono&lt; T, U &gt;</a>
 , <a class="el" href="class_i_chrono.html#a54eb72deb280414a216520e15fdd6d77">IChrono</a>
+</li>
+<li>ResetMidiCfg()
+: <a class="el" href="class_c_sound_file.html#a6718a0556aa172ab09a1060ca9ce03c8">CSoundFile</a>
+</li>
+<li>ResetPause()
+: <a class="el" href="class_m_p_e_gaction.html#a12e7fe7696dd1bd5f9f05ca2e08413a0">MPEGaction</a>
 </li>
 <li>ResetPosition()
 : <a class="el" href="class_ghost.html#a2973c0b4dc43b9158ff3ca93b342d765">Ghost</a>
 , <a class="el" href="class_pacman.html#a1e535e027f5564ab0444d13da849903d">Pacman</a>
 , <a class="el" href="class_pacman_character.html#a15c787e89ac948e820846ac9cc6f7dbb">PacmanCharacter</a>
 </li>
+<li>ResetSynchro()
+: <a class="el" href="class_m_p_e_gaction.html#a0a132c90382b4636350e91fe18e054c1">MPEGaction</a>
+, <a class="el" href="class_m_p_e_gaudio.html#a06ad1260c95aade677c42dcf60de9a7d">MPEGaudio</a>
+, <a class="el" href="class_m_p_e_gvideo.html#a3b2fe6c381fb48d90d9ea22ab6af0ae7">MPEGvideo</a>
+</li>
+<li>ResetTotalTickCount()
+: <a class="el" href="class_c_sound_file.html#a504798157b481ca5fada079a3d01d649">CSoundFile</a>
+</li>
 <li>ResizeFailed()
 : <a class="el" href="class_resize_failed.html#a2d43ae9e5686e3d0bf72b03532546674">ResizeFailed</a>
 </li>
+<li>resolved_as_cstring()
+: <a class="el" href="class_f_l_a_c_1_1_decoder_1_1_stream_1_1_state.html#ab56d202157b96b144fd35bb7e7ff9e0a">FLAC::Decoder::Stream::State</a>
+, <a class="el" href="class_f_l_a_c_1_1_encoder_1_1_stream_1_1_state.html#a7cbc1b32b54af4606abf81b6c336262e">FLAC::Encoder::Stream::State</a>
+</li>
 <li>restart()
-: <a class="el" href="class_i_game.html#a9c1560a799fe35427ab591ea1aae3f93">IGame</a>
+: <a class="el" href="class_centipede_game.html#a7e4119f845825d978110eaa8e25c09d3">CentipedeGame</a>
+, <a class="el" href="class_i_game.html#a9c1560a799fe35427ab591ea1aae3f93">IGame</a>
 , <a class="el" href="class_pacman_game.html#a627dc8b43d419ec6fe012058f595f80a">PacmanGame</a>
 , <a class="el" href="class_snake.html#ad674de9bd10d7af6f7b249b478745565">Snake</a>
 </li>
+<li>RestoreAllParameters()
+: <a class="el" href="class_i_mix_plugin.html#a96fe20b900dde77fc83850dd3cefade3">IMixPlugin</a>
+</li>
+<li>RetrigNote()
+: <a class="el" href="class_c_sound_file.html#a12de9a0cd538134fed95248af7d11da3">CSoundFile</a>
+</li>
+<li>Rewind()
+: <a class="el" href="class_m_p_e_g.html#ac6d9de8b36e88c0e6090138df4ce8efb">MPEG</a>
+, <a class="el" href="class_m_p_e_gaction.html#ad2e33a0f4358a1ee4f63fff8313f1b1a">MPEGaction</a>
+, <a class="el" href="class_m_p_e_gaudio.html#abd08180d5181225f27a2f9d40bdc7004">MPEGaudio</a>
+</li>
+<li>rewind()
+: <a class="el" href="class_mpegbitwindow.html#a1b3ab094ad36c5476d440ab4fd0c6b8b">Mpegbitwindow</a>
+</li>
+<li>Rewind()
+: <a class="el" href="class_m_p_e_gsystem.html#ac1e879f6d7e8a472f29a396d12b8139d">MPEGsystem</a>
+, <a class="el" href="class_m_p_e_gvideo.html#a29125d4831a3aa894adcd2152d0b494b">MPEGvideo</a>
+</li>
+<li>rewind_stream()
+: <a class="el" href="class_m_p_e_gstream.html#a9bde53506dbe351adecc1e84e243807a">MPEGstream</a>
+</li>
+<li>RewindStream()
+: <a class="el" href="class_m_p_e_gvideo.html#a988fc620b0374f6555ff843107b84b47">MPEGvideo</a>
+</li>
 <li>Run()
 : <a class="el" href="classarcade_1_1_arcade.html#ab4b7672a0735834d668cd13a044bd011">arcade::Arcade</a>
+</li>
+<li>run()
+: <a class="el" href="class_m_p_e_gaudio.html#ab9c5c2af283eeb32e97d8856febc8dd3">MPEGaudio</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,0 +1,7 @@
+<map id="ResetVidStream" name="ResetVidStream">
+<area shape="rect" id="node2" href="$class_m_p_e_gvideo.html#a29125d4831a3aa894adcd2152d0b494b" title="MPEGvideo::Rewind" alt="" coords="173,5,317,32"/>
+<area shape="rect" id="node5" href="$video_8cpp.html#add27ecc4ac6ae1fb9d25dec250a29091" title="NewVidStream" alt="" coords="190,56,301,83"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gvideo.html#a490bfa3daef3d8d833143b8499f04c3e" title="MPEGvideo::RenderFrame" alt="" coords="365,5,544,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideo.html#a7a5d980d350d4e3edee339b635d58b19" title="MPEGvideo::RenderFinal" alt="" coords="592,5,763,32"/>
+<area shape="rect" id="node6" href="$class_m_p_e_gvideo.html#a425610b1e829bd3e29db38cf42a85788" title="MPEGvideo::SetDisplay" alt="" coords="373,56,537,83"/>
+</map>

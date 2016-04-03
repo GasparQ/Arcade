@@ -1,0 +1,12 @@
+<map id="FLAC_plugin__tags_set_tag_ucs2" name="FLAC_plugin__tags_set_tag_ucs2">
+<area shape="rect" id="node2" href="$group__flac__metadata__object.html#ga0ec0c7ddd3a8832ee7a75bf47956b1c7" title="FLAC__metadata_object\l_vorbiscomment_entry\l_from_name_value_pair" alt="" coords="217,63,383,119"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__object.html#gabef3625575b7e4c7257617a27220959a" title="FLAC__metadata_object\l_vorbiscomment_replace\l_comment" alt="" coords="217,187,383,243"/>
+<area shape="rect" id="node3" href="$group__flac__format.html#ga14980d2e4b0ff2cdd4f22fcf8e75b54c" title="FLAC__format_vorbiscomment\l_entry_name_is_legal" alt="" coords="432,5,635,46"/>
+<area shape="rect" id="node4" href="$group__flac__format.html#gae0707c9d46b2af02f1e145bdae331605" title="FLAC__format_vorbiscomment\l_entry_value_is_legal" alt="" coords="432,70,635,111"/>
+<area shape="rect" id="node6" href="$group__flac__format.html#ga6878e238052fc0f7109b55129d64b4e5" title="FLAC__format_vorbiscomment\l_entry_is_legal" alt="" coords="1152,251,1355,293"/>
+<area shape="rect" id="node7" href="$group__flac__metadata__object.html#gadf034b2c385e7932c6be2d724a0deae3" title="FLAC__metadata_object\l_vorbiscomment_set_comment" alt="" coords="899,251,1103,293"/>
+<area shape="rect" id="node8" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="683,107,850,163"/>
+<area shape="rect" id="node10" href="$group__flac__metadata__object.html#gad04ef80ae5f852db8f3729a6ef8c1631" title="FLAC__metadata_object\l_vorbiscomment_append\l_comment" alt="" coords="450,187,617,243"/>
+<area shape="rect" id="node9" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="918,113,1085,169"/>
+<area shape="rect" id="node11" href="$group__flac__metadata__object.html#ga0c23f59f465f302b35a2d3ab1eae07e7" title="FLAC__metadata_object\l_vorbiscomment_insert\l_comment" alt="" coords="683,187,850,243"/>
+</map>

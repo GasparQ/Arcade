@@ -1,0 +1,11 @@
+<map id="AllocInstruments" name="AllocInstruments">
+<area shape="rect" id="node2" href="$load__imf_8c.html#a9ef6478f54740fdff788120a0bd98976" title="IMF_Load" alt="" coords="213,5,293,32"/>
+<area shape="rect" id="node3" href="$load__it_8c.html#af048d36fad98fa472619043b26f8bac8" title="IT_Load" alt="" coords="219,56,288,83"/>
+<area shape="rect" id="node4" href="$load__uni_8c.html#a889dd09058556592efe9edabd027c29f" title="UNI_Load" alt="" coords="213,107,294,133"/>
+<area shape="rect" id="node5" href="$load__pat_8h.html#af365caf051b0fee85cae76b1a5a6cc8a" title="PAT_Load_Instruments" alt="" coords="174,157,333,184"/>
+<area shape="rect" id="node10" href="$class_c_sound_file.html#a8d0b34a3d17d4af1571fd0741a7ed261" title="CSoundFile::ReadPAT" alt="" coords="383,208,537,235"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#a399c49f864b730182d9a0e065878a10f" title="CSoundFile::ReadABC" alt="" coords="381,107,539,133"/>
+<area shape="rect" id="node9" href="$class_c_sound_file.html#ad96a25f78d1f3474e9243fce2cb2cdbe" title="CSoundFile::ReadMID" alt="" coords="383,157,537,184"/>
+<area shape="rect" id="node7" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="587,157,725,184"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="774,157,882,184"/>
+</map>

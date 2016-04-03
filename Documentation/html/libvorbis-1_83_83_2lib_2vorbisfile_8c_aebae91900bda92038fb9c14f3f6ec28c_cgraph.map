@@ -1,0 +1,9 @@
+<map id="ov_crosslap" name="ov_crosslap">
+<area shape="rect" id="node2" href="$libvorbis-1_83_83_2lib_2vorbisfile_8c.html#a361c3a0cebdc25c7be81aaa8f441ddf8" title="ov_info" alt="" coords="196,5,260,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2vorbisfile_8c.html#adc4f36cb355bb7ab7a62c2133e315208" title="ov_halfrate_p" alt="" coords="178,56,278,83"/>
+<area shape="rect" id="node5" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#acb7d9b60b9c9f057e1bed14c76810ae5" title="vorbis_info_blocksize" alt="" coords="155,107,301,133"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2vorbisfile_8c.html#a3982773142635b2266cad2475ea2b837" title="vorbis_window" alt="" coords="174,157,282,184"/>
+<area shape="rect" id="node8" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#a4e65e4bba683ae5bd185e2fcc24b3d94" title="vorbis_synthesis_lapout" alt="" coords="147,208,309,235"/>
+<area shape="rect" id="node4" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#abd73dee048684f915c30fc04e8e8d331" title="vorbis_synthesis_halfrate_p" alt="" coords="357,56,541,83"/>
+<area shape="rect" id="node7" href="$libvorbis-1_83_83_2lib_2window_8c.html#a49850a03aa74be50b9a50e7e17cfcd97" title="_vorbis_window_get" alt="" coords="379,157,519,184"/>
+</map>

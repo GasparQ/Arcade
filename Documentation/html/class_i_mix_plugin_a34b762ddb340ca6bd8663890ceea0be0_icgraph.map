@@ -1,0 +1,8 @@
+<map id="IMixPlugin::MidiSend" name="IMixPlugin::MidiSend">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#affd8aad15d278654a6a9ff11261882ac" title="CSoundFile::ProcessMidiMacro" alt="" coords="201,5,407,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#ae7914e0e2fdeb8832bc3ed0f4353c728" title="CSoundFile::ProcessEffects" alt="" coords="457,5,645,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aef5ab72c81ade31306d23724c0b30194" title="CSoundFile::ProcessRow" alt="" coords="693,5,867,32"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#aa74c7074f61936d8bd95e2e4ca334d07" title="CSoundFile::ReadNote" alt="" coords="915,5,1072,32"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7" title="CSoundFile::Read" alt="" coords="1121,5,1250,32"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a10e70316c7a8219fdb397e6fdeb6b321" title="ModPlug_Read" alt="" coords="1299,5,1410,32"/>
+</map>

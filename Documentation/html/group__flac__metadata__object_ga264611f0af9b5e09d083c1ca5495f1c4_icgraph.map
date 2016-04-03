@@ -1,0 +1,30 @@
+<map id="FLAC__metadata_object_vorbiscomment_resize_comments" name="FLAC__metadata_object_vorbiscomment_resize_comments">
+<area shape="rect" id="node2" href="$group__flac__metadata__object.html#ga0c23f59f465f302b35a2d3ab1eae07e7" title="FLAC__metadata_object\l_vorbiscomment_insert\l_comment" alt="" coords="238,259,405,315"/>
+<area shape="rect" id="node12" href="$test__lib_f_l_a_c_09_09_2metadata_8cpp.html#ad486ab18682b0911e1069ee1f5b4329b" title="test_metadata_object" alt="" coords="1043,386,1189,412"/>
+<area shape="rect" id="node16" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="497,478,663,534"/>
+<area shape="rect" id="node29" href="$tags_8h.html#a15a2a830c52fb16b7f8d655640bb226d" title="FLAC_plugin__tags_delete_all" alt="" coords="222,502,421,528"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#ad2aabf071235c0f00e580828e9c93f58" title="See FLAC__metadata_object_vorbiscomment_insert_comment() " alt="" coords="470,26,690,68"/>
+<area shape="rect" id="node7" href="$group__flac__metadata__object.html#gad04ef80ae5f852db8f3729a6ef8c1631" title="FLAC__metadata_object\l_vorbiscomment_append\l_comment" alt="" coords="497,168,663,224"/>
+<area shape="rect" id="node4" href="$metadata__object_8cpp.html#ada429d9581343f40dc8fe43416a2a4b8" title="test_metadata_object\l_vorbiscomment" alt="" coords="1043,117,1189,158"/>
+<area shape="rect" id="node5" href="$metadata__object_8cpp.html#ad486ab18682b0911e1069ee1f5b4329b" title="test_metadata_object" alt="" coords="1285,187,1432,214"/>
+<area shape="rect" id="node6" href="$test__lib_f_l_a_c_09_09_2metadata_8cpp.html#abb0b2cfa6ca9f0a08753883889c0c378" title="test_metadata" alt="" coords="1511,278,1617,304"/>
+<area shape="rect" id="node8" href="$_graphique_2_s_d_l2__mixer_2external_2flac-1_82_81_2examples_2cpp_2encode_2file_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="824,36,875,63"/>
+<area shape="rect" id="node9" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#a1126c7a0f25a2cf78efc8317d3a861f2" title="See FLAC__metadata_object_vorbiscomment_append_comment() " alt="" coords="739,88,959,129"/>
+<area shape="rect" id="node10" href="$group__flac__metadata__object.html#gabef3625575b7e4c7257617a27220959a" title="FLAC__metadata_object\l_vorbiscomment_replace\l_comment" alt="" coords="766,270,933,326"/>
+<area shape="rect" id="node15" href="$tags_8h.html#a8947f1962430b82680ce0615ee7dee1c" title="FLAC_plugin__tags_add\l_tag_utf8" alt="" coords="767,205,931,246"/>
+<area shape="rect" id="node11" href="$flac_2utils_8h.html#a2d7f0882d0f196f908b29822406c15c0" title="flac__utils_set_channel\l_mask_tag" alt="" coords="1037,226,1195,268"/>
+<area shape="rect" id="node13" href="$tags_8h.html#a3f0482eb2983710e4ded15ccbbd00c5c" title="FLAC_plugin__tags_set\l_tag_ucs2" alt="" coords="1035,292,1197,333"/>
+<area shape="rect" id="node14" href="$infobox_8h.html#af73d97fcfec987f8a5a3e7426d0295d2" title="ReadTags" alt="" coords="1317,299,1400,326"/>
+<area shape="rect" id="node17" href="$class_f_l_a_c_1_1_metadata_1_1_vorbis_comment.html#af3c0467a369fff79f07af781c0d24c0c" title="See FLAC__metadata_object_vorbiscomment_delete_comment() " alt="" coords="739,452,959,493"/>
+<area shape="rect" id="node18" href="$group__flac__metadata__object.html#ga6812052a110800bef2f4139017501507" title="FLAC__metadata_object\l_vorbiscomment_remove\l_entry_matching" alt="" coords="765,568,933,624"/>
+<area shape="rect" id="node19" href="$group__flac__metadata__object.html#ga525525f5f21b1caee776cba3cfb6d72f" title="FLAC__metadata_object\l_vorbiscomment_remove\l_entries_matching" alt="" coords="765,648,933,704"/>
+<area shape="rect" id="node20" href="$share_2grabbag_2replaygain_8c.html#a2ed72fd5c42c1854abe4c23d1f995445" title="grabbag__replaygain\l_store_to_vorbiscomment\l_reference" alt="" coords="1030,543,1202,599"/>
+<area shape="rect" id="node24" href="$share_2grabbag_2replaygain_8c.html#aa7d4e152f3d0ca1252a1b22192364456" title="grabbag__replaygain\l_store_to_vorbiscomment_album" alt="" coords="1009,622,1223,664"/>
+<area shape="rect" id="node26" href="$share_2grabbag_2replaygain_8c.html#ad418b5129d1a91d1047375819d968791" title="grabbag__replaygain\l_store_to_vorbiscomment_title" alt="" coords="1016,688,1216,729"/>
+<area shape="rect" id="node28" href="$tags_8h.html#a1bf44a63a99aa3c49d3d44c02a854183" title="FLAC_plugin__tags_delete_tag" alt="" coords="1015,754,1217,780"/>
+<area shape="rect" id="node21" href="$share_2grabbag_2replaygain_8c.html#aaefee0eed5c80d9d3edb5a3c23f49083" title="grabbag__replaygain\l_store_to_vorbiscomment" alt="" coords="1273,586,1445,628"/>
+<area shape="rect" id="node23" href="$share_2grabbag_2replaygain_8c.html#ad34d4615321fa2c75528da1b2f8131d5" title="grabbag__replaygain\l_store_to_file_reference" alt="" coords="1278,521,1439,562"/>
+<area shape="rect" id="node22" href="$share_2grabbag_2replaygain_8c.html#aafd7cc63525668cbeafd56290642835a" title="grabbag__replaygain\l_store_to_file" alt="" coords="1493,586,1635,628"/>
+<area shape="rect" id="node25" href="$share_2grabbag_2replaygain_8c.html#a376954788b3f19538da81044a6410226" title="grabbag__replaygain\l_store_to_file_album" alt="" coords="1287,652,1430,693"/>
+<area shape="rect" id="node27" href="$share_2grabbag_2replaygain_8c.html#a320f9ce456815ca248f9a07f78b21bca" title="grabbag__replaygain\l_store_to_file_title" alt="" coords="1288,717,1429,758"/>
+</map>

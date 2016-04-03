@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_s_d_l___message_box_color_scheme.html" title="A set of colors to use for message box dialogs. " alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_incomplete_library_exception.html" title="arcade::IncompleteLibrary\lException" alt="" coords="163,5,335,46"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_init_render_exception.html" title="arcade::InitRenderException" alt="" coords="156,71,343,97"/>
+<area shape="rect" id="node4" href="$classarcade_1_1_init_sound_exception.html" title="arcade::InitSoundException" alt="" coords="158,121,341,148"/>
+<area shape="rect" id="node5" href="$classarcade_1_1_load_library_exception.html" title="arcade::LoadLibraryException" alt="" coords="152,172,347,199"/>
+<area shape="rect" id="node6" href="$classgraph_1_1_graph_exception.html" title="graph::GraphException" alt="" coords="172,223,327,249"/>
+<area shape="rect" id="node7" href="$class_n_curses_system_failed.html" title="NCursesSystemFailed" alt="" coords="395,197,549,224"/>
+<area shape="rect" id="node8" href="$class_resize_failed.html" title="ResizeFailed" alt="" coords="423,248,521,275"/>
 </map>

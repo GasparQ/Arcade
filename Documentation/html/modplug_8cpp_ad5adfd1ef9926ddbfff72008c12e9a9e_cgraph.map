@@ -1,0 +1,4 @@
+<map id="ModPlug_SetMasterVolume" name="ModPlug_SetMasterVolume">
+<area shape="rect" id="node2" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="315,5,362,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#aff81d5c21db278d8ec0a02984ed7fc8c" title="CSoundFile::SetMasterVolume" alt="" coords="237,56,440,83"/>
+</map>

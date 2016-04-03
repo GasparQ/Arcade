@@ -1,0 +1,13 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$options_8c.html#a885823e5f8898faa91992c70ed497a89" title="init_options" alt="" coords="112,56,200,83"/>
+<area shape="rect" id="node3" href="$options_8c.html#ad25996ced8dba99e2d9ea4ccdbc69020" title="parse_options" alt="" coords="105,107,207,133"/>
+<area shape="rect" id="node10" href="$operations_8c.html#a3aa3efa59325a90a25f858dc70e3800d" title="do_operations" alt="" coords="105,157,207,184"/>
+<area shape="rect" id="node12" href="$options_8c.html#a1c1fd7f9084c4359629fda7880878d63" title="free_options" alt="" coords="109,208,203,235"/>
+<area shape="rect" id="node4" href="$getopt_8h.html#a72af96d7d2b939d1b12870598da90d2e" title="share__getopt_long" alt="" coords="257,5,391,32"/>
+<area shape="rect" id="node6" href="$metaflac_2utils_8c.html#a46a82a4f5106b731041e4f2893f3f21d" title="die" alt="" coords="501,95,539,121"/>
+<area shape="rect" id="node7" href="$metaflac_2utils_8c.html#af1bf904c41ea3f314fa3a61986a06eda" title="local_strdup" alt="" coords="278,107,370,133"/>
+<area shape="rect" id="node8" href="$usage_8c.html#ae4d278579579910571eb2c36493b62cb" title="short_usage" alt="" coords="277,157,371,184"/>
+<area shape="rect" id="node5" href="$getopt_8h.html#a9e6dbb263e98db9c68a7f008fb856adc" title="share___getopt_internal" alt="" coords="440,5,600,32"/>
+<area shape="rect" id="node9" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="497,171,543,197"/>
+<area shape="rect" id="node11" href="$usage_8c.html#ac2721c19ba6c55a0f81922fa72343ab1" title="long_usage" alt="" coords="280,208,368,235"/>
+</map>

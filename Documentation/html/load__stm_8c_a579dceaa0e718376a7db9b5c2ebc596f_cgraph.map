@@ -1,0 +1,9 @@
+<map id="STM_Load" name="STM_Load">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a2c5b3b0be9a73192b6e47a3a603a8467" title="_mm_read_string" alt="" coords="155,5,277,32"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#a106a6ec11b18c867cd7641a102d21c1c" title="_mm_read_I_UWORD" alt="" coords="139,56,293,83"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a6965a4ccce8bd5d43291b51d51135e65" title="_mm_read_I_ULONG" alt="" coords="142,107,290,133"/>
+<area shape="rect" id="node6" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="178,157,254,184"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#aa2b727908967c122365ef4088639ded7" title="AllocPositions" alt="" coords="163,208,269,235"/>
+<area shape="rect" id="node8" href="$mikmod__internals_8h.html#a722f3aedb018057f4dc6bc6da44ca07e" title="AllocSamples" alt="" coords="165,259,267,285"/>
+<area shape="rect" id="node5" href="$mmio_8c.html#ac7a9e6ca7b17a0e1c8163558b04cbb9f" title="_mm_read_I_UWORD" alt="" coords="341,107,496,133"/>
+</map>

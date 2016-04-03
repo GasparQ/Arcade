@@ -1,0 +1,11 @@
+<map id="MED_Load" name="MED_Load">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#ad1d4c0c8a443faa70de43e69afdf079f" title="_mm_read_M_ULONG" alt="" coords="147,5,301,32"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a43ba01073701e2567b9b150135a9b011" title="_mm_read_M_UWORD" alt="" coords="143,56,305,83"/>
+<area shape="rect" id="node5" href="$mikmod__internals_8h.html#a100c83ffbd6a57f75e578fdf59c22dbf" title="_mm_read_M_SWORD" alt="" coords="144,107,304,133"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#a36c5377365af3e6b495ab9c829cd2321" title="_mm_read_M_ULONGS" alt="" coords="142,157,306,184"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#aa2b727908967c122365ef4088639ded7" title="AllocPositions" alt="" coords="171,208,277,235"/>
+<area shape="rect" id="node8" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="388,284,484,311"/>
+<area shape="rect" id="node9" href="$mikmod__internals_8h.html#ae524c00814694ccf8ffc143f9d17963e" title="ReadComment" alt="" coords="169,309,279,336"/>
+<area shape="rect" id="node10" href="$mikmod__internals_8h.html#a722f3aedb018057f4dc6bc6da44ca07e" title="AllocSamples" alt="" coords="173,360,275,387"/>
+<area shape="rect" id="node3" href="$mmio_8c.html#a8062e4c886a5616f3c498473d2aaa379" title="_mm_read_M_UWORD" alt="" coords="355,56,517,83"/>
+</map>

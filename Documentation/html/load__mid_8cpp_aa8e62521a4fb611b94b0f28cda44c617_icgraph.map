@@ -1,0 +1,5 @@
+<map id="mid_first_noteonevent_tick" name="mid_first_noteonevent_tick">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#ad96a25f78d1f3474e9243fce2cb2cdbe" title="CSoundFile::ReadMID" alt="" coords="232,5,387,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="435,5,573,32"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="622,5,730,32"/>
+</map>

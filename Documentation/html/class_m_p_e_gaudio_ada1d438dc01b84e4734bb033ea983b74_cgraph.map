@@ -1,0 +1,8 @@
+<map id="MPEGaudio::initialize" name="MPEGaudio::initialize">
+<area shape="rect" id="node2" href="$class_m_p_e_gaudio.html#abd08180d5181225f27a2f9d40bdc7004" title="MPEGaudio::Rewind" alt="" coords="220,56,364,83"/>
+<area shape="rect" id="node7" href="$class_m_p_e_gaudio.html#a06ad1260c95aade677c42dcf60de9a7d" title="MPEGaudio::ResetSynchro" alt="" coords="201,107,383,133"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudio.html#aba3d2c9804917063bf0d5b380601629b" title="MPEGaudio::Stop" alt="" coords="433,56,559,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="638,5,754,32"/>
+<area shape="rect" id="node5" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="631,56,761,83"/>
+<area shape="rect" id="node6" href="$class_m_p_e_gaction.html#a12e7fe7696dd1bd5f9f05ca2e08413a0" title="MPEGaction::ResetPause" alt="" coords="608,107,784,133"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="MPEGaction::Pause" name="MPEGaction::Pause">
+<area shape="rect" id="node2" href="$class_m_p_e_gaction.html#a0bf80ed6c951615d7543974d0ee3d6c4" title="MPEGaction::Play" alt="" coords="195,5,325,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaction.html#a6e559ddd951b743508ecdeccbff2f95c" title="MPEGaction::Stop" alt="" coords="195,56,325,83"/>
+</map>

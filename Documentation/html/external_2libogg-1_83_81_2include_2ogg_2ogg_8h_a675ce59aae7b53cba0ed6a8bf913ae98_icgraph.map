@@ -1,0 +1,20 @@
+<map id="ogg_stream_reset" name="ogg_stream_reset">
+<area shape="rect" id="node2" href="$ogg__decoder__aspect_8c.html#a1f76a97a461ce3a4f8c71f9d32812810" title="FLAC__ogg_decoder_aspect\l_flush" alt="" coords="182,70,373,111"/>
+<area shape="rect" id="node9" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ac7e8d23aa742cbff39425fa620f56f30" title="ov_raw_seek" alt="" coords="228,212,327,239"/>
+<area shape="rect" id="node3" href="$ogg__decoder__aspect_8c.html#a1b81eb9844c1e66266044e5ae7f3442f" title="FLAC__ogg_decoder_aspect\l_reset" alt="" coords="422,5,613,46"/>
+<area shape="rect" id="node6" href="$group__flac__stream__decoder.html#ga0109ce87f2c648b224b68c08b3c090cb" title="FLAC__stream_decoder\l_flush" alt="" coords="436,70,599,111"/>
+<area shape="rect" id="node4" href="$group__flac__stream__decoder.html#ga2342cf4f3caf9ad20fca1373aaea0c27" title="FLAC__stream_decoder\l_reset" alt="" coords="661,5,824,46"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a79ecbf60483e9f31aae7d1e117d4e8e5" title="See FLAC__stream_decoder_reset() " alt="" coords="872,5,1035,46"/>
+<area shape="rect" id="node7" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a8e27385f6a06fe594f46ead0d50c2937" title="See FLAC__stream_decoder_flush() " alt="" coords="661,70,824,111"/>
+<area shape="rect" id="node8" href="$playback_8h.html#ab7826a4c1b16912b0db2f69f1a8b7e58" title="FLAC_plugin__seek" alt="" coords="673,136,812,163"/>
+<area shape="rect" id="node10" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a033abf32795dd65412acb65ec9813172" title="ov_pcm_seek_page" alt="" coords="448,212,587,239"/>
+<area shape="rect" id="node19" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a53777ca05e1557139fa47693471fb531" title="ov_raw_seek_lap" alt="" coords="456,263,579,289"/>
+<area shape="rect" id="node11" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a10f51fe54d7334136cca8927602ba277" title="ov_pcm_seek" alt="" coords="691,187,794,213"/>
+<area shape="rect" id="node16" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a1bf7109c7770b54d73386678d08f600e" title="ov_time_seek_page" alt="" coords="673,237,812,264"/>
+<area shape="rect" id="node18" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a991451d1859ba8b998db7e005cb3b87b" title="ov_pcm_seek_page_lap" alt="" coords="661,288,824,315"/>
+<area shape="rect" id="node12" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ace67cdf6531919e05b3bb164db45181a" title="ov_halfrate" alt="" coords="910,115,997,141"/>
+<area shape="rect" id="node13" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#acca7a3b0c08acd43a2d70a03591232ec" title="ov_time_seek" alt="" coords="902,165,1005,192"/>
+<area shape="rect" id="node15" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a88868174d5c99bbfea1ecf27b5987a1a" title="ov_pcm_seek_lap" alt="" coords="890,216,1017,243"/>
+<area shape="rect" id="node14" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#ac6957ebd8b9d2477507eb1c23f904bec" title="ov_time_seek_lap" alt="" coords="1083,165,1210,192"/>
+<area shape="rect" id="node17" href="$_xcode_2_frameworks_2_vorbis_8framework_2_versions_2_a_2_headers_2vorbisfile_8h.html#a48b714260279171536078483bbaee682" title="ov_time_seek_page_lap" alt="" coords="872,267,1035,293"/>
+</map>

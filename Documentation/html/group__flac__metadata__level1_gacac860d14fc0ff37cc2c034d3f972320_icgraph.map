@@ -1,0 +1,12 @@
+<map id="FLAC__metadata_simple_iterator_next" name="FLAC__metadata_simple_iterator_next">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#ab399f6b8c5e35a1d18588279613ea63c" title="See FLAC__metadata_simple_iterator_next(). " alt="" coords="225,5,431,46"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__level0.html#gaa13138ab038694909964998a113817b4" title="FLAC__metadata_get\l_picture" alt="" coords="253,70,403,111"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__level1.html#ga7d1ceb2db292c968ae6ac18ecb15c356" title="FLAC__metadata_simple\l_iterator_set_block" alt="" coords="243,135,413,177"/>
+<area shape="rect" id="node9" href="$group__flac__metadata__level1.html#ga1239ccc5ae1dc3f7cb0e1a61707fafc6" title="FLAC__metadata_simple\l_iterator_insert_block_after" alt="" coords="239,201,417,242"/>
+<area shape="rect" id="node11" href="$src_2plugin__common_2replaygain_8h.html#ad5fc2618526ba58c6265227e802ba361" title="FLAC_plugin__replaygain\l_get_from_file" alt="" coords="243,266,413,307"/>
+<area shape="rect" id="node4" href="$group__flacpp__metadata__level0.html#gaf11a81a7152bbe0e31d8fd6f29df8334" title="See FLAC__metadata_get_picture(). " alt="" coords="512,38,656,79"/>
+<area shape="rect" id="node6" href="$class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#a0ebd4df55346cbcec9ace04f7d7b484d" title="See FLAC__metadata_simple_iterator_set_block(). " alt="" coords="481,103,687,145"/>
+<area shape="rect" id="node7" href="$group__flac__metadata__level1.html#gaf0a1823f95f8097f0d2ff3f67ae30a88" title="FLAC__metadata_simple\l_iterator_delete_block" alt="" coords="499,169,669,210"/>
+<area shape="rect" id="node8" href="$class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#a67824deff81e2f49c2f51db6b71565e8" title="See FLAC__metadata_simple_iterator_delete_block(). " alt="" coords="737,169,943,210"/>
+<area shape="rect" id="node10" href="$class_f_l_a_c_1_1_metadata_1_1_simple_iterator.html#a1d0e512147967b7e12ac22914fbe3818" title="See FLAC__metadata_simple_iterator_insert_block_after(). " alt="" coords="481,234,687,275"/>
+</map>

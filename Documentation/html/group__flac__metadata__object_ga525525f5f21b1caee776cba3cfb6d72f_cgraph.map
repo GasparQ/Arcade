@@ -1,0 +1,5 @@
+<map id="FLAC__metadata_object_vorbiscomment_remove_entries_matching" name="FLAC__metadata_object_vorbiscomment_remove_entries_matching">
+<area shape="rect" id="node2" href="$group__flac__metadata__object.html#gac31ee3de9f9931628f120cb611bb0f20" title="FLAC__metadata_object\l_vorbiscomment_entry\l_matches" alt="" coords="222,5,389,61"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="222,85,389,141"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="438,85,605,141"/>
+</map>

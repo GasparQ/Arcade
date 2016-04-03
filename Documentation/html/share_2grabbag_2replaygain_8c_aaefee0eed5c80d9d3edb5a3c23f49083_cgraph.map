@@ -1,0 +1,9 @@
+<map id="grabbag__replaygain_store_to_vorbiscomment" name="grabbag__replaygain_store_to_vorbiscomment">
+<area shape="rect" id="node2" href="$share_2grabbag_2replaygain_8c.html#a2ed72fd5c42c1854abe4c23d1f995445" title="grabbag__replaygain\l_store_to_vorbiscomment\l_reference" alt="" coords="249,5,421,61"/>
+<area shape="rect" id="node7" href="$share_2grabbag_2replaygain_8c.html#ad418b5129d1a91d1047375819d968791" title="grabbag__replaygain\l_store_to_vorbiscomment_title" alt="" coords="235,85,435,126"/>
+<area shape="rect" id="node8" href="$share_2grabbag_2replaygain_8c.html#aa7d4e152f3d0ca1252a1b22192364456" title="grabbag__replaygain\l_store_to_vorbiscomment_album" alt="" coords="227,150,442,191"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html#ga525525f5f21b1caee776cba3cfb6d72f" title="FLAC__metadata_object\l_vorbiscomment_remove\l_entries_matching" alt="" coords="491,77,659,133"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__object.html#gac31ee3de9f9931628f120cb611bb0f20" title="FLAC__metadata_object\l_vorbiscomment_entry\l_matches" alt="" coords="707,37,874,93"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__object.html#ga2d1b309d4ca207039ad6d19bd779800f" title="FLAC__metadata_object\l_vorbiscomment_delete\l_comment" alt="" coords="707,117,874,173"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__object.html#ga264611f0af9b5e09d083c1ca5495f1c4" title="FLAC__metadata_object\l_vorbiscomment_resize\l_comments" alt="" coords="923,117,1090,173"/>
+</map>

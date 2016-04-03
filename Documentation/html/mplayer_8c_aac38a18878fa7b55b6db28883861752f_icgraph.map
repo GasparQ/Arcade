@@ -1,0 +1,7 @@
+<map id="getfrequency" name="getfrequency">
+<area shape="rect" id="node2" href="$mlutil_8c.html#aacfa06a44974b5c6c2a41742970b5f48" title="speed_to_finetune" alt="" coords="152,56,280,83"/>
+<area shape="rect" id="node5" href="$mplayer_8c.html#a576fe5c46f2ff1e9e42f2db9a8712b7a" title="pt_UpdateVoices" alt="" coords="155,107,277,133"/>
+<area shape="rect" id="node3" href="$load__imf_8c.html#a9ef6478f54740fdff788120a0bd98976" title="IMF_Load" alt="" coords="355,5,435,32"/>
+<area shape="rect" id="node4" href="$load__it_8c.html#af048d36fad98fa472619043b26f8bac8" title="IT_Load" alt="" coords="360,56,429,83"/>
+<area shape="rect" id="node6" href="$mplayer_8c.html#a1c12b46bfb6fb228606d5604863c50a5" title="Player_HandleTick" alt="" coords="329,107,461,133"/>
+</map>

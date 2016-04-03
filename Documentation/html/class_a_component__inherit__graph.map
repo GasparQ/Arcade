@@ -1,7 +1,8 @@
 <map id="AComponent" name="AComponent">
 <area shape="rect" id="node2" href="$class_animation_component.html" title="AnimationComponent" alt="" coords="5,80,152,107"/>
-<area shape="rect" id="node3" href="$class_game_component.html" title="GameComponent" alt="" coords="177,80,300,107"/>
-<area shape="rect" id="node4" href="$class_high_score_component.html" title="HighScoreComponent" alt="" coords="325,80,475,107"/>
-<area shape="rect" id="node5" href="$class_u_i_component.html" title="UIComponent" alt="" coords="499,80,601,107"/>
-<area shape="rect" id="node6" href="$class_dual_text_component.html" title="DualTextComponent" alt="" coords="479,155,621,181"/>
+<area shape="rect" id="node3" href="$class_audio_component.html" title="AudioComponent" alt="" coords="176,80,299,107"/>
+<area shape="rect" id="node4" href="$class_game_component.html" title="GameComponent" alt="" coords="323,80,447,107"/>
+<area shape="rect" id="node5" href="$class_high_score_component.html" title="HighScoreComponent" alt="" coords="471,80,621,107"/>
+<area shape="rect" id="node6" href="$class_u_i_component.html" title="UIComponent" alt="" coords="646,80,748,107"/>
+<area shape="rect" id="node7" href="$class_dual_text_component.html" title="DualTextComponent" alt="" coords="626,155,768,181"/>
 </map>

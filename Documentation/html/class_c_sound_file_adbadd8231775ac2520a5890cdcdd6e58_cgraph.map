@@ -1,0 +1,6 @@
+<map id="CSoundFile::PortamentoDown" name="CSoundFile::PortamentoDown">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a61b1ce29268c5ca5b13b74c085840c95" title="CSoundFile::FinePortamentoDown" alt="" coords="269,5,493,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aa7a7fdd02ae67fefa1e94fd58c0d490a" title="CSoundFile::ExtraFinePortamentoDown" alt="" coords="254,56,509,83"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#a41778eddc08cc86e592363546777d4a4" title="CSoundFile::DoFreqSlide" alt="" coords="296,107,467,133"/>
+<area shape="rect" id="node3" href="$sndfile_8h.html#a58e21999c23932cec7a8c99462b70141" title="_muldivr" alt="" coords="558,56,629,83"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Mix_Init" name="Mix_Init">
+<area shape="rect" id="node2" href="$dynamic__fluidsynth_8h.html#a88f2ec868cc7040c7b4a8426b8eaa7fe" title="Mix_InitFluidSynth" alt="" coords="123,5,253,32"/>
+<area shape="rect" id="node3" href="$dynamic__flac_8h.html#a29bdfcdbab0acf085cdd907b463fa11d" title="Mix_InitFLAC" alt="" coords="137,56,239,83"/>
+<area shape="rect" id="node4" href="$dynamic__modplug_8h.html#a9d770534e69e52b1d88d533b05057668" title="Mix_InitModPlug" alt="" coords="129,107,247,133"/>
+<area shape="rect" id="node5" href="$dynamic__mod_8h.html#a0e6e5fd9346339a70d96b31cf830e792" title="Mix_InitMOD" alt="" coords="139,157,237,184"/>
+<area shape="rect" id="node6" href="$dynamic__mp3_8h.html#af0936ce21ffeb5057024926414598c26" title="Mix_InitMP3" alt="" coords="141,208,235,235"/>
+<area shape="rect" id="node7" href="$dynamic__ogg_8h.html#a31a76da707f0873c13ea3684094cc433" title="Mix_InitOgg" alt="" coords="142,259,234,285"/>
+</map>

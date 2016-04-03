@@ -1,0 +1,9 @@
+<map id="FLAC__add_metadata_block" name="FLAC__add_metadata_block">
+<area shape="rect" id="node2" href="$lib_f_l_a_c_2bitwriter_8c.html#aecb918f25dcf759201b20c52bbf3edd1" title="FLAC__bitwriter_write\l_raw_uint32" alt="" coords="422,139,573,181"/>
+<area shape="rect" id="node3" href="$group__flac__format.html#gaec1c46afe33c0bb200be68bb36e0dd32" title="FLAC__format_sample\l_rate_is_valid" alt="" coords="211,41,367,82"/>
+<area shape="rect" id="node4" href="$lib_f_l_a_c_2bitwriter_8c.html#a6b4f033a23549fd272df4b28504534dc" title="FLAC__bitwriter_write\l_raw_uint64" alt="" coords="214,106,365,147"/>
+<area shape="rect" id="node5" href="$lib_f_l_a_c_2bitwriter_8c.html#a4a7c28cbd5abb508a7a87fc2dbf89bd8" title="FLAC__bitwriter_write\l_byte_block" alt="" coords="214,171,365,213"/>
+<area shape="rect" id="node6" href="$lib_f_l_a_c_2bitwriter_8c.html#a056f5b6a0f2decad8757a321bd4f3116" title="FLAC__bitwriter_write\l_zeroes" alt="" coords="214,237,365,278"/>
+<area shape="rect" id="node7" href="$lib_f_l_a_c_2bitwriter_8c.html#ae789df0a8c25d4e39a6f6099333ad1cd" title="FLAC__bitwriter_write\l_raw_uint32_little_endian" alt="" coords="205,302,373,343"/>
+<area shape="rect" id="node8" href="$lib_f_l_a_c_2bitwriter_8c.html#a851f7741f456446fa2e6819f94767a2b" title="FLAC__bitwriter_is\l_byte_aligned" alt="" coords="223,367,356,409"/>
+</map>

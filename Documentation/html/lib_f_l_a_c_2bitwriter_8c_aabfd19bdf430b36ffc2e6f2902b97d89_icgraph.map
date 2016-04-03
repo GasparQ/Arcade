@@ -1,0 +1,6 @@
+<map id="FLAC__bitwriter_write_unary_unsigned" name="FLAC__bitwriter_write_unary_unsigned">
+<area shape="rect" id="node2" href="$stream__encoder__framing_8c.html#ab51ca408250d8e715e0c0e38bb8af5a5" title="FLAC__subframe_add\l_constant" alt="" coords="217,5,369,46"/>
+<area shape="rect" id="node3" href="$stream__encoder__framing_8c.html#a9a5561bc38609a883cc3a9f3f423f849" title="FLAC__subframe_add\l_fixed" alt="" coords="217,70,369,111"/>
+<area shape="rect" id="node4" href="$stream__encoder__framing_8c.html#ae4435d37aaf24c092643b09efd0e865b" title="FLAC__subframe_add_lpc" alt="" coords="205,136,381,163"/>
+<area shape="rect" id="node5" href="$stream__encoder__framing_8c.html#aa51adeed9c010e2c9756e32bfaf4b08c" title="FLAC__subframe_add\l_verbatim" alt="" coords="217,187,369,229"/>
+</map>

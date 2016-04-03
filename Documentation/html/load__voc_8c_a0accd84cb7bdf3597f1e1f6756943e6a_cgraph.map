@@ -1,0 +1,7 @@
+<map id="Mix_LoadVOC_RW" name="Mix_LoadVOC_RW">
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html#aa71450ffd083274ca708b348e6faf770" title="SDL_memset" alt="" coords="193,5,295,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__error_8h.html#a26775853eaf43390bbceb27eb21a2240" title="SDL_SetError" alt="" coords="193,56,295,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__stdinc_8h.html#aa0843b5fde7f958b8eea238304aa5b2d" title="SDL_malloc" alt="" coords="197,107,291,133"/>
+<area shape="rect" id="node5" href="$_s_d_l__stdinc_8h.html#a5123a34a3c99b29c423893aac78b4454" title="SDL_realloc" alt="" coords="197,157,291,184"/>
+<area shape="rect" id="node6" href="$_s_d_l__stdinc_8h.html#a0e4ade894d550ada1fa19dc2d46e88b8" title="SDL_free" alt="" coords="205,208,283,235"/>
+</map>

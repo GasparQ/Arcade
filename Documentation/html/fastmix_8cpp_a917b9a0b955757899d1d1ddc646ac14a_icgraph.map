@@ -1,0 +1,6 @@
+<map id="X86_InitMixBuffer" name="X86_InitMixBuffer">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a50f5499e594edc80af4f5e1c591fa049" title="CSoundFile::CreateStereoMix" alt="" coords="182,5,378,32"/>
+<area shape="rect" id="node5" href="$sndmix_8cpp.html#a797be76c1bfa00fbd380e5d64b62260f" title="X86_StereoFill" alt="" coords="227,56,333,83"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7" title="CSoundFile::Read" alt="" coords="427,31,557,57"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a10e70316c7a8219fdb397e6fdeb6b321" title="ModPlug_Read" alt="" coords="606,31,717,57"/>
+</map>

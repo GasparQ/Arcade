@@ -1,0 +1,8 @@
+<map id="SMPEG_pause" name="SMPEG_pause">
+<area shape="rect" id="node2" href="$class_m_p_e_g.html#a4fac5d7baf2e8b17ec4a3f32f608c58c" title="MPEG::Pause" alt="" coords="165,56,272,83"/>
+<area shape="rect" id="node3" href="$class_m_p_e_g.html#a680373f56c3d0422569d5002d0668c32" title="MPEG::VideoEnabled" alt="" coords="320,5,469,32"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gaction.html#a8a8fc3d0c9b2d9f25ab472b14299d64b" title="MPEGaction::Pause" alt="" coords="324,56,465,83"/>
+<area shape="rect" id="node7" href="$class_m_p_e_g.html#a99d8e4ad85bf555a751cb459f81cf6fa" title="MPEG::AudioEnabled" alt="" coords="320,107,469,133"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gaction.html#a0bf80ed6c951615d7543974d0ee3d6c4" title="MPEGaction::Play" alt="" coords="517,31,648,57"/>
+<area shape="rect" id="node6" href="$class_m_p_e_gaction.html#a6e559ddd951b743508ecdeccbff2f95c" title="MPEGaction::Stop" alt="" coords="517,81,648,108"/>
+</map>

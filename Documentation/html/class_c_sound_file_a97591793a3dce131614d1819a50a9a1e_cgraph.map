@@ -1,0 +1,6 @@
+<map id="CSoundFile::ReadWav" name="CSoundFile::ReadWav">
+<area shape="rect" id="node2" href="$capdefaults_8c.html#a34a11e36b53d9a3eb8b3f310b173c35d" title="if" alt="" coords="286,5,325,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a846f81ea273e97bc67faf415165782fd" title="CSoundFile::AllocatePattern" alt="" coords="212,56,399,83"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#ae0d67886be5e003c76d43ed6b195a44c" title="CSoundFile::AllocateSample" alt="" coords="211,107,400,133"/>
+<area shape="rect" id="node5" href="$stdafx_8h.html#a4d1b58b0db2411b4dcd711cac07ef041" title="GlobalAllocPtr" alt="" coords="449,107,554,133"/>
+</map>

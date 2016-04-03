@@ -1,0 +1,4 @@
+<map id="CSoundFile::GetSongTime" name="CSoundFile::GetSongTime">
+<area shape="rect" id="node2" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#aa4fef3f579cbf6e362fb2188f60c2be6" title="ModPlug_GetLength" alt="" coords="233,5,373,32"/>
+<area shape="rect" id="node3" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a990584bca0c2f79a4dde4f1865f41d86" title="ModPlug_Seek" alt="" coords="247,56,358,83"/>
+</map>

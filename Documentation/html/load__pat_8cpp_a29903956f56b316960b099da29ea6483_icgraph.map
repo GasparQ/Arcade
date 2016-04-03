@@ -1,0 +1,7 @@
+<map id="pat_smptogm" name="pat_smptogm">
+<area shape="rect" id="node2" href="$load__pat_8h.html#af365caf051b0fee85cae76b1a5a6cc8a" title="PAT_Load_Instruments" alt="" coords="155,31,314,57"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a399c49f864b730182d9a0e065878a10f" title="CSoundFile::ReadABC" alt="" coords="363,5,520,32"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#ad96a25f78d1f3474e9243fce2cb2cdbe" title="CSoundFile::ReadMID" alt="" coords="364,56,519,83"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="569,31,706,57"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="755,31,863,57"/>
+</map>

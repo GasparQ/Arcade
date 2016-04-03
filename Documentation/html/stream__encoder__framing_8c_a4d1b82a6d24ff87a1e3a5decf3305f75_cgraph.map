@@ -1,0 +1,12 @@
+<map id="FLAC__frame_add_header" name="FLAC__frame_add_header">
+<area shape="rect" id="node2" href="$lib_f_l_a_c_2bitwriter_8c.html#a851f7741f456446fa2e6819f94767a2b" title="FLAC__bitwriter_is\l_byte_aligned" alt="" coords="244,5,377,46"/>
+<area shape="rect" id="node3" href="$lib_f_l_a_c_2bitwriter_8c.html#aecb918f25dcf759201b20c52bbf3edd1" title="FLAC__bitwriter_write\l_raw_uint32" alt="" coords="445,187,595,229"/>
+<area shape="rect" id="node4" href="$group__flac__format.html#gaec1c46afe33c0bb200be68bb36e0dd32" title="FLAC__format_sample\l_rate_is_valid" alt="" coords="233,122,389,163"/>
+<area shape="rect" id="node5" href="$lib_f_l_a_c_2bitwriter_8c.html#ade687d0d2f1c0617bce678cd652a44e6" title="FLAC__bitwriter_write\l_utf8_uint32" alt="" coords="235,187,386,229"/>
+<area shape="rect" id="node6" href="$lib_f_l_a_c_2bitwriter_8c.html#a21e089ece69e48b647214e30b0435b06" title="FLAC__bitwriter_write\l_utf8_uint64" alt="" coords="235,253,386,294"/>
+<area shape="rect" id="node7" href="$lib_f_l_a_c_2bitwriter_8c.html#af8bd66581d80d350d1c93519fef9ea88" title="FLAC__bitwriter_get\l_write_crc8" alt="" coords="240,318,381,359"/>
+<area shape="rect" id="node8" href="$lib_f_l_a_c_2bitwriter_8c.html#a0852b436da2d39699a54a40b0fc6835c" title="FLAC__bitwriter_get\l_buffer" alt="" coords="449,259,591,301"/>
+<area shape="rect" id="node9" href="$crc_8c.html#a224605b3f184cb09c38a5e5d0553ba41" title="FLAC__crc8" alt="" coords="473,325,567,352"/>
+<area shape="rect" id="node10" href="$lib_f_l_a_c_2bitwriter_8c.html#a9c2545c28e17227bcf6385fa7b496e64" title="FLAC__bitwriter_release\l_buffer" alt="" coords="437,377,603,418"/>
+<area shape="rect" id="node11" href="$_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f" title="void" alt="" coords="651,384,698,411"/>
+</map>

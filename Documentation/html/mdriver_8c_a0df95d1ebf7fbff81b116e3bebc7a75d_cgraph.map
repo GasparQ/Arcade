@@ -1,0 +1,5 @@
+<map id="MD_SampleLoad" name="MD_SampleLoad">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a6f475b4a0240ccb6c1081e9adef2b8e5" title="SL_Init" alt="" coords="179,5,242,32"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#ad4f137e8048b972602dbc543da8780b8" title="SL_Exit" alt="" coords="177,56,245,83"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="293,5,389,32"/>
+</map>

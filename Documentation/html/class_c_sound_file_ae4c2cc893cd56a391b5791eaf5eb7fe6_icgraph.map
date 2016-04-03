@@ -1,0 +1,7 @@
+<map id="CSoundFile::InitPlayer" name="CSoundFile::InitPlayer">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a53d2af40954b2999c97752a8af423291" title="CSoundFile::SetWaveConfigEx" alt="" coords="209,5,415,32"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#aca3128e17470033e70f77fd3b195b6d0" title="CSoundFile::SetWaveConfig" alt="" coords="217,56,407,83"/>
+<area shape="rect" id="node3" href="$namespace_mod_plug.html#a1713f96b768bc55284fa3e2516f6f6b7" title="ModPlug::UpdateSettings" alt="" coords="464,31,635,57"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="703,5,811,32"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a3d2b502cf10fc7f8bf94fae436420a54" title="ModPlug_SetSettings" alt="" coords="683,56,831,83"/>
+</map>

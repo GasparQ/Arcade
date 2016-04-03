@@ -1,0 +1,5 @@
+<map id="FLAC__stream_decoder_get_decode_position" name="FLAC__stream_decoder_get_decode_position">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#af4fbbdd0ea096a77037f1d53dcade7f1" title="See FLAC__stream_decoder_get_decode_position() " alt="" coords="216,5,379,46"/>
+<area shape="rect" id="node3" href="$playback_8h.html#ab7826a4c1b16912b0db2f69f1a8b7e58" title="FLAC_plugin__seek" alt="" coords="228,71,367,97"/>
+<area shape="rect" id="node4" href="$playback_8h.html#a9628c3e5acf1abbac5209a7d14135c89" title="FLAC_plugin__decode" alt="" coords="221,121,374,148"/>
+</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ncr',['ncr',['../namespacencr.html',1,'']]]
+  ['graph',['graph',['../namespacegraph.html',1,'']]]
 ];

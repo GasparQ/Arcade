@@ -1,0 +1,6 @@
+<map id="ModPlug_Unload" name="ModPlug_Unload">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#abb0874c0467a9fff7a2a35c75476fe09" title="CSoundFile::Destroy" alt="" coords="176,56,320,83"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a44d3db09508a303f294ce4615557fe77" title="CSoundFile::FreePattern" alt="" coords="369,5,535,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#ae200af8cb3cc96cfe1a5d26a1369583d" title="CSoundFile::FreeSample" alt="" coords="368,56,536,83"/>
+<area shape="rect" id="node5" href="$class_i_mix_plugin.html#a57d143edade8dce988d39ec31f849e30" title="IMixPlugin::Release" alt="" coords="383,107,521,133"/>
+</map>

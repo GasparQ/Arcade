@@ -1,0 +1,4 @@
+<map id="DecoderCommon" name="DecoderCommon">
+<area shape="rect" id="node2" href="$class_file_decoder.html" title="FileDecoder" alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="$class_stream_decoder.html" title="StreamDecoder" alt="" coords="121,80,233,107"/>
+</map>

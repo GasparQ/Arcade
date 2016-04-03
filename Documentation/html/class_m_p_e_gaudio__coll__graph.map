@@ -1,0 +1,9 @@
+<map id="MPEGaudio" name="MPEGaudio">
+<area shape="rect" id="node2" href="$class_m_p_e_gerror.html" title="MPEGerror" alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node7" href="$class_m_p_e_gsystem.html" title="MPEGsystem" alt="" coords="95,96,199,123"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gaudioaction.html" title="MPEGaudioaction" alt="" coords="282,187,408,213"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gaction.html" title="MPEGaction" alt="" coords="335,96,431,123"/>
+<area shape="rect" id="node5" href="$class_m_p_e_gstream.html" title="MPEGstream" alt="" coords="120,187,221,213"/>
+<area shape="rect" id="node6" href="$class_m_p_e_glist.html" title="MPEGlist" alt="" coords="231,96,309,123"/>
+<area shape="rect" id="node8" href="$struct_s_d_l___r_wops.html" title="SDL_RWops" alt="" coords="116,5,215,32"/>
+</map>

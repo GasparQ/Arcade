@@ -1,0 +1,10 @@
+<map id="decode_packed_entry_number" name="decode_packed_entry_number">
+<area shape="rect" id="node2" href="$libvorbisidec-1_82_81_2codebook_8h.html#ab64c32ac3c21667daf48dff173999dd1" title="vorbis_book_decode" alt="" coords="224,107,365,133"/>
+<area shape="rect" id="node4" href="$localcodebook_8h.html#a1e21765f57f5e92dd447a2c65639ebd0" title="vorbis_book_decodevs_add" alt="" coords="203,5,386,32"/>
+<area shape="rect" id="node6" href="$localcodebook_8h.html#ae3ec5eec5c8c323d4c928802ce0b6cb1" title="vorbis_book_decodev_add" alt="" coords="207,208,383,235"/>
+<area shape="rect" id="node8" href="$localcodebook_8h.html#a5c5bd9764a71f55ec58899ce5bfeeb47" title="vorbis_book_decodev_set" alt="" coords="208,157,381,184"/>
+<area shape="rect" id="node9" href="$localcodebook_8h.html#aac565a12a24e25e13723600d4cb16dd5" title="vorbis_book_decodevv_add" alt="" coords="203,56,386,83"/>
+<area shape="rect" id="node3" href="$res0_8c.html#a1009f8b935601c07a71b10ed3937864b" title="res2_inverse" alt="" coords="435,81,531,108"/>
+<area shape="rect" id="node5" href="$res0_8c.html#a0d593c58683c43ea9e4ab327ffadec97" title="res0_inverse" alt="" coords="435,5,531,32"/>
+<area shape="rect" id="node7" href="$res0_8c.html#af25924309ef39b18adff8a37484dc37e" title="res1_inverse" alt="" coords="435,208,531,235"/>
+</map>

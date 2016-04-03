@@ -1,3 +1,10 @@
 <map id="SDL_memcpy" name="SDL_memcpy">
-<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html#a067e1ad3a40d7f6741a105fdab0c63cf" title="SDL_memcpy4" alt="" coords="160,5,272,32"/>
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html#a067e1ad3a40d7f6741a105fdab0c63cf" title="SDL_memcpy4" alt="" coords="195,5,307,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gvideo.html#a96427ab3bf8fc48a0b28c8492d7ec23c" title="MPEGvideo::DisplayFrame" alt="" coords="160,56,341,83"/>
+<area shape="rect" id="node8" href="$_s_d_l__mixer_8h.html#ade68686625490fae426a8f711a105501" title="Mix_LoadWAV_RW" alt="" coords="181,107,320,133"/>
+<area shape="rect" id="node9" href="$_s_d_l__mixer_8h.html#ad8959410cb0ec39ce8a7b6fa392f78c2" title="Mix_QuickLoad_WAV" alt="" coords="175,157,326,184"/>
+<area shape="rect" id="node4" href="$class_m_p_e_gvideo.html#ab01015b9ca95bc7dd70d5640842e239b" title="MPEGvideo::ExecuteDisplay" alt="" coords="389,31,581,57"/>
+<area shape="rect" id="node7" href="$class_m_p_e_gvideo.html#a7a5d980d350d4e3edee339b635d58b19" title="MPEGvideo::RenderFinal" alt="" coords="400,81,571,108"/>
+<area shape="rect" id="node5" href="$video_8cpp.html#ab2c83025cde77691cf896d0fe63cec29" title="mpegVidRsrc" alt="" coords="629,31,731,57"/>
+<area shape="rect" id="node6" href="$_m_p_e_gvideo_8cpp.html#a6fabc47d44feaff23c4ea242270f8bc3" title="Play_MPEGvideo" alt="" coords="779,31,904,57"/>
 </map>

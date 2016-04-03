@@ -1,0 +1,5 @@
+<map id="FLAC__stream_decoder_get_decode_position" name="FLAC__stream_decoder_get_decode_position">
+<area shape="rect" id="node2" href="$bitreader_8c.html#af9ec09ffd07bb9ff748d00235662cd61" title="FLAC__bitreader_is\l_consumed_byte_aligned" alt="" coords="467,5,637,46"/>
+<area shape="rect" id="node3" href="$stream__decoder_8c.html#a601cc83672f082f1369b579425f4570d" title="FLAC__stream_decoder\l_get_input_bytes_unconsumed" alt="" coords="216,63,419,105"/>
+<area shape="rect" id="node4" href="$bitreader_8c.html#a9da26624ab8ed8a47cd2947746c6a1ab" title="FLAC__bitreader_get\l_input_bits_unconsumed" alt="" coords="469,70,635,111"/>
+</map>

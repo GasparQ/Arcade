@@ -1,0 +1,9 @@
+<map id="Mix_Quit" name="Mix_Quit">
+<area shape="rect" id="node2" href="$dynamic__fluidsynth_8h.html#af3a64e62e8165d5d178465c1d8154076" title="Mix_QuitFluidSynth" alt="" coords="128,5,264,32"/>
+<area shape="rect" id="node3" href="$dynamic__flac_8h.html#abb8ab62168d0f241b667c20ecb14ca35" title="Mix_QuitFLAC" alt="" coords="142,56,250,83"/>
+<area shape="rect" id="node4" href="$dynamic__modplug_8h.html#a9f1fb1fb47be6354b3e557ac8b273cbf" title="Mix_QuitModPlug" alt="" coords="133,107,259,133"/>
+<area shape="rect" id="node5" href="$dynamic__mod_8h.html#a746168f83ff524836ea7c0b771bb18a2" title="Mix_QuitMOD" alt="" coords="143,157,249,184"/>
+<area shape="rect" id="node6" href="$dynamic__mp3_8h.html#a04eeefbcbbc1b4f0402f2f2733f33175" title="Mix_QuitMP3" alt="" coords="145,208,247,235"/>
+<area shape="rect" id="node7" href="$dynamic__ogg_8h.html#adad6beee528b5abc27f460aa4e8f3ed0" title="Mix_QuitOgg" alt="" coords="147,259,245,285"/>
+<area shape="rect" id="node8" href="$_s_d_l__stdinc_8h.html#a0e4ade894d550ada1fa19dc2d46e88b8" title="SDL_free" alt="" coords="157,309,235,336"/>
+</map>

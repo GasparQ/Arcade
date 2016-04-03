@@ -1,0 +1,34 @@
+<map id="Mix_OpenAudio" name="Mix_OpenAudio">
+<area shape="rect" id="node2" href="$mixer_8c.html#ae44da613a6b90c6dce2f48abcd4eb09e" title="Mix_CloseAudio" alt="" coords="172,183,289,209"/>
+<area shape="rect" id="node11" href="$_s_d_l__stdinc_8h.html#aa0843b5fde7f958b8eea238304aa5b2d" title="SDL_malloc" alt="" coords="763,323,856,349"/>
+<area shape="rect" id="node18" href="$_s_d_l__audio_8h.html#aa176acc650e66e1d38814cbed3ca258e" title="SDL_CloseAudio" alt="" coords="347,284,469,311"/>
+<area shape="rect" id="node19" href="$_s_d_l__audio_8h.html#a2edf30e7747584e28041b4986f89f440" title="SDL_OpenAudio" alt="" coords="171,411,290,437"/>
+<area shape="rect" id="node20" href="$mixer_8c.html#a1e1592a564082cbe5685bd847e506a6c" title="open_music" alt="" coords="185,461,277,488"/>
+<area shape="rect" id="node30" href="$music_8c.html#a2920f6ddd71a206803a7e8cc3db83231" title="Mix_VolumeMusic" alt="" coords="343,588,473,615"/>
+<area shape="rect" id="node31" href="$effects__internal_8c.html#a1af5fe00dc1552b22e0b2c0939de3c4d" title="_Mix_InitEffects" alt="" coords="172,563,289,589"/>
+<area shape="rect" id="node33" href="$_s_d_l__audio_8h.html#aa68e60a33666ff4f2d36f3827b1d6061" title="SDL_PauseAudio" alt="" coords="168,613,293,640"/>
+<area shape="rect" id="node3" href="$mixer_8c.html#acee02ba8f0f6ce374c0dcfd85ddb8914" title="Mix_UnregisterAllEffects" alt="" coords="726,69,893,96"/>
+<area shape="rect" id="node7" href="$mixer_8c.html#a6e298ae0e53bb5cc7084327a06598bce" title="close_music" alt="" coords="361,183,455,209"/>
+<area shape="rect" id="node10" href="$_s_d_l__stdinc_8h.html#a0e4ade894d550ada1fa19dc2d46e88b8" title="SDL_free" alt="" coords="771,120,848,147"/>
+<area shape="rect" id="node15" href="$mixer_8c.html#a29f8403bda00a77830c472e494140eae" title="Mix_HaltChannel" alt="" coords="748,397,871,424"/>
+<area shape="rect" id="node16" href="$effects__internal_8c.html#a3079f17c0d0014aec8e5fd7c5381e13f" title="_Mix_DeinitEffects" alt="" coords="341,107,475,133"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="971,309,1087,336"/>
+<area shape="rect" id="node5" href="$mixer_8c.html#ae4884bd33df10035ab0198558b4bbc5f" title="_Mix_UnregisterAllEffects\l_locked" alt="" coords="942,62,1117,103"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="965,379,1094,405"/>
+<area shape="rect" id="node8" href="$music_8c.html#adf80fb086bf15e6c681b011376102321" title="Mix_HaltMusic" alt="" coords="755,272,864,299"/>
+<area shape="rect" id="node9" href="$music_8c.html#ab3b2144c99c6bb9d1546204727d0db77" title="Mix_SetMusicCMD" alt="" coords="532,284,668,311"/>
+<area shape="rect" id="node12" href="$playmidi_8c.html#a8039a947eea1fdea012289290c6de5aa" title="Timidity_Close" alt="" coords="545,183,655,209"/>
+<area shape="rect" id="node13" href="$instrum_8c.html#a35871da9c516c1ca54d37c7030027ee3" title="free_instruments" alt="" coords="750,221,869,248"/>
+<area shape="rect" id="node14" href="$common_8c.html#ac09c4f48acca456d3ac8c48fd94d2ff8" title="free_pathlist" alt="" coords="763,171,856,197"/>
+<area shape="rect" id="node17" href="$effect__position_8c.html#ad288a573a53777de23bf6d684cb030c1" title="_Eff_PositionDeinit" alt="" coords="533,81,667,108"/>
+<area shape="rect" id="node21" href="$wavestream_8c.html#a841e1671384e7dc3b9fd3fd183c16d29" title="WAVStream_Init" alt="" coords="348,436,468,463"/>
+<area shape="rect" id="node22" href="$timidity_8c.html#aa8b4946823a6fb358adbefa13d96f333" title="Timidity_Init" alt="" coords="361,537,455,564"/>
+<area shape="rect" id="node23" href="$getopt_8c.html#aee28fd8a0e40b6d958f7d20348e45368" title="getenv" alt="" coords="569,436,631,463"/>
+<area shape="rect" id="node29" href="$native__midi_8h.html#a1f1a46dd66fa95066975490e203bf961" title="native_midi_detect" alt="" coords="343,385,473,412"/>
+<area shape="rect" id="node24" href="$output_8c.html#a137f0591bf91164da319585c6ea4b0c7" title="s32tos8" alt="" coords="566,588,634,615"/>
+<area shape="rect" id="node25" href="$output_8c.html#aef320a36a75a31f49f5b77d036d030c4" title="s32tou8" alt="" coords="566,639,634,665"/>
+<area shape="rect" id="node26" href="$common_8c.html#a97c3dbe8452b80903bbb8a330f8bc032" title="safe_malloc" alt="" coords="763,588,855,615"/>
+<area shape="rect" id="node27" href="$tables_8c.html#a61d70fb2db70b9bd08da992c48e6e525" title="init_tables" alt="" coords="559,487,641,513"/>
+<area shape="rect" id="node28" href="$instrum_8c.html#a179f1963dfc43f38a2efc3087d09749c" title="set_default_instrument" alt="" coords="523,537,677,564"/>
+<area shape="rect" id="node32" href="$_s_d_l__stdinc_8h.html#a16ef7a64cf619b95d337ed87cf73cbaa" title="SDL_getenv" alt="" coords="361,639,455,665"/>
+</map>

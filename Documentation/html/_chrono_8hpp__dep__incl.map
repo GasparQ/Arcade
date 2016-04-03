@@ -1,4 +1,10 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Commons/include/Chrono.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Commons/include/Chrono.hpp">
-<area shape="rect" id="node2" href="$_pacman_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/PacmanGame.hpp" alt="" coords="5,109,184,165"/>
-<area shape="rect" id="node3" href="$_pacman_game_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/PacmanGame.cpp" alt="" coords="24,214,291,255"/>
+<area shape="rect" id="node2" href="$_arcade_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Arcade.hpp" alt="" coords="289,117,468,158"/>
+<area shape="rect" id="node4" href="$_arcade_menu_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.hpp" alt="" coords="5,221,200,262"/>
+<area shape="rect" id="node5" href="$_arcade_menu_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/ArcadeMenu.cpp" alt="" coords="453,318,648,359"/>
+<area shape="rect" id="node8" href="$_pacman_game_8hpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/include\l/PacmanGame.hpp" alt="" coords="781,109,960,165"/>
+<area shape="rect" id="node3" href="$_arcade_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Arcade.cpp" alt="" coords="80,318,259,359"/>
+<area shape="rect" id="node6" href="$_open_gl_graph_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Graphique/OpenGL\l/OpenGlGraph.cpp" alt="" coords="275,213,483,269"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/main.cpp" alt="" coords="507,221,685,262"/>
+<area shape="rect" id="node9" href="$_pacman_game_8cpp.html" title="/home/veyrie_f/Documents\l/cpp_arcade/Game/src/PacmanGame.cpp" alt="" coords="760,221,1027,262"/>
 </map>

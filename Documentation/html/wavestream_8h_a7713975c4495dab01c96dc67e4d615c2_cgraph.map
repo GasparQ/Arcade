@@ -1,0 +1,7 @@
+<map id="WAVStream_LoadSong_RW" name="WAVStream_LoadSong_RW">
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html#aa0843b5fde7f958b8eea238304aa5b2d" title="SDL_malloc" alt="" coords="279,5,372,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__rwops_8h.html#a8320334c299a3631fd6beb9937c30f04" title="SDL_ReadLE32" alt="" coords="267,56,383,83"/>
+<area shape="rect" id="node4" href="$wavestream_8c.html#a75bb642c8a101846addeb60c46c8c2d5" title="WAVStream_FreeSong" alt="" coords="246,107,405,133"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a41e1602bc7cd4edb87ca779cf01d40bb" title="SDL_BuildAudioCVT" alt="" coords="253,157,397,184"/>
+<area shape="rect" id="node5" href="$_s_d_l__stdinc_8h.html#a0e4ade894d550ada1fa19dc2d46e88b8" title="SDL_free" alt="" coords="453,107,531,133"/>
+</map>

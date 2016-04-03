@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -116,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -134,6 +137,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="struct_s_d_l___display_mode.html#a504bb5e21950b719a0df43be51199046">SDL_DisplayMode</a>
 , <a class="el" href="struct_s_d_l___rect.html#a56b7be5738fb6fab86881534a814c45e">SDL_Rect</a>
 , <a class="el" href="struct_s_d_l___surface.html#a9b0ec7185dcdb2a3530a9160a6ea83d9">SDL_Surface</a>
+, <a class="el" href="struct_s_m_p_e_g___frame.html#a1285a1939daf1679a1c90fc42cc4041e">SMPEG_Frame</a>
+</li>
+<li>W
+: <a class="el" href="structvorbis__block.html#a1e420440dd6a5a39262c0fe7afa8435a">vorbis_block</a>
+, <a class="el" href="structvorbis__dsp__state.html#a1cc3a520dcf831fb967341e5095c7b38">vorbis_dsp_state</a>
+</li>
+<li>wantedperiod
+: <a class="el" href="struct_m_p___c_o_n_t_r_o_l.html#ab31e392cfd6d6cb797681be0ac1f6208">MP_CONTROL</a>
+</li>
+<li>warmup
+: <a class="el" href="struct_f_l_a_c_____subframe___fixed.html#a82fb90f04b404bd67a9ddfe6acd6bb86">FLAC__Subframe_Fixed</a>
+, <a class="el" href="struct_f_l_a_c_____subframe___l_p_c.html#a0dd0feefba19dd03765facc72bda0c9e">FLAC__Subframe_LPC</a>
+</li>
+<li>wasted_bits
+: <a class="el" href="struct_f_l_a_c_____subframe.html#a96a6848ded4e90e26d54f0dd7066c306">FLAC__Subframe</a>
+</li>
+<li>wave_name
+: <a class="el" href="struct_wave_header.html#a0ffca6a4f86be2a3c90abd8167ebfd1d">WaveHeader</a>
+</li>
+<li>wave_size
+: <a class="el" href="struct_wave_header.html#ac4cde249c511d993b6ea5bf7848da058">WaveHeader</a>
+</li>
+<li>wavecontrol
+: <a class="el" href="struct_m_p___c_o_n_t_r_o_l.html#a3442ff2b3a81af1cb75e4321408a5d60">MP_CONTROL</a>
+</li>
+<li>waveforms
+: <a class="el" href="struct_patch_header.html#a15b8cc9637758a5d74f4098adeedae89">PatchHeader</a>
+</li>
+<li>wChannels
+: <a class="el" href="struct___m_t2_f_i_l_e_h_e_a_d_e_r.html#a41c71188c61afaf2d14927fbaed9aad1">_MT2FILEHEADER</a>
+</li>
+<li>wctomb
+: <a class="el" href="structcharset.html#a205ec5e2d86a80397f94a9fe7122c5d2">charset</a>
+</li>
+<li>wCutOff
+: <a class="el" href="struct___m_t2_s_y_n_t_h.html#a890791280d7dd9d39a51e9ef796bb1c4">_MT2SYNTH</a>
+</li>
+<li>wDataLen
+: <a class="el" href="struct___m_t2_p_a_t_t_e_r_n.html#a3610d0a2a4fd5ca7c3bab8466ed1665a">_MT2PATTERN</a>
+</li>
+<li>wDrumPatterns
+: <a class="el" href="struct___m_t2_d_r_u_m_s_d_a_t_a.html#a1bd3c657a0799bf0e96594c5d25cdfce">_MT2DRUMSDATA</a>
+</li>
+<li>wDrumSamples
+: <a class="el" href="struct___m_t2_d_r_u_m_s_d_a_t_a.html#ac622ab7b50d35c2fc0590d1b5ff46454">_MT2DRUMSDATA</a>
+</li>
+<li>weight_func
+: <a class="el" href="structvqgen.html#ab9038fdf7bae91bea70aea31589e20c6">vqgen</a>
+</li>
+<li>wEnvFlags1
+: <a class="el" href="struct___m_t2_i_n_s_t_r_u_m_e_n_t.html#ab5b563044446b74bf5011a9015f170ed">_MT2INSTRUMENT</a>
+</li>
+<li>wEnvFlags2
+: <a class="el" href="struct___m_t2_i_n_s_t_r_u_m_e_n_t.html#a8f5938ef4d6f1fb08356182d05b6d292">_MT2INSTRUMENT</a>
+</li>
+<li>wFadeOut
+: <a class="el" href="struct___m_t2_i_n_s_t_r_u_m_e_n_t.html#ad59a8db7c933c1771be56a21d2155a38">_MT2INSTRUMENT</a>
+</li>
+<li>wFormatTag
+: <a class="el" href="struct_w_a_v.html#a01332e798f9ccf3f6ce22218fa8f6c60">WAV</a>
+</li>
+<li>wGlobalVol
+: <a class="el" href="struct_w_a_v_e_e_x_t_r_a_h_e_a_d_e_r.html#ad670c8f5130b40b1ef79b800c745a253">WAVEEXTRAHEADER</a>
+</li>
+<li>what
+: <a class="el" href="struct_i_m_f_i_n_s_t_h_e_a_d_e_r.html#a1123edf53b24e62e886ba0cd779d12c3">IMFINSTHEADER</a>
+, <a class="el" href="struct_x_m_p_a_t_c_h_h_e_a_d_e_r.html#ab990dd5c9654644424961f4c1e3661a7">XMPATCHHEADER</a>
+</li>
+<li>wHdr2
+: <a class="el" href="struct_a_m_s2_f_i_l_e_h_e_a_d_e_r.html#a3bb9e625eb68e573a2e51400a4586f01">AMS2FILEHEADER</a>
 </li>
 <li>wheel
 : <a class="el" href="union_s_d_l___event.html#a267d3f550715519ec90a81ccd0e6cbda">SDL_Event</a>
@@ -155,8 +228,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="struct_s_d_l___mouse_motion_event.html#a6f04c17b4305683915e2fd2dc3c36dbc">SDL_MouseMotionEvent</a>
 , <a class="el" href="struct_s_d_l___mouse_wheel_event.html#a014dc767d52e8b75ba26a5f12e1704e8">SDL_MouseWheelEvent</a>
 </li>
+<li>whole
+: <a class="el" href="unionmagic.html#af221b2589a20378777e2fdf9c46167db">magic</a>
+</li>
+<li>wID
+: <a class="el" href="struct_w_a_v.html#a4d689de023aad8bc6684bb5e7e48a642">WAV</a>
+</li>
 <li>width
-: <a class="el" href="structarcade_1_1_get_map.html#a5d7616bd7955157ccdd663c1e0c9efe3">arcade::GetMap</a>
+: <a class="el" href="struct___s_m_p_e_g___info.html#a42ddfa813104692cf6a37f5e8097303a">_SMPEG_Info</a>
+, <a class="el" href="structarcade_1_1_get_map.html#a5d7616bd7955157ccdd663c1e0c9efe3">arcade::GetMap</a>
+, <a class="el" href="struct_f_l_a_c_____stream_metadata___picture.html#a18dc6cdef9fa6c815450671f631a1e04">FLAC__StreamMetadata_Picture</a>
+, <a class="el" href="struct_m_p_e_g___video_info.html#a924890a5b17d17bd0c42d730a66f6ee4">MPEG_VideoInfo</a>
+, <a class="el" href="struct_picture_file.html#ade47cebcf68a6d719588f7607d11d607">PictureFile</a>
 , <a class="el" href="struct_s_d_l_test___surface_image__s.html#a3cbacf6b015a22832ab4d3f509719609">SDLTest_SurfaceImage_s</a>
 , <a class="el" href="structtag_m_e_n_u.html#a28a8fffa4694385c7540f8e6a4c56c97">tagMENU</a>
 </li>
@@ -167,7 +250,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structtag_m_e_n_u.html#a0ca0e71f77ad3fe2313fa32de6c08222">tagMENU</a>
 </li>
 <li>window
-: <a class="el" href="union_s_d_l___event.html#a826936b3275406d857bc6654669fae71">SDL_Event</a>
+: <a class="el" href="structenvelope__band.html#ae5ee62ee2b75d2ecfac29d8a5f554287">envelope_band</a>
+, <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#a2ad0c9a1fb526cb8f7347284b89398f5">FLAC__StreamEncoderPrivate</a>
+, <a class="el" href="structprivate__state.html#a72548ef686136693d3649f321e8696cb">private_state</a>
+, <a class="el" href="union_s_d_l___event.html#a826936b3275406d857bc6654669fae71">SDL_Event</a>
 , <a class="el" href="struct_s_d_l___message_box_data.html#a5c333bc93705c66068e140bc28daedcb">SDL_MessageBoxData</a>
 , <a class="el" href="struct_s_d_l___sys_w_minfo.html#a83ca4b0f4bdf67a0edee03d5bde86b93">SDL_SysWMinfo</a>
 </li>
@@ -192,8 +278,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>window_minW
 : <a class="el" href="struct_s_d_l_test___common_state.html#a34b3dccdaec98232fa01274d6842f534">SDLTest_CommonState</a>
 </li>
+<li>window_switching_flag
+: <a class="el" href="structlayer3grinfo.html#a868a41cfb1dea7b199c728535557c041">layer3grinfo</a>
+</li>
 <li>window_title
 : <a class="el" href="struct_s_d_l_test___common_state.html#a86640ebac0afe0c504c3c324d84dcc37">SDLTest_CommonState</a>
+</li>
+<li>window_unaligned
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#a14ae296508bb7af62fe189452c1be0a9">FLAC__StreamEncoderPrivate</a>
 </li>
 <li>window_w
 : <a class="el" href="struct_s_d_l_test___common_state.html#adc94ae1febd2aa3fa4b190cd0f8cb546">SDLTest_CommonState</a>
@@ -203,6 +295,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>window_y
 : <a class="el" href="struct_s_d_l_test___common_state.html#a1fcd61cbe37c2bb563e7b2f1c6853d29">SDLTest_CommonState</a>
+</li>
+<li>windowed_signal
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#af82a14c6dbb468dabc444af86ed8d4cf">FLAC__StreamEncoderPrivate</a>
+</li>
+<li>windowed_signal_unaligned
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#a9cfb49f065077db942b28591f5488367">FLAC__StreamEncoderPrivate</a>
 </li>
 <li>windowID
 : <a class="el" href="struct_s_d_l___keyboard_event.html#a56efb6780b96acd5b50d8f797efb3546">SDL_KeyboardEvent</a>
@@ -217,14 +315,101 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>windows
 : <a class="el" href="struct_s_d_l_test___common_state.html#a0a054f0c45eb9d21f9561d701e721106">SDLTest_CommonState</a>
 </li>
+<li>windowtype
+: <a class="el" href="structvorbis__info__mode.html#a32132c50e4b3e8c4c0715894f8380502">vorbis_info_mode</a>
+</li>
+<li>winlength
+: <a class="el" href="structenvelope__lookup.html#a0dd3e4be45e14a1f562774245db3ba80">envelope_lookup</a>
+</li>
+<li>wInstrFlags
+: <a class="el" href="struct___m_t2_i_n_s_t_r_u_m_e_n_t.html#ae75ebe9182f0bad2e7d592e4f0da271b">_MT2INSTRUMENT</a>
+</li>
+<li>wInstruments
+: <a class="el" href="struct___m_t2_f_i_l_e_h_e_a_d_e_r.html#aedf8572e375f5cb6bd2e3162d567476d">_MT2FILEHEADER</a>
+</li>
 <li>wl
 : <a class="el" href="struct_s_d_l___sys_w_minfo.html#aae1ed9c6936c04c64991f876338bda80">SDL_SysWMinfo</a>
+</li>
+<li>wLines
+: <a class="el" href="struct___m_t2_p_a_t_t_e_r_n.html#a130bcd6198a493010d99af39d7d27982">_MT2PATTERN</a>
+</li>
+<li>wMidiBank
+: <a class="el" href="struct___i_n_s_t_r_u_m_e_n_t_h_e_a_d_e_r.html#a5e9652ae059f54e429f645a1b54f6016">_INSTRUMENTHEADER</a>
+</li>
+<li>wNNA
+: <a class="el" href="struct___m_t2_i_n_s_t_r_u_m_e_n_t.html#a445261a8588ef4cb0effe375f8bce24d">_MT2INSTRUMENT</a>
+</li>
+<li>words
+: <a class="el" href="struct_f_l_a_c_____bit_reader.html#ab0b2525d374daa1d4a28f5ad9c96335c">FLAC__BitReader</a>
+, <a class="el" href="struct_f_l_a_c_____bit_writer.html#a03780c7567c8b0da65ad1651e81b85b1">FLAC__BitWriter</a>
+</li>
+<li>workevent
+: <a class="el" href="struct___m_i_d_t_r_a_c_k.html#a32900825b82ad9aeed0f33093e966e14">_MIDTRACK</a>
+</li>
+<li>working_packet
+: <a class="el" href="struct_f_l_a_c_____ogg_decoder_aspect.html#a1cf1159682cc9efc7597d426fcf2bdf4">FLAC__OggDecoderAspect</a>
+</li>
+<li>working_page
+: <a class="el" href="struct_f_l_a_c_____ogg_decoder_aspect.html#a10e8b43565637bff6c560be3530a5327">FLAC__OggDecoderAspect</a>
+</li>
+<li>wPan
+: <a class="el" href="struct_w_a_v_e_e_x_t_r_a_h_e_a_d_e_r.html#a43c6f577eabc43c86a94d08160d1a0ca">WAVEEXTRAHEADER</a>
+</li>
+<li>wPatterns
+: <a class="el" href="struct___m_t2_f_i_l_e_h_e_a_d_e_r.html#acebdbd26ccb675e0ab64579a3671633d">_MT2FILEHEADER</a>
+</li>
+<li>wrap
+: <a class="el" href="struct_m_o_d_u_l_e.html#a6a404afebe61c3e0a4cb628697203a88">MODULE</a>
+</li>
+<li>wReserved
+: <a class="el" href="struct_w_a_v_e_e_x_t_r_a_h_e_a_d_e_r.html#ac4fda9901769af55c897b21eefd1de96">WAVEEXTRAHEADER</a>
+</li>
+<li>wRestart
+: <a class="el" href="struct___m_t2_f_i_l_e_h_e_a_d_e_r.html#a281e59832b1df086d1972433243924db">_MT2FILEHEADER</a>
+</li>
+<li>write
+: <a class="el" href="struct_f_l_a_c_____i_o_callbacks.html#ad64901e5a5710ee4c3c157c75d51ddc0">FLAC__IOCallbacks</a>
+, <a class="el" href="class_m_p_e_g__ring.html#a0f9605091fe6eecc0cb684d5c2739b0b">MPEG_ring</a>
+</li>
+<li>Write
+: <a class="el" href="struct_m_w_r_i_t_e_r.html#a3734acd64a202752ccdc2f2e3114f9fe">MWRITER</a>
+, <a class="el" href="struct_out___module.html#a301bbb0c5b4f385346065bf1eec4fd7d">Out_Module</a>
+</li>
+<li>write_callback
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#ae2c2b48a59583f6b5ebcc86fac9066c6">FLAC__StreamDecoderPrivate</a>
+, <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#adff3aedd71c00bfea23007b1d3744b27">FLAC__StreamEncoderPrivate</a>
+</li>
+<li>writewait
+: <a class="el" href="class_m_p_e_g__ring.html#a0464b2be3ce828da916ecd1fab0b049e">MPEG_ring</a>
+</li>
+<li>wSamples
+: <a class="el" href="struct___m_t2_f_i_l_e_h_e_a_d_e_r.html#a149d5077b37eb01a58e160b56189003e">_MT2FILEHEADER</a>
+, <a class="el" href="struct___m_t2_i_n_s_t_r_u_m_e_n_t.html#a093baade45a96cf4bf53f4d2ad0abdd6">_MT2INSTRUMENT</a>
+</li>
+<li>wSamplesPerBeat
+: <a class="el" href="struct___m_t2_s_a_m_p_l_e.html#a2d63a0f0556a5ad75f1bd39c7ee986b0">_MT2SAMPLE</a>
+</li>
+<li>wSamplesPerTick
+: <a class="el" href="struct___m_t2_f_i_l_e_h_e_a_d_e_r.html#aafb0b310b23d6e6d7e9ee0dfd6462301">_MT2FILEHEADER</a>
+</li>
+<li>wsiHdr
+: <a class="el" href="struct_w_a_v_e_s_a_m_p_l_e_r_i_n_f_o.html#a7985cecc4d73fe0a684b85a846e62118">WAVESAMPLERINFO</a>
+</li>
+<li>wsiLoops
+: <a class="el" href="struct_w_a_v_e_s_a_m_p_l_e_r_i_n_f_o.html#a9a201b350bba31569356450d64587696">WAVESAMPLERINFO</a>
+</li>
+<li>wVersion
+: <a class="el" href="struct___m_t2_f_i_l_e_h_e_a_d_e_r.html#a910c00e1c54c3ff8c909428422afd573">_MT2FILEHEADER</a>
+</li>
+<li>wVolume
+: <a class="el" href="struct___m_t2_s_a_m_p_l_e.html#a318bb3362c8cc013b28df94b8a5f5f9e">_MT2SAMPLE</a>
+, <a class="el" href="struct_w_a_v_e_e_x_t_r_a_h_e_a_d_e_r.html#a1a41c8a5a64eb191e6334113183dd954">WAVEEXTRAHEADER</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

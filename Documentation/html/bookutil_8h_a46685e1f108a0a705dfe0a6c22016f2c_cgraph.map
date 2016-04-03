@@ -1,0 +1,12 @@
+<map id="codebook_load" name="codebook_load">
+<area shape="rect" id="node2" href="$bookutil_8c.html#a0c58545a6f802b86c8bbec59d18b8d34" title="find_seek_to" alt="" coords="207,29,303,56"/>
+<area shape="rect" id="node3" href="$bookutil_8c.html#a75839547489bdf091b1b93d9a1a907ff" title="get_line" alt="" coords="575,80,641,107"/>
+<area shape="rect" id="node5" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#aec05a8c0eabef16f1074fa1d596ce6e4" title="_book_maptype1_quantvals" alt="" coords="163,131,347,157"/>
+<area shape="rect" id="node6" href="$bookutil_8c.html#aac36c31bb4019d162a15e8ecdac1dfae" title="reset_next_value" alt="" coords="194,181,315,208"/>
+<area shape="rect" id="node7" href="$bookutil_8c.html#a50640af9d0fce982c9782ca52e828834" title="get_next_ivalue" alt="" coords="198,232,311,259"/>
+<area shape="rect" id="node10" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#a042a0dce77fd02c52e095c266bb0afb7" title="vorbis_book_init_encode" alt="" coords="172,283,337,309"/>
+<area shape="rect" id="node11" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#aa0b435e53b16ef46145637c02f34c394" title="_book_unquantize" alt="" coords="191,333,318,360"/>
+<area shape="rect" id="node4" href="$strstr_8c.html#a4a710d86541afc6b7dafddcdb4b1c94f" title="strstr" alt="" coords="425,29,477,56"/>
+<area shape="rect" id="node8" href="$bookutil_8c.html#a3294feba84f7b80c5421e4fe6289803b" title="get_next_value" alt="" coords="395,181,506,208"/>
+<area shape="rect" id="node9" href="$bookutil_8c.html#a29edc4f28032fccfb86f4bdfd32feb9b" title="get_line_value" alt="" coords="555,181,661,208"/>
+</map>

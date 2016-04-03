@@ -1,3 +1,4 @@
 <map id="SDL_CreateRenderer" name="SDL_CreateRenderer">
-<area shape="rect" id="node2" href="$class_s_d_l_graph.html#a9ed11ac197e66eabdd7d689df1ca9937" title="SDLGraph::SDLGraph" alt="" coords="200,5,352,32"/>
+<area shape="rect" id="node2" href="$class_s_d_l_graph.html#a9ed11ac197e66eabdd7d689df1ca9937" title="Constructor in which SDL, TTF, render, window, font, colors, keycodes will be initialised. " alt="" coords="200,5,352,32"/>
+<area shape="rect" id="node3" href="$plaympeg_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="251,56,301,83"/>
 </map>

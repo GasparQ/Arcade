@@ -1,6 +1,8 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Arcade.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Arcade.hpp">
-<area shape="rect" id="node6" href="$_i_graph_8hpp.html" title="Graphique/include/IGraph.hpp" alt="" coords="328,96,523,123"/>
-<area shape="rect" id="node12" href="$_i_game_8hpp.html" title="Game/include/IGame.hpp" alt="" coords="547,96,717,123"/>
-<area shape="rect" id="node8" href="$_a_component_8hpp.html" title="../../Commons/include\l/AComponent.hpp" alt="" coords="537,171,687,213"/>
-<area shape="rect" id="node9" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="566,261,657,288"/>
+<area shape="rect" id="node6" href="$_i_graph_8hpp.html" title="Graphique/include/IGraph.hpp" alt="" coords="260,96,454,123"/>
+<area shape="rect" id="node12" href="$_i_game_8hpp.html" title="Game/include/IGame.hpp" alt="" coords="478,96,649,123"/>
+<area shape="rect" id="node13" href="$_chrono_8hpp.html" title="Commons/include/Chrono.hpp" alt="" coords="674,96,872,123"/>
+<area shape="rect" id="node16" href="$_audio_component_8hpp.html" title="Commons/AudioComponent.hpp" alt="" coords="25,96,234,123"/>
+<area shape="rect" id="node8" href="$_a_component_8hpp.html" title="../../Commons/include\l/AComponent.hpp" alt="" coords="304,171,454,213"/>
+<area shape="rect" id="node9" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="358,261,449,288"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="USSEnterprise::move" name="USSEnterprise::move">
+<area shape="rect" id="node2" href="$class_u_s_s_enterprise.html#a9161554357d3c04b9791a301621fd2a3" title="USSEnterprise::goDown" alt="" coords="203,5,368,32"/>
+<area shape="rect" id="node3" href="$class_u_s_s_enterprise.html#a7c20325775da1952ba73f57cb4c507e4" title="USSEnterprise::goLeft" alt="" coords="209,56,362,83"/>
+<area shape="rect" id="node4" href="$class_u_s_s_enterprise.html#a0a9f7ac9d18b41cc878b59106edd464c" title="USSEnterprise::goRight" alt="" coords="204,107,367,133"/>
+<area shape="rect" id="node5" href="$class_u_s_s_enterprise.html#af2c83ff1503c01dbd64c2cac65a085da" title="USSEnterprise::goUp" alt="" coords="211,157,359,184"/>
+</map>

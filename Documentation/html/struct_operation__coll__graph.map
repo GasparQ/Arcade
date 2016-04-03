@@ -1,0 +1,13 @@
+<map id="Operation" name="Operation">
+<area shape="rect" id="node2" href="$struct_argument___streaminfo_u_int64.html" title="Argument_StreaminfoUInt64" alt="" coords="349,15,536,41"/>
+<area shape="rect" id="node3" href="$struct_argument___vc_field_name.html" title="Argument_VcFieldName" alt="" coords="361,65,525,92"/>
+<area shape="rect" id="node4" href="$struct_argument___export_picture_to.html" title="Argument_ExportPictureTo" alt="" coords="353,116,532,143"/>
+<area shape="rect" id="node5" href="$struct_argument___block_number.html" title="Argument_BlockNumber" alt="" coords="7,116,171,143"/>
+<area shape="rect" id="node6" href="$struct_argument___streaminfo_u_int32.html" title="Argument_StreaminfoUInt32" alt="" coords="349,167,536,193"/>
+<area shape="rect" id="node7" href="$struct_argument___add_padding.html" title="Argument_AddPadding" alt="" coords="365,217,520,244"/>
+<area shape="rect" id="node8" href="$struct_argument___vc_field.html" title="Argument_VcField" alt="" coords="378,268,507,295"/>
+<area shape="rect" id="node9" href="$struct_argument___streaminfo_m_d5.html" title="Argument_StreaminfoMD5" alt="" coords="355,319,531,345"/>
+<area shape="rect" id="node10" href="$struct_argument___string.html" title="Argument_String" alt="" coords="383,369,502,396"/>
+<area shape="rect" id="node11" href="$struct_argument___add_seekpoint.html" title="Argument_AddSeekpoint" alt="" coords="6,445,173,472"/>
+<area shape="rect" id="node12" href="$struct_argument___import_cuesheet_from.html" title="Argument_ImportCuesheetFrom" alt="" coords="339,483,547,509"/>
+</map>

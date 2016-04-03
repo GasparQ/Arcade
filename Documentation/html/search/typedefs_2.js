@@ -7,9 +7,12 @@ var searchData=
   ['categories',['categories',['../_s_d_l__opengl__glext_8h.html#a0c522f8e5be31e872cf1dd48e5e77611',1,'SDL_opengl_glext.h']]],
   ['cddotproduct',['cdDotProduct',['../_s_d_l__opengl__glext_8h.html#a24af9ee71c286d2df0f68a2c503ff96b',1,'SDL_opengl_glext.h']]],
   ['cdoutput',['cdOutput',['../_s_d_l__opengl__glext_8h.html#aa8917040eb1ccf925b7f2ef21a3b18ee',1,'SDL_opengl_glext.h']]],
+  ['char',['CHAR',['../include_2mikmod_8h.html#aebb9e13210d88d43e32e735ada43a425',1,'CHAR():&#160;mikmod.h'],['../include_2mikmod__build_8h.html#aebb9e13210d88d43e32e735ada43a425',1,'CHAR():&#160;mikmod_build.h'],['../macintosh_2mikmod_8h.html#aebb9e13210d88d43e32e735ada43a425',1,'CHAR():&#160;mikmod.h'],['../macosx_2mikmod_8h.html#aebb9e13210d88d43e32e735ada43a425',1,'CHAR():&#160;mikmod.h'],['../macosx_2mikmod__build_8h.html#aebb9e13210d88d43e32e735ada43a425',1,'CHAR():&#160;mikmod_build.h'],['../win32_2mikmod__build_8h.html#aebb9e13210d88d43e32e735ada43a425',1,'CHAR():&#160;mikmod_build.h'],['../stdafx_8h.html#a5b215426da76ecdb76c8600a0a09cf1b',1,'CHAR():&#160;stdafx.h']]],
   ['charcodes',['charcodes',['../_s_d_l__opengl__glext_8h.html#aea74a10b758dcc9a3be5ad3a10460e0a',1,'SDL_opengl_glext.h']]],
   ['chtype',['chtype',['../curses_8h.html#a30a21903bdd1c61a60591965179b597f',1,'curses.h']]],
   ['clamp',['clamp',['../_s_d_l__opengl__glext_8h.html#a3878d3005eeb2d2ef414abc752ba3c9b',1,'SDL_opengl_glext.h']]],
+  ['codebook',['codebook',['../libvorbis-1_83_83_2lib_2codebook_8h.html#a8c4214c939f8d6912b17ff3e404730f7',1,'codebook():&#160;codebook.h'],['../localcodebook_8h.html#a8c4214c939f8d6912b17ff3e404730f7',1,'codebook():&#160;localcodebook.h'],['../libvorbisidec-1_82_81_2codebook_8h.html#a8c4214c939f8d6912b17ff3e404730f7',1,'codebook():&#160;codebook.h']]],
+  ['codec_5fsetup_5finfo',['codec_setup_info',['../libvorbis-1_83_83_2lib_2codec__internal_8h.html#acd8298292f29fc014ab8e663e350d224',1,'codec_setup_info():&#160;codec_internal.h'],['../libvorbisidec-1_82_81_2codec__internal_8h.html#acd8298292f29fc014ab8e663e350d224',1,'codec_setup_info():&#160;codec_internal.h']]],
   ['coeffs',['coeffs',['../_s_d_l__opengl__glext_8h.html#a4a3c4d76a3fd0fd7dc4192fd78bee59b',1,'SDL_opengl_glext.h']]],
   ['color',['color',['../_s_d_l__opengl__glext_8h.html#a3ea846f998d64f079b86052b6c4193a8',1,'SDL_opengl_glext.h']]],
   ['colorformat',['colorFormat',['../_s_d_l__opengl__glext_8h.html#ae0e7869a91d4154265d646526f47b422',1,'SDL_opengl_glext.h']]],
@@ -44,5 +47,6 @@ var searchData=
   ['counterstring',['counterString',['../_s_d_l__opengl__glext_8h.html#aa69c552934af75e16175f65c1d22e159',1,'counterString():&#160;SDL_opengl_glext.h'],['../_s_d_l__opengles2__gl2ext_8h.html#aa69c552934af75e16175f65c1d22e159',1,'counterString():&#160;SDL_opengles2_gl2ext.h']]],
   ['countertypeenum',['counterTypeEnum',['../_s_d_l__opengl__glext_8h.html#af8911db1ae0acd36c9e4855fa603bee3',1,'SDL_opengl_glext.h']]],
   ['coveragesamples',['coverageSamples',['../_s_d_l__opengl__glext_8h.html#ad2b292c87456e7a495081094a5eed94a',1,'SDL_opengl_glext.h']]],
-  ['covermode',['coverMode',['../_s_d_l__opengl__glext_8h.html#a4f086f8d2b28bf1d8440644a60f9b847',1,'SDL_opengl_glext.h']]]
+  ['covermode',['coverMode',['../_s_d_l__opengl__glext_8h.html#a4f086f8d2b28bf1d8440644a60f9b847',1,'SDL_opengl_glext.h']]],
+  ['cpsprocesssernum',['CPSProcessSerNum',['../playmus_2_s_d_l_main_8m.html#aa127702c2043ae85c34f8767507da918',1,'CPSProcessSerNum():&#160;SDLMain.m'],['../playwave_2_s_d_l_main_8m.html#aa127702c2043ae85c34f8767507da918',1,'CPSProcessSerNum():&#160;SDLMain.m']]]
 ];

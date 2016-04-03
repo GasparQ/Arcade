@@ -1,0 +1,8 @@
+<map id="vorbis_dsp_clear" name="vorbis_dsp_clear">
+<area shape="rect" id="node2" href="$envelope_8c.html#a8082a156ea0041c8fd6a32a7546ca3d1" title="_ve_envelope_clear" alt="" coords="174,5,311,32"/>
+<area shape="rect" id="node3" href="$libvorbis-1_83_83_2lib_2mdct_8c.html#a7d04c801e7732490ec2924cd72b1503f" title="mdct_clear" alt="" coords="361,31,447,57"/>
+<area shape="rect" id="node4" href="$psy_8c.html#affcd0e9240a0429b7507c9dff1cefc71" title="_vp_psy_clear" alt="" coords="189,107,296,133"/>
+<area shape="rect" id="node5" href="$libvorbis-1_83_83_2lib_2codec__internal_8h.html#a49f7f01467273e321456d340b7ad516a" title="_vp_global_free" alt="" coords="186,157,299,184"/>
+<area shape="rect" id="node6" href="$bitrate_8c.html#aed762eb6432773e3394b76c85c0d21bf" title="vorbis_bitrate_clear" alt="" coords="175,208,310,235"/>
+<area shape="rect" id="node7" href="$smallft_8c.html#a19cae782c7da6ddb94a2382c99771df8" title="drft_clear" alt="" coords="205,259,281,285"/>
+</map>

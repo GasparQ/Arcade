@@ -1,0 +1,5 @@
+<map id="MED_LoadTitle" name="MED_LoadTitle">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#ad1d4c0c8a443faa70de43e69afdf079f" title="_mm_read_M_ULONG" alt="" coords="165,5,320,32"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="195,56,291,83"/>
+<area shape="rect" id="node3" href="$mmio_8c.html#a8062e4c886a5616f3c498473d2aaa379" title="_mm_read_M_UWORD" alt="" coords="369,5,530,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="FLAC__stream_decoder_process_until_end_of_metadata" name="FLAC__stream_decoder_process_until_end_of_metadata">
+<area shape="rect" id="node2" href="$encode_8h.html#ac6dc72bc13bbdb309cb6750a0ab1231f" title="flac__encode_flac" alt="" coords="463,7,590,34"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a5238e5dfa3f41c2494cc396e22337136" title="See FLAC__stream_decoder_process_until_end_of_metadata() " alt="" coords="225,33,388,89"/>
+<area shape="rect" id="node4" href="$group__flac__stream__decoder.html#ga5c1c70de72e6ed49db6d61a9131d9117" title="FLAC__stream_decoder\l_seek_absolute" alt="" coords="225,112,388,153"/>
+<area shape="rect" id="node7" href="$playback_8h.html#aef0b63936cdc709d9ac68787ae084a00" title="FLAC_plugin__decoder_init" alt="" coords="216,178,397,205"/>
+<area shape="rect" id="node5" href="$class_f_l_a_c_1_1_decoder_1_1_stream.html#a859fee76dfa23c09e0b0f872b4a328aa" title="See FLAC__stream_decoder_seek_absolute() " alt="" coords="445,83,608,124"/>
+<area shape="rect" id="node6" href="$playback_8h.html#ab7826a4c1b16912b0db2f69f1a8b7e58" title="FLAC_plugin__seek" alt="" coords="457,149,596,175"/>
+</map>

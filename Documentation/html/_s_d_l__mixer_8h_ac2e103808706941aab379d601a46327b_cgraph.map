@@ -1,0 +1,11 @@
+<map id="Mix_FreeMusic" name="Mix_FreeMusic">
+<area shape="rect" id="node2" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="187,5,303,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="181,56,310,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__timer_8h.html#ae8050b95373b95249064467592ab4e21" title="Wait a specified number of milliseconds before returning. " alt="" coords="201,107,290,133"/>
+<area shape="rect" id="node5" href="$wavestream_8c.html#a75bb642c8a101846addeb60c46c8c2d5" title="WAVStream_FreeSong" alt="" coords="166,157,325,184"/>
+<area shape="rect" id="node6" href="$_s_d_l__stdinc_8h.html#a0e4ade894d550ada1fa19dc2d46e88b8" title="SDL_free" alt="" coords="395,183,472,209"/>
+<area shape="rect" id="node7" href="$native__midi_8h.html#a944bbcb96993695d0c839e649e8260c3" title="native_midi_freesong" alt="" coords="173,259,318,285"/>
+<area shape="rect" id="node8" href="$common_8c.html#af1c22febc3acaefcf4c031252295d196" title="skip" alt="" coords="222,309,269,336"/>
+<area shape="rect" id="node9" href="$playmidi_8c.html#aed65d4411f8556c53bad9351e0a176d7" title="Timidity_FreeSong" alt="" coords="180,360,311,387"/>
+<area shape="rect" id="node10" href="$instrum_8c.html#a35871da9c516c1ca54d37c7030027ee3" title="free_instruments" alt="" coords="374,360,493,387"/>
+</map>

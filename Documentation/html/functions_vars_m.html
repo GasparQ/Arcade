@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -116,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -129,6 +132,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>m
+: <a class="el" href="structvorbis__look__floor0.html#a2c97e5e8bd8f4e1e8ad0e75e76f614a2">vorbis_look_floor0</a>
+</li>
 <li>m_chronoName
 : <a class="el" href="class_i_chrono.html#ad30c81a922cd8495f531011c679a3923">IChrono</a>
 </li>
@@ -138,8 +144,158 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>m_dir
 : <a class="el" href="class_pacman_character.html#a234defe33e311a028b0ff0c6b52d59c4">PacmanCharacter</a>
 </li>
+<li>m_dwSongFlags
+: <a class="el" href="class_c_sound_file.html#aa386ceedee3a5432e961d677d049a422">CSoundFile</a>
+</li>
 <li>m_initPos
 : <a class="el" href="class_pacman_character.html#a79491bd93ccbdd291552328dea282ca2">PacmanCharacter</a>
+</li>
+<li>m_lpszPatternNames
+: <a class="el" href="class_c_sound_file.html#a87092685d958731a5609932936832ddf">CSoundFile</a>
+</li>
+<li>m_lpszSongComments
+: <a class="el" href="class_c_sound_file.html#af428c3cc7f2c96538b68827f52a79617">CSoundFile</a>
+</li>
+<li>m_MidiCfg
+: <a class="el" href="class_c_sound_file.html#ab7c03b57330e88ad3c6ae0c89d6b3fac">CSoundFile</a>
+</li>
+<li>m_MixPlugins
+: <a class="el" href="class_c_sound_file.html#a352a259685fc821759279b36089e5a9f">CSoundFile</a>
+</li>
+<li>m_nBufferCount
+: <a class="el" href="class_c_sound_file.html#a26dec7160bc05a5c693027fa884017a7">CSoundFile</a>
+</li>
+<li>m_nChannels
+: <a class="el" href="class_c_sound_file.html#a3aed1cc81b5e8957a12aa1bfc9db01df">CSoundFile</a>
+</li>
+<li>m_nCurrentPattern
+: <a class="el" href="class_c_sound_file.html#aa3c5b9176d4b34f8538c33379a50f8a1">CSoundFile</a>
+</li>
+<li>m_nDefaultGlobalVolume
+: <a class="el" href="class_c_sound_file.html#ae20e57d41cac192d096e1826d7e791c1">CSoundFile</a>
+</li>
+<li>m_nDefaultSpeed
+: <a class="el" href="class_c_sound_file.html#a943d1697ef82eed1450acad541bc6a6e">CSoundFile</a>
+</li>
+<li>m_nDefaultTempo
+: <a class="el" href="class_c_sound_file.html#a02ea3f94cb7f0c4015bac895a6581ceb">CSoundFile</a>
+</li>
+<li>m_nFrameDelay
+: <a class="el" href="class_c_sound_file.html#aaeecd35b1dffdfdc81f8ce333a035469">CSoundFile</a>
+</li>
+<li>m_nFreqFactor
+: <a class="el" href="class_c_sound_file.html#a9f78673ff8a8d3b3ebd2b30a39b2fdd4">CSoundFile</a>
+</li>
+<li>m_nGlobalFadeMaxSamples
+: <a class="el" href="class_c_sound_file.html#a86614d26fedc2c31afb97843d5e82dd1">CSoundFile</a>
+</li>
+<li>m_nGlobalFadeSamples
+: <a class="el" href="class_c_sound_file.html#aaf2227694c85d2410e4b43480e386968">CSoundFile</a>
+</li>
+<li>m_nGlobalVolume
+: <a class="el" href="class_c_sound_file.html#a575c2aada4b325352e8b33e61dd94bbb">CSoundFile</a>
+</li>
+<li>m_nInitialRepeatCount
+: <a class="el" href="class_c_sound_file.html#ad31c8fd0295890616f0493205e7e0a55">CSoundFile</a>
+</li>
+<li>m_nInstruments
+: <a class="el" href="class_c_sound_file.html#ad64f533a44280a1deb596dfa605ab72a">CSoundFile</a>
+</li>
+<li>m_nMasterVolume
+: <a class="el" href="class_c_sound_file.html#a66e6acd1f3bbefd0bc422db5766cba7b">CSoundFile</a>
+</li>
+<li>m_nMaxMixChannels
+: <a class="el" href="class_c_sound_file.html#a0ac24bbcfcca7a595641e8bc92e260bd">CSoundFile</a>
+</li>
+<li>m_nMaxOrderPosition
+: <a class="el" href="class_c_sound_file.html#aeece1064b7c3f347a1f0742c733ea890">CSoundFile</a>
+</li>
+<li>m_nMaxPeriod
+: <a class="el" href="class_c_sound_file.html#a2defb31bbf448f8c016ce5543d3edee5">CSoundFile</a>
+</li>
+<li>m_nMinPeriod
+: <a class="el" href="class_c_sound_file.html#a21c4cd79baae2a16beae860cbe1beb31">CSoundFile</a>
+</li>
+<li>m_nMixChannels
+: <a class="el" href="class_c_sound_file.html#ae5017a8707d8875672728331f1983981">CSoundFile</a>
+</li>
+<li>m_nMixStat
+: <a class="el" href="class_c_sound_file.html#acff24381d035166cae15d2afd8c6551a">CSoundFile</a>
+</li>
+<li>m_nMusicSpeed
+: <a class="el" href="class_c_sound_file.html#ab9ee3e4e0f5295fff8a91032911b5e5f">CSoundFile</a>
+</li>
+<li>m_nMusicTempo
+: <a class="el" href="class_c_sound_file.html#a367d8e5ba0e45d0205d36699ceccd952">CSoundFile</a>
+</li>
+<li>m_nNextPattern
+: <a class="el" href="class_c_sound_file.html#a4407bb4f18c8155795cebc196f9aca3e">CSoundFile</a>
+</li>
+<li>m_nNextRow
+: <a class="el" href="class_c_sound_file.html#ac78548f7c7e4ea4531b562c3576b86b5">CSoundFile</a>
+</li>
+<li>m_nOldGlbVolSlide
+: <a class="el" href="class_c_sound_file.html#a8d43cc20dfe1ed342cf5c2ddc7d6a662">CSoundFile</a>
+</li>
+<li>m_nPattern
+: <a class="el" href="class_c_sound_file.html#a3d075ba0462ec843da3ee68342e8e71d">CSoundFile</a>
+</li>
+<li>m_nPatternDelay
+: <a class="el" href="class_c_sound_file.html#a456b63fc16d0c38b5085dfe2f69ee644">CSoundFile</a>
+</li>
+<li>m_nPatternNames
+: <a class="el" href="class_c_sound_file.html#ad04b1ed4c76cbeda55534d57b92ce54f">CSoundFile</a>
+</li>
+<li>m_nProLogicDelay
+: <a class="el" href="class_c_sound_file.html#af7e1796edba8b8dc8ac0650b63f7f8f1">CSoundFile</a>
+</li>
+<li>m_nProLogicDepth
+: <a class="el" href="class_c_sound_file.html#af194222778596b080978b34daf0d776c">CSoundFile</a>
+</li>
+<li>m_nRepeatCount
+: <a class="el" href="class_c_sound_file.html#aa9503f15cec5be6bfa457a064e8f8cdf">CSoundFile</a>
+</li>
+<li>m_nRestartPos
+: <a class="el" href="class_c_sound_file.html#aa83f513c1dc96d870b58a81cc6d1f85a">CSoundFile</a>
+</li>
+<li>m_nReverbDelay
+: <a class="el" href="class_c_sound_file.html#ada5db6739d26801b9ed58fdd373dd113">CSoundFile</a>
+</li>
+<li>m_nReverbDepth
+: <a class="el" href="class_c_sound_file.html#aebf5089b57bc5aa818be59e73b6b024f">CSoundFile</a>
+</li>
+<li>m_nRow
+: <a class="el" href="class_c_sound_file.html#a8f39e0b7f4eaf589c4c56e77ce8beb32">CSoundFile</a>
+</li>
+<li>m_nSamples
+: <a class="el" href="class_c_sound_file.html#a9981aa3e19f1b0b28df0b8d17eb667dc">CSoundFile</a>
+</li>
+<li>m_nSongPreAmp
+: <a class="el" href="class_c_sound_file.html#a70a917d0b2990d1bcc38ea1b8099bfbc">CSoundFile</a>
+</li>
+<li>m_nStereoSeparation
+: <a class="el" href="class_c_sound_file.html#ae462498d4df71909e2a0331dda797b71">CSoundFile</a>
+</li>
+<li>m_nStreamVolume
+: <a class="el" href="class_c_sound_file.html#a5129dccc40a0daa0ab7c331023285aaf">CSoundFile</a>
+</li>
+<li>m_nTempoFactor
+: <a class="el" href="class_c_sound_file.html#a139c994437210dd793393612629e7321">CSoundFile</a>
+</li>
+<li>m_nTickCount
+: <a class="el" href="class_c_sound_file.html#a42b4195663c9aac1763d267f35580e54">CSoundFile</a>
+</li>
+<li>m_nTotalCount
+: <a class="el" href="class_c_sound_file.html#a0090d4d59ee50a0c6554bee95af327a4">CSoundFile</a>
+</li>
+<li>m_nType
+: <a class="el" href="class_c_sound_file.html#affb0c6135ab8c09daa3fe9a891831074">CSoundFile</a>
+</li>
+<li>m_nXBassDepth
+: <a class="el" href="class_c_sound_file.html#abcaecfb82e54c938d7650473c7b94a53">CSoundFile</a>
+</li>
+<li>m_nXBassRange
+: <a class="el" href="class_c_sound_file.html#a1298ca06cbfe665f0d1d16aa0e432844">CSoundFile</a>
 </li>
 <li>m_pos
 : <a class="el" href="class_pacman_character.html#ab8ee40b843ac98ba6cc91c0eed37cea4">PacmanCharacter</a>
@@ -153,32 +309,177 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>m_shapeCurses
 : <a class="el" href="class_pacman_character.html#a3ee3c43a14b42396f16066d401e21568">PacmanCharacter</a>
 </li>
+<li>m_szNames
+: <a class="el" href="class_c_sound_file.html#a3d4d7d0b4a7de28bfd439f5b9f27dcec">CSoundFile</a>
+</li>
+<li>m_val
+: <a class="el" href="structvorbis__look__psy.html#aacbda1e90ed61475b1d1c6d81adc0cbb">vorbis_look_psy</a>
+</li>
+<li>macro
+: <a class="el" href="struct___a_b_c_h_a_n_d_l_e.html#a0e8c37a632e6497325ba34583bce9696">_ABCHANDLE</a>
+</li>
+<li>Magic
+: <a class="el" href="struct___m_o_d_m_a_g_i_c.html#abdf07108de53b6da1da67ce309cf3b58">_MODMAGIC</a>
+</li>
+<li>magic1
+: <a class="el" href="struct_m_o_d_u_l_e_h_e_a_d_e_r.html#a4f4454e1e7b7d0425ff2e05e7234ac3f">MODULEHEADER</a>
+</li>
+<li>magic2
+: <a class="el" href="struct_f_a_r_h_e_a_d_e_r1.html#a1dd65b867885e736b850927e1cb7af63">FARHEADER1</a>
+, <a class="el" href="struct_m_o_d_u_l_e_h_e_a_d_e_r.html#a5397d482a7ae94877222564193181106">MODULEHEADER</a>
+</li>
 <li>magicNbr
 : <a class="el" href="structs__header.html#ab51b24a72fd3a2932a25723dcd93f668">s_header</a>
 </li>
 <li>magnitude
 : <a class="el" href="struct_s_d_l___haptic_periodic.html#aad0ad2b00c7e6959da627663d91f7b94">SDL_HapticPeriodic</a>
 </li>
+<li>main
+: <a class="el" href="struct_m_p___c_o_n_t_r_o_l.html#a65424d856d3b1c75c9a252b04b18f7b8">MP_CONTROL</a>
+, <a class="el" href="struct_m_p___v_o_i_c_e.html#a07343d3b72c97fff3d6daea468262b82">MP_VOICE</a>
+</li>
+<li>main_data_begin
+: <a class="el" href="structlayer3sideinfo.html#aa9c3c4c9a34a9280a5850e59c71c041f">layer3sideinfo</a>
+</li>
 <li>major
 : <a class="el" href="struct_s_d_l__version.html#ad7d7674532073eed237b90f546c97cd0">SDL_version</a>
+, <a class="el" href="struct_s_m_p_e_g__version.html#a881b1b5ef2b3ed813f9ee6f172231403">SMPEG_version</a>
+</li>
+<li>majorver
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#abcf50e918aa696855aa5a28fa8cd1c44">GDMHEADER</a>
 </li>
 <li>makearg
 : <a class="el" href="structtypenode.html#a361fb289b8401d190a3e4dcf221d01ec">typenode</a>
 </li>
+<li>managed
+: <a class="el" href="structbitrate__manager__state.html#a874d426e03e2fe791ffaa18772ec73ca">bitrate_manager_state</a>
+, <a class="el" href="structhighlevel__encode__setup.html#a232b52aae5a1dc432c2fde0859a9de30">highlevel_encode_setup</a>
+</li>
+<li>management_active
+: <a class="el" href="structovectl__ratemanage2__arg.html#aca1f656373a1597177dac924578e375b">ovectl_ratemanage2_arg</a>
+, <a class="el" href="structovectl__ratemanage__arg.html#ad792d1b89a5d07f0f0e90509df4bc606">ovectl_ratemanage_arg</a>
+</li>
+<li>manufacturer
+: <a class="el" href="struct_sampler_chunk.html#a7e4d79352e050e8d48d710dde023d027">SamplerChunk</a>
+</li>
 <li>map
-: <a class="el" href="struct_s_d_l___surface.html#a8c1ecad399b0d4f525b1a53b6ee9393f">SDL_Surface</a>
+: <a class="el" href="structcharset.html#a0f53b6016491dd02ea1a9d752e445989">charset</a>
+, <a class="el" href="struct_s_d_l___surface.html#a8c1ecad399b0d4f525b1a53b6ee9393f">SDL_Surface</a>
+, <a class="el" href="structvorbis__look__mapping0.html#abcf24eb175a06010a2d89a7d17d9c652">vorbis_look_mapping0</a>
+, <a class="el" href="structvorbis__look__residue0.html#a8e14d1ef44d4edc4fab8b4cea000925e">vorbis_look_residue0</a>
+, <a class="el" href="structvorbis__mapping__template.html#aa3f97dc5e56ab02a477dadbdddc2dd74">vorbis_mapping_template</a>
+</li>
+<li>map_param
+: <a class="el" href="structcodec__setup__info.html#a4a33ceeec5cd6169fc41fbcc0c5ba69d">codec_setup_info</a>
+</li>
+<li>map_type
+: <a class="el" href="structcodec__setup__info.html#a10316d9231be3a5956859fd9d0220e46">codec_setup_info</a>
+</li>
+<li>mapping
+: <a class="el" href="structvorbis__info__mode.html#a902c7f0a9aef3856261a62797d504fff">vorbis_info_mode</a>
+</li>
+<li>mappings
+: <a class="el" href="structve__setup__data__template.html#a1fae0454f1291ca150015e931e19c9c9">ve_setup_data_template</a>
+</li>
+<li>maps
+: <a class="el" href="structcodec__setup__info.html#a0631814413bb5e4cad9d6c34abea2d25">codec_setup_info</a>
+, <a class="el" href="structve__setup__data__template.html#ac7dcf3e49171d4960559c4cb32d08786">ve_setup_data_template</a>
+</li>
+<li>maptype
+: <a class="el" href="structstatic__codebook.html#a818d20b21c9c6c1d9472a09c4b063794">static_codebook</a>
 </li>
 <li>mark
-: <a class="el" href="structtag_m_e_n_u.html#a4b3375b4e049473666c797294f3c5a64">tagMENU</a>
+: <a class="el" href="structenvelope__lookup.html#a6f29d293e9145cc273c743b88e780639">envelope_lookup</a>
+, <a class="el" href="structtag_m_e_n_u.html#a4b3375b4e049473666c797294f3c5a64">tagMENU</a>
+</li>
+<li>marked_buffer
+: <a class="el" href="struct_m_p_e_gstream__marker.html#a28cdcfbd3c701b43bfcb6718c35557fa">MPEGstream_marker</a>
+</li>
+<li>marked_data
+: <a class="el" href="struct_m_p_e_gstream__marker.html#a256f79f876d36b369970e6a7a2915358">MPEGstream_marker</a>
+</li>
+<li>marked_stop
+: <a class="el" href="struct_m_p_e_gstream__marker.html#af794f6264023ba3f0634a165e3b3ac33">MPEGstream_marker</a>
+</li>
+<li>marker
+: <a class="el" href="struct_s69_h_e_a_d_e_r.html#afb5a8ffc0263fea321cbbb095999afb9">S69HEADER</a>
 </li>
 <li>marklen
 : <a class="el" href="structtag_m_e_n_u.html#a47d51e40d26ed413b1f66c7727d042a5">tagMENU</a>
+</li>
+<li>Mask
+: <a class="el" href="struct_dither_context.html#abb09fde51b8472ec21274b4fa595c132">DitherContext</a>
+</li>
+<li>master
+: <a class="el" href="struct_m_p___v_o_i_c_e.html#a36f6621d4e8c4822f097fc5f5e15eee7">MP_VOICE</a>
+</li>
+<li>master_volume
+: <a class="el" href="struct_control_mode.html#a8e9c9f4bba6385d729164222d075ab06">ControlMode</a>
+, <a class="el" href="struct_patch_header.html#a892cca1fdda0a2419b3d933b2ec35071">PatchHeader</a>
+</li>
+<li>masterbpm
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#afaa1a41778538714ba573936c3cdbf02">GDMHEADER</a>
+</li>
+<li>masterchn
+: <a class="el" href="struct_m_p___v_o_i_c_e.html#a4a0e411007d30389d9801caf95cbcfbb">MP_VOICE</a>
+</li>
+<li>mastermult
+: <a class="el" href="struct_i_m_f_h_e_a_d_e_r.html#abf0cefe863b030f8e3db26c581d1bcbc">IMFHEADER</a>
+, <a class="el" href="struct_s3_m_h_e_a_d_e_r.html#a79491dc29dc7d28835d74ebb3c2ee882">S3MHEADER</a>
+, <a class="el" href="struct_s_t_x_h_e_a_d_e_r.html#a2251293ad561550347d5712a6e00789c">STXHEADER</a>
+</li>
+<li>masterperiod
+: <a class="el" href="struct_m_p___v_o_i_c_e.html#a2d4a1aadda389e99bef37ce68433f014">MP_VOICE</a>
+</li>
+<li>mastertempo
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#a76e9d3aeddd708c023797ba1bbc9c187">GDMHEADER</a>
+</li>
+<li>mastervol
+: <a class="el" href="struct_d_s_m_s_o_n_g.html#abfaf53df9f3d7ea68e8ecbc8c3433392">DSMSONG</a>
+, <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#a35d9e635299f9b546035d58abb81ba0b">GDMHEADER</a>
+, <a class="el" href="struct_i_m_f_h_e_a_d_e_r.html#a4cbc6cdbee727fbbd843f9a3d185eb51">IMFHEADER</a>
+, <a class="el" href="struct_m_e_d_s_o_n_g.html#aa83273d55347281c29099db4dcf3d53d">MEDSONG</a>
+, <a class="el" href="struct_s3_m_h_e_a_d_e_r.html#ae12e99246068d281b762dd39b4e64054">S3MHEADER</a>
+, <a class="el" href="structtag_m_m_d0_s_o_n_g_h_e_a_d_e_r.html#a0f2bdaee5c79982e540f26cff7880a02">tagMMD0SONGHEADER</a>
+, <a class="el" href="structtag_m_m_d2_s_o_n_g_h_e_a_d_e_r.html#a5088e95838113297821dc8900cb7f93d">tagMMD2SONGHEADER</a>
+, <a class="el" href="structtag_s3_m_f_i_l_e_h_e_a_d_e_r.html#a51e613e12056a3e1d6f2c41ed46ffeaf">tagS3MFILEHEADER</a>
+</li>
+<li>max
+: <a class="el" href="structcharset.html#a35a17409926016f4c01050cac42aecab">charset</a>
+, <a class="el" href="structvqgen.html#adb896c1640a7b1d447562e7fe153385f">vqgen</a>
+</li>
+<li>max_bitsper
+: <a class="el" href="structbitrate__manager__state.html#a48f87c07fd01af4160d38c39d17aa1f2">bitrate_manager_state</a>
+</li>
+<li>max_blocksize
+: <a class="el" href="struct_f_l_a_c_____stream_metadata___stream_info.html#a0eda0a30574e0b51716f34c6a90912dc">FLAC__StreamMetadata_StreamInfo</a>
+</li>
+<li>max_buf_length
+: <a class="el" href="structvid__stream.html#af3175a955669dfe5e19be74e56a9157c">vid_stream</a>
+</li>
+<li>max_curve_dB
+: <a class="el" href="structvorbis__info__psy.html#a8aeb497662b106e241bd3232016aba66">vorbis_info_psy</a>
+</li>
+<li>max_framesize
+: <a class="el" href="struct_f_l_a_c_____stream_metadata___stream_info.html#a89e04506e5030310582fed83b9a36022">FLAC__StreamMetadata_StreamInfo</a>
+</li>
+<li>max_lpc_order
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_protected.html#a91a0efecfd54a6ccfbfbd9a868d481fb">FLAC__StreamEncoderProtected</a>
+</li>
+<li>max_rate
+: <a class="el" href="structbitrate__manager__info.html#a8694ec6266069b0e3521793ecd4e59d2">bitrate_manager_info</a>
+</li>
+<li>max_residual_partition_order
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_protected.html#ae9a433e562e96d008c8ecc9779ea8289">FLAC__StreamEncoderProtected</a>
 </li>
 <li>max_texture_height
 : <a class="el" href="struct_s_d_l___renderer_info.html#a87c6a13e8d535c2148f8913c05e13102">SDL_RendererInfo</a>
 </li>
 <li>max_texture_width
 : <a class="el" href="struct_s_d_l___renderer_info.html#a6e6757e3d5c1f0922adaba39380edfa6">SDL_RendererInfo</a>
+</li>
+<li>maxerr
+: <a class="el" href="structvorbis__info__floor1.html#a0119a5a0436ab3751c5c51c6e02098f6">vorbis_info_floor1</a>
 </li>
 <li>maxfield
 : <a class="el" href="structformnode.html#a78ed12c60c157f76c156fa8439c05ca6">formnode</a>
@@ -189,11 +490,114 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>maxnum
 : <a class="el" href="struct_s_d_l___r_wops.html#a7786282ec28451085908f70048ee32c8">SDL_RWops</a>
 </li>
+<li>maxover
+: <a class="el" href="structvorbis__info__floor1.html#ab582f5329d8755a0241d98b42a686ee4">vorbis_info_floor1</a>
+</li>
 <li>maxpage
 : <a class="el" href="structformnode.html#a468756d9c259113eef46c9e70c2a98a4">formnode</a>
 </li>
+<li>maxunder
+: <a class="el" href="structvorbis__info__floor1.html#a910797f6fa710faef66f673ed9752fc7">vorbis_info_floor1</a>
+</li>
+<li>mb_address
+: <a class="el" href="structmacroblock.html#a8adc37f925a11c9a96d7a741687f7814">macroblock</a>
+</li>
+<li>mb_height
+: <a class="el" href="structvid__stream.html#a0cf8d5e25210f52dc2fd636ad0f02f0e">vid_stream</a>
+</li>
+<li>mb_intra
+: <a class="el" href="structmacroblock.html#a8daa9c5b30634f2c351f5a022039fcbf">macroblock</a>
+, <a class="el" href="structmb__type__entry.html#ae330daccddeb54b4e4862b3717b45364">mb_type_entry</a>
+</li>
+<li>mb_motion_backward
+: <a class="el" href="structmb__type__entry.html#a53373628260cd8ed1f2394644a68a8d5">mb_type_entry</a>
+</li>
+<li>mb_motion_forward
+: <a class="el" href="structmb__type__entry.html#aaf1c0ad0661cdb0fe6e0f9a584555dc2">mb_type_entry</a>
+</li>
+<li>mb_pattern
+: <a class="el" href="structmb__type__entry.html#ab8d205c596ad643c6f631b0c70c5b42e">mb_type_entry</a>
+</li>
+<li>mb_qscale
+: <a class="el" href="structpict__image.html#a0d5db9bffd59fd03bf018b2ae785f5e0">pict_image</a>
+</li>
+<li>mb_quant
+: <a class="el" href="structmb__type__entry.html#a6821ccb02a3da16cf220db995229a0d3">mb_type_entry</a>
+</li>
+<li>mb_width
+: <a class="el" href="structvid__stream.html#a433a03a544fbe404e999675f03db1395">vid_stream</a>
+</li>
+<li>mbank
+: <a class="el" href="structtag_i_t_i_n_s_t_r_u_m_e_n_t.html#a9ac5578518958d4d40a8574c02b184e2">tagITINSTRUMENT</a>
+</li>
+<li>mBassAmount
+: <a class="el" href="struct___mod_plug___settings.html#a7b55a6dcc1648d72b417412fb296b425">_ModPlug_Settings</a>
+</li>
+<li>mBassRange
+: <a class="el" href="struct___mod_plug___settings.html#a5e457489a8f30b260d8f54deedcfa9c3">_ModPlug_Settings</a>
+</li>
+<li>mBits
+: <a class="el" href="struct___mod_plug___settings.html#ab49a2d1c5ab8afec56dafe1467529e92">_ModPlug_Settings</a>
+</li>
+<li>mblock
+: <a class="el" href="structvid__stream.html#a6441ea6f81d6c1f01ba40f11f7391123">vid_stream</a>
+</li>
+<li>mbtowc
+: <a class="el" href="structcharset.html#ab1b2d9011987666528ecefe91b3244c6">charset</a>
+</li>
+<li>mch
+: <a class="el" href="structtag_i_t_i_n_s_t_r_u_m_e_n_t.html#a461db45b13665d2d46623f5c5d7bb642">tagITINSTRUMENT</a>
+</li>
+<li>mChannels
+: <a class="el" href="struct___mod_plug___settings.html#a2280186258a8cef1567f93bb4da95c04">_ModPlug_Settings</a>
+</li>
+<li>md5_checking
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_protected.html#a7e9d6d7b49d4818180ac9de9a4e989bb">FLAC__StreamDecoderProtected</a>
+</li>
+<li>md5context
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#aca2ffc6b82be2383425a14f319467ee8">FLAC__StreamDecoderPrivate</a>
+, <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#a51b589c4479a224c6295a469b84e0e16">FLAC__StreamEncoderPrivate</a>
+</li>
+<li>md5sum
+: <a class="el" href="struct_f_l_a_c_____stream_metadata___stream_info.html#a3c558b8d3ffa8e5895d05455c985bfb4">FLAC__StreamMetadata_StreamInfo</a>
+</li>
+<li>mdct
+: <a class="el" href="structenvelope__lookup.html#a76d53a8e25d46b90080f89a14f798f59">envelope_lookup</a>
+</li>
+<li>mdct_win
+: <a class="el" href="structenvelope__lookup.html#afdef34e306699f8959e2cd930b0a2f9d">envelope_lookup</a>
+</li>
+<li>mean
+: <a class="el" href="structsubframe__stats__t.html#aec416770c6946c649c9b1d6805a00bfb">subframe_stats_t</a>
+</li>
+<li>MEDBlockPP
+: <a class="el" href="struct_m_e_d_h_e_a_d_e_r.html#adf3ae77b0b165e6b80ba04005b666b8b">MEDHEADER</a>
+</li>
+<li>MEDEXPP
+: <a class="el" href="struct_m_e_d_h_e_a_d_e_r.html#a4ce8900e203241e26429c070e73fd7bf">MEDHEADER</a>
+</li>
+<li>media_catalog_number
+: <a class="el" href="struct_f_l_a_c_____stream_metadata___cue_sheet.html#aed1bd1184405caecf55c0dbcc99d17bb">FLAC__StreamMetadata_CueSheet</a>
+</li>
+<li>MEDINSTHEADERPP
+: <a class="el" href="struct_m_e_d_h_e_a_d_e_r.html#a9f8a140ad49e243146a923ce7aa39c64">MEDHEADER</a>
+</li>
+<li>MEDSONGP
+: <a class="el" href="struct_m_e_d_h_e_a_d_e_r.html#af85a4dcb92ea6ba15688b498337b6e5d">MEDHEADER</a>
+</li>
 <li>mem
 : <a class="el" href="struct_s_d_l___r_wops.html#a9568591e25bfac9271a8ccc907cbd4d3">SDL_RWops</a>
+</li>
+<li>memseg
+: <a class="el" href="structtag_s3_m_s_a_m_p_l_e_s_t_r_u_c_t.html#ac2aef2deff37d6b7da2acb86223bde8b">tagS3MSAMPLESTRUCT</a>
+</li>
+<li>memsegh
+: <a class="el" href="struct_s3_m_s_a_m_p_l_e.html#ad0be1dae0e06e7a4797756218fcbf49b">S3MSAMPLE</a>
+, <a class="el" href="struct_s_t_x_s_a_m_p_l_e.html#a241514e631efce2ba57023b51c4d0bcc">STXSAMPLE</a>
+</li>
+<li>memsegl
+: <a class="el" href="struct_s3_m_s_a_m_p_l_e.html#aff91790fba669b0a60b5a417f11fe281">S3MSAMPLE</a>
+, <a class="el" href="struct_s_t_x_s_a_m_p_l_e.html#ad7b24223d6ff288733471f5d39480c9c">STXSAMPLE</a>
 </li>
 <li>menuinit
 : <a class="el" href="structtag_m_e_n_u.html#ab46c2af8ea53f236b3657a1ef7381695">tagMENU</a>
@@ -202,32 +606,322 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structtag_m_e_n_u.html#ac509f466b0494fc5efe997ec6e2ec6b8">tagMENU</a>
 </li>
 <li>message
-: <a class="el" href="struct_s_d_l___message_box_data.html#ada6ae208a1f85adabbd7a7a08ca609c8">SDL_MessageBoxData</a>
+: <a class="el" href="struct_s69_h_e_a_d_e_r.html#afbbc8e0317947830bb5ae6dd122b303c">S69HEADER</a>
+, <a class="el" href="struct_s_d_l___message_box_data.html#ada6ae208a1f85adabbd7a7a08ca609c8">SDL_MessageBoxData</a>
+</li>
+<li>messagelen
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#a3a1ed032ce78e820dcac5d065334ae9e">GDMHEADER</a>
+</li>
+<li>messageloc
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#a0686118c4d6de8e2f813e0f84652c791">GDMHEADER</a>
+</li>
+<li>metadata
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_protected.html#ad296447a20c5d7aeda4de51b845d12ee">FLAC__StreamEncoderProtected</a>
+, <a class="el" href="structstatic__metadata__t.html#aeaef1febb6fcbd68dbb600641e70c826">static_metadata_t</a>
+</li>
+<li>metadata_blocks
+: <a class="el" href="struct_f_l_a_c_decoder_data.html#acf28dcfe70826a45eddef676a6afd810">FLACDecoderData</a>
+</li>
+<li>metadata_callback
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#a45879877f15a96ec5d05df4a8893ed96">FLAC__StreamDecoderPrivate</a>
+, <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#ab3331280f777a0f9e4187b4342df37d1">FLAC__StreamEncoderPrivate</a>
+</li>
+<li>metadata_filter
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#a3f07fd361920576396a9a0a82d44b625">FLAC__StreamDecoderPrivate</a>
+</li>
+<li>metadata_filter_ids
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#af0f3e0d4bb47cf4984b92ce53ec16223">FLAC__StreamDecoderPrivate</a>
+</li>
+<li>metadata_filter_ids_capacity
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#a622f5fb1e25a82a422a8cd2c2195757f">FLAC__StreamDecoderPrivate</a>
+</li>
+<li>metadata_filter_ids_count
+: <a class="el" href="struct_f_l_a_c_____stream_decoder_private.html#a4c0d3dcc57cdbccc06c3e98c4aa4d547">FLAC__StreamDecoderPrivate</a>
+</li>
+<li>metric_func
+: <a class="el" href="structvqgen.html#ac2230570b89d0e3218ab17d5c0bee839">vqgen</a>
+</li>
+<li>mflag
+: <a class="el" href="struct_m_p___v_o_i_c_e.html#aae49b359188f2e61ef10188af5f43675">MP_VOICE</a>
+</li>
+<li>mFlags
+: <a class="el" href="struct___mod_plug___settings.html#a6d6696417c4caff3f09d36baf92006b7">_ModPlug_Settings</a>
+</li>
+<li>mFrequency
+: <a class="el" href="struct___mod_plug___settings.html#aaec207c7aa654b3de485ed02341da356">_ModPlug_Settings</a>
 </li>
 <li>mgesture
 : <a class="el" href="union_s_d_l___event.html#ac19b3c6a6b5181a51eb4fbe2cbe726a9">SDL_Event</a>
 </li>
+<li>MIDI_pitch_fraction
+: <a class="el" href="struct_sampler_chunk.html#a0c472e9e394569a4d12cb3c5939354e8">SamplerChunk</a>
+</li>
+<li>MIDI_unity_note
+: <a class="el" href="struct_sampler_chunk.html#acd703692dc3a4681c86ae390aa5726b7">SamplerChunk</a>
+</li>
+<li>midich
+: <a class="el" href="struct_m_e_d_s_a_m_p_l_e.html#a395bb57231d46277a45a73a41b694f9d">MEDSAMPLE</a>
+, <a class="el" href="structtag_m_m_d0_s_a_m_p_l_e.html#aa901993722182d068cfb4c78a4c174ed">tagMMD0SAMPLE</a>
+</li>
+<li>midiformat
+: <a class="el" href="struct___m_i_d_h_a_n_d_l_e.html#a6ea6e47d37c08b4c87c949f648845cc2">_MIDHANDLE</a>
+</li>
+<li>midipreset
+: <a class="el" href="struct_m_e_d_s_a_m_p_l_e.html#a9bd2c8d8e9db702d5958177db89d54fa">MEDSAMPLE</a>
+, <a class="el" href="structtag_m_m_d0_s_a_m_p_l_e.html#aaf21017a6da86b652c25460c246298e4">tagMMD0SAMPLE</a>
+</li>
+<li>midispeed
+: <a class="el" href="struct___m_i_d_h_a_n_d_l_e.html#a75e5d79828907e24414113e7ff34468e">_MIDHANDLE</a>
+</li>
+<li>miditracks
+: <a class="el" href="struct___m_i_d_h_a_n_d_l_e.html#a39fbc726cbe9edb25316c61ea2717f4c">_MIDHANDLE</a>
+</li>
+<li>mime_type
+: <a class="el" href="struct_f_l_a_c_____stream_metadata___picture.html#ab5ae52ba78f82f37d7ba280b876df371">FLAC__StreamMetadata_Picture</a>
+, <a class="el" href="struct_picture_file.html#a90610e2bb707c30a88a35283fe4b686c">PictureFile</a>
+</li>
+<li>min
+: <a class="el" href="structquant__meta.html#a5994b11f43c8e9582499578b39db0ff4">quant_meta</a>
+</li>
+<li>min_bitsper
+: <a class="el" href="structbitrate__manager__state.html#aa854e0d6bcb60dc3cf27dd5190c70345">bitrate_manager_state</a>
+</li>
+<li>min_blocksize
+: <a class="el" href="struct_f_l_a_c_____stream_metadata___stream_info.html#ad999bb6f695206464df8d76126812572">FLAC__StreamMetadata_StreamInfo</a>
+</li>
+<li>min_framesize
+: <a class="el" href="struct_f_l_a_c_____stream_metadata___stream_info.html#a4f9408c082ef8bb4f14a8da6e8e24fd4">FLAC__StreamMetadata_StreamInfo</a>
+</li>
+<li>min_rate
+: <a class="el" href="structbitrate__manager__info.html#a70b89ca96ddf87dc93eac879429c0d5d">bitrate_manager_info</a>
+</li>
+<li>min_residual_partition_order
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_protected.html#af50dd0ed78f5580bff0c60c199ae9039">FLAC__StreamEncoderProtected</a>
+</li>
+<li>mindist
+: <a class="el" href="structvqgen.html#aa72b518c7597827d46cadcbf321ae176">vqgen</a>
+</li>
+<li>minenergy
+: <a class="el" href="structenvelope__lookup.html#ac6bb522bcac62b0c384101da560729ac">envelope_lookup</a>
+</li>
+<li>minmax_reservoir
+: <a class="el" href="structbitrate__manager__state.html#a16a7b9cb7bcc4f9d86efef9fda083fb9">bitrate_manager_state</a>
+</li>
 <li>minor
 : <a class="el" href="struct_s_d_l__version.html#a6c35c7bf80245028d5970e6a504ecf57">SDL_version</a>
+, <a class="el" href="struct_s_m_p_e_g__version.html#ab8314c9f3c6987f6147214a7f6ef808f">SMPEG_version</a>
+</li>
+<li>minorver
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#ad50fcd39b5071822350deda3a1eae2ee">GDMHEADER</a>
+</li>
+<li>minval
+: <a class="el" href="structcodebook.html#af5e852ab410920fe29bcaae8552cd491">codebook</a>
+</li>
+<li>misc
+: <a class="el" href="structoutput__config__t.html#a0e1425ecb4c42186411dc0cd53e859c2">output_config_t</a>
+</li>
+<li>mix_echodepth
+: <a class="el" href="structtag_m_m_d2_s_o_n_g_h_e_a_d_e_r.html#ac89659d17ae423f3b93535c6f43d2bd7">tagMMD2SONGHEADER</a>
+</li>
+<li>mix_echolen
+: <a class="el" href="structtag_m_m_d2_s_o_n_g_h_e_a_d_e_r.html#a53cb6aa735703ac9714c5703bccbda36">tagMMD2SONGHEADER</a>
+</li>
+<li>mix_echotype
+: <a class="el" href="structtag_m_m_d2_s_o_n_g_h_e_a_d_e_r.html#aeb0a4156bd90f8eb5e8e8a429047c363">tagMMD2SONGHEADER</a>
+</li>
+<li>mix_stereosep
+: <a class="el" href="structtag_m_m_d2_s_o_n_g_h_e_a_d_e_r.html#ac4e8ebc6d3ef2be79a48e10a6d3f1106">tagMMD2SONGHEADER</a>
+</li>
+<li>mixed_block_flag
+: <a class="el" href="structlayer3grinfo.html#a97aa842d4d560ca34f373590c14cf4d8">layer3grinfo</a>
+</li>
+<li>mixvol
+: <a class="el" href="struct_i_t_h_e_a_d_e_r.html#a127e686ebca5b84cc60710bede78eab8">ITHEADER</a>
+</li>
+<li>mLoopCount
+: <a class="el" href="struct___mod_plug___settings.html#a3b254e6c9ea5242943adf5bf1362a5fd">_ModPlug_Settings</a>
+</li>
+<li>mm
+: <a class="el" href="struct_m_m_f_i_l_e.html#a1796ff157c321e61fd8530a75e12953e">MMFILE</a>
+</li>
+<li>mMaxMixChannels
+: <a class="el" href="struct___mod_plug___settings.html#ab81e368c3b7fe205089dc4afae94e626">_ModPlug_Settings</a>
+</li>
+<li>mmdcmd3x
+: <a class="el" href="structtag_m_m_d0_e_x_p.html#aa8211480c448244056f4cca6afc925ed">tagMMD0EXP</a>
+</li>
+<li>mmdflags
+: <a class="el" href="structtag_m_e_d_m_o_d_u_l_e_h_e_a_d_e_r.html#a8ae7ba174b62fb79a7b0ebea46f01d57">tagMEDMODULEHEADER</a>
+</li>
+<li>mmdinfo
+: <a class="el" href="structtag_m_m_d0_e_x_p.html#af50ca5d67560d71682e2c4a9051c7be6">tagMMD0EXP</a>
+</li>
+<li>mmdrexx
+: <a class="el" href="structtag_m_m_d0_e_x_p.html#a3195e0f3cd10ba234eb239dd910c4b06">tagMMD0EXP</a>
+</li>
+<li>mmf
+: <a class="el" href="struct___m_i_d_h_a_n_d_l_e.html#a9b935090202043af90a7153ffe87a6af">_MIDHANDLE</a>
+</li>
+<li>mmx
+: <a class="el" href="struct_f_l_a_c_____c_p_u_info___i_a32.html#ae74d19eba2710ba7ca8e086c46877189">FLAC__CPUInfo_IA32</a>
 </li>
 <li>mod
 : <a class="el" href="struct_s_d_l___keysym.html#ab519d1b8a9939d3d035f7103f3208291">SDL_Keysym</a>
 </li>
 <li>mode
-: <a class="el" href="struct_s_d_l___window_shape_mode.html#a40ebd8b9a76d982cbd87563386cc05de">SDL_WindowShapeMode</a>
+: <a class="el" href="struct_m_p_e_g___audio_info.html#ac42683b8692037d6ed9483ae3ebecfd8">MPEG_AudioInfo</a>
+, <a class="el" href="structprivate__state.html#a278f2738d26a81d0739d0e64653d5a05">private_state</a>
+, <a class="el" href="struct_s_d_l___window_shape_mode.html#a40ebd8b9a76d982cbd87563386cc05de">SDL_WindowShapeMode</a>
+, <a class="el" href="structvorbis__block.html#adab44bb8520c9d5daafee3f1a1bcf538">vorbis_block</a>
+, <a class="el" href="structvorbis__look__mapping0.html#a20b958135c2040b5d958aadf8cbf2192">vorbis_look_mapping0</a>
+</li>
+<li>mode_param
+: <a class="el" href="structcodec__setup__info.html#a942e34d46ed1b0c1a48a8f3fd649d19e">codec_setup_info</a>
+</li>
+<li>modebits
+: <a class="el" href="structprivate__state.html#a3178cdb14e6be6dc5673637d187f8a7b">private_state</a>
+</li>
+<li>modEnvToFilterFc
+: <a class="el" href="struct_sample.html#a59ed22f435eff25877c13df2194d6959">Sample</a>
+</li>
+<li>modEnvToPitch
+: <a class="el" href="struct_sample.html#a7bf441f425d66b43d67667a5809b716f">Sample</a>
+</li>
+<li>modes
+: <a class="el" href="structcodec__setup__info.html#a922009abe4668e454cc238a6c27b337d">codec_setup_info</a>
+, <a class="el" href="struct_sample.html#a75817754b56ae3244022a85ab928492a">Sample</a>
+, <a class="el" href="struct_wave_header.html#a4f3000eda19e7afbd524caea7e704b04">WaveHeader</a>
+</li>
+<li>modlen
+: <a class="el" href="struct_m_e_d_h_e_a_d_e_r.html#a0da22a6ff818fff406b0155a6577cf1c">MEDHEADER</a>
+, <a class="el" href="structtag_m_e_d_m_o_d_u_l_e_h_e_a_d_e_r.html#a81599bbd80b0e433c4d4d6bd4aa01ece">tagMEDMODULEHEADER</a>
+</li>
+<li>modLfoToFilterFc
+: <a class="el" href="struct_sample.html#adbd3ba8588476a5b060e9e6a13562a48">Sample</a>
+</li>
+<li>modtype
+: <a class="el" href="struct_m_o_d_u_l_e.html#a962eb9b2a71a1c5924c2f87a3e66df8d">MODULE</a>
+</li>
+<li>modulation_counter
+: <a class="el" href="struct_voice.html#a5c6e1fbbf9cb58383bf4553adb544af2">Voice</a>
+</li>
+<li>modulation_delay
+: <a class="el" href="struct_voice.html#a689abb1efdf1c8e25622810a1d940c61">Voice</a>
+</li>
+<li>modulation_increment
+: <a class="el" href="struct_voice.html#ac517571a658625df1926e14c48c4aef9">Voice</a>
+</li>
+<li>modulation_offset
+: <a class="el" href="struct_sample.html#ab971862cb2ae47416e45e122fdefc7c8">Sample</a>
+</li>
+<li>modulation_rate
+: <a class="el" href="struct_sample.html#adc433a1d87ead42d3cebb908d0eb71ea">Sample</a>
+</li>
+<li>modulation_stage
+: <a class="el" href="struct_voice.html#a7b69cbced11e5596f9b939cd0afc0d60">Voice</a>
+</li>
+<li>modulation_target
+: <a class="el" href="struct_voice.html#a227a3ebf80f0b99e26b9f67a12336629">Voice</a>
+</li>
+<li>modulation_volume
+: <a class="el" href="struct_voice.html#a8e18560da403a876083aef51e18a36a0">Voice</a>
+</li>
+<li>mono
+: <a class="el" href="struct_channel.html#abbba31f97be2188ad4441652d776a9ec">Channel</a>
 </li>
 <li>motion
 : <a class="el" href="union_s_d_l___event.html#ac3c89e190faacbe84280cd539453bab6">SDL_Event</a>
+</li>
+<li>motion_h_back_code
+: <a class="el" href="structmacroblock.html#ae35d611845e10485ea2b342a9a04b57e">macroblock</a>
+</li>
+<li>motion_h_back_r
+: <a class="el" href="structmacroblock.html#a4791bb28bae75ecfa0d76404dcad7c35">macroblock</a>
+</li>
+<li>motion_h_forw_code
+: <a class="el" href="structmacroblock.html#a011d2305352c79c228fbb3f35313dedf">macroblock</a>
+</li>
+<li>motion_h_forw_r
+: <a class="el" href="structmacroblock.html#a955ad7d4beaf987c99ddcc019db19967">macroblock</a>
+</li>
+<li>motion_v_back_code
+: <a class="el" href="structmacroblock.html#a6752de10535c5faab56001f6050e82b7">macroblock</a>
+</li>
+<li>motion_v_back_r
+: <a class="el" href="structmacroblock.html#a4f412c07b08a4032122a85ebb25f4219">macroblock</a>
+</li>
+<li>motion_v_forw_code
+: <a class="el" href="structmacroblock.html#aa94a40eabbaa85a602a1736b6a5aa662">macroblock</a>
+</li>
+<li>motion_v_forw_r
+: <a class="el" href="structmacroblock.html#a5dce0f4c24a42621c25ffa75b65ae40b">macroblock</a>
+</li>
+<li>mpeg
+: <a class="el" href="class_m_p_e_gaudio.html#a4e803c8931682e6743f38e294da413f5">MPEGaudio</a>
+, <a class="el" href="class_m_p_e_gvideo.html#a951fd6cd20ce4d2a0ceb3bbdd5e02397">MPEGvideo</a>
+</li>
+<li>mpeg_mem
+: <a class="el" href="class_m_p_e_g.html#a528d3bdbcff123926449230e86cfb9f1">MPEG</a>
+</li>
+<li>mpegversion
+: <a class="el" href="struct_m_p_e_g___audio_info.html#aeb3b0e70ded2281b9680a26e14f38ecd">MPEG_AudioInfo</a>
+</li>
+<li>mpr
+: <a class="el" href="structtag_i_t_i_n_s_t_r_u_m_e_n_t.html#adc6d10b9bc5d72aa1d3afe19ab8d9507">tagITINSTRUMENT</a>
+</li>
+<li>mResamplingMode
+: <a class="el" href="struct___mod_plug___settings.html#a00d3645339ec6ccdd8b154b86d392942">_ModPlug_Settings</a>
+</li>
+<li>mReverbDelay
+: <a class="el" href="struct___mod_plug___settings.html#ac29c29f77e76f3009271379c8a2b7f85">_ModPlug_Settings</a>
+</li>
+<li>mReverbDepth
+: <a class="el" href="struct___mod_plug___settings.html#a3088c928cd67803cbe95e69adbcd0f9b">_ModPlug_Settings</a>
 </li>
 <li>msg
 : <a class="el" href="struct_s_d_l___sys_w_m_event.html#ad5e3dc68aa15582cd0641847d41c74e8">SDL_SysWMEvent</a>
 , <a class="el" href="struct_s_d_l___sys_w_mmsg.html#ac9ed89f07048f0a644baf139ea29984e">SDL_SysWMmsg</a>
 </li>
+<li>msglength
+: <a class="el" href="struct_i_t_h_e_a_d_e_r.html#a9316f9fec2d3db250af07e734e15b090">ITHEADER</a>
+, <a class="el" href="structtag_i_t_f_i_l_e_h_e_a_d_e_r.html#a60c60ad7166d5c88bb25eaf72d139f1f">tagITFILEHEADER</a>
+</li>
+<li>msgoffset
+: <a class="el" href="struct_i_t_h_e_a_d_e_r.html#a5899fce018b51afec3ee42d4c9ef7dfe">ITHEADER</a>
+, <a class="el" href="structtag_i_t_f_i_l_e_h_e_a_d_e_r.html#a1b02495dc3cebd96ea1f27e51f475bab">tagITFILEHEADER</a>
+</li>
+<li>mSoundFile
+: <a class="el" href="struct___mod_plug_file.html#ac0a14c830516e40209ac6f7cb5d5bf35">_ModPlugFile</a>
+</li>
+<li>mStereoSeparation
+: <a class="el" href="struct___mod_plug___settings.html#a2906101705684b05d16f1212365d291c">_ModPlug_Settings</a>
+</li>
+<li>mSurroundDelay
+: <a class="el" href="struct___mod_plug___settings.html#add6f7a33c37bc48fc64410f0677c38d3">_ModPlug_Settings</a>
+</li>
+<li>mSurroundDepth
+: <a class="el" href="struct___mod_plug___settings.html#ab7b85a1f1b55f106534a0617696ee5ff">_ModPlug_Settings</a>
+</li>
+<li>mult
+: <a class="el" href="structvorbis__info__floor1.html#a431d5bb1a6aec9746726cfdf737d5ac0">vorbis_info_floor1</a>
+</li>
+<li>mute
+: <a class="el" href="struct___a_b_c_t_r_a_c_k.html#a8d922f18251175dadb49cb2b050c94ca">_ABCTRACK</a>
+</li>
+<li>muted
+: <a class="el" href="struct_m_p___c_o_n_t_r_o_l.html#a22627559acd1399af1e6d85b9432cff0">MP_CONTROL</a>
+</li>
+<li>mutex
+: <a class="el" href="class_m_p_e_gstream.html#a9663f5f3d46a822a56f04308a285eee1">MPEGstream</a>
+</li>
+<li>mv
+: <a class="el" href="structtag_i_t_f_i_l_e_h_e_a_d_e_r.html#a406963fc51dd3810f6aae06c3d27ba2c">tagITFILEHEADER</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

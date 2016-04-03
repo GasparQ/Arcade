@@ -1,0 +1,5 @@
+<map id="PP20_Unpack" name="PP20_Unpack">
+<area shape="rect" id="node2" href="$stdafx_8h.html#a4d1b58b0db2411b4dcd711cac07ef041" title="GlobalAllocPtr" alt="" coords="169,5,274,32"/>
+<area shape="rect" id="node3" href="$mmcmp_8cpp.html#a56e03c67f519ad0e87d36a83e7519c82" title="PP20_DoUnpack" alt="" coords="160,56,283,83"/>
+<area shape="rect" id="node4" href="$struct___p_p_b_i_t_b_u_f_f_e_r.html#a416b3830ab00f81c0e17b59d1a223891" title="_PPBITBUFFER::GetBits" alt="" coords="331,56,506,83"/>
+</map>

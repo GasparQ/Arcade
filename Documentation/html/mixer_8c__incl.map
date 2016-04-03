@@ -1,0 +1,30 @@
+<map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/mixer.c" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/mixer.c">
+<area shape="rect" id="node5" href="$_s_d_l__mutex_8h.html" title="SDL_mutex.h" alt="" coords="467,432,569,459"/>
+<area shape="rect" id="node22" href="$_s_d_l__endian_8h.html" title="SDL_endian.h" alt="" coords="1887,349,1991,376"/>
+<area shape="rect" id="node23" href="$_s_d_l__timer_8h.html" title="SDL_timer.h" alt="" coords="177,432,271,459"/>
+<area shape="rect" id="node24" href="$_s_d_l__mixer_8h.html" title="SDL_mixer.h" alt="" coords="1748,184,1847,211"/>
+<area shape="rect" id="node30" href="$load__aiff_8h.html" title="load_aiff.h" alt="" coords="2133,109,2215,136"/>
+<area shape="rect" id="node31" href="$load__voc_8h.html" title="load_voc.h" alt="" coords="2240,109,2325,136"/>
+<area shape="rect" id="node32" href="$load__mp3_8h.html" title="load_mp3.h" alt="" coords="2350,109,2439,136"/>
+<area shape="rect" id="node33" href="$load__ogg_8h.html" title="load_ogg.h" alt="" coords="2464,109,2549,136"/>
+<area shape="rect" id="node34" href="$load__flac_8h.html" title="load_flac.h" alt="" coords="2573,109,2659,136"/>
+<area shape="rect" id="node35" href="$dynamic__flac_8h.html" title="dynamic_flac.h" alt="" coords="2683,109,2793,136"/>
+<area shape="rect" id="node36" href="$dynamic__fluidsynth_8h.html" title="dynamic_fluidsynth.h" alt="" coords="2818,109,2963,136"/>
+<area shape="rect" id="node37" href="$dynamic__modplug_8h.html" title="dynamic_modplug.h" alt="" coords="2988,109,3127,136"/>
+<area shape="rect" id="node38" href="$dynamic__mod_8h.html" title="dynamic_mod.h" alt="" coords="3151,109,3265,136"/>
+<area shape="rect" id="node39" href="$dynamic__mp3_8h.html" title="dynamic_mp3.h" alt="" coords="3289,109,3404,136"/>
+<area shape="rect" id="node40" href="$dynamic__ogg_8h.html" title="dynamic_ogg.h" alt="" coords="3429,109,3539,136"/>
+<area shape="rect" id="node41" href="$effects__internal_8h.html" title="effects_internal.h" alt="" coords="1835,109,1957,136"/>
+<area shape="rect" id="node6" href="$_s_d_l__stdinc_8h.html" title="SDL_stdinc.h" alt="" coords="1232,605,1333,632"/>
+<area shape="rect" id="node9" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="1299,829,1397,856"/>
+<area shape="rect" id="node10" href="$close__code_8h.html" title="close_code.h" alt="" coords="260,829,359,856"/>
+<area shape="rect" id="node21" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="630,523,721,549"/>
+<area shape="rect" id="node7" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="736,680,837,707"/>
+<area shape="rect" id="node11" href="$types_8h.html" title="sys/types.h" alt="" coords="1613,680,1704,707"/>
+<area shape="rect" id="node8" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="449,755,561,781"/>
+<area shape="rect" id="node25" href="$_s_d_l__rwops_8h.html" title="../../Graphique/SDL2\l/include/SDL_rwops.h" alt="" coords="1329,425,1479,466"/>
+<area shape="rect" id="node26" href="$_s_d_l__audio_8h.html" title="../../Graphique/SDL2\l/include/SDL_audio.h" alt="" coords="1209,259,1356,301"/>
+<area shape="rect" id="node29" href="$_s_d_l__version_8h.html" title="../../Graphique/SDL2\l/include/SDL_version.h" alt="" coords="1761,515,1919,557"/>
+<area shape="rect" id="node27" href="$_s_d_l__thread_8h.html" title="SDL_thread.h" alt="" coords="569,349,671,376"/>
+<area shape="rect" id="node28" href="$_s_d_l__atomic_8h.html" title="SDL_atomic.h" alt="" coords="449,523,553,549"/>
+</map>

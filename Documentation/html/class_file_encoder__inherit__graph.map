@@ -1,0 +1,4 @@
+<map id="FileEncoder" name="FileEncoder">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_encoder_1_1_file.html" title="This class wraps the FLAC__StreamEncoder. If you are not encoding to a file, you may need to use FLAC..." alt="" coords="16,80,156,107"/>
+<area shape="rect" id="node3" href="$class_f_l_a_c_1_1_encoder_1_1_stream.html" title="This class wraps the FLAC__StreamEncoder. If you are encoding to a file, FLAC::Encoder::File may be m..." alt="" coords="5,5,168,32"/>
+</map>

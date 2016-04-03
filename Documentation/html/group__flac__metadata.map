@@ -1,0 +1,7 @@
+<map id="FLAC/metadata.h: metadata interfaces" name="FLAC/metadata.h: metadata interfaces">
+<area shape="rect" id="node1" href="$group__flac.html" title="FLAC C API" alt="" coords="5,111,101,137"/>
+<area shape="rect" id="node3" href="$group__flac__metadata__object.html" title="This module contains methods for manipulating FLAC metadata objects. " alt="" coords="384,5,571,46"/>
+<area shape="rect" id="node4" href="$group__flac__metadata__level0.html" title="The level 0 interface consists of individual routines to read the STREAMINFO, VORBIS_COMMENT, CUESHEET, and PICTURE blocks, requiring only a filename. " alt="" coords="384,70,571,111"/>
+<area shape="rect" id="node5" href="$group__flac__metadata__level1.html" title="The level 1 interface provides read&#45;write access to FLAC file metadata and operates directly on the F..." alt="" coords="384,135,571,177"/>
+<area shape="rect" id="node6" href="$group__flac__metadata__level2.html" title="The level 2 interface provides read&#45;write access to FLAC file metadata; all metadata is read into mem..." alt="" coords="384,201,571,242"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CSoundFile::SetWaveConfig" name="CSoundFile::SetWaveConfig">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#ae4c2cc893cd56a391b5791eaf5eb7fe6" title="CSoundFile::InitPlayer" alt="" coords="246,5,399,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#a6c5c062066e96947cbb34a0179a87951" title="CSoundFile::InitializeDSP" alt="" coords="449,5,623,32"/>
+</map>

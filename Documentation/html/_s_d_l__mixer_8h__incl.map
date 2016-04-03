@@ -1,0 +1,16 @@
+<map id="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/SDL_mixer.h" name="/home/veyrie_f/Documents/cpp_arcade/Graphique/SDL2_mixer/SDL_mixer.h">
+<area shape="rect" id="node2" href="$_s_d_l__stdinc_8h.html" title="../../Graphique/SDL2\l/include/SDL_stdinc.h" alt="" coords="941,457,1091,498"/>
+<area shape="rect" id="node5" href="$begin__code_8h.html" title="begin_code.h" alt="" coords="209,696,308,723"/>
+<area shape="rect" id="node6" href="$close__code_8h.html" title="close_code.h" alt="" coords="1881,696,1980,723"/>
+<area shape="rect" id="node20" href="$_s_d_l__rwops_8h.html" title="../../Graphique/SDL2\l/include/SDL_rwops.h" alt="" coords="97,275,247,317"/>
+<area shape="rect" id="node22" href="$_s_d_l__audio_8h.html" title="../../Graphique/SDL2\l/include/SDL_audio.h" alt="" coords="513,110,660,151"/>
+<area shape="rect" id="node23" href="$_s_d_l__endian_8h.html" title="SDL_endian.h" alt="" coords="964,373,1068,400"/>
+<area shape="rect" id="node27" href="$_s_d_l__version_8h.html" title="../../Graphique/SDL2\l/include/SDL_version.h" alt="" coords="1872,366,2029,407"/>
+<area shape="rect" id="node3" href="$_s_d_l__config_8h.html" title="SDL_config.h" alt="" coords="1640,547,1741,573"/>
+<area shape="rect" id="node7" href="$types_8h.html" title="sys/types.h" alt="" coords="600,547,691,573"/>
+<area shape="rect" id="node4" href="$_s_d_l__platform_8h.html" title="SDL_platform.h" alt="" coords="1659,621,1772,648"/>
+<area shape="rect" id="node21" href="$_s_d_l__error_8h.html" title="SDL_error.h" alt="" coords="246,373,337,400"/>
+<area shape="rect" id="node24" href="$_s_d_l__mutex_8h.html" title="SDL_mutex.h" alt="" coords="375,283,477,309"/>
+<area shape="rect" id="node25" href="$_s_d_l__thread_8h.html" title="SDL_thread.h" alt="" coords="535,200,637,227"/>
+<area shape="rect" id="node26" href="$_s_d_l__atomic_8h.html" title="SDL_atomic.h" alt="" coords="1742,373,1847,400"/>
+</map>

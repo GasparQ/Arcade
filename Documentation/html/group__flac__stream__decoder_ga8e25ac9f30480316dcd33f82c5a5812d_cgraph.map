@@ -1,0 +1,6 @@
+<map id="FLAC__stream_decoder_new" name="FLAC__stream_decoder_new">
+<area shape="rect" id="node2" href="$bitreader_8c.html#a840db48cc238a7628212f7711d1749dc" title="FLAC__bitreader_new" alt="" coords="265,5,415,32"/>
+<area shape="rect" id="node3" href="$bitreader_8c.html#a0b842e6b5161429f590bd465b09d33e5" title="FLAC__bitreader_delete" alt="" coords="259,56,421,83"/>
+<area shape="rect" id="node5" href="$lib_f_l_a_c_2format_8c.html#a3388f1dff9fedd7a18df7ab08f0443ec" title="FLAC__format_entropy\l_coding_method_partitioned\l_rice_contents_init" alt="" coords="248,107,432,163"/>
+<area shape="rect" id="node4" href="$bitreader_8c.html#a891c42265a86aa0269b04806d4f12bad" title="FLAC__bitreader_free" alt="" coords="480,56,629,83"/>
+</map>

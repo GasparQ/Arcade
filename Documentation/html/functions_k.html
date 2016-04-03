@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -117,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -133,18 +136,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>key
 : <a class="el" href="union_s_d_l___event.html#ab99927835cc77a9b6bb50b419b4a27df">SDL_Event</a>
 </li>
+<li>Keyboard
+: <a class="el" href="struct___i_n_s_t_r_u_m_e_n_t_h_e_a_d_e_r.html#a678abdee7ab8df53257d1761addcc1d8">_INSTRUMENTHEADER</a>
+</li>
+<li>keyboard
+: <a class="el" href="structtag_i_t_i_n_s_t_r_u_m_e_n_t.html#ae813797b8850781d474a61e039ac51d6">tagITINSTRUMENT</a>
+, <a class="el" href="structtag_i_t_o_l_d_i_n_s_t_r_u_m_e_n_t.html#a04884e6c746ecc35239c27e2d2ff10fd">tagITOLDINSTRUMENT</a>
+</li>
 <li>keyfunc
 : <a class="el" href="class_pacman_game.html#af9397ffbf8ecfb8e9dd437b3ffc2bf3d">PacmanGame</a>
 , <a class="el" href="class_snake.html#a951caca23cb4d02ecc4f246ea6cfb431">Snake</a>
 </li>
+<li>KeyOff()
+: <a class="el" href="class_c_sound_file.html#aa2b7672e51b28f7fc7a8dd53d14da2a8">CSoundFile</a>
+</li>
+<li>keyoff
+: <a class="el" href="struct_m_p___c_h_a_n_n_e_l.html#afdd4351c2eb143920751cbca82346632">MP_CHANNEL</a>
+</li>
 <li>keysym
 : <a class="el" href="struct_s_d_l___keyboard_event.html#a2a57ba820a298f2c02ad5d41fd2b1aa8">SDL_KeyboardEvent</a>
+</li>
+<li>keyToModEnvDecay
+: <a class="el" href="struct_sample.html#aa9453f77687c433c88271d8b7034b5a6">Sample</a>
+</li>
+<li>keyToModEnvHold
+: <a class="el" href="struct_sample.html#ab1631f9c671224147a9e1b66171b7fb3">Sample</a>
+</li>
+<li>keyToVolEnvDecay
+: <a class="el" href="struct_sample.html#acfb57d44ad48f356e2af69db440df6dd">Sample</a>
+</li>
+<li>keyToVolEnvHold
+: <a class="el" href="struct_sample.html#aada06611fbc4419c7dc149d552b79cb4">Sample</a>
+</li>
+<li>kHz
+: <a class="el" href="structadj__stereo.html#a13ef814e311be6be34a982e89141f8ed">adj_stereo</a>
+</li>
+<li>kick
+: <a class="el" href="struct_m_p___c_h_a_n_n_e_l.html#abb0ba6d19ffb4dee797217405c408c23">MP_CHANNEL</a>
+, <a class="el" href="struct_v_i_n_f_o.html#a10d06cc70029b58ceee5378c0e7e9eb1">VINFO</a>
+</li>
+<li>kit
+: <a class="el" href="struct_channel.html#a2c67cc4588d53903071b4aa5783c8036">Channel</a>
+</li>
+<li>ktrans
+: <a class="el" href="struct___a_b_c_h_a_n_d_l_e.html#aa1771281339e4378e348071b1d3cb8a4">_ABCHANDLE</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

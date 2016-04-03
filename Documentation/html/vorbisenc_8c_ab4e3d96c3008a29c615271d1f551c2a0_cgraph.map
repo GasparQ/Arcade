@@ -1,0 +1,5 @@
+<map id="vorbis_encode_init_vbr" name="vorbis_encode_init_vbr">
+<area shape="rect" id="node2" href="$vorbisenc_8c.html#a0f7677f216936a6cd7fa28ddbccada74" title="vorbis_encode_setup_vbr" alt="" coords="208,5,379,32"/>
+<area shape="rect" id="node3" href="$external_2libvorbis-1_83_83_2include_2vorbis_2codec_8h.html#abaf171c1341b23e1c2eed7dab00d9f4a" title="vorbis_info_clear" alt="" coords="233,56,353,83"/>
+<area shape="rect" id="node4" href="$vorbisenc_8c.html#ac3953ff69d05864e78d1858a544ed619" title="vorbis_encode_setup_init" alt="" coords="209,107,378,133"/>
+</map>

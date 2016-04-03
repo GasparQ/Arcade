@@ -1,0 +1,9 @@
+<map id="Mix_SetReverseStereo" name="Mix_SetReverseStereo">
+<area shape="rect" id="node2" href="$mixer_8c.html#a5ca74c29c15dc81b77e683d4f6bf09b2" title="Mix_QuerySpec" alt="" coords="227,20,341,47"/>
+<area shape="rect" id="node3" href="$mixer_8c.html#a07bc1e0568478b2e6c388c2f2620b61d" title="Mix_UnregisterEffect" alt="" coords="211,121,357,148"/>
+<area shape="rect" id="node7" href="$mixer_8c.html#a63b994d8cfcc91d9e853ba00c0573693" title="Mix_RegisterEffect" alt="" coords="217,71,351,97"/>
+<area shape="rect" id="node4" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="423,71,539,97"/>
+<area shape="rect" id="node5" href="$mixer_8c.html#a6aaf36b8a9ee1f2ca65818b03ad9e121" title="_Mix_UnregisterEffect\l_locked" alt="" coords="405,173,557,214"/>
+<area shape="rect" id="node6" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="417,121,546,148"/>
+<area shape="rect" id="node8" href="$mixer_8c.html#a4d2f6563135cbea2ce4dd30a5204c667" title="_Mix_RegisterEffect\l_locked" alt="" coords="411,5,552,46"/>
+</map>

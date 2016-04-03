@@ -1,0 +1,8 @@
+<map id="PAT_Load_Instruments" name="PAT_Load_Instruments">
+<area shape="rect" id="node2" href="$load__pat_8cpp.html#ad67b277fb64e4b0633c94f2c449aa885" title="pat_numsmp" alt="" coords="225,5,322,32"/>
+<area shape="rect" id="node3" href="$load__pat_8cpp.html#a8ba257ef0ff81c1279d0aa2884aefc83" title="pat_gmtosmp" alt="" coords="223,56,324,83"/>
+<area shape="rect" id="node4" href="$load__pat_8cpp.html#a8b9cbc66ad2c2176d077f0e2c57dd8cd" title="pat_numinstr" alt="" coords="225,107,322,133"/>
+<area shape="rect" id="node5" href="$mikmod__internals_8h.html#acb221281ef0f87119f54b450bbb91e17" title="AllocInstruments" alt="" coords="213,157,333,184"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#a722f3aedb018057f4dc6bc6da44ca07e" title="AllocSamples" alt="" coords="222,208,325,235"/>
+<area shape="rect" id="node7" href="$load__pat_8cpp.html#a29903956f56b316960b099da29ea6483" title="pat_smptogm" alt="" coords="223,259,324,285"/>
+</map>

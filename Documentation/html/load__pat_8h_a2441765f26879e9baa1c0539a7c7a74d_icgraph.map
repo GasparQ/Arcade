@@ -1,0 +1,9 @@
+<map id="pat_gm_drumnr" name="pat_gm_drumnr">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a6bf2e0dcc0f6cac93b3926a418b874d8" title="CSoundFile::TestABC" alt="" coords="344,5,496,32"/>
+<area shape="rect" id="node3" href="$load__pat_8h.html#a6819f200079f2c9a81d7c0f2aea27c2b" title="pat_gm_drumnote" alt="" coords="166,56,293,83"/>
+<area shape="rect" id="node4" href="$load__pat_8h.html#add983206a46906b51ab432c80e4fed9f" title="pat_init_patnames" alt="" coords="165,107,293,133"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#a399c49f864b730182d9a0e065878a10f" title="CSoundFile::ReadABC" alt="" coords="341,81,499,108"/>
+<area shape="rect" id="node8" href="$class_c_sound_file.html#ad96a25f78d1f3474e9243fce2cb2cdbe" title="CSoundFile::ReadMID" alt="" coords="343,132,497,159"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#aedaef1e2b3a737517856d06406640344" title="CSoundFile::Create" alt="" coords="547,107,685,133"/>
+<area shape="rect" id="node7" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a0c9711d9b621700c0e7ae3bd07901356" title="ModPlug_Load" alt="" coords="734,107,842,133"/>
+</map>

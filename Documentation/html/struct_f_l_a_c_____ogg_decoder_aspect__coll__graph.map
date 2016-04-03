@@ -1,0 +1,6 @@
+<map id="FLAC__OggDecoderAspect" name="FLAC__OggDecoderAspect">
+<area shape="rect" id="node2" href="$structogg__packet.html" title="ogg_packet" alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node3" href="$structogg__sync__state.html" title="ogg_sync_state" alt="" coords="119,5,233,32"/>
+<area shape="rect" id="node4" href="$structogg__stream__state.html" title="ogg_stream_state" alt="" coords="258,5,384,32"/>
+<area shape="rect" id="node5" href="$structogg__page.html" title="ogg_page" alt="" coords="409,5,487,32"/>
+</map>

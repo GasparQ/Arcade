@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$bookutil_8c.html#a75839547489bdf091b1b93d9a1a907ff" title="get_line" alt="" coords="371,15,437,41"/>
+<area shape="rect" id="node3" href="$bookutil_8c.html#aac36c31bb4019d162a15e8ecdac1dfae" title="reset_next_value" alt="" coords="343,91,465,117"/>
+<area shape="rect" id="node4" href="$bookutil_8c.html#a445614dc135ee08615ea8e0aaa8f43d1" title="setup_line" alt="" coords="143,52,225,79"/>
+<area shape="rect" id="node5" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#a16d0b0a2056b4288ceedcef15b35d3fe" title="_float32_pack" alt="" coords="133,153,235,180"/>
+<area shape="rect" id="node6" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#a414000078eb7696277bab0bcede52a8b" title="_float32_unpack" alt="" coords="125,204,243,231"/>
+<area shape="rect" id="node7" href="$bookutil_8c.html#ab3eface47e7aaf85199733babcd8a540" title="build_tree_from_lengths" alt="" coords="104,255,264,281"/>
+<area shape="rect" id="node9" href="$bookutil_8c.html#ad87e59f6127d6aa5868af58aa64d966b" title="write_codebook" alt="" coords="127,305,241,332"/>
+<area shape="rect" id="node8" href="$bookutil_8c.html#a25ec924593bf4fc64d82c3559454fedb" title="spinnit" alt="" coords="374,255,434,281"/>
+<area shape="rect" id="node10" href="$libvorbis-1_83_83_2lib_2codebook_8h.html#aec05a8c0eabef16f1074fa1d596ce6e4" title="_book_maptype1_quantvals" alt="" coords="312,305,496,332"/>
+</map>

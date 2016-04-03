@@ -1,0 +1,16 @@
+<map id="_muldivr" name="_muldivr">
+<area shape="rect" id="node2" href="$class_c_sound_file.html#a92db6320bcf1e7f4f5b9581dafe453cb" title="CSoundFile::FinePortamentoUp" alt="" coords="150,56,357,83"/>
+<area shape="rect" id="node10" href="$class_c_sound_file.html#a61b1ce29268c5ca5b13b74c085840c95" title="CSoundFile::FinePortamentoDown" alt="" coords="141,157,365,184"/>
+<area shape="rect" id="node12" href="$class_c_sound_file.html#a79549e127cb91bc744c843ffd8d09d1e" title="CSoundFile::ExtraFinePortamentoUp" alt="" coords="134,5,373,32"/>
+<area shape="rect" id="node13" href="$class_c_sound_file.html#aa7a7fdd02ae67fefa1e94fd58c0d490a" title="CSoundFile::ExtraFinePortamentoDown" alt="" coords="126,208,381,235"/>
+<area shape="rect" id="node14" href="$class_c_sound_file.html#a2bd1b809c6498b0ab7ef56a4383d2cbf" title="CSoundFile::TonePortamento" alt="" coords="457,259,652,285"/>
+<area shape="rect" id="node15" href="$class_c_sound_file.html#a41778eddc08cc86e592363546777d4a4" title="CSoundFile::DoFreqSlide" alt="" coords="168,107,339,133"/>
+<area shape="rect" id="node3" href="$class_c_sound_file.html#aec694d9a8a25a55a2cca06eef18b5f98" title="CSoundFile::PortamentoUp" alt="" coords="463,56,646,83"/>
+<area shape="rect" id="node9" href="$class_c_sound_file.html#af15205008316ddc8d73ee05913e296ae" title="CSoundFile::ExtendedMODCommands" alt="" coords="429,107,680,133"/>
+<area shape="rect" id="node4" href="$class_c_sound_file.html#ae7914e0e2fdeb8832bc3ed0f4353c728" title="CSoundFile::ProcessEffects" alt="" coords="729,132,917,159"/>
+<area shape="rect" id="node5" href="$class_c_sound_file.html#aef5ab72c81ade31306d23724c0b30194" title="CSoundFile::ProcessRow" alt="" coords="965,132,1139,159"/>
+<area shape="rect" id="node6" href="$class_c_sound_file.html#aa74c7074f61936d8bd95e2e4ca334d07" title="CSoundFile::ReadNote" alt="" coords="1187,132,1344,159"/>
+<area shape="rect" id="node7" href="$class_c_sound_file.html#af8f123d084be318a8ae92553e46b46e7" title="CSoundFile::Read" alt="" coords="1393,132,1522,159"/>
+<area shape="rect" id="node8" href="$_xcode_2_frameworks_2modplug_8framework_2_versions_2_a_2_headers_2modplug_8h.html#a10e70316c7a8219fdb397e6fdeb6b321" title="ModPlug_Read" alt="" coords="1571,132,1682,159"/>
+<area shape="rect" id="node11" href="$class_c_sound_file.html#adbadd8231775ac2520a5890cdcdd6e58" title="CSoundFile::PortamentoDown" alt="" coords="455,157,654,184"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="S3M_Load" name="S3M_Load">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a2c5b3b0be9a73192b6e47a3a603a8467" title="_mm_read_string" alt="" coords="159,5,281,32"/>
+<area shape="rect" id="node3" href="$mikmod__internals_8h.html#a106a6ec11b18c867cd7641a102d21c1c" title="_mm_read_I_UWORD" alt="" coords="143,56,297,83"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#aa2b727908967c122365ef4088639ded7" title="AllocPositions" alt="" coords="167,107,273,133"/>
+<area shape="rect" id="node5" href="$mikmod__internals_8h.html#a916e624917d3a4d8ceebf7fe548ba1ba" title="S3MIT_CreateOrders" alt="" coords="147,157,293,184"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="172,208,268,235"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#a14b57d88fefe72192ceb93402f1dcaea" title="_mm_read_I_UWORDS" alt="" coords="139,259,301,285"/>
+<area shape="rect" id="node8" href="$mikmod__internals_8h.html#a722f3aedb018057f4dc6bc6da44ca07e" title="AllocSamples" alt="" coords="169,309,271,336"/>
+<area shape="rect" id="node9" href="$mikmod__internals_8h.html#a6965a4ccce8bd5d43291b51d51135e65" title="_mm_read_I_ULONG" alt="" coords="146,360,294,387"/>
+<area shape="rect" id="node11" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="182,411,258,437"/>
+<area shape="rect" id="node12" href="$mikmod__internals_8h.html#aa96e38c5178f640fc4242b85809f5f75" title="AllocTracks" alt="" coords="175,461,265,488"/>
+<area shape="rect" id="node13" href="$mikmod__internals_8h.html#a2340d9d9f51408584fe13e058499b917" title="AllocPatterns" alt="" coords="170,512,270,539"/>
+<area shape="rect" id="node10" href="$mmio_8c.html#ac7a9e6ca7b17a0e1c8163558b04cbb9f" title="_mm_read_I_UWORD" alt="" coords="349,360,504,387"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="MPEGvideo::Play" name="MPEGvideo::Play">
+<area shape="rect" id="node2" href="$class_m_p_e_gaction.html#a12e7fe7696dd1bd5f9f05ca2e08413a0" title="MPEGaction::ResetPause" alt="" coords="365,5,541,32"/>
+<area shape="rect" id="node3" href="$class_m_p_e_gvideo.html#a6b89bceec472fb016289346935b9eb85" title="MPEGvideo::Stop" alt="" coords="186,56,313,83"/>
+<area shape="rect" id="node5" href="$_s_d_l__thread_8h.html#aca3013d4f50e918b17d2721b37e59082" title="SDL_CreateThread" alt="" coords="182,107,317,133"/>
+<area shape="rect" id="node4" href="$_s_d_l__thread_8h.html#ac96743626ed21d2cdb0868a23cca9705" title="SDL_WaitThread" alt="" coords="392,56,515,83"/>
+</map>

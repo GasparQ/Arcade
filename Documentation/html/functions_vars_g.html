@@ -21,11 +21,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="spaceship.bmp"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Arcade
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">Tek2 project for Epitech by gouet_v, gaspar_q, veyrie_f</div>
+   <div id="projectbrief">Tek2 project for Epitech. Made by Gaspar_q, Gouet_v and Veyrie_f</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -116,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -136,8 +139,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>gamesDir
 : <a class="el" href="classarcade_1_1_arcade.html#ad0beeeb49020d060337ac07e3ea6dc23">arcade::Arcade</a>
 </li>
+<li>gauss
+: <a class="el" href="struct_f_l_a_c_____apodization_specification.html#a3764be1f336b2424e8adb03ee0421055">FLAC__ApodizationSpecification</a>
+</li>
+<li>gbv
+: <a class="el" href="structtag_i_t_i_n_s_t_r_u_m_e_n_t.html#a96ccfc2ec8862c68c6f9d188997a39aa">tagITINSTRUMENT</a>
+</li>
 <li>gccheck
 : <a class="el" href="structtypenode.html#a38ee3ed69ff1e43ded937c19443ead0c">typenode</a>
+</li>
+<li>gchord
+: <a class="el" href="struct___a_b_c_h_a_n_d_l_e.html#a8e4d4fd2c5776ae3ccc1d828d1ce22e7">_ABCHANDLE</a>
+</li>
+<li>gchordon
+: <a class="el" href="struct___a_b_c_h_a_n_d_l_e.html#a2c61e4ad0fb6df50252382289949cb8c">_ABCHANDLE</a>
+</li>
+<li>gdwMixingFreq
+: <a class="el" href="class_c_sound_file.html#a4d63ba84a0838b12eede65ca3fbaf1bd">CSoundFile</a>
+</li>
+<li>gdwSoundSetup
+: <a class="el" href="class_c_sound_file.html#a611c34c1113dcea48b743a187fa68d6b">CSoundFile</a>
+</li>
+<li>gdwSysInfo
+: <a class="el" href="class_c_sound_file.html#a7f81fc78f6b0a0b417ddefcd8151dd61">CSoundFile</a>
+</li>
+<li>generalflag
+: <a class="el" href="structlayer3grinfo.html#a6d3c3ccb4888ebc4f5bc7471a27f86f0">layer3grinfo</a>
 </li>
 <li>genericarg
 : <a class="el" href="structtypenode.html#ac024cff6947eefffe072397bae688c42">typenode</a>
@@ -145,8 +172,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>gestureId
 : <a class="el" href="struct_s_d_l___dollar_gesture_event.html#a68968438eae9e58208b14e8c954dec31">SDL_DollarGestureEvent</a>
 </li>
+<li>Get
+: <a class="el" href="struct_m_r_e_a_d_e_r.html#a5b79a1785f89c61432690d7420c55911">MREADER</a>
+</li>
+<li>GetFileInfo
+: <a class="el" href="struct_in___module.html#a1f763ff78b22cfcd6262b696af9d9dd9">In_Module</a>
+</li>
+<li>GetLength
+: <a class="el" href="struct_in___module.html#a229bfb511daf5ea882ca450619bf4182">In_Module</a>
+</li>
+<li>GetOutputTime
+: <a class="el" href="struct_in___module.html#a662aa370c5073000b80259ced2e90003">In_Module</a>
+, <a class="el" href="struct_out___module.html#abf804cd66c3583a448d4c84e2ccc3b10">Out_Module</a>
+</li>
+<li>GetWrittenTime
+: <a class="el" href="struct_out___module.html#acfe9d24eff0f7f003888701cd5dd6cbb">Out_Module</a>
+</li>
 <li>gfcheck
 : <a class="el" href="structtypenode.html#af57060786b5fcd57c6a17d33482c0599">typenode</a>
+</li>
+<li>gi
+: <a class="el" href="structvorbis__look__psy__global.html#a03368bba0e885407073c7cadb7ebd45e">vorbis_look_psy_global</a>
 </li>
 <li>gl_accelerated
 : <a class="el" href="struct_s_d_l_test___common_state.html#a2dca523be403a9ff6fe2dd7b1808baba">SDLTest_CommonState</a>
@@ -211,29 +257,148 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>gl_stereo
 : <a class="el" href="struct_s_d_l_test___common_state.html#a39177b165c6a9c2164937c82402e2d4f">SDLTest_CommonState</a>
 </li>
+<li>glb_comp
+: <a class="el" href="struct_m_m_c_m_p_h_e_a_d_e_r.html#a10a5ffd14e39a2e81054de88414c4c97">MMCMPHEADER</a>
+</li>
+<li>glissando
+: <a class="el" href="struct_m_p___c_o_n_t_r_o_l.html#a9d8a2607b3fb76cfa2ccb92c90461837">MP_CONTROL</a>
+</li>
+<li>global_gain
+: <a class="el" href="structlayer3grinfo.html#a45898fff0f955cd0c618daf088307b39">layer3grinfo</a>
+</li>
+<li>global_mapping
+: <a class="el" href="structve__setup__data__template.html#a19f141e94bc9fcdf1043e2ec1be15a4c">ve_setup_data_template</a>
+</li>
+<li>global_params
+: <a class="el" href="structve__setup__data__template.html#af87eefec058f48e5772e249923a11b22">ve_setup_data_template</a>
+</li>
+<li>globalslide
+: <a class="el" href="struct_m_o_d_u_l_e.html#a6ca19b4f3253af4bf3e6b73c1e9b8d49">MODULE</a>
+</li>
+<li>globalvol
+: <a class="el" href="struct_d_s_m_s_o_n_g.html#aae3a0d07442f03d92aa6cb85c8b00bef">DSMSONG</a>
+, <a class="el" href="struct_m_d_l_i_n_f_o_b_l_o_c_k.html#a47752238ffb134614b8d476285ecc8a4">MDLINFOBLOCK</a>
+, <a class="el" href="struct_s_t_m_h_e_a_d_e_r.html#accd63c1ccb53e8a186f7e62f9fe3169e">STMHEADER</a>
+, <a class="el" href="structtag_i_t_f_i_l_e_h_e_a_d_e_r.html#a2ce4515654f0149356ae6f576a5f05a9">tagITFILEHEADER</a>
+, <a class="el" href="structtag_s3_m_f_i_l_e_h_e_a_d_e_r.html#ac3c7347296daa3edcb62e45efd9ee851">tagS3MFILEHEADER</a>
+, <a class="el" href="structtag_s_t_m_h_e_a_d_e_r.html#a156dcc840455fa12da90fba7e46ad5ae">tagSTMHEADER</a>
+</li>
+<li>globvol
+: <a class="el" href="struct_i_n_s_t_r_u_m_e_n_t.html#a0a0841ff687771b2cfac300a4b7c7920">INSTRUMENT</a>
+, <a class="el" href="struct_i_t_h_e_a_d_e_r.html#aa3639ae9a437d62ca508ec4ddff45a77">ITHEADER</a>
+, <a class="el" href="struct_i_t_i_n_s_t_h_e_a_d_e_r.html#ac402080721da3fe774815a40ecbd3ff1">ITINSTHEADER</a>
+, <a class="el" href="struct_i_t_s_a_m_p_l_e.html#aac0c63d40c029c0b93ba905d9b36a9cf">ITSAMPLE</a>
+, <a class="el" href="struct_s_a_m_p_l_e.html#a1b9c21305c59590db2522193b5dceeed">SAMPLE</a>
+</li>
 <li>Gloss
 : <a class="el" href="struct_s_d_l___pixel_format.html#a94469768d8436e631a13d68623ff663f">SDL_PixelFormat</a>
+</li>
+<li>glue_bits
+: <a class="el" href="structvorbis__block.html#ae1456c556d8365c41ec816956759074b">vorbis_block</a>
+, <a class="el" href="structvorbis__dsp__state.html#ae2d065c13e84870fd889c82cd2e7a04f">vorbis_dsp_state</a>
 </li>
 <li>Gmask
 : <a class="el" href="struct_s_d_l___pixel_format.html#a3d07a81b430202c6ea0089d8df8f4e15">SDL_PixelFormat</a>
 </li>
+<li>gnAGC
+: <a class="el" href="class_c_sound_file.html#a88b3ba8538cc8482a746643a63519f22">CSoundFile</a>
+</li>
+<li>gnBitsPerSample
+: <a class="el" href="class_c_sound_file.html#a9da1bd55b59823aca3e9c81e40432870">CSoundFile</a>
+</li>
+<li>gnChannels
+: <a class="el" href="class_c_sound_file.html#a2eeeef53fa8b90c9646a8d4ab31968f6">CSoundFile</a>
+</li>
+<li>gnCPUUsage
+: <a class="el" href="class_c_sound_file.html#ad5ec5de7b1c17d7b9d24c02336f83a5d">CSoundFile</a>
+</li>
 <li>gnext
 : <a class="el" href="structtypenode.html#ab4186ed6cd87e55b1deaf46d4145f0c5">typenode</a>
+</li>
+<li>gnReverbType
+: <a class="el" href="class_c_sound_file.html#a20d788ec7b0b05ed1eb86d7575298acb">CSoundFile</a>
+</li>
+<li>gnVolumeRampSamples
+: <a class="el" href="class_c_sound_file.html#af85acdd05b49c9254d9260dbbe5d84b6">CSoundFile</a>
+</li>
+<li>gnVUMeter
+: <a class="el" href="class_c_sound_file.html#a3709a6a3da0cf6372934a66a334e90f3">CSoundFile</a>
+</li>
+<li>got
+: <a class="el" href="struct_f_l_a_c_____stream_encoder_private.html#a9f7322e8f52be0f4814fd287c292cbe6">FLAC__StreamEncoderPrivate</a>
+</li>
+<li>got_data
+: <a class="el" href="struct_decoder_client_data.html#afd933a69af0ab1a785439bc3c2db636a">DecoderClientData</a>
+</li>
+<li>got_error
+: <a class="el" href="structlevel0__client__data.html#aa2b0d24ba3e30cde3d2692fac27b918c">level0_client_data</a>
+</li>
+<li>got_stream_info
+: <a class="el" href="struct_decoder_session.html#a5cd16e290c22282106c647ac1d0dc8ca">DecoderSession</a>
+</li>
+<li>gpMixPluginCreateProc
+: <a class="el" href="class_c_sound_file.html#abc7f962a8ff344a03a5aca7e8216035d">CSoundFile</a>
 </li>
 <li>gprev
 : <a class="el" href="structtypenode.html#af02ae59e78a653a28976188d31a4ee79">typenode</a>
 </li>
+<li>gpSndMixHook
+: <a class="el" href="class_c_sound_file.html#a2e162bb039bd78e840df37dd34b8943e">CSoundFile</a>
+</li>
+<li>gr
+: <a class="el" href="structlayer3sideinfo.html#a056c8433f31ea7bb877813ddc5e24970">layer3sideinfo</a>
+</li>
+<li>granule_vals
+: <a class="el" href="structogg__stream__state.html#a0e273bf5c51e59b8d0e1f2061eb5c756">ogg_stream_state</a>
+</li>
+<li>granulepos
+: <a class="el" href="structogg__packet.html#a838d9a000e08bae982409bc2734fc566">ogg_packet</a>
+, <a class="el" href="structogg__stream__state.html#a5df750c600660686e29f24b4d1ce836c">ogg_stream_state</a>
+, <a class="el" href="structvorbis__block.html#a3dc7d5e474ae80ea641df91eba16b490">vorbis_block</a>
+, <a class="el" href="structvorbis__dsp__state.html#af84a7a4855db2744d1ef73f48cb6b352">vorbis_dsp_state</a>
+</li>
+<li>graphiclen
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#a33ed427f901b35cf05e970b97b4ba77b">GDMHEADER</a>
+</li>
+<li>graphicloc
+: <a class="el" href="struct_g_d_m_h_e_a_d_e_r.html#ac4110924507ef6e04ec3a72bbd8a756d">GDMHEADER</a>
+</li>
+<li>gravis_id
+: <a class="el" href="struct_patch_header.html#a0d4ab9a7a8b395bf1aa53341f5f43d5e">PatchHeader</a>
+</li>
+<li>greaterthan
+: <a class="el" href="structvorbis__info__floor0.html#a0c56a9e6c934a2d03c4755ca7f3e5de4">vorbis_info_floor0</a>
+</li>
 <li>grey
 : <a class="el" href="structtag_m_e_n_u.html#ab4b27ab58c1efb1d15529df660dcbdec">tagMENU</a>
 </li>
+<li>group
+: <a class="el" href="structvid__stream.html#a85bb5b579ed0b3b704e09be2aa2435b5">vid_stream</a>
+</li>
+<li>groupbook
+: <a class="el" href="structvorbis__info__residue0.html#aa3b476197866f9666cc4294f60273f84">vorbis_info_residue0</a>
+</li>
+<li>grouping
+: <a class="el" href="structvorbis__info__residue0.html#afc030387b36d8397db6014464a8103c2">vorbis_info_residue0</a>
+, <a class="el" href="structvorbis__residue__template.html#ad4e0d91b38da3a639e860eeb75fcd863">vorbis_residue_template</a>
+</li>
+<li>GroupsMapping
+: <a class="el" href="struct___m_t2_i_n_s_t_r_u_m_e_n_t.html#a4514febe02ed745559a1e07c12eced73">_MT2INSTRUMENT</a>
+</li>
 <li>Gshift
 : <a class="el" href="struct_s_d_l___pixel_format.html#a6045012f994c02a86bdc4a91b28d2a3c">SDL_PixelFormat</a>
+</li>
+<li>gusdata
+: <a class="el" href="struct_p_t_m_s_a_m_p_l_e.html#a430784dc814884ac844a56a6dda7d3f5">PTMSAMPLE</a>
+</li>
+<li>gvl
+: <a class="el" href="struct_i_t_s_a_m_p_l_e_s_t_r_u_c_t.html#a1af24f7190f98a5d0315dcbd1bad4dde">ITSAMPLESTRUCT</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 28 2016 21:07:05 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

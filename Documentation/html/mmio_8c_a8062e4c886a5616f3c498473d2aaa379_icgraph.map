@@ -1,0 +1,9 @@
+<map id="_mm_read_M_UWORD" name="_mm_read_M_UWORD">
+<area shape="rect" id="node2" href="$load__med_8c.html#a245db58375ce572d416c2bb11e0f4090" title="MED_Load" alt="" coords="458,53,545,79"/>
+<area shape="rect" id="node3" href="$load__uni_8c.html#a889dd09058556592efe9edabd027c29f" title="UNI_Load" alt="" coords="255,27,337,54"/>
+<area shape="rect" id="node4" href="$mmio_8c.html#af1cfc7868e1d246f9651461b88fc171e" title="_mm_read_M_ULONG" alt="" coords="219,129,373,155"/>
+<area shape="rect" id="node8" href="$mmio_8c.html#a2409e05a66407b63c130a0e2feb6a1e4" title="_mm_read_M_SWORD" alt="" coords="216,78,376,105"/>
+<area shape="rect" id="node5" href="$load__med_8c.html#a30ae86c6093874dfb0445f2c604ba05c" title="MED_LoadTitle" alt="" coords="445,103,557,130"/>
+<area shape="rect" id="node6" href="$load__okt_8c.html#a4e8ef43e1089a758cb8149982f0bde63" title="OKT_Load" alt="" coords="459,154,543,181"/>
+<area shape="rect" id="node7" href="$mmio_8c.html#a67623bb962f6e083164494d5cbf47812" title="_mm_read_M_SLONG" alt="" coords="424,205,579,231"/>
+</map>

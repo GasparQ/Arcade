@@ -1,6 +1,22 @@
 var searchData=
 [
+  ['iconvert_2ec',['iconvert.c',['../iconvert_8c.html',1,'']]],
+  ['iconvert_2eh',['iconvert.h',['../iconvert_8h.html',1,'']]],
+  ['iffscan_2ec',['iffscan.c',['../iffscan_8c.html',1,'']]],
   ['igame_2ehpp',['IGame.hpp',['../_i_game_8hpp.html',1,'']]],
   ['igraph_2ehpp',['IGraph.hpp',['../_i_graph_8hpp.html',1,'']]],
-  ['imkstoucs_2ed',['imKStoUCS.d',['../im_k_sto_u_c_s_8d.html',1,'']]]
+  ['imkstoucs_2ed',['imKStoUCS.d',['../im_k_sto_u_c_s_8d.html',1,'']]],
+  ['in2_2eh',['in2.h',['../in2_8h.html',1,'']]],
+  ['in_5fflac_2ec',['in_flac.c',['../in__flac_8c.html',1,'']]],
+  ['info_2ec',['info.c',['../libvorbis-1_83_83_2lib_2info_8c.html',1,'']]],
+  ['info_2ec',['info.c',['../libvorbisidec-1_82_81_2info_8c.html',1,'']]],
+  ['infobox_2ec',['infobox.c',['../infobox_8c.html',1,'']]],
+  ['infobox_2eh',['infobox.h',['../infobox_8h.html',1,'']]],
+  ['instrum_2ec',['instrum.c',['../instrum_8c.html',1,'']]],
+  ['instrum_2eh',['instrum.h',['../instrum_8h.html',1,'']]],
+  ['iseeking_5fexample_2ec',['iseeking_example.c',['../iseeking__example_8c.html',1,'']]],
+  ['it_5fdefs_2eh',['it_defs.h',['../it__defs_8h.html',1,'']]],
+  ['ivorbiscodec_2eh',['ivorbiscodec.h',['../ivorbiscodec_8h.html',1,'']]],
+  ['ivorbisfile_2eh',['ivorbisfile.h',['../ivorbisfile_8h.html',1,'']]],
+  ['ivorbisfile_5fexample_2ec',['ivorbisfile_example.c',['../ivorbisfile__example_8c.html',1,'']]]
 ];

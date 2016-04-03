@@ -1,8 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$classarcade_1_1_arcade.html#a0ae33884c1e8c31f9a1f1091b478074a" title="arcade::Arcade::Init" alt="" coords="108,5,244,32"/>
-<area shape="rect" id="node3" href="$classarcade_1_1_arcade.html#ab4b7672a0735834d668cd13a044bd011" title="arcade::Arcade::Run" alt="" coords="105,56,247,83"/>
+<area shape="rect" id="node2" href="$classarcade_1_1_arcade.html#a0ae33884c1e8c31f9a1f1091b478074a" title="Function for the initialisation of the core program. Throws an exception if something fails..." alt="" coords="108,5,244,32"/>
+<area shape="rect" id="node3" href="$classarcade_1_1_arcade.html#ab4b7672a0735834d668cd13a044bd011" title="Main loop of the program. " alt="" coords="105,56,247,83"/>
 <area shape="rect" id="node4" href="$class_arcade_menu.html#a758b552f633bad38fbb2a422a8918dd9" title="ArcadeMenu::setFrames" alt="" coords="301,5,467,32"/>
 <area shape="rect" id="node5" href="$class_arcade_menu.html#a86054d211c6f4f287da30410b84b8b9e" title="ArcadeMenu::setMode" alt="" coords="307,56,461,83"/>
 <area shape="rect" id="node6" href="$class_arcade_menu.html#aa3e7e813a1bba4fd54a8add002161330" title="ArcadeMenu::updateMenu" alt="" coords="297,107,471,133"/>
-<area shape="rect" id="node7" href="$class_arcade_menu.html#ade3e677ead50faaee1384a2228e2bcb5" title="ArcadeMenu::getNextFrame" alt="" coords="520,107,707,133"/>
+<area shape="rect" id="node7" href="$class_animation_component.html#a897cd8f79dc11877f64fb7ac70295853" title="AnimationComponent\l::setFileName" alt="" coords="540,70,687,111"/>
+<area shape="rect" id="node8" href="$class_arcade_menu.html#ade3e677ead50faaee1384a2228e2bcb5" title="ArcadeMenu::getNextFrame" alt="" coords="520,136,707,163"/>
 </map>

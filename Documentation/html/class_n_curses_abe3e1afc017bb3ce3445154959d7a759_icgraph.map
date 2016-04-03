@@ -1,4 +1,4 @@
 <map id="NCurses::getCarac" name="NCurses::getCarac">
 <area shape="rect" id="node2" href="$_graphique_2_n_curses_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="273,5,324,32"/>
-<area shape="rect" id="node3" href="$class_n_curses_graph.html#a566036c1417e97d57799ab8685417d29" title="NCursesGraph::eventManagment" alt="" coords="190,56,407,83"/>
+<area shape="rect" id="node3" href="$class_n_curses_graph.html#a566036c1417e97d57799ab8685417d29" title="return the keycode " alt="" coords="190,56,407,83"/>
 </map>

@@ -1,0 +1,23 @@
+<map id="Mix_LoadMUS_RW" name="Mix_LoadMUS_RW">
+<area shape="rect" id="node2" href="$music_8c.html#a3d118c9e6a3007551ee7f6b95ba06139" title="Mix_LoadMUSType_RW" alt="" coords="193,385,359,412"/>
+<area shape="rect" id="node3" href="$_s_d_l__stdinc_8h.html#aa0843b5fde7f958b8eea238304aa5b2d" title="SDL_malloc" alt="" coords="681,5,775,32"/>
+<area shape="rect" id="node4" href="$wavestream_8c.html#a7713975c4495dab01c96dc67e4d615c2" title="WAVStream_LoadSong_RW" alt="" coords="409,107,599,133"/>
+<area shape="rect" id="node7" href="$_s_d_l__stdinc_8h.html#a0e4ade894d550ada1fa19dc2d46e88b8" title="SDL_free" alt="" coords="864,157,941,184"/>
+<area shape="rect" id="node9" href="$mixer_8c.html#ace7188cf1072aa032b5d511216b45578" title="Mix_Init" alt="" coords="470,360,538,387"/>
+<area shape="rect" id="node16" href="$native__midi_8h.html#a1ea924e8d658f66332a1b2f82a9d1958" title="native_midi_loadsong_RW" alt="" coords="415,411,593,437"/>
+<area shape="rect" id="node17" href="$native__midi_8h.html#ae56dcbbe06a8bfa6454f2a07c0b47337" title="native_midi_error" alt="" coords="443,461,565,488"/>
+<area shape="rect" id="node18" href="$playmidi_8c.html#a5e41bc93362e189b05cd316c0eba2ab8" title="Timidity_LoadSong_RW" alt="" coords="423,537,585,564"/>
+<area shape="rect" id="node22" href="$timidity_8c.html#aa5072ccccdb03f2d3bb494a7fd4a6d5d" title="Timidity_Error" alt="" coords="453,588,555,615"/>
+<area shape="rect" id="node5" href="$_s_d_l__rwops_8h.html#a8320334c299a3631fd6beb9937c30f04" title="SDL_ReadLE32" alt="" coords="670,56,786,83"/>
+<area shape="rect" id="node6" href="$wavestream_8c.html#a75bb642c8a101846addeb60c46c8c2d5" title="WAVStream_FreeSong" alt="" coords="649,107,807,133"/>
+<area shape="rect" id="node8" href="$_s_d_l__audio_8h.html#a41e1602bc7cd4edb87ca779cf01d40bb" title="SDL_BuildAudioCVT" alt="" coords="656,157,800,184"/>
+<area shape="rect" id="node10" href="$dynamic__fluidsynth_8h.html#a88f2ec868cc7040c7b4a8426b8eaa7fe" title="Mix_InitFluidSynth" alt="" coords="663,259,793,285"/>
+<area shape="rect" id="node11" href="$dynamic__flac_8h.html#a29bdfcdbab0acf085cdd907b463fa11d" title="Mix_InitFLAC" alt="" coords="677,309,779,336"/>
+<area shape="rect" id="node12" href="$dynamic__modplug_8h.html#a9d770534e69e52b1d88d533b05057668" title="Mix_InitModPlug" alt="" coords="669,360,787,387"/>
+<area shape="rect" id="node13" href="$dynamic__mod_8h.html#a0e6e5fd9346339a70d96b31cf830e792" title="Mix_InitMOD" alt="" coords="679,411,777,437"/>
+<area shape="rect" id="node14" href="$dynamic__mp3_8h.html#af0936ce21ffeb5057024926414598c26" title="Mix_InitMP3" alt="" coords="681,461,775,488"/>
+<area shape="rect" id="node15" href="$dynamic__ogg_8h.html#a31a76da707f0873c13ea3684094cc433" title="Mix_InitOgg" alt="" coords="682,512,774,539"/>
+<area shape="rect" id="node19" href="$common_8c.html#a97c3dbe8452b80903bbb8a330f8bc032" title="safe_malloc" alt="" coords="857,563,949,589"/>
+<area shape="rect" id="node20" href="$readmidi_8c.html#a6582bba81f8f6b9525b28b73a1c63c70" title="read_midi_file" alt="" coords="677,613,779,640"/>
+<area shape="rect" id="node21" href="$memcmp_8c.html#aa7ab42964c5300bb7145068513d46adf" title="memcmp" alt="" coords="865,613,941,640"/>
+</map>

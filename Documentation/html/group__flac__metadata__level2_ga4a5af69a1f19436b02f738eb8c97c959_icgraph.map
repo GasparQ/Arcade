@@ -1,0 +1,9 @@
+<map id="FLAC__metadata_iterator_init" name="FLAC__metadata_iterator_init">
+<area shape="rect" id="node2" href="$class_f_l_a_c_1_1_metadata_1_1_iterator.html#ab5713af7318f10a46bd8b26ce586947c" title="See FLAC__metadata_iterator_init(). " alt="" coords="249,5,415,46"/>
+<area shape="rect" id="node3" href="$operations__shorthand__cuesheet_8c.html#aeaac56b2f96fd5b5ac15050d7e0ac030" title="do_shorthand_operation\l__cuesheet" alt="" coords="252,70,412,111"/>
+<area shape="rect" id="node4" href="$operations__shorthand__picture_8c.html#aec90e9cae51ffd8026e2c55a1a355b6c" title="do_shorthand_operation\l__picture" alt="" coords="252,135,412,177"/>
+<area shape="rect" id="node5" href="$operations__shorthand__seektable_8c.html#aebb13ea74dba8b3598ecd98d41baa88f" title="do_shorthand_operation\l__add_seekpoints" alt="" coords="252,201,412,242"/>
+<area shape="rect" id="node6" href="$operations__shorthand__streaminfo_8c.html#a3142babc5fdbd995511fd1931eacc66f" title="do_shorthand_operation\l__streaminfo" alt="" coords="252,266,412,307"/>
+<area shape="rect" id="node7" href="$operations__shorthand__vorbiscomment_8c.html#a1412adfc117ce330182bc4bdc26af158" title="do_shorthand_operation\l__vorbis_comment" alt="" coords="252,331,412,373"/>
+<area shape="rect" id="node8" href="$tags_8h.html#a06eefe595d2e6bf8f6577a11b7cb0e43" title="FLAC_plugin__tags_set" alt="" coords="251,397,413,424"/>
+</map>

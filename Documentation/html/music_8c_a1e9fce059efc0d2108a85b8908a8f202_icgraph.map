@@ -1,0 +1,5 @@
+<map id="Mix_FadeInMusicPos" name="Mix_FadeInMusicPos">
+<area shape="rect" id="node2" href="$_s_d_l__mixer_8h.html#a2400bb4d58a5bce5e1c734f2b09bface" title="Mix_FadeInMusic" alt="" coords="203,5,328,32"/>
+<area shape="rect" id="node4" href="$_s_d_l__mixer_8h.html#a215ea5402d7da6d73a53b408d33b06b3" title="Mix_PlayMusic" alt="" coords="210,56,321,83"/>
+<area shape="rect" id="node3" href="$playmus_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="376,5,427,32"/>
+</map>

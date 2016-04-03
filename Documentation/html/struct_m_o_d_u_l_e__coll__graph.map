@@ -1,0 +1,9 @@
+<map id="MODULE" name="MODULE">
+<area shape="rect" id="node2" href="$struct_m_p___v_o_i_c_e.html" title="MP_VOICE" alt="" coords="193,336,284,363"/>
+<area shape="rect" id="node8" href="$struct_m_p___c_o_n_t_r_o_l.html" title="MP_CONTROL" alt="" coords="127,427,241,453"/>
+<area shape="rect" id="node3" href="$struct_m_p___c_h_a_n_n_e_l.html" title="MP_CHANNEL" alt="" coords="76,236,191,263"/>
+<area shape="rect" id="node4" href="$struct_i_n_s_t_r_u_m_e_n_t.html" title="INSTRUMENT" alt="" coords="78,125,188,152"/>
+<area shape="rect" id="node5" href="$struct_e_n_v_p_t.html" title="ENVPT" alt="" coords="153,5,220,32"/>
+<area shape="rect" id="node7" href="$struct_e_n_v_p_r.html" title="ENVPR" alt="" coords="199,176,268,203"/>
+<area shape="rect" id="node6" href="$struct_s_a_m_p_l_e.html" title="SAMPLE" alt="" coords="291,125,367,152"/>
+</map>

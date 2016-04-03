@@ -1,5 +1,6 @@
 <map id="/home/veyrie_f/Documents/cpp_arcade/Game/include/AGame.hpp" name="/home/veyrie_f/Documents/cpp_arcade/Game/include/AGame.hpp">
-<area shape="rect" id="node2" href="$_i_game_8hpp.html" title="IGame.hpp" alt="" coords="51,109,137,136"/>
-<area shape="rect" id="node4" href="$_a_component_8hpp.html" title="../../Commons/include\l/AComponent.hpp" alt="" coords="83,185,233,226"/>
-<area shape="rect" id="node5" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="113,275,204,301"/>
+<area shape="rect" id="node2" href="$_i_game_8hpp.html" title="IGame.hpp" alt="" coords="111,117,197,144"/>
+<area shape="rect" id="node8" href="$_arcade_system_8hpp.html" title="../../Commons/include\l/ArcadeSystem.hpp" alt="" coords="222,110,372,151"/>
+<area shape="rect" id="node4" href="$_a_component_8hpp.html" title="../../Commons/include\l/AComponent.hpp" alt="" coords="83,201,233,242"/>
+<area shape="rect" id="node5" href="$_vector2_8hpp.html" title="Vector2.hpp" alt="" coords="113,291,204,317"/>
 </map>

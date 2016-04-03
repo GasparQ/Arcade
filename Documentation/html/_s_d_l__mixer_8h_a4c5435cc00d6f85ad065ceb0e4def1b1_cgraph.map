@@ -1,0 +1,8 @@
+<map id="Mix_HookMusic" name="Mix_HookMusic">
+<area shape="rect" id="node2" href="$_s_d_l__audio_8h.html#a7ffa484f230f6085e271a4f43e678f06" title="SDL_LockAudio" alt="" coords="178,5,294,32"/>
+<area shape="rect" id="node3" href="$mixer_8c.html#aa948d7f150d90e04a94c484a811a6ef5" title="music_mixer" alt="" coords="188,56,284,83"/>
+<area shape="rect" id="node7" href="$_s_d_l__audio_8h.html#a76d8179bee14dad268e65378058d897d" title="SDL_UnlockAudio" alt="" coords="171,107,301,133"/>
+<area shape="rect" id="node4" href="$wavestream_8c.html#a78162c767ed09cd22a7bcf19f1b1dd2d" title="WAVStream_PlaySome" alt="" coords="349,5,512,32"/>
+<area shape="rect" id="node5" href="$common_8c.html#af1c22febc3acaefcf4c031252295d196" title="skip" alt="" coords="407,56,454,83"/>
+<area shape="rect" id="node6" href="$playmidi_8c.html#a90e73401772ef58c3955160c3e54b5e7" title="Timidity_PlaySome" alt="" coords="363,107,498,133"/>
+</map>

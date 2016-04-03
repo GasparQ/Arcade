@@ -1,0 +1,23 @@
+<map id="IT_Load" name="IT_Load">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a6965a4ccce8bd5d43291b51d51135e65" title="_mm_read_I_ULONG" alt="" coords="130,5,278,32"/>
+<area shape="rect" id="node4" href="$mikmod__internals_8h.html#a2c5b3b0be9a73192b6e47a3a603a8467" title="_mm_read_string" alt="" coords="143,56,265,83"/>
+<area shape="rect" id="node5" href="$mikmod__internals_8h.html#a106a6ec11b18c867cd7641a102d21c1c" title="_mm_read_I_UWORD" alt="" coords="127,107,281,133"/>
+<area shape="rect" id="node6" href="$mikmod__internals_8h.html#aa2b727908967c122365ef4088639ded7" title="AllocPositions" alt="" coords="151,157,257,184"/>
+<area shape="rect" id="node7" href="$mikmod__internals_8h.html#a916e624917d3a4d8ceebf7fe548ba1ba" title="S3MIT_CreateOrders" alt="" coords="131,208,277,235"/>
+<area shape="rect" id="node8" href="$mikmod__internals_8h.html#ab28df905c607df3e361282e1d586e113" title="_mm_malloc" alt="" coords="363,360,459,387"/>
+<area shape="rect" id="node9" href="$mikmod__internals_8h.html#a39d8badca85936d7a538fc24e7fec7ed" title="_mm_read_I_ULONGS" alt="" coords="125,309,283,336"/>
+<area shape="rect" id="node10" href="$mikmod__internals_8h.html#ae524c00814694ccf8ffc143f9d17963e" title="ReadComment" alt="" coords="149,360,259,387"/>
+<area shape="rect" id="node11" href="$mikmod__internals_8h.html#a722f3aedb018057f4dc6bc6da44ca07e" title="AllocSamples" alt="" coords="153,411,255,437"/>
+<area shape="rect" id="node12" href="$mikmod__internals_8h.html#ad96c6a2be2c4637956c4c8691730ed04" title="AllocLinear" alt="" coords="161,461,247,488"/>
+<area shape="rect" id="node13" href="$mikmod__internals_8h.html#a76bbdcc552e88ef40ce358e392402a4e" title="speed_to_finetune" alt="" coords="140,867,268,893"/>
+<area shape="rect" id="node16" href="$mikmod__internals_8h.html#acb221281ef0f87119f54b450bbb91e17" title="AllocInstruments" alt="" coords="144,563,264,589"/>
+<area shape="rect" id="node17" href="$mikmod__internals_8h.html#a14b57d88fefe72192ceb93402f1dcaea" title="_mm_read_I_UWORDS" alt="" coords="123,613,285,640"/>
+<area shape="rect" id="node18" href="$mikmod__internals_8h.html#a2340d9d9f51408584fe13e058499b917" title="AllocPatterns" alt="" coords="154,664,254,691"/>
+<area shape="rect" id="node19" href="$mikmod__internals_8h.html#aa96e38c5178f640fc4242b85809f5f75" title="AllocTracks" alt="" coords="159,715,249,741"/>
+<area shape="rect" id="node20" href="$mikmod__internals_8h.html#ade4b3f2bca77c43a34021887a1e338d4" title="UniReset" alt="" coords="165,765,243,792"/>
+<area shape="rect" id="node21" href="$mikmod__internals_8h.html#a91f1c43b23ca5586bf7f469ed2e8ebd8" title="UniNewline" alt="" coords="159,816,249,843"/>
+<area shape="rect" id="node22" href="$mikmod__internals_8h.html#a837d1c1b6c6866f50268c270dc026d31" title="UniDup" alt="" coords="171,512,237,539"/>
+<area shape="rect" id="node3" href="$mmio_8c.html#ac7a9e6ca7b17a0e1c8163558b04cbb9f" title="_mm_read_I_UWORD" alt="" coords="333,5,488,32"/>
+<area shape="rect" id="node14" href="$mikmod__internals_8h.html#ac30db598c0dc7fae2e6d778ff9b78318" title="getfrequency" alt="" coords="362,841,459,868"/>
+<area shape="rect" id="node15" href="$mikmod__internals_8h.html#a1c125e430fac44eac25314fe7fd63921" title="getlinearperiod" alt="" coords="357,892,464,919"/>
+</map>

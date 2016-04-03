@@ -1,4 +1,24 @@
 var searchData=
 [
-  ['begin_5fcode_2eh',['begin_code.h',['../begin__code_8h.html',1,'']]]
+  ['backends_2eh',['backends.h',['../libvorbis-1_83_83_2lib_2backends_8h.html',1,'']]],
+  ['backends_2eh',['backends.h',['../libvorbisidec-1_82_81_2backends_8h.html',1,'']]],
+  ['barkmel_2ec',['barkmel.c',['../barkmel_8c.html',1,'']]],
+  ['begin_5fcode_2eh',['begin_code.h',['../begin__code_8h.html',1,'']]],
+  ['bitmath_2ec',['bitmath.c',['../bitmath_8c.html',1,'']]],
+  ['bitmath_2eh',['bitmath.h',['../bitmath_8h.html',1,'']]],
+  ['bitrate_2ec',['bitrate.c',['../bitrate_8c.html',1,'']]],
+  ['bitrate_2eh',['bitrate.h',['../bitrate_8h.html',1,'']]],
+  ['bitreader_2ec',['bitreader.c',['../bitreader_8c.html',1,'']]],
+  ['bitreader_2eh',['bitreader.h',['../bitreader_8h.html',1,'']]],
+  ['bitwindow_2ecpp',['bitwindow.cpp',['../bitwindow_8cpp.html',1,'']]],
+  ['bitwise_2ec',['bitwise.c',['../bitwise_8c.html',1,'']]],
+  ['bitwriter_2ec',['bitwriter.c',['../lib_f_l_a_c_2bitwriter_8c.html',1,'']]],
+  ['bitwriter_2ec',['bitwriter.c',['../test__lib_f_l_a_c_2bitwriter_8c.html',1,'']]],
+  ['bitwriter_2eh',['bitwriter.h',['../lib_f_l_a_c_2include_2private_2bitwriter_8h.html',1,'']]],
+  ['bitwriter_2eh',['bitwriter.h',['../test__lib_f_l_a_c_2bitwriter_8h.html',1,'']]],
+  ['block_2ec',['block.c',['../libvorbis-1_83_83_2lib_2block_8c.html',1,'']]],
+  ['block_2ec',['block.c',['../libvorbisidec-1_82_81_2block_8c.html',1,'']]],
+  ['block_2eh',['block.h',['../block_8h.html',1,'']]],
+  ['bookutil_2ec',['bookutil.c',['../bookutil_8c.html',1,'']]],
+  ['bookutil_2eh',['bookutil.h',['../bookutil_8h.html',1,'']]]
 ];

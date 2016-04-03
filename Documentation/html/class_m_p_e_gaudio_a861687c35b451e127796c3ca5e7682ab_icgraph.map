@@ -1,0 +1,6 @@
+<map id="MPEGaudio::GetStatus" name="MPEGaudio::GetStatus">
+<area shape="rect" id="node2" href="$_m_p_e_gaudio_8h.html#af336f875ed58c7f0ad9704f5c8704664" title="Play_MPEGaudio" alt="" coords="213,56,339,83"/>
+<area shape="rect" id="node3" href="$_m_p_e_gaudio_8h.html#ad4551457e4401731a4d19e8735ee79dc" title="Play_MPEGaudioSDL" alt="" coords="391,5,542,32"/>
+<area shape="rect" id="node4" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a24fc7c1e4dfc10742e9da19f75c5647e" title="SMPEG_playAudio" alt="" coords="399,56,534,83"/>
+<area shape="rect" id="node5" href="$_xcode_2_frameworks_2smpeg2_8framework_2_versions_2_a_2_headers_2smpeg_8h.html#a814b4f725176141404ac85d1c9892929" title="SMPEG_playAudioSDL" alt="" coords="387,107,547,133"/>
+</map>

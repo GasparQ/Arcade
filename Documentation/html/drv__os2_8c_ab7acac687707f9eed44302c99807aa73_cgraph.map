@@ -1,0 +1,5 @@
+<map id="OS2_UpdateBufferThread" name="OS2_UpdateBufferThread">
+<area shape="rect" id="node2" href="$mikmod__internals_8h.html#a0b5ef0f5229f8a1722a6542a016b0211" title="Player_Paused_internal" alt="" coords="227,5,386,32"/>
+<area shape="rect" id="node3" href="$include_2mikmod_8h.html#adea18266c090af461b21dd3fc2bf4926" title="VC_SilenceBytes" alt="" coords="244,56,369,83"/>
+<area shape="rect" id="node4" href="$include_2mikmod_8h.html#aea4dd13d6e9446d64fca2d71c6e96225" title="VC_WriteBytes" alt="" coords="250,107,363,133"/>
+</map>
