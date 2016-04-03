@@ -105,6 +105,8 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
                 centipede.splitCentipede(*itNc);
                 map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] = block;
                 spaceShip.stopShot();
+                // TODO: remove leak
+                output.push(new AudioComponent("Sound/CentipedeExplosion.wav", false, true, false));
                 return;
             }
             ++itNc;
