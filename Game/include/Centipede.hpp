@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 15:56:28 2016 Victor Gouet
-// Last update Fri Apr  1 15:40:29 2016 Victor Gouet
+// Last update Sun Apr  3 15:49:57 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDE_HPP_
@@ -13,6 +13,7 @@
 
 # include "../../Commons/include/Vector2.hpp"
 # include "../../Commons/include/GameComponent.hpp"
+#include "../../Commons/AudioComponent.hpp"
 # include <map>
 # include <list>
 # include <vector>
@@ -100,6 +101,7 @@ private:
     std::list<centipedeBody> _pos;
     Vector2<double> initPos;
     std::map<Direction, mptr> _map;
+  AudioComponent	*centipedeMove;
 
 public:
     int move(char map[31][51]);
