@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:17:37 2016 Victor Gouet
-// Last update Fri Apr  1 16:24:08 2016 Victor Gouet
+// Last update Sun Apr  3 15:27:22 2016 Victor Gouet
 //
 
 #ifndef CENTIPEDEGAME_HPP
@@ -71,6 +71,8 @@ private:
     UIComponent *scoreCom;
     GameComponent *missilCom;
     AudioComponent *centipedeMusic;
+  AudioComponent	*centipedeExplosion;
+  AudioComponent	*spaceShipShoot;
 };
 
 #endif

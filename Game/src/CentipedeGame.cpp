@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Sun Apr  3 15:08:08 2016 Victor Gouet
+// Last update Sun Apr  3 15:27:03 2016 Victor Gouet
 //
 
 #include <unistd.h>
@@ -44,6 +44,11 @@ CentipedeGame::CentipedeGame() :
                                   GameComponent::Shapes::SPHERE_SMALL, " ", "./sprites/missile.bmp");
 
     centipedeMusic = new AudioComponent("Sound/CentipedeIntro.wav", false, false, false);
+
+    centipedeExplosion = new AudioComponent("Sound/CentipedeExplosion.wav", false, true, false);
+
+    spaceShipShoot = new AudioComponent("Sound/CentipedeShot.wav", false, true, false);
+
     restart();
 }
 
@@ -64,6 +69,14 @@ CentipedeGame::~CentipedeGame()
     if (centipedeMusic)
       {
 	delete centipedeMusic;
+      }
+    if (centipedeExplosion)
+      {
+	delete centipedeExplosion;
+      }
+    if (spaceShipShoot)
+      {
+	delete spaceShipShoot;
       }
 }
 
@@ -110,8 +123,7 @@ void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
                 centipede.splitCentipede(*itNc);
                 map[static_cast<int>(vecShoot->y)][static_cast<int>(vecShoot->x)] = block;
                 spaceShip.stopShot();
-                // TODO: remove leak
-                output.push(new AudioComponent("Sound/CentipedeExplosion.wav", false, true, false));
+		output.push(centipedeExplosion);
                 return;
             }
             ++itNc;
@@ -173,8 +185,7 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         if (keycode == ArcadeSystem::Space)
         {
             spaceShip.shoot();
-            // TODO: remove leak
-            output.push(new AudioComponent("Sound/CentipedeShot.wav", false, true, false));
+            output.push(spaceShipShoot);
         }
         if (isEmptyCentipede())
         {
@@ -222,15 +233,6 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         else
             output.push(highScoreComponent);
     }
-    // TODO: remove this leak
-    // if (centipedeMusic != NULL)
-    // {
-    //     output.push(centipedeMusic);
-    //     // delete centipedeMusic;
-        
-    // 	centipedeMusic = NULL;
-    // }
-
     return (output);
 }
 
@@ -252,13 +254,7 @@ void        CentipedeGame::initVariable()
  */
 void CentipedeGame::restart()
 {
-    //   if (centipedeMusic != NULL)
-    // {
   _oldStack.push(centipedeMusic);
-        // delete centipedeMusic;
-
-	// centipedeMusic = NULL;
-    // }
     initMap();
     spaceShip.reinitPos();
     _wave = 1;
