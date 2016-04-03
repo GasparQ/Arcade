@@ -50,6 +50,7 @@ public:
     {
         m_chronoName = name;
     }
+
     virtual ~Chrono()
     {}
 

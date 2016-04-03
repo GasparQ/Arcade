@@ -289,7 +289,11 @@ void        arcade::Arcade::onExit()
  */
 void arcade::Arcade::addMenuSound()
 {
-    components.push(new AudioComponent("Sound/arcade" + std::to_string(rand() % 13 + 1) + ".wav", false, false, false));
+    for (int i = 0; i < 13; i++)
+    {
+        audioOpening[i].setStop(false);
+    }
+    components.push(&audioOpening[rand() % 13]);
 }
 
 /**
@@ -325,7 +329,9 @@ void        arcade::Arcade::Run()
 
             /// We stop all the musics from the games
             for (int i = 0; i < 1; i++)
+            {
                 components.push(&audioComponent[i]);
+            }
 
             // We update the chrono to trigger the 'Arcaaaaaade' sound
             chrono_menu->Update();
@@ -340,6 +346,12 @@ void        arcade::Arcade::Run()
             /// stops the menu's music
             components.push(&m_audio_stop);
             chrono_menu->ResetChrono();
+            /// And we stop all the opening sounds
+            for (int i = 0; i < 13; i++)
+            {
+                audioOpening[i].setStop(true);
+                components.push(&audioOpening[i]);
+            }
         }
 
         lib->display(components);

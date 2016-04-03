@@ -38,3 +38,8 @@ bool AudioComponent::getStop() const
 {
     return m_stop;
 }
+
+void AudioComponent::setStop(bool bStop)
+{
+    m_stop = bStop;
+}

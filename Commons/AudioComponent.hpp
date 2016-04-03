@@ -19,6 +19,8 @@ public:
     bool getOverlap() const;
     bool getStop() const;
 
+    void setStop(bool bStop);
+
 private:
     bool m_loop;
     std::string m_soundPath;

@@ -85,12 +85,28 @@ namespace arcade
         Status _status;
         regex_t lib_names;
 
-        std::stack<AComponent *>    components;
+        std::stack<AComponent *> components;
         Chrono<Arcade, void (Arcade::*)()> *chrono_menu;
         /**
          * \brief Used to store all the musics
          */
         AudioComponent audioComponent[1] = {{"Sound/HeyHeyHey.wav", false, false, true}};
+        /**
+         * \brief Used to store all the opening sounds
+         */
+        AudioComponent audioOpening[13] = {{"Sound/arcade1.wav", false, false, false},
+                                           {"Sound/arcade2.wav", false, false, false},
+                                           {"Sound/arcade3.wav", false, false, false},
+                                           {"Sound/arcade4.wav", false, false, false},
+                                           {"Sound/arcade5.wav", false, false, false},
+                                           {"Sound/arcade6.wav", false, false, false},
+                                           {"Sound/arcade7.wav", false, false, false},
+                                           {"Sound/arcade8.wav", false, false, false},
+                                           {"Sound/arcade9.wav", false, false, false},
+                                           {"Sound/arcade10.wav", false, false, false},
+                                           {"Sound/arcade11.wav", false, false, false},
+                                           {"Sound/arcade12.wav", false, false, false},
+                                           {"Sound/arcade13.wav", false, false, false}};
 
         /**
          * Methods
