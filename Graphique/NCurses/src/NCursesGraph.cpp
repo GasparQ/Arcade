@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Thu Mar 10 15:05:21 2016 Victor Gouet
-// Last update Sun Apr  3 11:47:57 2016 Victor Gouet
+// Last update Sun Apr  3 11:50:11 2016 Victor Gouet
 //
 
 #include "../include/NCursesGraph.hpp"
@@ -82,6 +82,7 @@ NCursesGraph::NCursesGraph()
  */
 NCursesGraph::~NCursesGraph()
 {
+  _cacheClear();
   if (gameWin)
     delete gameWin;
   if (_board)
