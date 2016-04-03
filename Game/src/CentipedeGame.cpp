@@ -42,6 +42,9 @@ CentipedeGame::CentipedeGame() :
     missilCom = new GameComponent(Vector2<double>(0, 0),
                                   AComponent::ComponentColor::COLOR_GREEN,
                                   GameComponent::Shapes::SPHERE_SMALL, " ", "FILE");
+
+    centipedeMusic = new AudioComponent("Sound/CentipedeIntro.wav", false, false, false);
+
 }
 
 CentipedeGame::~CentipedeGame()
@@ -61,7 +64,7 @@ CentipedeGame::~CentipedeGame()
 }
 
 /*
- * \brief determine what the missil is touching / wall / centipede / nothing 
+ * \brief determine what the missile is touching / wall / centipede / nothing
  */
 void            CentipedeGame::onShoot(std::stack<AComponent *> &output)
 {
@@ -207,7 +210,13 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         else
             output.push(highScoreComponent);
     }
-
+    // TODO: remove this leak
+    if (centipedeMusic != NULL)
+    {
+        output.push(centipedeMusic);
+        //delete centipedeMusic;
+        centipedeMusic = NULL;
+    }
     return (output);
 }
 

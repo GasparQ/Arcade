@@ -328,7 +328,7 @@ void        arcade::Arcade::Run()
             components = menu.updateMenu(key);
 
             /// We stop all the musics from the games
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 4; i++)
             {
                 components.push(&audioComponent[i]);
             }

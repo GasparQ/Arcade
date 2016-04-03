@@ -11,12 +11,13 @@
 #ifndef CENTIPEDEGAME_HPP
 # define CENTIPEDEGAME_HPP
 
+#include <vector>
 #include "AGame.hpp"
 #include "USSEnterprise.hpp"
 #include "Centipede.hpp"
-#include <vector>
 #include "../../Commons/include/HighScoreComponent.hpp"
 #include "../../Commons/include/UIComponent.hpp"
+#include "../../Commons/AudioComponent.hpp"
 
 
 class CentipedeGame : public AGame
@@ -69,6 +70,7 @@ private:
     UIComponent *waweCom;
     UIComponent *scoreCom;
     GameComponent *missilCom;
+    AudioComponent *centipedeMusic;
 };
 
 #endif
