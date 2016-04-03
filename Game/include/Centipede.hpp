@@ -71,7 +71,10 @@ private:
         void actualiseGameComponent() const
         {
             if (gameComponent)
+            {
                 gameComponent->setPos(this->pos);
+                gameComponent->setSprite2D(direction == Direction::RIGHT ?  "./sprites/centipederight.bmp" : "./sprites/centipede.bmp");
+            }
         }
 
         ~centipedeBody()

@@ -16,7 +16,7 @@
  * \brief Create an USSEnterprise with his default value
  */
 USSEnterprise::USSEnterprise()
-  : _pos(Vector2<double>(20, 23)), _carac(" "), _file_texture(""),
+  : _pos(Vector2<double>(20, 23)), _carac(" "), _file_texture("./sprites/spaceship.bmp"),
     _shapes(GameComponent::Shapes::SPHERE_LARGE), _color(AComponent::COLOR_MAGENTA), _shoot(NULL),
     gameComponent(new GameComponent(_pos, _color, _shapes, _carac, _file_texture))
 {

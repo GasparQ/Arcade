@@ -41,7 +41,7 @@ CentipedeGame::CentipedeGame() :
 
     missilCom = new GameComponent(Vector2<double>(0, 0),
                                   AComponent::ComponentColor::COLOR_GREEN,
-                                  GameComponent::Shapes::SPHERE_SMALL, " ", "FILE");
+                                  GameComponent::Shapes::SPHERE_SMALL, " ", "./sprites/missile.bmp");
 }
 
 CentipedeGame::~CentipedeGame()
@@ -260,18 +260,23 @@ void            CentipedeGame::displayMap(std::stack<AComponent *> &output) cons
                 {
                     case 1:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_WHITE);
+                        gameCom->setSprite2D("./sprites/mushroom.bmp");
                         break;
                     case 2:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_YELLOW);
+                        gameCom->setSprite2D("./sprites/mushroom1.bmp");
                         break;
                     case 3:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_GREEN);
+                        gameCom->setSprite2D("./sprites/mushroom2.bmp");
                         break;
                     case 4:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_BLUE);
+                        gameCom->setSprite2D("./sprites/mushroom3.bmp");
                         break;
                     case 5:
                         gameCom->setColor(AComponent::ComponentColor::COLOR_RED);
+                        gameCom->setSprite2D("./sprites/mushroom4.bmp");
                         break;
                     default:
                         break;
