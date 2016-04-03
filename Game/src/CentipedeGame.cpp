@@ -5,7 +5,7 @@
 // Login   <gouet_v@epitech.net>
 // 
 // Started on  Tue Mar 29 14:20:01 2016 Victor Gouet
-// Last update Sun Apr  3 11:19:01 2016 Victor Gouet
+// Last update Sun Apr  3 15:08:08 2016 Victor Gouet
 //
 
 #include <unistd.h>
@@ -22,12 +22,12 @@ CentipedeGame::CentipedeGame() :
 {
     highScoreComponent = NULL;
     // initMap();
-    restart();
 
     waveCom = new UIComponent(Vector2<double>(0, 0),
                               AComponent::COLOR_WHITE,
                               Vector2<double>(5, 1), "");
 
+    _wave = 1;
     waveCom->setText("wave : " + std::to_string(_wave));
     waveCom->setPos(Vector2<double>(1, 1));
 
@@ -44,6 +44,7 @@ CentipedeGame::CentipedeGame() :
                                   GameComponent::Shapes::SPHERE_SMALL, " ", "./sprites/missile.bmp");
 
     centipedeMusic = new AudioComponent("Sound/CentipedeIntro.wav", false, false, false);
+    restart();
 }
 
 CentipedeGame::~CentipedeGame()
@@ -60,6 +61,10 @@ CentipedeGame::~CentipedeGame()
     {
         delete missilCom;
     }
+    if (centipedeMusic)
+      {
+	delete centipedeMusic;
+      }
 }
 
 /*
@@ -153,6 +158,10 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
     if (state == ALIVE)
     {
         output = this->_oldStack;
+	if (this->_oldStack.size() == 3)
+	  {
+	    _oldStack.pop();
+	  }
         onShoot(output);
         if (centipede.isTouching(spaceShip.getPos()))
         {
@@ -210,12 +219,14 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
             output.push(highScoreComponent);
     }
     // TODO: remove this leak
-    if (centipedeMusic != NULL)
-    {
-        output.push(centipedeMusic);
-        //delete centipedeMusic;
-        centipedeMusic = NULL;
-    }
+    // if (centipedeMusic != NULL)
+    // {
+    //     output.push(centipedeMusic);
+    //     // delete centipedeMusic;
+        
+    // 	centipedeMusic = NULL;
+    // }
+
     return (output);
 }
 
@@ -237,6 +248,13 @@ void        CentipedeGame::initVariable()
  */
 void CentipedeGame::restart()
 {
+    //   if (centipedeMusic != NULL)
+    // {
+  _oldStack.push(centipedeMusic);
+        // delete centipedeMusic;
+
+	// centipedeMusic = NULL;
+    // }
     initMap();
     spaceShip.reinitPos();
     _wave = 1;
