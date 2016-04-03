@@ -162,6 +162,8 @@ std::stack<AComponent *> CentipedeGame::compute(int keycode)
         if (keycode == ArcadeSystem::Space)
         {
             spaceShip.shoot();
+            // TODO: remove leak
+            output.push(new AudioComponent("Sound/CentipedeShot.wav", false, true, false));
         }
         if (isEmptyCentipede())
         {

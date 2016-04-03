@@ -9,6 +9,7 @@
 //
 
 #include "../include/Centipede.hpp"
+#include "../../Commons/AudioComponent.hpp"
 #include <iterator>
 #include <cmath>
 #include <algorithm>
@@ -268,6 +269,8 @@ std::vector<AComponent *>    Centipede::getGameComponent() const
       vec.push_back(it->gameComponent);
       ++it;
     }
+    // TODO: remove leak
+    vec.push_back(new AudioComponent("Sound/CentipedeMove.wav", false, false, false));
     return (vec);
 }
 
