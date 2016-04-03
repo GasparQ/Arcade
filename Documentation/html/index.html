@@ -83,47 +83,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Arcade Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-Introduction</h1>
-<p>This is the documentation for the <a class="el" href="namespace_f_l_a_c.html">FLAC</a> C and C++ APIs. It is highly interconnected; this introduction should give you a top level idea of the structure and how to find the information you need. As a prerequisite you should have at least a basic knowledge of the <a class="el" href="namespace_f_l_a_c.html">FLAC</a> format, documented <a href="../format.html">here</a>.</p>
-<h1><a class="anchor" id="c_api"></a>
-FLAC C API</h1>
-<p>The <a class="el" href="namespace_f_l_a_c.html">FLAC</a> C API is the interface to libFLAC, a set of structures describing the components of <a class="el" href="namespace_f_l_a_c.html">FLAC</a> streams, and functions for encoding and decoding streams, as well as manipulating <a class="el" href="namespace_f_l_a_c.html">FLAC</a> metadata in files. The public include files will be installed in your include area (for example /usr/include/FLAC/...).</p>
-<p>By writing a little code and linking against libFLAC, it is relatively easy to add <a class="el" href="namespace_f_l_a_c.html">FLAC</a> support to another program. The library is licensed under <a href="../license.html">Xiph's BSD license</a>. Complete source code of libFLAC as well as the command-line encoder and plugins is available and is a useful source of examples.</p>
-<p>Aside from encoders and decoders, libFLAC provides a powerful metadata interface for manipulating metadata in <a class="el" href="namespace_f_l_a_c.html">FLAC</a> files. It allows the user to add, delete, and modify <a class="el" href="namespace_f_l_a_c.html">FLAC</a> metadata blocks and it can automatically take advantage of PADDING blocks to avoid rewriting the entire <a class="el" href="namespace_f_l_a_c.html">FLAC</a> file when changing the size of the metadata.</p>
-<p>libFLAC usually only requires the standard C library and C math library. In particular, threading is not used so there is no dependency on a thread library. However, libFLAC does not use global variables and should be thread-safe.</p>
-<p>libFLAC also supports encoding to and decoding from Ogg <a class="el" href="namespace_f_l_a_c.html">FLAC</a>. However the metadata editing interfaces currently have limited read-only support for Ogg <a class="el" href="namespace_f_l_a_c.html">FLAC</a> files.</p>
-<h1><a class="anchor" id="cpp_api"></a>
-FLAC C++ API</h1>
-<p>The <a class="el" href="namespace_f_l_a_c.html">FLAC</a> C++ API is a set of classes that encapsulate the structures and functions in libFLAC. They provide slightly more functionality with respect to metadata but are otherwise equivalent. For the most part, they share the same usage as their counterparts in libFLAC, and the <a class="el" href="namespace_f_l_a_c.html">FLAC</a> C API documentation can be used as a supplement. The public include files for the C++ API will be installed in your include area (for example /usr/include/FLAC++/...).</p>
-<p>libFLAC++ is also licensed under <a href="../license.html">Xiph's BSD license</a>.</p>
-<h1><a class="anchor" id="getting_started"></a>
-Getting Started</h1>
-<p>A good starting point for learning the API is to browse through the <a href="modules.html">modules</a>. Modules are logical groupings of related functions or classes, which correspond roughly to header files or sections of header files. Each module includes a detailed description of the general usage of its functions or classes.</p>
-<p>From there you can go on to look at the documentation of individual functions. You can see different views of the individual functions through the links in top bar across this page.</p>
-<p>If you prefer a more hands-on approach, you can jump right to some <a href="../documentation_example_code.html">example code</a>.</p>
-<h1><a class="anchor" id="porting_guide"></a>
-Porting Guide</h1>
-<p>Starting with <a class="el" href="namespace_f_l_a_c.html">FLAC</a> 1.1.3 a <a class="el" href="group__porting.html">Porting Guide </a> has been introduced which gives detailed instructions on how to port your code to newer versions of <a class="el" href="namespace_f_l_a_c.html">FLAC</a>.</p>
-<h1><a class="anchor" id="embedded_developers"></a>
-Embedded Developers</h1>
-<p>libFLAC has grown larger over time as more functionality has been included, but much of it may be unnecessary for a particular embedded implementation. Unused parts may be pruned by some simple editing of src/libFLAC/Makefile.am. In general, the decoders, encoders, and metadata interface are all independent from each other.</p>
-<p>It is easiest to just describe the dependencies:</p>
-<ul>
-<li>All modules depend on the <a class="el" href="group__flac__format.html">Format </a> module.</li>
-<li>The decoders and encoders depend on the bitbuffer.</li>
-<li>The decoder is independent of the encoder. The encoder uses the decoder because of the verify feature, but this can be removed if not needed.</li>
-<li>Parts of the metadata interface require the stream decoder (but not the encoder).</li>
-<li>Ogg support is selectable through the compile time macro <code>FLAC__HAS_OGG</code>.</li>
-</ul>
-<p>For example, if your application only requires the stream decoder, no encoder, and no metadata interface, you can remove the stream encoder and the metadata interface, which will greatly reduce the size of the library.</p>
-<p>Also, there are several places in the libFLAC code with comments marked with "OPT:" where a #define can be changed to enable code that might be faster on a specific platform. Experimenting with these can yield faster binaries. </p>
-</div></div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6
-</small></address>
-</body>
-</html>
+  <div class="textblock"><h1><a class="anchor" id="intro"></a>
+    Introduction</h1>
+    <p>This is the documentation for the <b>Arcade</b> C++ API. It is highly interconnected; this introduction should give you a top level idea of the structure and how to find the information you need. As a prerequisite you should have at least a basic knowledge of the C++ language, documented <a href="http://www.cplusplus.com/reference/" target="_blank">here</a>.</p>
+    <p>Make sure you also check our starting guide located <a href="../index.html" target="_blank">here</a>, which will help you to implement your own games to the Arcade.</p>
+    <h1><a class="anchor" id="c_api"></a>
+      Arcade C++ API</h1>
+      <p>This API contains all the references to the current code and implementations of the arcade. References might get updated at any time, make sure you are reading the latest version of the scripting reference API.</p>
+      <p>The scripting reference is organised according to the classes available to scripts which are described along with their methods, properties and any other information relevant to their use.
+      You will also find all the source code in the <a href="files.html">files</a> section.</p>
+        <h1><a class="anchor" id="getting_started"></a>
+          Getting Started</h1>
+          <p>A good starting point for learning the API is to browse through the <a href="../index.html">Starting Pack</a>. Complete examples and detailed explainations will help to apprehend the architeture of this project. In complement you will find all the classes description and inheritance.</p>
+          <p>From there you can go on to look at the documentation of individual functions. You can see different views of the individual functions through the links in top bar across this page.</p>
+          <p>If you prefer a more hands-on approach, you can jump right to some <a href="_snake_8cpp_source.html">example code</a>.</p>
+            <h1><a class="anchor" id="embedded_developers"></a>
+              Embedded Developers</h1>
+              <p>The Arcade project was firstly made by Quentin Gasparotto, Victor Gouet and Fernand Veyrier, but has also been designed to be compliant with Nicolas Constanty, Adrien Wery and Axel Ventcatareddy. Feel free to implement your own games !</p>
+              <ul>
+                <li>Make sure you follow carefully the game pattern we used, or it would lead to a segfault.</li>
+                <li>Remeber to define all your external symbols properly.</li>
+                <li>If you use external libraries, make sure to add the proper path using <code>-RPATH</code> at compile time.</li>
+              </ul>
+              
+            </div>
+            </div><!-- contents -->
+            <!-- start footer part -->
+            <!-- <hr class="footer"/><address class="footer"><small>
+            Generated on Sun Apr 3 2016 16:16:04 for Arcade by &#160;<a href="http://www.doxygen.org/index.html">
+            <img class="footer" src="doxygen.png" alt="doxygen"/>
+          </a> 1.8.6
+        </small></address> -->
+      </body>
+      </html>
