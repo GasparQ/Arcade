@@ -5,7 +5,7 @@
 ## Login   <gaspar_q@epitech.net>
 ##
 ## Started on  Sun Mar 13 17:06:59 2016 Quentin Gasparotto
-## Last update Wed Mar 30 21:01:05 2016 Fernand Veyrier
+## Last update Sun Apr  3 11:40:18 2016 Victor Gouet
 ##
 
 NAME	=	lib_arcade_commons.a
@@ -28,8 +28,6 @@ OBJS	=	$(SRCS:.cpp=.o)
 
 CPPFLAGS	=	-W -Wall -Wextra -Wnon-virtual-dtor -std=c++11 -I ./include -fPIC -I ./HighScore/include/ -I ./
                 #-L ./ -L ../Graphique/SDL2/build/.libs/ -lSDL2 -Wl,rpath,../Graphique/SDL2_mixer -L ../Graphique/SDL2_mixer/ -lSDL2_mixer
-
-CPPFLAGS    += -g
 
 $(NAME):	$(OBJS)
 	ar rc $(NAME) $(OBJS)
