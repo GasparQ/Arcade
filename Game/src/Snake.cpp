@@ -404,7 +404,6 @@ extern "C" void Play(void)
     Snake snake;
     struct arcade::GetMap *map;
     size_t mapSize = sizeof(*map) + ArcadeSystem::winWidth * ArcadeSystem::winHeight * sizeof(arcade::TileType);
-    std::ofstream outfile("debug.log");
 
     if ((map = (struct arcade::GetMap *) malloc(mapSize)) == NULL)
         throw std::bad_alloc();
@@ -417,39 +416,30 @@ extern "C" void Play(void)
         {
             case arcade::CommandType::WHERE_AM_I:
                 whereAmI(snake);
-                outfile << "WHERE AM I" << std::endl;
                 break;
             case arcade::CommandType::GET_MAP:
                 updateMap(map, snake);
                 write(1, map, mapSize);
-                outfile << "Get map" << std::endl;
                 break;
             case arcade::CommandType::GO_UP:
                 snake.goUp();
-                outfile << "go up" << std::endl;
                 break;
             case arcade::CommandType::GO_DOWN:
                 snake.goDown();
-                outfile << "go down" << std::endl;
                 break;
             case arcade::CommandType::GO_LEFT:
                 snake.goLeft();
-                outfile << "go left" << std::endl;
                 break;
             case arcade::CommandType::GO_RIGHT:
                 snake.goRight();
-                outfile << "go right" << std::endl;
                 break;
             case arcade::CommandType::GO_FORWARD:
                 snake.goAhead();
-                outfile << "go forward" << std::endl;
                 break;
             case arcade::CommandType::PLAY:
                 snake.playARound();
-                outfile << "play" << std::endl;
                 break;
             default:
-                outfile << "nothing" << std::endl;
                 break;
         }
     }
